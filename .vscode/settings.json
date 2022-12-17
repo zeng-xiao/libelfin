@@ -31,6 +31,8 @@
                 "dumpelfheader.h": "c",
                 "dataoperate.h": "c",
                 "inttypes.h": "c",
-                "stdbool.h": "c"
+                "stdbool.h": "c",
+                "string_view": "cpp",
+                "string": "cpp"
         }
 }
