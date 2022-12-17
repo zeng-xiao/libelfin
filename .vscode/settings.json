@@ -33,6 +33,7 @@
                 "inttypes.h": "c",
                 "stdbool.h": "c",
                 "string_view": "cpp",
-                "string": "cpp"
+                "string": "cpp",
+                "system_error": "cpp"
         }
 }

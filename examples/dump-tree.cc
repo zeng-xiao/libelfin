@@ -13,7 +13,7 @@ void dump_tree(const dwarf::die &node, int depth = 0) {
   for (auto &attr : node.attributes())
     printf("%*.s      %s %s\n", depth, " ", to_string(attr.first).c_str(),
            to_string(attr.second).c_str());
-  for (auto &child : node)
+  for (auto &child : node) // DFS
     dump_tree(child, depth + 1);
 }
 
