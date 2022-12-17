@@ -44,19 +44,20 @@ dump-tree: # .debug_info section & architecture dependent
 find-pc:
 	examples/$@ /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
+# riscv target
 dump-lines-riscv: # architecture dependent
 	qemu-riscv64 examples/dump-lines /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
-dump-sections: # architecture independent
+dump-sections-riscv: # architecture independent
 	qemu-riscv64 examples/dump-sections /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
-dump-segments: # architecture independent
+dump-segments-riscv: # architecture independent
 	qemu-riscv64 examples/dump-segments /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
-dump-syms: # architecture independent
+dump-syms-riscv: # architecture independent
 	qemu-riscv64 examples/dump-syms /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
 dump-tree-riscv: # .debug_info section & architecture dependent
 	qemu-riscv64 examples/dump-tree ../RISC-V-disassembly-tools/build/src/elfParser/elfParser
-find-pc:
+find-pc-riscv:
 	qemu-riscv64 examples/find-pc /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
