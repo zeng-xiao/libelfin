@@ -1,7 +1,15 @@
-all:
+#export PATH=/home/user/Downloads/tools/daily/bin:$(shell printenv PATH) # qemu-riscv64 error
+export PATH=/home/user/riscv-gnu-toolchain/regression/install/linux-rv64imafdc-lp64d-medlow/bin:$(shell printenv PATH)
+
+all-x86_64:
 	$(MAKE) -j$(shell nproc) -C  elf
 	$(MAKE) -j$(shell nproc) -C dwarf
 	$(MAKE) -j$(shell nproc) -C examples
+
+all-riscv:
+	$(MAKE) -j$(shell nproc) -C  elf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++
+	$(MAKE) -j$(shell nproc) -C dwarf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++
+	$(MAKE) -j$(shell nproc) -C examples CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++
 
 install:
 	$(MAKE) -C elf install
@@ -35,3 +43,20 @@ dump-tree: # .debug_info section & architecture dependent
 
 find-pc:
 	examples/$@ /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
+
+dump-lines-riscv: # architecture dependent
+	qemu-riscv64 examples/dump-lines /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
+
+dump-sections: # architecture independent
+	qemu-riscv64 examples/dump-sections /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
+
+dump-segments: # architecture independent
+	qemu-riscv64 examples/dump-segments /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
+
+dump-syms: # architecture independent
+	qemu-riscv64 examples/dump-syms /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
+
+dump-tree-riscv: # .debug_info section & architecture dependent
+	qemu-riscv64 examples/dump-tree ../RISC-V-disassembly-tools/build/src/elfParser/elfParser
+find-pc:
+	qemu-riscv64 examples/find-pc /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
