@@ -1,7 +1,7 @@
 all:
-	$(MAKE) -C elf
-	$(MAKE) -C dwarf
-	$(MAKE) -C examples
+	$(MAKE) -j$(shell nproc) -C  elf
+	$(MAKE) -j$(shell nproc) -C dwarf
+	$(MAKE) -j$(shell nproc) -C examples
 
 install:
 	$(MAKE) -C elf install
@@ -15,21 +15,23 @@ clean:
 check:
 	cd test && ./test.sh
 
-dump-lines:
-	examples/$@ ../RISC-V-disassembly-tools/build/src/elfParser/elfParser
+# examples/$@ ../RISC-V-disassembly-tools/build/src/elfParser/elfParser
+# examples/$@ /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-dynamic.main
+dump-lines: # architecture dependent
+	examples/$@ /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
-dump-sections:
-	examples/$@ ../RISC-V-disassembly-tools/build/src/elfParser/elfParser
+dump-sections: # architecture independent
+	examples/$@ /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
+dump-segments: # architecture independent
+	examples/$@ /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
-dump-segments:
-	examples/$@ ../RISC-V-disassembly-tools/build/src/elfParser/elfParser
+dump-syms: # architecture independent
+	examples/$@ /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
-dump-syms:
+dump-tree: # .debug_info section & architecture dependent
 	examples/$@ ../RISC-V-disassembly-tools/build/src/elfParser/elfParser
-
-dump-tree:
-	examples/$@ ../RISC-V-disassembly-tools/build/src/elfParser/elfParser
+#examples/$@ /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
 find-pc:
-	examples/$@ ../RISC-V-disassembly-tools/build/src/elfParser/elfParser
+	examples/$@ /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main

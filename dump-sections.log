@@ -1,0 +1,79 @@
+examples/dump-sections /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
+  [Nr] Name             Type             Address          Offset
+       Size             EntSize          Flags            Link Info Align
+  [ 0]                  null             0000000000000000 00000000
+       0000000000000000 0000000000000000 (shf)0x0        undef    0     0
+  [ 1] .note.ABI-tag    note             00000000000101c8 000001c8
+       0000000000000020 0000000000000000 alloc           undef    0     4
+  [ 2] .rela.dyn        rela             00000000000101e8 000001e8
+       00000000000001c8 0000000000000018 alloc              35    0     8
+  [ 3] .text            progbits         00000000000103b0 000003b0
+       000000000003c346 0000000000000000 alloc|execinstr undef    0     4
+  [ 4] __libc_freeres_fn progbits         000000000004c6f6 0003c6f6
+       00000000000007a0 0000000000000000 alloc|execinstr undef    0     2
+  [ 5] .rodata          progbits         000000000004cea0 0003cea0
+       000000000001d874 0000000000000000 alloc           undef    0    16
+  [ 6] __libc_subfreeres progbits         000000000006a718 0005a718
+       0000000000000048 0000000000000000 alloc           undef    0     8
+  [ 7] __libc_IO_vtables progbits         000000000006a760 0005a760
+       0000000000000690 0000000000000000 alloc           undef    0     8
+  [ 8] __libc_atexit    progbits         000000000006adf0 0005adf0
+       0000000000000008 0000000000000000 alloc           undef    0     8
+  [ 9] .eh_frame        progbits         000000000006adf8 0005adf8
+       0000000000002e64 0000000000000000 alloc           undef    0     8
+  [10] .gcc_except_table progbits         000000000006dc5c 0005dc5c
+       0000000000000165 0000000000000000 alloc           undef    0     1
+  [11] .tdata           progbits         000000000006e538 0005e538
+       0000000000000020 0000000000000000 write|alloc|(shf)0x400 undef    0     8
+  [12] .tbss            nobits           000000000006e558 0005e558
+       0000000000000040 0000000000000000 write|alloc|(shf)0x400 undef    0     8
+  [13] .preinit_array   (sht)0x10        000000000006e558 0005e558
+       0000000000000008 0000000000000008 write|alloc     undef    0     1
+  [14] .init_array      (sht)0xe         000000000006e560 0005e560
+       0000000000000008 0000000000000008 write|alloc     undef    0     8
+  [15] .fini_array      (sht)0xf         000000000006e568 0005e568
+       0000000000000010 0000000000000008 write|alloc     undef    0     8
+  [16] .data.rel.ro     progbits         000000000006e578 0005e578
+       0000000000000a84 0000000000000000 write|alloc     undef    0     8
+  [17] .data            progbits         000000000006f000 0005f000
+       00000000000017f8 0000000000000000 write|alloc     undef    0     8
+  [18] .got             progbits         00000000000707f8 000607f8
+       00000000000000d0 0000000000000008 write|alloc     undef    0     8
+  [19] .sdata           progbits         00000000000708c8 000608c8
+       00000000000001c8 0000000000000000 write|alloc     undef    0     8
+  [20] .sbss            nobits           0000000000070a90 00060a90
+       00000000000003c4 0000000000000000 write|alloc     undef    0     8
+  [21] .bss             nobits           0000000000070e58 00060a90
+       00000000000011d8 0000000000000000 write|alloc     undef    0     8
+  [22] __libc_freeres_ptrs nobits           0000000000072030 00060a90
+       0000000000000020 0000000000000000 write|alloc     undef    0     8
+  [23] .comment         progbits         0000000000000000 00060a90
+       000000000000002d 0000000000000001 (shf)0x30       undef    0     1
+  [24] .riscv.attributes (sht)0x70000003  0000000000000000 00060abd
+       0000000000000039 0000000000000000 (shf)0x0        undef    0     1
+  [25] .debug_aranges   progbits         0000000000000000 00060b00
+       0000000000003770 0000000000000000 (shf)0x0        undef    0    16
+  [26] .debug_info      progbits         0000000000000000 00064270
+       000000000010bb39 0000000000000000 (shf)0x0        undef    0     1
+  [27] .debug_abbrev    progbits         0000000000000000 0016fda9
+       000000000002a9f5 0000000000000000 (shf)0x0        undef    0     1
+  [28] .debug_line      progbits         0000000000000000 0019a79e
+       00000000000a0c83 0000000000000000 (shf)0x0        undef    0     1
+  [29] .debug_frame     progbits         0000000000000000 0023b428
+       0000000000008290 0000000000000000 (shf)0x0        undef    0     8
+  [30] .debug_str       progbits         0000000000000000 002436b8
+       000000000001686d 0000000000000001 (shf)0x30       undef    0     1
+  [31] .debug_line_str  progbits         0000000000000000 00259f25
+       0000000000002c6e 0000000000000001 (shf)0x30       undef    0     1
+  [32] .debug_loclists  progbits         0000000000000000 0025cb93
+       00000000000ca366 0000000000000000 (shf)0x0        undef    0     1
+  [33] .debug_macro     progbits         0000000000000000 00326ef9
+       0000000000001440 0000000000000000 (shf)0x0        undef    0     1
+  [34] .debug_rnglists  progbits         0000000000000000 00328339
+       0000000000023849 0000000000000000 (shf)0x0        undef    0     1
+  [35] .symtab          symtab           0000000000000000 0034bb88
+       000000000000cbe8 0000000000000018 (shf)0x0           36 1151     8
+  [36] .strtab          strtab           0000000000000000 00358770
+       0000000000005e90 0000000000000000 (shf)0x0        undef    0     1
+  [37] .shstrtab        strtab           0000000000000000 0035e600
+       00000000000001b8 0000000000000000 (shf)0x0        undef    0     1

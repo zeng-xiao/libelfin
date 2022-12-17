@@ -1,0 +1,5 @@
+examples/dump-lines /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
+terminate called after throwing an instance of 'dwarf::format_error'
+  what():  unknown compilation unit version 5
+Makefile:21: recipe for target 'dump-lines' failed
+make: *** [dump-lines] Aborted (core dumped)
