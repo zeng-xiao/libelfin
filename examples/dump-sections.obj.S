@@ -5,288 +5,288 @@ dump-sections:     file format elf64-littleriscv
 Disassembly of section .plt:
 
 0000000000012930 <_PROCEDURE_LINKAGE_TABLE_>:
-   12930:	97 73 00 00 33 03 c3 41 03 be 03 6d 13 03 43 fd     .s..3..A...m..C.
+   12930:	97 93 00 00 33 03 c3 41 03 be 03 6d 13 03 43 fd     ....3..A...m..C.
    12940:	93 82 03 6d 13 53 13 00 83 b2 82 00 67 00 0e 00     ...m.S......g...
 
 0000000000012950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>:
-   12950:	00007e17          	auipc	t3,0x7
-   12954:	6c0e3e03          	ld	t3,1728(t3) # 1a010 <__gnu_cxx::__atomic_add(int volatile*, int)@GLIBCXX_3.4>
+   12950:	00009e17          	auipc	t3,0x9
+   12954:	6c0e3e03          	ld	t3,1728(t3) # 1c010 <__gnu_cxx::__atomic_add(int volatile*, int)@GLIBCXX_3.4>
    12958:	000e0367          	jalr	t1,0(t3)
    1295c:	00000013          	addi	zero,zero,0
 
 0000000000012960 <strcmp@plt>:
-   12960:	00007e17          	auipc	t3,0x7
-   12964:	6b8e3e03          	ld	t3,1720(t3) # 1a018 <strcmp@GLIBC_2.27>
+   12960:	00009e17          	auipc	t3,0x9
+   12964:	6b8e3e03          	ld	t3,1720(t3) # 1c018 <strcmp@GLIBC_2.27>
    12968:	000e0367          	jalr	t1,0(t3)
    1296c:	00000013          	addi	zero,zero,0
 
 0000000000012970 <__bswapsi2@plt>:
-   12970:	00007e17          	auipc	t3,0x7
-   12974:	6b0e3e03          	ld	t3,1712(t3) # 1a020 <__bswapsi2@GCC_4.3.0>
+   12970:	00009e17          	auipc	t3,0x9
+   12974:	6b0e3e03          	ld	t3,1712(t3) # 1c020 <__bswapsi2@GCC_4.3.0>
    12978:	000e0367          	jalr	t1,0(t3)
    1297c:	00000013          	addi	zero,zero,0
 
 0000000000012980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>:
-   12980:	00007e17          	auipc	t3,0x7
-   12984:	6a8e3e03          	ld	t3,1704(t3) # 1a028 <__gnu_cxx::__exchange_and_add(int volatile*, int)@GLIBCXX_3.4>
+   12980:	00009e17          	auipc	t3,0x9
+   12984:	6a8e3e03          	ld	t3,1704(t3) # 1c028 <__gnu_cxx::__exchange_and_add(int volatile*, int)@GLIBCXX_3.4>
    12988:	000e0367          	jalr	t1,0(t3)
    1298c:	00000013          	addi	zero,zero,0
 
 0000000000012990 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::insert(unsigned long, char const*)@plt>:
-   12990:	00007e17          	auipc	t3,0x7
-   12994:	6a0e3e03          	ld	t3,1696(t3) # 1a030 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::insert(unsigned long, char const*)@GLIBCXX_3.4.21>
+   12990:	00009e17          	auipc	t3,0x9
+   12994:	6a0e3e03          	ld	t3,1696(t3) # 1c030 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::insert(unsigned long, char const*)@GLIBCXX_3.4.21>
    12998:	000e0367          	jalr	t1,0(t3)
    1299c:	00000013          	addi	zero,zero,0
 
 00000000000129a0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(char const*) const@plt>:
-   129a0:	00007e17          	auipc	t3,0x7
-   129a4:	698e3e03          	ld	t3,1688(t3) # 1a038 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(char const*) const@GLIBCXX_3.4.21>
+   129a0:	00009e17          	auipc	t3,0x9
+   129a4:	698e3e03          	ld	t3,1688(t3) # 1c038 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(char const*) const@GLIBCXX_3.4.21>
    129a8:	000e0367          	jalr	t1,0(t3)
    129ac:	00000013          	addi	zero,zero,0
 
 00000000000129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>:
-   129b0:	00007e17          	auipc	t3,0x7
-   129b4:	690e3e03          	ld	t3,1680(t3) # 1a040 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@GLIBCXX_3.4.21>
+   129b0:	00009e17          	auipc	t3,0x9
+   129b4:	690e3e03          	ld	t3,1680(t3) # 1c040 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@GLIBCXX_3.4.21>
    129b8:	000e0367          	jalr	t1,0(t3)
    129bc:	00000013          	addi	zero,zero,0
 
 00000000000129c0 <__libc_start_main@plt>:
-   129c0:	00007e17          	auipc	t3,0x7
-   129c4:	688e3e03          	ld	t3,1672(t3) # 1a048 <__libc_start_main@GLIBC_2.27>
+   129c0:	00009e17          	auipc	t3,0x9
+   129c4:	688e3e03          	ld	t3,1672(t3) # 1c048 <__libc_start_main@GLIBC_2.27>
    129c8:	000e0367          	jalr	t1,0(t3)
    129cc:	00000013          	addi	zero,zero,0
 
 00000000000129d0 <strlen@plt>:
-   129d0:	00007e17          	auipc	t3,0x7
-   129d4:	680e3e03          	ld	t3,1664(t3) # 1a050 <strlen@GLIBC_2.27>
+   129d0:	00009e17          	auipc	t3,0x9
+   129d4:	680e3e03          	ld	t3,1664(t3) # 1c050 <strlen@GLIBC_2.27>
    129d8:	000e0367          	jalr	t1,0(t3)
    129dc:	00000013          	addi	zero,zero,0
 
 00000000000129e0 <__cxa_allocate_exception@plt>:
-   129e0:	00007e17          	auipc	t3,0x7
-   129e4:	678e3e03          	ld	t3,1656(t3) # 1a058 <__cxa_allocate_exception@CXXABI_1.3>
+   129e0:	00009e17          	auipc	t3,0x9
+   129e4:	678e3e03          	ld	t3,1656(t3) # 1c058 <__cxa_allocate_exception@CXXABI_1.3>
    129e8:	000e0367          	jalr	t1,0(t3)
    129ec:	00000013          	addi	zero,zero,0
 
 00000000000129f0 <std::__throw_length_error(char const*)@plt>:
-   129f0:	00007e17          	auipc	t3,0x7
-   129f4:	670e3e03          	ld	t3,1648(t3) # 1a060 <std::__throw_length_error(char const*)@GLIBCXX_3.4>
+   129f0:	00009e17          	auipc	t3,0x9
+   129f4:	670e3e03          	ld	t3,1648(t3) # 1c060 <std::__throw_length_error(char const*)@GLIBCXX_3.4>
    129f8:	000e0367          	jalr	t1,0(t3)
    129fc:	00000013          	addi	zero,zero,0
 
 0000000000012a00 <std::_V2::system_category()@plt>:
-   12a00:	00007e17          	auipc	t3,0x7
-   12a04:	668e3e03          	ld	t3,1640(t3) # 1a068 <std::_V2::system_category()@GLIBCXX_3.4.21>
+   12a00:	00009e17          	auipc	t3,0x9
+   12a04:	668e3e03          	ld	t3,1640(t3) # 1c068 <std::_V2::system_category()@GLIBCXX_3.4.21>
    12a08:	000e0367          	jalr	t1,0(t3)
    12a0c:	00000013          	addi	zero,zero,0
 
 0000000000012a10 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)@plt>:
-   12a10:	00007e17          	auipc	t3,0x7
-   12a14:	660e3e03          	ld	t3,1632(t3) # 1a070 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)@GLIBCXX_3.4.21>
+   12a10:	00009e17          	auipc	t3,0x9
+   12a14:	660e3e03          	ld	t3,1632(t3) # 1c070 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)@GLIBCXX_3.4.21>
    12a18:	000e0367          	jalr	t1,0(t3)
    12a1c:	00000013          	addi	zero,zero,0
 
 0000000000012a20 <open@plt>:
-   12a20:	00007e17          	auipc	t3,0x7
-   12a24:	658e3e03          	ld	t3,1624(t3) # 1a078 <open@GLIBC_2.27>
+   12a20:	00009e17          	auipc	t3,0x9
+   12a24:	658e3e03          	ld	t3,1624(t3) # 1c078 <open@GLIBC_2.27>
    12a28:	000e0367          	jalr	t1,0(t3)
    12a2c:	00000013          	addi	zero,zero,0
 
 0000000000012a30 <mmap@plt>:
-   12a30:	00007e17          	auipc	t3,0x7
-   12a34:	650e3e03          	ld	t3,1616(t3) # 1a080 <mmap@GLIBC_2.27>
+   12a30:	00009e17          	auipc	t3,0x9
+   12a34:	650e3e03          	ld	t3,1616(t3) # 1c080 <mmap@GLIBC_2.27>
    12a38:	000e0367          	jalr	t1,0(t3)
    12a3c:	00000013          	addi	zero,zero,0
 
 0000000000012a40 <std::__throw_logic_error(char const*)@plt>:
-   12a40:	00007e17          	auipc	t3,0x7
-   12a44:	648e3e03          	ld	t3,1608(t3) # 1a088 <std::__throw_logic_error(char const*)@GLIBCXX_3.4>
+   12a40:	00009e17          	auipc	t3,0x9
+   12a44:	648e3e03          	ld	t3,1608(t3) # 1c088 <std::__throw_logic_error(char const*)@GLIBCXX_3.4>
    12a48:	000e0367          	jalr	t1,0(t3)
    12a4c:	00000013          	addi	zero,zero,0
 
 0000000000012a50 <__cxa_free_exception@plt>:
-   12a50:	00007e17          	auipc	t3,0x7
-   12a54:	640e3e03          	ld	t3,1600(t3) # 1a090 <__cxa_free_exception@CXXABI_1.3>
+   12a50:	00009e17          	auipc	t3,0x9
+   12a54:	640e3e03          	ld	t3,1600(t3) # 1c090 <__cxa_free_exception@CXXABI_1.3>
    12a58:	000e0367          	jalr	t1,0(t3)
    12a5c:	00000013          	addi	zero,zero,0
 
 0000000000012a60 <munmap@plt>:
-   12a60:	00007e17          	auipc	t3,0x7
-   12a64:	638e3e03          	ld	t3,1592(t3) # 1a098 <munmap@GLIBC_2.27>
+   12a60:	00009e17          	auipc	t3,0x9
+   12a64:	638e3e03          	ld	t3,1592(t3) # 1c098 <munmap@GLIBC_2.27>
    12a68:	000e0367          	jalr	t1,0(t3)
    12a6c:	00000013          	addi	zero,zero,0
 
 0000000000012a70 <operator delete(void*)@plt>:
-   12a70:	00007e17          	auipc	t3,0x7
-   12a74:	630e3e03          	ld	t3,1584(t3) # 1a0a0 <operator delete(void*)@GLIBCXX_3.4>
+   12a70:	00009e17          	auipc	t3,0x9
+   12a74:	630e3e03          	ld	t3,1584(t3) # 1c0a0 <operator delete(void*)@GLIBCXX_3.4>
    12a78:	000e0367          	jalr	t1,0(t3)
    12a7c:	00000013          	addi	zero,zero,0
 
 0000000000012a80 <operator new(unsigned long)@plt>:
-   12a80:	00007e17          	auipc	t3,0x7
-   12a84:	628e3e03          	ld	t3,1576(t3) # 1a0a8 <operator new(unsigned long)@GLIBCXX_3.4>
+   12a80:	00009e17          	auipc	t3,0x9
+   12a84:	628e3e03          	ld	t3,1576(t3) # 1c0a8 <operator new(unsigned long)@GLIBCXX_3.4>
    12a88:	000e0367          	jalr	t1,0(t3)
    12a8c:	00000013          	addi	zero,zero,0
 
 0000000000012a90 <std::runtime_error::~runtime_error()@plt>:
-   12a90:	00007e17          	auipc	t3,0x7
-   12a94:	620e3e03          	ld	t3,1568(t3) # 1a0b0 <std::runtime_error::~runtime_error()@GLIBCXX_3.4>
+   12a90:	00009e17          	auipc	t3,0x9
+   12a94:	620e3e03          	ld	t3,1568(t3) # 1c0b0 <std::runtime_error::~runtime_error()@GLIBCXX_3.4>
    12a98:	000e0367          	jalr	t1,0(t3)
    12a9c:	00000013          	addi	zero,zero,0
 
 0000000000012aa0 <__bswapdi2@plt>:
-   12aa0:	00007e17          	auipc	t3,0x7
-   12aa4:	618e3e03          	ld	t3,1560(t3) # 1a0b8 <__bswapdi2@GCC_4.3.0>
+   12aa0:	00009e17          	auipc	t3,0x9
+   12aa4:	618e3e03          	ld	t3,1560(t3) # 1c0b8 <__bswapdi2@GCC_4.3.0>
    12aa8:	000e0367          	jalr	t1,0(t3)
    12aac:	00000013          	addi	zero,zero,0
 
 0000000000012ab0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@plt>:
-   12ab0:	00007e17          	auipc	t3,0x7
-   12ab4:	610e3e03          	ld	t3,1552(t3) # 1a0c0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@GLIBCXX_3.4.21>
+   12ab0:	00009e17          	auipc	t3,0x9
+   12ab4:	610e3e03          	ld	t3,1552(t3) # 1c0c0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@GLIBCXX_3.4.21>
    12ab8:	000e0367          	jalr	t1,0(t3)
    12abc:	00000013          	addi	zero,zero,0
 
 0000000000012ac0 <std::logic_error::logic_error(char const*)@plt>:
-   12ac0:	00007e17          	auipc	t3,0x7
-   12ac4:	608e3e03          	ld	t3,1544(t3) # 1a0c8 <std::logic_error::logic_error(char const*)@GLIBCXX_3.4.21>
+   12ac0:	00009e17          	auipc	t3,0x9
+   12ac4:	608e3e03          	ld	t3,1544(t3) # 1c0c8 <std::logic_error::logic_error(char const*)@GLIBCXX_3.4.21>
    12ac8:	000e0367          	jalr	t1,0(t3)
    12acc:	00000013          	addi	zero,zero,0
 
 0000000000012ad0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_erase(unsigned long, unsigned long)@plt>:
-   12ad0:	00007e17          	auipc	t3,0x7
-   12ad4:	600e3e03          	ld	t3,1536(t3) # 1a0d0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_erase(unsigned long, unsigned long)@GLIBCXX_3.4.21>
+   12ad0:	00009e17          	auipc	t3,0x9
+   12ad4:	600e3e03          	ld	t3,1536(t3) # 1c0d0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_erase(unsigned long, unsigned long)@GLIBCXX_3.4.21>
    12ad8:	000e0367          	jalr	t1,0(t3)
    12adc:	00000013          	addi	zero,zero,0
 
 0000000000012ae0 <strerror@plt>:
-   12ae0:	00007e17          	auipc	t3,0x7
-   12ae4:	5f8e3e03          	ld	t3,1528(t3) # 1a0d8 <strerror@GLIBC_2.27>
+   12ae0:	00009e17          	auipc	t3,0x9
+   12ae4:	5f8e3e03          	ld	t3,1528(t3) # 1c0d8 <strerror@GLIBC_2.27>
    12ae8:	000e0367          	jalr	t1,0(t3)
    12aec:	00000013          	addi	zero,zero,0
 
 0000000000012af0 <std::runtime_error::runtime_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>:
-   12af0:	00007e17          	auipc	t3,0x7
-   12af4:	5f0e3e03          	ld	t3,1520(t3) # 1a0e0 <std::runtime_error::runtime_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@GLIBCXX_3.4.21>
+   12af0:	00009e17          	auipc	t3,0x9
+   12af4:	5f0e3e03          	ld	t3,1520(t3) # 1c0e0 <std::runtime_error::runtime_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@GLIBCXX_3.4.21>
    12af8:	000e0367          	jalr	t1,0(t3)
    12afc:	00000013          	addi	zero,zero,0
 
 0000000000012b00 <memcpy@plt>:
-   12b00:	00007e17          	auipc	t3,0x7
-   12b04:	5e8e3e03          	ld	t3,1512(t3) # 1a0e8 <memcpy@GLIBC_2.27>
+   12b00:	00009e17          	auipc	t3,0x9
+   12b04:	5e8e3e03          	ld	t3,1512(t3) # 1c0e8 <memcpy@GLIBC_2.27>
    12b08:	000e0367          	jalr	t1,0(t3)
    12b0c:	00000013          	addi	zero,zero,0
 
 0000000000012b10 <std::runtime_error::what() const@plt>:
-   12b10:	00007e17          	auipc	t3,0x7
-   12b14:	5e0e3e03          	ld	t3,1504(t3) # 1a0f0 <std::runtime_error::what() const@GLIBCXX_3.4>
+   12b10:	00009e17          	auipc	t3,0x9
+   12b14:	5e0e3e03          	ld	t3,1504(t3) # 1c0f0 <std::runtime_error::what() const@GLIBCXX_3.4>
    12b18:	000e0367          	jalr	t1,0(t3)
    12b1c:	00000013          	addi	zero,zero,0
 
 0000000000012b20 <std::logic_error::what() const@plt>:
-   12b20:	00007e17          	auipc	t3,0x7
-   12b24:	5d8e3e03          	ld	t3,1496(t3) # 1a0f8 <std::logic_error::what() const@GLIBCXX_3.4>
+   12b20:	00009e17          	auipc	t3,0x9
+   12b24:	5d8e3e03          	ld	t3,1496(t3) # 1c0f8 <std::logic_error::what() const@GLIBCXX_3.4>
    12b28:	000e0367          	jalr	t1,0(t3)
    12b2c:	00000013          	addi	zero,zero,0
 
 0000000000012b30 <std::__throw_out_of_range_fmt(char const*, ...)@plt>:
-   12b30:	00007e17          	auipc	t3,0x7
-   12b34:	5d0e3e03          	ld	t3,1488(t3) # 1a100 <std::__throw_out_of_range_fmt(char const*, ...)@GLIBCXX_3.4.20>
+   12b30:	00009e17          	auipc	t3,0x9
+   12b34:	5d0e3e03          	ld	t3,1488(t3) # 1c100 <std::__throw_out_of_range_fmt(char const*, ...)@GLIBCXX_3.4.20>
    12b38:	000e0367          	jalr	t1,0(t3)
    12b3c:	00000013          	addi	zero,zero,0
 
 0000000000012b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>:
-   12b40:	00007e17          	auipc	t3,0x7
-   12b44:	5c8e3e03          	ld	t3,1480(t3) # 1a108 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@GLIBCXX_3.4.21>
+   12b40:	00009e17          	auipc	t3,0x9
+   12b44:	5c8e3e03          	ld	t3,1480(t3) # 1c108 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@GLIBCXX_3.4.21>
    12b48:	000e0367          	jalr	t1,0(t3)
    12b4c:	00000013          	addi	zero,zero,0
 
 0000000000012b50 <lseek@plt>:
-   12b50:	00007e17          	auipc	t3,0x7
-   12b54:	5c0e3e03          	ld	t3,1472(t3) # 1a110 <lseek@GLIBC_2.27>
+   12b50:	00009e17          	auipc	t3,0x9
+   12b54:	5c0e3e03          	ld	t3,1472(t3) # 1c110 <lseek@GLIBC_2.27>
    12b58:	000e0367          	jalr	t1,0(t3)
    12b5c:	00000013          	addi	zero,zero,0
 
 0000000000012b60 <__gxx_personality_v0@plt>:
-   12b60:	00007e17          	auipc	t3,0x7
-   12b64:	5b8e3e03          	ld	t3,1464(t3) # 1a118 <__gxx_personality_v0@CXXABI_1.3>
+   12b60:	00009e17          	auipc	t3,0x9
+   12b64:	5b8e3e03          	ld	t3,1464(t3) # 1c118 <__gxx_personality_v0@CXXABI_1.3>
    12b68:	000e0367          	jalr	t1,0(t3)
    12b6c:	00000013          	addi	zero,zero,0
 
 0000000000012b70 <strncmp@plt>:
-   12b70:	00007e17          	auipc	t3,0x7
-   12b74:	5b0e3e03          	ld	t3,1456(t3) # 1a120 <strncmp@GLIBC_2.27>
+   12b70:	00009e17          	auipc	t3,0x9
+   12b74:	5b0e3e03          	ld	t3,1456(t3) # 1c120 <strncmp@GLIBC_2.27>
    12b78:	000e0367          	jalr	t1,0(t3)
    12b7c:	00000013          	addi	zero,zero,0
 
 0000000000012b80 <__cxa_throw@plt>:
-   12b80:	00007e17          	auipc	t3,0x7
-   12b84:	5a8e3e03          	ld	t3,1448(t3) # 1a128 <__cxa_throw@CXXABI_1.3>
+   12b80:	00009e17          	auipc	t3,0x9
+   12b84:	5a8e3e03          	ld	t3,1448(t3) # 1c128 <__cxa_throw@CXXABI_1.3>
    12b88:	000e0367          	jalr	t1,0(t3)
    12b8c:	00000013          	addi	zero,zero,0
 
 0000000000012b90 <std::range_error::range_error(char const*)@plt>:
-   12b90:	00007e17          	auipc	t3,0x7
-   12b94:	5a0e3e03          	ld	t3,1440(t3) # 1a130 <std::range_error::range_error(char const*)@GLIBCXX_3.4.21>
+   12b90:	00009e17          	auipc	t3,0x9
+   12b94:	5a0e3e03          	ld	t3,1440(t3) # 1c130 <std::range_error::range_error(char const*)@GLIBCXX_3.4.21>
    12b98:	000e0367          	jalr	t1,0(t3)
    12b9c:	00000013          	addi	zero,zero,0
 
 0000000000012ba0 <fprintf@plt>:
-   12ba0:	00007e17          	auipc	t3,0x7
-   12ba4:	598e3e03          	ld	t3,1432(t3) # 1a138 <fprintf@GLIBC_2.27>
+   12ba0:	00009e17          	auipc	t3,0x9
+   12ba4:	598e3e03          	ld	t3,1432(t3) # 1c138 <fprintf@GLIBC_2.27>
    12ba8:	000e0367          	jalr	t1,0(t3)
    12bac:	00000013          	addi	zero,zero,0
 
 0000000000012bb0 <_Unwind_Resume@plt>:
-   12bb0:	00007e17          	auipc	t3,0x7
-   12bb4:	590e3e03          	ld	t3,1424(t3) # 1a140 <_Unwind_Resume@GCC_3.0>
+   12bb0:	00009e17          	auipc	t3,0x9
+   12bb4:	590e3e03          	ld	t3,1424(t3) # 1c140 <_Unwind_Resume@GCC_3.0>
    12bb8:	000e0367          	jalr	t1,0(t3)
    12bbc:	00000013          	addi	zero,zero,0
 
 0000000000012bc0 <std::logic_error::~logic_error()@plt>:
-   12bc0:	00007e17          	auipc	t3,0x7
-   12bc4:	588e3e03          	ld	t3,1416(t3) # 1a148 <std::logic_error::~logic_error()@GLIBCXX_3.4>
+   12bc0:	00009e17          	auipc	t3,0x9
+   12bc4:	588e3e03          	ld	t3,1416(t3) # 1c148 <std::logic_error::~logic_error()@GLIBCXX_3.4>
    12bc8:	000e0367          	jalr	t1,0(t3)
    12bcc:	00000013          	addi	zero,zero,0
 
 0000000000012bd0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)@plt>:
-   12bd0:	00007e17          	auipc	t3,0x7
-   12bd4:	580e3e03          	ld	t3,1408(t3) # 1a150 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)@GLIBCXX_3.4.21>
+   12bd0:	00009e17          	auipc	t3,0x9
+   12bd4:	580e3e03          	ld	t3,1408(t3) # 1c150 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)@GLIBCXX_3.4.21>
    12bd8:	000e0367          	jalr	t1,0(t3)
    12bdc:	00000013          	addi	zero,zero,0
 
 0000000000012be0 <printf@plt>:
-   12be0:	00007e17          	auipc	t3,0x7
-   12be4:	578e3e03          	ld	t3,1400(t3) # 1a158 <printf@GLIBC_2.27>
+   12be0:	00009e17          	auipc	t3,0x9
+   12be4:	578e3e03          	ld	t3,1400(t3) # 1c158 <printf@GLIBC_2.27>
    12be8:	000e0367          	jalr	t1,0(t3)
    12bec:	00000013          	addi	zero,zero,0
 
 0000000000012bf0 <std::runtime_error::runtime_error(char const*)@plt>:
-   12bf0:	00007e17          	auipc	t3,0x7
-   12bf4:	570e3e03          	ld	t3,1392(t3) # 1a160 <std::runtime_error::runtime_error(char const*)@GLIBCXX_3.4.21>
+   12bf0:	00009e17          	auipc	t3,0x9
+   12bf4:	570e3e03          	ld	t3,1392(t3) # 1c160 <std::runtime_error::runtime_error(char const*)@GLIBCXX_3.4.21>
    12bf8:	000e0367          	jalr	t1,0(t3)
    12bfc:	00000013          	addi	zero,zero,0
 
 0000000000012c00 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*)@plt>:
-   12c00:	00007e17          	auipc	t3,0x7
-   12c04:	568e3e03          	ld	t3,1384(t3) # 1a168 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*)@GLIBCXX_3.4.21>
+   12c00:	00009e17          	auipc	t3,0x9
+   12c04:	568e3e03          	ld	t3,1384(t3) # 1c168 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*)@GLIBCXX_3.4.21>
    12c08:	000e0367          	jalr	t1,0(t3)
    12c0c:	00000013          	addi	zero,zero,0
 
 0000000000012c10 <std::range_error::range_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>:
-   12c10:	00007e17          	auipc	t3,0x7
-   12c14:	560e3e03          	ld	t3,1376(t3) # 1a170 <std::range_error::range_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@GLIBCXX_3.4.21>
+   12c10:	00009e17          	auipc	t3,0x9
+   12c14:	560e3e03          	ld	t3,1376(t3) # 1c170 <std::range_error::range_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@GLIBCXX_3.4.21>
    12c18:	000e0367          	jalr	t1,0(t3)
    12c1c:	00000013          	addi	zero,zero,0
 
 0000000000012c20 <__errno_location@plt>:
-   12c20:	00007e17          	auipc	t3,0x7
-   12c24:	558e3e03          	ld	t3,1368(t3) # 1a178 <__errno_location@GLIBC_2.27>
+   12c20:	00009e17          	auipc	t3,0x9
+   12c24:	558e3e03          	ld	t3,1368(t3) # 1c178 <__errno_location@GLIBC_2.27>
    12c28:	000e0367          	jalr	t1,0(t3)
    12c2c:	00000013          	addi	zero,zero,0
 
 0000000000012c30 <close@plt>:
-   12c30:	00007e17          	auipc	t3,0x7
-   12c34:	550e3e03          	ld	t3,1360(t3) # 1a180 <close@GLIBC_2.27>
+   12c30:	00009e17          	auipc	t3,0x9
+   12c34:	550e3e03          	ld	t3,1360(t3) # 1c180 <close@GLIBC_2.27>
    12c38:	000e0367          	jalr	t1,0(t3)
    12c3c:	00000013          	addi	zero,zero,0
 
@@ -313,11 +313,11 @@ ENTRY (ENTRY_POINT)
 	andi  sp, sp, ALMASK /* Align stack. */
    12c52:	ff017113          	andi	sp,sp,-16
 	lla   a3, __libc_csu_init
-   12c56:	00004697          	auipc	a3,0x4
-   12c5a:	db268693          	addi	a3,a3,-590 # 16a08 <__libc_csu_init>
+   12c56:	00005697          	auipc	a3,0x5
+   12c5a:	78668693          	addi	a3,a3,1926 # 183dc <__libc_csu_init>
 	lla   a4, __libc_csu_fini
-   12c5e:	00004717          	auipc	a4,0x4
-   12c62:	e0270713          	addi	a4,a4,-510 # 16a60 <__libc_csu_fini>
+   12c5e:	00005717          	auipc	a4,0x5
+   12c62:	7d670713          	addi	a4,a4,2006 # 18434 <__libc_csu_fini>
 	mv    a6, sp  /* stack_end.  */
    12c66:	880a                	c.mv	a6,sp
 
@@ -333,18 +333,18 @@ load_gp:
 .option push
 .option norelax
 	lla   gp, __global_pointer$
-   12c6e:	00008197          	auipc	gp,0x8
-   12c72:	b9218193          	addi	gp,gp,-1134 # 1a800 <__global_pointer$>
+   12c6e:	0000a197          	auipc	gp,0xa
+   12c72:	b9218193          	addi	gp,gp,-1134 # 1c800 <__global_pointer$>
 .option pop
 	ret
    12c76:	8082                	c.jr	ra
 	...
 
 0000000000012c7a <deregister_tm_clones>:
-   12c7a:	6569                	c.lui	a0,0x1a
-   12c7c:	6769                	c.lui	a4,0x1a
-   12c7e:	00050793          	addi	a5,a0,0 # 1a000 <__TMC_END__>
-   12c82:	00070713          	addi	a4,a4,0 # 1a000 <__TMC_END__>
+   12c7a:	6571                	c.lui	a0,0x1c
+   12c7c:	6771                	c.lui	a4,0x1c
+   12c7e:	00050793          	addi	a5,a0,0 # 1c000 <__TMC_END__>
+   12c82:	00070713          	addi	a4,a4,0 # 1c000 <__TMC_END__>
    12c86:	00f70863          	beq	a4,a5,12c96 <deregister_tm_clones+0x1c>
    12c8a:	00000793          	addi	a5,zero,0
    12c8e:	c781                	c.beqz	a5,12c96 <deregister_tm_clones+0x1c>
@@ -353,10 +353,10 @@ load_gp:
    12c96:	8082                	c.jr	ra
 
 0000000000012c98 <register_tm_clones>:
-   12c98:	6569                	c.lui	a0,0x1a
-   12c9a:	00050793          	addi	a5,a0,0 # 1a000 <__TMC_END__>
-   12c9e:	6769                	c.lui	a4,0x1a
-   12ca0:	00070593          	addi	a1,a4,0 # 1a000 <__TMC_END__>
+   12c98:	6571                	c.lui	a0,0x1c
+   12c9a:	00050793          	addi	a5,a0,0 # 1c000 <__TMC_END__>
+   12c9e:	6771                	c.lui	a4,0x1c
+   12ca0:	00070593          	addi	a1,a4,0 # 1c000 <__TMC_END__>
    12ca4:	8d9d                	c.sub	a1,a5
    12ca6:	4035d793          	srai	a5,a1,0x3
    12caa:	91fd                	c.srli	a1,0x3f
@@ -372,12 +372,12 @@ load_gp:
 0000000000012cc0 <__do_global_dtors_aux>:
    12cc0:	1141                	c.addi	sp,-16
    12cc2:	e022                	c.sdsp	s0,0(sp)
-   12cc4:	ab91c783          	lbu	a5,-1351(gp) # 1a2b9 <completed.0>
+   12cc4:	ab91c783          	lbu	a5,-1351(gp) # 1c2b9 <completed.0>
    12cc8:	e406                	c.sdsp	ra,8(sp)
    12cca:	e791                	c.bnez	a5,12cd6 <__do_global_dtors_aux+0x16>
    12ccc:	fafff0ef          	jal	ra,12c7a <deregister_tm_clones>
    12cd0:	4785                	c.li	a5,1
-   12cd2:	aaf18ca3          	sb	a5,-1351(gp) # 1a2b9 <completed.0>
+   12cd2:	aaf18ca3          	sb	a5,-1351(gp) # 1c2b9 <completed.0>
    12cd6:	60a2                	c.ldsp	ra,8(sp)
    12cd8:	6402                	c.ldsp	s0,0(sp)
    12cda:	0141                	c.addi	sp,16
@@ -393,7959 +393,7959 @@ load_gp:
 #include <sys/types.h>
 
 int main(int argc, char **argv) {
-   12ce0:	7131                	c.addi16sp	sp,-192
-   12ce2:	fd06                	c.sdsp	ra,184(sp)
-   12ce4:	f922                	c.sdsp	s0,176(sp)
-   12ce6:	f526                	c.sdsp	s1,168(sp)
-   12ce8:	f14a                	c.sdsp	s2,160(sp)
-   12cea:	ed4e                	c.sdsp	s3,152(sp)
-   12cec:	e952                	c.sdsp	s4,144(sp)
-   12cee:	e556                	c.sdsp	s5,136(sp)
-   12cf0:	e15a                	c.sdsp	s6,128(sp)
-   12cf2:	fcde                	c.sdsp	s7,120(sp)
-   12cf4:	f8e2                	c.sdsp	s8,112(sp)
-   12cf6:	f4e6                	c.sdsp	s9,104(sp)
-   12cf8:	f0ea                	c.sdsp	s10,96(sp)
-   12cfa:	842e                	c.mv	s0,a1
+   12ce0:	f4010113          	addi	sp,sp,-192
+   12ce4:	0a113c23          	sd	ra,184(sp)
+   12ce8:	0a813823          	sd	s0,176(sp)
+   12cec:	0a913423          	sd	s1,168(sp)
+   12cf0:	0b213023          	sd	s2,160(sp)
+   12cf4:	09313c23          	sd	s3,152(sp)
+   12cf8:	09413823          	sd	s4,144(sp)
+   12cfc:	09513423          	sd	s5,136(sp)
+   12d00:	09613023          	sd	s6,128(sp)
+   12d04:	07713c23          	sd	s7,120(sp)
+   12d08:	07813823          	sd	s8,112(sp)
+   12d0c:	07913423          	sd	s9,104(sp)
+   12d10:	07a13023          	sd	s10,96(sp)
+   12d14:	00058413          	addi	s0,a1,0
   if (argc != 2) {
-   12cfc:	4789                	c.li	a5,2
-   12cfe:	02f51163          	bne	a0,a5,12d20 <main+0x40>
+   12d18:	00200793          	addi	a5,zero,2
+   12d1c:	02f51863          	bne	a0,a5,12d4c <main+0x6c>
     fprintf(stderr, "usage: %s elf-file\n", argv[0]);
     return 2;
   }
 
   int fd = open(argv[1], O_RDONLY);
-   12d02:	4581                	c.li	a1,0
-   12d04:	6408                	c.ld	a0,8(s0)
-   12d06:	d1bff0ef          	jal	ra,12a20 <open@plt>
-   12d0a:	85aa                	c.mv	a1,a0
+   12d20:	00000593          	addi	a1,zero,0
+   12d24:	00843503          	ld	a0,8(s0)
+   12d28:	cf9ff0ef          	jal	ra,12a20 <open@plt>
+   12d2c:	00050593          	addi	a1,a0,0
   if (fd < 0) {
-   12d0c:	02054463          	blt	a0,zero,12d34 <main+0x54>
+   12d30:	02054c63          	blt	a0,zero,12d68 <main+0x88>
     fprintf(stderr, "%s: %s\n", argv[1], strerror(errno));
     return 1;
   }
 
   elf::elf f(elf::create_mmap_loader(fd));
-   12d10:	0888                	c.addi4spn	a0,sp,80
-   12d12:	1cf020ef          	jal	ra,156e0 <elf::create_mmap_loader(int)>
-   12d16:	088c                	c.addi4spn	a1,sp,80
-   12d18:	0088                	c.addi4spn	a0,sp,64
-   12d1a:	2e2010ef          	jal	ra,13ffc <elf::elf::elf(std::shared_ptr<elf::loader> const&)>
-   12d1e:	a82d                	c.j	12d58 <main+0x78>
+   12d34:	05010513          	addi	a0,sp,80
+   12d38:	3b9030ef          	jal	ra,168f0 <elf::create_mmap_loader(int)>
+   12d3c:	05010593          	addi	a1,sp,80
+   12d40:	04010513          	addi	a0,sp,64
+   12d44:	3b5010ef          	jal	ra,148f8 <elf::elf::elf(std::shared_ptr<elf::loader> const&)>
+   12d48:	0540006f          	jal	zero,12d9c <main+0xbc>
     fprintf(stderr, "usage: %s elf-file\n", argv[0]);
-   12d20:	6190                	c.ld	a2,0(a1)
-   12d22:	65dd                	c.lui	a1,0x17
-   12d24:	a6858593          	addi	a1,a1,-1432 # 16a68 <__libc_csu_fini+0x8>
-   12d28:	ab01b503          	ld	a0,-1360(gp) # 1a2b0 <stderr@GLIBC_2.27>
-   12d2c:	e75ff0ef          	jal	ra,12ba0 <fprintf@plt>
+   12d4c:	0005b603          	ld	a2,0(a1)
+   12d50:	000185b7          	lui	a1,0x18
+   12d54:	43858593          	addi	a1,a1,1080 # 18438 <__libc_csu_fini+0x4>
+   12d58:	ab01b503          	ld	a0,-1360(gp) # 1c2b0 <stderr@GLIBC_2.27>
+   12d5c:	e45ff0ef          	jal	ra,12ba0 <fprintf@plt>
     return 2;
-   12d30:	4509                	c.li	a0,2
-   12d32:	a289                	c.j	12e74 <main+0x194>
+   12d60:	00200513          	addi	a0,zero,2
+   12d64:	1c00006f          	jal	zero,12f24 <main+0x244>
     fprintf(stderr, "%s: %s\n", argv[1], strerror(errno));
-   12d34:	ab01b483          	ld	s1,-1360(gp) # 1a2b0 <stderr@GLIBC_2.27>
-   12d38:	6400                	c.ld	s0,8(s0)
-   12d3a:	ee7ff0ef          	jal	ra,12c20 <__errno_location@plt>
-   12d3e:	4108                	c.lw	a0,0(a0)
-   12d40:	da1ff0ef          	jal	ra,12ae0 <strerror@plt>
-   12d44:	86aa                	c.mv	a3,a0
-   12d46:	8622                	c.mv	a2,s0
-   12d48:	65dd                	c.lui	a1,0x17
-   12d4a:	a8058593          	addi	a1,a1,-1408 # 16a80 <__libc_csu_fini+0x20>
-   12d4e:	8526                	c.mv	a0,s1
-   12d50:	e51ff0ef          	jal	ra,12ba0 <fprintf@plt>
+   12d68:	ab01b483          	ld	s1,-1360(gp) # 1c2b0 <stderr@GLIBC_2.27>
+   12d6c:	00843403          	ld	s0,8(s0)
+   12d70:	eb1ff0ef          	jal	ra,12c20 <__errno_location@plt>
+   12d74:	00052503          	lw	a0,0(a0)
+   12d78:	d69ff0ef          	jal	ra,12ae0 <strerror@plt>
+   12d7c:	00050693          	addi	a3,a0,0
+   12d80:	00040613          	addi	a2,s0,0
+   12d84:	000185b7          	lui	a1,0x18
+   12d88:	45058593          	addi	a1,a1,1104 # 18450 <__libc_csu_fini+0x1c>
+   12d8c:	00048513          	addi	a0,s1,0
+   12d90:	e11ff0ef          	jal	ra,12ba0 <fprintf@plt>
     return 1;
-   12d54:	4505                	c.li	a0,1
-   12d56:	aa39                	c.j	12e74 <main+0x194>
+   12d94:	00100513          	addi	a0,zero,1
+   12d98:	18c0006f          	jal	zero,12f24 <main+0x244>
       explicit
       __shared_count(const __weak_count<_Lp>& __r, std::nothrow_t) noexcept;
 
       ~__shared_count() noexcept
       {
 	if (_M_pi != nullptr)
-   12d58:	6566                	c.ldsp	a0,88(sp)
-   12d5a:	c119                	c.beqz	a0,12d60 <main+0x80>
+   12d9c:	05813503          	ld	a0,88(sp)
+   12da0:	00050463          	beq	a0,zero,12da8 <main+0xc8>
 	  _M_pi->_M_release();
-   12d5c:	194000ef          	jal	ra,12ef0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
+   12da4:	248000ef          	jal	ra,12fec <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
   int i = 0;
   printf("  [Nr] %-16s %-16s %-16s %s\n", "Name", "Type", "Address", "Offset");
-   12d60:	675d                	c.lui	a4,0x17
-   12d62:	a8870713          	addi	a4,a4,-1400 # 16a88 <__libc_csu_fini+0x28>
-   12d66:	66dd                	c.lui	a3,0x17
-   12d68:	a9068693          	addi	a3,a3,-1392 # 16a90 <__libc_csu_fini+0x30>
-   12d6c:	665d                	c.lui	a2,0x17
-   12d6e:	a9860613          	addi	a2,a2,-1384 # 16a98 <__libc_csu_fini+0x38>
-   12d72:	65dd                	c.lui	a1,0x17
-   12d74:	aa058593          	addi	a1,a1,-1376 # 16aa0 <__libc_csu_fini+0x40>
-   12d78:	655d                	c.lui	a0,0x17
-   12d7a:	aa850513          	addi	a0,a0,-1368 # 16aa8 <__libc_csu_fini+0x48>
-   12d7e:	e63ff0ef          	jal	ra,12be0 <printf@plt>
+   12da8:	00018737          	lui	a4,0x18
+   12dac:	45870713          	addi	a4,a4,1112 # 18458 <__libc_csu_fini+0x24>
+   12db0:	000186b7          	lui	a3,0x18
+   12db4:	46068693          	addi	a3,a3,1120 # 18460 <__libc_csu_fini+0x2c>
+   12db8:	00018637          	lui	a2,0x18
+   12dbc:	46860613          	addi	a2,a2,1128 # 18468 <__libc_csu_fini+0x34>
+   12dc0:	000185b7          	lui	a1,0x18
+   12dc4:	47058593          	addi	a1,a1,1136 # 18470 <__libc_csu_fini+0x3c>
+   12dc8:	00018537          	lui	a0,0x18
+   12dcc:	47850513          	addi	a0,a0,1144 # 18478 <__libc_csu_fini+0x44>
+   12dd0:	e11ff0ef          	jal	ra,12be0 <printf@plt>
   printf("       %-16s %-16s %-15s %5s %4s %5s\n", "Size", "EntSize", "Flags",
-   12d82:	685d                	c.lui	a6,0x17
-   12d84:	ac880813          	addi	a6,a6,-1336 # 16ac8 <__libc_csu_fini+0x68>
-   12d88:	67dd                	c.lui	a5,0x17
-   12d8a:	ad078793          	addi	a5,a5,-1328 # 16ad0 <__libc_csu_fini+0x70>
-   12d8e:	675d                	c.lui	a4,0x17
-   12d90:	ad870713          	addi	a4,a4,-1320 # 16ad8 <__libc_csu_fini+0x78>
-   12d94:	66dd                	c.lui	a3,0x17
-   12d96:	ae068693          	addi	a3,a3,-1312 # 16ae0 <__libc_csu_fini+0x80>
-   12d9a:	665d                	c.lui	a2,0x17
-   12d9c:	ae860613          	addi	a2,a2,-1304 # 16ae8 <__libc_csu_fini+0x88>
-   12da0:	65dd                	c.lui	a1,0x17
-   12da2:	af058593          	addi	a1,a1,-1296 # 16af0 <__libc_csu_fini+0x90>
-   12da6:	655d                	c.lui	a0,0x17
-   12da8:	af850513          	addi	a0,a0,-1288 # 16af8 <__libc_csu_fini+0x98>
-   12dac:	e35ff0ef          	jal	ra,12be0 <printf@plt>
+   12dd4:	00018837          	lui	a6,0x18
+   12dd8:	49880813          	addi	a6,a6,1176 # 18498 <__libc_csu_fini+0x64>
+   12ddc:	000187b7          	lui	a5,0x18
+   12de0:	4a078793          	addi	a5,a5,1184 # 184a0 <__libc_csu_fini+0x6c>
+   12de4:	00018737          	lui	a4,0x18
+   12de8:	4a870713          	addi	a4,a4,1192 # 184a8 <__libc_csu_fini+0x74>
+   12dec:	000186b7          	lui	a3,0x18
+   12df0:	4b068693          	addi	a3,a3,1200 # 184b0 <__libc_csu_fini+0x7c>
+   12df4:	00018637          	lui	a2,0x18
+   12df8:	4b860613          	addi	a2,a2,1208 # 184b8 <__libc_csu_fini+0x84>
+   12dfc:	000185b7          	lui	a1,0x18
+   12e00:	4c058593          	addi	a1,a1,1216 # 184c0 <__libc_csu_fini+0x8c>
+   12e04:	00018537          	lui	a0,0x18
+   12e08:	4c850513          	addi	a0,a0,1224 # 184c8 <__libc_csu_fini+0x94>
+   12e0c:	dd5ff0ef          	jal	ra,12be0 <printf@plt>
          "Link", "Info", "Align");
   for (auto &sec : f.sections()) {
-   12db0:	0088                	c.addi4spn	a0,sp,64
-   12db2:	1e8000ef          	jal	ra,12f9a <elf::elf::sections() const>
+   12e10:	04010513          	addi	a0,sp,64
+   12e14:	2ec000ef          	jal	ra,13100 <elf::elf::sections() const>
       _GLIBCXX_CONSTEXPR __normal_iterator() _GLIBCXX_NOEXCEPT
       : _M_current(_Iterator()) { }
 
       explicit _GLIBCXX20_CONSTEXPR
       __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
       : _M_current(__i) { }
-   12db6:	6104                	c.ld	s1,0(a0)
-   12db8:	00853b03          	ld	s6,8(a0)
-   12dbc:	0b648763          	beq	s1,s6,12e6a <main+0x18a>
+   12e18:	00053483          	ld	s1,0(a0)
+   12e1c:	00853b03          	ld	s6,8(a0)
+   12e20:	0f648a63          	beq	s1,s6,12f14 <main+0x234>
   int i = 0;
-   12dc0:	4901                	c.li	s2,0
+   12e24:	00000913          	addi	s2,zero,0
     auto &hdr = sec.get_hdr();
     printf("  [%2d] %-16s %-16s %016" PRIx64 " %08" PRIx64 "\n", i++,
-   12dc2:	6bdd                	c.lui	s7,0x17
+   12e28:	00018bb7          	lui	s7,0x18
 
       _GLIBCXX20_CONSTEXPR
       void
       _M_dispose()
       {
 	if (!_M_is_local())
-   12dc4:	03010993          	addi	s3,sp,48
-   12dc8:	01010a13          	addi	s4,sp,16
+   12e2c:	03010993          	addi	s3,sp,48
+   12e30:	01010a13          	addi	s4,sp,16
            sec.get_name().c_str(), to_string(hdr.type).c_str(), hdr.addr,
            hdr.offset);
     printf("       %016zx %016" PRIx64 " %-15s %5s %4d %5" PRIu64 "\n",
-   12dcc:	6c5d                	c.lui	s8,0x17
-   12dce:	a849                	c.j	12e60 <main+0x180>
+   12e34:	00018c37          	lui	s8,0x18
+   12e38:	0cc0006f          	jal	zero,12f04 <main+0x224>
     auto &hdr = sec.get_hdr();
-   12dd0:	842a                	c.mv	s0,a0
+   12e3c:	00050413          	addi	s0,a0,0
     printf("  [%2d] %-16s %-16s %016" PRIx64 " %08" PRIx64 "\n", i++,
-   12dd2:	00190a9b          	addiw	s5,s2,1
+   12e40:	00190a9b          	addiw	s5,s2,1
            sec.get_name().c_str(), to_string(hdr.type).c_str(), hdr.addr,
-   12dd6:	85a6                	c.mv	a1,s1
-   12dd8:	850a                	c.mv	a0,sp
-   12dda:	7c5000ef          	jal	ra,13d9e <elf::section::get_name[abi:cxx11]() const>
+   12e44:	00048593          	addi	a1,s1,0
+   12e48:	00010513          	addi	a0,sp,0
+   12e4c:	760010ef          	jal	ra,145ac <elf::section::get_name[abi:cxx11]() const>
       { return _M_dataplus._M_p; }
-   12dde:	6d02                	c.ldsp	s10,0(sp)
-   12de0:	404c                	c.lw	a1,4(s0)
-   12de2:	1008                	c.addi4spn	a0,sp,32
-   12de4:	139030ef          	jal	ra,1671c <elf::to_string[abi:cxx11](elf::sht)>
+   12e50:	00013d03          	ld	s10,0(sp)
+   12e54:	00442583          	lw	a1,4(s0)
+   12e58:	02010513          	addi	a0,sp,32
+   12e5c:	1a4050ef          	jal	ra,18000 <elf::to_string[abi:cxx11](elf::sht)>
     printf("  [%2d] %-16s %-16s %016" PRIx64 " %08" PRIx64 "\n", i++,
-   12de8:	6c1c                	c.ld	a5,24(s0)
-   12dea:	6818                	c.ld	a4,16(s0)
-   12dec:	7682                	c.ldsp	a3,32(sp)
-   12dee:	866a                	c.mv	a2,s10
-   12df0:	85ca                	c.mv	a1,s2
-   12df2:	b20b8513          	addi	a0,s7,-1248 # 16b20 <__libc_csu_fini+0xc0>
-   12df6:	debff0ef          	jal	ra,12be0 <printf@plt>
-   12dfa:	7502                	c.ldsp	a0,32(sp)
+   12e60:	01843783          	ld	a5,24(s0)
+   12e64:	01043703          	ld	a4,16(s0)
+   12e68:	02013683          	ld	a3,32(sp)
+   12e6c:	000d0613          	addi	a2,s10,0
+   12e70:	00090593          	addi	a1,s2,0
+   12e74:	4f0b8513          	addi	a0,s7,1264 # 184f0 <__libc_csu_fini+0xbc>
+   12e78:	d69ff0ef          	jal	ra,12be0 <printf@plt>
+   12e7c:	02013503          	ld	a0,32(sp)
 	if (!_M_is_local())
-   12dfc:	01350463          	beq	a0,s3,12e04 <main+0x124>
+   12e80:	01350463          	beq	a0,s3,12e88 <main+0x1a8>
 	    _GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n),
 				     std::align_val_t(alignof(_Tp)));
 	    return;
 	  }
 #endif
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   12e00:	c71ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   12e84:	bedff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   12e04:	6502                	c.ldsp	a0,0(sp)
+   12e88:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   12e06:	01450463          	beq	a0,s4,12e0e <main+0x12e>
-   12e0a:	c67ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   12e8c:	01450463          	beq	a0,s4,12e94 <main+0x1b4>
+   12e90:	be1ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
     printf("       %016zx %016" PRIx64 " %-15s %5s %4d %5" PRIu64 "\n",
-   12e0e:	8566                	c.mv	a0,s9
-   12e10:	3d6000ef          	jal	ra,131e6 <elf::section::size() const>
-   12e14:	892a                	c.mv	s2,a0
+   12e94:	000c8513          	addi	a0,s9,0
+   12e98:	604000ef          	jal	ra,1349c <elf::section::size() const>
+   12e9c:	00050913          	addi	s2,a0,0
            sec.size(), hdr.entsize, to_string(hdr.flags).c_str(),
-   12e16:	03843c83          	ld	s9,56(s0)
-   12e1a:	640c                	c.ld	a1,8(s0)
-   12e1c:	850a                	c.mv	a0,sp
-   12e1e:	46f020ef          	jal	ra,15a8c <elf::to_string[abi:cxx11](elf::shf)>
+   12ea0:	03843c83          	ld	s9,56(s0)
+   12ea4:	00843583          	ld	a1,8(s0)
+   12ea8:	00010513          	addi	a0,sp,0
+   12eac:	7b1030ef          	jal	ra,16e5c <elf::to_string[abi:cxx11](elf::shf)>
       { return _M_dataplus._M_p; }
-   12e22:	6d02                	c.ldsp	s10,0(sp)
+   12eb0:	00013d03          	ld	s10,0(sp)
            to_string(hdr.link).c_str(), (int)hdr.info, hdr.addralign);
-   12e24:	02845583          	lhu	a1,40(s0)
-   12e28:	1008                	c.addi4spn	a0,sp,32
-   12e2a:	028010ef          	jal	ra,13e52 <elf::enums::to_string[abi:cxx11](elf::enums::shn)>
+   12eb4:	02845583          	lhu	a1,40(s0)
+   12eb8:	02010513          	addi	a0,sp,32
+   12ebc:	009010ef          	jal	ra,146c4 <elf::enums::to_string[abi:cxx11](elf::enums::shn)>
     printf("       %016zx %016" PRIx64 " %-15s %5s %4d %5" PRIu64 "\n",
-   12e2e:	03043803          	ld	a6,48(s0)
-   12e32:	545c                	c.lw	a5,44(s0)
-   12e34:	7702                	c.ldsp	a4,32(sp)
-   12e36:	86ea                	c.mv	a3,s10
-   12e38:	8666                	c.mv	a2,s9
-   12e3a:	85ca                	c.mv	a1,s2
-   12e3c:	b48c0513          	addi	a0,s8,-1208 # 16b48 <__libc_csu_fini+0xe8>
-   12e40:	da1ff0ef          	jal	ra,12be0 <printf@plt>
-   12e44:	7502                	c.ldsp	a0,32(sp)
+   12ec0:	03043803          	ld	a6,48(s0)
+   12ec4:	02c42783          	lw	a5,44(s0)
+   12ec8:	02013703          	ld	a4,32(sp)
+   12ecc:	000d0693          	addi	a3,s10,0
+   12ed0:	000c8613          	addi	a2,s9,0
+   12ed4:	00090593          	addi	a1,s2,0
+   12ed8:	518c0513          	addi	a0,s8,1304 # 18518 <__libc_csu_fini+0xe4>
+   12edc:	d05ff0ef          	jal	ra,12be0 <printf@plt>
+   12ee0:	02013503          	ld	a0,32(sp)
 	if (!_M_is_local())
-   12e46:	01350463          	beq	a0,s3,12e4e <main+0x16e>
-   12e4a:	c27ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   12ee4:	01350463          	beq	a0,s3,12eec <main+0x20c>
+   12ee8:	b89ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   12e4e:	6502                	c.ldsp	a0,0(sp)
+   12eec:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   12e50:	01450463          	beq	a0,s4,12e58 <main+0x178>
-   12e54:	c1dff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   12ef0:	01450463          	beq	a0,s4,12ef8 <main+0x218>
+   12ef4:	b7dff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
   for (auto &sec : f.sections()) {
-   12e58:	04c1                	c.addi	s1,16
-   12e5a:	009b0863          	beq	s6,s1,12e6a <main+0x18a>
+   12ef8:	01048493          	addi	s1,s1,16
+   12efc:	009b0c63          	beq	s6,s1,12f14 <main+0x234>
     printf("  [%2d] %-16s %-16s %016" PRIx64 " %08" PRIx64 "\n", i++,
-   12e5e:	8956                	c.mv	s2,s5
-   12e60:	8ca6                	c.mv	s9,s1
+   12f00:	000a8913          	addi	s2,s5,0
+   12f04:	00048c93          	addi	s9,s1,0
     auto &hdr = sec.get_hdr();
-   12e62:	8526                	c.mv	a0,s1
-   12e64:	2bc000ef          	jal	ra,13120 <elf::section::get_hdr() const>
-   12e68:	b7a5                	c.j	12dd0 <main+0xf0>
+   12f08:	00048513          	addi	a0,s1,0
+   12f0c:	454000ef          	jal	ra,13360 <elf::section::get_hdr() const>
+   12f10:	f2dff06f          	jal	zero,12e3c <main+0x15c>
 	if (_M_pi != nullptr)
-   12e6a:	6526                	c.ldsp	a0,72(sp)
-   12e6c:	c119                	c.beqz	a0,12e72 <main+0x192>
+   12f14:	04813503          	ld	a0,72(sp)
+   12f18:	00050463          	beq	a0,zero,12f20 <main+0x240>
 	  _M_pi->_M_release();
-   12e6e:	082000ef          	jal	ra,12ef0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
+   12f1c:	0d0000ef          	jal	ra,12fec <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
   }
 
   return 0;
-   12e72:	4501                	c.li	a0,0
+   12f20:	00000513          	addi	a0,zero,0
 }
-   12e74:	70ea                	c.ldsp	ra,184(sp)
-   12e76:	744a                	c.ldsp	s0,176(sp)
-   12e78:	74aa                	c.ldsp	s1,168(sp)
-   12e7a:	790a                	c.ldsp	s2,160(sp)
-   12e7c:	69ea                	c.ldsp	s3,152(sp)
-   12e7e:	6a4a                	c.ldsp	s4,144(sp)
-   12e80:	6aaa                	c.ldsp	s5,136(sp)
-   12e82:	6b0a                	c.ldsp	s6,128(sp)
-   12e84:	7be6                	c.ldsp	s7,120(sp)
-   12e86:	7c46                	c.ldsp	s8,112(sp)
-   12e88:	7ca6                	c.ldsp	s9,104(sp)
-   12e8a:	7d06                	c.ldsp	s10,96(sp)
-   12e8c:	6129                	c.addi16sp	sp,192
-   12e8e:	8082                	c.jr	ra
+   12f24:	0b813083          	ld	ra,184(sp)
+   12f28:	0b013403          	ld	s0,176(sp)
+   12f2c:	0a813483          	ld	s1,168(sp)
+   12f30:	0a013903          	ld	s2,160(sp)
+   12f34:	09813983          	ld	s3,152(sp)
+   12f38:	09013a03          	ld	s4,144(sp)
+   12f3c:	08813a83          	ld	s5,136(sp)
+   12f40:	08013b03          	ld	s6,128(sp)
+   12f44:	07813b83          	ld	s7,120(sp)
+   12f48:	07013c03          	ld	s8,112(sp)
+   12f4c:	06813c83          	ld	s9,104(sp)
+   12f50:	06013d03          	ld	s10,96(sp)
+   12f54:	0c010113          	addi	sp,sp,192
+   12f58:	00008067          	jalr	zero,0(ra)
 	if (_M_pi != nullptr)
-   12e90:	842a                	c.mv	s0,a0
-   12e92:	6566                	c.ldsp	a0,88(sp)
-   12e94:	c119                	c.beqz	a0,12e9a <main+0x1ba>
+   12f5c:	00050413          	addi	s0,a0,0
+   12f60:	05813503          	ld	a0,88(sp)
+   12f64:	00050463          	beq	a0,zero,12f6c <main+0x28c>
 	  _M_pi->_M_release();
-   12e96:	05a000ef          	jal	ra,12ef0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
-   12e9a:	8522                	c.mv	a0,s0
-   12e9c:	d15ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   12f68:	084000ef          	jal	ra,12fec <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
+   12f6c:	00040513          	addi	a0,s0,0
+   12f70:	c41ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
       { return _M_dataplus._M_p; }
-   12ea0:	842a                	c.mv	s0,a0
-   12ea2:	7502                	c.ldsp	a0,32(sp)
+   12f74:	00050413          	addi	s0,a0,0
+   12f78:	02013503          	ld	a0,32(sp)
 	if (!_M_is_local())
-   12ea4:	181c                	c.addi4spn	a5,sp,48
-   12ea6:	00f50463          	beq	a0,a5,12eae <main+0x1ce>
-   12eaa:	bc7ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   12f7c:	03010793          	addi	a5,sp,48
+   12f80:	00f50463          	beq	a0,a5,12f88 <main+0x2a8>
+   12f84:	aedff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   12eae:	6502                	c.ldsp	a0,0(sp)
+   12f88:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   12eb0:	081c                	c.addi4spn	a5,sp,16
-   12eb2:	00f50463          	beq	a0,a5,12eba <main+0x1da>
-   12eb6:	bbbff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   12f8c:	01010793          	addi	a5,sp,16
+   12f90:	00f50463          	beq	a0,a5,12f98 <main+0x2b8>
+   12f94:	addff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
 	if (_M_pi != nullptr)
-   12eba:	6526                	c.ldsp	a0,72(sp)
-   12ebc:	c119                	c.beqz	a0,12ec2 <main+0x1e2>
+   12f98:	04813503          	ld	a0,72(sp)
+   12f9c:	00050463          	beq	a0,zero,12fa4 <main+0x2c4>
 	  _M_pi->_M_release();
-   12ebe:	032000ef          	jal	ra,12ef0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
-   12ec2:	8522                	c.mv	a0,s0
-   12ec4:	cedff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   12fa0:	04c000ef          	jal	ra,12fec <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
+   12fa4:	00040513          	addi	a0,s0,0
+   12fa8:	c09ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
       { return _M_dataplus._M_p; }
-   12ec8:	842a                	c.mv	s0,a0
-   12eca:	b7d5                	c.j	12eae <main+0x1ce>
-   12ecc:	842a                	c.mv	s0,a0
-   12ece:	7502                	c.ldsp	a0,32(sp)
+   12fac:	00050413          	addi	s0,a0,0
+   12fb0:	fd9ff06f          	jal	zero,12f88 <main+0x2a8>
+   12fb4:	00050413          	addi	s0,a0,0
+   12fb8:	02013503          	ld	a0,32(sp)
 	if (!_M_is_local())
-   12ed0:	181c                	c.addi4spn	a5,sp,48
-   12ed2:	00f50463          	beq	a0,a5,12eda <main+0x1fa>
-   12ed6:	b9bff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   12fbc:	03010793          	addi	a5,sp,48
+   12fc0:	00f50463          	beq	a0,a5,12fc8 <main+0x2e8>
+   12fc4:	aadff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   12eda:	6502                	c.ldsp	a0,0(sp)
+   12fc8:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   12edc:	081c                	c.addi4spn	a5,sp,16
-   12ede:	fcf50ee3          	beq	a0,a5,12eba <main+0x1da>
-   12ee2:	b8fff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   12fcc:	01010793          	addi	a5,sp,16
+   12fd0:	fcf504e3          	beq	a0,a5,12f98 <main+0x2b8>
+   12fd4:	a9dff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       }
 
       _GLIBCXX20_CONSTEXPR
       void
       _M_destroy(size_type __size) throw()
       { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
-   12ee6:	bfd1                	c.j	12eba <main+0x1da>
+   12fd8:	fc1ff06f          	jal	zero,12f98 <main+0x2b8>
       { return _M_dataplus._M_p; }
-   12ee8:	842a                	c.mv	s0,a0
-   12eea:	bfc5                	c.j	12eda <main+0x1fa>
+   12fdc:	00050413          	addi	s0,a0,0
+   12fe0:	fe9ff06f          	jal	zero,12fc8 <main+0x2e8>
 	if (_M_pi != nullptr)
-   12eec:	842a                	c.mv	s0,a0
-   12eee:	b7f1                	c.j	12eba <main+0x1da>
+   12fe4:	00050413          	addi	s0,a0,0
+   12fe8:	fb1ff06f          	jal	zero,12f98 <main+0x2b8>
 
-0000000000012ef0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>:
+0000000000012fec <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>:
     {
-   12ef0:	1141                	c.addi	sp,-16
-   12ef2:	e406                	c.sdsp	ra,8(sp)
-   12ef4:	e022                	c.sdsp	s0,0(sp)
-   12ef6:	842a                	c.mv	s0,a0
+   12fec:	ff010113          	addi	sp,sp,-16
+   12ff0:	00113423          	sd	ra,8(sp)
+   12ff4:	00813023          	sd	s0,0(sp)
+   12ff8:	00050413          	addi	s0,a0,0
 
   inline _Atomic_word
   __attribute__ ((__always_inline__))
   __exchange_and_add_dispatch(_Atomic_word* __mem, int __val)
   {
     if (__is_single_threaded())
-   12ef8:	ab81c783          	lbu	a5,-1352(gp) # 1a2b8 <__libc_single_threaded@GLIBC_2.32>
-   12efc:	cf81                	c.beqz	a5,12f14 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x24>
+   12ffc:	ab81c783          	lbu	a5,-1352(gp) # 1c2b8 <__libc_single_threaded@GLIBC_2.32>
+   13000:	02078463          	beq	a5,zero,13028 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x3c>
     _Atomic_word __result = *__mem;
-   12efe:	5908                	c.lw	a0,48(a0)
+   13004:	03052503          	lw	a0,48(a0)
     *__mem += __val;
-   12f00:	fff5079b          	addiw	a5,a0,-1
-   12f04:	d81c                	c.sw	a5,48(s0)
+   13008:	fff5079b          	addiw	a5,a0,-1
+   1300c:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   12f06:	4785                	c.li	a5,1
-   12f08:	00f50c63          	beq	a0,a5,12f20 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x30>
+   13010:	00100793          	addi	a5,zero,1
+   13014:	02f50263          	beq	a0,a5,13038 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x4c>
     }
-   12f0c:	60a2                	c.ldsp	ra,8(sp)
-   12f0e:	6402                	c.ldsp	s0,0(sp)
-   12f10:	0141                	c.addi	sp,16
-   12f12:	8082                	c.jr	ra
+   13018:	00813083          	ld	ra,8(sp)
+   1301c:	00013403          	ld	s0,0(sp)
+   13020:	01010113          	addi	sp,sp,16
+   13024:	00008067          	jalr	zero,0(ra)
       return __exchange_and_add_single(__mem, __val);
     else
       return __exchange_and_add(__mem, __val);
-   12f14:	55fd                	c.li	a1,-1
-   12f16:	03050513          	addi	a0,a0,48
-   12f1a:	a67ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   12f1e:	b7e5                	c.j	12f06 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x16>
+   13028:	fff00593          	addi	a1,zero,-1
+   1302c:	03050513          	addi	a0,a0,48
+   13030:	951ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13034:	fddff06f          	jal	zero,13010 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x24>
 	_M_dispose();
-   12f20:	601c                	c.ld	a5,0(s0)
-   12f22:	6b9c                	c.ld	a5,16(a5)
-   12f24:	8522                	c.mv	a0,s0
-   12f26:	9782                	c.jalr	a5
+   13038:	00043783          	ld	a5,0(s0)
+   1303c:	0107b783          	ld	a5,16(a5)
+   13040:	00040513          	addi	a0,s0,0
+   13044:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   12f28:	0ff0000f          	fence	iorw,iorw
+   13048:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   12f2c:	ab81c783          	lbu	a5,-1352(gp) # 1a2b8 <__libc_single_threaded@GLIBC_2.32>
-   12f30:	cf89                	c.beqz	a5,12f4a <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x5a>
+   1304c:	ab81c783          	lbu	a5,-1352(gp) # 1c2b8 <__libc_single_threaded@GLIBC_2.32>
+   13050:	02078663          	beq	a5,zero,1307c <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x90>
     _Atomic_word __result = *__mem;
-   12f32:	5848                	c.lw	a0,52(s0)
+   13054:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   12f34:	fff5079b          	addiw	a5,a0,-1
-   12f38:	d85c                	c.sw	a5,52(s0)
+   13058:	fff5079b          	addiw	a5,a0,-1
+   1305c:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   12f3a:	4785                	c.li	a5,1
-   12f3c:	fcf518e3          	bne	a0,a5,12f0c <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x1c>
+   13060:	00100793          	addi	a5,zero,1
+   13064:	faf51ae3          	bne	a0,a5,13018 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x2c>
 	    _M_destroy();
-   12f40:	601c                	c.ld	a5,0(s0)
-   12f42:	6f9c                	c.ld	a5,24(a5)
-   12f44:	8522                	c.mv	a0,s0
-   12f46:	9782                	c.jalr	a5
+   13068:	00043783          	ld	a5,0(s0)
+   1306c:	0187b783          	ld	a5,24(a5)
+   13070:	00040513          	addi	a0,s0,0
+   13074:	000780e7          	jalr	ra,0(a5)
     }
-   12f48:	b7d1                	c.j	12f0c <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x1c>
+   13078:	fa1ff06f          	jal	zero,13018 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x2c>
       return __exchange_and_add(__mem, __val);
-   12f4a:	55fd                	c.li	a1,-1
-   12f4c:	03440513          	addi	a0,s0,52
-   12f50:	a31ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   12f54:	b7dd                	c.j	12f3a <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x4a>
+   1307c:	fff00593          	addi	a1,zero,-1
+   13080:	03440513          	addi	a0,s0,52
+   13084:	8fdff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13088:	fd9ff06f          	jal	zero,13060 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x74>
 
-0000000000012f56 <elf::elf::get_hdr() const>:
+000000000001308c <elf::elf::get_hdr() const>:
     // isn't super-cheap.
     m->sections.push_back(section(*this, sec));
   }
 }
 
 const Ehdr<> &elf::get_hdr() const { return m->hdr; }
-   12f56:	6108                	c.ld	a0,0(a0)
-   12f58:	0541                	c.addi	a0,16
-   12f5a:	8082                	c.jr	ra
+   1308c:	00053503          	ld	a0,0(a0)
+   13090:	01050513          	addi	a0,a0,16
+   13094:	00008067          	jalr	zero,0(ra)
 
-0000000000012f5c <elf::elf::get_loader() const>:
+0000000000013098 <elf::elf::get_loader() const>:
 
 shared_ptr<loader> elf::get_loader() const { return m->l; }
-   12f5c:	1141                	c.addi	sp,-16
-   12f5e:	e406                	c.sdsp	ra,8(sp)
-   12f60:	e022                	c.sdsp	s0,0(sp)
-   12f62:	842a                	c.mv	s0,a0
+   13098:	ff010113          	addi	sp,sp,-16
+   1309c:	00113423          	sd	ra,8(sp)
+   130a0:	00813023          	sd	s0,0(sp)
+   130a4:	00050413          	addi	s0,a0,0
         { __shared_ptr(__p, std::move(__d), std::move(__a)).swap(*this); }
 
       /// Return the stored pointer.
       element_type*
       get() const noexcept
       { return _M_ptr; }
-   12f64:	619c                	c.ld	a5,0(a1)
+   130a8:	0005b783          	ld	a5,0(a1)
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   12f66:	6398                	c.ld	a4,0(a5)
-   12f68:	e118                	c.sd	a4,0(a0)
+   130ac:	0007b703          	ld	a4,0(a5)
+   130b0:	00e53023          	sd	a4,0(a0)
       : _M_pi(__r._M_pi)
-   12f6a:	6788                	c.ld	a0,8(a5)
-   12f6c:	e408                	c.sd	a0,8(s0)
+   130b4:	0087b503          	ld	a0,8(a5)
+   130b8:	00a43423          	sd	a0,8(s0)
 	if (_M_pi != nullptr)
-   12f6e:	c919                	c.beqz	a0,12f84 <elf::elf::get_loader() const+0x28>
+   130bc:	02050063          	beq	a0,zero,130dc <elf::elf::get_loader() const+0x44>
 
   inline void
   __attribute__ ((__always_inline__))
   __atomic_add_dispatch(_Atomic_word* __mem, int __val)
   {
     if (__is_single_threaded())
-   12f70:	00007797          	auipc	a5,0x7
-   12f74:	2d07b783          	ld	a5,720(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   12f78:	0007c783          	lbu	a5,0(a5)
-   12f7c:	cb89                	c.beqz	a5,12f8e <elf::elf::get_loader() const+0x32>
+   130c0:	00009797          	auipc	a5,0x9
+   130c4:	1807b783          	ld	a5,384(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   130c8:	0007c783          	lbu	a5,0(a5)
+   130cc:	02078263          	beq	a5,zero,130f0 <elf::elf::get_loader() const+0x58>
   { *__mem += __val; }
-   12f7e:	591c                	c.lw	a5,48(a0)
-   12f80:	2785                	c.addiw	a5,1
-   12f82:	d91c                	c.sw	a5,48(a0)
-   12f84:	8522                	c.mv	a0,s0
-   12f86:	60a2                	c.ldsp	ra,8(sp)
-   12f88:	6402                	c.ldsp	s0,0(sp)
-   12f8a:	0141                	c.addi	sp,16
-   12f8c:	8082                	c.jr	ra
+   130d0:	03052783          	lw	a5,48(a0)
+   130d4:	0017879b          	addiw	a5,a5,1
+   130d8:	02f52823          	sw	a5,48(a0)
+   130dc:	00040513          	addi	a0,s0,0
+   130e0:	00813083          	ld	ra,8(sp)
+   130e4:	00013403          	ld	s0,0(sp)
+   130e8:	01010113          	addi	sp,sp,16
+   130ec:	00008067          	jalr	zero,0(ra)
       __atomic_add_single(__mem, __val);
     else
       __atomic_add(__mem, __val);
-   12f8e:	4585                	c.li	a1,1
-   12f90:	03050513          	addi	a0,a0,48
-   12f94:	9bdff0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   12f98:	b7f5                	c.j	12f84 <elf::elf::get_loader() const+0x28>
+   130f0:	00100593          	addi	a1,zero,1
+   130f4:	03050513          	addi	a0,a0,48
+   130f8:	859ff0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   130fc:	fe1ff06f          	jal	zero,130dc <elf::elf::get_loader() const+0x44>
 
-0000000000012f9a <elf::elf::sections() const>:
+0000000000013100 <elf::elf::sections() const>:
 
 const std::vector<section> &elf::sections() const { return m->sections; }
-   12f9a:	6108                	c.ld	a0,0(a0)
-   12f9c:	05050513          	addi	a0,a0,80
-   12fa0:	8082                	c.jr	ra
+   13100:	00053503          	ld	a0,0(a0)
+   13104:	05050513          	addi	a0,a0,80
+   13108:	00008067          	jalr	zero,0(ra)
 
-0000000000012fa2 <elf::elf::segments() const>:
+000000000001310c <elf::elf::segments() const>:
 
 const std::vector<segment> &elf::segments() const { return m->segments; }
-   12fa2:	6108                	c.ld	a0,0(a0)
-   12fa4:	06850513          	addi	a0,a0,104
-   12fa8:	8082                	c.jr	ra
+   1310c:	00053503          	ld	a0,0(a0)
+   13110:	06850513          	addi	a0,a0,104
+   13114:	00008067          	jalr	zero,0(ra)
 
-0000000000012faa <elf::elf::get_section(unsigned int) const>:
+0000000000013118 <elf::elf::get_section(unsigned int) const>:
     if (name == sec.get_name(nullptr))
       return sec;
   return m->invalid_section;
 }
 
 const section &elf::get_section(unsigned index) const {
-   12faa:	1101                	c.addi	sp,-32
-   12fac:	ec06                	c.sdsp	ra,24(sp)
-   12fae:	e822                	c.sdsp	s0,16(sp)
-   12fb0:	e426                	c.sdsp	s1,8(sp)
-   12fb2:	84aa                	c.mv	s1,a0
+   13118:	fe010113          	addi	sp,sp,-32
+   1311c:	00113c23          	sd	ra,24(sp)
+   13120:	00813823          	sd	s0,16(sp)
+   13124:	00913423          	sd	s1,8(sp)
+   13128:	00050493          	addi	s1,a0,0
   if (index >= sections().size())
-   12fb4:	02059413          	slli	s0,a1,0x20
-   12fb8:	9001                	c.srli	s0,0x20
-   12fba:	fe1ff0ef          	jal	ra,12f9a <elf::elf::sections() const>
+   1312c:	02059413          	slli	s0,a1,0x20
+   13130:	02045413          	srli	s0,s0,0x20
+   13134:	fcdff0ef          	jal	ra,13100 <elf::elf::sections() const>
       // [23.2.4.2] capacity
       /**  Returns the number of elements in the %vector.  */
       _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
       size_type
       size() const _GLIBCXX_NOEXCEPT
       { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
-   12fbe:	651c                	c.ld	a5,8(a0)
-   12fc0:	6118                	c.ld	a4,0(a0)
-   12fc2:	8f99                	c.sub	a5,a4
-   12fc4:	8791                	c.srai	a5,0x4
-   12fc6:	00f46a63          	bltu	s0,a5,12fda <elf::elf::get_section(unsigned int) const+0x30>
+   13138:	00853783          	ld	a5,8(a0)
+   1313c:	00053703          	ld	a4,0(a0)
+   13140:	40e787b3          	sub	a5,a5,a4
+   13144:	4047d793          	srai	a5,a5,0x4
+   13148:	02f46063          	bltu	s0,a5,13168 <elf::elf::get_section(unsigned int) const+0x50>
     return m->invalid_section;
-   12fca:	6088                	c.ld	a0,0(s1)
-   12fcc:	08050513          	addi	a0,a0,128
+   1314c:	0004b503          	ld	a0,0(s1)
+   13150:	08050513          	addi	a0,a0,128
   return sections().at(index);
 }
-   12fd0:	60e2                	c.ldsp	ra,24(sp)
-   12fd2:	6442                	c.ldsp	s0,16(sp)
-   12fd4:	64a2                	c.ldsp	s1,8(sp)
-   12fd6:	6105                	c.addi16sp	sp,32
-   12fd8:	8082                	c.jr	ra
+   13154:	01813083          	ld	ra,24(sp)
+   13158:	01013403          	ld	s0,16(sp)
+   1315c:	00813483          	ld	s1,8(sp)
+   13160:	02010113          	addi	sp,sp,32
+   13164:	00008067          	jalr	zero,0(ra)
   return sections().at(index);
-   12fda:	8526                	c.mv	a0,s1
-   12fdc:	fbfff0ef          	jal	ra,12f9a <elf::elf::sections() const>
-   12fe0:	611c                	c.ld	a5,0(a0)
-   12fe2:	6510                	c.ld	a2,8(a0)
-   12fe4:	8e1d                	c.sub	a2,a5
-   12fe6:	8611                	c.srai	a2,0x4
+   13168:	00048513          	addi	a0,s1,0
+   1316c:	f95ff0ef          	jal	ra,13100 <elf::elf::sections() const>
+   13170:	00053783          	ld	a5,0(a0)
+   13174:	00853603          	ld	a2,8(a0)
+   13178:	40f60633          	sub	a2,a2,a5
+   1317c:	40465613          	srai	a2,a2,0x4
       _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
       const_reference
       operator[](size_type __n) const _GLIBCXX_NOEXCEPT
       {
 	__glibcxx_requires_subscript(__n);
 	return *(this->_M_impl._M_start + __n);
-   12fe8:	00441713          	slli	a4,s0,0x4
-   12fec:	00e78533          	add	a0,a5,a4
+   13180:	00441713          	slli	a4,s0,0x4
+   13184:	00e78533          	add	a0,a5,a4
       /// Safety check used only from at().
       _GLIBCXX20_CONSTEXPR
       void
       _M_range_check(size_type __n) const
       {
 	if (__n >= this->size())
-   12ff0:	fec460e3          	bltu	s0,a2,12fd0 <elf::elf::get_section(unsigned int) const+0x26>
+   13188:	fcc466e3          	bltu	s0,a2,13154 <elf::elf::get_section(unsigned int) const+0x3c>
 	  __throw_out_of_range_fmt(__N("vector::_M_range_check: __n "
-   12ff4:	85a2                	c.mv	a1,s0
-   12ff6:	00004517          	auipc	a0,0x4
-   12ffa:	b8250513          	addi	a0,a0,-1150 # 16b78 <__libc_csu_fini+0x118>
-   12ffe:	b33ff0ef          	jal	ra,12b30 <std::__throw_out_of_range_fmt(char const*, ...)@plt>
+   1318c:	00040593          	addi	a1,s0,0
+   13190:	00005517          	auipc	a0,0x5
+   13194:	3b850513          	addi	a0,a0,952 # 18548 <__libc_csu_fini+0x114>
+   13198:	999ff0ef          	jal	ra,12b30 <std::__throw_out_of_range_fmt(char const*, ...)@plt>
 
-0000000000013002 <elf::elf::get_segment(unsigned int) const>:
+000000000001319c <elf::elf::get_segment(unsigned int) const>:
 
 const segment &elf::get_segment(unsigned index) const {
-   13002:	1101                	c.addi	sp,-32
-   13004:	ec06                	c.sdsp	ra,24(sp)
-   13006:	e822                	c.sdsp	s0,16(sp)
-   13008:	e426                	c.sdsp	s1,8(sp)
-   1300a:	84aa                	c.mv	s1,a0
+   1319c:	fe010113          	addi	sp,sp,-32
+   131a0:	00113c23          	sd	ra,24(sp)
+   131a4:	00813823          	sd	s0,16(sp)
+   131a8:	00913423          	sd	s1,8(sp)
+   131ac:	00050493          	addi	s1,a0,0
   if (index >= segments().size())
-   1300c:	02059413          	slli	s0,a1,0x20
-   13010:	9001                	c.srli	s0,0x20
-   13012:	f91ff0ef          	jal	ra,12fa2 <elf::elf::segments() const>
+   131b0:	02059413          	slli	s0,a1,0x20
+   131b4:	02045413          	srli	s0,s0,0x20
+   131b8:	f55ff0ef          	jal	ra,1310c <elf::elf::segments() const>
       { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
-   13016:	651c                	c.ld	a5,8(a0)
-   13018:	6118                	c.ld	a4,0(a0)
-   1301a:	8f99                	c.sub	a5,a4
-   1301c:	8791                	c.srai	a5,0x4
-   1301e:	00f46a63          	bltu	s0,a5,13032 <elf::elf::get_segment(unsigned int) const+0x30>
+   131bc:	00853783          	ld	a5,8(a0)
+   131c0:	00053703          	ld	a4,0(a0)
+   131c4:	40e787b3          	sub	a5,a5,a4
+   131c8:	4047d793          	srai	a5,a5,0x4
+   131cc:	02f46063          	bltu	s0,a5,131ec <elf::elf::get_segment(unsigned int) const+0x50>
     return m->invalid_segment;
-   13022:	6088                	c.ld	a0,0(s1)
-   13024:	09050513          	addi	a0,a0,144
+   131d0:	0004b503          	ld	a0,0(s1)
+   131d4:	09050513          	addi	a0,a0,144
   return segments().at(index);
 }
-   13028:	60e2                	c.ldsp	ra,24(sp)
-   1302a:	6442                	c.ldsp	s0,16(sp)
-   1302c:	64a2                	c.ldsp	s1,8(sp)
-   1302e:	6105                	c.addi16sp	sp,32
-   13030:	8082                	c.jr	ra
+   131d8:	01813083          	ld	ra,24(sp)
+   131dc:	01013403          	ld	s0,16(sp)
+   131e0:	00813483          	ld	s1,8(sp)
+   131e4:	02010113          	addi	sp,sp,32
+   131e8:	00008067          	jalr	zero,0(ra)
   return segments().at(index);
-   13032:	8526                	c.mv	a0,s1
-   13034:	f6fff0ef          	jal	ra,12fa2 <elf::elf::segments() const>
-   13038:	611c                	c.ld	a5,0(a0)
-   1303a:	6510                	c.ld	a2,8(a0)
-   1303c:	8e1d                	c.sub	a2,a5
-   1303e:	8611                	c.srai	a2,0x4
+   131ec:	00048513          	addi	a0,s1,0
+   131f0:	f1dff0ef          	jal	ra,1310c <elf::elf::segments() const>
+   131f4:	00053783          	ld	a5,0(a0)
+   131f8:	00853603          	ld	a2,8(a0)
+   131fc:	40f60633          	sub	a2,a2,a5
+   13200:	40465613          	srai	a2,a2,0x4
 	return *(this->_M_impl._M_start + __n);
-   13040:	00441713          	slli	a4,s0,0x4
-   13044:	00e78533          	add	a0,a5,a4
+   13204:	00441713          	slli	a4,s0,0x4
+   13208:	00e78533          	add	a0,a5,a4
 	if (__n >= this->size())
-   13048:	fec460e3          	bltu	s0,a2,13028 <elf::elf::get_segment(unsigned int) const+0x26>
+   1320c:	fcc466e3          	bltu	s0,a2,131d8 <elf::elf::get_segment(unsigned int) const+0x3c>
 	  __throw_out_of_range_fmt(__N("vector::_M_range_check: __n "
-   1304c:	85a2                	c.mv	a1,s0
-   1304e:	00004517          	auipc	a0,0x4
-   13052:	b2a50513          	addi	a0,a0,-1238 # 16b78 <__libc_csu_fini+0x118>
-   13056:	adbff0ef          	jal	ra,12b30 <std::__throw_out_of_range_fmt(char const*, ...)@plt>
+   13210:	00040593          	addi	a1,s0,0
+   13214:	00005517          	auipc	a0,0x5
+   13218:	33450513          	addi	a0,a0,820 # 18548 <__libc_csu_fini+0x114>
+   1321c:	915ff0ef          	jal	ra,12b30 <std::__throw_out_of_range_fmt(char const*, ...)@plt>
 
-000000000001305a <elf::segment::get_hdr() const>:
+0000000000013220 <elf::segment::get_hdr() const>:
 
 segment::segment(const elf &f, const void *hdr) : m(make_shared<impl>(f)) {
   canon_hdr(&m->hdr, hdr, f.get_hdr().ei_class, f.get_hdr().ei_data);
 }
 
 const Phdr<> &segment::get_hdr() const { return m->hdr; }
-   1305a:	6108                	c.ld	a0,0(a0)
-   1305c:	0541                	c.addi	a0,16
-   1305e:	8082                	c.jr	ra
+   13220:	00053503          	ld	a0,0(a0)
+   13224:	01050513          	addi	a0,a0,16
+   13228:	00008067          	jalr	zero,0(ra)
 
-0000000000013060 <elf::segment::data() const>:
+000000000001322c <elf::segment::data() const>:
 
 const void *segment::data() const {
-   13060:	7179                	c.addi16sp	sp,-48
-   13062:	f406                	c.sdsp	ra,40(sp)
-   13064:	f022                	c.sdsp	s0,32(sp)
-   13066:	ec26                	c.sdsp	s1,24(sp)
-   13068:	842a                	c.mv	s0,a0
+   1322c:	fd010113          	addi	sp,sp,-48
+   13230:	02113423          	sd	ra,40(sp)
+   13234:	02813023          	sd	s0,32(sp)
+   13238:	00913c23          	sd	s1,24(sp)
+   1323c:	00050413          	addi	s0,a0,0
       { return _M_ptr; }
-   1306a:	610c                	c.ld	a1,0(a0)
+   13240:	00053583          	ld	a1,0(a0)
   if (!m->data)
-   1306c:	65bc                	c.ld	a5,72(a1)
-   1306e:	cb81                	c.beqz	a5,1307e <elf::segment::data() const+0x1e>
+   13244:	0485b783          	ld	a5,72(a1)
+   13248:	02078063          	beq	a5,zero,13268 <elf::segment::data() const+0x3c>
     m->data = m->f.get_loader()->load(m->hdr.offset, m->hdr.filesz);
   return m->data;
-   13070:	601c                	c.ld	a5,0(s0)
-   13072:	67a8                	c.ld	a0,72(a5)
+   1324c:	00043783          	ld	a5,0(s0)
+   13250:	0487b503          	ld	a0,72(a5)
 }
-   13074:	70a2                	c.ldsp	ra,40(sp)
-   13076:	7402                	c.ldsp	s0,32(sp)
-   13078:	64e2                	c.ldsp	s1,24(sp)
-   1307a:	6145                	c.addi16sp	sp,48
-   1307c:	8082                	c.jr	ra
+   13254:	02813083          	ld	ra,40(sp)
+   13258:	02013403          	ld	s0,32(sp)
+   1325c:	01813483          	ld	s1,24(sp)
+   13260:	03010113          	addi	sp,sp,48
+   13264:	00008067          	jalr	zero,0(ra)
     m->data = m->f.get_loader()->load(m->hdr.offset, m->hdr.filesz);
-   1307e:	850a                	c.mv	a0,sp
-   13080:	eddff0ef          	jal	ra,12f5c <elf::elf::get_loader() const>
-   13084:	6502                	c.ldsp	a0,0(sp)
-   13086:	6004                	c.ld	s1,0(s0)
-   13088:	611c                	c.ld	a5,0(a0)
-   1308a:	6b9c                	c.ld	a5,16(a5)
-   1308c:	7890                	c.ld	a2,48(s1)
-   1308e:	6c8c                	c.ld	a1,24(s1)
-   13090:	9782                	c.jalr	a5
-   13092:	e4a8                	c.sd	a0,72(s1)
+   13268:	00010513          	addi	a0,sp,0
+   1326c:	e2dff0ef          	jal	ra,13098 <elf::elf::get_loader() const>
+   13270:	00013503          	ld	a0,0(sp)
+   13274:	00043483          	ld	s1,0(s0)
+   13278:	00053783          	ld	a5,0(a0)
+   1327c:	0107b783          	ld	a5,16(a5)
+   13280:	0304b603          	ld	a2,48(s1)
+   13284:	0184b583          	ld	a1,24(s1)
+   13288:	000780e7          	jalr	ra,0(a5)
+   1328c:	04a4b423          	sd	a0,72(s1)
 	if (_M_pi != nullptr)
-   13094:	64a2                	c.ldsp	s1,8(sp)
-   13096:	dce9                	c.beqz	s1,13070 <elf::segment::data() const+0x10>
+   13290:	00813483          	ld	s1,8(sp)
+   13294:	fa048ce3          	beq	s1,zero,1324c <elf::segment::data() const+0x20>
     if (__is_single_threaded())
-   13098:	00007797          	auipc	a5,0x7
-   1309c:	1a87b783          	ld	a5,424(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   130a0:	0007c783          	lbu	a5,0(a5)
-   130a4:	c3a9                	c.beqz	a5,130e6 <elf::segment::data() const+0x86>
+   13298:	00009797          	auipc	a5,0x9
+   1329c:	fa87b783          	ld	a5,-88(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   132a0:	0007c783          	lbu	a5,0(a5)
+   132a4:	06078263          	beq	a5,zero,13308 <elf::segment::data() const+0xdc>
     _Atomic_word __result = *__mem;
-   130a6:	5888                	c.lw	a0,48(s1)
+   132a8:	0304a503          	lw	a0,48(s1)
     *__mem += __val;
-   130a8:	fff5079b          	addiw	a5,a0,-1
-   130ac:	d89c                	c.sw	a5,48(s1)
+   132ac:	fff5079b          	addiw	a5,a0,-1
+   132b0:	02f4a823          	sw	a5,48(s1)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   130ae:	4785                	c.li	a5,1
-   130b0:	fcf510e3          	bne	a0,a5,13070 <elf::segment::data() const+0x10>
+   132b4:	00100793          	addi	a5,zero,1
+   132b8:	f8f51ae3          	bne	a0,a5,1324c <elf::segment::data() const+0x20>
 	_M_dispose();
-   130b4:	609c                	c.ld	a5,0(s1)
-   130b6:	6b9c                	c.ld	a5,16(a5)
-   130b8:	8526                	c.mv	a0,s1
-   130ba:	9782                	c.jalr	a5
+   132bc:	0004b783          	ld	a5,0(s1)
+   132c0:	0107b783          	ld	a5,16(a5)
+   132c4:	00048513          	addi	a0,s1,0
+   132c8:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   130bc:	0ff0000f          	fence	iorw,iorw
+   132cc:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   130c0:	00007797          	auipc	a5,0x7
-   130c4:	1807b783          	ld	a5,384(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   130c8:	0007c783          	lbu	a5,0(a5)
-   130cc:	c39d                	c.beqz	a5,130f2 <elf::segment::data() const+0x92>
+   132d0:	00009797          	auipc	a5,0x9
+   132d4:	f707b783          	ld	a5,-144(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   132d8:	0007c783          	lbu	a5,0(a5)
+   132dc:	02078e63          	beq	a5,zero,13318 <elf::segment::data() const+0xec>
     _Atomic_word __result = *__mem;
-   130ce:	58c8                	c.lw	a0,52(s1)
+   132e0:	0344a503          	lw	a0,52(s1)
     *__mem += __val;
-   130d0:	fff5079b          	addiw	a5,a0,-1
-   130d4:	d8dc                	c.sw	a5,52(s1)
+   132e4:	fff5079b          	addiw	a5,a0,-1
+   132e8:	02f4aa23          	sw	a5,52(s1)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   130d6:	4785                	c.li	a5,1
-   130d8:	f8f51ce3          	bne	a0,a5,13070 <elf::segment::data() const+0x10>
+   132ec:	00100793          	addi	a5,zero,1
+   132f0:	f4f51ee3          	bne	a0,a5,1324c <elf::segment::data() const+0x20>
 	    _M_destroy();
-   130dc:	609c                	c.ld	a5,0(s1)
-   130de:	6f9c                	c.ld	a5,24(a5)
-   130e0:	8526                	c.mv	a0,s1
-   130e2:	9782                	c.jalr	a5
-   130e4:	b771                	c.j	13070 <elf::segment::data() const+0x10>
+   132f4:	0004b783          	ld	a5,0(s1)
+   132f8:	0187b783          	ld	a5,24(a5)
+   132fc:	00048513          	addi	a0,s1,0
+   13300:	000780e7          	jalr	ra,0(a5)
+   13304:	f49ff06f          	jal	zero,1324c <elf::segment::data() const+0x20>
       return __exchange_and_add(__mem, __val);
-   130e6:	55fd                	c.li	a1,-1
-   130e8:	03048513          	addi	a0,s1,48
-   130ec:	895ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   130f0:	bf7d                	c.j	130ae <elf::segment::data() const+0x4e>
-   130f2:	55fd                	c.li	a1,-1
-   130f4:	03448513          	addi	a0,s1,52
-   130f8:	889ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   130fc:	bfe9                	c.j	130d6 <elf::segment::data() const+0x76>
+   13308:	fff00593          	addi	a1,zero,-1
+   1330c:	03048513          	addi	a0,s1,48
+   13310:	e70ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13314:	fa1ff06f          	jal	zero,132b4 <elf::segment::data() const+0x88>
+   13318:	fff00593          	addi	a1,zero,-1
+   1331c:	03448513          	addi	a0,s1,52
+   13320:	e60ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13324:	fc9ff06f          	jal	zero,132ec <elf::segment::data() const+0xc0>
 	if (_M_pi != nullptr)
-   130fe:	842a                	c.mv	s0,a0
-   13100:	6522                	c.ldsp	a0,8(sp)
-   13102:	c511                	c.beqz	a0,1310e <elf::segment::data() const+0xae>
+   13328:	00050413          	addi	s0,a0,0
+   1332c:	00813503          	ld	a0,8(sp)
+   13330:	00050863          	beq	a0,zero,13340 <elf::segment::data() const+0x114>
 	  _M_pi->_M_release();
-   13104:	00007317          	auipc	t1,0x7
-   13108:	0ec33303          	ld	t1,236(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   1310c:	9302                	c.jalr	t1
-   1310e:	8522                	c.mv	a0,s0
-   13110:	aa1ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   13334:	00009317          	auipc	t1,0x9
+   13338:	ebc33303          	ld	t1,-324(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   1333c:	000300e7          	jalr	ra,0(t1)
+   13340:	00040513          	addi	a0,s0,0
+   13344:	86dff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-0000000000013114 <elf::segment::file_size() const>:
+0000000000013348 <elf::segment::file_size() const>:
 
 size_t segment::file_size() const { return m->hdr.filesz; }
-   13114:	611c                	c.ld	a5,0(a0)
-   13116:	7b88                	c.ld	a0,48(a5)
-   13118:	8082                	c.jr	ra
+   13348:	00053783          	ld	a5,0(a0)
+   1334c:	0307b503          	ld	a0,48(a5)
+   13350:	00008067          	jalr	zero,0(ra)
 
-000000000001311a <elf::segment::mem_size() const>:
+0000000000013354 <elf::segment::mem_size() const>:
 
 size_t segment::mem_size() const { return m->hdr.memsz; }
-   1311a:	611c                	c.ld	a5,0(a0)
-   1311c:	7f88                	c.ld	a0,56(a5)
-   1311e:	8082                	c.jr	ra
+   13354:	00053783          	ld	a5,0(a0)
+   13358:	0387b503          	ld	a0,56(a5)
+   1335c:	00008067          	jalr	zero,0(ra)
 
-0000000000013120 <elf::section::get_hdr() const>:
+0000000000013360 <elf::section::get_hdr() const>:
 
 section::section(const elf &f, const void *hdr) : m(make_shared<impl>(f)) {
   canon_hdr(&m->hdr, hdr, f.get_hdr().ei_class, f.get_hdr().ei_data);
 }
 
 const Shdr<> &section::get_hdr() const { return m->hdr; }
-   13120:	6108                	c.ld	a0,0(a0)
-   13122:	0541                	c.addi	a0,16
-   13124:	8082                	c.jr	ra
+   13360:	00053503          	ld	a0,0(a0)
+   13364:	01050513          	addi	a0,a0,16
+   13368:	00008067          	jalr	zero,0(ra)
 
-0000000000013126 <elf::section::data() const>:
+000000000001336c <elf::section::data() const>:
       { return _M_ptr; }
-   13126:	610c                	c.ld	a1,0(a0)
+   1336c:	00053583          	ld	a1,0(a0)
 }
 
 string section::get_name() const { return get_name(nullptr); }
 
 const void *section::data() const {
   if (m->hdr.type == sht::nobits)
-   13128:	49d8                	c.lw	a4,20(a1)
-   1312a:	47a1                	c.li	a5,8
-   1312c:	0af70063          	beq	a4,a5,131cc <elf::section::data() const+0xa6>
+   13370:	0145a703          	lw	a4,20(a1)
+   13374:	00800793          	addi	a5,zero,8
+   13378:	0ef70e63          	beq	a4,a5,13474 <elf::section::data() const+0x108>
 const void *section::data() const {
-   13130:	7179                	c.addi16sp	sp,-48
-   13132:	f406                	c.sdsp	ra,40(sp)
-   13134:	f022                	c.sdsp	s0,32(sp)
-   13136:	ec26                	c.sdsp	s1,24(sp)
-   13138:	842a                	c.mv	s0,a0
+   1337c:	fd010113          	addi	sp,sp,-48
+   13380:	02113423          	sd	ra,40(sp)
+   13384:	02813023          	sd	s0,32(sp)
+   13388:	00913c23          	sd	s1,24(sp)
+   1338c:	00050413          	addi	s0,a0,0
     return nullptr;
   if (!m->data)
-   1313a:	71bc                	c.ld	a5,96(a1)
-   1313c:	cb81                	c.beqz	a5,1314c <elf::section::data() const+0x26>
+   13390:	0605b783          	ld	a5,96(a1)
+   13394:	02078063          	beq	a5,zero,133b4 <elf::section::data() const+0x48>
     m->data = m->f.get_loader()->load(m->hdr.offset, m->hdr.size);
   return m->data;
-   1313e:	601c                	c.ld	a5,0(s0)
-   13140:	73a8                	c.ld	a0,96(a5)
+   13398:	00043783          	ld	a5,0(s0)
+   1339c:	0607b503          	ld	a0,96(a5)
 }
-   13142:	70a2                	c.ldsp	ra,40(sp)
-   13144:	7402                	c.ldsp	s0,32(sp)
-   13146:	64e2                	c.ldsp	s1,24(sp)
-   13148:	6145                	c.addi16sp	sp,48
-   1314a:	8082                	c.jr	ra
+   133a0:	02813083          	ld	ra,40(sp)
+   133a4:	02013403          	ld	s0,32(sp)
+   133a8:	01813483          	ld	s1,24(sp)
+   133ac:	03010113          	addi	sp,sp,48
+   133b0:	00008067          	jalr	zero,0(ra)
     m->data = m->f.get_loader()->load(m->hdr.offset, m->hdr.size);
-   1314c:	850a                	c.mv	a0,sp
-   1314e:	e0fff0ef          	jal	ra,12f5c <elf::elf::get_loader() const>
-   13152:	6502                	c.ldsp	a0,0(sp)
-   13154:	6004                	c.ld	s1,0(s0)
-   13156:	611c                	c.ld	a5,0(a0)
-   13158:	6b9c                	c.ld	a5,16(a5)
-   1315a:	7890                	c.ld	a2,48(s1)
-   1315c:	748c                	c.ld	a1,40(s1)
-   1315e:	9782                	c.jalr	a5
-   13160:	f0a8                	c.sd	a0,96(s1)
+   133b4:	00010513          	addi	a0,sp,0
+   133b8:	ce1ff0ef          	jal	ra,13098 <elf::elf::get_loader() const>
+   133bc:	00013503          	ld	a0,0(sp)
+   133c0:	00043483          	ld	s1,0(s0)
+   133c4:	00053783          	ld	a5,0(a0)
+   133c8:	0107b783          	ld	a5,16(a5)
+   133cc:	0304b603          	ld	a2,48(s1)
+   133d0:	0284b583          	ld	a1,40(s1)
+   133d4:	000780e7          	jalr	ra,0(a5)
+   133d8:	06a4b023          	sd	a0,96(s1)
 	if (_M_pi != nullptr)
-   13162:	64a2                	c.ldsp	s1,8(sp)
-   13164:	dce9                	c.beqz	s1,1313e <elf::section::data() const+0x18>
+   133dc:	00813483          	ld	s1,8(sp)
+   133e0:	fa048ce3          	beq	s1,zero,13398 <elf::section::data() const+0x2c>
     if (__is_single_threaded())
-   13166:	00007797          	auipc	a5,0x7
-   1316a:	0da7b783          	ld	a5,218(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   1316e:	0007c783          	lbu	a5,0(a5)
-   13172:	c3a9                	c.beqz	a5,131b4 <elf::section::data() const+0x8e>
+   133e4:	00009797          	auipc	a5,0x9
+   133e8:	e5c7b783          	ld	a5,-420(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   133ec:	0007c783          	lbu	a5,0(a5)
+   133f0:	06078263          	beq	a5,zero,13454 <elf::section::data() const+0xe8>
     _Atomic_word __result = *__mem;
-   13174:	5888                	c.lw	a0,48(s1)
+   133f4:	0304a503          	lw	a0,48(s1)
     *__mem += __val;
-   13176:	fff5079b          	addiw	a5,a0,-1
-   1317a:	d89c                	c.sw	a5,48(s1)
+   133f8:	fff5079b          	addiw	a5,a0,-1
+   133fc:	02f4a823          	sw	a5,48(s1)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   1317c:	4785                	c.li	a5,1
-   1317e:	fcf510e3          	bne	a0,a5,1313e <elf::section::data() const+0x18>
+   13400:	00100793          	addi	a5,zero,1
+   13404:	f8f51ae3          	bne	a0,a5,13398 <elf::section::data() const+0x2c>
 	_M_dispose();
-   13182:	609c                	c.ld	a5,0(s1)
-   13184:	6b9c                	c.ld	a5,16(a5)
-   13186:	8526                	c.mv	a0,s1
-   13188:	9782                	c.jalr	a5
+   13408:	0004b783          	ld	a5,0(s1)
+   1340c:	0107b783          	ld	a5,16(a5)
+   13410:	00048513          	addi	a0,s1,0
+   13414:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   1318a:	0ff0000f          	fence	iorw,iorw
+   13418:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   1318e:	00007797          	auipc	a5,0x7
-   13192:	0b27b783          	ld	a5,178(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13196:	0007c783          	lbu	a5,0(a5)
-   1319a:	c39d                	c.beqz	a5,131c0 <elf::section::data() const+0x9a>
+   1341c:	00009797          	auipc	a5,0x9
+   13420:	e247b783          	ld	a5,-476(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13424:	0007c783          	lbu	a5,0(a5)
+   13428:	02078e63          	beq	a5,zero,13464 <elf::section::data() const+0xf8>
     _Atomic_word __result = *__mem;
-   1319c:	58c8                	c.lw	a0,52(s1)
+   1342c:	0344a503          	lw	a0,52(s1)
     *__mem += __val;
-   1319e:	fff5079b          	addiw	a5,a0,-1
-   131a2:	d8dc                	c.sw	a5,52(s1)
+   13430:	fff5079b          	addiw	a5,a0,-1
+   13434:	02f4aa23          	sw	a5,52(s1)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   131a4:	4785                	c.li	a5,1
-   131a6:	f8f51ce3          	bne	a0,a5,1313e <elf::section::data() const+0x18>
+   13438:	00100793          	addi	a5,zero,1
+   1343c:	f4f51ee3          	bne	a0,a5,13398 <elf::section::data() const+0x2c>
 	    _M_destroy();
-   131aa:	609c                	c.ld	a5,0(s1)
-   131ac:	6f9c                	c.ld	a5,24(a5)
-   131ae:	8526                	c.mv	a0,s1
-   131b0:	9782                	c.jalr	a5
-   131b2:	b771                	c.j	1313e <elf::section::data() const+0x18>
+   13440:	0004b783          	ld	a5,0(s1)
+   13444:	0187b783          	ld	a5,24(a5)
+   13448:	00048513          	addi	a0,s1,0
+   1344c:	000780e7          	jalr	ra,0(a5)
+   13450:	f49ff06f          	jal	zero,13398 <elf::section::data() const+0x2c>
       return __exchange_and_add(__mem, __val);
-   131b4:	55fd                	c.li	a1,-1
-   131b6:	03048513          	addi	a0,s1,48
-   131ba:	fc6ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   131be:	bf7d                	c.j	1317c <elf::section::data() const+0x56>
-   131c0:	55fd                	c.li	a1,-1
-   131c2:	03448513          	addi	a0,s1,52
-   131c6:	fbaff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   131ca:	bfe9                	c.j	131a4 <elf::section::data() const+0x7e>
+   13454:	fff00593          	addi	a1,zero,-1
+   13458:	03048513          	addi	a0,s1,48
+   1345c:	d24ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13460:	fa1ff06f          	jal	zero,13400 <elf::section::data() const+0x94>
+   13464:	fff00593          	addi	a1,zero,-1
+   13468:	03448513          	addi	a0,s1,52
+   1346c:	d14ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13470:	fc9ff06f          	jal	zero,13438 <elf::section::data() const+0xcc>
     return nullptr;
-   131cc:	4501                	c.li	a0,0
+   13474:	00000513          	addi	a0,zero,0
 }
-   131ce:	8082                	c.jr	ra
+   13478:	00008067          	jalr	zero,0(ra)
 	if (_M_pi != nullptr)
-   131d0:	842a                	c.mv	s0,a0
-   131d2:	6522                	c.ldsp	a0,8(sp)
-   131d4:	c511                	c.beqz	a0,131e0 <elf::section::data() const+0xba>
+   1347c:	00050413          	addi	s0,a0,0
+   13480:	00813503          	ld	a0,8(sp)
+   13484:	00050863          	beq	a0,zero,13494 <elf::section::data() const+0x128>
 	  _M_pi->_M_release();
-   131d6:	00007317          	auipc	t1,0x7
-   131da:	01a33303          	ld	t1,26(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   131de:	9302                	c.jalr	t1
-   131e0:	8522                	c.mv	a0,s0
-   131e2:	9cfff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   13488:	00009317          	auipc	t1,0x9
+   1348c:	d6833303          	ld	t1,-664(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   13490:	000300e7          	jalr	ra,0(t1)
+   13494:	00040513          	addi	a0,s0,0
+   13498:	f18ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-00000000000131e6 <elf::section::size() const>:
+000000000001349c <elf::section::size() const>:
 
 size_t section::size() const { return m->hdr.size; }
-   131e6:	611c                	c.ld	a5,0(a0)
-   131e8:	7b88                	c.ld	a0,48(a5)
-   131ea:	8082                	c.jr	ra
+   1349c:	00053783          	ld	a5,0(a0)
+   134a0:	0307b503          	ld	a0,48(a5)
+   134a4:	00008067          	jalr	zero,0(ra)
 
-00000000000131ec <elf::strtab::strtab(elf::elf, void const*, unsigned long)>:
+00000000000134a8 <elf::strtab::strtab(elf::elf, void const*, unsigned long)>:
 
   const elf f;
   const char *data, *end;
 };
 
 strtab::strtab(elf f, const void *data, size_t size)
-   131ec:	7179                	c.addi16sp	sp,-48
-   131ee:	f406                	c.sdsp	ra,40(sp)
-   131f0:	f022                	c.sdsp	s0,32(sp)
-   131f2:	ec26                	c.sdsp	s1,24(sp)
-   131f4:	e84a                	c.sdsp	s2,16(sp)
-   131f6:	e44e                	c.sdsp	s3,8(sp)
-   131f8:	e052                	c.sdsp	s4,0(sp)
-   131fa:	892a                	c.mv	s2,a0
-   131fc:	84ae                	c.mv	s1,a1
-   131fe:	89b2                	c.mv	s3,a2
+   134a8:	fd010113          	addi	sp,sp,-48
+   134ac:	02113423          	sd	ra,40(sp)
+   134b0:	02813023          	sd	s0,32(sp)
+   134b4:	00913c23          	sd	s1,24(sp)
+   134b8:	01213823          	sd	s2,16(sp)
+   134bc:	01313423          	sd	s3,8(sp)
+   134c0:	01413023          	sd	s4,0(sp)
+   134c4:	00050913          	addi	s2,a0,0
+   134c8:	00058493          	addi	s1,a1,0
+   134cc:	00060993          	addi	s3,a2,0
     : m(make_shared<impl>(f, (const char *)data, (const char *)data + size)) {}
-   13200:	00d60a33          	add	s4,a2,a3
+   134d0:	00d60a33          	add	s4,a2,a3
 
     protected:
       // This constructor is non-standard, it is used by allocate_shared.
       template<typename _Alloc, typename... _Args>
 	__shared_ptr(_Sp_alloc_shared_tag<_Alloc> __tag, _Args&&... __args)
 	: _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
-   13204:	00053023          	sd	zero,0(a0)
+   134d4:	00053023          	sd	zero,0(a0)
 	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-   13208:	05800513          	addi	a0,zero,88
-   1320c:	875ff0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
-   13210:	842a                	c.mv	s0,a0
+   134d8:	05800513          	addi	a0,zero,88
+   134dc:	da4ff0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
+   134e0:	00050413          	addi	s0,a0,0
     __mutex(const __mutex&);
     __mutex& operator=(const __mutex&);
 
   public:
     __mutex() 
     { 
-   13212:	00052423          	sw	zero,8(a0)
-   13216:	00052623          	sw	zero,12(a0)
-   1321a:	00052823          	sw	zero,16(a0)
-   1321e:	00052a23          	sw	zero,20(a0)
-   13222:	00052c23          	sw	zero,24(a0)
-   13226:	00052e23          	sw	zero,28(a0)
-   1322a:	02053023          	sd	zero,32(a0)
-   1322e:	02053423          	sd	zero,40(a0)
+   134e4:	00052423          	sw	zero,8(a0)
+   134e8:	00052623          	sw	zero,12(a0)
+   134ec:	00052823          	sw	zero,16(a0)
+   134f0:	00052a23          	sw	zero,20(a0)
+   134f4:	00052c23          	sw	zero,24(a0)
+   134f8:	00052e23          	sw	zero,28(a0)
+   134fc:	02053023          	sd	zero,32(a0)
+   13500:	02053423          	sd	zero,40(a0)
       : _M_use_count(1), _M_weak_count(1) { }
-   13232:	4785                	c.li	a5,1
-   13234:	d91c                	c.sw	a5,48(a0)
-   13236:	d95c                	c.sw	a5,52(a0)
+   13504:	00100793          	addi	a5,zero,1
+   13508:	02f52823          	sw	a5,48(a0)
+   1350c:	02f52a23          	sw	a5,52(a0)
 	: _M_impl(__a)
-   13238:	00007797          	auipc	a5,0x7
-   1323c:	0587b783          	ld	a5,88(a5) # 1a290 <vtable for std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x5b0>
-   13240:	07c1                	c.addi	a5,16
-   13242:	e11c                	c.sd	a5,0(a0)
+   13510:	00009797          	auipc	a5,0x9
+   13514:	d807b783          	ld	a5,-640(a5) # 1c290 <vtable for std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x5b0>
+   13518:	01078793          	addi	a5,a5,16
+   1351c:	00f53023          	sd	a5,0(a0)
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   13244:	609c                	c.ld	a5,0(s1)
-   13246:	fd1c                	c.sd	a5,56(a0)
+   13520:	0004b783          	ld	a5,0(s1)
+   13524:	02f53c23          	sd	a5,56(a0)
       : _M_pi(__r._M_pi)
-   13248:	6488                	c.ld	a0,8(s1)
-   1324a:	e028                	c.sd	a0,64(s0)
+   13528:	0084b503          	ld	a0,8(s1)
+   1352c:	04a43023          	sd	a0,64(s0)
 	if (_M_pi != nullptr)
-   1324c:	c919                	c.beqz	a0,13262 <elf::strtab::strtab(elf::elf, void const*, unsigned long)+0x76>
+   13530:	02050063          	beq	a0,zero,13550 <elf::strtab::strtab(elf::elf, void const*, unsigned long)+0xa8>
     if (__is_single_threaded())
-   1324e:	00007717          	auipc	a4,0x7
-   13252:	ff273703          	ld	a4,-14(a4) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13256:	00074703          	lbu	a4,0(a4)
-   1325a:	c715                	c.beqz	a4,13286 <elf::strtab::strtab(elf::elf, void const*, unsigned long)+0x9a>
+   13534:	00009717          	auipc	a4,0x9
+   13538:	d0c73703          	ld	a4,-756(a4) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   1353c:	00074703          	lbu	a4,0(a4)
+   13540:	04070263          	beq	a4,zero,13584 <elf::strtab::strtab(elf::elf, void const*, unsigned long)+0xdc>
   { *__mem += __val; }
-   1325c:	5918                	c.lw	a4,48(a0)
-   1325e:	2705                	c.addiw	a4,1
-   13260:	d918                	c.sw	a4,48(a0)
+   13544:	03052703          	lw	a4,48(a0)
+   13548:	0017071b          	addiw	a4,a4,1
+   1354c:	02e52823          	sw	a4,48(a0)
       : f(f), data(data), end(end) {}
-   13262:	05343423          	sd	s3,72(s0)
-   13266:	05443823          	sd	s4,80(s0)
+   13550:	05343423          	sd	s3,72(s0)
+   13554:	05443823          	sd	s4,80(s0)
 	  _M_pi = __pi;
-   1326a:	00893423          	sd	s0,8(s2)
+   13558:	00893423          	sd	s0,8(s2)
       __aligned_buffer(std::nullptr_t) { }
 
       void*
       _M_addr() noexcept
       {
         return static_cast<void*>(&_M_storage);
-   1326e:	03840413          	addi	s0,s0,56
+   1355c:	03840413          	addi	s0,s0,56
 	  __p = __pi->_M_ptr();
-   13272:	00893023          	sd	s0,0(s2)
+   13560:	00893023          	sd	s0,0(s2)
     : m(make_shared<impl>(f, (const char *)data, (const char *)data + size)) {}
-   13276:	70a2                	c.ldsp	ra,40(sp)
-   13278:	7402                	c.ldsp	s0,32(sp)
-   1327a:	64e2                	c.ldsp	s1,24(sp)
-   1327c:	6942                	c.ldsp	s2,16(sp)
-   1327e:	69a2                	c.ldsp	s3,8(sp)
-   13280:	6a02                	c.ldsp	s4,0(sp)
-   13282:	6145                	c.addi16sp	sp,48
-   13284:	8082                	c.jr	ra
+   13564:	02813083          	ld	ra,40(sp)
+   13568:	02013403          	ld	s0,32(sp)
+   1356c:	01813483          	ld	s1,24(sp)
+   13570:	01013903          	ld	s2,16(sp)
+   13574:	00813983          	ld	s3,8(sp)
+   13578:	00013a03          	ld	s4,0(sp)
+   1357c:	03010113          	addi	sp,sp,48
+   13580:	00008067          	jalr	zero,0(ra)
       __atomic_add(__mem, __val);
-   13286:	4585                	c.li	a1,1
-   13288:	03050513          	addi	a0,a0,48
-   1328c:	ec4ff0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   13290:	bfc9                	c.j	13262 <elf::strtab::strtab(elf::elf, void const*, unsigned long)+0x76>
+   13584:	00100593          	addi	a1,zero,1
+   13588:	03050513          	addi	a0,a0,48
+   1358c:	bc4ff0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   13590:	fc1ff06f          	jal	zero,13550 <elf::strtab::strtab(elf::elf, void const*, unsigned long)+0xa8>
 
-0000000000013292 <elf::section::as_strtab() const>:
+0000000000013594 <elf::section::as_strtab() const>:
 strtab section::as_strtab() const {
-   13292:	7179                	c.addi16sp	sp,-48
-   13294:	f406                	c.sdsp	ra,40(sp)
-   13296:	f022                	c.sdsp	s0,32(sp)
-   13298:	ec26                	c.sdsp	s1,24(sp)
-   1329a:	e84a                	c.sdsp	s2,16(sp)
+   13594:	fd010113          	addi	sp,sp,-48
+   13598:	02113423          	sd	ra,40(sp)
+   1359c:	02813023          	sd	s0,32(sp)
+   135a0:	00913c23          	sd	s1,24(sp)
+   135a4:	01213823          	sd	s2,16(sp)
       { return _M_ptr; }
-   1329c:	619c                	c.ld	a5,0(a1)
+   135a8:	0005b783          	ld	a5,0(a1)
   if (m->hdr.type != sht::strtab)
-   1329e:	4bd4                	c.lw	a3,20(a5)
-   132a0:	470d                	c.li	a4,3
-   132a2:	02e69763          	bne	a3,a4,132d0 <elf::section::as_strtab() const+0x3e>
-   132a6:	892a                	c.mv	s2,a0
-   132a8:	842e                	c.mv	s0,a1
+   135ac:	0147a683          	lw	a3,20(a5)
+   135b0:	00300713          	addi	a4,zero,3
+   135b4:	04e69463          	bne	a3,a4,135fc <elf::section::as_strtab() const+0x68>
+   135b8:	00050913          	addi	s2,a0,0
+   135bc:	00058413          	addi	s0,a1,0
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   132aa:	6398                	c.ld	a4,0(a5)
-   132ac:	e03a                	c.sdsp	a4,0(sp)
+   135c0:	0007b703          	ld	a4,0(a5)
+   135c4:	00e13023          	sd	a4,0(sp)
       : _M_pi(__r._M_pi)
-   132ae:	6788                	c.ld	a0,8(a5)
-   132b0:	e42a                	c.sdsp	a0,8(sp)
+   135c8:	0087b503          	ld	a0,8(a5)
+   135cc:	00a13423          	sd	a0,8(sp)
 	if (_M_pi != nullptr)
-   132b2:	c919                	c.beqz	a0,132c8 <elf::section::as_strtab() const+0x36>
+   135d0:	02050063          	beq	a0,zero,135f0 <elf::section::as_strtab() const+0x5c>
     if (__is_single_threaded())
-   132b4:	00007717          	auipc	a4,0x7
-   132b8:	f8c73703          	ld	a4,-116(a4) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   132bc:	00074703          	lbu	a4,0(a4)
-   132c0:	c339                	c.beqz	a4,13306 <elf::section::as_strtab() const+0x74>
+   135d4:	00009717          	auipc	a4,0x9
+   135d8:	c6c73703          	ld	a4,-916(a4) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   135dc:	00074703          	lbu	a4,0(a4)
+   135e0:	04070e63          	beq	a4,zero,1363c <elf::section::as_strtab() const+0xa8>
   { *__mem += __val; }
-   132c2:	5918                	c.lw	a4,48(a0)
-   132c4:	2705                	c.addiw	a4,1
-   132c6:	d918                	c.sw	a4,48(a0)
+   135e4:	03052703          	lw	a4,48(a0)
+   135e8:	0017071b          	addiw	a4,a4,1
+   135ec:	02e52823          	sw	a4,48(a0)
   return strtab(m->f, data(), size());
-   132c8:	8522                	c.mv	a0,s0
-   132ca:	e5dff0ef          	jal	ra,13126 <elf::section::data() const>
-   132ce:	a091                	c.j	13312 <elf::section::as_strtab() const+0x80>
+   135f0:	00040513          	addi	a0,s0,0
+   135f4:	d79ff0ef          	jal	ra,1336c <elf::section::data() const>
+   135f8:	0540006f          	jal	zero,1364c <elf::section::as_strtab() const+0xb8>
     throw section_type_mismatch("cannot use section as strtab");
-   132d0:	4541                	c.li	a0,16
-   132d2:	f0eff0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   132d6:	842a                	c.mv	s0,a0
+   135fc:	01000513          	addi	a0,zero,16
+   13600:	be0ff0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   13604:	00050413          	addi	s0,a0,0
 class section_type_mismatch : public std::logic_error {
 public:
   explicit section_type_mismatch(const std::string &what_arg)
       : std::logic_error(what_arg) {}
   explicit section_type_mismatch(const char *what_arg)
       : std::logic_error(what_arg) {}
-   132d8:	00004597          	auipc	a1,0x4
-   132dc:	8f058593          	addi	a1,a1,-1808 # 16bc8 <__libc_csu_fini+0x168>
-   132e0:	fe0ff0ef          	jal	ra,12ac0 <std::logic_error::logic_error(char const*)@plt>
-   132e4:	00007797          	auipc	a5,0x7
-   132e8:	f047b783          	ld	a5,-252(a5) # 1a1e8 <vtable for elf::section_type_mismatch@@Base+0x5d8>
-   132ec:	07c1                	c.addi	a5,16
-   132ee:	e01c                	c.sd	a5,0(s0)
-   132f0:	00007617          	auipc	a2,0x7
-   132f4:	ea063603          	ld	a2,-352(a2) # 1a190 <elf::section_type_mismatch::~section_type_mismatch()@@Base+0x5b62>
-   132f8:	00007597          	auipc	a1,0x7
-   132fc:	ea85b583          	ld	a1,-344(a1) # 1a1a0 <typeinfo for elf::section_type_mismatch@@Base+0x648>
-   13300:	8522                	c.mv	a0,s0
-   13302:	87fff0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   13608:	00005597          	auipc	a1,0x5
+   1360c:	f9058593          	addi	a1,a1,-112 # 18598 <__libc_csu_fini+0x164>
+   13610:	cb0ff0ef          	jal	ra,12ac0 <std::logic_error::logic_error(char const*)@plt>
+   13614:	00009797          	auipc	a5,0x9
+   13618:	bd47b783          	ld	a5,-1068(a5) # 1c1e8 <vtable for elf::section_type_mismatch@@Base+0x5d8>
+   1361c:	01078793          	addi	a5,a5,16
+   13620:	00f43023          	sd	a5,0(s0)
+   13624:	00009617          	auipc	a2,0x9
+   13628:	b6c63603          	ld	a2,-1172(a2) # 1c190 <elf::section_type_mismatch::~section_type_mismatch()@@Base+0x6fe4>
+   1362c:	00009597          	auipc	a1,0x9
+   13630:	b745b583          	ld	a1,-1164(a1) # 1c1a0 <typeinfo for elf::section_type_mismatch@@Base+0x648>
+   13634:	00040513          	addi	a0,s0,0
+   13638:	d48ff0ef          	jal	ra,12b80 <__cxa_throw@plt>
       __atomic_add(__mem, __val);
-   13306:	4585                	c.li	a1,1
-   13308:	03050513          	addi	a0,a0,48
-   1330c:	e44ff0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   13310:	bf65                	c.j	132c8 <elf::section::as_strtab() const+0x36>
+   1363c:	00100593          	addi	a1,zero,1
+   13640:	03050513          	addi	a0,a0,48
+   13644:	b0cff0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   13648:	fa9ff06f          	jal	zero,135f0 <elf::section::as_strtab() const+0x5c>
   return strtab(m->f, data(), size());
-   13312:	84aa                	c.mv	s1,a0
-   13314:	8522                	c.mv	a0,s0
-   13316:	ed1ff0ef          	jal	ra,131e6 <elf::section::size() const>
-   1331a:	86aa                	c.mv	a3,a0
-   1331c:	8626                	c.mv	a2,s1
-   1331e:	858a                	c.mv	a1,sp
-   13320:	854a                	c.mv	a0,s2
-   13322:	ecbff0ef          	jal	ra,131ec <elf::strtab::strtab(elf::elf, void const*, unsigned long)>
+   1364c:	00050493          	addi	s1,a0,0
+   13650:	00040513          	addi	a0,s0,0
+   13654:	e49ff0ef          	jal	ra,1349c <elf::section::size() const>
+   13658:	00050693          	addi	a3,a0,0
+   1365c:	00048613          	addi	a2,s1,0
+   13660:	00010593          	addi	a1,sp,0
+   13664:	00090513          	addi	a0,s2,0
+   13668:	e41ff0ef          	jal	ra,134a8 <elf::strtab::strtab(elf::elf, void const*, unsigned long)>
 	if (_M_pi != nullptr)
-   13326:	6422                	c.ldsp	s0,8(sp)
-   13328:	cc19                	c.beqz	s0,13346 <elf::section::as_strtab() const+0xb4>
+   1366c:	00813403          	ld	s0,8(sp)
+   13670:	02040463          	beq	s0,zero,13698 <elf::section::as_strtab() const+0x104>
     if (__is_single_threaded())
-   1332a:	00007797          	auipc	a5,0x7
-   1332e:	f167b783          	ld	a5,-234(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13332:	0007c783          	lbu	a5,0(a5)
-   13336:	cf99                	c.beqz	a5,13354 <elf::section::as_strtab() const+0xc2>
+   13674:	00009797          	auipc	a5,0x9
+   13678:	bcc7b783          	ld	a5,-1076(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   1367c:	0007c783          	lbu	a5,0(a5)
+   13680:	02078a63          	beq	a5,zero,136b4 <elf::section::as_strtab() const+0x120>
     _Atomic_word __result = *__mem;
-   13338:	5808                	c.lw	a0,48(s0)
+   13684:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   1333a:	fff5079b          	addiw	a5,a0,-1
-   1333e:	d81c                	c.sw	a5,48(s0)
+   13688:	fff5079b          	addiw	a5,a0,-1
+   1368c:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   13340:	4785                	c.li	a5,1
-   13342:	00f50f63          	beq	a0,a5,13360 <elf::section::as_strtab() const+0xce>
+   13690:	00100793          	addi	a5,zero,1
+   13694:	02f50863          	beq	a0,a5,136c4 <elf::section::as_strtab() const+0x130>
 }
-   13346:	854a                	c.mv	a0,s2
-   13348:	70a2                	c.ldsp	ra,40(sp)
-   1334a:	7402                	c.ldsp	s0,32(sp)
-   1334c:	64e2                	c.ldsp	s1,24(sp)
-   1334e:	6942                	c.ldsp	s2,16(sp)
-   13350:	6145                	c.addi16sp	sp,48
-   13352:	8082                	c.jr	ra
+   13698:	00090513          	addi	a0,s2,0
+   1369c:	02813083          	ld	ra,40(sp)
+   136a0:	02013403          	ld	s0,32(sp)
+   136a4:	01813483          	ld	s1,24(sp)
+   136a8:	01013903          	ld	s2,16(sp)
+   136ac:	03010113          	addi	sp,sp,48
+   136b0:	00008067          	jalr	zero,0(ra)
       return __exchange_and_add(__mem, __val);
-   13354:	55fd                	c.li	a1,-1
-   13356:	03040513          	addi	a0,s0,48
-   1335a:	e26ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   1335e:	b7cd                	c.j	13340 <elf::section::as_strtab() const+0xae>
+   136b4:	fff00593          	addi	a1,zero,-1
+   136b8:	03040513          	addi	a0,s0,48
+   136bc:	ac4ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   136c0:	fd1ff06f          	jal	zero,13690 <elf::section::as_strtab() const+0xfc>
 	_M_dispose();
-   13360:	601c                	c.ld	a5,0(s0)
-   13362:	6b9c                	c.ld	a5,16(a5)
-   13364:	8522                	c.mv	a0,s0
-   13366:	9782                	c.jalr	a5
+   136c4:	00043783          	ld	a5,0(s0)
+   136c8:	0107b783          	ld	a5,16(a5)
+   136cc:	00040513          	addi	a0,s0,0
+   136d0:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   13368:	0ff0000f          	fence	iorw,iorw
+   136d4:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   1336c:	00007797          	auipc	a5,0x7
-   13370:	ed47b783          	ld	a5,-300(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13374:	0007c783          	lbu	a5,0(a5)
-   13378:	cf89                	c.beqz	a5,13392 <elf::section::as_strtab() const+0x100>
+   136d8:	00009797          	auipc	a5,0x9
+   136dc:	b687b783          	ld	a5,-1176(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   136e0:	0007c783          	lbu	a5,0(a5)
+   136e4:	02078663          	beq	a5,zero,13710 <elf::section::as_strtab() const+0x17c>
     _Atomic_word __result = *__mem;
-   1337a:	5848                	c.lw	a0,52(s0)
+   136e8:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   1337c:	fff5079b          	addiw	a5,a0,-1
-   13380:	d85c                	c.sw	a5,52(s0)
+   136ec:	fff5079b          	addiw	a5,a0,-1
+   136f0:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   13382:	4785                	c.li	a5,1
-   13384:	fcf511e3          	bne	a0,a5,13346 <elf::section::as_strtab() const+0xb4>
+   136f4:	00100793          	addi	a5,zero,1
+   136f8:	faf510e3          	bne	a0,a5,13698 <elf::section::as_strtab() const+0x104>
 	    _M_destroy();
-   13388:	601c                	c.ld	a5,0(s0)
-   1338a:	6f9c                	c.ld	a5,24(a5)
-   1338c:	8522                	c.mv	a0,s0
-   1338e:	9782                	c.jalr	a5
+   136fc:	00043783          	ld	a5,0(s0)
+   13700:	0187b783          	ld	a5,24(a5)
+   13704:	00040513          	addi	a0,s0,0
+   13708:	000780e7          	jalr	ra,0(a5)
   return strtab(m->f, data(), size());
-   13390:	bf5d                	c.j	13346 <elf::section::as_strtab() const+0xb4>
+   1370c:	f8dff06f          	jal	zero,13698 <elf::section::as_strtab() const+0x104>
       return __exchange_and_add(__mem, __val);
-   13392:	55fd                	c.li	a1,-1
-   13394:	03440513          	addi	a0,s0,52
-   13398:	de8ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   1339c:	b7dd                	c.j	13382 <elf::section::as_strtab() const+0xf0>
+   13710:	fff00593          	addi	a1,zero,-1
+   13714:	03440513          	addi	a0,s0,52
+   13718:	a68ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   1371c:	fd9ff06f          	jal	zero,136f4 <elf::section::as_strtab() const+0x160>
     throw section_type_mismatch("cannot use section as strtab");
-   1339e:	84aa                	c.mv	s1,a0
-   133a0:	8522                	c.mv	a0,s0
-   133a2:	eaeff0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   133a6:	8526                	c.mv	a0,s1
-   133a8:	809ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   13720:	00050493          	addi	s1,a0,0
+   13724:	00040513          	addi	a0,s0,0
+   13728:	b28ff0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   1372c:	00048513          	addi	a0,s1,0
+   13730:	c80ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 	if (_M_pi != nullptr)
-   133ac:	842a                	c.mv	s0,a0
-   133ae:	6522                	c.ldsp	a0,8(sp)
-   133b0:	c511                	c.beqz	a0,133bc <elf::section::as_strtab() const+0x12a>
+   13734:	00050413          	addi	s0,a0,0
+   13738:	00813503          	ld	a0,8(sp)
+   1373c:	00050863          	beq	a0,zero,1374c <elf::section::as_strtab() const+0x1b8>
 	  _M_pi->_M_release();
-   133b2:	00007317          	auipc	t1,0x7
-   133b6:	e3e33303          	ld	t1,-450(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   133ba:	9302                	c.jalr	t1
-   133bc:	8522                	c.mv	a0,s0
-   133be:	ff2ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   13740:	00009317          	auipc	t1,0x9
+   13744:	ab033303          	ld	t1,-1360(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   13748:	000300e7          	jalr	ra,0(t1)
+   1374c:	00040513          	addi	a0,s0,0
+   13750:	c60ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-00000000000133c2 <elf::strtab::get(unsigned long, unsigned long*) const>:
+0000000000013754 <elf::strtab::get(unsigned long, unsigned long*) const>:
 
 const char *strtab::get(Elf64::Off offset, size_t *len_out) const {
-   133c2:	7119                	c.addi16sp	sp,-128
-   133c4:	fc86                	c.sdsp	ra,120(sp)
-   133c6:	f8a2                	c.sdsp	s0,112(sp)
-   133c8:	f4a6                	c.sdsp	s1,104(sp)
+   13754:	f8010113          	addi	sp,sp,-128
+   13758:	06113c23          	sd	ra,120(sp)
+   1375c:	06813823          	sd	s0,112(sp)
+   13760:	06913423          	sd	s1,104(sp)
       { return _M_ptr; }
-   133ca:	611c                	c.ld	a5,0(a0)
+   13764:	00053783          	ld	a5,0(a0)
   const char *start = m->data + offset;
-   133cc:	6b88                	c.ld	a0,16(a5)
-   133ce:	952e                	c.add	a0,a1
+   13768:	0107b503          	ld	a0,16(a5)
+   1376c:	00b50533          	add	a0,a0,a1
 
   if (start >= m->end)
-   133d0:	6f94                	c.ld	a3,24(a5)
+   13770:	0187b683          	ld	a3,24(a5)
     throw range_error("string offset " + std::to_string(offset) +
                       " exceeds section size");
 
   // Find the null terminator
   const char *p = start;
-   133d2:	87aa                	c.mv	a5,a0
+   13774:	00050793          	addi	a5,a0,0
   if (start >= m->end)
-   133d4:	02d57463          	bgeu	a0,a3,133fc <elf::strtab::get(unsigned long, unsigned long*) const+0x3a>
+   13778:	02d57863          	bgeu	a0,a3,137a8 <elf::strtab::get(unsigned long, unsigned long*) const+0x54>
   while (p < m->end && *p)
-   133d8:	0007c703          	lbu	a4,0(a5)
-   133dc:	16070263          	beq	a4,zero,13540 <elf::strtab::get(unsigned long, unsigned long*) const+0x17e>
+   1377c:	0007c703          	lbu	a4,0(a5)
+   13780:	1c070e63          	beq	a4,zero,1395c <elf::strtab::get(unsigned long, unsigned long*) const+0x208>
     p++;
-   133e0:	0785                	c.addi	a5,1
+   13784:	00178793          	addi	a5,a5,1
   while (p < m->end && *p)
-   133e2:	fef69be3          	bne	a3,a5,133d8 <elf::strtab::get(unsigned long, unsigned long*) const+0x16>
+   13788:	fef69ae3          	bne	a3,a5,1377c <elf::strtab::get(unsigned long, unsigned long*) const+0x28>
   if (p == m->end)
     throw format_error("unterminated string");
-   133e6:	4541                	c.li	a0,16
-   133e8:	df8ff0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   133ec:	842a                	c.mv	s0,a0
+   1378c:	01000513          	addi	a0,zero,16
+   13790:	a50ff0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   13794:	00050413          	addi	s0,a0,0
   explicit format_error(const char *what_arg) : std::runtime_error(what_arg) {}
-   133ee:	00004597          	auipc	a1,0x4
-   133f2:	82258593          	addi	a1,a1,-2014 # 16c10 <__libc_csu_fini+0x1b0>
-   133f6:	ffaff0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
-   133fa:	aaa9                	c.j	13554 <elf::strtab::get(unsigned long, unsigned long*) const+0x192>
-   133fc:	842e                	c.mv	s0,a1
+   13798:	00005597          	auipc	a1,0x5
+   1379c:	e4858593          	addi	a1,a1,-440 # 185e0 <__libc_csu_fini+0x1ac>
+   137a0:	c50ff0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
+   137a4:	1dc0006f          	jal	zero,13980 <elf::strtab::get(unsigned long, unsigned long*) const+0x22c>
+   137a8:	00058413          	addi	s0,a1,0
                       " exceeds section size");
-   133fe:	4541                	c.li	a0,16
-   13400:	de0ff0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   13404:	84aa                	c.mv	s1,a0
-   13406:	87a2                	c.mv	a5,s0
+   137ac:	01000513          	addi	a0,zero,16
+   137b0:	a30ff0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   137b4:	00050493          	addi	s1,a0,0
+   137b8:	00040793          	addi	a5,s0,0
     __to_chars_len(_Tp __value, int __base = 10) noexcept
     {
       static_assert(is_integral<_Tp>::value, "implementation bug");
       static_assert(is_unsigned<_Tp>::value, "implementation bug");
 
       unsigned __n = 1;
-   13408:	4585                	c.li	a1,1
+   137bc:	00100593          	addi	a1,zero,1
       const unsigned __b2 = __base  * __base;
       const unsigned __b3 = __b2 * __base;
       const unsigned long __b4 = __b3 * __base;
       for (;;)
 	{
 	  if (__value < (unsigned)__base) return __n;
-   1340a:	4825                	c.li	a6,9
+   137c0:	00900813          	addi	a6,zero,9
 	  if (__value < __b2) return __n + 1;
-   1340c:	06300513          	addi	a0,zero,99
+   137c4:	06300513          	addi	a0,zero,99
 	  if (__value < __b3) return __n + 2;
-   13410:	3e700613          	addi	a2,zero,999
+   137c8:	3e700613          	addi	a2,zero,999
 	  if (__value < __b4) return __n + 3;
-   13414:	6709                	c.lui	a4,0x2
-   13416:	70f70693          	addi	a3,a4,1807 # 270f <__abi_tag-0xdb85>
+   137cc:	00002737          	lui	a4,0x2
+   137d0:	70f70693          	addi	a3,a4,1807 # 270f <__abi_tag-0xdb85>
 	  __value /= __b4;
-   1341a:	71070713          	addi	a4,a4,1808
+   137d4:	71070713          	addi	a4,a4,1808
 	  if (__value < (unsigned)__base) return __n;
-   1341e:	00f87563          	bgeu	a6,a5,13428 <elf::strtab::get(unsigned long, unsigned long*) const+0x66>
+   137d8:	00f87663          	bgeu	a6,a5,137e4 <elf::strtab::get(unsigned long, unsigned long*) const+0x90>
 	  if (__value < __b2) return __n + 1;
-   13422:	00f56c63          	bltu	a0,a5,1343a <elf::strtab::get(unsigned long, unsigned long*) const+0x78>
-   13426:	2585                	c.addiw	a1,1
+   137dc:	02f56463          	bltu	a0,a5,13804 <elf::strtab::get(unsigned long, unsigned long*) const+0xb0>
+   137e0:	0015859b          	addiw	a1,a1,1
 	: allocator_type(__a), _M_p(__dat) { }
-   13428:	081c                	c.addi4spn	a5,sp,16
-   1342a:	e03e                	c.sdsp	a5,0(sp)
+   137e4:	01010793          	addi	a5,sp,16
+   137e8:	00f13023          	sd	a5,0(sp)
       template<typename = _RequireAllocator<_Alloc>>
 #endif
       _GLIBCXX20_CONSTEXPR
       basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
       : _M_dataplus(_M_local_data(), __a)
       { _M_construct(__n, __c); }
-   1342c:	4601                	c.li	a2,0
-   1342e:	1582                	c.slli	a1,0x20
-   13430:	9181                	c.srli	a1,0x20
-   13432:	850a                	c.mv	a0,sp
-   13434:	e7cff0ef          	jal	ra,12ab0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@plt>
-   13438:	a829                	c.j	13452 <elf::strtab::get(unsigned long, unsigned long*) const+0x90>
+   137ec:	00000613          	addi	a2,zero,0
+   137f0:	02059593          	slli	a1,a1,0x20
+   137f4:	0205d593          	srli	a1,a1,0x20
+   137f8:	00010513          	addi	a0,sp,0
+   137fc:	ab4ff0ef          	jal	ra,12ab0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@plt>
+   13800:	0280006f          	jal	zero,13828 <elf::strtab::get(unsigned long, unsigned long*) const+0xd4>
 	  if (__value < __b3) return __n + 2;
-   1343a:	00f66463          	bltu	a2,a5,13442 <elf::strtab::get(unsigned long, unsigned long*) const+0x80>
-   1343e:	2589                	c.addiw	a1,2
-   13440:	b7e5                	c.j	13428 <elf::strtab::get(unsigned long, unsigned long*) const+0x66>
+   13804:	00f66663          	bltu	a2,a5,13810 <elf::strtab::get(unsigned long, unsigned long*) const+0xbc>
+   13808:	0025859b          	addiw	a1,a1,2
+   1380c:	fd9ff06f          	jal	zero,137e4 <elf::strtab::get(unsigned long, unsigned long*) const+0x90>
 	  if (__value < __b4) return __n + 3;
-   13442:	00f6e463          	bltu	a3,a5,1344a <elf::strtab::get(unsigned long, unsigned long*) const+0x88>
-   13446:	258d                	c.addiw	a1,3
-   13448:	b7c5                	c.j	13428 <elf::strtab::get(unsigned long, unsigned long*) const+0x66>
+   13810:	00f6e663          	bltu	a3,a5,1381c <elf::strtab::get(unsigned long, unsigned long*) const+0xc8>
+   13814:	0035859b          	addiw	a1,a1,3
+   13818:	fcdff06f          	jal	zero,137e4 <elf::strtab::get(unsigned long, unsigned long*) const+0x90>
 	  __value /= __b4;
-   1344a:	02e7d7b3          	divu	a5,a5,a4
+   1381c:	02e7d7b3          	divu	a5,a5,a4
 	  __n += 4;
-   1344e:	2591                	c.addiw	a1,4
+   13820:	0045859b          	addiw	a1,a1,4
 	  if (__value < (unsigned)__base) return __n;
-   13450:	b7f9                	c.j	1341e <elf::strtab::get(unsigned long, unsigned long*) const+0x5c>
+   13824:	fb5ff06f          	jal	zero,137d8 <elf::strtab::get(unsigned long, unsigned long*) const+0x84>
       { return _M_dataplus._M_p; }
-   13452:	6602                	c.ldsp	a2,0(sp)
+   13828:	00013603          	ld	a2,0(sp)
 	"0001020304050607080910111213141516171819"
 	"2021222324252627282930313233343536373839"
 	"4041424344454647484950515253545556575859"
 	"6061626364656667686970717273747576777879"
 	"8081828384858687888990919293949596979899";
       unsigned __pos = __len - 1;
-   13454:	67a2                	c.ldsp	a5,8(sp)
-   13456:	37fd                	c.addiw	a5,-1
+   1382c:	00813783          	ld	a5,8(sp)
+   13830:	fff7879b          	addiw	a5,a5,-1
       while (__val >= 100)
-   13458:	06300813          	addi	a6,zero,99
+   13834:	06300813          	addi	a6,zero,99
 	{
 	  auto const __num = (__val % 100) * 2;
-   1345c:	06400593          	addi	a1,zero,100
+   13838:	06400593          	addi	a1,zero,100
 	  __val /= 100;
 	  __first[__pos] = __digits[__num + 1];
-   13460:	00007517          	auipc	a0,0x7
-   13464:	dd053503          	ld	a0,-560(a0) # 1a230 <std::__detail::__to_chars_10_impl<unsigned long>(char*, unsigned int, unsigned long)::__digits@@Base+0x3258>
+   1383c:	00009517          	auipc	a0,0x9
+   13840:	9f453503          	ld	a0,-1548(a0) # 1c230 <std::__detail::__to_chars_10_impl<unsigned long>(char*, unsigned int, unsigned long)::__digits@@Base+0x3888>
       while (__val >= 100)
-   13468:	02886c63          	bltu	a6,s0,134a0 <elf::strtab::get(unsigned long, unsigned long*) const+0xde>
+   13844:	04886263          	bltu	a6,s0,13888 <elf::strtab::get(unsigned long, unsigned long*) const+0x134>
 	  __first[__pos - 1] = __digits[__num];
 	  __pos -= 2;
 	}
       if (__val >= 10)
-   1346c:	47a5                	c.li	a5,9
-   1346e:	0687f263          	bgeu	a5,s0,134d2 <elf::strtab::get(unsigned long, unsigned long*) const+0x110>
+   13848:	00900793          	addi	a5,zero,9
+   1384c:	0887f063          	bgeu	a5,s0,138cc <elf::strtab::get(unsigned long, unsigned long*) const+0x178>
 	{
 	  auto const __num = __val * 2;
-   13472:	0406                	c.slli	s0,0x1
+   13850:	00141413          	slli	s0,s0,0x1
 	  __first[1] = __digits[__num + 1];
-   13474:	00007797          	auipc	a5,0x7
-   13478:	dbc7b783          	ld	a5,-580(a5) # 1a230 <std::__detail::__to_chars_10_impl<unsigned long>(char*, unsigned int, unsigned long)::__digits@@Base+0x3258>
-   1347c:	97a2                	c.add	a5,s0
-   1347e:	0017c703          	lbu	a4,1(a5)
-   13482:	00e600a3          	sb	a4,1(a2)
+   13854:	00009797          	auipc	a5,0x9
+   13858:	9dc7b783          	ld	a5,-1572(a5) # 1c230 <std::__detail::__to_chars_10_impl<unsigned long>(char*, unsigned int, unsigned long)::__digits@@Base+0x3888>
+   1385c:	008787b3          	add	a5,a5,s0
+   13860:	0017c703          	lbu	a4,1(a5)
+   13864:	00e600a3          	sb	a4,1(a2)
 	  __first[0] = __digits[__num];
-   13486:	0007c783          	lbu	a5,0(a5)
-   1348a:	00f60023          	sb	a5,0(a2)
+   13868:	0007c783          	lbu	a5,0(a5)
+   1386c:	00f60023          	sb	a5,0(a2)
   template<typename _CharT, typename _Traits, typename _Alloc>
     _GLIBCXX20_CONSTEXPR
     inline basic_string<_CharT, _Traits, _Alloc>
     operator+(const _CharT* __lhs,
 	      basic_string<_CharT, _Traits, _Alloc>&& __rhs)
     { return std::move(__rhs.insert(0, __lhs)); }
-   1348e:	00003617          	auipc	a2,0x3
-   13492:	75a60613          	addi	a2,a2,1882 # 16be8 <__libc_csu_fini+0x188>
-   13496:	4581                	c.li	a1,0
-   13498:	850a                	c.mv	a0,sp
-   1349a:	cf6ff0ef          	jal	ra,12990 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::insert(unsigned long, char const*)@plt>
-   1349e:	a83d                	c.j	134dc <elf::strtab::get(unsigned long, unsigned long*) const+0x11a>
+   13870:	00005617          	auipc	a2,0x5
+   13874:	d4860613          	addi	a2,a2,-696 # 185b8 <__libc_csu_fini+0x184>
+   13878:	00000593          	addi	a1,zero,0
+   1387c:	00010513          	addi	a0,sp,0
+   13880:	910ff0ef          	jal	ra,12990 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::insert(unsigned long, char const*)@plt>
+   13884:	0540006f          	jal	zero,138d8 <elf::strtab::get(unsigned long, unsigned long*) const+0x184>
 	  auto const __num = (__val % 100) * 2;
-   134a0:	02b47733          	remu	a4,s0,a1
-   134a4:	0706                	c.slli	a4,0x1
+   13888:	02b47733          	remu	a4,s0,a1
+   1388c:	00171713          	slli	a4,a4,0x1
 	  __val /= 100;
-   134a6:	02b45433          	divu	s0,s0,a1
+   13890:	02b45433          	divu	s0,s0,a1
 	  __first[__pos] = __digits[__num + 1];
-   134aa:	02079693          	slli	a3,a5,0x20
-   134ae:	9281                	c.srli	a3,0x20
-   134b0:	96b2                	c.add	a3,a2
-   134b2:	972a                	c.add	a4,a0
-   134b4:	00174883          	lbu	a7,1(a4)
-   134b8:	01168023          	sb	a7,0(a3)
+   13894:	02079693          	slli	a3,a5,0x20
+   13898:	0206d693          	srli	a3,a3,0x20
+   1389c:	00d606b3          	add	a3,a2,a3
+   138a0:	00e50733          	add	a4,a0,a4
+   138a4:	00174883          	lbu	a7,1(a4)
+   138a8:	01168023          	sb	a7,0(a3)
 	  __first[__pos - 1] = __digits[__num];
-   134bc:	fff7869b          	addiw	a3,a5,-1
-   134c0:	1682                	c.slli	a3,0x20
-   134c2:	9281                	c.srli	a3,0x20
-   134c4:	96b2                	c.add	a3,a2
-   134c6:	00074703          	lbu	a4,0(a4)
-   134ca:	00e68023          	sb	a4,0(a3)
+   138ac:	fff7869b          	addiw	a3,a5,-1
+   138b0:	02069693          	slli	a3,a3,0x20
+   138b4:	0206d693          	srli	a3,a3,0x20
+   138b8:	00d606b3          	add	a3,a2,a3
+   138bc:	00074703          	lbu	a4,0(a4)
+   138c0:	00e68023          	sb	a4,0(a3)
 	  __pos -= 2;
-   134ce:	37f9                	c.addiw	a5,-2
-   134d0:	bf61                	c.j	13468 <elf::strtab::get(unsigned long, unsigned long*) const+0xa6>
+   138c4:	ffe7879b          	addiw	a5,a5,-2
+   138c8:	f7dff06f          	jal	zero,13844 <elf::strtab::get(unsigned long, unsigned long*) const+0xf0>
 	}
       else
 	__first[0] = '0' + __val;
-   134d2:	0304079b          	addiw	a5,s0,48
-   134d6:	0ff7f793          	andi	a5,a5,255
-   134da:	bf45                	c.j	1348a <elf::strtab::get(unsigned long, unsigned long*) const+0xc8>
-   134dc:	85aa                	c.mv	a1,a0
-   134de:	1000                	c.addi4spn	s0,sp,32
-   134e0:	8522                	c.mv	a0,s0
-   134e2:	d2eff0ef          	jal	ra,12a10 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)@plt>
+   138cc:	0304079b          	addiw	a5,s0,48
+   138d0:	0ff7f793          	andi	a5,a5,255
+   138d4:	f99ff06f          	jal	zero,1386c <elf::strtab::get(unsigned long, unsigned long*) const+0x118>
+   138d8:	00050593          	addi	a1,a0,0
+   138dc:	02010413          	addi	s0,sp,32
+   138e0:	00040513          	addi	a0,s0,0
+   138e4:	92cff0ef          	jal	ra,12a10 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)@plt>
   template<typename _CharT, typename _Traits, typename _Alloc>
     _GLIBCXX20_CONSTEXPR
     inline basic_string<_CharT, _Traits, _Alloc>
     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
 	      const _CharT* __rhs)
     { return std::move(__lhs.append(__rhs)); }
-   134e6:	00003597          	auipc	a1,0x3
-   134ea:	71258593          	addi	a1,a1,1810 # 16bf8 <__libc_csu_fini+0x198>
-   134ee:	8522                	c.mv	a0,s0
-   134f0:	f10ff0ef          	jal	ra,12c00 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*)@plt>
-   134f4:	85aa                	c.mv	a1,a0
-   134f6:	0080                	c.addi4spn	s0,sp,64
-   134f8:	8522                	c.mv	a0,s0
-   134fa:	d16ff0ef          	jal	ra,12a10 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)@plt>
+   138e8:	00005597          	auipc	a1,0x5
+   138ec:	ce058593          	addi	a1,a1,-800 # 185c8 <__libc_csu_fini+0x194>
+   138f0:	00040513          	addi	a0,s0,0
+   138f4:	b0cff0ef          	jal	ra,12c00 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*)@plt>
+   138f8:	00050593          	addi	a1,a0,0
+   138fc:	04010413          	addi	s0,sp,64
+   13900:	00040513          	addi	a0,s0,0
+   13904:	90cff0ef          	jal	ra,12a10 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)@plt>
     throw range_error("string offset " + std::to_string(offset) +
-   134fe:	85a2                	c.mv	a1,s0
-   13500:	8526                	c.mv	a0,s1
-   13502:	f0eff0ef          	jal	ra,12c10 <std::range_error::range_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
+   13908:	00040593          	addi	a1,s0,0
+   1390c:	00048513          	addi	a0,s1,0
+   13910:	b00ff0ef          	jal	ra,12c10 <std::range_error::range_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
       { return _M_dataplus._M_p; }
-   13506:	6506                	c.ldsp	a0,64(sp)
+   13914:	04013503          	ld	a0,64(sp)
 	if (!_M_is_local())
-   13508:	089c                	c.addi4spn	a5,sp,80
-   1350a:	00f50463          	beq	a0,a5,13512 <elf::strtab::get(unsigned long, unsigned long*) const+0x150>
+   13918:	05010793          	addi	a5,sp,80
+   1391c:	00f50463          	beq	a0,a5,13924 <elf::strtab::get(unsigned long, unsigned long*) const+0x1d0>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   1350e:	d62ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   13920:	950ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   13512:	7502                	c.ldsp	a0,32(sp)
+   13924:	02013503          	ld	a0,32(sp)
 	if (!_M_is_local())
-   13514:	181c                	c.addi4spn	a5,sp,48
-   13516:	00f50463          	beq	a0,a5,1351e <elf::strtab::get(unsigned long, unsigned long*) const+0x15c>
-   1351a:	d56ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   13928:	03010793          	addi	a5,sp,48
+   1392c:	00f50463          	beq	a0,a5,13934 <elf::strtab::get(unsigned long, unsigned long*) const+0x1e0>
+   13930:	940ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   1351e:	6502                	c.ldsp	a0,0(sp)
+   13934:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   13520:	081c                	c.addi4spn	a5,sp,16
-   13522:	00f50463          	beq	a0,a5,1352a <elf::strtab::get(unsigned long, unsigned long*) const+0x168>
-   13526:	d4aff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   13938:	01010793          	addi	a5,sp,16
+   1393c:	00f50463          	beq	a0,a5,13944 <elf::strtab::get(unsigned long, unsigned long*) const+0x1f0>
+   13940:	930ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
                       " exceeds section size");
-   1352a:	00007617          	auipc	a2,0x7
-   1352e:	cce63603          	ld	a2,-818(a2) # 1a1f8 <std::range_error::~range_error()@GLIBCXX_3.4>
-   13532:	00007597          	auipc	a1,0x7
-   13536:	d365b583          	ld	a1,-714(a1) # 1a268 <typeinfo for std::range_error@GLIBCXX_3.4>
-   1353a:	8526                	c.mv	a0,s1
-   1353c:	e44ff0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   13944:	00009617          	auipc	a2,0x9
+   13948:	8b463603          	ld	a2,-1868(a2) # 1c1f8 <std::range_error::~range_error()@GLIBCXX_3.4>
+   1394c:	00009597          	auipc	a1,0x9
+   13950:	91c5b583          	ld	a1,-1764(a1) # 1c268 <typeinfo for std::range_error@GLIBCXX_3.4>
+   13954:	00048513          	addi	a0,s1,0
+   13958:	a28ff0ef          	jal	ra,12b80 <__cxa_throw@plt>
   if (p == m->end)
-   13540:	eaf683e3          	beq	a3,a5,133e6 <elf::strtab::get(unsigned long, unsigned long*) const+0x24>
+   1395c:	e2f688e3          	beq	a3,a5,1378c <elf::strtab::get(unsigned long, unsigned long*) const+0x38>
 
   if (len_out)
-   13544:	c219                	c.beqz	a2,1354a <elf::strtab::get(unsigned long, unsigned long*) const+0x188>
+   13960:	00060663          	beq	a2,zero,1396c <elf::strtab::get(unsigned long, unsigned long*) const+0x218>
     *len_out = p - start;
-   13546:	8f89                	c.sub	a5,a0
-   13548:	e21c                	c.sd	a5,0(a2)
+   13964:	40a787b3          	sub	a5,a5,a0
+   13968:	00f63023          	sd	a5,0(a2)
   return start;
 }
-   1354a:	70e6                	c.ldsp	ra,120(sp)
-   1354c:	7446                	c.ldsp	s0,112(sp)
-   1354e:	74a6                	c.ldsp	s1,104(sp)
-   13550:	6109                	c.addi16sp	sp,128
-   13552:	8082                	c.jr	ra
-   13554:	00007797          	auipc	a5,0x7
-   13558:	c747b783          	ld	a5,-908(a5) # 1a1c8 <vtable for elf::format_error@@Base+0x5e0>
-   1355c:	07c1                	c.addi	a5,16
-   1355e:	e01c                	c.sd	a5,0(s0)
+   1396c:	07813083          	ld	ra,120(sp)
+   13970:	07013403          	ld	s0,112(sp)
+   13974:	06813483          	ld	s1,104(sp)
+   13978:	08010113          	addi	sp,sp,128
+   1397c:	00008067          	jalr	zero,0(ra)
+   13980:	00009797          	auipc	a5,0x9
+   13984:	8487b783          	ld	a5,-1976(a5) # 1c1c8 <vtable for elf::format_error@@Base+0x5e0>
+   13988:	01078793          	addi	a5,a5,16
+   1398c:	00f43023          	sd	a5,0(s0)
     throw format_error("unterminated string");
-   13560:	00007617          	auipc	a2,0x7
-   13564:	d1063603          	ld	a2,-752(a2) # 1a270 <elf::format_error::~format_error()@@Base+0x5d62>
-   13568:	00007597          	auipc	a1,0x7
-   1356c:	c505b583          	ld	a1,-944(a1) # 1a1b8 <typeinfo for elf::format_error@@Base+0x678>
-   13570:	8522                	c.mv	a0,s0
-   13572:	e0eff0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   13990:	00009617          	auipc	a2,0x9
+   13994:	8e063603          	ld	a2,-1824(a2) # 1c270 <elf::format_error::~format_error()@@Base+0x7284>
+   13998:	00009597          	auipc	a1,0x9
+   1399c:	8205b583          	ld	a1,-2016(a1) # 1c1b8 <typeinfo for elf::format_error@@Base+0x678>
+   139a0:	00040513          	addi	a0,s0,0
+   139a4:	9dcff0ef          	jal	ra,12b80 <__cxa_throw@plt>
       { return _M_dataplus._M_p; }
-   13576:	842a                	c.mv	s0,a0
-   13578:	6506                	c.ldsp	a0,64(sp)
+   139a8:	00050413          	addi	s0,a0,0
+   139ac:	04013503          	ld	a0,64(sp)
 	if (!_M_is_local())
-   1357a:	089c                	c.addi4spn	a5,sp,80
-   1357c:	00f50463          	beq	a0,a5,13584 <elf::strtab::get(unsigned long, unsigned long*) const+0x1c2>
-   13580:	cf0ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   139b0:	05010793          	addi	a5,sp,80
+   139b4:	00f50463          	beq	a0,a5,139bc <elf::strtab::get(unsigned long, unsigned long*) const+0x268>
+   139b8:	8b8ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   13584:	7502                	c.ldsp	a0,32(sp)
+   139bc:	02013503          	ld	a0,32(sp)
 	if (!_M_is_local())
-   13586:	181c                	c.addi4spn	a5,sp,48
-   13588:	00f50463          	beq	a0,a5,13590 <elf::strtab::get(unsigned long, unsigned long*) const+0x1ce>
-   1358c:	ce4ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   139c0:	03010793          	addi	a5,sp,48
+   139c4:	00f50463          	beq	a0,a5,139cc <elf::strtab::get(unsigned long, unsigned long*) const+0x278>
+   139c8:	8a8ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   13590:	6502                	c.ldsp	a0,0(sp)
+   139cc:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   13592:	081c                	c.addi4spn	a5,sp,16
-   13594:	00f50463          	beq	a0,a5,1359c <elf::strtab::get(unsigned long, unsigned long*) const+0x1da>
-   13598:	cd8ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   139d0:	01010793          	addi	a5,sp,16
+   139d4:	00f50463          	beq	a0,a5,139dc <elf::strtab::get(unsigned long, unsigned long*) const+0x288>
+   139d8:	898ff0ef          	jal	ra,12a70 <operator delete(void*)@plt>
                       " exceeds section size");
-   1359c:	8526                	c.mv	a0,s1
-   1359e:	cb2ff0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   135a2:	8522                	c.mv	a0,s0
-   135a4:	e0cff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   139dc:	00048513          	addi	a0,s1,0
+   139e0:	870ff0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   139e4:	00040513          	addi	a0,s0,0
+   139e8:	9c8ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
       { return _M_dataplus._M_p; }
-   135a8:	842a                	c.mv	s0,a0
-   135aa:	bfe9                	c.j	13584 <elf::strtab::get(unsigned long, unsigned long*) const+0x1c2>
-   135ac:	842a                	c.mv	s0,a0
-   135ae:	b7cd                	c.j	13590 <elf::strtab::get(unsigned long, unsigned long*) const+0x1ce>
-   135b0:	842a                	c.mv	s0,a0
-   135b2:	b7ed                	c.j	1359c <elf::strtab::get(unsigned long, unsigned long*) const+0x1da>
+   139ec:	00050413          	addi	s0,a0,0
+   139f0:	fcdff06f          	jal	zero,139bc <elf::strtab::get(unsigned long, unsigned long*) const+0x268>
+   139f4:	00050413          	addi	s0,a0,0
+   139f8:	fd5ff06f          	jal	zero,139cc <elf::strtab::get(unsigned long, unsigned long*) const+0x278>
+   139fc:	00050413          	addi	s0,a0,0
+   13a00:	fddff06f          	jal	zero,139dc <elf::strtab::get(unsigned long, unsigned long*) const+0x288>
     throw format_error("unterminated string");
-   135b4:	84aa                	c.mv	s1,a0
-   135b6:	8522                	c.mv	a0,s0
-   135b8:	c98ff0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   135bc:	8526                	c.mv	a0,s1
-   135be:	df2ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   13a04:	00050493          	addi	s1,a0,0
+   13a08:	00040513          	addi	a0,s0,0
+   13a0c:	844ff0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   13a10:	00048513          	addi	a0,s1,0
+   13a14:	99cff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-00000000000135c2 <elf::section::get_name(unsigned long*) const>:
+0000000000013a18 <elf::section::get_name(unsigned long*) const>:
 const char *section::get_name(size_t *len_out) const {
-   135c2:	7139                	c.addi16sp	sp,-64
-   135c4:	fc06                	c.sdsp	ra,56(sp)
-   135c6:	f822                	c.sdsp	s0,48(sp)
-   135c8:	f426                	c.sdsp	s1,40(sp)
-   135ca:	f04a                	c.sdsp	s2,32(sp)
-   135cc:	ec4e                	c.sdsp	s3,24(sp)
-   135ce:	842a                	c.mv	s0,a0
-   135d0:	84ae                	c.mv	s1,a1
-   135d2:	00053903          	ld	s2,0(a0)
+   13a18:	fc010113          	addi	sp,sp,-64
+   13a1c:	02113c23          	sd	ra,56(sp)
+   13a20:	02813823          	sd	s0,48(sp)
+   13a24:	02913423          	sd	s1,40(sp)
+   13a28:	03213023          	sd	s2,32(sp)
+   13a2c:	01313c23          	sd	s3,24(sp)
+   13a30:	00050413          	addi	s0,a0,0
+   13a34:	00058493          	addi	s1,a1,0
+   13a38:	00053903          	ld	s2,0(a0)
   if (!m->name)
-   135d6:	05093783          	ld	a5,80(s2)
-   135da:	cf91                	c.beqz	a5,135f6 <elf::section::get_name(unsigned long*) const+0x34>
+   13a3c:	05093783          	ld	a5,80(s2)
+   13a40:	02078c63          	beq	a5,zero,13a78 <elf::section::get_name(unsigned long*) const+0x60>
   if (len_out)
-   135dc:	c481                	c.beqz	s1,135e4 <elf::section::get_name(unsigned long*) const+0x22>
+   13a44:	00048863          	beq	s1,zero,13a54 <elf::section::get_name(unsigned long*) const+0x3c>
     *len_out = m->name_len;
-   135de:	601c                	c.ld	a5,0(s0)
-   135e0:	6fbc                	c.ld	a5,88(a5)
-   135e2:	e09c                	c.sd	a5,0(s1)
+   13a48:	00043783          	ld	a5,0(s0)
+   13a4c:	0587b783          	ld	a5,88(a5)
+   13a50:	00f4b023          	sd	a5,0(s1)
   return m->name;
-   135e4:	601c                	c.ld	a5,0(s0)
-   135e6:	6ba8                	c.ld	a0,80(a5)
+   13a54:	00043783          	ld	a5,0(s0)
+   13a58:	0507b503          	ld	a0,80(a5)
 }
-   135e8:	70e2                	c.ldsp	ra,56(sp)
-   135ea:	7442                	c.ldsp	s0,48(sp)
-   135ec:	74a2                	c.ldsp	s1,40(sp)
-   135ee:	7902                	c.ldsp	s2,32(sp)
-   135f0:	69e2                	c.ldsp	s3,24(sp)
-   135f2:	6121                	c.addi16sp	sp,64
-   135f4:	8082                	c.jr	ra
+   13a5c:	03813083          	ld	ra,56(sp)
+   13a60:	03013403          	ld	s0,48(sp)
+   13a64:	02813483          	ld	s1,40(sp)
+   13a68:	02013903          	ld	s2,32(sp)
+   13a6c:	01813983          	ld	s3,24(sp)
+   13a70:	04010113          	addi	sp,sp,64
+   13a74:	00008067          	jalr	zero,0(ra)
     m->name = m->f.get_section(m->f.get_hdr().shstrndx)
-   135f6:	854a                	c.mv	a0,s2
-   135f8:	95fff0ef          	jal	ra,12f56 <elf::elf::get_hdr() const>
-   135fc:	03e55583          	lhu	a1,62(a0)
-   13600:	854a                	c.mv	a0,s2
-   13602:	9a9ff0ef          	jal	ra,12faa <elf::elf::get_section(unsigned int) const>
-   13606:	85aa                	c.mv	a1,a0
+   13a78:	00090513          	addi	a0,s2,0
+   13a7c:	e10ff0ef          	jal	ra,1308c <elf::elf::get_hdr() const>
+   13a80:	03e55583          	lhu	a1,62(a0)
+   13a84:	00090513          	addi	a0,s2,0
+   13a88:	e90ff0ef          	jal	ra,13118 <elf::elf::get_section(unsigned int) const>
+   13a8c:	00050593          	addi	a1,a0,0
                   .as_strtab()
-   13608:	890a                	c.mv	s2,sp
-   1360a:	854a                	c.mv	a0,s2
-   1360c:	c87ff0ef          	jal	ra,13292 <elf::section::as_strtab() const>
-   13610:	00043983          	ld	s3,0(s0)
+   13a90:	00010913          	addi	s2,sp,0
+   13a94:	00090513          	addi	a0,s2,0
+   13a98:	afdff0ef          	jal	ra,13594 <elf::section::as_strtab() const>
+   13a9c:	00043983          	ld	s3,0(s0)
                   .get(m->hdr.name, &m->name_len);
-   13614:	05898613          	addi	a2,s3,88
-   13618:	0109e583          	lwu	a1,16(s3)
-   1361c:	854a                	c.mv	a0,s2
-   1361e:	da5ff0ef          	jal	ra,133c2 <elf::strtab::get(unsigned long, unsigned long*) const>
+   13aa0:	05898613          	addi	a2,s3,88
+   13aa4:	0109e583          	lwu	a1,16(s3)
+   13aa8:	00090513          	addi	a0,s2,0
+   13aac:	ca9ff0ef          	jal	ra,13754 <elf::strtab::get(unsigned long, unsigned long*) const>
     m->name = m->f.get_section(m->f.get_hdr().shstrndx)
-   13622:	04a9b823          	sd	a0,80(s3)
+   13ab0:	04a9b823          	sd	a0,80(s3)
 	if (_M_pi != nullptr)
-   13626:	6922                	c.ldsp	s2,8(sp)
-   13628:	fa090ae3          	beq	s2,zero,135dc <elf::section::get_name(unsigned long*) const+0x1a>
+   13ab4:	00813903          	ld	s2,8(sp)
+   13ab8:	f80906e3          	beq	s2,zero,13a44 <elf::section::get_name(unsigned long*) const+0x2c>
     if (__is_single_threaded())
-   1362c:	00007797          	auipc	a5,0x7
-   13630:	c147b783          	ld	a5,-1004(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13634:	0007c783          	lbu	a5,0(a5)
-   13638:	c7b9                	c.beqz	a5,13686 <elf::section::get_name(unsigned long*) const+0xc4>
+   13abc:	00008797          	auipc	a5,0x8
+   13ac0:	7847b783          	ld	a5,1924(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13ac4:	0007c783          	lbu	a5,0(a5)
+   13ac8:	06078263          	beq	a5,zero,13b2c <elf::section::get_name(unsigned long*) const+0x114>
     _Atomic_word __result = *__mem;
-   1363a:	03092503          	lw	a0,48(s2)
+   13acc:	03092503          	lw	a0,48(s2)
     *__mem += __val;
-   1363e:	fff5079b          	addiw	a5,a0,-1
-   13642:	02f92823          	sw	a5,48(s2)
+   13ad0:	fff5079b          	addiw	a5,a0,-1
+   13ad4:	02f92823          	sw	a5,48(s2)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   13646:	4785                	c.li	a5,1
-   13648:	f8f51ae3          	bne	a0,a5,135dc <elf::section::get_name(unsigned long*) const+0x1a>
+   13ad8:	00100793          	addi	a5,zero,1
+   13adc:	f6f514e3          	bne	a0,a5,13a44 <elf::section::get_name(unsigned long*) const+0x2c>
 	_M_dispose();
-   1364c:	00093783          	ld	a5,0(s2)
-   13650:	6b9c                	c.ld	a5,16(a5)
-   13652:	854a                	c.mv	a0,s2
-   13654:	9782                	c.jalr	a5
+   13ae0:	00093783          	ld	a5,0(s2)
+   13ae4:	0107b783          	ld	a5,16(a5)
+   13ae8:	00090513          	addi	a0,s2,0
+   13aec:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   13656:	0ff0000f          	fence	iorw,iorw
+   13af0:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   1365a:	00007797          	auipc	a5,0x7
-   1365e:	be67b783          	ld	a5,-1050(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13662:	0007c783          	lbu	a5,0(a5)
-   13666:	c795                	c.beqz	a5,13692 <elf::section::get_name(unsigned long*) const+0xd0>
+   13af4:	00008797          	auipc	a5,0x8
+   13af8:	74c7b783          	ld	a5,1868(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13afc:	0007c783          	lbu	a5,0(a5)
+   13b00:	02078e63          	beq	a5,zero,13b3c <elf::section::get_name(unsigned long*) const+0x124>
     _Atomic_word __result = *__mem;
-   13668:	03492503          	lw	a0,52(s2)
+   13b04:	03492503          	lw	a0,52(s2)
     *__mem += __val;
-   1366c:	fff5079b          	addiw	a5,a0,-1
-   13670:	02f92a23          	sw	a5,52(s2)
+   13b08:	fff5079b          	addiw	a5,a0,-1
+   13b0c:	02f92a23          	sw	a5,52(s2)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   13674:	4785                	c.li	a5,1
-   13676:	f6f513e3          	bne	a0,a5,135dc <elf::section::get_name(unsigned long*) const+0x1a>
+   13b10:	00100793          	addi	a5,zero,1
+   13b14:	f2f518e3          	bne	a0,a5,13a44 <elf::section::get_name(unsigned long*) const+0x2c>
 	    _M_destroy();
-   1367a:	00093783          	ld	a5,0(s2)
-   1367e:	6f9c                	c.ld	a5,24(a5)
-   13680:	854a                	c.mv	a0,s2
-   13682:	9782                	c.jalr	a5
-   13684:	bfa1                	c.j	135dc <elf::section::get_name(unsigned long*) const+0x1a>
+   13b18:	00093783          	ld	a5,0(s2)
+   13b1c:	0187b783          	ld	a5,24(a5)
+   13b20:	00090513          	addi	a0,s2,0
+   13b24:	000780e7          	jalr	ra,0(a5)
+   13b28:	f1dff06f          	jal	zero,13a44 <elf::section::get_name(unsigned long*) const+0x2c>
       return __exchange_and_add(__mem, __val);
-   13686:	55fd                	c.li	a1,-1
-   13688:	03090513          	addi	a0,s2,48
-   1368c:	af4ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   13690:	bf5d                	c.j	13646 <elf::section::get_name(unsigned long*) const+0x84>
-   13692:	55fd                	c.li	a1,-1
-   13694:	03490513          	addi	a0,s2,52
-   13698:	ae8ff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   1369c:	bfe1                	c.j	13674 <elf::section::get_name(unsigned long*) const+0xb2>
+   13b2c:	fff00593          	addi	a1,zero,-1
+   13b30:	03090513          	addi	a0,s2,48
+   13b34:	e4dfe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13b38:	fa1ff06f          	jal	zero,13ad8 <elf::section::get_name(unsigned long*) const+0xc0>
+   13b3c:	fff00593          	addi	a1,zero,-1
+   13b40:	03490513          	addi	a0,s2,52
+   13b44:	e3dfe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13b48:	fc9ff06f          	jal	zero,13b10 <elf::section::get_name(unsigned long*) const+0xf8>
 	if (_M_pi != nullptr)
-   1369e:	842a                	c.mv	s0,a0
-   136a0:	6522                	c.ldsp	a0,8(sp)
-   136a2:	c511                	c.beqz	a0,136ae <elf::section::get_name(unsigned long*) const+0xec>
+   13b4c:	00050413          	addi	s0,a0,0
+   13b50:	00813503          	ld	a0,8(sp)
+   13b54:	00050863          	beq	a0,zero,13b64 <elf::section::get_name(unsigned long*) const+0x14c>
 	  _M_pi->_M_release();
-   136a4:	00007317          	auipc	t1,0x7
-   136a8:	b4c33303          	ld	t1,-1204(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   136ac:	9302                	c.jalr	t1
-   136ae:	8522                	c.mv	a0,s0
-   136b0:	d00ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   13b58:	00008317          	auipc	t1,0x8
+   13b5c:	69833303          	ld	t1,1688(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   13b60:	000300e7          	jalr	ra,0(t1)
+   13b64:	00040513          	addi	a0,s0,0
+   13b68:	848ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-00000000000136b4 <elf::elf::get_section(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const>:
+0000000000013b6c <elf::elf::get_section(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const>:
 const section &elf::get_section(const std::string &name) const {
-   136b4:	7179                	c.addi16sp	sp,-48
-   136b6:	f406                	c.sdsp	ra,40(sp)
-   136b8:	f022                	c.sdsp	s0,32(sp)
-   136ba:	ec26                	c.sdsp	s1,24(sp)
-   136bc:	e84a                	c.sdsp	s2,16(sp)
-   136be:	e44e                	c.sdsp	s3,8(sp)
-   136c0:	e052                	c.sdsp	s4,0(sp)
-   136c2:	8a2a                	c.mv	s4,a0
-   136c4:	84ae                	c.mv	s1,a1
+   13b6c:	fd010113          	addi	sp,sp,-48
+   13b70:	02113423          	sd	ra,40(sp)
+   13b74:	02813023          	sd	s0,32(sp)
+   13b78:	00913c23          	sd	s1,24(sp)
+   13b7c:	01213823          	sd	s2,16(sp)
+   13b80:	01313423          	sd	s3,8(sp)
+   13b84:	01413023          	sd	s4,0(sp)
+   13b88:	00050a13          	addi	s4,a0,0
+   13b8c:	00058493          	addi	s1,a1,0
   for (auto &sec : sections())
-   136c6:	8d5ff0ef          	jal	ra,12f9a <elf::elf::sections() const>
-   136ca:	6100                	c.ld	s0,0(a0)
-   136cc:	00853983          	ld	s3,8(a0)
-   136d0:	01340f63          	beq	s0,s3,136ee <elf::elf::get_section(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x3a>
-   136d4:	8922                	c.mv	s2,s0
+   13b90:	d70ff0ef          	jal	ra,13100 <elf::elf::sections() const>
+   13b94:	00053403          	ld	s0,0(a0)
+   13b98:	00853983          	ld	s3,8(a0)
+   13b9c:	03340663          	beq	s0,s3,13bc8 <elf::elf::get_section(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x5c>
+   13ba0:	00040913          	addi	s2,s0,0
     if (name == sec.get_name(nullptr))
-   136d6:	4581                	c.li	a1,0
-   136d8:	8522                	c.mv	a0,s0
-   136da:	ee9ff0ef          	jal	ra,135c2 <elf::section::get_name(unsigned long*) const>
+   13ba4:	00000593          	addi	a1,zero,0
+   13ba8:	00040513          	addi	a0,s0,0
+   13bac:	e6dff0ef          	jal	ra,13a18 <elf::section::get_name(unsigned long*) const>
   template<typename _CharT, typename _Traits, typename _Alloc>
     _GLIBCXX20_CONSTEXPR
     inline bool
     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
 	       const _CharT* __rhs)
     { return __lhs.compare(__rhs) == 0; }
-   136de:	85aa                	c.mv	a1,a0
-   136e0:	8526                	c.mv	a0,s1
-   136e2:	abeff0ef          	jal	ra,129a0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(char const*) const@plt>
-   136e6:	c901                	c.beqz	a0,136f6 <elf::elf::get_section(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x42>
+   13bb0:	00050593          	addi	a1,a0,0
+   13bb4:	00048513          	addi	a0,s1,0
+   13bb8:	de9fe0ef          	jal	ra,129a0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare(char const*) const@plt>
+   13bbc:	00050a63          	beq	a0,zero,13bd0 <elf::elf::get_section(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x64>
   for (auto &sec : sections())
-   136e8:	0441                	c.addi	s0,16
-   136ea:	fe8995e3          	bne	s3,s0,136d4 <elf::elf::get_section(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x20>
+   13bc0:	01040413          	addi	s0,s0,16
+   13bc4:	fc899ee3          	bne	s3,s0,13ba0 <elf::elf::get_section(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x34>
   return m->invalid_section;
-   136ee:	000a3903          	ld	s2,0(s4)
-   136f2:	08090913          	addi	s2,s2,128
+   13bc8:	000a3903          	ld	s2,0(s4)
+   13bcc:	08090913          	addi	s2,s2,128
 }
-   136f6:	854a                	c.mv	a0,s2
-   136f8:	70a2                	c.ldsp	ra,40(sp)
-   136fa:	7402                	c.ldsp	s0,32(sp)
-   136fc:	64e2                	c.ldsp	s1,24(sp)
-   136fe:	6942                	c.ldsp	s2,16(sp)
-   13700:	69a2                	c.ldsp	s3,8(sp)
-   13702:	6a02                	c.ldsp	s4,0(sp)
-   13704:	6145                	c.addi16sp	sp,48
-   13706:	8082                	c.jr	ra
+   13bd0:	00090513          	addi	a0,s2,0
+   13bd4:	02813083          	ld	ra,40(sp)
+   13bd8:	02013403          	ld	s0,32(sp)
+   13bdc:	01813483          	ld	s1,24(sp)
+   13be0:	01013903          	ld	s2,16(sp)
+   13be4:	00813983          	ld	s3,8(sp)
+   13be8:	00013a03          	ld	s4,0(sp)
+   13bec:	03010113          	addi	sp,sp,48
+   13bf0:	00008067          	jalr	zero,0(ra)
 
-0000000000013708 <elf::sym::get_name(unsigned long*) const>:
+0000000000013bf4 <elf::sym::get_name(unsigned long*) const>:
 
 sym::sym(elf f, const void *data, strtab strs) : strs(strs) {
   canon_hdr(&this->data, data, f.get_hdr().ei_class, f.get_hdr().ei_data);
 }
 
 const char *sym::get_name(size_t *len_out) const {
-   13708:	1141                	c.addi	sp,-16
-   1370a:	e406                	c.sdsp	ra,8(sp)
-   1370c:	862e                	c.mv	a2,a1
+   13bf4:	ff010113          	addi	sp,sp,-16
+   13bf8:	00113423          	sd	ra,8(sp)
+   13bfc:	00058613          	addi	a2,a1,0
   return strs.get(get_data().name, len_out);
-   1370e:	01056583          	lwu	a1,16(a0)
-   13712:	cb1ff0ef          	jal	ra,133c2 <elf::strtab::get(unsigned long, unsigned long*) const>
+   13c00:	01056583          	lwu	a1,16(a0)
+   13c04:	b51ff0ef          	jal	ra,13754 <elf::strtab::get(unsigned long, unsigned long*) const>
 }
-   13716:	60a2                	c.ldsp	ra,8(sp)
-   13718:	0141                	c.addi	sp,16
-   1371a:	8082                	c.jr	ra
+   13c08:	00813083          	ld	ra,8(sp)
+   13c0c:	01010113          	addi	sp,sp,16
+   13c10:	00008067          	jalr	zero,0(ra)
 
-000000000001371c <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)>:
+0000000000013c14 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)>:
   const elf f;
   const char *data, *end;
   const strtab strs;
 };
 
 symtab::symtab(elf f, const void *data, size_t size, strtab strs)
-   1371c:	715d                	c.addi16sp	sp,-80
-   1371e:	e486                	c.sdsp	ra,72(sp)
-   13720:	e0a2                	c.sdsp	s0,64(sp)
-   13722:	fc26                	c.sdsp	s1,56(sp)
-   13724:	f84a                	c.sdsp	s2,48(sp)
-   13726:	f44e                	c.sdsp	s3,40(sp)
-   13728:	f052                	c.sdsp	s4,32(sp)
-   1372a:	ec56                	c.sdsp	s5,24(sp)
-   1372c:	e85a                	c.sdsp	s6,16(sp)
-   1372e:	e45e                	c.sdsp	s7,8(sp)
-   13730:	892a                	c.mv	s2,a0
-   13732:	8a2e                	c.mv	s4,a1
-   13734:	89b2                	c.mv	s3,a2
-   13736:	84ba                	c.mv	s1,a4
+   13c14:	fb010113          	addi	sp,sp,-80
+   13c18:	04113423          	sd	ra,72(sp)
+   13c1c:	04813023          	sd	s0,64(sp)
+   13c20:	02913c23          	sd	s1,56(sp)
+   13c24:	03213823          	sd	s2,48(sp)
+   13c28:	03313423          	sd	s3,40(sp)
+   13c2c:	03413023          	sd	s4,32(sp)
+   13c30:	01513c23          	sd	s5,24(sp)
+   13c34:	01613823          	sd	s6,16(sp)
+   13c38:	01713423          	sd	s7,8(sp)
+   13c3c:	00050913          	addi	s2,a0,0
+   13c40:	00058a13          	addi	s4,a1,0
+   13c44:	00060993          	addi	s3,a2,0
+   13c48:	00070493          	addi	s1,a4,0
     : m(make_shared<impl>(f, (const char *)data, (const char *)data + size,
-   13738:	00d60ab3          	add	s5,a2,a3
+   13c4c:	00d60ab3          	add	s5,a2,a3
 	: _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
-   1373c:	00053023          	sd	zero,0(a0)
+   13c50:	00053023          	sd	zero,0(a0)
 	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-   13740:	06800513          	addi	a0,zero,104
-   13744:	b3cff0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
-   13748:	842a                	c.mv	s0,a0
-   1374a:	00052423          	sw	zero,8(a0)
-   1374e:	00052623          	sw	zero,12(a0)
-   13752:	00052823          	sw	zero,16(a0)
-   13756:	00052a23          	sw	zero,20(a0)
-   1375a:	00052c23          	sw	zero,24(a0)
-   1375e:	00052e23          	sw	zero,28(a0)
-   13762:	02053023          	sd	zero,32(a0)
-   13766:	02053423          	sd	zero,40(a0)
+   13c54:	06800513          	addi	a0,zero,104
+   13c58:	e29fe0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
+   13c5c:	00050413          	addi	s0,a0,0
+   13c60:	00052423          	sw	zero,8(a0)
+   13c64:	00052623          	sw	zero,12(a0)
+   13c68:	00052823          	sw	zero,16(a0)
+   13c6c:	00052a23          	sw	zero,20(a0)
+   13c70:	00052c23          	sw	zero,24(a0)
+   13c74:	00052e23          	sw	zero,28(a0)
+   13c78:	02053023          	sd	zero,32(a0)
+   13c7c:	02053423          	sd	zero,40(a0)
       : _M_use_count(1), _M_weak_count(1) { }
-   1376a:	4785                	c.li	a5,1
-   1376c:	d91c                	c.sw	a5,48(a0)
-   1376e:	d95c                	c.sw	a5,52(a0)
+   13c80:	00100793          	addi	a5,zero,1
+   13c84:	02f52823          	sw	a5,48(a0)
+   13c88:	02f52a23          	sw	a5,52(a0)
 	: _M_impl(__a)
-   13770:	00007797          	auipc	a5,0x7
-   13774:	a607b783          	ld	a5,-1440(a5) # 1a1d0 <vtable for std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x4b8>
-   13778:	07c1                	c.addi	a5,16
-   1377a:	e11c                	c.sd	a5,0(a0)
-   1377c:	03850b13          	addi	s6,a0,56
+   13c8c:	00008797          	auipc	a5,0x8
+   13c90:	5447b783          	ld	a5,1348(a5) # 1c1d0 <vtable for std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x4b8>
+   13c94:	01078793          	addi	a5,a5,16
+   13c98:	00f53023          	sd	a5,0(a0)
+   13c9c:	03850b13          	addi	s6,a0,56
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   13780:	0004bb83          	ld	s7,0(s1)
+   13ca0:	0004bb83          	ld	s7,0(s1)
       : _M_pi(__r._M_pi)
-   13784:	6484                	c.ld	s1,8(s1)
+   13ca4:	0084b483          	ld	s1,8(s1)
 	if (_M_pi != nullptr)
-   13786:	c899                	c.beqz	s1,1379c <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x80>
+   13ca8:	02048063          	beq	s1,zero,13cc8 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xb4>
     if (__is_single_threaded())
-   13788:	00007797          	auipc	a5,0x7
-   1378c:	ab87b783          	ld	a5,-1352(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13790:	0007c783          	lbu	a5,0(a5)
-   13794:	cfad                	c.beqz	a5,1380e <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xf2>
+   13cac:	00008797          	auipc	a5,0x8
+   13cb0:	5947b783          	ld	a5,1428(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13cb4:	0007c783          	lbu	a5,0(a5)
+   13cb8:	0a078c63          	beq	a5,zero,13d70 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x15c>
   { *__mem += __val; }
-   13796:	589c                	c.lw	a5,48(s1)
-   13798:	2785                	c.addiw	a5,1
-   1379a:	d89c                	c.sw	a5,48(s1)
+   13cbc:	0304a783          	lw	a5,48(s1)
+   13cc0:	0017879b          	addiw	a5,a5,1
+   13cc4:	02f4a823          	sw	a5,48(s1)
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   1379c:	000a3783          	ld	a5,0(s4)
-   137a0:	fc1c                	c.sd	a5,56(s0)
+   13cc8:	000a3783          	ld	a5,0(s4)
+   13ccc:	02f43c23          	sd	a5,56(s0)
       : _M_pi(__r._M_pi)
-   137a2:	008a3503          	ld	a0,8(s4)
-   137a6:	e028                	c.sd	a0,64(s0)
+   13cd0:	008a3503          	ld	a0,8(s4)
+   13cd4:	04a43023          	sd	a0,64(s0)
 	if (_M_pi != nullptr)
-   137a8:	c919                	c.beqz	a0,137be <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xa2>
+   13cd8:	02050063          	beq	a0,zero,13cf8 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xe4>
     if (__is_single_threaded())
-   137aa:	00007717          	auipc	a4,0x7
-   137ae:	a9673703          	ld	a4,-1386(a4) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   137b2:	00074703          	lbu	a4,0(a4)
-   137b6:	c335                	c.beqz	a4,1381a <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xfe>
+   13cdc:	00008717          	auipc	a4,0x8
+   13ce0:	56473703          	ld	a4,1380(a4) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13ce4:	00074703          	lbu	a4,0(a4)
+   13ce8:	08070c63          	beq	a4,zero,13d80 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x16c>
   { *__mem += __val; }
-   137b8:	5918                	c.lw	a4,48(a0)
-   137ba:	2705                	c.addiw	a4,1
-   137bc:	d918                	c.sw	a4,48(a0)
+   13cec:	03052703          	lw	a4,48(a0)
+   13cf0:	0017071b          	addiw	a4,a4,1
+   13cf4:	02e52823          	sw	a4,48(a0)
       : f(f), data(data), end(end), strs(strs) {}
-   137be:	05343423          	sd	s3,72(s0)
-   137c2:	05543823          	sd	s5,80(s0)
+   13cf8:	05343423          	sd	s3,72(s0)
+   13cfc:	05543823          	sd	s5,80(s0)
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   137c6:	05743c23          	sd	s7,88(s0)
+   13d00:	05743c23          	sd	s7,88(s0)
       : _M_pi(__r._M_pi)
-   137ca:	f024                	c.sd	s1,96(s0)
+   13d04:	06943023          	sd	s1,96(s0)
 	if (_M_pi != nullptr)
-   137cc:	c095                	c.beqz	s1,137f0 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xd4>
+   13d08:	02048a63          	beq	s1,zero,13d3c <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x128>
     if (__is_single_threaded())
-   137ce:	00007797          	auipc	a5,0x7
-   137d2:	a727b783          	ld	a5,-1422(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   137d6:	0007c783          	lbu	a5,0(a5)
-   137da:	c7b1                	c.beqz	a5,13826 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x10a>
+   13d0c:	00008797          	auipc	a5,0x8
+   13d10:	5347b783          	ld	a5,1332(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13d14:	0007c783          	lbu	a5,0(a5)
+   13d18:	06078c63          	beq	a5,zero,13d90 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x17c>
   { *__mem += __val; }
-   137dc:	589c                	c.lw	a5,48(s1)
-   137de:	2785                	c.addiw	a5,1
-   137e0:	d89c                	c.sw	a5,48(s1)
+   13d1c:	0304a783          	lw	a5,48(s1)
+   13d20:	0017879b          	addiw	a5,a5,1
+   13d24:	02f4a823          	sw	a5,48(s1)
     _Atomic_word __result = *__mem;
-   137e2:	5888                	c.lw	a0,48(s1)
+   13d28:	0304a503          	lw	a0,48(s1)
     *__mem += __val;
-   137e4:	fff5079b          	addiw	a5,a0,-1
-   137e8:	d89c                	c.sw	a5,48(s1)
+   13d2c:	fff5079b          	addiw	a5,a0,-1
+   13d30:	02f4a823          	sw	a5,48(s1)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   137ea:	4785                	c.li	a5,1
-   137ec:	04f50f63          	beq	a0,a5,1384a <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x12e>
+   13d34:	00100793          	addi	a5,zero,1
+   13d38:	08f50263          	beq	a0,a5,13dbc <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x1a8>
 	  _M_pi = __pi;
-   137f0:	00893423          	sd	s0,8(s2)
+   13d3c:	00893423          	sd	s0,8(s2)
 	  __p = __pi->_M_ptr();
-   137f4:	01693023          	sd	s6,0(s2)
+   13d40:	01693023          	sd	s6,0(s2)
                           strs)) {}
-   137f8:	60a6                	c.ldsp	ra,72(sp)
-   137fa:	6406                	c.ldsp	s0,64(sp)
-   137fc:	74e2                	c.ldsp	s1,56(sp)
-   137fe:	7942                	c.ldsp	s2,48(sp)
-   13800:	79a2                	c.ldsp	s3,40(sp)
-   13802:	7a02                	c.ldsp	s4,32(sp)
-   13804:	6ae2                	c.ldsp	s5,24(sp)
-   13806:	6b42                	c.ldsp	s6,16(sp)
-   13808:	6ba2                	c.ldsp	s7,8(sp)
-   1380a:	6161                	c.addi16sp	sp,80
-   1380c:	8082                	c.jr	ra
+   13d44:	04813083          	ld	ra,72(sp)
+   13d48:	04013403          	ld	s0,64(sp)
+   13d4c:	03813483          	ld	s1,56(sp)
+   13d50:	03013903          	ld	s2,48(sp)
+   13d54:	02813983          	ld	s3,40(sp)
+   13d58:	02013a03          	ld	s4,32(sp)
+   13d5c:	01813a83          	ld	s5,24(sp)
+   13d60:	01013b03          	ld	s6,16(sp)
+   13d64:	00813b83          	ld	s7,8(sp)
+   13d68:	05010113          	addi	sp,sp,80
+   13d6c:	00008067          	jalr	zero,0(ra)
       __atomic_add(__mem, __val);
-   1380e:	4585                	c.li	a1,1
-   13810:	03048513          	addi	a0,s1,48
-   13814:	93cff0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   13818:	b751                	c.j	1379c <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x80>
-   1381a:	4585                	c.li	a1,1
-   1381c:	03050513          	addi	a0,a0,48
-   13820:	930ff0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   13824:	bf69                	c.j	137be <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xa2>
-   13826:	4585                	c.li	a1,1
-   13828:	03048513          	addi	a0,s1,48
-   1382c:	924ff0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   13d70:	00100593          	addi	a1,zero,1
+   13d74:	03048513          	addi	a0,s1,48
+   13d78:	bd9fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   13d7c:	f4dff06f          	jal	zero,13cc8 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xb4>
+   13d80:	00100593          	addi	a1,zero,1
+   13d84:	03050513          	addi	a0,a0,48
+   13d88:	bc9fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   13d8c:	f6dff06f          	jal	zero,13cf8 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xe4>
+   13d90:	00100593          	addi	a1,zero,1
+   13d94:	03048513          	addi	a0,s1,48
+   13d98:	bb9fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
     if (__is_single_threaded())
-   13830:	00007797          	auipc	a5,0x7
-   13834:	a107b783          	ld	a5,-1520(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13838:	0007c783          	lbu	a5,0(a5)
-   1383c:	f3dd                	c.bnez	a5,137e2 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xc6>
+   13d9c:	00008797          	auipc	a5,0x8
+   13da0:	4a47b783          	ld	a5,1188(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13da4:	0007c783          	lbu	a5,0(a5)
+   13da8:	f80790e3          	bne	a5,zero,13d28 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x114>
       return __exchange_and_add(__mem, __val);
-   1383e:	55fd                	c.li	a1,-1
-   13840:	03048513          	addi	a0,s1,48
-   13844:	93cff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   13848:	b74d                	c.j	137ea <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xce>
+   13dac:	fff00593          	addi	a1,zero,-1
+   13db0:	03048513          	addi	a0,s1,48
+   13db4:	bcdfe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13db8:	f7dff06f          	jal	zero,13d34 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x120>
 	_M_dispose();
-   1384a:	609c                	c.ld	a5,0(s1)
-   1384c:	6b9c                	c.ld	a5,16(a5)
-   1384e:	8526                	c.mv	a0,s1
-   13850:	9782                	c.jalr	a5
+   13dbc:	0004b783          	ld	a5,0(s1)
+   13dc0:	0107b783          	ld	a5,16(a5)
+   13dc4:	00048513          	addi	a0,s1,0
+   13dc8:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   13852:	0ff0000f          	fence	iorw,iorw
+   13dcc:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   13856:	00007797          	auipc	a5,0x7
-   1385a:	9ea7b783          	ld	a5,-1558(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   1385e:	0007c783          	lbu	a5,0(a5)
-   13862:	cf89                	c.beqz	a5,1387c <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x160>
+   13dd0:	00008797          	auipc	a5,0x8
+   13dd4:	4707b783          	ld	a5,1136(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13dd8:	0007c783          	lbu	a5,0(a5)
+   13ddc:	02078663          	beq	a5,zero,13e08 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x1f4>
     _Atomic_word __result = *__mem;
-   13864:	58c8                	c.lw	a0,52(s1)
+   13de0:	0344a503          	lw	a0,52(s1)
     *__mem += __val;
-   13866:	fff5079b          	addiw	a5,a0,-1
-   1386a:	d8dc                	c.sw	a5,52(s1)
+   13de4:	fff5079b          	addiw	a5,a0,-1
+   13de8:	02f4aa23          	sw	a5,52(s1)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   1386c:	4785                	c.li	a5,1
-   1386e:	f8f511e3          	bne	a0,a5,137f0 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xd4>
+   13dec:	00100793          	addi	a5,zero,1
+   13df0:	f4f516e3          	bne	a0,a5,13d3c <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x128>
 	    _M_destroy();
-   13872:	609c                	c.ld	a5,0(s1)
-   13874:	6f9c                	c.ld	a5,24(a5)
-   13876:	8526                	c.mv	a0,s1
-   13878:	9782                	c.jalr	a5
-   1387a:	bf9d                	c.j	137f0 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0xd4>
+   13df4:	0004b783          	ld	a5,0(s1)
+   13df8:	0187b783          	ld	a5,24(a5)
+   13dfc:	00048513          	addi	a0,s1,0
+   13e00:	000780e7          	jalr	ra,0(a5)
+   13e04:	f39ff06f          	jal	zero,13d3c <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x128>
       return __exchange_and_add(__mem, __val);
-   1387c:	55fd                	c.li	a1,-1
-   1387e:	03448513          	addi	a0,s1,52
-   13882:	8feff0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   13886:	b7dd                	c.j	1386c <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x150>
+   13e08:	fff00593          	addi	a1,zero,-1
+   13e0c:	03448513          	addi	a0,s1,52
+   13e10:	b71fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13e14:	fd9ff06f          	jal	zero,13dec <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)+0x1d8>
 
-0000000000013888 <elf::section::as_symtab() const>:
+0000000000013e18 <elf::section::as_symtab() const>:
 symtab section::as_symtab() const {
-   13888:	715d                	c.addi16sp	sp,-80
-   1388a:	e486                	c.sdsp	ra,72(sp)
-   1388c:	e0a2                	c.sdsp	s0,64(sp)
-   1388e:	fc26                	c.sdsp	s1,56(sp)
-   13890:	f84a                	c.sdsp	s2,48(sp)
-   13892:	f44e                	c.sdsp	s3,40(sp)
-   13894:	f052                	c.sdsp	s4,32(sp)
-   13896:	84aa                	c.mv	s1,a0
-   13898:	842e                	c.mv	s0,a1
+   13e18:	fb010113          	addi	sp,sp,-80
+   13e1c:	04113423          	sd	ra,72(sp)
+   13e20:	04813023          	sd	s0,64(sp)
+   13e24:	02913c23          	sd	s1,56(sp)
+   13e28:	03213823          	sd	s2,48(sp)
+   13e2c:	03313423          	sd	s3,40(sp)
+   13e30:	03413023          	sd	s4,32(sp)
+   13e34:	00050493          	addi	s1,a0,0
+   13e38:	00058413          	addi	s0,a1,0
       { return _M_ptr; }
-   1389a:	619c                	c.ld	a5,0(a1)
+   13e3c:	0005b783          	ld	a5,0(a1)
   if (m->hdr.type != sht::symtab && m->hdr.type != sht::dynsym)
-   1389c:	4bd8                	c.lw	a4,20(a5)
-   1389e:	4689                	c.li	a3,2
-   138a0:	00d70563          	beq	a4,a3,138aa <elf::section::as_symtab() const+0x22>
-   138a4:	46ad                	c.li	a3,11
-   138a6:	02d71563          	bne	a4,a3,138d0 <elf::section::as_symtab() const+0x48>
+   13e40:	0147a703          	lw	a4,20(a5)
+   13e44:	00200693          	addi	a3,zero,2
+   13e48:	00d70663          	beq	a4,a3,13e54 <elf::section::as_symtab() const+0x3c>
+   13e4c:	00b00693          	addi	a3,zero,11
+   13e50:	04d71063          	bne	a4,a3,13e90 <elf::section::as_symtab() const+0x78>
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   138aa:	6398                	c.ld	a4,0(a5)
-   138ac:	e03a                	c.sdsp	a4,0(sp)
+   13e54:	0007b703          	ld	a4,0(a5)
+   13e58:	00e13023          	sd	a4,0(sp)
       : _M_pi(__r._M_pi)
-   138ae:	6788                	c.ld	a0,8(a5)
-   138b0:	e42a                	c.sdsp	a0,8(sp)
+   13e5c:	0087b503          	ld	a0,8(a5)
+   13e60:	00a13423          	sd	a0,8(sp)
 	if (_M_pi != nullptr)
-   138b2:	c919                	c.beqz	a0,138c8 <elf::section::as_symtab() const+0x40>
+   13e64:	02050063          	beq	a0,zero,13e84 <elf::section::as_symtab() const+0x6c>
     if (__is_single_threaded())
-   138b4:	00007797          	auipc	a5,0x7
-   138b8:	98c7b783          	ld	a5,-1652(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   138bc:	0007c783          	lbu	a5,0(a5)
-   138c0:	c3b9                	c.beqz	a5,13906 <elf::section::as_symtab() const+0x7e>
+   13e68:	00008797          	auipc	a5,0x8
+   13e6c:	3d87b783          	ld	a5,984(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13e70:	0007c783          	lbu	a5,0(a5)
+   13e74:	04078e63          	beq	a5,zero,13ed0 <elf::section::as_symtab() const+0xb8>
   { *__mem += __val; }
-   138c2:	591c                	c.lw	a5,48(a0)
-   138c4:	2785                	c.addiw	a5,1
-   138c6:	d91c                	c.sw	a5,48(a0)
+   13e78:	03052783          	lw	a5,48(a0)
+   13e7c:	0017879b          	addiw	a5,a5,1
+   13e80:	02f52823          	sw	a5,48(a0)
                 m->f.get_section(get_hdr().link).as_strtab());
-   138c8:	8522                	c.mv	a0,s0
-   138ca:	85dff0ef          	jal	ra,13126 <elf::section::data() const>
-   138ce:	a091                	c.j	13912 <elf::section::as_symtab() const+0x8a>
+   13e84:	00040513          	addi	a0,s0,0
+   13e88:	ce4ff0ef          	jal	ra,1336c <elf::section::data() const>
+   13e8c:	0540006f          	jal	zero,13ee0 <elf::section::as_symtab() const+0xc8>
     throw section_type_mismatch("cannot use section as symtab");
-   138d0:	4541                	c.li	a0,16
-   138d2:	90eff0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   138d6:	842a                	c.mv	s0,a0
+   13e90:	01000513          	addi	a0,zero,16
+   13e94:	b4dfe0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   13e98:	00050413          	addi	s0,a0,0
       : std::logic_error(what_arg) {}
-   138d8:	00003597          	auipc	a1,0x3
-   138dc:	35058593          	addi	a1,a1,848 # 16c28 <__libc_csu_fini+0x1c8>
-   138e0:	9e0ff0ef          	jal	ra,12ac0 <std::logic_error::logic_error(char const*)@plt>
-   138e4:	00007797          	auipc	a5,0x7
-   138e8:	9047b783          	ld	a5,-1788(a5) # 1a1e8 <vtable for elf::section_type_mismatch@@Base+0x5d8>
-   138ec:	07c1                	c.addi	a5,16
-   138ee:	e01c                	c.sd	a5,0(s0)
-   138f0:	00007617          	auipc	a2,0x7
-   138f4:	8a063603          	ld	a2,-1888(a2) # 1a190 <elf::section_type_mismatch::~section_type_mismatch()@@Base+0x5b62>
-   138f8:	00007597          	auipc	a1,0x7
-   138fc:	8a85b583          	ld	a1,-1880(a1) # 1a1a0 <typeinfo for elf::section_type_mismatch@@Base+0x648>
-   13900:	8522                	c.mv	a0,s0
-   13902:	a7eff0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   13e9c:	00004597          	auipc	a1,0x4
+   13ea0:	75c58593          	addi	a1,a1,1884 # 185f8 <__libc_csu_fini+0x1c4>
+   13ea4:	c1dfe0ef          	jal	ra,12ac0 <std::logic_error::logic_error(char const*)@plt>
+   13ea8:	00008797          	auipc	a5,0x8
+   13eac:	3407b783          	ld	a5,832(a5) # 1c1e8 <vtable for elf::section_type_mismatch@@Base+0x5d8>
+   13eb0:	01078793          	addi	a5,a5,16
+   13eb4:	00f43023          	sd	a5,0(s0)
+   13eb8:	00008617          	auipc	a2,0x8
+   13ebc:	2d863603          	ld	a2,728(a2) # 1c190 <elf::section_type_mismatch::~section_type_mismatch()@@Base+0x6fe4>
+   13ec0:	00008597          	auipc	a1,0x8
+   13ec4:	2e05b583          	ld	a1,736(a1) # 1c1a0 <typeinfo for elf::section_type_mismatch@@Base+0x648>
+   13ec8:	00040513          	addi	a0,s0,0
+   13ecc:	cb5fe0ef          	jal	ra,12b80 <__cxa_throw@plt>
       __atomic_add(__mem, __val);
-   13906:	4585                	c.li	a1,1
-   13908:	03050513          	addi	a0,a0,48
-   1390c:	844ff0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   13910:	bf65                	c.j	138c8 <elf::section::as_symtab() const+0x40>
+   13ed0:	00100593          	addi	a1,zero,1
+   13ed4:	03050513          	addi	a0,a0,48
+   13ed8:	a79fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   13edc:	fa9ff06f          	jal	zero,13e84 <elf::section::as_symtab() const+0x6c>
                 m->f.get_section(get_hdr().link).as_strtab());
-   13912:	892a                	c.mv	s2,a0
-   13914:	8522                	c.mv	a0,s0
-   13916:	8d1ff0ef          	jal	ra,131e6 <elf::section::size() const>
-   1391a:	89aa                	c.mv	s3,a0
-   1391c:	00043a03          	ld	s4,0(s0)
-   13920:	8522                	c.mv	a0,s0
-   13922:	ffeff0ef          	jal	ra,13120 <elf::section::get_hdr() const>
-   13926:	02855583          	lhu	a1,40(a0)
-   1392a:	8552                	c.mv	a0,s4
-   1392c:	e7eff0ef          	jal	ra,12faa <elf::elf::get_section(unsigned int) const>
-   13930:	85aa                	c.mv	a1,a0
-   13932:	0808                	c.addi4spn	a0,sp,16
-   13934:	95fff0ef          	jal	ra,13292 <elf::section::as_strtab() const>
-   13938:	0818                	c.addi4spn	a4,sp,16
-   1393a:	86ce                	c.mv	a3,s3
-   1393c:	864a                	c.mv	a2,s2
-   1393e:	858a                	c.mv	a1,sp
-   13940:	8526                	c.mv	a0,s1
-   13942:	ddbff0ef          	jal	ra,1371c <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)>
+   13ee0:	00050913          	addi	s2,a0,0
+   13ee4:	00040513          	addi	a0,s0,0
+   13ee8:	db4ff0ef          	jal	ra,1349c <elf::section::size() const>
+   13eec:	00050993          	addi	s3,a0,0
+   13ef0:	00043a03          	ld	s4,0(s0)
+   13ef4:	00040513          	addi	a0,s0,0
+   13ef8:	c68ff0ef          	jal	ra,13360 <elf::section::get_hdr() const>
+   13efc:	02855583          	lhu	a1,40(a0)
+   13f00:	000a0513          	addi	a0,s4,0
+   13f04:	a14ff0ef          	jal	ra,13118 <elf::elf::get_section(unsigned int) const>
+   13f08:	00050593          	addi	a1,a0,0
+   13f0c:	01010513          	addi	a0,sp,16
+   13f10:	e84ff0ef          	jal	ra,13594 <elf::section::as_strtab() const>
+   13f14:	01010713          	addi	a4,sp,16
+   13f18:	00098693          	addi	a3,s3,0
+   13f1c:	00090613          	addi	a2,s2,0
+   13f20:	00010593          	addi	a1,sp,0
+   13f24:	00048513          	addi	a0,s1,0
+   13f28:	cedff0ef          	jal	ra,13c14 <elf::symtab::symtab(elf::elf, void const*, unsigned long, elf::strtab)>
 	if (_M_pi != nullptr)
-   13946:	6462                	c.ldsp	s0,24(sp)
-   13948:	cc19                	c.beqz	s0,13966 <elf::section::as_symtab() const+0xde>
+   13f2c:	01813403          	ld	s0,24(sp)
+   13f30:	02040463          	beq	s0,zero,13f58 <elf::section::as_symtab() const+0x140>
     if (__is_single_threaded())
-   1394a:	00007797          	auipc	a5,0x7
-   1394e:	8f67b783          	ld	a5,-1802(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13952:	0007c783          	lbu	a5,0(a5)
-   13956:	c3a9                	c.beqz	a5,13998 <elf::section::as_symtab() const+0x110>
+   13f34:	00008797          	auipc	a5,0x8
+   13f38:	30c7b783          	ld	a5,780(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13f3c:	0007c783          	lbu	a5,0(a5)
+   13f40:	06078463          	beq	a5,zero,13fa8 <elf::section::as_symtab() const+0x190>
     _Atomic_word __result = *__mem;
-   13958:	5808                	c.lw	a0,48(s0)
+   13f44:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   1395a:	fff5079b          	addiw	a5,a0,-1
-   1395e:	d81c                	c.sw	a5,48(s0)
+   13f48:	fff5079b          	addiw	a5,a0,-1
+   13f4c:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   13960:	4785                	c.li	a5,1
-   13962:	04f50163          	beq	a0,a5,139a4 <elf::section::as_symtab() const+0x11c>
+   13f50:	00100793          	addi	a5,zero,1
+   13f54:	06f50263          	beq	a0,a5,13fb8 <elf::section::as_symtab() const+0x1a0>
 	if (_M_pi != nullptr)
-   13966:	6422                	c.ldsp	s0,8(sp)
-   13968:	cc19                	c.beqz	s0,13986 <elf::section::as_symtab() const+0xfe>
+   13f58:	00813403          	ld	s0,8(sp)
+   13f5c:	02040463          	beq	s0,zero,13f84 <elf::section::as_symtab() const+0x16c>
     if (__is_single_threaded())
-   1396a:	00007797          	auipc	a5,0x7
-   1396e:	8d67b783          	ld	a5,-1834(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13972:	0007c783          	lbu	a5,0(a5)
-   13976:	c7b5                	c.beqz	a5,139e2 <elf::section::as_symtab() const+0x15a>
+   13f60:	00008797          	auipc	a5,0x8
+   13f64:	2e07b783          	ld	a5,736(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13f68:	0007c783          	lbu	a5,0(a5)
+   13f6c:	0a078463          	beq	a5,zero,14014 <elf::section::as_symtab() const+0x1fc>
     _Atomic_word __result = *__mem;
-   13978:	5808                	c.lw	a0,48(s0)
+   13f70:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   1397a:	fff5079b          	addiw	a5,a0,-1
-   1397e:	d81c                	c.sw	a5,48(s0)
+   13f74:	fff5079b          	addiw	a5,a0,-1
+   13f78:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   13980:	4785                	c.li	a5,1
-   13982:	06f50663          	beq	a0,a5,139ee <elf::section::as_symtab() const+0x166>
+   13f7c:	00100793          	addi	a5,zero,1
+   13f80:	0af50263          	beq	a0,a5,14024 <elf::section::as_symtab() const+0x20c>
 }
-   13986:	8526                	c.mv	a0,s1
-   13988:	60a6                	c.ldsp	ra,72(sp)
-   1398a:	6406                	c.ldsp	s0,64(sp)
-   1398c:	74e2                	c.ldsp	s1,56(sp)
-   1398e:	7942                	c.ldsp	s2,48(sp)
-   13990:	79a2                	c.ldsp	s3,40(sp)
-   13992:	7a02                	c.ldsp	s4,32(sp)
-   13994:	6161                	c.addi16sp	sp,80
-   13996:	8082                	c.jr	ra
+   13f84:	00048513          	addi	a0,s1,0
+   13f88:	04813083          	ld	ra,72(sp)
+   13f8c:	04013403          	ld	s0,64(sp)
+   13f90:	03813483          	ld	s1,56(sp)
+   13f94:	03013903          	ld	s2,48(sp)
+   13f98:	02813983          	ld	s3,40(sp)
+   13f9c:	02013a03          	ld	s4,32(sp)
+   13fa0:	05010113          	addi	sp,sp,80
+   13fa4:	00008067          	jalr	zero,0(ra)
       return __exchange_and_add(__mem, __val);
-   13998:	55fd                	c.li	a1,-1
-   1399a:	03040513          	addi	a0,s0,48
-   1399e:	fe3fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   139a2:	bf7d                	c.j	13960 <elf::section::as_symtab() const+0xd8>
+   13fa8:	fff00593          	addi	a1,zero,-1
+   13fac:	03040513          	addi	a0,s0,48
+   13fb0:	9d1fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   13fb4:	f9dff06f          	jal	zero,13f50 <elf::section::as_symtab() const+0x138>
 	_M_dispose();
-   139a4:	601c                	c.ld	a5,0(s0)
-   139a6:	6b9c                	c.ld	a5,16(a5)
-   139a8:	8522                	c.mv	a0,s0
-   139aa:	9782                	c.jalr	a5
+   13fb8:	00043783          	ld	a5,0(s0)
+   13fbc:	0107b783          	ld	a5,16(a5)
+   13fc0:	00040513          	addi	a0,s0,0
+   13fc4:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   139ac:	0ff0000f          	fence	iorw,iorw
+   13fc8:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   139b0:	00007797          	auipc	a5,0x7
-   139b4:	8907b783          	ld	a5,-1904(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   139b8:	0007c783          	lbu	a5,0(a5)
-   139bc:	cf89                	c.beqz	a5,139d6 <elf::section::as_symtab() const+0x14e>
+   13fcc:	00008797          	auipc	a5,0x8
+   13fd0:	2747b783          	ld	a5,628(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   13fd4:	0007c783          	lbu	a5,0(a5)
+   13fd8:	02078663          	beq	a5,zero,14004 <elf::section::as_symtab() const+0x1ec>
     _Atomic_word __result = *__mem;
-   139be:	5848                	c.lw	a0,52(s0)
+   13fdc:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   139c0:	fff5079b          	addiw	a5,a0,-1
-   139c4:	d85c                	c.sw	a5,52(s0)
+   13fe0:	fff5079b          	addiw	a5,a0,-1
+   13fe4:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   139c6:	4785                	c.li	a5,1
-   139c8:	f8f51fe3          	bne	a0,a5,13966 <elf::section::as_symtab() const+0xde>
+   13fe8:	00100793          	addi	a5,zero,1
+   13fec:	f6f516e3          	bne	a0,a5,13f58 <elf::section::as_symtab() const+0x140>
 	    _M_destroy();
-   139cc:	601c                	c.ld	a5,0(s0)
-   139ce:	6f9c                	c.ld	a5,24(a5)
-   139d0:	8522                	c.mv	a0,s0
-   139d2:	9782                	c.jalr	a5
-   139d4:	bf49                	c.j	13966 <elf::section::as_symtab() const+0xde>
+   13ff0:	00043783          	ld	a5,0(s0)
+   13ff4:	0187b783          	ld	a5,24(a5)
+   13ff8:	00040513          	addi	a0,s0,0
+   13ffc:	000780e7          	jalr	ra,0(a5)
+   14000:	f59ff06f          	jal	zero,13f58 <elf::section::as_symtab() const+0x140>
       return __exchange_and_add(__mem, __val);
-   139d6:	55fd                	c.li	a1,-1
-   139d8:	03440513          	addi	a0,s0,52
-   139dc:	fa5fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   139e0:	b7dd                	c.j	139c6 <elf::section::as_symtab() const+0x13e>
-   139e2:	55fd                	c.li	a1,-1
-   139e4:	03040513          	addi	a0,s0,48
-   139e8:	f99fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   139ec:	bf51                	c.j	13980 <elf::section::as_symtab() const+0xf8>
+   14004:	fff00593          	addi	a1,zero,-1
+   14008:	03440513          	addi	a0,s0,52
+   1400c:	975fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   14010:	fd9ff06f          	jal	zero,13fe8 <elf::section::as_symtab() const+0x1d0>
+   14014:	fff00593          	addi	a1,zero,-1
+   14018:	03040513          	addi	a0,s0,48
+   1401c:	965fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   14020:	f5dff06f          	jal	zero,13f7c <elf::section::as_symtab() const+0x164>
 	_M_dispose();
-   139ee:	601c                	c.ld	a5,0(s0)
-   139f0:	6b9c                	c.ld	a5,16(a5)
-   139f2:	8522                	c.mv	a0,s0
-   139f4:	9782                	c.jalr	a5
+   14024:	00043783          	ld	a5,0(s0)
+   14028:	0107b783          	ld	a5,16(a5)
+   1402c:	00040513          	addi	a0,s0,0
+   14030:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   139f6:	0ff0000f          	fence	iorw,iorw
+   14034:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   139fa:	00007797          	auipc	a5,0x7
-   139fe:	8467b783          	ld	a5,-1978(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13a02:	0007c783          	lbu	a5,0(a5)
-   13a06:	cf89                	c.beqz	a5,13a20 <elf::section::as_symtab() const+0x198>
+   14038:	00008797          	auipc	a5,0x8
+   1403c:	2087b783          	ld	a5,520(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   14040:	0007c783          	lbu	a5,0(a5)
+   14044:	02078663          	beq	a5,zero,14070 <elf::section::as_symtab() const+0x258>
     _Atomic_word __result = *__mem;
-   13a08:	5848                	c.lw	a0,52(s0)
+   14048:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   13a0a:	fff5079b          	addiw	a5,a0,-1
-   13a0e:	d85c                	c.sw	a5,52(s0)
+   1404c:	fff5079b          	addiw	a5,a0,-1
+   14050:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   13a10:	4785                	c.li	a5,1
-   13a12:	f6f51ae3          	bne	a0,a5,13986 <elf::section::as_symtab() const+0xfe>
+   14054:	00100793          	addi	a5,zero,1
+   14058:	f2f516e3          	bne	a0,a5,13f84 <elf::section::as_symtab() const+0x16c>
 	    _M_destroy();
-   13a16:	601c                	c.ld	a5,0(s0)
-   13a18:	6f9c                	c.ld	a5,24(a5)
-   13a1a:	8522                	c.mv	a0,s0
-   13a1c:	9782                	c.jalr	a5
+   1405c:	00043783          	ld	a5,0(s0)
+   14060:	0187b783          	ld	a5,24(a5)
+   14064:	00040513          	addi	a0,s0,0
+   14068:	000780e7          	jalr	ra,0(a5)
                 m->f.get_section(get_hdr().link).as_strtab());
-   13a1e:	b7a5                	c.j	13986 <elf::section::as_symtab() const+0xfe>
+   1406c:	f19ff06f          	jal	zero,13f84 <elf::section::as_symtab() const+0x16c>
       return __exchange_and_add(__mem, __val);
-   13a20:	55fd                	c.li	a1,-1
-   13a22:	03440513          	addi	a0,s0,52
-   13a26:	f5bfe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   13a2a:	b7dd                	c.j	13a10 <elf::section::as_symtab() const+0x188>
+   14070:	fff00593          	addi	a1,zero,-1
+   14074:	03440513          	addi	a0,s0,52
+   14078:	909fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   1407c:	fd9ff06f          	jal	zero,14054 <elf::section::as_symtab() const+0x23c>
     throw section_type_mismatch("cannot use section as symtab");
-   13a2c:	84aa                	c.mv	s1,a0
-   13a2e:	8522                	c.mv	a0,s0
-   13a30:	820ff0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   13a34:	8526                	c.mv	a0,s1
-   13a36:	97aff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   14080:	00050493          	addi	s1,a0,0
+   14084:	00040513          	addi	a0,s0,0
+   14088:	9c9fe0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   1408c:	00048513          	addi	a0,s1,0
+   14090:	b21fe0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 	if (_M_pi != nullptr)
-   13a3a:	842a                	c.mv	s0,a0
-   13a3c:	6562                	c.ldsp	a0,24(sp)
-   13a3e:	c511                	c.beqz	a0,13a4a <elf::section::as_symtab() const+0x1c2>
+   14094:	00050413          	addi	s0,a0,0
+   14098:	01813503          	ld	a0,24(sp)
+   1409c:	00050863          	beq	a0,zero,140ac <elf::section::as_symtab() const+0x294>
 	  _M_pi->_M_release();
-   13a40:	00006317          	auipc	t1,0x6
-   13a44:	7b033303          	ld	t1,1968(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   13a48:	9302                	c.jalr	t1
+   140a0:	00008317          	auipc	t1,0x8
+   140a4:	15033303          	ld	t1,336(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   140a8:	000300e7          	jalr	ra,0(t1)
 	if (_M_pi != nullptr)
-   13a4a:	6522                	c.ldsp	a0,8(sp)
-   13a4c:	c511                	c.beqz	a0,13a58 <elf::section::as_symtab() const+0x1d0>
+   140ac:	00813503          	ld	a0,8(sp)
+   140b0:	00050863          	beq	a0,zero,140c0 <elf::section::as_symtab() const+0x2a8>
 	  _M_pi->_M_release();
-   13a4e:	00006317          	auipc	t1,0x6
-   13a52:	7a233303          	ld	t1,1954(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   13a56:	9302                	c.jalr	t1
-   13a58:	8522                	c.mv	a0,s0
-   13a5a:	956ff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   140b4:	00008317          	auipc	t1,0x8
+   140b8:	13c33303          	ld	t1,316(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   140bc:	000300e7          	jalr	ra,0(t1)
+   140c0:	00040513          	addi	a0,s0,0
+   140c4:	aedfe0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 	if (_M_pi != nullptr)
-   13a5e:	842a                	c.mv	s0,a0
-   13a60:	b7ed                	c.j	13a4a <elf::section::as_symtab() const+0x1c2>
+   140c8:	00050413          	addi	s0,a0,0
+   140cc:	fe1ff06f          	jal	zero,140ac <elf::section::as_symtab() const+0x294>
 
-0000000000013a62 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)>:
+00000000000140d0 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)>:
 
 symtab::iterator::iterator(const symtab &tab, const char *pos)
-   13a62:	1101                	c.addi	sp,-32
-   13a64:	ec06                	c.sdsp	ra,24(sp)
-   13a66:	e822                	c.sdsp	s0,16(sp)
-   13a68:	e426                	c.sdsp	s1,8(sp)
-   13a6a:	e04a                	c.sdsp	s2,0(sp)
-   13a6c:	842a                	c.mv	s0,a0
-   13a6e:	84ae                	c.mv	s1,a1
-   13a70:	8932                	c.mv	s2,a2
+   140d0:	fe010113          	addi	sp,sp,-32
+   140d4:	00113c23          	sd	ra,24(sp)
+   140d8:	00813823          	sd	s0,16(sp)
+   140dc:	00913423          	sd	s1,8(sp)
+   140e0:	01213023          	sd	s2,0(sp)
+   140e4:	00050413          	addi	s0,a0,0
+   140e8:	00058493          	addi	s1,a1,0
+   140ec:	00060913          	addi	s2,a2,0
       { return _M_ptr; }
-   13a72:	619c                	c.ld	a5,0(a1)
+   140f0:	0005b783          	ld	a5,0(a1)
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   13a74:	6398                	c.ld	a4,0(a5)
-   13a76:	e118                	c.sd	a4,0(a0)
+   140f4:	0007b703          	ld	a4,0(a5)
+   140f8:	00e53023          	sd	a4,0(a0)
       : _M_pi(__r._M_pi)
-   13a78:	6788                	c.ld	a0,8(a5)
-   13a7a:	e408                	c.sd	a0,8(s0)
+   140fc:	0087b503          	ld	a0,8(a5)
+   14100:	00a43423          	sd	a0,8(s0)
 	if (_M_pi != nullptr)
-   13a7c:	c919                	c.beqz	a0,13a92 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x30>
+   14104:	02050063          	beq	a0,zero,14124 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x54>
     if (__is_single_threaded())
-   13a7e:	00006797          	auipc	a5,0x6
-   13a82:	7c27b783          	ld	a5,1986(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13a86:	0007c783          	lbu	a5,0(a5)
-   13a8a:	cb95                	c.beqz	a5,13abe <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x5c>
+   14108:	00008797          	auipc	a5,0x8
+   1410c:	1387b783          	ld	a5,312(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   14110:	0007c783          	lbu	a5,0(a5)
+   14114:	04078a63          	beq	a5,zero,14168 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x98>
   { *__mem += __val; }
-   13a8c:	591c                	c.lw	a5,48(a0)
-   13a8e:	2785                	c.addiw	a5,1
-   13a90:	d91c                	c.sw	a5,48(a0)
+   14118:	03052783          	lw	a5,48(a0)
+   1411c:	0017879b          	addiw	a5,a5,1
+   14120:	02f52823          	sw	a5,48(a0)
       { return _M_ptr; }
-   13a92:	609c                	c.ld	a5,0(s1)
+   14124:	0004b783          	ld	a5,0(s1)
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   13a94:	7398                	c.ld	a4,32(a5)
-   13a96:	e818                	c.sd	a4,16(s0)
+   14128:	0207b703          	ld	a4,32(a5)
+   1412c:	00e43823          	sd	a4,16(s0)
       : _M_pi(__r._M_pi)
-   13a98:	7788                	c.ld	a0,40(a5)
-   13a9a:	ec08                	c.sd	a0,24(s0)
+   14130:	0287b503          	ld	a0,40(a5)
+   14134:	00a43c23          	sd	a0,24(s0)
 	if (_M_pi != nullptr)
-   13a9c:	c919                	c.beqz	a0,13ab2 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x50>
+   14138:	02050063          	beq	a0,zero,14158 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x88>
     if (__is_single_threaded())
-   13a9e:	00006797          	auipc	a5,0x6
-   13aa2:	7a27b783          	ld	a5,1954(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13aa6:	0007c783          	lbu	a5,0(a5)
-   13aaa:	c385                	c.beqz	a5,13aca <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x68>
+   1413c:	00008797          	auipc	a5,0x8
+   14140:	1047b783          	ld	a5,260(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   14144:	0007c783          	lbu	a5,0(a5)
+   14148:	02078863          	beq	a5,zero,14178 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0xa8>
   { *__mem += __val; }
-   13aac:	591c                	c.lw	a5,48(a0)
-   13aae:	2785                	c.addiw	a5,1
-   13ab0:	d91c                	c.sw	a5,48(a0)
+   1414c:	03052783          	lw	a5,48(a0)
+   14150:	0017879b          	addiw	a5,a5,1
+   14154:	02f52823          	sw	a5,48(a0)
     : f(tab.m->f), strs(tab.m->strs), pos(pos) {
-   13ab2:	03243023          	sd	s2,32(s0)
+   14158:	03243023          	sd	s2,32(s0)
   if (f.get_hdr().ei_class == elfclass::_32)
-   13ab6:	8522                	c.mv	a0,s0
-   13ab8:	c9eff0ef          	jal	ra,12f56 <elf::elf::get_hdr() const>
-   13abc:	a829                	c.j	13ad6 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x74>
+   1415c:	00040513          	addi	a0,s0,0
+   14160:	f2dfe0ef          	jal	ra,1308c <elf::elf::get_hdr() const>
+   14164:	0240006f          	jal	zero,14188 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0xb8>
       __atomic_add(__mem, __val);
-   13abe:	4585                	c.li	a1,1
-   13ac0:	03050513          	addi	a0,a0,48
-   13ac4:	e8dfe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   13ac8:	b7e9                	c.j	13a92 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x30>
-   13aca:	4585                	c.li	a1,1
-   13acc:	03050513          	addi	a0,a0,48
-   13ad0:	e81fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   13ad4:	bff9                	c.j	13ab2 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x50>
-   13ad6:	00454683          	lbu	a3,4(a0)
-   13ada:	4705                	c.li	a4,1
+   14168:	00100593          	addi	a1,zero,1
+   1416c:	03050513          	addi	a0,a0,48
+   14170:	fe0fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   14174:	fb1ff06f          	jal	zero,14124 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x54>
+   14178:	00100593          	addi	a1,zero,1
+   1417c:	03050513          	addi	a0,a0,48
+   14180:	fd0fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   14184:	fd5ff06f          	jal	zero,14158 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x88>
+   14188:	00454683          	lbu	a3,4(a0)
+   1418c:	00100713          	addi	a4,zero,1
     stride = sizeof(Sym<Elf32>);
   else
     stride = sizeof(Sym<Elf64>);
-   13adc:	47e1                	c.li	a5,24
+   14190:	01800793          	addi	a5,zero,24
   if (f.get_hdr().ei_class == elfclass::_32)
-   13ade:	00e68963          	beq	a3,a4,13af0 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x8e>
-   13ae2:	f41c                	c.sd	a5,40(s0)
+   14194:	02e68063          	beq	a3,a4,141b4 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0xe4>
+   14198:	02f43423          	sd	a5,40(s0)
 }
-   13ae4:	60e2                	c.ldsp	ra,24(sp)
-   13ae6:	6442                	c.ldsp	s0,16(sp)
-   13ae8:	64a2                	c.ldsp	s1,8(sp)
-   13aea:	6902                	c.ldsp	s2,0(sp)
-   13aec:	6105                	c.addi16sp	sp,32
-   13aee:	8082                	c.jr	ra
+   1419c:	01813083          	ld	ra,24(sp)
+   141a0:	01013403          	ld	s0,16(sp)
+   141a4:	00813483          	ld	s1,8(sp)
+   141a8:	00013903          	ld	s2,0(sp)
+   141ac:	02010113          	addi	sp,sp,32
+   141b0:	00008067          	jalr	zero,0(ra)
     stride = sizeof(Sym<Elf32>);
-   13af0:	47c1                	c.li	a5,16
-   13af2:	bfc5                	c.j	13ae2 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x80>
+   141b4:	01000793          	addi	a5,zero,16
+   141b8:	fe1ff06f          	jal	zero,14198 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0xc8>
 	if (_M_pi != nullptr)
-   13af4:	84aa                	c.mv	s1,a0
-   13af6:	6c08                	c.ld	a0,24(s0)
-   13af8:	c511                	c.beqz	a0,13b04 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0xa2>
+   141bc:	00050493          	addi	s1,a0,0
+   141c0:	01843503          	ld	a0,24(s0)
+   141c4:	00050863          	beq	a0,zero,141d4 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x104>
 	  _M_pi->_M_release();
-   13afa:	00006317          	auipc	t1,0x6
-   13afe:	6f633303          	ld	t1,1782(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   13b02:	9302                	c.jalr	t1
+   141c8:	00008317          	auipc	t1,0x8
+   141cc:	02833303          	ld	t1,40(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   141d0:	000300e7          	jalr	ra,0(t1)
 	if (_M_pi != nullptr)
-   13b04:	6408                	c.ld	a0,8(s0)
-   13b06:	c511                	c.beqz	a0,13b12 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0xb0>
+   141d4:	00843503          	ld	a0,8(s0)
+   141d8:	00050863          	beq	a0,zero,141e8 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)+0x118>
 	  _M_pi->_M_release();
-   13b08:	00006317          	auipc	t1,0x6
-   13b0c:	6e833303          	ld	t1,1768(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   13b10:	9302                	c.jalr	t1
-   13b12:	8526                	c.mv	a0,s1
-   13b14:	89cff0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   141dc:	00008317          	auipc	t1,0x8
+   141e0:	01433303          	ld	t1,20(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   141e4:	000300e7          	jalr	ra,0(t1)
+   141e8:	00048513          	addi	a0,s1,0
+   141ec:	9c5fe0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-0000000000013b18 <elf::symtab::begin() const>:
+00000000000141f0 <elf::symtab::begin() const>:
 
 symtab::iterator symtab::begin() const { return iterator(*this, m->data); }
-   13b18:	1141                	c.addi	sp,-16
-   13b1a:	e406                	c.sdsp	ra,8(sp)
-   13b1c:	e022                	c.sdsp	s0,0(sp)
-   13b1e:	842a                	c.mv	s0,a0
-   13b20:	619c                	c.ld	a5,0(a1)
-   13b22:	6b90                	c.ld	a2,16(a5)
-   13b24:	f3fff0ef          	jal	ra,13a62 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)>
-   13b28:	8522                	c.mv	a0,s0
-   13b2a:	60a2                	c.ldsp	ra,8(sp)
-   13b2c:	6402                	c.ldsp	s0,0(sp)
-   13b2e:	0141                	c.addi	sp,16
-   13b30:	8082                	c.jr	ra
+   141f0:	ff010113          	addi	sp,sp,-16
+   141f4:	00113423          	sd	ra,8(sp)
+   141f8:	00813023          	sd	s0,0(sp)
+   141fc:	00050413          	addi	s0,a0,0
+   14200:	0005b783          	ld	a5,0(a1)
+   14204:	0107b603          	ld	a2,16(a5)
+   14208:	ec9ff0ef          	jal	ra,140d0 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)>
+   1420c:	00040513          	addi	a0,s0,0
+   14210:	00813083          	ld	ra,8(sp)
+   14214:	00013403          	ld	s0,0(sp)
+   14218:	01010113          	addi	sp,sp,16
+   1421c:	00008067          	jalr	zero,0(ra)
 
-0000000000013b32 <elf::symtab::end() const>:
+0000000000014220 <elf::symtab::end() const>:
 
 symtab::iterator symtab::end() const { return iterator(*this, m->end); }
-   13b32:	1141                	c.addi	sp,-16
-   13b34:	e406                	c.sdsp	ra,8(sp)
-   13b36:	e022                	c.sdsp	s0,0(sp)
-   13b38:	842a                	c.mv	s0,a0
-   13b3a:	619c                	c.ld	a5,0(a1)
-   13b3c:	6f90                	c.ld	a2,24(a5)
-   13b3e:	f25ff0ef          	jal	ra,13a62 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)>
-   13b42:	8522                	c.mv	a0,s0
-   13b44:	60a2                	c.ldsp	ra,8(sp)
-   13b46:	6402                	c.ldsp	s0,0(sp)
-   13b48:	0141                	c.addi	sp,16
-   13b4a:	8082                	c.jr	ra
+   14220:	ff010113          	addi	sp,sp,-16
+   14224:	00113423          	sd	ra,8(sp)
+   14228:	00813023          	sd	s0,0(sp)
+   1422c:	00050413          	addi	s0,a0,0
+   14230:	0005b783          	ld	a5,0(a1)
+   14234:	0187b603          	ld	a2,24(a5)
+   14238:	e99ff0ef          	jal	ra,140d0 <elf::symtab::iterator::iterator(elf::symtab const&, char const*)>
+   1423c:	00040513          	addi	a0,s0,0
+   14240:	00813083          	ld	ra,8(sp)
+   14244:	00013403          	ld	s0,0(sp)
+   14248:	01010113          	addi	sp,sp,16
+   1424c:	00008067          	jalr	zero,0(ra)
 
-0000000000013b4c <elf::segment::segment(elf::elf const&, void const*)>:
+0000000000014250 <elf::segment::segment(elf::elf const&, void const*)>:
 segment::segment(const elf &f, const void *hdr) : m(make_shared<impl>(f)) {
-   13b4c:	7179                	c.addi16sp	sp,-48
-   13b4e:	f406                	c.sdsp	ra,40(sp)
-   13b50:	f022                	c.sdsp	s0,32(sp)
-   13b52:	ec26                	c.sdsp	s1,24(sp)
-   13b54:	e84a                	c.sdsp	s2,16(sp)
-   13b56:	e44e                	c.sdsp	s3,8(sp)
-   13b58:	e052                	c.sdsp	s4,0(sp)
-   13b5a:	892a                	c.mv	s2,a0
-   13b5c:	84ae                	c.mv	s1,a1
-   13b5e:	89b2                	c.mv	s3,a2
+   14250:	fd010113          	addi	sp,sp,-48
+   14254:	02113423          	sd	ra,40(sp)
+   14258:	02813023          	sd	s0,32(sp)
+   1425c:	00913c23          	sd	s1,24(sp)
+   14260:	01213823          	sd	s2,16(sp)
+   14264:	01313423          	sd	s3,8(sp)
+   14268:	01413023          	sd	s4,0(sp)
+   1426c:	00050913          	addi	s2,a0,0
+   14270:	00058493          	addi	s1,a1,0
+   14274:	00060993          	addi	s3,a2,0
 	: _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
-   13b60:	00053023          	sd	zero,0(a0)
-   13b64:	08800513          	addi	a0,zero,136
-   13b68:	f19fe0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
-   13b6c:	842a                	c.mv	s0,a0
-   13b6e:	00052423          	sw	zero,8(a0)
-   13b72:	00052623          	sw	zero,12(a0)
-   13b76:	00052823          	sw	zero,16(a0)
-   13b7a:	00052a23          	sw	zero,20(a0)
-   13b7e:	00052c23          	sw	zero,24(a0)
-   13b82:	00052e23          	sw	zero,28(a0)
-   13b86:	02053023          	sd	zero,32(a0)
-   13b8a:	02053423          	sd	zero,40(a0)
+   14278:	00053023          	sd	zero,0(a0)
+   1427c:	08800513          	addi	a0,zero,136
+   14280:	801fe0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
+   14284:	00050413          	addi	s0,a0,0
+   14288:	00052423          	sw	zero,8(a0)
+   1428c:	00052623          	sw	zero,12(a0)
+   14290:	00052823          	sw	zero,16(a0)
+   14294:	00052a23          	sw	zero,20(a0)
+   14298:	00052c23          	sw	zero,24(a0)
+   1429c:	00052e23          	sw	zero,28(a0)
+   142a0:	02053023          	sd	zero,32(a0)
+   142a4:	02053423          	sd	zero,40(a0)
       : _M_use_count(1), _M_weak_count(1) { }
-   13b8e:	4785                	c.li	a5,1
-   13b90:	d91c                	c.sw	a5,48(a0)
-   13b92:	d95c                	c.sw	a5,52(a0)
+   142a8:	00100793          	addi	a5,zero,1
+   142ac:	02f52823          	sw	a5,48(a0)
+   142b0:	02f52a23          	sw	a5,52(a0)
 	: _M_impl(__a)
-   13b94:	00006797          	auipc	a5,0x6
-   13b98:	6a47b783          	ld	a5,1700(a5) # 1a238 <vtable for std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x5c8>
-   13b9c:	07c1                	c.addi	a5,16
-   13b9e:	e11c                	c.sd	a5,0(a0)
-   13ba0:	03850a13          	addi	s4,a0,56
+   142b4:	00008797          	auipc	a5,0x8
+   142b8:	f847b783          	ld	a5,-124(a5) # 1c238 <vtable for std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x5c8>
+   142bc:	01078793          	addi	a5,a5,16
+   142c0:	00f53023          	sd	a5,0(a0)
+   142c4:	03850a13          	addi	s4,a0,56
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   13ba4:	609c                	c.ld	a5,0(s1)
-   13ba6:	fd1c                	c.sd	a5,56(a0)
+   142c8:	0004b783          	ld	a5,0(s1)
+   142cc:	02f53c23          	sd	a5,56(a0)
       : _M_pi(__r._M_pi)
-   13ba8:	6488                	c.ld	a0,8(s1)
-   13baa:	e028                	c.sd	a0,64(s0)
+   142d0:	0084b503          	ld	a0,8(s1)
+   142d4:	04a43023          	sd	a0,64(s0)
 	if (_M_pi != nullptr)
-   13bac:	c919                	c.beqz	a0,13bc2 <elf::segment::segment(elf::elf const&, void const*)+0x76>
+   142d8:	02050063          	beq	a0,zero,142f8 <elf::segment::segment(elf::elf const&, void const*)+0xa8>
     if (__is_single_threaded())
-   13bae:	00006717          	auipc	a4,0x6
-   13bb2:	69273703          	ld	a4,1682(a4) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13bb6:	00074703          	lbu	a4,0(a4)
-   13bba:	c305                	c.beqz	a4,13bda <elf::segment::segment(elf::elf const&, void const*)+0x8e>
+   142dc:	00008717          	auipc	a4,0x8
+   142e0:	f6473703          	ld	a4,-156(a4) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   142e4:	00074703          	lbu	a4,0(a4)
+   142e8:	02070663          	beq	a4,zero,14314 <elf::segment::segment(elf::elf const&, void const*)+0xc4>
   { *__mem += __val; }
-   13bbc:	5918                	c.lw	a4,48(a0)
-   13bbe:	2705                	c.addiw	a4,1
-   13bc0:	d918                	c.sw	a4,48(a0)
+   142ec:	03052703          	lw	a4,48(a0)
+   142f0:	0017071b          	addiw	a4,a4,1
+   142f4:	02e52823          	sw	a4,48(a0)
   impl(const elf &f) : f(f), data(nullptr) {}
-   13bc2:	08043023          	sd	zero,128(s0)
+   142f8:	08043023          	sd	zero,128(s0)
 	  _M_pi = __pi;
-   13bc6:	00893423          	sd	s0,8(s2)
+   142fc:	00893423          	sd	s0,8(s2)
 	  __p = __pi->_M_ptr();
-   13bca:	01493023          	sd	s4,0(s2)
+   14300:	01493023          	sd	s4,0(s2)
   canon_hdr(&m->hdr, hdr, f.get_hdr().ei_class, f.get_hdr().ei_data);
-   13bce:	04840413          	addi	s0,s0,72
-   13bd2:	8526                	c.mv	a0,s1
-   13bd4:	b82ff0ef          	jal	ra,12f56 <elf::elf::get_hdr() const>
-   13bd8:	a039                	c.j	13be6 <elf::segment::segment(elf::elf const&, void const*)+0x9a>
+   14304:	04840413          	addi	s0,s0,72
+   14308:	00048513          	addi	a0,s1,0
+   1430c:	d81fe0ef          	jal	ra,1308c <elf::elf::get_hdr() const>
+   14310:	0140006f          	jal	zero,14324 <elf::segment::segment(elf::elf const&, void const*)+0xd4>
       __atomic_add(__mem, __val);
-   13bda:	4585                	c.li	a1,1
-   13bdc:	03050513          	addi	a0,a0,48
-   13be0:	d71fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   13be4:	bff9                	c.j	13bc2 <elf::segment::segment(elf::elf const&, void const*)+0x76>
-   13be6:	00454a03          	lbu	s4,4(a0)
-   13bea:	8526                	c.mv	a0,s1
-   13bec:	b6aff0ef          	jal	ra,12f56 <elf::elf::get_hdr() const>
-   13bf0:	00554683          	lbu	a3,5(a0)
-   13bf4:	8652                	c.mv	a2,s4
-   13bf6:	85ce                	c.mv	a1,s3
-   13bf8:	8522                	c.mv	a0,s0
-   13bfa:	00006317          	auipc	t1,0x6
-   13bfe:	68e33303          	ld	t1,1678(t1) # 1a288 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)@@Base+0x5198>
-   13c02:	9302                	c.jalr	t1
+   14314:	00100593          	addi	a1,zero,1
+   14318:	03050513          	addi	a0,a0,48
+   1431c:	e34fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   14320:	fd9ff06f          	jal	zero,142f8 <elf::segment::segment(elf::elf const&, void const*)+0xa8>
+   14324:	00454a03          	lbu	s4,4(a0)
+   14328:	00048513          	addi	a0,s1,0
+   1432c:	d61fe0ef          	jal	ra,1308c <elf::elf::get_hdr() const>
+   14330:	00554683          	lbu	a3,5(a0)
+   14334:	000a0613          	addi	a2,s4,0
+   14338:	00098593          	addi	a1,s3,0
+   1433c:	00040513          	addi	a0,s0,0
+   14340:	00008317          	auipc	t1,0x8
+   14344:	f4833303          	ld	t1,-184(t1) # 1c288 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)@@Base+0x62c0>
+   14348:	000300e7          	jalr	ra,0(t1)
 }
-   13c04:	70a2                	c.ldsp	ra,40(sp)
-   13c06:	7402                	c.ldsp	s0,32(sp)
-   13c08:	64e2                	c.ldsp	s1,24(sp)
-   13c0a:	6942                	c.ldsp	s2,16(sp)
-   13c0c:	69a2                	c.ldsp	s3,8(sp)
-   13c0e:	6a02                	c.ldsp	s4,0(sp)
-   13c10:	6145                	c.addi16sp	sp,48
-   13c12:	8082                	c.jr	ra
+   1434c:	02813083          	ld	ra,40(sp)
+   14350:	02013403          	ld	s0,32(sp)
+   14354:	01813483          	ld	s1,24(sp)
+   14358:	01013903          	ld	s2,16(sp)
+   1435c:	00813983          	ld	s3,8(sp)
+   14360:	00013a03          	ld	s4,0(sp)
+   14364:	03010113          	addi	sp,sp,48
+   14368:	00008067          	jalr	zero,0(ra)
 	if (_M_pi != nullptr)
-   13c14:	842a                	c.mv	s0,a0
-   13c16:	00893503          	ld	a0,8(s2)
-   13c1a:	c511                	c.beqz	a0,13c26 <elf::segment::segment(elf::elf const&, void const*)+0xda>
+   1436c:	00050413          	addi	s0,a0,0
+   14370:	00893503          	ld	a0,8(s2)
+   14374:	00050863          	beq	a0,zero,14384 <elf::segment::segment(elf::elf const&, void const*)+0x134>
 	  _M_pi->_M_release();
-   13c1c:	00006317          	auipc	t1,0x6
-   13c20:	5d433303          	ld	t1,1492(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   13c24:	9302                	c.jalr	t1
-   13c26:	8522                	c.mv	a0,s0
-   13c28:	f89fe0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   14378:	00008317          	auipc	t1,0x8
+   1437c:	e7833303          	ld	t1,-392(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   14380:	000300e7          	jalr	ra,0(t1)
+   14384:	00040513          	addi	a0,s0,0
+   14388:	829fe0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-0000000000013c2c <elf::section::section(elf::elf const&, void const*)>:
+000000000001438c <elf::section::section(elf::elf const&, void const*)>:
 section::section(const elf &f, const void *hdr) : m(make_shared<impl>(f)) {
-   13c2c:	7179                	c.addi16sp	sp,-48
-   13c2e:	f406                	c.sdsp	ra,40(sp)
-   13c30:	f022                	c.sdsp	s0,32(sp)
-   13c32:	ec26                	c.sdsp	s1,24(sp)
-   13c34:	e84a                	c.sdsp	s2,16(sp)
-   13c36:	e44e                	c.sdsp	s3,8(sp)
-   13c38:	e052                	c.sdsp	s4,0(sp)
-   13c3a:	892a                	c.mv	s2,a0
-   13c3c:	84ae                	c.mv	s1,a1
-   13c3e:	89b2                	c.mv	s3,a2
+   1438c:	fd010113          	addi	sp,sp,-48
+   14390:	02113423          	sd	ra,40(sp)
+   14394:	02813023          	sd	s0,32(sp)
+   14398:	00913c23          	sd	s1,24(sp)
+   1439c:	01213823          	sd	s2,16(sp)
+   143a0:	01313423          	sd	s3,8(sp)
+   143a4:	01413023          	sd	s4,0(sp)
+   143a8:	00050913          	addi	s2,a0,0
+   143ac:	00058493          	addi	s1,a1,0
+   143b0:	00060993          	addi	s3,a2,0
 	: _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
-   13c40:	00053023          	sd	zero,0(a0)
-   13c44:	0a000513          	addi	a0,zero,160
-   13c48:	e39fe0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
-   13c4c:	842a                	c.mv	s0,a0
-   13c4e:	00052423          	sw	zero,8(a0)
-   13c52:	00052623          	sw	zero,12(a0)
-   13c56:	00052823          	sw	zero,16(a0)
-   13c5a:	00052a23          	sw	zero,20(a0)
-   13c5e:	00052c23          	sw	zero,24(a0)
-   13c62:	00052e23          	sw	zero,28(a0)
-   13c66:	02053023          	sd	zero,32(a0)
-   13c6a:	02053423          	sd	zero,40(a0)
+   143b4:	00053023          	sd	zero,0(a0)
+   143b8:	0a000513          	addi	a0,zero,160
+   143bc:	ec4fe0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
+   143c0:	00050413          	addi	s0,a0,0
+   143c4:	00052423          	sw	zero,8(a0)
+   143c8:	00052623          	sw	zero,12(a0)
+   143cc:	00052823          	sw	zero,16(a0)
+   143d0:	00052a23          	sw	zero,20(a0)
+   143d4:	00052c23          	sw	zero,24(a0)
+   143d8:	00052e23          	sw	zero,28(a0)
+   143dc:	02053023          	sd	zero,32(a0)
+   143e0:	02053423          	sd	zero,40(a0)
       : _M_use_count(1), _M_weak_count(1) { }
-   13c6e:	4785                	c.li	a5,1
-   13c70:	d91c                	c.sw	a5,48(a0)
-   13c72:	d95c                	c.sw	a5,52(a0)
+   143e4:	00100793          	addi	a5,zero,1
+   143e8:	02f52823          	sw	a5,48(a0)
+   143ec:	02f52a23          	sw	a5,52(a0)
 	: _M_impl(__a)
-   13c74:	00006797          	auipc	a5,0x6
-   13c78:	5a47b783          	ld	a5,1444(a5) # 1a218 <vtable for std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x570>
-   13c7c:	07c1                	c.addi	a5,16
-   13c7e:	e11c                	c.sd	a5,0(a0)
-   13c80:	03850a13          	addi	s4,a0,56
+   143f0:	00008797          	auipc	a5,0x8
+   143f4:	e287b783          	ld	a5,-472(a5) # 1c218 <vtable for std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x570>
+   143f8:	01078793          	addi	a5,a5,16
+   143fc:	00f53023          	sd	a5,0(a0)
+   14400:	03850a13          	addi	s4,a0,56
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   13c84:	609c                	c.ld	a5,0(s1)
-   13c86:	fd1c                	c.sd	a5,56(a0)
+   14404:	0004b783          	ld	a5,0(s1)
+   14408:	02f53c23          	sd	a5,56(a0)
       : _M_pi(__r._M_pi)
-   13c88:	6488                	c.ld	a0,8(s1)
-   13c8a:	e028                	c.sd	a0,64(s0)
+   1440c:	0084b503          	ld	a0,8(s1)
+   14410:	04a43023          	sd	a0,64(s0)
 	if (_M_pi != nullptr)
-   13c8c:	c919                	c.beqz	a0,13ca2 <elf::section::section(elf::elf const&, void const*)+0x76>
+   14414:	02050063          	beq	a0,zero,14434 <elf::section::section(elf::elf const&, void const*)+0xa8>
     if (__is_single_threaded())
-   13c8e:	00006717          	auipc	a4,0x6
-   13c92:	5b273703          	ld	a4,1458(a4) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13c96:	00074703          	lbu	a4,0(a4)
-   13c9a:	c315                	c.beqz	a4,13cbe <elf::section::section(elf::elf const&, void const*)+0x92>
+   14418:	00008717          	auipc	a4,0x8
+   1441c:	e2873703          	ld	a4,-472(a4) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   14420:	00074703          	lbu	a4,0(a4)
+   14424:	02070863          	beq	a4,zero,14454 <elf::section::section(elf::elf const&, void const*)+0xc8>
   { *__mem += __val; }
-   13c9c:	5918                	c.lw	a4,48(a0)
-   13c9e:	2705                	c.addiw	a4,1
-   13ca0:	d918                	c.sw	a4,48(a0)
+   14428:	03052703          	lw	a4,48(a0)
+   1442c:	0017071b          	addiw	a4,a4,1
+   14430:	02e52823          	sw	a4,48(a0)
   impl(const elf &f) : f(f), name(nullptr), data(nullptr) {}
-   13ca2:	08043423          	sd	zero,136(s0)
-   13ca6:	08043c23          	sd	zero,152(s0)
+   14434:	08043423          	sd	zero,136(s0)
+   14438:	08043c23          	sd	zero,152(s0)
 	  _M_pi = __pi;
-   13caa:	00893423          	sd	s0,8(s2)
+   1443c:	00893423          	sd	s0,8(s2)
 	  __p = __pi->_M_ptr();
-   13cae:	01493023          	sd	s4,0(s2)
+   14440:	01493023          	sd	s4,0(s2)
   canon_hdr(&m->hdr, hdr, f.get_hdr().ei_class, f.get_hdr().ei_data);
-   13cb2:	04840413          	addi	s0,s0,72
-   13cb6:	8526                	c.mv	a0,s1
-   13cb8:	a9eff0ef          	jal	ra,12f56 <elf::elf::get_hdr() const>
-   13cbc:	a039                	c.j	13cca <elf::section::section(elf::elf const&, void const*)+0x9e>
+   14444:	04840413          	addi	s0,s0,72
+   14448:	00048513          	addi	a0,s1,0
+   1444c:	c41fe0ef          	jal	ra,1308c <elf::elf::get_hdr() const>
+   14450:	0140006f          	jal	zero,14464 <elf::section::section(elf::elf const&, void const*)+0xd8>
       __atomic_add(__mem, __val);
-   13cbe:	4585                	c.li	a1,1
-   13cc0:	03050513          	addi	a0,a0,48
-   13cc4:	c8dfe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   13cc8:	bfe9                	c.j	13ca2 <elf::section::section(elf::elf const&, void const*)+0x76>
-   13cca:	00454a03          	lbu	s4,4(a0)
-   13cce:	8526                	c.mv	a0,s1
-   13cd0:	a86ff0ef          	jal	ra,12f56 <elf::elf::get_hdr() const>
-   13cd4:	00554683          	lbu	a3,5(a0)
-   13cd8:	8652                	c.mv	a2,s4
-   13cda:	85ce                	c.mv	a1,s3
-   13cdc:	8522                	c.mv	a0,s0
-   13cde:	00006317          	auipc	t1,0x6
-   13ce2:	59a33303          	ld	t1,1434(t1) # 1a278 <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)@@Base+0x5062>
-   13ce6:	9302                	c.jalr	t1
+   14454:	00100593          	addi	a1,zero,1
+   14458:	03050513          	addi	a0,a0,48
+   1445c:	cf4fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   14460:	fd5ff06f          	jal	zero,14434 <elf::section::section(elf::elf const&, void const*)+0xa8>
+   14464:	00454a03          	lbu	s4,4(a0)
+   14468:	00048513          	addi	a0,s1,0
+   1446c:	c21fe0ef          	jal	ra,1308c <elf::elf::get_hdr() const>
+   14470:	00554683          	lbu	a3,5(a0)
+   14474:	000a0613          	addi	a2,s4,0
+   14478:	00098593          	addi	a1,s3,0
+   1447c:	00040513          	addi	a0,s0,0
+   14480:	00008317          	auipc	t1,0x8
+   14484:	df833303          	ld	t1,-520(t1) # 1c278 <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)@@Base+0x60d4>
+   14488:	000300e7          	jalr	ra,0(t1)
 }
-   13ce8:	70a2                	c.ldsp	ra,40(sp)
-   13cea:	7402                	c.ldsp	s0,32(sp)
-   13cec:	64e2                	c.ldsp	s1,24(sp)
-   13cee:	6942                	c.ldsp	s2,16(sp)
-   13cf0:	69a2                	c.ldsp	s3,8(sp)
-   13cf2:	6a02                	c.ldsp	s4,0(sp)
-   13cf4:	6145                	c.addi16sp	sp,48
-   13cf6:	8082                	c.jr	ra
+   1448c:	02813083          	ld	ra,40(sp)
+   14490:	02013403          	ld	s0,32(sp)
+   14494:	01813483          	ld	s1,24(sp)
+   14498:	01013903          	ld	s2,16(sp)
+   1449c:	00813983          	ld	s3,8(sp)
+   144a0:	00013a03          	ld	s4,0(sp)
+   144a4:	03010113          	addi	sp,sp,48
+   144a8:	00008067          	jalr	zero,0(ra)
 	if (_M_pi != nullptr)
-   13cf8:	842a                	c.mv	s0,a0
-   13cfa:	00893503          	ld	a0,8(s2)
-   13cfe:	c511                	c.beqz	a0,13d0a <elf::section::section(elf::elf const&, void const*)+0xde>
+   144ac:	00050413          	addi	s0,a0,0
+   144b0:	00893503          	ld	a0,8(s2)
+   144b4:	00050863          	beq	a0,zero,144c4 <elf::section::section(elf::elf const&, void const*)+0x138>
 	  _M_pi->_M_release();
-   13d00:	00006317          	auipc	t1,0x6
-   13d04:	4f033303          	ld	t1,1264(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   13d08:	9302                	c.jalr	t1
-   13d0a:	8522                	c.mv	a0,s0
-   13d0c:	ea5fe0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   144b8:	00008317          	auipc	t1,0x8
+   144bc:	d3833303          	ld	t1,-712(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   144c0:	000300e7          	jalr	ra,0(t1)
+   144c4:	00040513          	addi	a0,s0,0
+   144c8:	ee8fe0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-0000000000013d10 <elf::sym::sym(elf::elf, void const*, elf::strtab)>:
+00000000000144cc <elf::sym::sym(elf::elf, void const*, elf::strtab)>:
 sym::sym(elf f, const void *data, strtab strs) : strs(strs) {
-   13d10:	7179                	c.addi16sp	sp,-48
-   13d12:	f406                	c.sdsp	ra,40(sp)
-   13d14:	f022                	c.sdsp	s0,32(sp)
-   13d16:	ec26                	c.sdsp	s1,24(sp)
-   13d18:	e84a                	c.sdsp	s2,16(sp)
-   13d1a:	e44e                	c.sdsp	s3,8(sp)
-   13d1c:	e052                	c.sdsp	s4,0(sp)
-   13d1e:	842a                	c.mv	s0,a0
-   13d20:	84ae                	c.mv	s1,a1
-   13d22:	8932                	c.mv	s2,a2
+   144cc:	fd010113          	addi	sp,sp,-48
+   144d0:	02113423          	sd	ra,40(sp)
+   144d4:	02813023          	sd	s0,32(sp)
+   144d8:	00913c23          	sd	s1,24(sp)
+   144dc:	01213823          	sd	s2,16(sp)
+   144e0:	01313423          	sd	s3,8(sp)
+   144e4:	01413023          	sd	s4,0(sp)
+   144e8:	00050413          	addi	s0,a0,0
+   144ec:	00058493          	addi	s1,a1,0
+   144f0:	00060913          	addi	s2,a2,0
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   13d24:	629c                	c.ld	a5,0(a3)
-   13d26:	e11c                	c.sd	a5,0(a0)
+   144f4:	0006b783          	ld	a5,0(a3)
+   144f8:	00f53023          	sd	a5,0(a0)
       : _M_pi(__r._M_pi)
-   13d28:	6688                	c.ld	a0,8(a3)
-   13d2a:	e408                	c.sd	a0,8(s0)
+   144fc:	0086b503          	ld	a0,8(a3)
+   14500:	00a43423          	sd	a0,8(s0)
 	if (_M_pi != nullptr)
-   13d2c:	c919                	c.beqz	a0,13d42 <elf::sym::sym(elf::elf, void const*, elf::strtab)+0x32>
+   14504:	02050063          	beq	a0,zero,14524 <elf::sym::sym(elf::elf, void const*, elf::strtab)+0x58>
     if (__is_single_threaded())
-   13d2e:	00006797          	auipc	a5,0x6
-   13d32:	5127b783          	ld	a5,1298(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   13d36:	0007c783          	lbu	a5,0(a5)
-   13d3a:	cb91                	c.beqz	a5,13d4e <elf::sym::sym(elf::elf, void const*, elf::strtab)+0x3e>
+   14508:	00008797          	auipc	a5,0x8
+   1450c:	d387b783          	ld	a5,-712(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   14510:	0007c783          	lbu	a5,0(a5)
+   14514:	02078063          	beq	a5,zero,14534 <elf::sym::sym(elf::elf, void const*, elf::strtab)+0x68>
   { *__mem += __val; }
-   13d3c:	591c                	c.lw	a5,48(a0)
-   13d3e:	2785                	c.addiw	a5,1
-   13d40:	d91c                	c.sw	a5,48(a0)
+   14518:	03052783          	lw	a5,48(a0)
+   1451c:	0017879b          	addiw	a5,a5,1
+   14520:	02f52823          	sw	a5,48(a0)
   canon_hdr(&this->data, data, f.get_hdr().ei_class, f.get_hdr().ei_data);
-   13d42:	01040993          	addi	s3,s0,16
-   13d46:	8526                	c.mv	a0,s1
-   13d48:	a0eff0ef          	jal	ra,12f56 <elf::elf::get_hdr() const>
-   13d4c:	a039                	c.j	13d5a <elf::sym::sym(elf::elf, void const*, elf::strtab)+0x4a>
+   14524:	01040993          	addi	s3,s0,16
+   14528:	00048513          	addi	a0,s1,0
+   1452c:	b61fe0ef          	jal	ra,1308c <elf::elf::get_hdr() const>
+   14530:	0140006f          	jal	zero,14544 <elf::sym::sym(elf::elf, void const*, elf::strtab)+0x78>
       __atomic_add(__mem, __val);
-   13d4e:	4585                	c.li	a1,1
-   13d50:	03050513          	addi	a0,a0,48
-   13d54:	bfdfe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   13d58:	b7ed                	c.j	13d42 <elf::sym::sym(elf::elf, void const*, elf::strtab)+0x32>
-   13d5a:	00454a03          	lbu	s4,4(a0)
-   13d5e:	8526                	c.mv	a0,s1
-   13d60:	9f6ff0ef          	jal	ra,12f56 <elf::elf::get_hdr() const>
-   13d64:	00554683          	lbu	a3,5(a0)
-   13d68:	8652                	c.mv	a2,s4
-   13d6a:	85ca                	c.mv	a1,s2
-   13d6c:	854e                	c.mv	a0,s3
-   13d6e:	00006317          	auipc	t1,0x6
-   13d72:	4f233303          	ld	t1,1266(t1) # 1a260 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)@@Base+0x4eec>
-   13d76:	9302                	c.jalr	t1
+   14534:	00100593          	addi	a1,zero,1
+   14538:	03050513          	addi	a0,a0,48
+   1453c:	c14fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   14540:	fe5ff06f          	jal	zero,14524 <elf::sym::sym(elf::elf, void const*, elf::strtab)+0x58>
+   14544:	00454a03          	lbu	s4,4(a0)
+   14548:	00048513          	addi	a0,s1,0
+   1454c:	b41fe0ef          	jal	ra,1308c <elf::elf::get_hdr() const>
+   14550:	00554683          	lbu	a3,5(a0)
+   14554:	000a0613          	addi	a2,s4,0
+   14558:	00090593          	addi	a1,s2,0
+   1455c:	00098513          	addi	a0,s3,0
+   14560:	00008317          	auipc	t1,0x8
+   14564:	d0033303          	ld	t1,-768(t1) # 1c260 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)@@Base+0x5e90>
+   14568:	000300e7          	jalr	ra,0(t1)
 }
-   13d78:	70a2                	c.ldsp	ra,40(sp)
-   13d7a:	7402                	c.ldsp	s0,32(sp)
-   13d7c:	64e2                	c.ldsp	s1,24(sp)
-   13d7e:	6942                	c.ldsp	s2,16(sp)
-   13d80:	69a2                	c.ldsp	s3,8(sp)
-   13d82:	6a02                	c.ldsp	s4,0(sp)
-   13d84:	6145                	c.addi16sp	sp,48
-   13d86:	8082                	c.jr	ra
+   1456c:	02813083          	ld	ra,40(sp)
+   14570:	02013403          	ld	s0,32(sp)
+   14574:	01813483          	ld	s1,24(sp)
+   14578:	01013903          	ld	s2,16(sp)
+   1457c:	00813983          	ld	s3,8(sp)
+   14580:	00013a03          	ld	s4,0(sp)
+   14584:	03010113          	addi	sp,sp,48
+   14588:	00008067          	jalr	zero,0(ra)
 	if (_M_pi != nullptr)
-   13d88:	84aa                	c.mv	s1,a0
-   13d8a:	6408                	c.ld	a0,8(s0)
-   13d8c:	c511                	c.beqz	a0,13d98 <elf::sym::sym(elf::elf, void const*, elf::strtab)+0x88>
+   1458c:	00050493          	addi	s1,a0,0
+   14590:	00843503          	ld	a0,8(s0)
+   14594:	00050863          	beq	a0,zero,145a4 <elf::sym::sym(elf::elf, void const*, elf::strtab)+0xd8>
 	  _M_pi->_M_release();
-   13d8e:	00006317          	auipc	t1,0x6
-   13d92:	46233303          	ld	t1,1122(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   13d96:	9302                	c.jalr	t1
-   13d98:	8526                	c.mv	a0,s1
-   13d9a:	e17fe0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   14598:	00008317          	auipc	t1,0x8
+   1459c:	c5833303          	ld	t1,-936(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   145a0:	000300e7          	jalr	ra,0(t1)
+   145a4:	00048513          	addi	a0,s1,0
+   145a8:	e08fe0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-0000000000013d9e <elf::section::get_name[abi:cxx11]() const>:
+00000000000145ac <elf::section::get_name[abi:cxx11]() const>:
 string section::get_name() const { return get_name(nullptr); }
-   13d9e:	1101                	c.addi	sp,-32
-   13da0:	ec06                	c.sdsp	ra,24(sp)
-   13da2:	e822                	c.sdsp	s0,16(sp)
-   13da4:	e426                	c.sdsp	s1,8(sp)
-   13da6:	842a                	c.mv	s0,a0
-   13da8:	852e                	c.mv	a0,a1
-   13daa:	4581                	c.li	a1,0
-   13dac:	817ff0ef          	jal	ra,135c2 <elf::section::get_name(unsigned long*) const>
+   145ac:	fe010113          	addi	sp,sp,-32
+   145b0:	00113c23          	sd	ra,24(sp)
+   145b4:	00813823          	sd	s0,16(sp)
+   145b8:	00913423          	sd	s1,8(sp)
+   145bc:	00050413          	addi	s0,a0,0
+   145c0:	00058513          	addi	a0,a1,0
+   145c4:	00000593          	addi	a1,zero,0
+   145c8:	c50ff0ef          	jal	ra,13a18 <elf::section::get_name(unsigned long*) const>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   13db0:	01040793          	addi	a5,s0,16
+   145cc:	01040793          	addi	a5,s0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   13db4:	e01c                	c.sd	a5,0(s0)
+   145d0:	00f43023          	sd	a5,0(s0)
 	if (__s == 0)
-   13db6:	c505                	c.beqz	a0,13dde <elf::section::get_name[abi:cxx11]() const+0x40>
-   13db8:	84aa                	c.mv	s1,a0
+   145d4:	04050063          	beq	a0,zero,14614 <elf::section::get_name[abi:cxx11]() const+0x68>
+   145d8:	00050493          	addi	s1,a0,0
       {
 #if __cplusplus >= 201703L
 	if (std::__is_constant_evaluated())
 	  return __gnu_cxx::char_traits<char_type>::length(__s);
 #endif
 	return __builtin_strlen(__s);
-   13dba:	c17fe0ef          	jal	ra,129d0 <strlen@plt>
+   145dc:	bf4fe0ef          	jal	ra,129d0 <strlen@plt>
 	_M_construct(__s, __end, forward_iterator_tag());
-   13dbe:	4681                	c.li	a3,0
-   13dc0:	00a48633          	add	a2,s1,a0
-   13dc4:	85a6                	c.mv	a1,s1
-   13dc6:	8522                	c.mv	a0,s0
-   13dc8:	00006317          	auipc	t1,0x6
-   13dcc:	3e833303          	ld	t1,1000(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   13dd0:	9302                	c.jalr	t1
-   13dd2:	8522                	c.mv	a0,s0
-   13dd4:	60e2                	c.ldsp	ra,24(sp)
-   13dd6:	6442                	c.ldsp	s0,16(sp)
-   13dd8:	64a2                	c.ldsp	s1,8(sp)
-   13dda:	6105                	c.addi16sp	sp,32
-   13ddc:	8082                	c.jr	ra
+   145e0:	00000693          	addi	a3,zero,0
+   145e4:	00a48633          	add	a2,s1,a0
+   145e8:	00048593          	addi	a1,s1,0
+   145ec:	00040513          	addi	a0,s0,0
+   145f0:	00008317          	auipc	t1,0x8
+   145f4:	bc033303          	ld	t1,-1088(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   145f8:	000300e7          	jalr	ra,0(t1)
+   145fc:	00040513          	addi	a0,s0,0
+   14600:	01813083          	ld	ra,24(sp)
+   14604:	01013403          	ld	s0,16(sp)
+   14608:	00813483          	ld	s1,8(sp)
+   1460c:	02010113          	addi	sp,sp,32
+   14610:	00008067          	jalr	zero,0(ra)
 	  std::__throw_logic_error(__N("basic_string: "
-   13dde:	00003517          	auipc	a0,0x3
-   13de2:	e6a50513          	addi	a0,a0,-406 # 16c48 <__libc_csu_fini+0x1e8>
-   13de6:	c5bfe0ef          	jal	ra,12a40 <std::__throw_logic_error(char const*)@plt>
+   14614:	00004517          	auipc	a0,0x4
+   14618:	00450513          	addi	a0,a0,4 # 18618 <__libc_csu_fini+0x1e4>
+   1461c:	c24fe0ef          	jal	ra,12a40 <std::__throw_logic_error(char const*)@plt>
 
-0000000000013dea <elf::strtab::get[abi:cxx11](unsigned long) const>:
+0000000000014620 <elf::strtab::get[abi:cxx11](unsigned long) const>:
 std::string strtab::get(Elf64::Off offset) const {
-   13dea:	1101                	c.addi	sp,-32
-   13dec:	ec06                	c.sdsp	ra,24(sp)
-   13dee:	e822                	c.sdsp	s0,16(sp)
-   13df0:	e426                	c.sdsp	s1,8(sp)
-   13df2:	842a                	c.mv	s0,a0
-   13df4:	852e                	c.mv	a0,a1
-   13df6:	85b2                	c.mv	a1,a2
+   14620:	fe010113          	addi	sp,sp,-32
+   14624:	00113c23          	sd	ra,24(sp)
+   14628:	00813823          	sd	s0,16(sp)
+   1462c:	00913423          	sd	s1,8(sp)
+   14630:	00050413          	addi	s0,a0,0
+   14634:	00058513          	addi	a0,a1,0
+   14638:	00060593          	addi	a1,a2,0
   return get(offset, nullptr);
-   13df8:	4601                	c.li	a2,0
-   13dfa:	dc8ff0ef          	jal	ra,133c2 <elf::strtab::get(unsigned long, unsigned long*) const>
+   1463c:	00000613          	addi	a2,zero,0
+   14640:	914ff0ef          	jal	ra,13754 <elf::strtab::get(unsigned long, unsigned long*) const>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   13dfe:	01040793          	addi	a5,s0,16
+   14644:	01040793          	addi	a5,s0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   13e02:	e01c                	c.sd	a5,0(s0)
+   14648:	00f43023          	sd	a5,0(s0)
 	if (__s == 0)
-   13e04:	c505                	c.beqz	a0,13e2c <elf::strtab::get[abi:cxx11](unsigned long) const+0x42>
-   13e06:	84aa                	c.mv	s1,a0
-   13e08:	bc9fe0ef          	jal	ra,129d0 <strlen@plt>
+   1464c:	04050063          	beq	a0,zero,1468c <elf::strtab::get[abi:cxx11](unsigned long) const+0x6c>
+   14650:	00050493          	addi	s1,a0,0
+   14654:	b7cfe0ef          	jal	ra,129d0 <strlen@plt>
 	_M_construct(__s, __end, forward_iterator_tag());
-   13e0c:	4681                	c.li	a3,0
-   13e0e:	00a48633          	add	a2,s1,a0
-   13e12:	85a6                	c.mv	a1,s1
-   13e14:	8522                	c.mv	a0,s0
-   13e16:	00006317          	auipc	t1,0x6
-   13e1a:	39a33303          	ld	t1,922(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   13e1e:	9302                	c.jalr	t1
+   14658:	00000693          	addi	a3,zero,0
+   1465c:	00a48633          	add	a2,s1,a0
+   14660:	00048593          	addi	a1,s1,0
+   14664:	00040513          	addi	a0,s0,0
+   14668:	00008317          	auipc	t1,0x8
+   1466c:	b4833303          	ld	t1,-1208(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   14670:	000300e7          	jalr	ra,0(t1)
 }
-   13e20:	8522                	c.mv	a0,s0
-   13e22:	60e2                	c.ldsp	ra,24(sp)
-   13e24:	6442                	c.ldsp	s0,16(sp)
-   13e26:	64a2                	c.ldsp	s1,8(sp)
-   13e28:	6105                	c.addi16sp	sp,32
-   13e2a:	8082                	c.jr	ra
+   14674:	00040513          	addi	a0,s0,0
+   14678:	01813083          	ld	ra,24(sp)
+   1467c:	01013403          	ld	s0,16(sp)
+   14680:	00813483          	ld	s1,8(sp)
+   14684:	02010113          	addi	sp,sp,32
+   14688:	00008067          	jalr	zero,0(ra)
 	  std::__throw_logic_error(__N("basic_string: "
-   13e2c:	00003517          	auipc	a0,0x3
-   13e30:	e1c50513          	addi	a0,a0,-484 # 16c48 <__libc_csu_fini+0x1e8>
-   13e34:	c0dfe0ef          	jal	ra,12a40 <std::__throw_logic_error(char const*)@plt>
+   1468c:	00004517          	auipc	a0,0x4
+   14690:	f8c50513          	addi	a0,a0,-116 # 18618 <__libc_csu_fini+0x1e4>
+   14694:	bacfe0ef          	jal	ra,12a40 <std::__throw_logic_error(char const*)@plt>
 
-0000000000013e38 <elf::sym::get_name[abi:cxx11]() const>:
+0000000000014698 <elf::sym::get_name[abi:cxx11]() const>:
 std::string sym::get_name() const { return strs.get(get_data().name); }
-   13e38:	1141                	c.addi	sp,-16
-   13e3a:	e406                	c.sdsp	ra,8(sp)
-   13e3c:	e022                	c.sdsp	s0,0(sp)
-   13e3e:	842a                	c.mv	s0,a0
-   13e40:	0105e603          	lwu	a2,16(a1)
-   13e44:	fa7ff0ef          	jal	ra,13dea <elf::strtab::get[abi:cxx11](unsigned long) const>
-   13e48:	8522                	c.mv	a0,s0
-   13e4a:	60a2                	c.ldsp	ra,8(sp)
-   13e4c:	6402                	c.ldsp	s0,0(sp)
-   13e4e:	0141                	c.addi	sp,16
-   13e50:	8082                	c.jr	ra
+   14698:	ff010113          	addi	sp,sp,-16
+   1469c:	00113423          	sd	ra,8(sp)
+   146a0:	00813023          	sd	s0,0(sp)
+   146a4:	00050413          	addi	s0,a0,0
+   146a8:	0105e603          	lwu	a2,16(a1)
+   146ac:	f75ff0ef          	jal	ra,14620 <elf::strtab::get[abi:cxx11](unsigned long) const>
+   146b0:	00040513          	addi	a0,s0,0
+   146b4:	00813083          	ld	ra,8(sp)
+   146b8:	00013403          	ld	s0,0(sp)
+   146bc:	01010113          	addi	sp,sp,16
+   146c0:	00008067          	jalr	zero,0(ra)
 
-0000000000013e52 <elf::enums::to_string[abi:cxx11](elf::enums::shn)>:
+00000000000146c4 <elf::enums::to_string[abi:cxx11](elf::enums::shn)>:
 std::string enums::to_string(shn v) {
-   13e52:	1101                	c.addi	sp,-32
-   13e54:	ec06                	c.sdsp	ra,24(sp)
-   13e56:	e822                	c.sdsp	s0,16(sp)
-   13e58:	e426                	c.sdsp	s1,8(sp)
-   13e5a:	e04a                	c.sdsp	s2,0(sp)
-   13e5c:	84aa                	c.mv	s1,a0
+   146c4:	fe010113          	addi	sp,sp,-32
+   146c8:	00113c23          	sd	ra,24(sp)
+   146cc:	00813823          	sd	s0,16(sp)
+   146d0:	00913423          	sd	s1,8(sp)
+   146d4:	01213023          	sd	s2,0(sp)
+   146d8:	00050493          	addi	s1,a0,0
   if (v == shn::undef)
-   13e5e:	cda9                	c.beqz	a1,13eb8 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x66>
+   146dc:	06058a63          	beq	a1,zero,14750 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x8c>
   if (v == shn::abs)
-   13e60:	0005871b          	addiw	a4,a1,0
-   13e64:	67c1                	c.lui	a5,0x10
-   13e66:	17c5                	c.addi	a5,-15 # fff1 <__abi_tag-0x2a3>
-   13e68:	08f70063          	beq	a4,a5,13ee8 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x96>
+   146e0:	0005871b          	addiw	a4,a1,0
+   146e4:	000107b7          	lui	a5,0x10
+   146e8:	ff178793          	addi	a5,a5,-15 # fff1 <__abi_tag-0x2a3>
+   146ec:	0af70463          	beq	a4,a5,14794 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0xd0>
   if (v == shn::common)
-   13e6c:	0005871b          	addiw	a4,a1,0
-   13e70:	67c1                	c.lui	a5,0x10
-   13e72:	17c9                	c.addi	a5,-14 # fff2 <__abi_tag-0x2a2>
-   13e74:	08f70c63          	beq	a4,a5,13f0c <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0xba>
+   146f0:	0005871b          	addiw	a4,a1,0
+   146f4:	000107b7          	lui	a5,0x10
+   146f8:	ff278793          	addi	a5,a5,-14 # fff2 <__abi_tag-0x2a2>
+   146fc:	0cf70263          	beq	a4,a5,147c0 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0xfc>
 #if _GLIBCXX_USE_CXX11_ABI && (__CHAR_BIT__ * __SIZEOF_INT__) <= 32
   noexcept // any 32-bit value fits in the SSO buffer
 #endif
   {
     const bool __neg = __val < 0;
     const unsigned __uval = __neg ? (unsigned)~__val + 1u : __val;
-   13e78:	0005841b          	addiw	s0,a1,0
+   14700:	0005841b          	addiw	s0,a1,0
 	  if (__value < (unsigned)__base) return __n;
-   13e7c:	47a5                	c.li	a5,9
-   13e7e:	0a87f963          	bgeu	a5,s0,13f30 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0xde>
+   14704:	00900793          	addi	a5,zero,9
+   14708:	0e87f263          	bgeu	a5,s0,147ec <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x128>
 	  if (__value < __b2) return __n + 1;
-   13e82:	06300793          	addi	a5,zero,99
-   13e86:	1487ff63          	bgeu	a5,s0,13fe4 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x192>
+   1470c:	06300793          	addi	a5,zero,99
+   14710:	1c87f263          	bgeu	a5,s0,148d4 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x210>
 	  if (__value < __b3) return __n + 2;
-   13e8a:	3e700793          	addi	a5,zero,999
-   13e8e:	1687f563          	bgeu	a5,s0,13ff8 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x1a6>
+   14714:	3e700793          	addi	a5,zero,999
+   14718:	1c87fc63          	bgeu	a5,s0,148f0 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x22c>
 	  if (__value < __b4) return __n + 3;
-   13e92:	6689                	c.lui	a3,0x2
-   13e94:	70f68693          	addi	a3,a3,1807 # 270f <__abi_tag-0xdb85>
+   1471c:	000026b7          	lui	a3,0x2
+   14720:	70f68693          	addi	a3,a3,1807 # 270f <__abi_tag-0xdb85>
 	  __n += 4;
-   13e98:	0086b933          	sltu	s2,a3,s0
-   13e9c:	0911                	c.addi	s2,4
+   14724:	0086b933          	sltu	s2,a3,s0
+   14728:	00490913          	addi	s2,s2,4
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   13e9e:	01048793          	addi	a5,s1,16
+   1472c:	01048793          	addi	a5,s1,16
 	: allocator_type(__a), _M_p(__dat) { }
-   13ea2:	e09c                	c.sd	a5,0(s1)
+   14730:	00f4b023          	sd	a5,0(s1)
       { _M_construct(__n, __c); }
-   13ea4:	02d00613          	addi	a2,zero,45
-   13ea8:	85ca                	c.mv	a1,s2
-   13eaa:	8526                	c.mv	a0,s1
-   13eac:	c05fe0ef          	jal	ra,12ab0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@plt>
+   14734:	02d00613          	addi	a2,zero,45
+   14738:	00090593          	addi	a1,s2,0
+   1473c:	00048513          	addi	a0,s1,0
+   14740:	b70fe0ef          	jal	ra,12ab0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@plt>
       { return _M_dataplus._M_p; }
-   13eb0:	608c                	c.ld	a1,0(s1)
+   14744:	0004b583          	ld	a1,0(s1)
       unsigned __pos = __len - 1;
-   13eb2:	fff9069b          	addiw	a3,s2,-1
+   14748:	fff9069b          	addiw	a3,s2,-1
       while (__val >= 100)
-   13eb6:	a859                	c.j	13f4c <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0xfa>
+   1474c:	0c40006f          	jal	zero,14810 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x14c>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   13eb8:	01050793          	addi	a5,a0,16
+   14750:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   13ebc:	e11c                	c.sd	a5,0(a0)
+   14754:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   13ebe:	4681                	c.li	a3,0
-   13ec0:	00003617          	auipc	a2,0x3
-   13ec4:	dc560613          	addi	a2,a2,-571 # 16c85 <__libc_csu_fini+0x225>
-   13ec8:	00003597          	auipc	a1,0x3
-   13ecc:	db858593          	addi	a1,a1,-584 # 16c80 <__libc_csu_fini+0x220>
-   13ed0:	00006317          	auipc	t1,0x6
-   13ed4:	2e033303          	ld	t1,736(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   13ed8:	9302                	c.jalr	t1
+   14758:	00000693          	addi	a3,zero,0
+   1475c:	00004617          	auipc	a2,0x4
+   14760:	ef960613          	addi	a2,a2,-263 # 18655 <__libc_csu_fini+0x221>
+   14764:	00004597          	auipc	a1,0x4
+   14768:	eec58593          	addi	a1,a1,-276 # 18650 <__libc_csu_fini+0x21c>
+   1476c:	00008317          	auipc	t1,0x8
+   14770:	a4433303          	ld	t1,-1468(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   14774:	000300e7          	jalr	ra,0(t1)
 }
-   13eda:	8526                	c.mv	a0,s1
-   13edc:	60e2                	c.ldsp	ra,24(sp)
-   13ede:	6442                	c.ldsp	s0,16(sp)
-   13ee0:	64a2                	c.ldsp	s1,8(sp)
-   13ee2:	6902                	c.ldsp	s2,0(sp)
-   13ee4:	6105                	c.addi16sp	sp,32
-   13ee6:	8082                	c.jr	ra
+   14778:	00048513          	addi	a0,s1,0
+   1477c:	01813083          	ld	ra,24(sp)
+   14780:	01013403          	ld	s0,16(sp)
+   14784:	00813483          	ld	s1,8(sp)
+   14788:	00013903          	ld	s2,0(sp)
+   1478c:	02010113          	addi	sp,sp,32
+   14790:	00008067          	jalr	zero,0(ra)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   13ee8:	01050793          	addi	a5,a0,16
+   14794:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   13eec:	e11c                	c.sd	a5,0(a0)
+   14798:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   13eee:	4681                	c.li	a3,0
-   13ef0:	00003617          	auipc	a2,0x3
-   13ef4:	d9b60613          	addi	a2,a2,-613 # 16c8b <__libc_csu_fini+0x22b>
-   13ef8:	00003597          	auipc	a1,0x3
-   13efc:	d9058593          	addi	a1,a1,-624 # 16c88 <__libc_csu_fini+0x228>
-   13f00:	00006317          	auipc	t1,0x6
-   13f04:	2b033303          	ld	t1,688(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   13f08:	9302                	c.jalr	t1
+   1479c:	00000693          	addi	a3,zero,0
+   147a0:	00004617          	auipc	a2,0x4
+   147a4:	ebb60613          	addi	a2,a2,-325 # 1865b <__libc_csu_fini+0x227>
+   147a8:	00004597          	auipc	a1,0x4
+   147ac:	eb058593          	addi	a1,a1,-336 # 18658 <__libc_csu_fini+0x224>
+   147b0:	00008317          	auipc	t1,0x8
+   147b4:	a0033303          	ld	t1,-1536(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   147b8:	000300e7          	jalr	ra,0(t1)
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   13f0a:	bfc1                	c.j	13eda <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x88>
+   147bc:	fbdff06f          	jal	zero,14778 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0xb4>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   13f0c:	01050793          	addi	a5,a0,16
+   147c0:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   13f10:	e11c                	c.sd	a5,0(a0)
+   147c4:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   13f12:	4681                	c.li	a3,0
-   13f14:	00003617          	auipc	a2,0x3
-   13f18:	d8260613          	addi	a2,a2,-638 # 16c96 <__libc_csu_fini+0x236>
-   13f1c:	00003597          	auipc	a1,0x3
-   13f20:	d7458593          	addi	a1,a1,-652 # 16c90 <__libc_csu_fini+0x230>
-   13f24:	00006317          	auipc	t1,0x6
-   13f28:	28c33303          	ld	t1,652(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   13f2c:	9302                	c.jalr	t1
-   13f2e:	b775                	c.j	13eda <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x88>
+   147c8:	00000693          	addi	a3,zero,0
+   147cc:	00004617          	auipc	a2,0x4
+   147d0:	e9a60613          	addi	a2,a2,-358 # 18666 <__libc_csu_fini+0x232>
+   147d4:	00004597          	auipc	a1,0x4
+   147d8:	e8c58593          	addi	a1,a1,-372 # 18660 <__libc_csu_fini+0x22c>
+   147dc:	00008317          	auipc	t1,0x8
+   147e0:	9d433303          	ld	t1,-1580(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   147e4:	000300e7          	jalr	ra,0(t1)
+   147e8:	f91ff06f          	jal	zero,14778 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0xb4>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   13f30:	01050793          	addi	a5,a0,16
+   147ec:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   13f34:	e11c                	c.sd	a5,0(a0)
+   147f0:	00f53023          	sd	a5,0(a0)
       { _M_construct(__n, __c); }
-   13f36:	02d00613          	addi	a2,zero,45
-   13f3a:	4585                	c.li	a1,1
-   13f3c:	b75fe0ef          	jal	ra,12ab0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@plt>
+   147f4:	02d00613          	addi	a2,zero,45
+   147f8:	00100593          	addi	a1,zero,1
+   147fc:	ab4fe0ef          	jal	ra,12ab0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@plt>
       { return _M_dataplus._M_p; }
-   13f40:	608c                	c.ld	a1,0(s1)
-   13f42:	06300793          	addi	a5,zero,99
-   13f46:	0687f063          	bgeu	a5,s0,13fa6 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x154>
+   14800:	0004b583          	ld	a1,0(s1)
+   14804:	06300793          	addi	a5,zero,99
+   14808:	0687fe63          	bgeu	a5,s0,14884 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x1c0>
       unsigned __pos = __len - 1;
-   13f4a:	4681                	c.li	a3,0
+   1480c:	00000693          	addi	a3,zero,0
 	  auto const __num = (__val % 100) * 2;
-   13f4c:	06400813          	addi	a6,zero,100
+   14810:	06400813          	addi	a6,zero,100
 	  __first[__pos] = __digits[__num + 1];
-   13f50:	00006517          	auipc	a0,0x6
-   13f54:	28853503          	ld	a0,648(a0) # 1a1d8 <std::__detail::__to_chars_10_impl<unsigned int>(char*, unsigned int, unsigned int)::__digits@@Base+0x3130>
+   14814:	00008517          	auipc	a0,0x8
+   14818:	9c453503          	ld	a0,-1596(a0) # 1c1d8 <std::__detail::__to_chars_10_impl<unsigned int>(char*, unsigned int, unsigned int)::__digits@@Base+0x3760>
       while (__val >= 100)
-   13f58:	6309                	c.lui	t1,0x2
-   13f5a:	70f30313          	addi	t1,t1,1807 # 270f <__abi_tag-0xdb85>
+   1481c:	00002337          	lui	t1,0x2
+   14820:	70f30313          	addi	t1,t1,1807 # 270f <__abi_tag-0xdb85>
 	  auto const __num = (__val % 100) * 2;
-   13f5e:	030477bb          	remuw	a5,s0,a6
-   13f62:	0017979b          	slliw	a5,a5,0x1
-   13f66:	0004089b          	addiw	a7,s0,0
+   14824:	030477bb          	remuw	a5,s0,a6
+   14828:	0017979b          	slliw	a5,a5,0x1
+   1482c:	0004089b          	addiw	a7,s0,0
 	  __val /= 100;
-   13f6a:	0304543b          	divuw	s0,s0,a6
+   14830:	0304543b          	divuw	s0,s0,a6
 	  __first[__pos] = __digits[__num + 1];
-   13f6e:	02069613          	slli	a2,a3,0x20
-   13f72:	9201                	c.srli	a2,0x20
-   13f74:	962e                	c.add	a2,a1
-   13f76:	0017871b          	addiw	a4,a5,1
-   13f7a:	1702                	c.slli	a4,0x20
-   13f7c:	9301                	c.srli	a4,0x20
-   13f7e:	972a                	c.add	a4,a0
-   13f80:	00074703          	lbu	a4,0(a4)
-   13f84:	00e60023          	sb	a4,0(a2)
+   14834:	02069613          	slli	a2,a3,0x20
+   14838:	02065613          	srli	a2,a2,0x20
+   1483c:	00c58633          	add	a2,a1,a2
+   14840:	0017871b          	addiw	a4,a5,1
+   14844:	02071713          	slli	a4,a4,0x20
+   14848:	02075713          	srli	a4,a4,0x20
+   1484c:	00e50733          	add	a4,a0,a4
+   14850:	00074703          	lbu	a4,0(a4)
+   14854:	00e60023          	sb	a4,0(a2)
 	  __first[__pos - 1] = __digits[__num];
-   13f88:	fff6871b          	addiw	a4,a3,-1
-   13f8c:	1702                	c.slli	a4,0x20
-   13f8e:	9301                	c.srli	a4,0x20
-   13f90:	972e                	c.add	a4,a1
-   13f92:	1782                	c.slli	a5,0x20
-   13f94:	9381                	c.srli	a5,0x20
-   13f96:	97aa                	c.add	a5,a0
-   13f98:	0007c783          	lbu	a5,0(a5)
-   13f9c:	00f70023          	sb	a5,0(a4)
+   14858:	fff6871b          	addiw	a4,a3,-1
+   1485c:	02071713          	slli	a4,a4,0x20
+   14860:	02075713          	srli	a4,a4,0x20
+   14864:	00e58733          	add	a4,a1,a4
+   14868:	02079793          	slli	a5,a5,0x20
+   1486c:	0207d793          	srli	a5,a5,0x20
+   14870:	00f507b3          	add	a5,a0,a5
+   14874:	0007c783          	lbu	a5,0(a5)
+   14878:	00f70023          	sb	a5,0(a4)
 	  __pos -= 2;
-   13fa0:	36f9                	c.addiw	a3,-2
+   1487c:	ffe6869b          	addiw	a3,a3,-2
       while (__val >= 100)
-   13fa2:	fb136ee3          	bltu	t1,a7,13f5e <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x10c>
+   14880:	fb1362e3          	bltu	t1,a7,14824 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x160>
       if (__val >= 10)
-   13fa6:	47a5                	c.li	a5,9
-   13fa8:	0287f963          	bgeu	a5,s0,13fda <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x188>
+   14884:	00900793          	addi	a5,zero,9
+   14888:	0487f063          	bgeu	a5,s0,148c8 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x204>
 	  auto const __num = __val * 2;
-   13fac:	0014141b          	slliw	s0,s0,0x1
+   1488c:	0014141b          	slliw	s0,s0,0x1
 	  __first[1] = __digits[__num + 1];
-   13fb0:	00006717          	auipc	a4,0x6
-   13fb4:	22873703          	ld	a4,552(a4) # 1a1d8 <std::__detail::__to_chars_10_impl<unsigned int>(char*, unsigned int, unsigned int)::__digits@@Base+0x3130>
-   13fb8:	0014079b          	addiw	a5,s0,1
-   13fbc:	1782                	c.slli	a5,0x20
-   13fbe:	9381                	c.srli	a5,0x20
-   13fc0:	97ba                	c.add	a5,a4
-   13fc2:	0007c783          	lbu	a5,0(a5)
-   13fc6:	00f580a3          	sb	a5,1(a1)
+   14890:	00008717          	auipc	a4,0x8
+   14894:	94873703          	ld	a4,-1720(a4) # 1c1d8 <std::__detail::__to_chars_10_impl<unsigned int>(char*, unsigned int, unsigned int)::__digits@@Base+0x3760>
+   14898:	0014079b          	addiw	a5,s0,1
+   1489c:	02079793          	slli	a5,a5,0x20
+   148a0:	0207d793          	srli	a5,a5,0x20
+   148a4:	00f707b3          	add	a5,a4,a5
+   148a8:	0007c783          	lbu	a5,0(a5)
+   148ac:	00f580a3          	sb	a5,1(a1)
 	  __first[0] = __digits[__num];
-   13fca:	1402                	c.slli	s0,0x20
-   13fcc:	9001                	c.srli	s0,0x20
-   13fce:	9722                	c.add	a4,s0
-   13fd0:	00074783          	lbu	a5,0(a4)
-   13fd4:	00f58023          	sb	a5,0(a1)
-   13fd8:	b709                	c.j	13eda <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x88>
+   148b0:	02041413          	slli	s0,s0,0x20
+   148b4:	02045413          	srli	s0,s0,0x20
+   148b8:	00870733          	add	a4,a4,s0
+   148bc:	00074783          	lbu	a5,0(a4)
+   148c0:	00f58023          	sb	a5,0(a1)
+   148c4:	eb5ff06f          	jal	zero,14778 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0xb4>
 	__first[0] = '0' + __val;
-   13fda:	0304041b          	addiw	s0,s0,48
-   13fde:	00858023          	sb	s0,0(a1)
-   13fe2:	bde5                	c.j	13eda <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x88>
+   148c8:	0304041b          	addiw	s0,s0,48
+   148cc:	00858023          	sb	s0,0(a1)
+   148d0:	ea9ff06f          	jal	zero,14778 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0xb4>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   13fe4:	01050793          	addi	a5,a0,16
+   148d4:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   13fe8:	e11c                	c.sd	a5,0(a0)
+   148d8:	00f53023          	sd	a5,0(a0)
       { _M_construct(__n, __c); }
-   13fea:	02d00613          	addi	a2,zero,45
-   13fee:	4589                	c.li	a1,2
-   13ff0:	ac1fe0ef          	jal	ra,12ab0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@plt>
+   148dc:	02d00613          	addi	a2,zero,45
+   148e0:	00200593          	addi	a1,zero,2
+   148e4:	9ccfe0ef          	jal	ra,12ab0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char)@plt>
       { return _M_dataplus._M_p; }
-   13ff4:	608c                	c.ld	a1,0(s1)
+   148e8:	0004b583          	ld	a1,0(s1)
       while (__val >= 100)
-   13ff6:	bf45                	c.j	13fa6 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x154>
+   148ec:	f99ff06f          	jal	zero,14884 <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x1c0>
 	  if (__value < __b3) return __n + 2;
-   13ff8:	490d                	c.li	s2,3
-   13ffa:	b555                	c.j	13e9e <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x4c>
+   148f0:	00300913          	addi	s2,zero,3
+   148f4:	e39ff06f          	jal	zero,1472c <elf::enums::to_string[abi:cxx11](elf::enums::shn)+0x68>
 
-0000000000013ffc <elf::elf::elf(std::shared_ptr<elf::loader> const&)>:
+00000000000148f8 <elf::elf::elf(std::shared_ptr<elf::loader> const&)>:
 elf::elf(const std::shared_ptr<loader> &l) : m(make_shared<impl>(l)) {
-   13ffc:	7159                	c.addi16sp	sp,-112
-   13ffe:	f486                	c.sdsp	ra,104(sp)
-   14000:	f0a2                	c.sdsp	s0,96(sp)
-   14002:	eca6                	c.sdsp	s1,88(sp)
-   14004:	e8ca                	c.sdsp	s2,80(sp)
-   14006:	e4ce                	c.sdsp	s3,72(sp)
-   14008:	e0d2                	c.sdsp	s4,64(sp)
-   1400a:	fc56                	c.sdsp	s5,56(sp)
-   1400c:	f85a                	c.sdsp	s6,48(sp)
-   1400e:	f45e                	c.sdsp	s7,40(sp)
-   14010:	f062                	c.sdsp	s8,32(sp)
-   14012:	84aa                	c.mv	s1,a0
-   14014:	8aae                	c.mv	s5,a1
+   148f8:	f9010113          	addi	sp,sp,-112
+   148fc:	06113423          	sd	ra,104(sp)
+   14900:	06813023          	sd	s0,96(sp)
+   14904:	04913c23          	sd	s1,88(sp)
+   14908:	05213823          	sd	s2,80(sp)
+   1490c:	05313423          	sd	s3,72(sp)
+   14910:	05413023          	sd	s4,64(sp)
+   14914:	03513c23          	sd	s5,56(sp)
+   14918:	03613823          	sd	s6,48(sp)
+   1491c:	03713423          	sd	s7,40(sp)
+   14920:	03813023          	sd	s8,32(sp)
+   14924:	00050493          	addi	s1,a0,0
+   14928:	00058a93          	addi	s5,a1,0
 	: _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
-   14016:	00053023          	sd	zero,0(a0)
+   1492c:	00053023          	sd	zero,0(a0)
 	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-   1401a:	0d800513          	addi	a0,zero,216
-   1401e:	a63fe0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
-   14022:	842a                	c.mv	s0,a0
-   14024:	00052423          	sw	zero,8(a0)
-   14028:	00052623          	sw	zero,12(a0)
-   1402c:	00052823          	sw	zero,16(a0)
-   14030:	00052a23          	sw	zero,20(a0)
-   14034:	00052c23          	sw	zero,24(a0)
-   14038:	00052e23          	sw	zero,28(a0)
-   1403c:	02053023          	sd	zero,32(a0)
-   14040:	02053423          	sd	zero,40(a0)
+   14930:	0d800513          	addi	a0,zero,216
+   14934:	94cfe0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
+   14938:	00050413          	addi	s0,a0,0
+   1493c:	00052423          	sw	zero,8(a0)
+   14940:	00052623          	sw	zero,12(a0)
+   14944:	00052823          	sw	zero,16(a0)
+   14948:	00052a23          	sw	zero,20(a0)
+   1494c:	00052c23          	sw	zero,24(a0)
+   14950:	00052e23          	sw	zero,28(a0)
+   14954:	02053023          	sd	zero,32(a0)
+   14958:	02053423          	sd	zero,40(a0)
       : _M_use_count(1), _M_weak_count(1) { }
-   14044:	4785                	c.li	a5,1
-   14046:	d91c                	c.sw	a5,48(a0)
-   14048:	d95c                	c.sw	a5,52(a0)
+   1495c:	00100793          	addi	a5,zero,1
+   14960:	02f52823          	sw	a5,48(a0)
+   14964:	02f52a23          	sw	a5,52(a0)
 	: _M_impl(__a)
-   1404a:	00006797          	auipc	a5,0x6
-   1404e:	1967b783          	ld	a5,406(a5) # 1a1e0 <vtable for std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x5a8>
-   14052:	07c1                	c.addi	a5,16
-   14054:	e11c                	c.sd	a5,0(a0)
-   14056:	03850913          	addi	s2,a0,56
+   14968:	00008797          	auipc	a5,0x8
+   1496c:	8787b783          	ld	a5,-1928(a5) # 1c1e0 <vtable for std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x5a8>
+   14970:	01078793          	addi	a5,a5,16
+   14974:	00f53023          	sd	a5,0(a0)
+   14978:	03850913          	addi	s2,a0,56
       __shared_ptr(const __shared_ptr&) noexcept = default;
-   1405a:	000ab783          	ld	a5,0(s5)
-   1405e:	fd1c                	c.sd	a5,56(a0)
+   1497c:	000ab783          	ld	a5,0(s5)
+   14980:	02f53c23          	sd	a5,56(a0)
       : _M_pi(__r._M_pi)
-   14060:	008ab503          	ld	a0,8(s5)
-   14064:	e028                	c.sd	a0,64(s0)
+   14984:	008ab503          	ld	a0,8(s5)
+   14988:	04a43023          	sd	a0,64(s0)
 	if (_M_pi != nullptr)
-   14066:	c919                	c.beqz	a0,1407c <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x80>
+   1498c:	02050063          	beq	a0,zero,149ac <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0xb4>
     if (__is_single_threaded())
-   14068:	00006797          	auipc	a5,0x6
-   1406c:	1d87b783          	ld	a5,472(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14070:	0007c783          	lbu	a5,0(a5)
-   14074:	c3b9                	c.beqz	a5,140ba <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0xbe>
+   14990:	00008797          	auipc	a5,0x8
+   14994:	8b07b783          	ld	a5,-1872(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   14998:	0007c783          	lbu	a5,0(a5)
+   1499c:	04078e63          	beq	a5,zero,149f8 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x100>
   { *__mem += __val; }
-   14076:	591c                	c.lw	a5,48(a0)
-   14078:	2785                	c.addiw	a5,1
-   1407a:	d91c                	c.sw	a5,48(a0)
+   149a0:	03052783          	lw	a5,48(a0)
+   149a4:	0017879b          	addiw	a5,a5,1
+   149a8:	02f52823          	sw	a5,48(a0)
 	: _M_start(), _M_finish(), _M_end_of_storage()
-   1407c:	08043423          	sd	zero,136(s0)
-   14080:	08043823          	sd	zero,144(s0)
-   14084:	08043c23          	sd	zero,152(s0)
-   14088:	0a043023          	sd	zero,160(s0)
-   1408c:	0a043423          	sd	zero,168(s0)
-   14090:	0a043823          	sd	zero,176(s0)
+   149ac:	08043423          	sd	zero,136(s0)
+   149b0:	08043823          	sd	zero,144(s0)
+   149b4:	08043c23          	sd	zero,152(s0)
+   149b8:	0a043023          	sd	zero,160(s0)
+   149bc:	0a043423          	sd	zero,168(s0)
+   149c0:	0a043823          	sd	zero,176(s0)
       : _M_ptr(0), _M_refcount()
-   14094:	0a043c23          	sd	zero,184(s0)
+   149c4:	0a043c23          	sd	zero,184(s0)
       constexpr __shared_count() noexcept : _M_pi(0)
-   14098:	0c043023          	sd	zero,192(s0)
+   149c8:	0c043023          	sd	zero,192(s0)
       : _M_ptr(0), _M_refcount()
-   1409c:	0c043423          	sd	zero,200(s0)
+   149cc:	0c043423          	sd	zero,200(s0)
       constexpr __shared_count() noexcept : _M_pi(0)
-   140a0:	0c043823          	sd	zero,208(s0)
+   149d0:	0c043823          	sd	zero,208(s0)
 	  _M_pi = __pi;
-   140a4:	e480                	c.sd	s0,8(s1)
+   149d4:	0084b423          	sd	s0,8(s1)
 	  __p = __pi->_M_ptr();
-   140a6:	0124b023          	sd	s2,0(s1)
+   149d8:	0124b023          	sd	s2,0(s1)
       { return _M_ptr; }
-   140aa:	000ab503          	ld	a0,0(s5)
+   149dc:	000ab503          	ld	a0,0(s5)
   } *core_hdr = (struct core_hdr *)l->load(0, sizeof *core_hdr);
-   140ae:	611c                	c.ld	a5,0(a0)
-   140b0:	6b9c                	c.ld	a5,16(a5)
-   140b2:	461d                	c.li	a2,7
-   140b4:	4581                	c.li	a1,0
-   140b6:	9782                	c.jalr	a5
-   140b8:	a039                	c.j	140c6 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0xca>
+   149e0:	00053783          	ld	a5,0(a0)
+   149e4:	0107b783          	ld	a5,16(a5)
+   149e8:	00700613          	addi	a2,zero,7
+   149ec:	00000593          	addi	a1,zero,0
+   149f0:	000780e7          	jalr	ra,0(a5)
+   149f4:	0140006f          	jal	zero,14a08 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x110>
       __atomic_add(__mem, __val);
-   140ba:	4585                	c.li	a1,1
-   140bc:	03050513          	addi	a0,a0,48
-   140c0:	891fe0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
-   140c4:	bf65                	c.j	1407c <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x80>
-   140c6:	842a                	c.mv	s0,a0
+   149f8:	00100593          	addi	a1,zero,1
+   149fc:	03050513          	addi	a0,a0,48
+   14a00:	f51fd0ef          	jal	ra,12950 <__gnu_cxx::__atomic_add(int volatile*, int)@plt>
+   14a04:	fa9ff06f          	jal	zero,149ac <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0xb4>
+   14a08:	00050413          	addi	s0,a0,0
   if (strncmp(core_hdr->ei_magic,
-   140c8:	4611                	c.li	a2,4
-   140ca:	00003597          	auipc	a1,0x3
-   140ce:	bce58593          	addi	a1,a1,-1074 # 16c98 <__libc_csu_fini+0x238>
-   140d2:	a9ffe0ef          	jal	ra,12b70 <strncmp@plt>
-   140d6:	e139                	c.bnez	a0,1411c <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x120>
+   14a0c:	00400613          	addi	a2,zero,4
+   14a10:	00004597          	auipc	a1,0x4
+   14a14:	c5858593          	addi	a1,a1,-936 # 18668 <__libc_csu_fini+0x234>
+   14a18:	958fe0ef          	jal	ra,12b70 <strncmp@plt>
+   14a1c:	04051e63          	bne	a0,zero,14a78 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x180>
   if (core_hdr->ei_version != 1)
-   140d8:	00644703          	lbu	a4,6(s0)
-   140dc:	4785                	c.li	a5,1
-   140de:	06f71d63          	bne	a4,a5,14158 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x15c>
+   14a20:	00644703          	lbu	a4,6(s0)
+   14a24:	00100793          	addi	a5,zero,1
+   14a28:	08f71c63          	bne	a4,a5,14ac0 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x1c8>
   if (core_hdr->ei_class != elfclass::_32 &&
-   140e2:	00444703          	lbu	a4,4(s0)
-   140e6:	fff7079b          	addiw	a5,a4,-1
-   140ea:	0ff7f793          	andi	a5,a5,255
-   140ee:	4685                	c.li	a3,1
-   140f0:	0af6e063          	bltu	a3,a5,14190 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x194>
+   14a2c:	00444703          	lbu	a4,4(s0)
+   14a30:	fff7079b          	addiw	a5,a4,-1
+   14a34:	0ff7f793          	andi	a5,a5,255
+   14a38:	00100693          	addi	a3,zero,1
+   14a3c:	0cf6e263          	bltu	a3,a5,14b00 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x208>
   if (core_hdr->ei_data != elfdata::lsb && core_hdr->ei_data != elfdata::msb)
-   140f4:	00544783          	lbu	a5,5(s0)
-   140f8:	37fd                	c.addiw	a5,-1
-   140fa:	0ff7f793          	andi	a5,a5,255
-   140fe:	4685                	c.li	a3,1
-   14100:	0cf6e463          	bltu	a3,a5,141c8 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x1cc>
+   14a40:	00544783          	lbu	a5,5(s0)
+   14a44:	fff7879b          	addiw	a5,a5,-1
+   14a48:	0ff7f793          	andi	a5,a5,255
+   14a4c:	00100693          	addi	a3,zero,1
+   14a50:	0ef6e863          	bltu	a3,a5,14b40 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x248>
   size_t hdr_size = (core_hdr->ei_class == elfclass::_32 ? sizeof(Ehdr<Elf32>)
-   14104:	4785                	c.li	a5,1
-   14106:	04000613          	addi	a2,zero,64
-   1410a:	0ef70b63          	beq	a4,a5,14200 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x204>
-   1410e:	000ab503          	ld	a0,0(s5)
+   14a54:	00100793          	addi	a5,zero,1
+   14a58:	04000613          	addi	a2,zero,64
+   14a5c:	12f70263          	beq	a4,a5,14b80 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x288>
+   14a60:	000ab503          	ld	a0,0(s5)
   const void *hdr = l->load(0, hdr_size);
-   14112:	611c                	c.ld	a5,0(a0)
-   14114:	6b9c                	c.ld	a5,16(a5)
-   14116:	4581                	c.li	a1,0
-   14118:	9782                	c.jalr	a5
-   1411a:	a0f5                	c.j	14206 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x20a>
+   14a64:	00053783          	ld	a5,0(a0)
+   14a68:	0107b783          	ld	a5,16(a5)
+   14a6c:	00000593          	addi	a1,zero,0
+   14a70:	000780e7          	jalr	ra,0(a5)
+   14a74:	1140006f          	jal	zero,14b88 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x290>
     throw format_error("bad ELF magic number");
-   1411c:	4541                	c.li	a0,16
-   1411e:	8c3fe0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   14122:	892a                	c.mv	s2,a0
+   14a78:	01000513          	addi	a0,zero,16
+   14a7c:	f65fd0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   14a80:	00050913          	addi	s2,a0,0
   explicit format_error(const char *what_arg) : std::runtime_error(what_arg) {}
-   14124:	00003597          	auipc	a1,0x3
-   14128:	b7c58593          	addi	a1,a1,-1156 # 16ca0 <__libc_csu_fini+0x240>
-   1412c:	ac5fe0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
-   14130:	00006797          	auipc	a5,0x6
-   14134:	0987b783          	ld	a5,152(a5) # 1a1c8 <vtable for elf::format_error@@Base+0x5e0>
-   14138:	07c1                	c.addi	a5,16
-   1413a:	00f93023          	sd	a5,0(s2)
-   1413e:	00006617          	auipc	a2,0x6
-   14142:	13263603          	ld	a2,306(a2) # 1a270 <elf::format_error::~format_error()@@Base+0x5d62>
-   14146:	00006597          	auipc	a1,0x6
-   1414a:	0725b583          	ld	a1,114(a1) # 1a1b8 <typeinfo for elf::format_error@@Base+0x678>
-   1414e:	854a                	c.mv	a0,s2
-   14150:	a31fe0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   14a84:	00004597          	auipc	a1,0x4
+   14a88:	bec58593          	addi	a1,a1,-1044 # 18670 <__libc_csu_fini+0x23c>
+   14a8c:	964fe0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
+   14a90:	00007797          	auipc	a5,0x7
+   14a94:	7387b783          	ld	a5,1848(a5) # 1c1c8 <vtable for elf::format_error@@Base+0x5e0>
+   14a98:	01078793          	addi	a5,a5,16
+   14a9c:	00f93023          	sd	a5,0(s2)
+   14aa0:	00007617          	auipc	a2,0x7
+   14aa4:	7d063603          	ld	a2,2000(a2) # 1c270 <elf::format_error::~format_error()@@Base+0x7284>
+   14aa8:	00007597          	auipc	a1,0x7
+   14aac:	7105b583          	ld	a1,1808(a1) # 1c1b8 <typeinfo for elf::format_error@@Base+0x678>
+   14ab0:	00090513          	addi	a0,s2,0
+   14ab4:	8ccfe0ef          	jal	ra,12b80 <__cxa_throw@plt>
 	if (_M_pi != nullptr)
-   14154:	842a                	c.mv	s0,a0
-   14156:	a635                	c.j	14482 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x486>
+   14ab8:	00050413          	addi	s0,a0,0
+   14abc:	4480006f          	jal	zero,14f04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x60c>
     throw format_error("unknown ELF version");
-   14158:	4541                	c.li	a0,16
-   1415a:	887fe0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   1415e:	892a                	c.mv	s2,a0
-   14160:	00003597          	auipc	a1,0x3
-   14164:	b5858593          	addi	a1,a1,-1192 # 16cb8 <__libc_csu_fini+0x258>
-   14168:	a89fe0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
-   1416c:	00006797          	auipc	a5,0x6
-   14170:	05c7b783          	ld	a5,92(a5) # 1a1c8 <vtable for elf::format_error@@Base+0x5e0>
-   14174:	07c1                	c.addi	a5,16
-   14176:	00f93023          	sd	a5,0(s2)
-   1417a:	00006617          	auipc	a2,0x6
-   1417e:	0f663603          	ld	a2,246(a2) # 1a270 <elf::format_error::~format_error()@@Base+0x5d62>
-   14182:	00006597          	auipc	a1,0x6
-   14186:	0365b583          	ld	a1,54(a1) # 1a1b8 <typeinfo for elf::format_error@@Base+0x678>
-   1418a:	854a                	c.mv	a0,s2
-   1418c:	9f5fe0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   14ac0:	01000513          	addi	a0,zero,16
+   14ac4:	f1dfd0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   14ac8:	00050913          	addi	s2,a0,0
+   14acc:	00004597          	auipc	a1,0x4
+   14ad0:	bbc58593          	addi	a1,a1,-1092 # 18688 <__libc_csu_fini+0x254>
+   14ad4:	91cfe0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
+   14ad8:	00007797          	auipc	a5,0x7
+   14adc:	6f07b783          	ld	a5,1776(a5) # 1c1c8 <vtable for elf::format_error@@Base+0x5e0>
+   14ae0:	01078793          	addi	a5,a5,16
+   14ae4:	00f93023          	sd	a5,0(s2)
+   14ae8:	00007617          	auipc	a2,0x7
+   14aec:	78863603          	ld	a2,1928(a2) # 1c270 <elf::format_error::~format_error()@@Base+0x7284>
+   14af0:	00007597          	auipc	a1,0x7
+   14af4:	6c85b583          	ld	a1,1736(a1) # 1c1b8 <typeinfo for elf::format_error@@Base+0x678>
+   14af8:	00090513          	addi	a0,s2,0
+   14afc:	884fe0ef          	jal	ra,12b80 <__cxa_throw@plt>
     throw format_error("bad ELF class");
-   14190:	4541                	c.li	a0,16
-   14192:	84ffe0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   14196:	892a                	c.mv	s2,a0
-   14198:	00003597          	auipc	a1,0x3
-   1419c:	b3858593          	addi	a1,a1,-1224 # 16cd0 <__libc_csu_fini+0x270>
-   141a0:	a51fe0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
-   141a4:	00006797          	auipc	a5,0x6
-   141a8:	0247b783          	ld	a5,36(a5) # 1a1c8 <vtable for elf::format_error@@Base+0x5e0>
-   141ac:	07c1                	c.addi	a5,16
-   141ae:	00f93023          	sd	a5,0(s2)
-   141b2:	00006617          	auipc	a2,0x6
-   141b6:	0be63603          	ld	a2,190(a2) # 1a270 <elf::format_error::~format_error()@@Base+0x5d62>
-   141ba:	00006597          	auipc	a1,0x6
-   141be:	ffe5b583          	ld	a1,-2(a1) # 1a1b8 <typeinfo for elf::format_error@@Base+0x678>
-   141c2:	854a                	c.mv	a0,s2
-   141c4:	9bdfe0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   14b00:	01000513          	addi	a0,zero,16
+   14b04:	eddfd0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   14b08:	00050913          	addi	s2,a0,0
+   14b0c:	00004597          	auipc	a1,0x4
+   14b10:	b9458593          	addi	a1,a1,-1132 # 186a0 <__libc_csu_fini+0x26c>
+   14b14:	8dcfe0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
+   14b18:	00007797          	auipc	a5,0x7
+   14b1c:	6b07b783          	ld	a5,1712(a5) # 1c1c8 <vtable for elf::format_error@@Base+0x5e0>
+   14b20:	01078793          	addi	a5,a5,16
+   14b24:	00f93023          	sd	a5,0(s2)
+   14b28:	00007617          	auipc	a2,0x7
+   14b2c:	74863603          	ld	a2,1864(a2) # 1c270 <elf::format_error::~format_error()@@Base+0x7284>
+   14b30:	00007597          	auipc	a1,0x7
+   14b34:	6885b583          	ld	a1,1672(a1) # 1c1b8 <typeinfo for elf::format_error@@Base+0x678>
+   14b38:	00090513          	addi	a0,s2,0
+   14b3c:	844fe0ef          	jal	ra,12b80 <__cxa_throw@plt>
     throw format_error("bad ELF data order");
-   141c8:	4541                	c.li	a0,16
-   141ca:	817fe0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   141ce:	892a                	c.mv	s2,a0
-   141d0:	00003597          	auipc	a1,0x3
-   141d4:	b1058593          	addi	a1,a1,-1264 # 16ce0 <__libc_csu_fini+0x280>
-   141d8:	a19fe0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
-   141dc:	00006797          	auipc	a5,0x6
-   141e0:	fec7b783          	ld	a5,-20(a5) # 1a1c8 <vtable for elf::format_error@@Base+0x5e0>
-   141e4:	07c1                	c.addi	a5,16
-   141e6:	00f93023          	sd	a5,0(s2)
-   141ea:	00006617          	auipc	a2,0x6
-   141ee:	08663603          	ld	a2,134(a2) # 1a270 <elf::format_error::~format_error()@@Base+0x5d62>
-   141f2:	00006597          	auipc	a1,0x6
-   141f6:	fc65b583          	ld	a1,-58(a1) # 1a1b8 <typeinfo for elf::format_error@@Base+0x678>
-   141fa:	854a                	c.mv	a0,s2
-   141fc:	985fe0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   14b40:	01000513          	addi	a0,zero,16
+   14b44:	e9dfd0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   14b48:	00050913          	addi	s2,a0,0
+   14b4c:	00004597          	auipc	a1,0x4
+   14b50:	b6458593          	addi	a1,a1,-1180 # 186b0 <__libc_csu_fini+0x27c>
+   14b54:	89cfe0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
+   14b58:	00007797          	auipc	a5,0x7
+   14b5c:	6707b783          	ld	a5,1648(a5) # 1c1c8 <vtable for elf::format_error@@Base+0x5e0>
+   14b60:	01078793          	addi	a5,a5,16
+   14b64:	00f93023          	sd	a5,0(s2)
+   14b68:	00007617          	auipc	a2,0x7
+   14b6c:	70863603          	ld	a2,1800(a2) # 1c270 <elf::format_error::~format_error()@@Base+0x7284>
+   14b70:	00007597          	auipc	a1,0x7
+   14b74:	6485b583          	ld	a1,1608(a1) # 1c1b8 <typeinfo for elf::format_error@@Base+0x678>
+   14b78:	00090513          	addi	a0,s2,0
+   14b7c:	804fe0ef          	jal	ra,12b80 <__cxa_throw@plt>
   size_t hdr_size = (core_hdr->ei_class == elfclass::_32 ? sizeof(Ehdr<Elf32>)
-   14200:	03400613          	addi	a2,zero,52
-   14204:	b729                	c.j	1410e <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x112>
+   14b80:	03400613          	addi	a2,zero,52
+   14b84:	eddff06f          	jal	zero,14a60 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x168>
   const void *hdr = l->load(0, hdr_size);
-   14206:	85aa                	c.mv	a1,a0
+   14b88:	00050593          	addi	a1,a0,0
   canon_hdr(&m->hdr, hdr, core_hdr->ei_class, core_hdr->ei_data);
-   14208:	6088                	c.ld	a0,0(s1)
-   1420a:	00544683          	lbu	a3,5(s0)
-   1420e:	00444603          	lbu	a2,4(s0)
-   14212:	0541                	c.addi	a0,16
-   14214:	00006317          	auipc	t1,0x6
-   14218:	fac33303          	ld	t1,-84(t1) # 1a1c0 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)@@Base+0x553c>
-   1421c:	9302                	c.jalr	t1
+   14b8c:	0004b503          	ld	a0,0(s1)
+   14b90:	00544683          	lbu	a3,5(s0)
+   14b94:	00444603          	lbu	a2,4(s0)
+   14b98:	01050513          	addi	a0,a0,16
+   14b9c:	00007317          	auipc	t1,0x7
+   14ba0:	62433303          	ld	t1,1572(t1) # 1c1c0 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)@@Base+0x6704>
+   14ba4:	000300e7          	jalr	ra,0(t1)
       { return _M_ptr; }
-   1421e:	609c                	c.ld	a5,0(s1)
+   14ba8:	0004b783          	ld	a5,0(s1)
   if (m->hdr.version != 1)
-   14220:	53d4                	c.lw	a3,36(a5)
-   14222:	4705                	c.li	a4,1
-   14224:	02e69663          	bne	a3,a4,14250 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x254>
+   14bac:	0247a683          	lw	a3,36(a5)
+   14bb0:	00100713          	addi	a4,zero,1
+   14bb4:	02e69c63          	bne	a3,a4,14bec <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x2f4>
   if (m->hdr.shnum && m->hdr.shstrndx >= m->hdr.shnum)
-   14228:	04c7d703          	lhu	a4,76(a5)
-   1422c:	c709                	c.beqz	a4,14236 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x23a>
-   1422e:	04e7d683          	lhu	a3,78(a5)
-   14232:	04e6fb63          	bgeu	a3,a4,14288 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x28c>
-   14236:	000ab503          	ld	a0,0(s5)
+   14bb8:	04c7d703          	lhu	a4,76(a5)
+   14bbc:	00070663          	beq	a4,zero,14bc8 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x2d0>
+   14bc0:	04e7d683          	lhu	a3,78(a5)
+   14bc4:	06e6f463          	bgeu	a3,a4,14c2c <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x334>
+   14bc8:	000ab503          	ld	a0,0(s5)
   const void *seg_data = l->load(m->hdr.phoff, m->hdr.phentsize * m->hdr.phnum);
-   1423a:	0467d603          	lhu	a2,70(a5)
-   1423e:	0487d683          	lhu	a3,72(a5)
-   14242:	6118                	c.ld	a4,0(a0)
-   14244:	6b18                	c.ld	a4,16(a4)
-   14246:	02d6063b          	mulw	a2,a2,a3
-   1424a:	7b8c                	c.ld	a1,48(a5)
-   1424c:	9702                	c.jalr	a4
-   1424e:	a881                	c.j	1429e <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x2a2>
+   14bcc:	0467d603          	lhu	a2,70(a5)
+   14bd0:	0487d683          	lhu	a3,72(a5)
+   14bd4:	00053703          	ld	a4,0(a0)
+   14bd8:	01073703          	ld	a4,16(a4)
+   14bdc:	02d6063b          	mulw	a2,a2,a3
+   14be0:	0307b583          	ld	a1,48(a5)
+   14be4:	000700e7          	jalr	ra,0(a4)
+   14be8:	0600006f          	jal	zero,14c48 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x350>
     throw format_error("bad section ELF version");
-   14250:	4541                	c.li	a0,16
-   14252:	f8efe0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   14256:	892a                	c.mv	s2,a0
-   14258:	00003597          	auipc	a1,0x3
-   1425c:	aa058593          	addi	a1,a1,-1376 # 16cf8 <__libc_csu_fini+0x298>
-   14260:	991fe0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
-   14264:	00006797          	auipc	a5,0x6
-   14268:	f647b783          	ld	a5,-156(a5) # 1a1c8 <vtable for elf::format_error@@Base+0x5e0>
-   1426c:	07c1                	c.addi	a5,16
-   1426e:	00f93023          	sd	a5,0(s2)
-   14272:	00006617          	auipc	a2,0x6
-   14276:	ffe63603          	ld	a2,-2(a2) # 1a270 <elf::format_error::~format_error()@@Base+0x5d62>
-   1427a:	00006597          	auipc	a1,0x6
-   1427e:	f3e5b583          	ld	a1,-194(a1) # 1a1b8 <typeinfo for elf::format_error@@Base+0x678>
-   14282:	854a                	c.mv	a0,s2
-   14284:	8fdfe0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   14bec:	01000513          	addi	a0,zero,16
+   14bf0:	df1fd0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   14bf4:	00050913          	addi	s2,a0,0
+   14bf8:	00004597          	auipc	a1,0x4
+   14bfc:	ad058593          	addi	a1,a1,-1328 # 186c8 <__libc_csu_fini+0x294>
+   14c00:	ff1fd0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
+   14c04:	00007797          	auipc	a5,0x7
+   14c08:	5c47b783          	ld	a5,1476(a5) # 1c1c8 <vtable for elf::format_error@@Base+0x5e0>
+   14c0c:	01078793          	addi	a5,a5,16
+   14c10:	00f93023          	sd	a5,0(s2)
+   14c14:	00007617          	auipc	a2,0x7
+   14c18:	65c63603          	ld	a2,1628(a2) # 1c270 <elf::format_error::~format_error()@@Base+0x7284>
+   14c1c:	00007597          	auipc	a1,0x7
+   14c20:	59c5b583          	ld	a1,1436(a1) # 1c1b8 <typeinfo for elf::format_error@@Base+0x678>
+   14c24:	00090513          	addi	a0,s2,0
+   14c28:	f59fd0ef          	jal	ra,12b80 <__cxa_throw@plt>
     throw format_error("bad section name string table index");
-   14288:	4541                	c.li	a0,16
-   1428a:	f56fe0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   1428e:	892a                	c.mv	s2,a0
-   14290:	00003597          	auipc	a1,0x3
-   14294:	a8058593          	addi	a1,a1,-1408 # 16d10 <__libc_csu_fini+0x2b0>
-   14298:	959fe0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
-   1429c:	a015                	c.j	142c0 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x2c4>
+   14c2c:	01000513          	addi	a0,zero,16
+   14c30:	db1fd0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   14c34:	00050913          	addi	s2,a0,0
+   14c38:	00004597          	auipc	a1,0x4
+   14c3c:	aa858593          	addi	a1,a1,-1368 # 186e0 <__libc_csu_fini+0x2ac>
+   14c40:	fb1fd0ef          	jal	ra,12bf0 <std::runtime_error::runtime_error(char const*)@plt>
+   14c44:	0340006f          	jal	zero,14c78 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x380>
   const void *seg_data = l->load(m->hdr.phoff, m->hdr.phentsize * m->hdr.phnum);
-   1429e:	89aa                	c.mv	s3,a0
-   142a0:	6080                	c.ld	s0,0(s1)
+   14c48:	00050993          	addi	s3,a0,0
+   14c4c:	0004b403          	ld	s0,0(s1)
   for (unsigned i = 0; i < m->hdr.phnum; i++) {
-   142a2:	04845783          	lhu	a5,72(s0)
-   142a6:	4901                	c.li	s2,0
-   142a8:	c7e5                	c.beqz	a5,14390 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x394>
+   14c50:	04845783          	lhu	a5,72(s0)
+   14c54:	00000913          	addi	s2,zero,0
+   14c58:	14078663          	beq	a5,zero,14da4 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x4ac>
     m->segments.push_back(segment(*this, seg));
-   142aa:	8a0a                	c.mv	s4,sp
+   14c5c:	00010a13          	addi	s4,sp,0
 				     std::forward<_Args>(__args)...);
 	    ++this->_M_impl._M_finish;
 	    _GLIBCXX_ASAN_ANNOTATE_GREW(1);
 	  }
 	else
 	  _M_realloc_insert(end(), std::forward<_Args>(__args)...);
-   142ac:	00006c17          	auipc	s8,0x6
-   142b0:	fa4c3c03          	ld	s8,-92(s8) # 1a250 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)@@Base+0x4d74>
+   14c60:	00007c17          	auipc	s8,0x7
+   14c64:	5f0c3c03          	ld	s8,1520(s8) # 1c250 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)@@Base+0x5c78>
     return ::__libc_single_threaded;
-   142b4:	00006b17          	auipc	s6,0x6
-   142b8:	f8cb3b03          	ld	s6,-116(s6) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   14c68:	00007b17          	auipc	s6,0x7
+   14c6c:	5d8b3b03          	ld	s6,1496(s6) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   142bc:	4b85                	c.li	s7,1
-   142be:	a09d                	c.j	14324 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x328>
-   142c0:	00006797          	auipc	a5,0x6
-   142c4:	f087b783          	ld	a5,-248(a5) # 1a1c8 <vtable for elf::format_error@@Base+0x5e0>
-   142c8:	07c1                	c.addi	a5,16
-   142ca:	00f93023          	sd	a5,0(s2)
+   14c70:	00100b93          	addi	s7,zero,1
+   14c74:	0900006f          	jal	zero,14d04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x40c>
+   14c78:	00007797          	auipc	a5,0x7
+   14c7c:	5507b783          	ld	a5,1360(a5) # 1c1c8 <vtable for elf::format_error@@Base+0x5e0>
+   14c80:	01078793          	addi	a5,a5,16
+   14c84:	00f93023          	sd	a5,0(s2)
     throw format_error("bad section name string table index");
-   142ce:	00006617          	auipc	a2,0x6
-   142d2:	fa263603          	ld	a2,-94(a2) # 1a270 <elf::format_error::~format_error()@@Base+0x5d62>
-   142d6:	00006597          	auipc	a1,0x6
-   142da:	ee25b583          	ld	a1,-286(a1) # 1a1b8 <typeinfo for elf::format_error@@Base+0x678>
-   142de:	854a                	c.mv	a0,s2
-   142e0:	8a1fe0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   14c88:	00007617          	auipc	a2,0x7
+   14c8c:	5e863603          	ld	a2,1512(a2) # 1c270 <elf::format_error::~format_error()@@Base+0x7284>
+   14c90:	00007597          	auipc	a1,0x7
+   14c94:	5285b583          	ld	a1,1320(a1) # 1c1b8 <typeinfo for elf::format_error@@Base+0x678>
+   14c98:	00090513          	addi	a0,s2,0
+   14c9c:	ee5fd0ef          	jal	ra,12b80 <__cxa_throw@plt>
 	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
-   142e4:	782c                	c.ld	a1,112(s0)
-   142e6:	7c3c                	c.ld	a5,120(s0)
-   142e8:	04f58a63          	beq	a1,a5,1433c <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x340>
+   14ca0:	07043583          	ld	a1,112(s0)
+   14ca4:	07843783          	ld	a5,120(s0)
+   14ca8:	08f58063          	beq	a1,a5,14d28 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x430>
       : _M_ptr(__r._M_ptr), _M_refcount()
-   142ec:	6782                	c.ldsp	a5,0(sp)
-   142ee:	e19c                	c.sd	a5,0(a1)
+   14cac:	00013783          	ld	a5,0(sp)
+   14cb0:	00f5b023          	sd	a5,0(a1)
       constexpr __shared_count() noexcept : _M_pi(0)
-   142f0:	0005b423          	sd	zero,8(a1)
+   14cb4:	0005b423          	sd	zero,8(a1)
 	_Sp_counted_base<_Lp>* __tmp = __r._M_pi;
-   142f4:	67a2                	c.ldsp	a5,8(sp)
+   14cb8:	00813783          	ld	a5,8(sp)
 	__r._M_pi = _M_pi;
-   142f6:	e402                	c.sdsp	zero,8(sp)
+   14cbc:	00013423          	sd	zero,8(sp)
 	_M_pi = __tmp;
-   142f8:	e59c                	c.sd	a5,8(a1)
+   14cc0:	00f5b423          	sd	a5,8(a1)
 	__r._M_ptr = nullptr;
-   142fa:	e002                	c.sdsp	zero,0(sp)
+   14cc4:	00013023          	sd	zero,0(sp)
 	    ++this->_M_impl._M_finish;
-   142fc:	783c                	c.ld	a5,112(s0)
-   142fe:	07c1                	c.addi	a5,16
-   14300:	f83c                	c.sd	a5,112(s0)
+   14cc8:	07043783          	ld	a5,112(s0)
+   14ccc:	01078793          	addi	a5,a5,16
+   14cd0:	06f43823          	sd	a5,112(s0)
 	if (_M_pi != nullptr)
-   14302:	6422                	c.ldsp	s0,8(sp)
-   14304:	c811                	c.beqz	s0,14318 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x31c>
+   14cd4:	00813403          	ld	s0,8(sp)
+   14cd8:	00040e63          	beq	s0,zero,14cf4 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x3fc>
     if (__is_single_threaded())
-   14306:	000b4783          	lbu	a5,0(s6)
-   1430a:	cf95                	c.beqz	a5,14346 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x34a>
+   14cdc:	000b4783          	lbu	a5,0(s6)
+   14ce0:	04078c63          	beq	a5,zero,14d38 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x440>
     _Atomic_word __result = *__mem;
-   1430c:	5808                	c.lw	a0,48(s0)
+   14ce4:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   1430e:	fff5079b          	addiw	a5,a0,-1
-   14312:	d81c                	c.sw	a5,48(s0)
+   14ce8:	fff5079b          	addiw	a5,a0,-1
+   14cec:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   14314:	03750f63          	beq	a0,s7,14352 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x356>
+   14cf0:	05750c63          	beq	a0,s7,14d48 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x450>
   for (unsigned i = 0; i < m->hdr.phnum; i++) {
-   14318:	2905                	c.addiw	s2,1
+   14cf4:	0019091b          	addiw	s2,s2,1
       { return _M_ptr; }
-   1431a:	6080                	c.ld	s0,0(s1)
-   1431c:	04845783          	lhu	a5,72(s0)
-   14320:	06f97863          	bgeu	s2,a5,14390 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x394>
+   14cf8:	0004b403          	ld	s0,0(s1)
+   14cfc:	04845783          	lhu	a5,72(s0)
+   14d00:	0af97263          	bgeu	s2,a5,14da4 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x4ac>
     const void *seg = ((const char *)seg_data) + i * m->hdr.phentsize;
-   14324:	04645603          	lhu	a2,70(s0)
-   14328:	0326063b          	mulw	a2,a2,s2
-   1432c:	1602                	c.slli	a2,0x20
-   1432e:	9201                	c.srli	a2,0x20
+   14d04:	04645603          	lhu	a2,70(s0)
+   14d08:	0326063b          	mulw	a2,a2,s2
+   14d0c:	02061613          	slli	a2,a2,0x20
+   14d10:	02065613          	srli	a2,a2,0x20
     m->segments.push_back(segment(*this, seg));
-   14330:	964e                	c.add	a2,s3
-   14332:	85a6                	c.mv	a1,s1
-   14334:	8552                	c.mv	a0,s4
-   14336:	817ff0ef          	jal	ra,13b4c <elf::segment::segment(elf::elf const&, void const*)>
-   1433a:	b76d                	c.j	142e4 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x2e8>
+   14d14:	00c98633          	add	a2,s3,a2
+   14d18:	00048593          	addi	a1,s1,0
+   14d1c:	000a0513          	addi	a0,s4,0
+   14d20:	d30ff0ef          	jal	ra,14250 <elf::segment::segment(elf::elf const&, void const*)>
+   14d24:	f7dff06f          	jal	zero,14ca0 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x3a8>
 	  _M_realloc_insert(end(), std::forward<_Args>(__args)...);
-   1433c:	8652                	c.mv	a2,s4
-   1433e:	06840513          	addi	a0,s0,104
-   14342:	9c02                	c.jalr	s8
-   14344:	bf7d                	c.j	14302 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x306>
+   14d28:	000a0613          	addi	a2,s4,0
+   14d2c:	06840513          	addi	a0,s0,104
+   14d30:	000c00e7          	jalr	ra,0(s8)
+   14d34:	fa1ff06f          	jal	zero,14cd4 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x3dc>
       return __exchange_and_add(__mem, __val);
-   14346:	55fd                	c.li	a1,-1
-   14348:	03040513          	addi	a0,s0,48
-   1434c:	e34fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14350:	b7d1                	c.j	14314 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x318>
+   14d38:	fff00593          	addi	a1,zero,-1
+   14d3c:	03040513          	addi	a0,s0,48
+   14d40:	c41fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   14d44:	fadff06f          	jal	zero,14cf0 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x3f8>
 	_M_dispose();
-   14352:	601c                	c.ld	a5,0(s0)
-   14354:	6b9c                	c.ld	a5,16(a5)
-   14356:	8522                	c.mv	a0,s0
-   14358:	9782                	c.jalr	a5
+   14d48:	00043783          	ld	a5,0(s0)
+   14d4c:	0107b783          	ld	a5,16(a5)
+   14d50:	00040513          	addi	a0,s0,0
+   14d54:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   1435a:	0ff0000f          	fence	iorw,iorw
+   14d58:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   1435e:	00006797          	auipc	a5,0x6
-   14362:	ee27b783          	ld	a5,-286(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14366:	0007c783          	lbu	a5,0(a5)
-   1436a:	cf89                	c.beqz	a5,14384 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x388>
+   14d5c:	00007797          	auipc	a5,0x7
+   14d60:	4e47b783          	ld	a5,1252(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   14d64:	0007c783          	lbu	a5,0(a5)
+   14d68:	02078663          	beq	a5,zero,14d94 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x49c>
     _Atomic_word __result = *__mem;
-   1436c:	5848                	c.lw	a0,52(s0)
+   14d6c:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   1436e:	fff5079b          	addiw	a5,a0,-1
-   14372:	d85c                	c.sw	a5,52(s0)
+   14d70:	fff5079b          	addiw	a5,a0,-1
+   14d74:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   14374:	4785                	c.li	a5,1
-   14376:	faf511e3          	bne	a0,a5,14318 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x31c>
+   14d78:	00100793          	addi	a5,zero,1
+   14d7c:	f6f51ce3          	bne	a0,a5,14cf4 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x3fc>
 	    _M_destroy();
-   1437a:	601c                	c.ld	a5,0(s0)
-   1437c:	6f9c                	c.ld	a5,24(a5)
-   1437e:	8522                	c.mv	a0,s0
-   14380:	9782                	c.jalr	a5
-   14382:	bf59                	c.j	14318 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x31c>
+   14d80:	00043783          	ld	a5,0(s0)
+   14d84:	0187b783          	ld	a5,24(a5)
+   14d88:	00040513          	addi	a0,s0,0
+   14d8c:	000780e7          	jalr	ra,0(a5)
+   14d90:	f65ff06f          	jal	zero,14cf4 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x3fc>
       return __exchange_and_add(__mem, __val);
-   14384:	55fd                	c.li	a1,-1
-   14386:	03440513          	addi	a0,s0,52
-   1438a:	df6fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   1438e:	b7dd                	c.j	14374 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x378>
+   14d94:	fff00593          	addi	a1,zero,-1
+   14d98:	03440513          	addi	a0,s0,52
+   14d9c:	be5fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   14da0:	fd9ff06f          	jal	zero,14d78 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x480>
       { return _M_ptr; }
-   14390:	000ab503          	ld	a0,0(s5)
+   14da4:	000ab503          	ld	a0,0(s5)
   const void *sec_data = l->load(m->hdr.shoff, m->hdr.shentsize * m->hdr.shnum);
-   14394:	04a45603          	lhu	a2,74(s0)
-   14398:	04c45703          	lhu	a4,76(s0)
-   1439c:	611c                	c.ld	a5,0(a0)
-   1439e:	6b9c                	c.ld	a5,16(a5)
-   143a0:	02e6063b          	mulw	a2,a2,a4
-   143a4:	7c0c                	c.ld	a1,56(s0)
-   143a6:	9782                	c.jalr	a5
-   143a8:	89aa                	c.mv	s3,a0
-   143aa:	6080                	c.ld	s0,0(s1)
+   14da8:	04a45603          	lhu	a2,74(s0)
+   14dac:	04c45703          	lhu	a4,76(s0)
+   14db0:	00053783          	ld	a5,0(a0)
+   14db4:	0107b783          	ld	a5,16(a5)
+   14db8:	02e6063b          	mulw	a2,a2,a4
+   14dbc:	03843583          	ld	a1,56(s0)
+   14dc0:	000780e7          	jalr	ra,0(a5)
+   14dc4:	00050993          	addi	s3,a0,0
+   14dc8:	0004b403          	ld	s0,0(s1)
   for (unsigned i = 0; i < m->hdr.shnum; i++) {
-   143ac:	04c45783          	lhu	a5,76(s0)
-   143b0:	12078e63          	beq	a5,zero,144ec <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x4f0>
-   143b4:	4901                	c.li	s2,0
+   14dcc:	04c45783          	lhu	a5,76(s0)
+   14dd0:	1c078c63          	beq	a5,zero,14fa8 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x6b0>
+   14dd4:	00000913          	addi	s2,zero,0
     m->sections.push_back(section(*this, sec));
-   143b6:	01010a13          	addi	s4,sp,16
-   143ba:	00006b97          	auipc	s7,0x6
-   143be:	ddebbb83          	ld	s7,-546(s7) # 1a198 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)@@Base+0x4bba>
+   14dd8:	01010a13          	addi	s4,sp,16
+   14ddc:	00007b97          	auipc	s7,0x7
+   14de0:	3bcbbb83          	ld	s7,956(s7) # 1c198 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)@@Base+0x5a34>
     return ::__libc_single_threaded;
-   143c2:	00006a97          	auipc	s5,0x6
-   143c6:	e7eaba83          	ld	s5,-386(s5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   14de4:	00007a97          	auipc	s5,0x7
+   14de8:	45caba83          	ld	s5,1116(s5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   143ca:	4b05                	c.li	s6,1
-   143cc:	a089                	c.j	1440e <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x412>
+   14dec:	00100b13          	addi	s6,zero,1
+   14df0:	0680006f          	jal	zero,14e58 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x560>
 	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
-   143ce:	6c2c                	c.ld	a1,88(s0)
-   143d0:	703c                	c.ld	a5,96(s0)
-   143d2:	04f58a63          	beq	a1,a5,14426 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x42a>
+   14df4:	05843583          	ld	a1,88(s0)
+   14df8:	06043783          	ld	a5,96(s0)
+   14dfc:	08f58063          	beq	a1,a5,14e7c <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x584>
       : _M_ptr(__r._M_ptr), _M_refcount()
-   143d6:	67c2                	c.ldsp	a5,16(sp)
-   143d8:	e19c                	c.sd	a5,0(a1)
+   14e00:	01013783          	ld	a5,16(sp)
+   14e04:	00f5b023          	sd	a5,0(a1)
       constexpr __shared_count() noexcept : _M_pi(0)
-   143da:	0005b423          	sd	zero,8(a1)
+   14e08:	0005b423          	sd	zero,8(a1)
 	_Sp_counted_base<_Lp>* __tmp = __r._M_pi;
-   143de:	67e2                	c.ldsp	a5,24(sp)
+   14e0c:	01813783          	ld	a5,24(sp)
 	__r._M_pi = _M_pi;
-   143e0:	ec02                	c.sdsp	zero,24(sp)
+   14e10:	00013c23          	sd	zero,24(sp)
 	_M_pi = __tmp;
-   143e2:	e59c                	c.sd	a5,8(a1)
+   14e14:	00f5b423          	sd	a5,8(a1)
 	__r._M_ptr = nullptr;
-   143e4:	e802                	c.sdsp	zero,16(sp)
+   14e18:	00013823          	sd	zero,16(sp)
 	    ++this->_M_impl._M_finish;
-   143e6:	6c3c                	c.ld	a5,88(s0)
-   143e8:	07c1                	c.addi	a5,16
-   143ea:	ec3c                	c.sd	a5,88(s0)
+   14e1c:	05843783          	ld	a5,88(s0)
+   14e20:	01078793          	addi	a5,a5,16
+   14e24:	04f43c23          	sd	a5,88(s0)
 	if (_M_pi != nullptr)
-   143ec:	6462                	c.ldsp	s0,24(sp)
-   143ee:	c811                	c.beqz	s0,14402 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x406>
+   14e28:	01813403          	ld	s0,24(sp)
+   14e2c:	00040e63          	beq	s0,zero,14e48 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x550>
     if (__is_single_threaded())
-   143f0:	000ac783          	lbu	a5,0(s5)
-   143f4:	cf95                	c.beqz	a5,14430 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x434>
+   14e30:	000ac783          	lbu	a5,0(s5)
+   14e34:	04078c63          	beq	a5,zero,14e8c <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x594>
     _Atomic_word __result = *__mem;
-   143f6:	5808                	c.lw	a0,48(s0)
+   14e38:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   143f8:	fff5079b          	addiw	a5,a0,-1
-   143fc:	d81c                	c.sw	a5,48(s0)
+   14e3c:	fff5079b          	addiw	a5,a0,-1
+   14e40:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   143fe:	03650f63          	beq	a0,s6,1443c <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x440>
+   14e44:	05650c63          	beq	a0,s6,14e9c <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x5a4>
   for (unsigned i = 0; i < m->hdr.shnum; i++) {
-   14402:	2905                	c.addiw	s2,1
+   14e48:	0019091b          	addiw	s2,s2,1
       { return _M_ptr; }
-   14404:	6080                	c.ld	s0,0(s1)
-   14406:	04c45783          	lhu	a5,76(s0)
-   1440a:	0ef97163          	bgeu	s2,a5,144ec <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x4f0>
+   14e4c:	0004b403          	ld	s0,0(s1)
+   14e50:	04c45783          	lhu	a5,76(s0)
+   14e54:	14f97a63          	bgeu	s2,a5,14fa8 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x6b0>
     const void *sec = ((const char *)sec_data) + i * m->hdr.shentsize;
-   1440e:	04a45603          	lhu	a2,74(s0)
-   14412:	0326063b          	mulw	a2,a2,s2
-   14416:	1602                	c.slli	a2,0x20
-   14418:	9201                	c.srli	a2,0x20
+   14e58:	04a45603          	lhu	a2,74(s0)
+   14e5c:	0326063b          	mulw	a2,a2,s2
+   14e60:	02061613          	slli	a2,a2,0x20
+   14e64:	02065613          	srli	a2,a2,0x20
     m->sections.push_back(section(*this, sec));
-   1441a:	964e                	c.add	a2,s3
-   1441c:	85a6                	c.mv	a1,s1
-   1441e:	8552                	c.mv	a0,s4
-   14420:	80dff0ef          	jal	ra,13c2c <elf::section::section(elf::elf const&, void const*)>
-   14424:	b76d                	c.j	143ce <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x3d2>
+   14e68:	00c98633          	add	a2,s3,a2
+   14e6c:	00048593          	addi	a1,s1,0
+   14e70:	000a0513          	addi	a0,s4,0
+   14e74:	d18ff0ef          	jal	ra,1438c <elf::section::section(elf::elf const&, void const*)>
+   14e78:	f7dff06f          	jal	zero,14df4 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x4fc>
 	  _M_realloc_insert(end(), std::forward<_Args>(__args)...);
-   14426:	8652                	c.mv	a2,s4
-   14428:	05040513          	addi	a0,s0,80
-   1442c:	9b82                	c.jalr	s7
-   1442e:	bf7d                	c.j	143ec <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x3f0>
+   14e7c:	000a0613          	addi	a2,s4,0
+   14e80:	05040513          	addi	a0,s0,80
+   14e84:	000b80e7          	jalr	ra,0(s7)
+   14e88:	fa1ff06f          	jal	zero,14e28 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x530>
       return __exchange_and_add(__mem, __val);
-   14430:	55fd                	c.li	a1,-1
-   14432:	03040513          	addi	a0,s0,48
-   14436:	d4afe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   1443a:	b7d1                	c.j	143fe <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x402>
+   14e8c:	fff00593          	addi	a1,zero,-1
+   14e90:	03040513          	addi	a0,s0,48
+   14e94:	aedfd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   14e98:	fadff06f          	jal	zero,14e44 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x54c>
 	_M_dispose();
-   1443c:	601c                	c.ld	a5,0(s0)
-   1443e:	6b9c                	c.ld	a5,16(a5)
-   14440:	8522                	c.mv	a0,s0
-   14442:	9782                	c.jalr	a5
+   14e9c:	00043783          	ld	a5,0(s0)
+   14ea0:	0107b783          	ld	a5,16(a5)
+   14ea4:	00040513          	addi	a0,s0,0
+   14ea8:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   14444:	0ff0000f          	fence	iorw,iorw
+   14eac:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   14448:	00006797          	auipc	a5,0x6
-   1444c:	df87b783          	ld	a5,-520(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14450:	0007c783          	lbu	a5,0(a5)
-   14454:	cf89                	c.beqz	a5,1446e <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x472>
+   14eb0:	00007797          	auipc	a5,0x7
+   14eb4:	3907b783          	ld	a5,912(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   14eb8:	0007c783          	lbu	a5,0(a5)
+   14ebc:	02078663          	beq	a5,zero,14ee8 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x5f0>
     _Atomic_word __result = *__mem;
-   14456:	5848                	c.lw	a0,52(s0)
+   14ec0:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   14458:	fff5079b          	addiw	a5,a0,-1
-   1445c:	d85c                	c.sw	a5,52(s0)
+   14ec4:	fff5079b          	addiw	a5,a0,-1
+   14ec8:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   1445e:	4785                	c.li	a5,1
-   14460:	faf511e3          	bne	a0,a5,14402 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x406>
+   14ecc:	00100793          	addi	a5,zero,1
+   14ed0:	f6f51ce3          	bne	a0,a5,14e48 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x550>
 	    _M_destroy();
-   14464:	601c                	c.ld	a5,0(s0)
-   14466:	6f9c                	c.ld	a5,24(a5)
-   14468:	8522                	c.mv	a0,s0
-   1446a:	9782                	c.jalr	a5
-   1446c:	bf59                	c.j	14402 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x406>
+   14ed4:	00043783          	ld	a5,0(s0)
+   14ed8:	0187b783          	ld	a5,24(a5)
+   14edc:	00040513          	addi	a0,s0,0
+   14ee0:	000780e7          	jalr	ra,0(a5)
+   14ee4:	f65ff06f          	jal	zero,14e48 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x550>
       return __exchange_and_add(__mem, __val);
-   1446e:	55fd                	c.li	a1,-1
-   14470:	03440513          	addi	a0,s0,52
-   14474:	d0cfe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14478:	b7dd                	c.j	1445e <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x462>
+   14ee8:	fff00593          	addi	a1,zero,-1
+   14eec:	03440513          	addi	a0,s0,52
+   14ef0:	a91fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   14ef4:	fd9ff06f          	jal	zero,14ecc <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x5d4>
     throw format_error("bad ELF magic number");
-   1447a:	842a                	c.mv	s0,a0
-   1447c:	854a                	c.mv	a0,s2
-   1447e:	dd2fe0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   14ef8:	00050413          	addi	s0,a0,0
+   14efc:	00090513          	addi	a0,s2,0
+   14f00:	b51fd0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
 	if (_M_pi != nullptr)
-   14482:	6488                	c.ld	a0,8(s1)
-   14484:	c511                	c.beqz	a0,14490 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x494>
+   14f04:	0084b503          	ld	a0,8(s1)
+   14f08:	00050863          	beq	a0,zero,14f18 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x620>
 	  _M_pi->_M_release();
-   14486:	00006317          	auipc	t1,0x6
-   1448a:	d6a33303          	ld	t1,-662(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   1448e:	9302                	c.jalr	t1
-   14490:	8522                	c.mv	a0,s0
-   14492:	f1efe0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   14f0c:	00007317          	auipc	t1,0x7
+   14f10:	2e433303          	ld	t1,740(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   14f14:	000300e7          	jalr	ra,0(t1)
+   14f18:	00040513          	addi	a0,s0,0
+   14f1c:	c95fd0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
     throw format_error("unknown ELF version");
-   14496:	842a                	c.mv	s0,a0
-   14498:	854a                	c.mv	a0,s2
-   1449a:	db6fe0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   1449e:	b7d5                	c.j	14482 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x486>
+   14f20:	00050413          	addi	s0,a0,0
+   14f24:	00090513          	addi	a0,s2,0
+   14f28:	b29fd0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   14f2c:	fd9ff06f          	jal	zero,14f04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x60c>
     throw format_error("bad ELF class");
-   144a0:	842a                	c.mv	s0,a0
-   144a2:	854a                	c.mv	a0,s2
-   144a4:	dacfe0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   144a8:	bfe9                	c.j	14482 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x486>
+   14f30:	00050413          	addi	s0,a0,0
+   14f34:	00090513          	addi	a0,s2,0
+   14f38:	b19fd0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   14f3c:	fc9ff06f          	jal	zero,14f04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x60c>
     throw format_error("bad ELF data order");
-   144aa:	842a                	c.mv	s0,a0
-   144ac:	854a                	c.mv	a0,s2
-   144ae:	da2fe0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   144b2:	bfc1                	c.j	14482 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x486>
+   14f40:	00050413          	addi	s0,a0,0
+   14f44:	00090513          	addi	a0,s2,0
+   14f48:	b09fd0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   14f4c:	fb9ff06f          	jal	zero,14f04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x60c>
     throw format_error("bad section ELF version");
-   144b4:	842a                	c.mv	s0,a0
-   144b6:	854a                	c.mv	a0,s2
-   144b8:	d98fe0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   144bc:	b7d9                	c.j	14482 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x486>
+   14f50:	00050413          	addi	s0,a0,0
+   14f54:	00090513          	addi	a0,s2,0
+   14f58:	af9fd0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   14f5c:	fa9ff06f          	jal	zero,14f04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x60c>
     throw format_error("bad section name string table index");
-   144be:	842a                	c.mv	s0,a0
-   144c0:	854a                	c.mv	a0,s2
-   144c2:	d8efe0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   144c6:	bf75                	c.j	14482 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x486>
+   14f60:	00050413          	addi	s0,a0,0
+   14f64:	00090513          	addi	a0,s2,0
+   14f68:	ae9fd0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   14f6c:	f99ff06f          	jal	zero,14f04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x60c>
 	if (_M_pi != nullptr)
-   144c8:	842a                	c.mv	s0,a0
-   144ca:	6522                	c.ldsp	a0,8(sp)
-   144cc:	d95d                	c.beqz	a0,14482 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x486>
+   14f70:	00050413          	addi	s0,a0,0
+   14f74:	00813503          	ld	a0,8(sp)
+   14f78:	f80506e3          	beq	a0,zero,14f04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x60c>
 	  _M_pi->_M_release();
-   144ce:	00006317          	auipc	t1,0x6
-   144d2:	d2233303          	ld	t1,-734(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   144d6:	9302                	c.jalr	t1
-   144d8:	b76d                	c.j	14482 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x486>
+   14f7c:	00007317          	auipc	t1,0x7
+   14f80:	27433303          	ld	t1,628(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   14f84:	000300e7          	jalr	ra,0(t1)
+   14f88:	f7dff06f          	jal	zero,14f04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x60c>
 	if (_M_pi != nullptr)
-   144da:	842a                	c.mv	s0,a0
-   144dc:	6562                	c.ldsp	a0,24(sp)
-   144de:	d155                	c.beqz	a0,14482 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x486>
+   14f8c:	00050413          	addi	s0,a0,0
+   14f90:	01813503          	ld	a0,24(sp)
+   14f94:	f60508e3          	beq	a0,zero,14f04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x60c>
 	  _M_pi->_M_release();
-   144e0:	00006317          	auipc	t1,0x6
-   144e4:	d1033303          	ld	t1,-752(t1) # 1a1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x7300>
-   144e8:	9302                	c.jalr	t1
-   144ea:	bf61                	c.j	14482 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x486>
+   14f98:	00007317          	auipc	t1,0x7
+   14f9c:	25833303          	ld	t1,600(t1) # 1c1f0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()@@Base+0x9204>
+   14fa0:	000300e7          	jalr	ra,0(t1)
+   14fa4:	f61ff06f          	jal	zero,14f04 <elf::elf::elf(std::shared_ptr<elf::loader> const&)+0x60c>
 }
-   144ec:	70a6                	c.ldsp	ra,104(sp)
-   144ee:	7406                	c.ldsp	s0,96(sp)
-   144f0:	64e6                	c.ldsp	s1,88(sp)
-   144f2:	6946                	c.ldsp	s2,80(sp)
-   144f4:	69a6                	c.ldsp	s3,72(sp)
-   144f6:	6a06                	c.ldsp	s4,64(sp)
-   144f8:	7ae2                	c.ldsp	s5,56(sp)
-   144fa:	7b42                	c.ldsp	s6,48(sp)
-   144fc:	7ba2                	c.ldsp	s7,40(sp)
-   144fe:	7c02                	c.ldsp	s8,32(sp)
-   14500:	6165                	c.addi16sp	sp,112
-   14502:	8082                	c.jr	ra
+   14fa8:	06813083          	ld	ra,104(sp)
+   14fac:	06013403          	ld	s0,96(sp)
+   14fb0:	05813483          	ld	s1,88(sp)
+   14fb4:	05013903          	ld	s2,80(sp)
+   14fb8:	04813983          	ld	s3,72(sp)
+   14fbc:	04013a03          	ld	s4,64(sp)
+   14fc0:	03813a83          	ld	s5,56(sp)
+   14fc4:	03013b03          	ld	s6,48(sp)
+   14fc8:	02813b83          	ld	s7,40(sp)
+   14fcc:	02013c03          	ld	s8,32(sp)
+   14fd0:	07010113          	addi	sp,sp,112
+   14fd4:	00008067          	jalr	zero,0(ra)
 
-0000000000014504 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+0000000000014fd8 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
       ~_Sp_counted_ptr_inplace() noexcept { }
-   14504:	8082                	c.jr	ra
+   14fd8:	00008067          	jalr	zero,0(ra)
 
-0000000000014506 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   14506:	8082                	c.jr	ra
+0000000000014fdc <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+   14fdc:	00008067          	jalr	zero,0(ra)
 
-0000000000014508 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   14508:	8082                	c.jr	ra
+0000000000014fe0 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+   14fe0:	00008067          	jalr	zero,0(ra)
 
-000000000001450a <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   1450a:	8082                	c.jr	ra
+0000000000014fe4 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+   14fe4:	00008067          	jalr	zero,0(ra)
 
-000000000001450c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   1450c:	8082                	c.jr	ra
+0000000000014fe8 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+   14fe8:	00008067          	jalr	zero,0(ra)
 
-000000000001450e <elf::format_error::~format_error()>:
+0000000000014fec <elf::format_error::~format_error()>:
 class format_error : public std::runtime_error {
-   1450e:	1141                	c.addi	sp,-16
-   14510:	e406                	c.sdsp	ra,8(sp)
-   14512:	00006797          	auipc	a5,0x6
-   14516:	cb67b783          	ld	a5,-842(a5) # 1a1c8 <vtable for elf::format_error@@Base+0x5e0>
-   1451a:	07c1                	c.addi	a5,16
-   1451c:	e11c                	c.sd	a5,0(a0)
-   1451e:	d72fe0ef          	jal	ra,12a90 <std::runtime_error::~runtime_error()@plt>
-   14522:	60a2                	c.ldsp	ra,8(sp)
-   14524:	0141                	c.addi	sp,16
-   14526:	8082                	c.jr	ra
+   14fec:	ff010113          	addi	sp,sp,-16
+   14ff0:	00113423          	sd	ra,8(sp)
+   14ff4:	00007797          	auipc	a5,0x7
+   14ff8:	1d47b783          	ld	a5,468(a5) # 1c1c8 <vtable for elf::format_error@@Base+0x5e0>
+   14ffc:	01078793          	addi	a5,a5,16
+   15000:	00f53023          	sd	a5,0(a0)
+   15004:	a8dfd0ef          	jal	ra,12a90 <std::runtime_error::~runtime_error()@plt>
+   15008:	00813083          	ld	ra,8(sp)
+   1500c:	01010113          	addi	sp,sp,16
+   15010:	00008067          	jalr	zero,0(ra)
 
-0000000000014528 <elf::format_error::~format_error()>:
-   14528:	1141                	c.addi	sp,-16
-   1452a:	e406                	c.sdsp	ra,8(sp)
-   1452c:	e022                	c.sdsp	s0,0(sp)
-   1452e:	842a                	c.mv	s0,a0
-   14530:	00006797          	auipc	a5,0x6
-   14534:	c987b783          	ld	a5,-872(a5) # 1a1c8 <vtable for elf::format_error@@Base+0x5e0>
-   14538:	07c1                	c.addi	a5,16
-   1453a:	e11c                	c.sd	a5,0(a0)
-   1453c:	d54fe0ef          	jal	ra,12a90 <std::runtime_error::~runtime_error()@plt>
-   14540:	8522                	c.mv	a0,s0
-   14542:	d2efe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   14546:	60a2                	c.ldsp	ra,8(sp)
-   14548:	6402                	c.ldsp	s0,0(sp)
-   1454a:	0141                	c.addi	sp,16
-   1454c:	8082                	c.jr	ra
+0000000000015014 <elf::format_error::~format_error()>:
+   15014:	ff010113          	addi	sp,sp,-16
+   15018:	00113423          	sd	ra,8(sp)
+   1501c:	00813023          	sd	s0,0(sp)
+   15020:	00050413          	addi	s0,a0,0
+   15024:	00007797          	auipc	a5,0x7
+   15028:	1a47b783          	ld	a5,420(a5) # 1c1c8 <vtable for elf::format_error@@Base+0x5e0>
+   1502c:	01078793          	addi	a5,a5,16
+   15030:	00f53023          	sd	a5,0(a0)
+   15034:	a5dfd0ef          	jal	ra,12a90 <std::runtime_error::~runtime_error()@plt>
+   15038:	00040513          	addi	a0,s0,0
+   1503c:	a35fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   15040:	00813083          	ld	ra,8(sp)
+   15044:	00013403          	ld	s0,0(sp)
+   15048:	01010113          	addi	sp,sp,16
+   1504c:	00008067          	jalr	zero,0(ra)
 
-000000000001454e <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   1454e:	1141                	c.addi	sp,-16
-   14550:	e406                	c.sdsp	ra,8(sp)
-   14552:	d1efe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   14556:	60a2                	c.ldsp	ra,8(sp)
-   14558:	0141                	c.addi	sp,16
-   1455a:	8082                	c.jr	ra
+0000000000015050 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+   15050:	ff010113          	addi	sp,sp,-16
+   15054:	00113423          	sd	ra,8(sp)
+   15058:	a19fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   1505c:	00813083          	ld	ra,8(sp)
+   15060:	01010113          	addi	sp,sp,16
+   15064:	00008067          	jalr	zero,0(ra)
 
-000000000001455c <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   1455c:	1141                	c.addi	sp,-16
-   1455e:	e406                	c.sdsp	ra,8(sp)
-   14560:	d10fe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   14564:	60a2                	c.ldsp	ra,8(sp)
-   14566:	0141                	c.addi	sp,16
-   14568:	8082                	c.jr	ra
+0000000000015068 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+   15068:	ff010113          	addi	sp,sp,-16
+   1506c:	00113423          	sd	ra,8(sp)
+   15070:	a01fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   15074:	00813083          	ld	ra,8(sp)
+   15078:	01010113          	addi	sp,sp,16
+   1507c:	00008067          	jalr	zero,0(ra)
 
-000000000001456a <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   1456a:	1141                	c.addi	sp,-16
-   1456c:	e406                	c.sdsp	ra,8(sp)
-   1456e:	d02fe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   14572:	60a2                	c.ldsp	ra,8(sp)
-   14574:	0141                	c.addi	sp,16
-   14576:	8082                	c.jr	ra
+0000000000015080 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+   15080:	ff010113          	addi	sp,sp,-16
+   15084:	00113423          	sd	ra,8(sp)
+   15088:	9e9fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   1508c:	00813083          	ld	ra,8(sp)
+   15090:	01010113          	addi	sp,sp,16
+   15094:	00008067          	jalr	zero,0(ra)
 
-0000000000014578 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   14578:	1141                	c.addi	sp,-16
-   1457a:	e406                	c.sdsp	ra,8(sp)
-   1457c:	cf4fe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   14580:	60a2                	c.ldsp	ra,8(sp)
-   14582:	0141                	c.addi	sp,16
-   14584:	8082                	c.jr	ra
+0000000000015098 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+   15098:	ff010113          	addi	sp,sp,-16
+   1509c:	00113423          	sd	ra,8(sp)
+   150a0:	9d1fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   150a4:	00813083          	ld	ra,8(sp)
+   150a8:	01010113          	addi	sp,sp,16
+   150ac:	00008067          	jalr	zero,0(ra)
 
-0000000000014586 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   14586:	1141                	c.addi	sp,-16
-   14588:	e406                	c.sdsp	ra,8(sp)
-   1458a:	ce6fe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   1458e:	60a2                	c.ldsp	ra,8(sp)
-   14590:	0141                	c.addi	sp,16
-   14592:	8082                	c.jr	ra
+00000000000150b0 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+   150b0:	ff010113          	addi	sp,sp,-16
+   150b4:	00113423          	sd	ra,8(sp)
+   150b8:	9b9fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   150bc:	00813083          	ld	ra,8(sp)
+   150c0:	01010113          	addi	sp,sp,16
+   150c4:	00008067          	jalr	zero,0(ra)
 
-0000000000014594 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
+00000000000150c8 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
       _M_destroy() noexcept
-   14594:	1141                	c.addi	sp,-16
-   14596:	e406                	c.sdsp	ra,8(sp)
+   150c8:	ff010113          	addi	sp,sp,-16
+   150cc:	00113423          	sd	ra,8(sp)
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   14598:	cd8fe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   150d0:	9a1fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       }
-   1459c:	60a2                	c.ldsp	ra,8(sp)
-   1459e:	0141                	c.addi	sp,16
-   145a0:	8082                	c.jr	ra
+   150d4:	00813083          	ld	ra,8(sp)
+   150d8:	01010113          	addi	sp,sp,16
+   150dc:	00008067          	jalr	zero,0(ra)
 
-00000000000145a2 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
+00000000000150e0 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
       _M_destroy() noexcept
-   145a2:	1141                	c.addi	sp,-16
-   145a4:	e406                	c.sdsp	ra,8(sp)
-   145a6:	ccafe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   150e0:	ff010113          	addi	sp,sp,-16
+   150e4:	00113423          	sd	ra,8(sp)
+   150e8:	989fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       }
-   145aa:	60a2                	c.ldsp	ra,8(sp)
-   145ac:	0141                	c.addi	sp,16
-   145ae:	8082                	c.jr	ra
+   150ec:	00813083          	ld	ra,8(sp)
+   150f0:	01010113          	addi	sp,sp,16
+   150f4:	00008067          	jalr	zero,0(ra)
 
-00000000000145b0 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
+00000000000150f8 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
       _M_destroy() noexcept
-   145b0:	1141                	c.addi	sp,-16
-   145b2:	e406                	c.sdsp	ra,8(sp)
-   145b4:	cbcfe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   150f8:	ff010113          	addi	sp,sp,-16
+   150fc:	00113423          	sd	ra,8(sp)
+   15100:	971fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       }
-   145b8:	60a2                	c.ldsp	ra,8(sp)
-   145ba:	0141                	c.addi	sp,16
-   145bc:	8082                	c.jr	ra
+   15104:	00813083          	ld	ra,8(sp)
+   15108:	01010113          	addi	sp,sp,16
+   1510c:	00008067          	jalr	zero,0(ra)
 
-00000000000145be <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
+0000000000015110 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
       _M_destroy() noexcept
-   145be:	1141                	c.addi	sp,-16
-   145c0:	e406                	c.sdsp	ra,8(sp)
-   145c2:	caefe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   15110:	ff010113          	addi	sp,sp,-16
+   15114:	00113423          	sd	ra,8(sp)
+   15118:	959fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       }
-   145c6:	60a2                	c.ldsp	ra,8(sp)
-   145c8:	0141                	c.addi	sp,16
-   145ca:	8082                	c.jr	ra
+   1511c:	00813083          	ld	ra,8(sp)
+   15120:	01010113          	addi	sp,sp,16
+   15124:	00008067          	jalr	zero,0(ra)
 
-00000000000145cc <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
+0000000000015128 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
       _M_destroy() noexcept
-   145cc:	1141                	c.addi	sp,-16
-   145ce:	e406                	c.sdsp	ra,8(sp)
-   145d0:	ca0fe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   15128:	ff010113          	addi	sp,sp,-16
+   1512c:	00113423          	sd	ra,8(sp)
+   15130:	941fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       }
-   145d4:	60a2                	c.ldsp	ra,8(sp)
-   145d6:	0141                	c.addi	sp,16
-   145d8:	8082                	c.jr	ra
+   15134:	00813083          	ld	ra,8(sp)
+   15138:	01010113          	addi	sp,sp,16
+   1513c:	00008067          	jalr	zero,0(ra)
 
-00000000000145da <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
+0000000000015140 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
       _M_get_deleter(const std::type_info& __ti) noexcept override
-   145da:	1141                	c.addi	sp,-16
-   145dc:	e406                	c.sdsp	ra,8(sp)
-   145de:	e022                	c.sdsp	s0,0(sp)
-   145e0:	03850413          	addi	s0,a0,56
+   15140:	ff010113          	addi	sp,sp,-16
+   15144:	00113423          	sd	ra,8(sp)
+   15148:	00813023          	sd	s0,0(sp)
+   1514c:	03850413          	addi	s0,a0,56
 	    ||
-   145e4:	00006797          	auipc	a5,0x6
-   145e8:	c747b783          	ld	a5,-908(a5) # 1a258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x30e0>
-   145ec:	02f58a63          	beq	a1,a5,14620 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   15150:	00007797          	auipc	a5,0x7
+   15154:	1087b783          	ld	a5,264(a5) # 1c258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x3710>
+   15158:	02f58c63          	beq	a1,a5,15190 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
   type_info::operator==(const type_info& __arg) const _GLIBCXX_NOEXCEPT
   {
     if (std::__is_constant_evaluated())
       return this == &__arg;
 
     if (__name == __arg.__name)
-   145f0:	6588                	c.ld	a0,8(a1)
-   145f2:	00006797          	auipc	a5,0x6
-   145f6:	c0e7b783          	ld	a5,-1010(a5) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   145fa:	02f50363          	beq	a0,a5,14620 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   1515c:	0085b503          	ld	a0,8(a1)
+   15160:	00007797          	auipc	a5,0x7
+   15164:	0a07b783          	ld	a5,160(a5) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   15168:	02f50463          	beq	a0,a5,15190 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
 #if !__GXX_TYPEINFO_EQUALITY_INLINE
     // ABI requires comparisons to be non-inline.
     return __equal(__arg);
 #elif !__GXX_MERGED_TYPEINFO_NAMES
     // Need to do string comparison.
     return __name[0] != '*' && __builtin_strcmp (__name, __arg.name()) == 0;
-   145fe:	00054703          	lbu	a4,0(a0)
-   14602:	02a00793          	addi	a5,zero,42
-   14606:	02f70263          	beq	a4,a5,1462a <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
-   1460a:	00006597          	auipc	a1,0x6
-   1460e:	bf65b583          	ld	a1,-1034(a1) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   14612:	b4efe0ef          	jal	ra,12960 <strcmp@plt>
+   1516c:	00054703          	lbu	a4,0(a0)
+   15170:	02a00793          	addi	a5,zero,42
+   15174:	02f70863          	beq	a4,a5,151a4 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x64>
+   15178:	00007597          	auipc	a1,0x7
+   1517c:	0885b583          	ld	a1,136(a1) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   15180:	fe0fd0ef          	jal	ra,12960 <strcmp@plt>
 	return nullptr;
-   14616:	00153513          	sltiu	a0,a0,1
-   1461a:	40a00533          	sub	a0,zero,a0
-   1461e:	8c69                	c.and	s0,a0
+   15184:	00153513          	sltiu	a0,a0,1
+   15188:	40a00533          	sub	a0,zero,a0
+   1518c:	00a47433          	and	s0,s0,a0
       }
-   14620:	8522                	c.mv	a0,s0
-   14622:	60a2                	c.ldsp	ra,8(sp)
-   14624:	6402                	c.ldsp	s0,0(sp)
-   14626:	0141                	c.addi	sp,16
-   14628:	8082                	c.jr	ra
+   15190:	00040513          	addi	a0,s0,0
+   15194:	00813083          	ld	ra,8(sp)
+   15198:	00013403          	ld	s0,0(sp)
+   1519c:	01010113          	addi	sp,sp,16
+   151a0:	00008067          	jalr	zero,0(ra)
 	return nullptr;
-   1462a:	4401                	c.li	s0,0
-   1462c:	bfd5                	c.j	14620 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   151a4:	00000413          	addi	s0,zero,0
+   151a8:	fe9ff06f          	jal	zero,15190 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
 
-000000000001462e <elf::section_type_mismatch::~section_type_mismatch()>:
+00000000000151ac <elf::section_type_mismatch::~section_type_mismatch()>:
 class section_type_mismatch : public std::logic_error {
-   1462e:	1141                	c.addi	sp,-16
-   14630:	e406                	c.sdsp	ra,8(sp)
-   14632:	00006797          	auipc	a5,0x6
-   14636:	bb67b783          	ld	a5,-1098(a5) # 1a1e8 <vtable for elf::section_type_mismatch@@Base+0x5d8>
-   1463a:	07c1                	c.addi	a5,16
-   1463c:	e11c                	c.sd	a5,0(a0)
-   1463e:	d82fe0ef          	jal	ra,12bc0 <std::logic_error::~logic_error()@plt>
-   14642:	60a2                	c.ldsp	ra,8(sp)
-   14644:	0141                	c.addi	sp,16
-   14646:	8082                	c.jr	ra
+   151ac:	ff010113          	addi	sp,sp,-16
+   151b0:	00113423          	sd	ra,8(sp)
+   151b4:	00007797          	auipc	a5,0x7
+   151b8:	0347b783          	ld	a5,52(a5) # 1c1e8 <vtable for elf::section_type_mismatch@@Base+0x5d8>
+   151bc:	01078793          	addi	a5,a5,16
+   151c0:	00f53023          	sd	a5,0(a0)
+   151c4:	9fdfd0ef          	jal	ra,12bc0 <std::logic_error::~logic_error()@plt>
+   151c8:	00813083          	ld	ra,8(sp)
+   151cc:	01010113          	addi	sp,sp,16
+   151d0:	00008067          	jalr	zero,0(ra)
 
-0000000000014648 <elf::section_type_mismatch::~section_type_mismatch()>:
-   14648:	1141                	c.addi	sp,-16
-   1464a:	e406                	c.sdsp	ra,8(sp)
-   1464c:	e022                	c.sdsp	s0,0(sp)
-   1464e:	842a                	c.mv	s0,a0
-   14650:	00006797          	auipc	a5,0x6
-   14654:	b987b783          	ld	a5,-1128(a5) # 1a1e8 <vtable for elf::section_type_mismatch@@Base+0x5d8>
-   14658:	07c1                	c.addi	a5,16
-   1465a:	e11c                	c.sd	a5,0(a0)
-   1465c:	d64fe0ef          	jal	ra,12bc0 <std::logic_error::~logic_error()@plt>
-   14660:	8522                	c.mv	a0,s0
-   14662:	c0efe0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   14666:	60a2                	c.ldsp	ra,8(sp)
-   14668:	6402                	c.ldsp	s0,0(sp)
-   1466a:	0141                	c.addi	sp,16
-   1466c:	8082                	c.jr	ra
+00000000000151d4 <elf::section_type_mismatch::~section_type_mismatch()>:
+   151d4:	ff010113          	addi	sp,sp,-16
+   151d8:	00113423          	sd	ra,8(sp)
+   151dc:	00813023          	sd	s0,0(sp)
+   151e0:	00050413          	addi	s0,a0,0
+   151e4:	00007797          	auipc	a5,0x7
+   151e8:	0047b783          	ld	a5,4(a5) # 1c1e8 <vtable for elf::section_type_mismatch@@Base+0x5d8>
+   151ec:	01078793          	addi	a5,a5,16
+   151f0:	00f53023          	sd	a5,0(a0)
+   151f4:	9cdfd0ef          	jal	ra,12bc0 <std::logic_error::~logic_error()@plt>
+   151f8:	00040513          	addi	a0,s0,0
+   151fc:	875fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   15200:	00813083          	ld	ra,8(sp)
+   15204:	00013403          	ld	s0,0(sp)
+   15208:	01010113          	addi	sp,sp,16
+   1520c:	00008067          	jalr	zero,0(ra)
 
-000000000001466e <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
+0000000000015210 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
       _M_get_deleter(const std::type_info& __ti) noexcept override
-   1466e:	1141                	c.addi	sp,-16
-   14670:	e406                	c.sdsp	ra,8(sp)
-   14672:	e022                	c.sdsp	s0,0(sp)
-   14674:	03850413          	addi	s0,a0,56
+   15210:	ff010113          	addi	sp,sp,-16
+   15214:	00113423          	sd	ra,8(sp)
+   15218:	00813023          	sd	s0,0(sp)
+   1521c:	03850413          	addi	s0,a0,56
 	    ||
-   14678:	00006797          	auipc	a5,0x6
-   1467c:	be07b783          	ld	a5,-1056(a5) # 1a258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x30e0>
-   14680:	02f58a63          	beq	a1,a5,146b4 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   15220:	00007797          	auipc	a5,0x7
+   15224:	0387b783          	ld	a5,56(a5) # 1c258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x3710>
+   15228:	02f58c63          	beq	a1,a5,15260 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
     if (__name == __arg.__name)
-   14684:	6588                	c.ld	a0,8(a1)
-   14686:	00006797          	auipc	a5,0x6
-   1468a:	b7a7b783          	ld	a5,-1158(a5) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   1468e:	02f50363          	beq	a0,a5,146b4 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   1522c:	0085b503          	ld	a0,8(a1)
+   15230:	00007797          	auipc	a5,0x7
+   15234:	fd07b783          	ld	a5,-48(a5) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   15238:	02f50463          	beq	a0,a5,15260 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
     return __name[0] != '*' && __builtin_strcmp (__name, __arg.name()) == 0;
-   14692:	00054703          	lbu	a4,0(a0)
-   14696:	02a00793          	addi	a5,zero,42
-   1469a:	02f70263          	beq	a4,a5,146be <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
-   1469e:	00006597          	auipc	a1,0x6
-   146a2:	b625b583          	ld	a1,-1182(a1) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   146a6:	abafe0ef          	jal	ra,12960 <strcmp@plt>
+   1523c:	00054703          	lbu	a4,0(a0)
+   15240:	02a00793          	addi	a5,zero,42
+   15244:	02f70863          	beq	a4,a5,15274 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x64>
+   15248:	00007597          	auipc	a1,0x7
+   1524c:	fb85b583          	ld	a1,-72(a1) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   15250:	f10fd0ef          	jal	ra,12960 <strcmp@plt>
 	return nullptr;
-   146aa:	00153513          	sltiu	a0,a0,1
-   146ae:	40a00533          	sub	a0,zero,a0
-   146b2:	8c69                	c.and	s0,a0
+   15254:	00153513          	sltiu	a0,a0,1
+   15258:	40a00533          	sub	a0,zero,a0
+   1525c:	00a47433          	and	s0,s0,a0
       }
-   146b4:	8522                	c.mv	a0,s0
-   146b6:	60a2                	c.ldsp	ra,8(sp)
-   146b8:	6402                	c.ldsp	s0,0(sp)
-   146ba:	0141                	c.addi	sp,16
-   146bc:	8082                	c.jr	ra
+   15260:	00040513          	addi	a0,s0,0
+   15264:	00813083          	ld	ra,8(sp)
+   15268:	00013403          	ld	s0,0(sp)
+   1526c:	01010113          	addi	sp,sp,16
+   15270:	00008067          	jalr	zero,0(ra)
 	return nullptr;
-   146be:	4401                	c.li	s0,0
-   146c0:	bfd5                	c.j	146b4 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   15274:	00000413          	addi	s0,zero,0
+   15278:	fe9ff06f          	jal	zero,15260 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
 
-00000000000146c2 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
+000000000001527c <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
       _M_get_deleter(const std::type_info& __ti) noexcept override
-   146c2:	1141                	c.addi	sp,-16
-   146c4:	e406                	c.sdsp	ra,8(sp)
-   146c6:	e022                	c.sdsp	s0,0(sp)
-   146c8:	03850413          	addi	s0,a0,56
+   1527c:	ff010113          	addi	sp,sp,-16
+   15280:	00113423          	sd	ra,8(sp)
+   15284:	00813023          	sd	s0,0(sp)
+   15288:	03850413          	addi	s0,a0,56
 	    ||
-   146cc:	00006797          	auipc	a5,0x6
-   146d0:	b8c7b783          	ld	a5,-1140(a5) # 1a258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x30e0>
-   146d4:	02f58a63          	beq	a1,a5,14708 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   1528c:	00007797          	auipc	a5,0x7
+   15290:	fcc7b783          	ld	a5,-52(a5) # 1c258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x3710>
+   15294:	02f58c63          	beq	a1,a5,152cc <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
     if (__name == __arg.__name)
-   146d8:	6588                	c.ld	a0,8(a1)
-   146da:	00006797          	auipc	a5,0x6
-   146de:	b267b783          	ld	a5,-1242(a5) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   146e2:	02f50363          	beq	a0,a5,14708 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   15298:	0085b503          	ld	a0,8(a1)
+   1529c:	00007797          	auipc	a5,0x7
+   152a0:	f647b783          	ld	a5,-156(a5) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   152a4:	02f50463          	beq	a0,a5,152cc <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
     return __name[0] != '*' && __builtin_strcmp (__name, __arg.name()) == 0;
-   146e6:	00054703          	lbu	a4,0(a0)
-   146ea:	02a00793          	addi	a5,zero,42
-   146ee:	02f70263          	beq	a4,a5,14712 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
-   146f2:	00006597          	auipc	a1,0x6
-   146f6:	b0e5b583          	ld	a1,-1266(a1) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   146fa:	a66fe0ef          	jal	ra,12960 <strcmp@plt>
+   152a8:	00054703          	lbu	a4,0(a0)
+   152ac:	02a00793          	addi	a5,zero,42
+   152b0:	02f70863          	beq	a4,a5,152e0 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x64>
+   152b4:	00007597          	auipc	a1,0x7
+   152b8:	f4c5b583          	ld	a1,-180(a1) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   152bc:	ea4fd0ef          	jal	ra,12960 <strcmp@plt>
 	return nullptr;
-   146fe:	00153513          	sltiu	a0,a0,1
-   14702:	40a00533          	sub	a0,zero,a0
-   14706:	8c69                	c.and	s0,a0
+   152c0:	00153513          	sltiu	a0,a0,1
+   152c4:	40a00533          	sub	a0,zero,a0
+   152c8:	00a47433          	and	s0,s0,a0
       }
-   14708:	8522                	c.mv	a0,s0
-   1470a:	60a2                	c.ldsp	ra,8(sp)
-   1470c:	6402                	c.ldsp	s0,0(sp)
-   1470e:	0141                	c.addi	sp,16
-   14710:	8082                	c.jr	ra
+   152cc:	00040513          	addi	a0,s0,0
+   152d0:	00813083          	ld	ra,8(sp)
+   152d4:	00013403          	ld	s0,0(sp)
+   152d8:	01010113          	addi	sp,sp,16
+   152dc:	00008067          	jalr	zero,0(ra)
 	return nullptr;
-   14712:	4401                	c.li	s0,0
-   14714:	bfd5                	c.j	14708 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   152e0:	00000413          	addi	s0,zero,0
+   152e4:	fe9ff06f          	jal	zero,152cc <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
 
-0000000000014716 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
+00000000000152e8 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
       _M_get_deleter(const std::type_info& __ti) noexcept override
-   14716:	1141                	c.addi	sp,-16
-   14718:	e406                	c.sdsp	ra,8(sp)
-   1471a:	e022                	c.sdsp	s0,0(sp)
-   1471c:	03850413          	addi	s0,a0,56
+   152e8:	ff010113          	addi	sp,sp,-16
+   152ec:	00113423          	sd	ra,8(sp)
+   152f0:	00813023          	sd	s0,0(sp)
+   152f4:	03850413          	addi	s0,a0,56
 	    ||
-   14720:	00006797          	auipc	a5,0x6
-   14724:	b387b783          	ld	a5,-1224(a5) # 1a258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x30e0>
-   14728:	02f58a63          	beq	a1,a5,1475c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   152f8:	00007797          	auipc	a5,0x7
+   152fc:	f607b783          	ld	a5,-160(a5) # 1c258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x3710>
+   15300:	02f58c63          	beq	a1,a5,15338 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
     if (__name == __arg.__name)
-   1472c:	6588                	c.ld	a0,8(a1)
-   1472e:	00006797          	auipc	a5,0x6
-   14732:	ad27b783          	ld	a5,-1326(a5) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   14736:	02f50363          	beq	a0,a5,1475c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   15304:	0085b503          	ld	a0,8(a1)
+   15308:	00007797          	auipc	a5,0x7
+   1530c:	ef87b783          	ld	a5,-264(a5) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   15310:	02f50463          	beq	a0,a5,15338 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
     return __name[0] != '*' && __builtin_strcmp (__name, __arg.name()) == 0;
-   1473a:	00054703          	lbu	a4,0(a0)
-   1473e:	02a00793          	addi	a5,zero,42
-   14742:	02f70263          	beq	a4,a5,14766 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
-   14746:	00006597          	auipc	a1,0x6
-   1474a:	aba5b583          	ld	a1,-1350(a1) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   1474e:	a12fe0ef          	jal	ra,12960 <strcmp@plt>
+   15314:	00054703          	lbu	a4,0(a0)
+   15318:	02a00793          	addi	a5,zero,42
+   1531c:	02f70863          	beq	a4,a5,1534c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x64>
+   15320:	00007597          	auipc	a1,0x7
+   15324:	ee05b583          	ld	a1,-288(a1) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   15328:	e38fd0ef          	jal	ra,12960 <strcmp@plt>
 	return nullptr;
-   14752:	00153513          	sltiu	a0,a0,1
-   14756:	40a00533          	sub	a0,zero,a0
-   1475a:	8c69                	c.and	s0,a0
+   1532c:	00153513          	sltiu	a0,a0,1
+   15330:	40a00533          	sub	a0,zero,a0
+   15334:	00a47433          	and	s0,s0,a0
       }
-   1475c:	8522                	c.mv	a0,s0
-   1475e:	60a2                	c.ldsp	ra,8(sp)
-   14760:	6402                	c.ldsp	s0,0(sp)
-   14762:	0141                	c.addi	sp,16
-   14764:	8082                	c.jr	ra
+   15338:	00040513          	addi	a0,s0,0
+   1533c:	00813083          	ld	ra,8(sp)
+   15340:	00013403          	ld	s0,0(sp)
+   15344:	01010113          	addi	sp,sp,16
+   15348:	00008067          	jalr	zero,0(ra)
 	return nullptr;
-   14766:	4401                	c.li	s0,0
-   14768:	bfd5                	c.j	1475c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   1534c:	00000413          	addi	s0,zero,0
+   15350:	fe9ff06f          	jal	zero,15338 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
 
-000000000001476a <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
+0000000000015354 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
       _M_get_deleter(const std::type_info& __ti) noexcept override
-   1476a:	1141                	c.addi	sp,-16
-   1476c:	e406                	c.sdsp	ra,8(sp)
-   1476e:	e022                	c.sdsp	s0,0(sp)
-   14770:	03850413          	addi	s0,a0,56
+   15354:	ff010113          	addi	sp,sp,-16
+   15358:	00113423          	sd	ra,8(sp)
+   1535c:	00813023          	sd	s0,0(sp)
+   15360:	03850413          	addi	s0,a0,56
 	    ||
-   14774:	00006797          	auipc	a5,0x6
-   14778:	ae47b783          	ld	a5,-1308(a5) # 1a258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x30e0>
-   1477c:	02f58a63          	beq	a1,a5,147b0 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   15364:	00007797          	auipc	a5,0x7
+   15368:	ef47b783          	ld	a5,-268(a5) # 1c258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x3710>
+   1536c:	02f58c63          	beq	a1,a5,153a4 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
     if (__name == __arg.__name)
-   14780:	6588                	c.ld	a0,8(a1)
-   14782:	00006797          	auipc	a5,0x6
-   14786:	a7e7b783          	ld	a5,-1410(a5) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   1478a:	02f50363          	beq	a0,a5,147b0 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   15370:	0085b503          	ld	a0,8(a1)
+   15374:	00007797          	auipc	a5,0x7
+   15378:	e8c7b783          	ld	a5,-372(a5) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   1537c:	02f50463          	beq	a0,a5,153a4 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
     return __name[0] != '*' && __builtin_strcmp (__name, __arg.name()) == 0;
-   1478e:	00054703          	lbu	a4,0(a0)
-   14792:	02a00793          	addi	a5,zero,42
-   14796:	02f70263          	beq	a4,a5,147ba <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
-   1479a:	00006597          	auipc	a1,0x6
-   1479e:	a665b583          	ld	a1,-1434(a1) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   147a2:	9befe0ef          	jal	ra,12960 <strcmp@plt>
+   15380:	00054703          	lbu	a4,0(a0)
+   15384:	02a00793          	addi	a5,zero,42
+   15388:	02f70863          	beq	a4,a5,153b8 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x64>
+   1538c:	00007597          	auipc	a1,0x7
+   15390:	e745b583          	ld	a1,-396(a1) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   15394:	dccfd0ef          	jal	ra,12960 <strcmp@plt>
 	return nullptr;
-   147a6:	00153513          	sltiu	a0,a0,1
-   147aa:	40a00533          	sub	a0,zero,a0
-   147ae:	8c69                	c.and	s0,a0
+   15398:	00153513          	sltiu	a0,a0,1
+   1539c:	40a00533          	sub	a0,zero,a0
+   153a0:	00a47433          	and	s0,s0,a0
       }
-   147b0:	8522                	c.mv	a0,s0
-   147b2:	60a2                	c.ldsp	ra,8(sp)
-   147b4:	6402                	c.ldsp	s0,0(sp)
-   147b6:	0141                	c.addi	sp,16
-   147b8:	8082                	c.jr	ra
+   153a4:	00040513          	addi	a0,s0,0
+   153a8:	00813083          	ld	ra,8(sp)
+   153ac:	00013403          	ld	s0,0(sp)
+   153b0:	01010113          	addi	sp,sp,16
+   153b4:	00008067          	jalr	zero,0(ra)
 	return nullptr;
-   147ba:	4401                	c.li	s0,0
-   147bc:	bfd5                	c.j	147b0 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   153b8:	00000413          	addi	s0,zero,0
+   153bc:	fe9ff06f          	jal	zero,153a4 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
 
-00000000000147be <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
+00000000000153c0 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
       _M_dispose() noexcept
-   147be:	1141                	c.addi	sp,-16
-   147c0:	e406                	c.sdsp	ra,8(sp)
-   147c2:	e022                	c.sdsp	s0,0(sp)
+   153c0:	ff010113          	addi	sp,sp,-16
+   153c4:	00113423          	sd	ra,8(sp)
+   153c8:	00813023          	sd	s0,0(sp)
 	if (_M_pi != nullptr)
-   147c4:	6120                	c.ld	s0,64(a0)
-   147c6:	cc19                	c.beqz	s0,147e4 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x26>
+   153cc:	04053403          	ld	s0,64(a0)
+   153d0:	02040463          	beq	s0,zero,153f8 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
     if (__is_single_threaded())
-   147c8:	00006797          	auipc	a5,0x6
-   147cc:	a787b783          	ld	a5,-1416(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   147d0:	0007c783          	lbu	a5,0(a5)
-   147d4:	cf81                	c.beqz	a5,147ec <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2e>
+   153d4:	00007797          	auipc	a5,0x7
+   153d8:	e6c7b783          	ld	a5,-404(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   153dc:	0007c783          	lbu	a5,0(a5)
+   153e0:	02078463          	beq	a5,zero,15408 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x48>
     _Atomic_word __result = *__mem;
-   147d6:	5808                	c.lw	a0,48(s0)
+   153e4:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   147d8:	fff5079b          	addiw	a5,a0,-1
-   147dc:	d81c                	c.sw	a5,48(s0)
+   153e8:	fff5079b          	addiw	a5,a0,-1
+   153ec:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   147de:	4785                	c.li	a5,1
-   147e0:	00f50c63          	beq	a0,a5,147f8 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x3a>
+   153f0:	00100793          	addi	a5,zero,1
+   153f4:	02f50263          	beq	a0,a5,15418 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x58>
       }
-   147e4:	60a2                	c.ldsp	ra,8(sp)
-   147e6:	6402                	c.ldsp	s0,0(sp)
-   147e8:	0141                	c.addi	sp,16
-   147ea:	8082                	c.jr	ra
+   153f8:	00813083          	ld	ra,8(sp)
+   153fc:	00013403          	ld	s0,0(sp)
+   15400:	01010113          	addi	sp,sp,16
+   15404:	00008067          	jalr	zero,0(ra)
       return __exchange_and_add(__mem, __val);
-   147ec:	55fd                	c.li	a1,-1
-   147ee:	03040513          	addi	a0,s0,48
-   147f2:	98efe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   147f6:	b7e5                	c.j	147de <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x20>
+   15408:	fff00593          	addi	a1,zero,-1
+   1540c:	03040513          	addi	a0,s0,48
+   15410:	d70fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15414:	fddff06f          	jal	zero,153f0 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x30>
 	_M_dispose();
-   147f8:	601c                	c.ld	a5,0(s0)
-   147fa:	6b9c                	c.ld	a5,16(a5)
-   147fc:	8522                	c.mv	a0,s0
-   147fe:	9782                	c.jalr	a5
+   15418:	00043783          	ld	a5,0(s0)
+   1541c:	0107b783          	ld	a5,16(a5)
+   15420:	00040513          	addi	a0,s0,0
+   15424:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   14800:	0ff0000f          	fence	iorw,iorw
+   15428:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   14804:	00006797          	auipc	a5,0x6
-   14808:	a3c7b783          	ld	a5,-1476(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   1480c:	0007c783          	lbu	a5,0(a5)
-   14810:	cf89                	c.beqz	a5,1482a <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x6c>
+   1542c:	00007797          	auipc	a5,0x7
+   15430:	e147b783          	ld	a5,-492(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15434:	0007c783          	lbu	a5,0(a5)
+   15438:	02078663          	beq	a5,zero,15464 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xa4>
     _Atomic_word __result = *__mem;
-   14812:	5848                	c.lw	a0,52(s0)
+   1543c:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   14814:	fff5079b          	addiw	a5,a0,-1
-   14818:	d85c                	c.sw	a5,52(s0)
+   15440:	fff5079b          	addiw	a5,a0,-1
+   15444:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   1481a:	4785                	c.li	a5,1
-   1481c:	fcf514e3          	bne	a0,a5,147e4 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x26>
+   15448:	00100793          	addi	a5,zero,1
+   1544c:	faf516e3          	bne	a0,a5,153f8 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
 	    _M_destroy();
-   14820:	601c                	c.ld	a5,0(s0)
-   14822:	6f9c                	c.ld	a5,24(a5)
-   14824:	8522                	c.mv	a0,s0
-   14826:	9782                	c.jalr	a5
+   15450:	00043783          	ld	a5,0(s0)
+   15454:	0187b783          	ld	a5,24(a5)
+   15458:	00040513          	addi	a0,s0,0
+   1545c:	000780e7          	jalr	ra,0(a5)
       }
-   14828:	bf75                	c.j	147e4 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x26>
+   15460:	f99ff06f          	jal	zero,153f8 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
       return __exchange_and_add(__mem, __val);
-   1482a:	55fd                	c.li	a1,-1
-   1482c:	03440513          	addi	a0,s0,52
-   14830:	950fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14834:	b7dd                	c.j	1481a <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x5c>
+   15464:	fff00593          	addi	a1,zero,-1
+   15468:	03440513          	addi	a0,s0,52
+   1546c:	d14fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15470:	fd9ff06f          	jal	zero,15448 <std::_Sp_counted_ptr_inplace<elf::segment::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x88>
 
-0000000000014836 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
+0000000000015474 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
       _M_dispose() noexcept
-   14836:	1141                	c.addi	sp,-16
-   14838:	e406                	c.sdsp	ra,8(sp)
-   1483a:	e022                	c.sdsp	s0,0(sp)
+   15474:	ff010113          	addi	sp,sp,-16
+   15478:	00113423          	sd	ra,8(sp)
+   1547c:	00813023          	sd	s0,0(sp)
 	if (_M_pi != nullptr)
-   1483c:	6120                	c.ld	s0,64(a0)
-   1483e:	cc19                	c.beqz	s0,1485c <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x26>
+   15480:	04053403          	ld	s0,64(a0)
+   15484:	02040463          	beq	s0,zero,154ac <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
     if (__is_single_threaded())
-   14840:	00006797          	auipc	a5,0x6
-   14844:	a007b783          	ld	a5,-1536(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14848:	0007c783          	lbu	a5,0(a5)
-   1484c:	cf81                	c.beqz	a5,14864 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2e>
+   15488:	00007797          	auipc	a5,0x7
+   1548c:	db87b783          	ld	a5,-584(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15490:	0007c783          	lbu	a5,0(a5)
+   15494:	02078463          	beq	a5,zero,154bc <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x48>
     _Atomic_word __result = *__mem;
-   1484e:	5808                	c.lw	a0,48(s0)
+   15498:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   14850:	fff5079b          	addiw	a5,a0,-1
-   14854:	d81c                	c.sw	a5,48(s0)
+   1549c:	fff5079b          	addiw	a5,a0,-1
+   154a0:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   14856:	4785                	c.li	a5,1
-   14858:	00f50c63          	beq	a0,a5,14870 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x3a>
+   154a4:	00100793          	addi	a5,zero,1
+   154a8:	02f50263          	beq	a0,a5,154cc <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x58>
       }
-   1485c:	60a2                	c.ldsp	ra,8(sp)
-   1485e:	6402                	c.ldsp	s0,0(sp)
-   14860:	0141                	c.addi	sp,16
-   14862:	8082                	c.jr	ra
+   154ac:	00813083          	ld	ra,8(sp)
+   154b0:	00013403          	ld	s0,0(sp)
+   154b4:	01010113          	addi	sp,sp,16
+   154b8:	00008067          	jalr	zero,0(ra)
       return __exchange_and_add(__mem, __val);
-   14864:	55fd                	c.li	a1,-1
-   14866:	03040513          	addi	a0,s0,48
-   1486a:	916fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   1486e:	b7e5                	c.j	14856 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x20>
+   154bc:	fff00593          	addi	a1,zero,-1
+   154c0:	03040513          	addi	a0,s0,48
+   154c4:	cbcfd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   154c8:	fddff06f          	jal	zero,154a4 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x30>
 	_M_dispose();
-   14870:	601c                	c.ld	a5,0(s0)
-   14872:	6b9c                	c.ld	a5,16(a5)
-   14874:	8522                	c.mv	a0,s0
-   14876:	9782                	c.jalr	a5
+   154cc:	00043783          	ld	a5,0(s0)
+   154d0:	0107b783          	ld	a5,16(a5)
+   154d4:	00040513          	addi	a0,s0,0
+   154d8:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   14878:	0ff0000f          	fence	iorw,iorw
+   154dc:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   1487c:	00006797          	auipc	a5,0x6
-   14880:	9c47b783          	ld	a5,-1596(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14884:	0007c783          	lbu	a5,0(a5)
-   14888:	cf89                	c.beqz	a5,148a2 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x6c>
+   154e0:	00007797          	auipc	a5,0x7
+   154e4:	d607b783          	ld	a5,-672(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   154e8:	0007c783          	lbu	a5,0(a5)
+   154ec:	02078663          	beq	a5,zero,15518 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xa4>
     _Atomic_word __result = *__mem;
-   1488a:	5848                	c.lw	a0,52(s0)
+   154f0:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   1488c:	fff5079b          	addiw	a5,a0,-1
-   14890:	d85c                	c.sw	a5,52(s0)
+   154f4:	fff5079b          	addiw	a5,a0,-1
+   154f8:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   14892:	4785                	c.li	a5,1
-   14894:	fcf514e3          	bne	a0,a5,1485c <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x26>
+   154fc:	00100793          	addi	a5,zero,1
+   15500:	faf516e3          	bne	a0,a5,154ac <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
 	    _M_destroy();
-   14898:	601c                	c.ld	a5,0(s0)
-   1489a:	6f9c                	c.ld	a5,24(a5)
-   1489c:	8522                	c.mv	a0,s0
-   1489e:	9782                	c.jalr	a5
+   15504:	00043783          	ld	a5,0(s0)
+   15508:	0187b783          	ld	a5,24(a5)
+   1550c:	00040513          	addi	a0,s0,0
+   15510:	000780e7          	jalr	ra,0(a5)
       }
-   148a0:	bf75                	c.j	1485c <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x26>
+   15514:	f99ff06f          	jal	zero,154ac <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
       return __exchange_and_add(__mem, __val);
-   148a2:	55fd                	c.li	a1,-1
-   148a4:	03440513          	addi	a0,s0,52
-   148a8:	8d8fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   148ac:	b7dd                	c.j	14892 <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x5c>
+   15518:	fff00593          	addi	a1,zero,-1
+   1551c:	03440513          	addi	a0,s0,52
+   15520:	c60fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15524:	fd9ff06f          	jal	zero,154fc <std::_Sp_counted_ptr_inplace<elf::strtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x88>
 
-00000000000148ae <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
+0000000000015528 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
       _M_dispose() noexcept
-   148ae:	1141                	c.addi	sp,-16
-   148b0:	e406                	c.sdsp	ra,8(sp)
-   148b2:	e022                	c.sdsp	s0,0(sp)
+   15528:	ff010113          	addi	sp,sp,-16
+   1552c:	00113423          	sd	ra,8(sp)
+   15530:	00813023          	sd	s0,0(sp)
 	if (_M_pi != nullptr)
-   148b4:	6120                	c.ld	s0,64(a0)
-   148b6:	cc19                	c.beqz	s0,148d4 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x26>
+   15534:	04053403          	ld	s0,64(a0)
+   15538:	02040463          	beq	s0,zero,15560 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
     if (__is_single_threaded())
-   148b8:	00006797          	auipc	a5,0x6
-   148bc:	9887b783          	ld	a5,-1656(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   148c0:	0007c783          	lbu	a5,0(a5)
-   148c4:	cf81                	c.beqz	a5,148dc <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2e>
+   1553c:	00007797          	auipc	a5,0x7
+   15540:	d047b783          	ld	a5,-764(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15544:	0007c783          	lbu	a5,0(a5)
+   15548:	02078463          	beq	a5,zero,15570 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x48>
     _Atomic_word __result = *__mem;
-   148c6:	5808                	c.lw	a0,48(s0)
+   1554c:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   148c8:	fff5079b          	addiw	a5,a0,-1
-   148cc:	d81c                	c.sw	a5,48(s0)
+   15550:	fff5079b          	addiw	a5,a0,-1
+   15554:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   148ce:	4785                	c.li	a5,1
-   148d0:	00f50c63          	beq	a0,a5,148e8 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x3a>
+   15558:	00100793          	addi	a5,zero,1
+   1555c:	02f50263          	beq	a0,a5,15580 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x58>
       }
-   148d4:	60a2                	c.ldsp	ra,8(sp)
-   148d6:	6402                	c.ldsp	s0,0(sp)
-   148d8:	0141                	c.addi	sp,16
-   148da:	8082                	c.jr	ra
+   15560:	00813083          	ld	ra,8(sp)
+   15564:	00013403          	ld	s0,0(sp)
+   15568:	01010113          	addi	sp,sp,16
+   1556c:	00008067          	jalr	zero,0(ra)
       return __exchange_and_add(__mem, __val);
-   148dc:	55fd                	c.li	a1,-1
-   148de:	03040513          	addi	a0,s0,48
-   148e2:	89efe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   148e6:	b7e5                	c.j	148ce <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x20>
+   15570:	fff00593          	addi	a1,zero,-1
+   15574:	03040513          	addi	a0,s0,48
+   15578:	c08fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   1557c:	fddff06f          	jal	zero,15558 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x30>
 	_M_dispose();
-   148e8:	601c                	c.ld	a5,0(s0)
-   148ea:	6b9c                	c.ld	a5,16(a5)
-   148ec:	8522                	c.mv	a0,s0
-   148ee:	9782                	c.jalr	a5
+   15580:	00043783          	ld	a5,0(s0)
+   15584:	0107b783          	ld	a5,16(a5)
+   15588:	00040513          	addi	a0,s0,0
+   1558c:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   148f0:	0ff0000f          	fence	iorw,iorw
+   15590:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   148f4:	00006797          	auipc	a5,0x6
-   148f8:	94c7b783          	ld	a5,-1716(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   148fc:	0007c783          	lbu	a5,0(a5)
-   14900:	cf89                	c.beqz	a5,1491a <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x6c>
+   15594:	00007797          	auipc	a5,0x7
+   15598:	cac7b783          	ld	a5,-852(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   1559c:	0007c783          	lbu	a5,0(a5)
+   155a0:	02078663          	beq	a5,zero,155cc <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xa4>
     _Atomic_word __result = *__mem;
-   14902:	5848                	c.lw	a0,52(s0)
+   155a4:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   14904:	fff5079b          	addiw	a5,a0,-1
-   14908:	d85c                	c.sw	a5,52(s0)
+   155a8:	fff5079b          	addiw	a5,a0,-1
+   155ac:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   1490a:	4785                	c.li	a5,1
-   1490c:	fcf514e3          	bne	a0,a5,148d4 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x26>
+   155b0:	00100793          	addi	a5,zero,1
+   155b4:	faf516e3          	bne	a0,a5,15560 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
 	    _M_destroy();
-   14910:	601c                	c.ld	a5,0(s0)
-   14912:	6f9c                	c.ld	a5,24(a5)
-   14914:	8522                	c.mv	a0,s0
-   14916:	9782                	c.jalr	a5
+   155b8:	00043783          	ld	a5,0(s0)
+   155bc:	0187b783          	ld	a5,24(a5)
+   155c0:	00040513          	addi	a0,s0,0
+   155c4:	000780e7          	jalr	ra,0(a5)
       }
-   14918:	bf75                	c.j	148d4 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x26>
+   155c8:	f99ff06f          	jal	zero,15560 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
       return __exchange_and_add(__mem, __val);
-   1491a:	55fd                	c.li	a1,-1
-   1491c:	03440513          	addi	a0,s0,52
-   14920:	860fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14924:	b7dd                	c.j	1490a <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x5c>
+   155cc:	fff00593          	addi	a1,zero,-1
+   155d0:	03440513          	addi	a0,s0,52
+   155d4:	bacfd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   155d8:	fd9ff06f          	jal	zero,155b0 <std::_Sp_counted_ptr_inplace<elf::section::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x88>
 
-0000000000014926 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
+00000000000155dc <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
       _M_dispose() noexcept
-   14926:	1101                	c.addi	sp,-32
-   14928:	ec06                	c.sdsp	ra,24(sp)
-   1492a:	e822                	c.sdsp	s0,16(sp)
-   1492c:	e426                	c.sdsp	s1,8(sp)
-   1492e:	842a                	c.mv	s0,a0
+   155dc:	fe010113          	addi	sp,sp,-32
+   155e0:	00113c23          	sd	ra,24(sp)
+   155e4:	00813823          	sd	s0,16(sp)
+   155e8:	00913423          	sd	s1,8(sp)
+   155ec:	00050413          	addi	s0,a0,0
 	if (_M_pi != nullptr)
-   14930:	7124                	c.ld	s1,96(a0)
-   14932:	cc99                	c.beqz	s1,14950 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2a>
+   155f0:	06053483          	ld	s1,96(a0)
+   155f4:	02048463          	beq	s1,zero,1561c <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x40>
     if (__is_single_threaded())
-   14934:	00006797          	auipc	a5,0x6
-   14938:	90c7b783          	ld	a5,-1780(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   1493c:	0007c783          	lbu	a5,0(a5)
-   14940:	cf8d                	c.beqz	a5,1497a <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x54>
+   155f8:	00007797          	auipc	a5,0x7
+   155fc:	c487b783          	ld	a5,-952(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15600:	0007c783          	lbu	a5,0(a5)
+   15604:	04078c63          	beq	a5,zero,1565c <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x80>
     _Atomic_word __result = *__mem;
-   14942:	5888                	c.lw	a0,48(s1)
+   15608:	0304a503          	lw	a0,48(s1)
     *__mem += __val;
-   14944:	fff5079b          	addiw	a5,a0,-1
-   14948:	d89c                	c.sw	a5,48(s1)
+   1560c:	fff5079b          	addiw	a5,a0,-1
+   15610:	02f4a823          	sw	a5,48(s1)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   1494a:	4785                	c.li	a5,1
-   1494c:	02f50d63          	beq	a0,a5,14986 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x60>
+   15614:	00100793          	addi	a5,zero,1
+   15618:	04f50a63          	beq	a0,a5,1566c <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x90>
 	if (_M_pi != nullptr)
-   14950:	6020                	c.ld	s0,64(s0)
-   14952:	cc19                	c.beqz	s0,14970 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x4a>
+   1561c:	04043403          	ld	s0,64(s0)
+   15620:	02040463          	beq	s0,zero,15648 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x6c>
     if (__is_single_threaded())
-   14954:	00006797          	auipc	a5,0x6
-   14958:	8ec7b783          	ld	a5,-1812(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   1495c:	0007c783          	lbu	a5,0(a5)
-   14960:	c3b5                	c.beqz	a5,149c4 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x9e>
+   15624:	00007797          	auipc	a5,0x7
+   15628:	c1c7b783          	ld	a5,-996(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   1562c:	0007c783          	lbu	a5,0(a5)
+   15630:	08078c63          	beq	a5,zero,156c8 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xec>
     _Atomic_word __result = *__mem;
-   14962:	5808                	c.lw	a0,48(s0)
+   15634:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   14964:	fff5079b          	addiw	a5,a0,-1
-   14968:	d81c                	c.sw	a5,48(s0)
+   15638:	fff5079b          	addiw	a5,a0,-1
+   1563c:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   1496a:	4785                	c.li	a5,1
-   1496c:	06f50263          	beq	a0,a5,149d0 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xaa>
+   15640:	00100793          	addi	a5,zero,1
+   15644:	08f50a63          	beq	a0,a5,156d8 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xfc>
       }
-   14970:	60e2                	c.ldsp	ra,24(sp)
-   14972:	6442                	c.ldsp	s0,16(sp)
-   14974:	64a2                	c.ldsp	s1,8(sp)
-   14976:	6105                	c.addi16sp	sp,32
-   14978:	8082                	c.jr	ra
+   15648:	01813083          	ld	ra,24(sp)
+   1564c:	01013403          	ld	s0,16(sp)
+   15650:	00813483          	ld	s1,8(sp)
+   15654:	02010113          	addi	sp,sp,32
+   15658:	00008067          	jalr	zero,0(ra)
       return __exchange_and_add(__mem, __val);
-   1497a:	55fd                	c.li	a1,-1
-   1497c:	03048513          	addi	a0,s1,48
-   14980:	800fe0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14984:	b7d9                	c.j	1494a <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x24>
+   1565c:	fff00593          	addi	a1,zero,-1
+   15660:	03048513          	addi	a0,s1,48
+   15664:	b1cfd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15668:	fadff06f          	jal	zero,15614 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
 	_M_dispose();
-   14986:	609c                	c.ld	a5,0(s1)
-   14988:	6b9c                	c.ld	a5,16(a5)
-   1498a:	8526                	c.mv	a0,s1
-   1498c:	9782                	c.jalr	a5
+   1566c:	0004b783          	ld	a5,0(s1)
+   15670:	0107b783          	ld	a5,16(a5)
+   15674:	00048513          	addi	a0,s1,0
+   15678:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   1498e:	0ff0000f          	fence	iorw,iorw
+   1567c:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   14992:	00006797          	auipc	a5,0x6
-   14996:	8ae7b783          	ld	a5,-1874(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   1499a:	0007c783          	lbu	a5,0(a5)
-   1499e:	cf89                	c.beqz	a5,149b8 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x92>
+   15680:	00007797          	auipc	a5,0x7
+   15684:	bc07b783          	ld	a5,-1088(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15688:	0007c783          	lbu	a5,0(a5)
+   1568c:	02078663          	beq	a5,zero,156b8 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xdc>
     _Atomic_word __result = *__mem;
-   149a0:	58c8                	c.lw	a0,52(s1)
+   15690:	0344a503          	lw	a0,52(s1)
     *__mem += __val;
-   149a2:	fff5079b          	addiw	a5,a0,-1
-   149a6:	d8dc                	c.sw	a5,52(s1)
+   15694:	fff5079b          	addiw	a5,a0,-1
+   15698:	02f4aa23          	sw	a5,52(s1)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   149a8:	4785                	c.li	a5,1
-   149aa:	faf513e3          	bne	a0,a5,14950 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2a>
+   1569c:	00100793          	addi	a5,zero,1
+   156a0:	f6f51ee3          	bne	a0,a5,1561c <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x40>
 	    _M_destroy();
-   149ae:	609c                	c.ld	a5,0(s1)
-   149b0:	6f9c                	c.ld	a5,24(a5)
-   149b2:	8526                	c.mv	a0,s1
-   149b4:	9782                	c.jalr	a5
-   149b6:	bf69                	c.j	14950 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2a>
+   156a4:	0004b783          	ld	a5,0(s1)
+   156a8:	0187b783          	ld	a5,24(a5)
+   156ac:	00048513          	addi	a0,s1,0
+   156b0:	000780e7          	jalr	ra,0(a5)
+   156b4:	f69ff06f          	jal	zero,1561c <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x40>
       return __exchange_and_add(__mem, __val);
-   149b8:	55fd                	c.li	a1,-1
-   149ba:	03448513          	addi	a0,s1,52
-   149be:	fc3fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   149c2:	b7dd                	c.j	149a8 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x82>
-   149c4:	55fd                	c.li	a1,-1
-   149c6:	03040513          	addi	a0,s0,48
-   149ca:	fb7fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   149ce:	bf71                	c.j	1496a <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x44>
+   156b8:	fff00593          	addi	a1,zero,-1
+   156bc:	03448513          	addi	a0,s1,52
+   156c0:	ac0fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   156c4:	fd9ff06f          	jal	zero,1569c <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xc0>
+   156c8:	fff00593          	addi	a1,zero,-1
+   156cc:	03040513          	addi	a0,s0,48
+   156d0:	ab0fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   156d4:	f6dff06f          	jal	zero,15640 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x64>
 	_M_dispose();
-   149d0:	601c                	c.ld	a5,0(s0)
-   149d2:	6b9c                	c.ld	a5,16(a5)
-   149d4:	8522                	c.mv	a0,s0
-   149d6:	9782                	c.jalr	a5
+   156d8:	00043783          	ld	a5,0(s0)
+   156dc:	0107b783          	ld	a5,16(a5)
+   156e0:	00040513          	addi	a0,s0,0
+   156e4:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   149d8:	0ff0000f          	fence	iorw,iorw
+   156e8:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   149dc:	00006797          	auipc	a5,0x6
-   149e0:	8647b783          	ld	a5,-1948(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   149e4:	0007c783          	lbu	a5,0(a5)
-   149e8:	cf89                	c.beqz	a5,14a02 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xdc>
+   156ec:	00007797          	auipc	a5,0x7
+   156f0:	b547b783          	ld	a5,-1196(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   156f4:	0007c783          	lbu	a5,0(a5)
+   156f8:	02078663          	beq	a5,zero,15724 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x148>
     _Atomic_word __result = *__mem;
-   149ea:	5848                	c.lw	a0,52(s0)
+   156fc:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   149ec:	fff5079b          	addiw	a5,a0,-1
-   149f0:	d85c                	c.sw	a5,52(s0)
+   15700:	fff5079b          	addiw	a5,a0,-1
+   15704:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   149f2:	4785                	c.li	a5,1
-   149f4:	f6f51ee3          	bne	a0,a5,14970 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x4a>
+   15708:	00100793          	addi	a5,zero,1
+   1570c:	f2f51ee3          	bne	a0,a5,15648 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x6c>
 	    _M_destroy();
-   149f8:	601c                	c.ld	a5,0(s0)
-   149fa:	6f9c                	c.ld	a5,24(a5)
-   149fc:	8522                	c.mv	a0,s0
-   149fe:	9782                	c.jalr	a5
+   15710:	00043783          	ld	a5,0(s0)
+   15714:	0187b783          	ld	a5,24(a5)
+   15718:	00040513          	addi	a0,s0,0
+   1571c:	000780e7          	jalr	ra,0(a5)
       }
-   14a00:	bf85                	c.j	14970 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x4a>
+   15720:	f29ff06f          	jal	zero,15648 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x6c>
       return __exchange_and_add(__mem, __val);
-   14a02:	55fd                	c.li	a1,-1
-   14a04:	03440513          	addi	a0,s0,52
-   14a08:	f79fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14a0c:	b7dd                	c.j	149f2 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xcc>
+   15724:	fff00593          	addi	a1,zero,-1
+   15728:	03440513          	addi	a0,s0,52
+   1572c:	a54fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15730:	fd9ff06f          	jal	zero,15708 <std::_Sp_counted_ptr_inplace<elf::symtab::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x12c>
 
-0000000000014a0e <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
+0000000000015734 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
       _M_dispose() noexcept
-   14a0e:	7139                	c.addi16sp	sp,-64
-   14a10:	fc06                	c.sdsp	ra,56(sp)
-   14a12:	f822                	c.sdsp	s0,48(sp)
-   14a14:	f426                	c.sdsp	s1,40(sp)
-   14a16:	f04a                	c.sdsp	s2,32(sp)
-   14a18:	ec4e                	c.sdsp	s3,24(sp)
-   14a1a:	e852                	c.sdsp	s4,16(sp)
-   14a1c:	e456                	c.sdsp	s5,8(sp)
-   14a1e:	892a                	c.mv	s2,a0
+   15734:	fc010113          	addi	sp,sp,-64
+   15738:	02113c23          	sd	ra,56(sp)
+   1573c:	02813823          	sd	s0,48(sp)
+   15740:	02913423          	sd	s1,40(sp)
+   15744:	03213023          	sd	s2,32(sp)
+   15748:	01313c23          	sd	s3,24(sp)
+   1574c:	01413823          	sd	s4,16(sp)
+   15750:	01513423          	sd	s5,8(sp)
+   15754:	00050913          	addi	s2,a0,0
 	if (_M_pi != nullptr)
-   14a20:	6960                	c.ld	s0,208(a0)
-   14a22:	cc19                	c.beqz	s0,14a40 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x32>
+   15758:	0d053403          	ld	s0,208(a0)
+   1575c:	02040463          	beq	s0,zero,15784 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x50>
     if (__is_single_threaded())
-   14a24:	00006797          	auipc	a5,0x6
-   14a28:	81c7b783          	ld	a5,-2020(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14a2c:	0007c783          	lbu	a5,0(a5)
-   14a30:	c7a9                	c.beqz	a5,14a7a <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x6c>
+   15760:	00007797          	auipc	a5,0x7
+   15764:	ae07b783          	ld	a5,-1312(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15768:	0007c783          	lbu	a5,0(a5)
+   1576c:	06078063          	beq	a5,zero,157cc <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x98>
     _Atomic_word __result = *__mem;
-   14a32:	5808                	c.lw	a0,48(s0)
+   15770:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   14a34:	fff5079b          	addiw	a5,a0,-1
-   14a38:	d81c                	c.sw	a5,48(s0)
+   15774:	fff5079b          	addiw	a5,a0,-1
+   15778:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   14a3a:	4785                	c.li	a5,1
-   14a3c:	04f50563          	beq	a0,a5,14a86 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x78>
+   1577c:	00100793          	addi	a5,zero,1
+   15780:	04f50e63          	beq	a0,a5,157dc <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xa8>
 	if (_M_pi != nullptr)
-   14a40:	0c093403          	ld	s0,192(s2)
-   14a44:	cc19                	c.beqz	s0,14a62 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x54>
+   15784:	0c093403          	ld	s0,192(s2)
+   15788:	02040463          	beq	s0,zero,157b0 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x7c>
     if (__is_single_threaded())
-   14a46:	00005797          	auipc	a5,0x5
-   14a4a:	7fa7b783          	ld	a5,2042(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14a4e:	0007c783          	lbu	a5,0(a5)
-   14a52:	cbad                	c.beqz	a5,14ac4 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xb6>
+   1578c:	00007797          	auipc	a5,0x7
+   15790:	ab47b783          	ld	a5,-1356(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15794:	0007c783          	lbu	a5,0(a5)
+   15798:	0a078063          	beq	a5,zero,15838 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x104>
     _Atomic_word __result = *__mem;
-   14a54:	5808                	c.lw	a0,48(s0)
+   1579c:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   14a56:	fff5079b          	addiw	a5,a0,-1
-   14a5a:	d81c                	c.sw	a5,48(s0)
+   157a0:	fff5079b          	addiw	a5,a0,-1
+   157a4:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   14a5c:	4785                	c.li	a5,1
-   14a5e:	06f50963          	beq	a0,a5,14ad0 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xc2>
+   157a8:	00100793          	addi	a5,zero,1
+   157ac:	08f50e63          	beq	a0,a5,15848 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x114>
 	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
-   14a62:	0a093403          	ld	s0,160(s2)
-   14a66:	0a893983          	ld	s3,168(s2)
+   157b0:	0a093403          	ld	s0,160(s2)
+   157b4:	0a893983          	ld	s3,168(s2)
     {
       template<typename _ForwardIterator>
 	static _GLIBCXX20_CONSTEXPR void
 	__destroy(_ForwardIterator __first, _ForwardIterator __last)
 	{
 	  for (; __first != __last; ++__first)
-   14a6a:	11340563          	beq	s0,s3,14b74 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x166>
+   157b8:	19340063          	beq	s0,s3,15938 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x204>
     return ::__libc_single_threaded;
-   14a6e:	00005a97          	auipc	s5,0x5
-   14a72:	7d2aba83          	ld	s5,2002(s5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14a76:	4a05                	c.li	s4,1
-   14a78:	a065                	c.j	14b20 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x112>
+   157bc:	00007a97          	auipc	s5,0x7
+   157c0:	a84aba83          	ld	s5,-1404(s5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   157c4:	00100a13          	addi	s4,zero,1
+   157c8:	0f40006f          	jal	zero,158bc <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x188>
       return __exchange_and_add(__mem, __val);
-   14a7a:	55fd                	c.li	a1,-1
-   14a7c:	03040513          	addi	a0,s0,48
-   14a80:	f01fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14a84:	bf5d                	c.j	14a3a <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2c>
+   157cc:	fff00593          	addi	a1,zero,-1
+   157d0:	03040513          	addi	a0,s0,48
+   157d4:	9acfd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   157d8:	fa5ff06f          	jal	zero,1577c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x48>
 	_M_dispose();
-   14a86:	601c                	c.ld	a5,0(s0)
-   14a88:	6b9c                	c.ld	a5,16(a5)
-   14a8a:	8522                	c.mv	a0,s0
-   14a8c:	9782                	c.jalr	a5
+   157dc:	00043783          	ld	a5,0(s0)
+   157e0:	0107b783          	ld	a5,16(a5)
+   157e4:	00040513          	addi	a0,s0,0
+   157e8:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   14a8e:	0ff0000f          	fence	iorw,iorw
+   157ec:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   14a92:	00005797          	auipc	a5,0x5
-   14a96:	7ae7b783          	ld	a5,1966(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14a9a:	0007c783          	lbu	a5,0(a5)
-   14a9e:	cf89                	c.beqz	a5,14ab8 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xaa>
+   157f0:	00007797          	auipc	a5,0x7
+   157f4:	a507b783          	ld	a5,-1456(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   157f8:	0007c783          	lbu	a5,0(a5)
+   157fc:	02078663          	beq	a5,zero,15828 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xf4>
     _Atomic_word __result = *__mem;
-   14aa0:	5848                	c.lw	a0,52(s0)
+   15800:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   14aa2:	fff5079b          	addiw	a5,a0,-1
-   14aa6:	d85c                	c.sw	a5,52(s0)
+   15804:	fff5079b          	addiw	a5,a0,-1
+   15808:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   14aa8:	4785                	c.li	a5,1
-   14aaa:	f8f51be3          	bne	a0,a5,14a40 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x32>
+   1580c:	00100793          	addi	a5,zero,1
+   15810:	f6f51ae3          	bne	a0,a5,15784 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x50>
 	    _M_destroy();
-   14aae:	601c                	c.ld	a5,0(s0)
-   14ab0:	6f9c                	c.ld	a5,24(a5)
-   14ab2:	8522                	c.mv	a0,s0
-   14ab4:	9782                	c.jalr	a5
-   14ab6:	b769                	c.j	14a40 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x32>
+   15814:	00043783          	ld	a5,0(s0)
+   15818:	0187b783          	ld	a5,24(a5)
+   1581c:	00040513          	addi	a0,s0,0
+   15820:	000780e7          	jalr	ra,0(a5)
+   15824:	f61ff06f          	jal	zero,15784 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x50>
       return __exchange_and_add(__mem, __val);
-   14ab8:	55fd                	c.li	a1,-1
-   14aba:	03440513          	addi	a0,s0,52
-   14abe:	ec3fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14ac2:	b7dd                	c.j	14aa8 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x9a>
-   14ac4:	55fd                	c.li	a1,-1
-   14ac6:	03040513          	addi	a0,s0,48
-   14aca:	eb7fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14ace:	b779                	c.j	14a5c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x4e>
+   15828:	fff00593          	addi	a1,zero,-1
+   1582c:	03440513          	addi	a0,s0,52
+   15830:	950fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15834:	fd9ff06f          	jal	zero,1580c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xd8>
+   15838:	fff00593          	addi	a1,zero,-1
+   1583c:	03040513          	addi	a0,s0,48
+   15840:	940fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15844:	f65ff06f          	jal	zero,157a8 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x74>
 	_M_dispose();
-   14ad0:	601c                	c.ld	a5,0(s0)
-   14ad2:	6b9c                	c.ld	a5,16(a5)
-   14ad4:	8522                	c.mv	a0,s0
-   14ad6:	9782                	c.jalr	a5
+   15848:	00043783          	ld	a5,0(s0)
+   1584c:	0107b783          	ld	a5,16(a5)
+   15850:	00040513          	addi	a0,s0,0
+   15854:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   14ad8:	0ff0000f          	fence	iorw,iorw
+   15858:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   14adc:	00005797          	auipc	a5,0x5
-   14ae0:	7647b783          	ld	a5,1892(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14ae4:	0007c783          	lbu	a5,0(a5)
-   14ae8:	cf89                	c.beqz	a5,14b02 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xf4>
+   1585c:	00007797          	auipc	a5,0x7
+   15860:	9e47b783          	ld	a5,-1564(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15864:	0007c783          	lbu	a5,0(a5)
+   15868:	02078663          	beq	a5,zero,15894 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x160>
     _Atomic_word __result = *__mem;
-   14aea:	5848                	c.lw	a0,52(s0)
+   1586c:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   14aec:	fff5079b          	addiw	a5,a0,-1
-   14af0:	d85c                	c.sw	a5,52(s0)
+   15870:	fff5079b          	addiw	a5,a0,-1
+   15874:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   14af2:	4785                	c.li	a5,1
-   14af4:	f6f517e3          	bne	a0,a5,14a62 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x54>
+   15878:	00100793          	addi	a5,zero,1
+   1587c:	f2f51ae3          	bne	a0,a5,157b0 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x7c>
 	    _M_destroy();
-   14af8:	601c                	c.ld	a5,0(s0)
-   14afa:	6f9c                	c.ld	a5,24(a5)
-   14afc:	8522                	c.mv	a0,s0
-   14afe:	9782                	c.jalr	a5
-   14b00:	b78d                	c.j	14a62 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x54>
+   15880:	00043783          	ld	a5,0(s0)
+   15884:	0187b783          	ld	a5,24(a5)
+   15888:	00040513          	addi	a0,s0,0
+   1588c:	000780e7          	jalr	ra,0(a5)
+   15890:	f21ff06f          	jal	zero,157b0 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x7c>
       return __exchange_and_add(__mem, __val);
-   14b02:	55fd                	c.li	a1,-1
-   14b04:	03440513          	addi	a0,s0,52
-   14b08:	e79fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14b0c:	b7dd                	c.j	14af2 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0xe4>
+   15894:	fff00593          	addi	a1,zero,-1
+   15898:	03440513          	addi	a0,s0,52
+   1589c:	8e4fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   158a0:	fd9ff06f          	jal	zero,15878 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x144>
     _Atomic_word __result = *__mem;
-   14b0e:	5888                	c.lw	a0,48(s1)
+   158a4:	0304a503          	lw	a0,48(s1)
     *__mem += __val;
-   14b10:	fff5079b          	addiw	a5,a0,-1
-   14b14:	d89c                	c.sw	a5,48(s1)
+   158a8:	fff5079b          	addiw	a5,a0,-1
+   158ac:	02f4a823          	sw	a5,48(s1)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   14b16:	03450063          	beq	a0,s4,14b36 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x128>
-   14b1a:	0441                	c.addi	s0,16
-   14b1c:	04898c63          	beq	s3,s0,14b74 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x166>
+   158b0:	03450663          	beq	a0,s4,158dc <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x1a8>
+   158b4:	01040413          	addi	s0,s0,16
+   158b8:	08898063          	beq	s3,s0,15938 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x204>
 	if (_M_pi != nullptr)
-   14b20:	6404                	c.ld	s1,8(s0)
-   14b22:	dce5                	c.beqz	s1,14b1a <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x10c>
+   158bc:	00843483          	ld	s1,8(s0)
+   158c0:	fe048ae3          	beq	s1,zero,158b4 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x180>
     if (__is_single_threaded())
-   14b24:	000ac783          	lbu	a5,0(s5)
-   14b28:	f3fd                	c.bnez	a5,14b0e <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x100>
+   158c4:	000ac783          	lbu	a5,0(s5)
+   158c8:	fc079ee3          	bne	a5,zero,158a4 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x170>
       return __exchange_and_add(__mem, __val);
-   14b2a:	55fd                	c.li	a1,-1
-   14b2c:	03048513          	addi	a0,s1,48
-   14b30:	e51fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14b34:	b7cd                	c.j	14b16 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x108>
+   158cc:	fff00593          	addi	a1,zero,-1
+   158d0:	03048513          	addi	a0,s1,48
+   158d4:	8acfd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   158d8:	fd9ff06f          	jal	zero,158b0 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x17c>
 	_M_dispose();
-   14b36:	609c                	c.ld	a5,0(s1)
-   14b38:	6b9c                	c.ld	a5,16(a5)
-   14b3a:	8526                	c.mv	a0,s1
-   14b3c:	9782                	c.jalr	a5
+   158dc:	0004b783          	ld	a5,0(s1)
+   158e0:	0107b783          	ld	a5,16(a5)
+   158e4:	00048513          	addi	a0,s1,0
+   158e8:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   14b3e:	0ff0000f          	fence	iorw,iorw
+   158ec:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   14b42:	00005797          	auipc	a5,0x5
-   14b46:	6fe7b783          	ld	a5,1790(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14b4a:	0007c783          	lbu	a5,0(a5)
-   14b4e:	cf89                	c.beqz	a5,14b68 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x15a>
+   158f0:	00007797          	auipc	a5,0x7
+   158f4:	9507b783          	ld	a5,-1712(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   158f8:	0007c783          	lbu	a5,0(a5)
+   158fc:	02078663          	beq	a5,zero,15928 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x1f4>
     _Atomic_word __result = *__mem;
-   14b50:	58c8                	c.lw	a0,52(s1)
+   15900:	0344a503          	lw	a0,52(s1)
     *__mem += __val;
-   14b52:	fff5079b          	addiw	a5,a0,-1
-   14b56:	d8dc                	c.sw	a5,52(s1)
+   15904:	fff5079b          	addiw	a5,a0,-1
+   15908:	02f4aa23          	sw	a5,52(s1)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   14b58:	4785                	c.li	a5,1
-   14b5a:	fcf510e3          	bne	a0,a5,14b1a <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x10c>
+   1590c:	00100793          	addi	a5,zero,1
+   15910:	faf512e3          	bne	a0,a5,158b4 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x180>
 	    _M_destroy();
-   14b5e:	609c                	c.ld	a5,0(s1)
-   14b60:	6f9c                	c.ld	a5,24(a5)
-   14b62:	8526                	c.mv	a0,s1
-   14b64:	9782                	c.jalr	a5
-   14b66:	bf55                	c.j	14b1a <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x10c>
+   15914:	0004b783          	ld	a5,0(s1)
+   15918:	0187b783          	ld	a5,24(a5)
+   1591c:	00048513          	addi	a0,s1,0
+   15920:	000780e7          	jalr	ra,0(a5)
+   15924:	f91ff06f          	jal	zero,158b4 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x180>
       return __exchange_and_add(__mem, __val);
-   14b68:	55fd                	c.li	a1,-1
-   14b6a:	03448513          	addi	a0,s1,52
-   14b6e:	e13fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14b72:	b7dd                	c.j	14b58 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x14a>
+   15928:	fff00593          	addi	a1,zero,-1
+   1592c:	03448513          	addi	a0,s1,52
+   15930:	850fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15934:	fd9ff06f          	jal	zero,1590c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x1d8>
 	_M_deallocate(_M_impl._M_start,
-   14b74:	0a093503          	ld	a0,160(s2)
+   15938:	0a093503          	ld	a0,160(s2)
 	if (__p)
-   14b78:	c119                	c.beqz	a0,14b7e <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x170>
-   14b7a:	ef7fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   1593c:	00050463          	beq	a0,zero,15944 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x210>
+   15940:	930fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
 	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
-   14b7e:	08893403          	ld	s0,136(s2)
-   14b82:	09093983          	ld	s3,144(s2)
-   14b86:	07340b63          	beq	s0,s3,14bfc <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x1ee>
+   15944:	08893403          	ld	s0,136(s2)
+   15948:	09093983          	ld	s3,144(s2)
+   1594c:	0b340463          	beq	s0,s3,159f4 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2c0>
     return ::__libc_single_threaded;
-   14b8a:	00005a97          	auipc	s5,0x5
-   14b8e:	6b6aba83          	ld	s5,1718(s5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15950:	00007a97          	auipc	s5,0x7
+   15954:	8f0aba83          	ld	s5,-1808(s5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   14b92:	4a05                	c.li	s4,1
-   14b94:	a811                	c.j	14ba8 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x19a>
+   15958:	00100a13          	addi	s4,zero,1
+   1595c:	01c0006f          	jal	zero,15978 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x244>
     _Atomic_word __result = *__mem;
-   14b96:	5888                	c.lw	a0,48(s1)
+   15960:	0304a503          	lw	a0,48(s1)
     *__mem += __val;
-   14b98:	fff5079b          	addiw	a5,a0,-1
-   14b9c:	d89c                	c.sw	a5,48(s1)
-   14b9e:	03450063          	beq	a0,s4,14bbe <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x1b0>
-   14ba2:	0441                	c.addi	s0,16
-   14ba4:	04898c63          	beq	s3,s0,14bfc <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x1ee>
+   15964:	fff5079b          	addiw	a5,a0,-1
+   15968:	02f4a823          	sw	a5,48(s1)
+   1596c:	03450663          	beq	a0,s4,15998 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x264>
+   15970:	01040413          	addi	s0,s0,16
+   15974:	08898063          	beq	s3,s0,159f4 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2c0>
 	if (_M_pi != nullptr)
-   14ba8:	6404                	c.ld	s1,8(s0)
-   14baa:	dce5                	c.beqz	s1,14ba2 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x194>
+   15978:	00843483          	ld	s1,8(s0)
+   1597c:	fe048ae3          	beq	s1,zero,15970 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x23c>
     if (__is_single_threaded())
-   14bac:	000ac783          	lbu	a5,0(s5)
-   14bb0:	f3fd                	c.bnez	a5,14b96 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x188>
+   15980:	000ac783          	lbu	a5,0(s5)
+   15984:	fc079ee3          	bne	a5,zero,15960 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x22c>
       return __exchange_and_add(__mem, __val);
-   14bb2:	55fd                	c.li	a1,-1
-   14bb4:	03048513          	addi	a0,s1,48
-   14bb8:	dc9fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14bbc:	b7cd                	c.j	14b9e <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x190>
+   15988:	fff00593          	addi	a1,zero,-1
+   1598c:	03048513          	addi	a0,s1,48
+   15990:	ff1fc0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15994:	fd9ff06f          	jal	zero,1596c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x238>
 	_M_dispose();
-   14bbe:	609c                	c.ld	a5,0(s1)
-   14bc0:	6b9c                	c.ld	a5,16(a5)
-   14bc2:	8526                	c.mv	a0,s1
-   14bc4:	9782                	c.jalr	a5
+   15998:	0004b783          	ld	a5,0(s1)
+   1599c:	0107b783          	ld	a5,16(a5)
+   159a0:	00048513          	addi	a0,s1,0
+   159a4:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   14bc6:	0ff0000f          	fence	iorw,iorw
+   159a8:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   14bca:	00005797          	auipc	a5,0x5
-   14bce:	6767b783          	ld	a5,1654(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14bd2:	0007c783          	lbu	a5,0(a5)
-   14bd6:	cf89                	c.beqz	a5,14bf0 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x1e2>
+   159ac:	00007797          	auipc	a5,0x7
+   159b0:	8947b783          	ld	a5,-1900(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   159b4:	0007c783          	lbu	a5,0(a5)
+   159b8:	02078663          	beq	a5,zero,159e4 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2b0>
     _Atomic_word __result = *__mem;
-   14bd8:	58c8                	c.lw	a0,52(s1)
+   159bc:	0344a503          	lw	a0,52(s1)
     *__mem += __val;
-   14bda:	fff5079b          	addiw	a5,a0,-1
-   14bde:	d8dc                	c.sw	a5,52(s1)
+   159c0:	fff5079b          	addiw	a5,a0,-1
+   159c4:	02f4aa23          	sw	a5,52(s1)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   14be0:	4785                	c.li	a5,1
-   14be2:	fcf510e3          	bne	a0,a5,14ba2 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x194>
+   159c8:	00100793          	addi	a5,zero,1
+   159cc:	faf512e3          	bne	a0,a5,15970 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x23c>
 	    _M_destroy();
-   14be6:	609c                	c.ld	a5,0(s1)
-   14be8:	6f9c                	c.ld	a5,24(a5)
-   14bea:	8526                	c.mv	a0,s1
-   14bec:	9782                	c.jalr	a5
-   14bee:	bf55                	c.j	14ba2 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x194>
+   159d0:	0004b783          	ld	a5,0(s1)
+   159d4:	0187b783          	ld	a5,24(a5)
+   159d8:	00048513          	addi	a0,s1,0
+   159dc:	000780e7          	jalr	ra,0(a5)
+   159e0:	f91ff06f          	jal	zero,15970 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x23c>
       return __exchange_and_add(__mem, __val);
-   14bf0:	55fd                	c.li	a1,-1
-   14bf2:	03448513          	addi	a0,s1,52
-   14bf6:	d8bfd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14bfa:	b7dd                	c.j	14be0 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x1d2>
+   159e4:	fff00593          	addi	a1,zero,-1
+   159e8:	03448513          	addi	a0,s1,52
+   159ec:	f95fc0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   159f0:	fd9ff06f          	jal	zero,159c8 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x294>
 	_M_deallocate(_M_impl._M_start,
-   14bfc:	08893503          	ld	a0,136(s2)
+   159f4:	08893503          	ld	a0,136(s2)
 	if (__p)
-   14c00:	c119                	c.beqz	a0,14c06 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x1f8>
-   14c02:	e6ffd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   159f8:	00050463          	beq	a0,zero,15a00 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2cc>
+   159fc:	874fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
 	if (_M_pi != nullptr)
-   14c06:	04093403          	ld	s0,64(s2)
-   14c0a:	cc19                	c.beqz	s0,14c28 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x21a>
+   15a00:	04093403          	ld	s0,64(s2)
+   15a04:	02040463          	beq	s0,zero,15a2c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2f8>
     if (__is_single_threaded())
-   14c0c:	00005797          	auipc	a5,0x5
-   14c10:	6347b783          	ld	a5,1588(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14c14:	0007c783          	lbu	a5,0(a5)
-   14c18:	c38d                	c.beqz	a5,14c3a <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x22c>
+   15a08:	00007797          	auipc	a5,0x7
+   15a0c:	8387b783          	ld	a5,-1992(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15a10:	0007c783          	lbu	a5,0(a5)
+   15a14:	02078e63          	beq	a5,zero,15a50 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x31c>
     _Atomic_word __result = *__mem;
-   14c1a:	5808                	c.lw	a0,48(s0)
+   15a18:	03042503          	lw	a0,48(s0)
     *__mem += __val;
-   14c1c:	fff5079b          	addiw	a5,a0,-1
-   14c20:	d81c                	c.sw	a5,48(s0)
+   15a1c:	fff5079b          	addiw	a5,a0,-1
+   15a20:	02f42823          	sw	a5,48(s0)
       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-   14c22:	4785                	c.li	a5,1
-   14c24:	02f50163          	beq	a0,a5,14c46 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x238>
+   15a24:	00100793          	addi	a5,zero,1
+   15a28:	02f50c63          	beq	a0,a5,15a60 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x32c>
       }
-   14c28:	70e2                	c.ldsp	ra,56(sp)
-   14c2a:	7442                	c.ldsp	s0,48(sp)
-   14c2c:	74a2                	c.ldsp	s1,40(sp)
-   14c2e:	7902                	c.ldsp	s2,32(sp)
-   14c30:	69e2                	c.ldsp	s3,24(sp)
-   14c32:	6a42                	c.ldsp	s4,16(sp)
-   14c34:	6aa2                	c.ldsp	s5,8(sp)
-   14c36:	6121                	c.addi16sp	sp,64
-   14c38:	8082                	c.jr	ra
+   15a2c:	03813083          	ld	ra,56(sp)
+   15a30:	03013403          	ld	s0,48(sp)
+   15a34:	02813483          	ld	s1,40(sp)
+   15a38:	02013903          	ld	s2,32(sp)
+   15a3c:	01813983          	ld	s3,24(sp)
+   15a40:	01013a03          	ld	s4,16(sp)
+   15a44:	00813a83          	ld	s5,8(sp)
+   15a48:	04010113          	addi	sp,sp,64
+   15a4c:	00008067          	jalr	zero,0(ra)
       return __exchange_and_add(__mem, __val);
-   14c3a:	55fd                	c.li	a1,-1
-   14c3c:	03040513          	addi	a0,s0,48
-   14c40:	d41fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14c44:	bff9                	c.j	14c22 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x214>
+   15a50:	fff00593          	addi	a1,zero,-1
+   15a54:	03040513          	addi	a0,s0,48
+   15a58:	f29fc0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15a5c:	fc9ff06f          	jal	zero,15a24 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2f0>
 	_M_dispose();
-   14c46:	601c                	c.ld	a5,0(s0)
-   14c48:	6b9c                	c.ld	a5,16(a5)
-   14c4a:	8522                	c.mv	a0,s0
-   14c4c:	9782                	c.jalr	a5
+   15a60:	00043783          	ld	a5,0(s0)
+   15a64:	0107b783          	ld	a5,16(a5)
+   15a68:	00040513          	addi	a0,s0,0
+   15a6c:	000780e7          	jalr	ra,0(a5)
 	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
-   14c4e:	0ff0000f          	fence	iorw,iorw
+   15a70:	0ff0000f          	fence	iorw,iorw
     if (__is_single_threaded())
-   14c52:	00005797          	auipc	a5,0x5
-   14c56:	5ee7b783          	ld	a5,1518(a5) # 1a240 <__libc_single_threaded@GLIBC_2.32-0x78>
-   14c5a:	0007c783          	lbu	a5,0(a5)
-   14c5e:	cf89                	c.beqz	a5,14c78 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x26a>
+   15a74:	00006797          	auipc	a5,0x6
+   15a78:	7cc7b783          	ld	a5,1996(a5) # 1c240 <__libc_single_threaded@GLIBC_2.32-0x78>
+   15a7c:	0007c783          	lbu	a5,0(a5)
+   15a80:	02078663          	beq	a5,zero,15aac <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x378>
     _Atomic_word __result = *__mem;
-   14c60:	5848                	c.lw	a0,52(s0)
+   15a84:	03442503          	lw	a0,52(s0)
     *__mem += __val;
-   14c62:	fff5079b          	addiw	a5,a0,-1
-   14c66:	d85c                	c.sw	a5,52(s0)
+   15a88:	fff5079b          	addiw	a5,a0,-1
+   15a8c:	02f42a23          	sw	a5,52(s0)
 	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
-   14c68:	4785                	c.li	a5,1
-   14c6a:	faf51fe3          	bne	a0,a5,14c28 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x21a>
+   15a90:	00100793          	addi	a5,zero,1
+   15a94:	f8f51ce3          	bne	a0,a5,15a2c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2f8>
 	    _M_destroy();
-   14c6e:	601c                	c.ld	a5,0(s0)
-   14c70:	6f9c                	c.ld	a5,24(a5)
-   14c72:	8522                	c.mv	a0,s0
-   14c74:	9782                	c.jalr	a5
+   15a98:	00043783          	ld	a5,0(s0)
+   15a9c:	0187b783          	ld	a5,24(a5)
+   15aa0:	00040513          	addi	a0,s0,0
+   15aa4:	000780e7          	jalr	ra,0(a5)
       }
-   14c76:	bf4d                	c.j	14c28 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x21a>
+   15aa8:	f85ff06f          	jal	zero,15a2c <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x2f8>
       return __exchange_and_add(__mem, __val);
-   14c78:	55fd                	c.li	a1,-1
-   14c7a:	03440513          	addi	a0,s0,52
-   14c7e:	d03fd0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
-   14c82:	b7dd                	c.j	14c68 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x25a>
+   15aac:	fff00593          	addi	a1,zero,-1
+   15ab0:	03440513          	addi	a0,s0,52
+   15ab4:	ecdfc0ef          	jal	ra,12980 <__gnu_cxx::__exchange_and_add(int volatile*, int)@plt>
+   15ab8:	fd9ff06f          	jal	zero,15a90 <std::_Sp_counted_ptr_inplace<elf::elf::impl, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x35c>
 
-0000000000014c84 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)>:
+0000000000015abc <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)>:
 void canon_hdr(Hdr<Elf64, byte_order::native> *out, const void *data,
-   14c84:	1101                	c.addi	sp,-32
-   14c86:	ec06                	c.sdsp	ra,24(sp)
-   14c88:	e822                	c.sdsp	s0,16(sp)
-   14c8a:	e426                	c.sdsp	s1,8(sp)
-   14c8c:	84aa                	c.mv	s1,a0
-   14c8e:	842e                	c.mv	s0,a1
+   15abc:	fe010113          	addi	sp,sp,-32
+   15ac0:	00113c23          	sd	ra,24(sp)
+   15ac4:	00813823          	sd	s0,16(sp)
+   15ac8:	00913423          	sd	s1,8(sp)
+   15acc:	00050493          	addi	s1,a0,0
+   15ad0:	00058413          	addi	s0,a1,0
   switch (ei_class) {
-   14c90:	4785                	c.li	a5,1
-   14c92:	00f60a63          	beq	a2,a5,14ca6 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x22>
-   14c96:	4789                	c.li	a5,2
-   14c98:	22f60e63          	beq	a2,a5,14ed4 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x250>
+   15ad4:	00100793          	addi	a5,zero,1
+   15ad8:	02f60063          	beq	a2,a5,15af8 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x3c>
+   15adc:	00200793          	addi	a5,zero,2
+   15ae0:	28f60663          	beq	a2,a5,15d6c <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x2b0>
 }
-   14c9c:	60e2                	c.ldsp	ra,24(sp)
-   14c9e:	6442                	c.ldsp	s0,16(sp)
-   14ca0:	64a2                	c.ldsp	s1,8(sp)
-   14ca2:	6105                	c.addi16sp	sp,32
-   14ca4:	8082                	c.jr	ra
-   14ca6:	4785                	c.li	a5,1
-   14ca8:	14f68863          	beq	a3,a5,14df8 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x174>
-   14cac:	4789                	c.li	a5,2
-   14cae:	fef697e3          	bne	a3,a5,14c9c <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   15ae4:	01813083          	ld	ra,24(sp)
+   15ae8:	01013403          	ld	s0,16(sp)
+   15aec:	00813483          	ld	s1,8(sp)
+   15af0:	02010113          	addi	sp,sp,32
+   15af4:	00008067          	jalr	zero,0(ra)
+   15af8:	00100793          	addi	a5,zero,1
+   15afc:	18f68263          	beq	a3,a5,15c80 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x1c4>
+   15b00:	00200793          	addi	a5,zero,2
+   15b04:	fef690e3          	bne	a3,a5,15ae4 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
   typename E::Half shentsize; // Size of section header entry
   typename E::Half shnum;     // Number of section header entries
   typename E::Half shstrndx;  // Section name string table index
 
   template <typename E2> void from(const E2 &o) {
     std::memcpy(ei_magic, o.ei_magic, sizeof(ei_magic));
-   14cb2:	0005c603          	lbu	a2,0(a1)
-   14cb6:	0015c683          	lbu	a3,1(a1)
-   14cba:	0025c703          	lbu	a4,2(a1)
-   14cbe:	0035c783          	lbu	a5,3(a1)
-   14cc2:	00c50023          	sb	a2,0(a0)
-   14cc6:	00d500a3          	sb	a3,1(a0)
-   14cca:	00e50123          	sb	a4,2(a0)
-   14cce:	00f501a3          	sb	a5,3(a0)
+   15b08:	0005c603          	lbu	a2,0(a1)
+   15b0c:	0015c683          	lbu	a3,1(a1)
+   15b10:	0025c703          	lbu	a4,2(a1)
+   15b14:	0035c783          	lbu	a5,3(a1)
+   15b18:	00c50023          	sb	a2,0(a0)
+   15b1c:	00d500a3          	sb	a3,1(a0)
+   15b20:	00e50123          	sb	a4,2(a0)
+   15b24:	00f501a3          	sb	a5,3(a0)
     ei_class = swizzle(o.ei_class, o.order, order);
-   14cd2:	0045c783          	lbu	a5,4(a1)
-   14cd6:	00f50223          	sb	a5,4(a0)
+   15b28:	0045c783          	lbu	a5,4(a1)
+   15b2c:	00f50223          	sb	a5,4(a0)
     ei_data = swizzle(o.ei_data, o.order, order);
-   14cda:	0055c783          	lbu	a5,5(a1)
-   14cde:	00f502a3          	sb	a5,5(a0)
+   15b30:	0055c783          	lbu	a5,5(a1)
+   15b34:	00f502a3          	sb	a5,5(a0)
     ei_version = swizzle(o.ei_version, o.order, order);
-   14ce2:	0065c783          	lbu	a5,6(a1)
-   14ce6:	00f50323          	sb	a5,6(a0)
+   15b38:	0065c783          	lbu	a5,6(a1)
+   15b3c:	00f50323          	sb	a5,6(a0)
     ei_osabi = swizzle(o.ei_osabi, o.order, order);
-   14cea:	0075c783          	lbu	a5,7(a1)
-   14cee:	00f503a3          	sb	a5,7(a0)
+   15b40:	0075c783          	lbu	a5,7(a1)
+   15b44:	00f503a3          	sb	a5,7(a0)
     ei_abiversion = swizzle(o.ei_abiversion, o.order, order);
-   14cf2:	0085c783          	lbu	a5,8(a1)
-   14cf6:	00f50423          	sb	a5,8(a0)
+   15b48:	0085c783          	lbu	a5,8(a1)
+   15b4c:	00f50423          	sb	a5,8(a0)
     std::memcpy(ei_pad, o.ei_pad, sizeof(ei_pad));
-   14cfa:	0095c883          	lbu	a7,9(a1)
-   14cfe:	00a5c803          	lbu	a6,10(a1)
-   14d02:	00b5c503          	lbu	a0,11(a1)
-   14d06:	00c5c583          	lbu	a1,12(a1)
-   14d0a:	00d44603          	lbu	a2,13(s0)
-   14d0e:	00e44683          	lbu	a3,14(s0)
-   14d12:	00f44703          	lbu	a4,15(s0)
-   14d16:	011484a3          	sb	a7,9(s1)
-   14d1a:	01048523          	sb	a6,10(s1)
-   14d1e:	00a485a3          	sb	a0,11(s1)
-   14d22:	00b48623          	sb	a1,12(s1)
-   14d26:	00c486a3          	sb	a2,13(s1)
-   14d2a:	00d48723          	sb	a3,14(s1)
-   14d2e:	00e487a3          	sb	a4,15(s1)
+   15b50:	0095c883          	lbu	a7,9(a1)
+   15b54:	00a5c803          	lbu	a6,10(a1)
+   15b58:	00b5c503          	lbu	a0,11(a1)
+   15b5c:	00c5c583          	lbu	a1,12(a1)
+   15b60:	00d44603          	lbu	a2,13(s0)
+   15b64:	00e44683          	lbu	a3,14(s0)
+   15b68:	00f44703          	lbu	a4,15(s0)
+   15b6c:	011484a3          	sb	a7,9(s1)
+   15b70:	01048523          	sb	a6,10(s1)
+   15b74:	00a485a3          	sb	a0,11(s1)
+   15b78:	00b48623          	sb	a1,12(s1)
+   15b7c:	00c486a3          	sb	a2,13(s1)
+   15b80:	00d48723          	sb	a3,14(s1)
+   15b84:	00e487a3          	sb	a4,15(s1)
 
     type = swizzle(o.type, o.order, order);
-   14d32:	01045783          	lhu	a5,16(s0)
+   15b88:	01045783          	lhu	a5,16(s0)
   switch (sizeof(T)) {
   case 1:
     return v;
   case 2: {
     std::uint16_t x = (std::uint16_t)v;
     return (T)(((x & 0xFF) << 8) | (x >> 8));
-   14d36:	0087d71b          	srliw	a4,a5,0x8
-   14d3a:	0087979b          	slliw	a5,a5,0x8
-   14d3e:	8fd9                	c.or	a5,a4
-   14d40:	00f49823          	sh	a5,16(s1)
+   15b8c:	0087d71b          	srliw	a4,a5,0x8
+   15b90:	0087979b          	slliw	a5,a5,0x8
+   15b94:	00f767b3          	or	a5,a4,a5
+   15b98:	00f49823          	sh	a5,16(s1)
     machine = swizzle(o.machine, o.order, order);
-   14d44:	01245783          	lhu	a5,18(s0)
-   14d48:	0087d71b          	srliw	a4,a5,0x8
-   14d4c:	0087979b          	slliw	a5,a5,0x8
-   14d50:	8fd9                	c.or	a5,a4
-   14d52:	00f49923          	sh	a5,18(s1)
+   15b9c:	01245783          	lhu	a5,18(s0)
+   15ba0:	0087d71b          	srliw	a4,a5,0x8
+   15ba4:	0087979b          	slliw	a5,a5,0x8
+   15ba8:	00f767b3          	or	a5,a4,a5
+   15bac:	00f49923          	sh	a5,18(s1)
   }
   case 4:
     return (T)__builtin_bswap32((std::uint32_t)v);
-   14d56:	4848                	c.lw	a0,20(s0)
-   14d58:	c19fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   15bb0:	01442503          	lw	a0,20(s0)
+   15bb4:	dbdfc0ef          	jal	ra,12970 <__bswapsi2@plt>
     version = swizzle(o.version, o.order, order);
-   14d5c:	c8c8                	c.sw	a0,20(s1)
-   14d5e:	4c08                	c.lw	a0,24(s0)
-   14d60:	c11fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   15bb8:	00a4aa23          	sw	a0,20(s1)
+   15bbc:	01842503          	lw	a0,24(s0)
+   15bc0:	db1fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     entry = swizzle(o.entry, o.order, order);
-   14d64:	1502                	c.slli	a0,0x20
-   14d66:	9101                	c.srli	a0,0x20
-   14d68:	ec88                	c.sd	a0,24(s1)
-   14d6a:	4c48                	c.lw	a0,28(s0)
-   14d6c:	c05fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   15bc4:	02051513          	slli	a0,a0,0x20
+   15bc8:	02055513          	srli	a0,a0,0x20
+   15bcc:	00a4bc23          	sd	a0,24(s1)
+   15bd0:	01c42503          	lw	a0,28(s0)
+   15bd4:	d9dfc0ef          	jal	ra,12970 <__bswapsi2@plt>
     phoff = swizzle(o.phoff, o.order, order);
-   14d70:	1502                	c.slli	a0,0x20
-   14d72:	9101                	c.srli	a0,0x20
-   14d74:	f088                	c.sd	a0,32(s1)
-   14d76:	5008                	c.lw	a0,32(s0)
-   14d78:	bf9fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   15bd8:	02051513          	slli	a0,a0,0x20
+   15bdc:	02055513          	srli	a0,a0,0x20
+   15be0:	02a4b023          	sd	a0,32(s1)
+   15be4:	02042503          	lw	a0,32(s0)
+   15be8:	d89fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     shoff = swizzle(o.shoff, o.order, order);
-   14d7c:	1502                	c.slli	a0,0x20
-   14d7e:	9101                	c.srli	a0,0x20
-   14d80:	f488                	c.sd	a0,40(s1)
-   14d82:	5048                	c.lw	a0,36(s0)
-   14d84:	bedfd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   15bec:	02051513          	slli	a0,a0,0x20
+   15bf0:	02055513          	srli	a0,a0,0x20
+   15bf4:	02a4b423          	sd	a0,40(s1)
+   15bf8:	02442503          	lw	a0,36(s0)
+   15bfc:	d75fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     flags = swizzle(o.flags, o.order, order);
-   14d88:	d888                	c.sw	a0,48(s1)
+   15c00:	02a4a823          	sw	a0,48(s1)
     ehsize = swizzle(o.ehsize, o.order, order);
-   14d8a:	02845783          	lhu	a5,40(s0)
+   15c04:	02845783          	lhu	a5,40(s0)
     return (T)(((x & 0xFF) << 8) | (x >> 8));
-   14d8e:	0087d71b          	srliw	a4,a5,0x8
-   14d92:	0087979b          	slliw	a5,a5,0x8
-   14d96:	8fd9                	c.or	a5,a4
-   14d98:	02f49a23          	sh	a5,52(s1)
+   15c08:	0087d71b          	srliw	a4,a5,0x8
+   15c0c:	0087979b          	slliw	a5,a5,0x8
+   15c10:	00f767b3          	or	a5,a4,a5
+   15c14:	02f49a23          	sh	a5,52(s1)
     phentsize = swizzle(o.phentsize, o.order, order);
-   14d9c:	02a45783          	lhu	a5,42(s0)
-   14da0:	0087d71b          	srliw	a4,a5,0x8
-   14da4:	0087979b          	slliw	a5,a5,0x8
-   14da8:	8fd9                	c.or	a5,a4
-   14daa:	02f49b23          	sh	a5,54(s1)
+   15c18:	02a45783          	lhu	a5,42(s0)
+   15c1c:	0087d71b          	srliw	a4,a5,0x8
+   15c20:	0087979b          	slliw	a5,a5,0x8
+   15c24:	00f767b3          	or	a5,a4,a5
+   15c28:	02f49b23          	sh	a5,54(s1)
     phnum = swizzle(o.phnum, o.order, order);
-   14dae:	02c45783          	lhu	a5,44(s0)
-   14db2:	0087d71b          	srliw	a4,a5,0x8
-   14db6:	0087979b          	slliw	a5,a5,0x8
-   14dba:	8fd9                	c.or	a5,a4
-   14dbc:	02f49c23          	sh	a5,56(s1)
+   15c2c:	02c45783          	lhu	a5,44(s0)
+   15c30:	0087d71b          	srliw	a4,a5,0x8
+   15c34:	0087979b          	slliw	a5,a5,0x8
+   15c38:	00f767b3          	or	a5,a4,a5
+   15c3c:	02f49c23          	sh	a5,56(s1)
     shentsize = swizzle(o.shentsize, o.order, order);
-   14dc0:	02e45783          	lhu	a5,46(s0)
-   14dc4:	0087d71b          	srliw	a4,a5,0x8
-   14dc8:	0087979b          	slliw	a5,a5,0x8
-   14dcc:	8fd9                	c.or	a5,a4
-   14dce:	02f49d23          	sh	a5,58(s1)
+   15c40:	02e45783          	lhu	a5,46(s0)
+   15c44:	0087d71b          	srliw	a4,a5,0x8
+   15c48:	0087979b          	slliw	a5,a5,0x8
+   15c4c:	00f767b3          	or	a5,a4,a5
+   15c50:	02f49d23          	sh	a5,58(s1)
     shnum = swizzle(o.shnum, o.order, order);
-   14dd2:	03045783          	lhu	a5,48(s0)
-   14dd6:	0087d71b          	srliw	a4,a5,0x8
-   14dda:	0087979b          	slliw	a5,a5,0x8
-   14dde:	8fd9                	c.or	a5,a4
-   14de0:	02f49e23          	sh	a5,60(s1)
+   15c54:	03045783          	lhu	a5,48(s0)
+   15c58:	0087d71b          	srliw	a4,a5,0x8
+   15c5c:	0087979b          	slliw	a5,a5,0x8
+   15c60:	00f767b3          	or	a5,a4,a5
+   15c64:	02f49e23          	sh	a5,60(s1)
     shstrndx = swizzle(o.shstrndx, o.order, order);
-   14de4:	03245783          	lhu	a5,50(s0)
-   14de8:	0087d71b          	srliw	a4,a5,0x8
-   14dec:	0087979b          	slliw	a5,a5,0x8
-   14df0:	8fd9                	c.or	a5,a4
-   14df2:	02f49f23          	sh	a5,62(s1)
+   15c68:	03245783          	lhu	a5,50(s0)
+   15c6c:	0087d71b          	srliw	a4,a5,0x8
+   15c70:	0087979b          	slliw	a5,a5,0x8
+   15c74:	00f767b3          	or	a5,a4,a5
+   15c78:	02f49f23          	sh	a5,62(s1)
   }
-   14df6:	b55d                	c.j	14c9c <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   15c7c:	e69ff06f          	jal	zero,15ae4 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     std::memcpy(ei_magic, o.ei_magic, sizeof(ei_magic));
-   14df8:	0005c603          	lbu	a2,0(a1)
-   14dfc:	0015c683          	lbu	a3,1(a1)
-   14e00:	0025c703          	lbu	a4,2(a1)
-   14e04:	0035c783          	lbu	a5,3(a1)
-   14e08:	00c50023          	sb	a2,0(a0)
-   14e0c:	00d500a3          	sb	a3,1(a0)
-   14e10:	00e50123          	sb	a4,2(a0)
-   14e14:	00f501a3          	sb	a5,3(a0)
+   15c80:	0005c603          	lbu	a2,0(a1)
+   15c84:	0015c683          	lbu	a3,1(a1)
+   15c88:	0025c703          	lbu	a4,2(a1)
+   15c8c:	0035c783          	lbu	a5,3(a1)
+   15c90:	00c50023          	sb	a2,0(a0)
+   15c94:	00d500a3          	sb	a3,1(a0)
+   15c98:	00e50123          	sb	a4,2(a0)
+   15c9c:	00f501a3          	sb	a5,3(a0)
     ei_class = swizzle(o.ei_class, o.order, order);
-   14e18:	0045c783          	lbu	a5,4(a1)
-   14e1c:	00f50223          	sb	a5,4(a0)
+   15ca0:	0045c783          	lbu	a5,4(a1)
+   15ca4:	00f50223          	sb	a5,4(a0)
     ei_data = swizzle(o.ei_data, o.order, order);
-   14e20:	0055c783          	lbu	a5,5(a1)
-   14e24:	00f502a3          	sb	a5,5(a0)
+   15ca8:	0055c783          	lbu	a5,5(a1)
+   15cac:	00f502a3          	sb	a5,5(a0)
     ei_version = swizzle(o.ei_version, o.order, order);
-   14e28:	0065c783          	lbu	a5,6(a1)
-   14e2c:	00f50323          	sb	a5,6(a0)
+   15cb0:	0065c783          	lbu	a5,6(a1)
+   15cb4:	00f50323          	sb	a5,6(a0)
     ei_osabi = swizzle(o.ei_osabi, o.order, order);
-   14e30:	0075c783          	lbu	a5,7(a1)
-   14e34:	00f503a3          	sb	a5,7(a0)
+   15cb8:	0075c783          	lbu	a5,7(a1)
+   15cbc:	00f503a3          	sb	a5,7(a0)
     ei_abiversion = swizzle(o.ei_abiversion, o.order, order);
-   14e38:	0085c783          	lbu	a5,8(a1)
-   14e3c:	00f50423          	sb	a5,8(a0)
+   15cc0:	0085c783          	lbu	a5,8(a1)
+   15cc4:	00f50423          	sb	a5,8(a0)
     std::memcpy(ei_pad, o.ei_pad, sizeof(ei_pad));
-   14e40:	0095c883          	lbu	a7,9(a1)
-   14e44:	00a5c803          	lbu	a6,10(a1)
-   14e48:	00b5c503          	lbu	a0,11(a1)
-   14e4c:	00c5c583          	lbu	a1,12(a1)
-   14e50:	00d44603          	lbu	a2,13(s0)
-   14e54:	00e44683          	lbu	a3,14(s0)
-   14e58:	00f44703          	lbu	a4,15(s0)
-   14e5c:	011484a3          	sb	a7,9(s1)
-   14e60:	01048523          	sb	a6,10(s1)
-   14e64:	00a485a3          	sb	a0,11(s1)
-   14e68:	00b48623          	sb	a1,12(s1)
-   14e6c:	00c486a3          	sb	a2,13(s1)
-   14e70:	00d48723          	sb	a3,14(s1)
-   14e74:	00e487a3          	sb	a4,15(s1)
+   15cc8:	0095c883          	lbu	a7,9(a1)
+   15ccc:	00a5c803          	lbu	a6,10(a1)
+   15cd0:	00b5c503          	lbu	a0,11(a1)
+   15cd4:	00c5c583          	lbu	a1,12(a1)
+   15cd8:	00d44603          	lbu	a2,13(s0)
+   15cdc:	00e44683          	lbu	a3,14(s0)
+   15ce0:	00f44703          	lbu	a4,15(s0)
+   15ce4:	011484a3          	sb	a7,9(s1)
+   15ce8:	01048523          	sb	a6,10(s1)
+   15cec:	00a485a3          	sb	a0,11(s1)
+   15cf0:	00b48623          	sb	a1,12(s1)
+   15cf4:	00c486a3          	sb	a2,13(s1)
+   15cf8:	00d48723          	sb	a3,14(s1)
+   15cfc:	00e487a3          	sb	a4,15(s1)
     type = swizzle(o.type, o.order, order);
-   14e78:	01045783          	lhu	a5,16(s0)
-   14e7c:	00f49823          	sh	a5,16(s1)
+   15d00:	01045783          	lhu	a5,16(s0)
+   15d04:	00f49823          	sh	a5,16(s1)
     machine = swizzle(o.machine, o.order, order);
-   14e80:	01245783          	lhu	a5,18(s0)
-   14e84:	00f49923          	sh	a5,18(s1)
+   15d08:	01245783          	lhu	a5,18(s0)
+   15d0c:	00f49923          	sh	a5,18(s1)
     version = swizzle(o.version, o.order, order);
-   14e88:	485c                	c.lw	a5,20(s0)
-   14e8a:	c8dc                	c.sw	a5,20(s1)
+   15d10:	01442783          	lw	a5,20(s0)
+   15d14:	00f4aa23          	sw	a5,20(s1)
     entry = swizzle(o.entry, o.order, order);
-   14e8c:	01846783          	lwu	a5,24(s0)
-   14e90:	ec9c                	c.sd	a5,24(s1)
+   15d18:	01846783          	lwu	a5,24(s0)
+   15d1c:	00f4bc23          	sd	a5,24(s1)
     phoff = swizzle(o.phoff, o.order, order);
-   14e92:	01c46783          	lwu	a5,28(s0)
-   14e96:	f09c                	c.sd	a5,32(s1)
+   15d20:	01c46783          	lwu	a5,28(s0)
+   15d24:	02f4b023          	sd	a5,32(s1)
     shoff = swizzle(o.shoff, o.order, order);
-   14e98:	02046783          	lwu	a5,32(s0)
-   14e9c:	f49c                	c.sd	a5,40(s1)
+   15d28:	02046783          	lwu	a5,32(s0)
+   15d2c:	02f4b423          	sd	a5,40(s1)
     flags = swizzle(o.flags, o.order, order);
-   14e9e:	505c                	c.lw	a5,36(s0)
-   14ea0:	d89c                	c.sw	a5,48(s1)
+   15d30:	02442783          	lw	a5,36(s0)
+   15d34:	02f4a823          	sw	a5,48(s1)
     ehsize = swizzle(o.ehsize, o.order, order);
-   14ea2:	02845783          	lhu	a5,40(s0)
-   14ea6:	02f49a23          	sh	a5,52(s1)
+   15d38:	02845783          	lhu	a5,40(s0)
+   15d3c:	02f49a23          	sh	a5,52(s1)
     phentsize = swizzle(o.phentsize, o.order, order);
-   14eaa:	02a45783          	lhu	a5,42(s0)
-   14eae:	02f49b23          	sh	a5,54(s1)
+   15d40:	02a45783          	lhu	a5,42(s0)
+   15d44:	02f49b23          	sh	a5,54(s1)
     phnum = swizzle(o.phnum, o.order, order);
-   14eb2:	02c45783          	lhu	a5,44(s0)
-   14eb6:	02f49c23          	sh	a5,56(s1)
+   15d48:	02c45783          	lhu	a5,44(s0)
+   15d4c:	02f49c23          	sh	a5,56(s1)
     shentsize = swizzle(o.shentsize, o.order, order);
-   14eba:	02e45783          	lhu	a5,46(s0)
-   14ebe:	02f49d23          	sh	a5,58(s1)
+   15d50:	02e45783          	lhu	a5,46(s0)
+   15d54:	02f49d23          	sh	a5,58(s1)
     shnum = swizzle(o.shnum, o.order, order);
-   14ec2:	03045783          	lhu	a5,48(s0)
-   14ec6:	02f49e23          	sh	a5,60(s1)
+   15d58:	03045783          	lhu	a5,48(s0)
+   15d5c:	02f49e23          	sh	a5,60(s1)
     shstrndx = swizzle(o.shstrndx, o.order, order);
-   14eca:	03245783          	lhu	a5,50(s0)
-   14ece:	02f49f23          	sh	a5,62(s1)
+   15d60:	03245783          	lhu	a5,50(s0)
+   15d64:	02f49f23          	sh	a5,62(s1)
   }
-   14ed2:	b3e9                	c.j	14c9c <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
-   14ed4:	4785                	c.li	a5,1
-   14ed6:	14f68263          	beq	a3,a5,1501a <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x396>
-   14eda:	4789                	c.li	a5,2
-   14edc:	dcf690e3          	bne	a3,a5,14c9c <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   15d68:	d7dff06f          	jal	zero,15ae4 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
+   15d6c:	00100793          	addi	a5,zero,1
+   15d70:	16f68663          	beq	a3,a5,15edc <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x420>
+   15d74:	00200793          	addi	a5,zero,2
+   15d78:	d6f696e3          	bne	a3,a5,15ae4 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     std::memcpy(ei_magic, o.ei_magic, sizeof(ei_magic));
-   14ee0:	0005c603          	lbu	a2,0(a1)
-   14ee4:	0015c683          	lbu	a3,1(a1)
-   14ee8:	0025c703          	lbu	a4,2(a1)
-   14eec:	0035c783          	lbu	a5,3(a1)
-   14ef0:	00c50023          	sb	a2,0(a0)
-   14ef4:	00d500a3          	sb	a3,1(a0)
-   14ef8:	00e50123          	sb	a4,2(a0)
-   14efc:	00f501a3          	sb	a5,3(a0)
+   15d7c:	0005c603          	lbu	a2,0(a1)
+   15d80:	0015c683          	lbu	a3,1(a1)
+   15d84:	0025c703          	lbu	a4,2(a1)
+   15d88:	0035c783          	lbu	a5,3(a1)
+   15d8c:	00c50023          	sb	a2,0(a0)
+   15d90:	00d500a3          	sb	a3,1(a0)
+   15d94:	00e50123          	sb	a4,2(a0)
+   15d98:	00f501a3          	sb	a5,3(a0)
     ei_class = swizzle(o.ei_class, o.order, order);
-   14f00:	0045c783          	lbu	a5,4(a1)
-   14f04:	00f50223          	sb	a5,4(a0)
+   15d9c:	0045c783          	lbu	a5,4(a1)
+   15da0:	00f50223          	sb	a5,4(a0)
     ei_data = swizzle(o.ei_data, o.order, order);
-   14f08:	0055c783          	lbu	a5,5(a1)
-   14f0c:	00f502a3          	sb	a5,5(a0)
+   15da4:	0055c783          	lbu	a5,5(a1)
+   15da8:	00f502a3          	sb	a5,5(a0)
     ei_version = swizzle(o.ei_version, o.order, order);
-   14f10:	0065c783          	lbu	a5,6(a1)
-   14f14:	00f50323          	sb	a5,6(a0)
+   15dac:	0065c783          	lbu	a5,6(a1)
+   15db0:	00f50323          	sb	a5,6(a0)
     ei_osabi = swizzle(o.ei_osabi, o.order, order);
-   14f18:	0075c783          	lbu	a5,7(a1)
-   14f1c:	00f503a3          	sb	a5,7(a0)
+   15db4:	0075c783          	lbu	a5,7(a1)
+   15db8:	00f503a3          	sb	a5,7(a0)
     ei_abiversion = swizzle(o.ei_abiversion, o.order, order);
-   14f20:	0085c783          	lbu	a5,8(a1)
-   14f24:	00f50423          	sb	a5,8(a0)
+   15dbc:	0085c783          	lbu	a5,8(a1)
+   15dc0:	00f50423          	sb	a5,8(a0)
     std::memcpy(ei_pad, o.ei_pad, sizeof(ei_pad));
-   14f28:	0095c883          	lbu	a7,9(a1)
-   14f2c:	00a5c803          	lbu	a6,10(a1)
-   14f30:	00b5c503          	lbu	a0,11(a1)
-   14f34:	00c5c583          	lbu	a1,12(a1)
-   14f38:	00d44603          	lbu	a2,13(s0)
-   14f3c:	00e44683          	lbu	a3,14(s0)
-   14f40:	00f44703          	lbu	a4,15(s0)
-   14f44:	011484a3          	sb	a7,9(s1)
-   14f48:	01048523          	sb	a6,10(s1)
-   14f4c:	00a485a3          	sb	a0,11(s1)
-   14f50:	00b48623          	sb	a1,12(s1)
-   14f54:	00c486a3          	sb	a2,13(s1)
-   14f58:	00d48723          	sb	a3,14(s1)
-   14f5c:	00e487a3          	sb	a4,15(s1)
+   15dc4:	0095c883          	lbu	a7,9(a1)
+   15dc8:	00a5c803          	lbu	a6,10(a1)
+   15dcc:	00b5c503          	lbu	a0,11(a1)
+   15dd0:	00c5c583          	lbu	a1,12(a1)
+   15dd4:	00d44603          	lbu	a2,13(s0)
+   15dd8:	00e44683          	lbu	a3,14(s0)
+   15ddc:	00f44703          	lbu	a4,15(s0)
+   15de0:	011484a3          	sb	a7,9(s1)
+   15de4:	01048523          	sb	a6,10(s1)
+   15de8:	00a485a3          	sb	a0,11(s1)
+   15dec:	00b48623          	sb	a1,12(s1)
+   15df0:	00c486a3          	sb	a2,13(s1)
+   15df4:	00d48723          	sb	a3,14(s1)
+   15df8:	00e487a3          	sb	a4,15(s1)
     type = swizzle(o.type, o.order, order);
-   14f60:	01045783          	lhu	a5,16(s0)
-   14f64:	0087d71b          	srliw	a4,a5,0x8
-   14f68:	0087979b          	slliw	a5,a5,0x8
-   14f6c:	8fd9                	c.or	a5,a4
-   14f6e:	00f49823          	sh	a5,16(s1)
+   15dfc:	01045783          	lhu	a5,16(s0)
+   15e00:	0087d71b          	srliw	a4,a5,0x8
+   15e04:	0087979b          	slliw	a5,a5,0x8
+   15e08:	00f767b3          	or	a5,a4,a5
+   15e0c:	00f49823          	sh	a5,16(s1)
     machine = swizzle(o.machine, o.order, order);
-   14f72:	01245783          	lhu	a5,18(s0)
-   14f76:	0087d71b          	srliw	a4,a5,0x8
-   14f7a:	0087979b          	slliw	a5,a5,0x8
-   14f7e:	8fd9                	c.or	a5,a4
-   14f80:	00f49923          	sh	a5,18(s1)
+   15e10:	01245783          	lhu	a5,18(s0)
+   15e14:	0087d71b          	srliw	a4,a5,0x8
+   15e18:	0087979b          	slliw	a5,a5,0x8
+   15e1c:	00f767b3          	or	a5,a4,a5
+   15e20:	00f49923          	sh	a5,18(s1)
     return (T)__builtin_bswap32((std::uint32_t)v);
-   14f84:	4848                	c.lw	a0,20(s0)
-   14f86:	9ebfd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   15e24:	01442503          	lw	a0,20(s0)
+   15e28:	b49fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     version = swizzle(o.version, o.order, order);
-   14f8a:	c8c8                	c.sw	a0,20(s1)
+   15e2c:	00a4aa23          	sw	a0,20(s1)
   case 8:
     return (T)__builtin_bswap64((std::uint64_t)v);
-   14f8c:	6c08                	c.ld	a0,24(s0)
-   14f8e:	b13fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   15e30:	01843503          	ld	a0,24(s0)
+   15e34:	c6dfc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     entry = swizzle(o.entry, o.order, order);
-   14f92:	ec88                	c.sd	a0,24(s1)
-   14f94:	7008                	c.ld	a0,32(s0)
-   14f96:	b0bfd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   15e38:	00a4bc23          	sd	a0,24(s1)
+   15e3c:	02043503          	ld	a0,32(s0)
+   15e40:	c61fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     phoff = swizzle(o.phoff, o.order, order);
-   14f9a:	f088                	c.sd	a0,32(s1)
-   14f9c:	7408                	c.ld	a0,40(s0)
-   14f9e:	b03fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   15e44:	02a4b023          	sd	a0,32(s1)
+   15e48:	02843503          	ld	a0,40(s0)
+   15e4c:	c55fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     shoff = swizzle(o.shoff, o.order, order);
-   14fa2:	f488                	c.sd	a0,40(s1)
+   15e50:	02a4b423          	sd	a0,40(s1)
     return (T)__builtin_bswap32((std::uint32_t)v);
-   14fa4:	5808                	c.lw	a0,48(s0)
-   14fa6:	9cbfd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   15e54:	03042503          	lw	a0,48(s0)
+   15e58:	b19fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     flags = swizzle(o.flags, o.order, order);
-   14faa:	d888                	c.sw	a0,48(s1)
+   15e5c:	02a4a823          	sw	a0,48(s1)
     ehsize = swizzle(o.ehsize, o.order, order);
-   14fac:	03445783          	lhu	a5,52(s0)
+   15e60:	03445783          	lhu	a5,52(s0)
     return (T)(((x & 0xFF) << 8) | (x >> 8));
-   14fb0:	0087d71b          	srliw	a4,a5,0x8
-   14fb4:	0087979b          	slliw	a5,a5,0x8
-   14fb8:	8fd9                	c.or	a5,a4
-   14fba:	02f49a23          	sh	a5,52(s1)
+   15e64:	0087d71b          	srliw	a4,a5,0x8
+   15e68:	0087979b          	slliw	a5,a5,0x8
+   15e6c:	00f767b3          	or	a5,a4,a5
+   15e70:	02f49a23          	sh	a5,52(s1)
     phentsize = swizzle(o.phentsize, o.order, order);
-   14fbe:	03645783          	lhu	a5,54(s0)
-   14fc2:	0087d71b          	srliw	a4,a5,0x8
-   14fc6:	0087979b          	slliw	a5,a5,0x8
-   14fca:	8fd9                	c.or	a5,a4
-   14fcc:	02f49b23          	sh	a5,54(s1)
+   15e74:	03645783          	lhu	a5,54(s0)
+   15e78:	0087d71b          	srliw	a4,a5,0x8
+   15e7c:	0087979b          	slliw	a5,a5,0x8
+   15e80:	00f767b3          	or	a5,a4,a5
+   15e84:	02f49b23          	sh	a5,54(s1)
     phnum = swizzle(o.phnum, o.order, order);
-   14fd0:	03845783          	lhu	a5,56(s0)
-   14fd4:	0087d71b          	srliw	a4,a5,0x8
-   14fd8:	0087979b          	slliw	a5,a5,0x8
-   14fdc:	8fd9                	c.or	a5,a4
-   14fde:	02f49c23          	sh	a5,56(s1)
+   15e88:	03845783          	lhu	a5,56(s0)
+   15e8c:	0087d71b          	srliw	a4,a5,0x8
+   15e90:	0087979b          	slliw	a5,a5,0x8
+   15e94:	00f767b3          	or	a5,a4,a5
+   15e98:	02f49c23          	sh	a5,56(s1)
     shentsize = swizzle(o.shentsize, o.order, order);
-   14fe2:	03a45783          	lhu	a5,58(s0)
-   14fe6:	0087d71b          	srliw	a4,a5,0x8
-   14fea:	0087979b          	slliw	a5,a5,0x8
-   14fee:	8fd9                	c.or	a5,a4
-   14ff0:	02f49d23          	sh	a5,58(s1)
+   15e9c:	03a45783          	lhu	a5,58(s0)
+   15ea0:	0087d71b          	srliw	a4,a5,0x8
+   15ea4:	0087979b          	slliw	a5,a5,0x8
+   15ea8:	00f767b3          	or	a5,a4,a5
+   15eac:	02f49d23          	sh	a5,58(s1)
     shnum = swizzle(o.shnum, o.order, order);
-   14ff4:	03c45783          	lhu	a5,60(s0)
-   14ff8:	0087d71b          	srliw	a4,a5,0x8
-   14ffc:	0087979b          	slliw	a5,a5,0x8
-   15000:	8fd9                	c.or	a5,a4
-   15002:	02f49e23          	sh	a5,60(s1)
+   15eb0:	03c45783          	lhu	a5,60(s0)
+   15eb4:	0087d71b          	srliw	a4,a5,0x8
+   15eb8:	0087979b          	slliw	a5,a5,0x8
+   15ebc:	00f767b3          	or	a5,a4,a5
+   15ec0:	02f49e23          	sh	a5,60(s1)
     shstrndx = swizzle(o.shstrndx, o.order, order);
-   15006:	03e45783          	lhu	a5,62(s0)
-   1500a:	0087d71b          	srliw	a4,a5,0x8
-   1500e:	0087979b          	slliw	a5,a5,0x8
-   15012:	8fd9                	c.or	a5,a4
-   15014:	02f49f23          	sh	a5,62(s1)
+   15ec4:	03e45783          	lhu	a5,62(s0)
+   15ec8:	0087d71b          	srliw	a4,a5,0x8
+   15ecc:	0087979b          	slliw	a5,a5,0x8
+   15ed0:	00f767b3          	or	a5,a4,a5
+   15ed4:	02f49f23          	sh	a5,62(s1)
   }
-   15018:	b151                	c.j	14c9c <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   15ed8:	c0dff06f          	jal	zero,15ae4 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     std::memcpy(ei_magic, o.ei_magic, sizeof(ei_magic));
-   1501a:	0005c603          	lbu	a2,0(a1)
-   1501e:	0015c683          	lbu	a3,1(a1)
-   15022:	0025c703          	lbu	a4,2(a1)
-   15026:	0035c783          	lbu	a5,3(a1)
-   1502a:	00c50023          	sb	a2,0(a0)
-   1502e:	00d500a3          	sb	a3,1(a0)
-   15032:	00e50123          	sb	a4,2(a0)
-   15036:	00f501a3          	sb	a5,3(a0)
+   15edc:	0005c603          	lbu	a2,0(a1)
+   15ee0:	0015c683          	lbu	a3,1(a1)
+   15ee4:	0025c703          	lbu	a4,2(a1)
+   15ee8:	0035c783          	lbu	a5,3(a1)
+   15eec:	00c50023          	sb	a2,0(a0)
+   15ef0:	00d500a3          	sb	a3,1(a0)
+   15ef4:	00e50123          	sb	a4,2(a0)
+   15ef8:	00f501a3          	sb	a5,3(a0)
     ei_class = swizzle(o.ei_class, o.order, order);
-   1503a:	0045c783          	lbu	a5,4(a1)
-   1503e:	00f50223          	sb	a5,4(a0)
+   15efc:	0045c783          	lbu	a5,4(a1)
+   15f00:	00f50223          	sb	a5,4(a0)
     ei_data = swizzle(o.ei_data, o.order, order);
-   15042:	0055c783          	lbu	a5,5(a1)
-   15046:	00f502a3          	sb	a5,5(a0)
+   15f04:	0055c783          	lbu	a5,5(a1)
+   15f08:	00f502a3          	sb	a5,5(a0)
     ei_version = swizzle(o.ei_version, o.order, order);
-   1504a:	0065c783          	lbu	a5,6(a1)
-   1504e:	00f50323          	sb	a5,6(a0)
+   15f0c:	0065c783          	lbu	a5,6(a1)
+   15f10:	00f50323          	sb	a5,6(a0)
     ei_osabi = swizzle(o.ei_osabi, o.order, order);
-   15052:	0075c783          	lbu	a5,7(a1)
-   15056:	00f503a3          	sb	a5,7(a0)
+   15f14:	0075c783          	lbu	a5,7(a1)
+   15f18:	00f503a3          	sb	a5,7(a0)
     ei_abiversion = swizzle(o.ei_abiversion, o.order, order);
-   1505a:	0085c783          	lbu	a5,8(a1)
-   1505e:	00f50423          	sb	a5,8(a0)
+   15f1c:	0085c783          	lbu	a5,8(a1)
+   15f20:	00f50423          	sb	a5,8(a0)
     std::memcpy(ei_pad, o.ei_pad, sizeof(ei_pad));
-   15062:	0095c883          	lbu	a7,9(a1)
-   15066:	00a5c803          	lbu	a6,10(a1)
-   1506a:	00b5c503          	lbu	a0,11(a1)
-   1506e:	00c5c583          	lbu	a1,12(a1)
-   15072:	00d44603          	lbu	a2,13(s0)
-   15076:	00e44683          	lbu	a3,14(s0)
-   1507a:	00f44703          	lbu	a4,15(s0)
-   1507e:	011484a3          	sb	a7,9(s1)
-   15082:	01048523          	sb	a6,10(s1)
-   15086:	00a485a3          	sb	a0,11(s1)
-   1508a:	00b48623          	sb	a1,12(s1)
-   1508e:	00c486a3          	sb	a2,13(s1)
-   15092:	00d48723          	sb	a3,14(s1)
-   15096:	00e487a3          	sb	a4,15(s1)
+   15f24:	0095c883          	lbu	a7,9(a1)
+   15f28:	00a5c803          	lbu	a6,10(a1)
+   15f2c:	00b5c503          	lbu	a0,11(a1)
+   15f30:	00c5c583          	lbu	a1,12(a1)
+   15f34:	00d44603          	lbu	a2,13(s0)
+   15f38:	00e44683          	lbu	a3,14(s0)
+   15f3c:	00f44703          	lbu	a4,15(s0)
+   15f40:	011484a3          	sb	a7,9(s1)
+   15f44:	01048523          	sb	a6,10(s1)
+   15f48:	00a485a3          	sb	a0,11(s1)
+   15f4c:	00b48623          	sb	a1,12(s1)
+   15f50:	00c486a3          	sb	a2,13(s1)
+   15f54:	00d48723          	sb	a3,14(s1)
+   15f58:	00e487a3          	sb	a4,15(s1)
     type = swizzle(o.type, o.order, order);
-   1509a:	01045783          	lhu	a5,16(s0)
-   1509e:	00f49823          	sh	a5,16(s1)
+   15f5c:	01045783          	lhu	a5,16(s0)
+   15f60:	00f49823          	sh	a5,16(s1)
     machine = swizzle(o.machine, o.order, order);
-   150a2:	01245783          	lhu	a5,18(s0)
-   150a6:	00f49923          	sh	a5,18(s1)
+   15f64:	01245783          	lhu	a5,18(s0)
+   15f68:	00f49923          	sh	a5,18(s1)
     version = swizzle(o.version, o.order, order);
-   150aa:	485c                	c.lw	a5,20(s0)
-   150ac:	c8dc                	c.sw	a5,20(s1)
+   15f6c:	01442783          	lw	a5,20(s0)
+   15f70:	00f4aa23          	sw	a5,20(s1)
     entry = swizzle(o.entry, o.order, order);
-   150ae:	6c1c                	c.ld	a5,24(s0)
-   150b0:	ec9c                	c.sd	a5,24(s1)
+   15f74:	01843783          	ld	a5,24(s0)
+   15f78:	00f4bc23          	sd	a5,24(s1)
     phoff = swizzle(o.phoff, o.order, order);
-   150b2:	701c                	c.ld	a5,32(s0)
-   150b4:	f09c                	c.sd	a5,32(s1)
+   15f7c:	02043783          	ld	a5,32(s0)
+   15f80:	02f4b023          	sd	a5,32(s1)
     shoff = swizzle(o.shoff, o.order, order);
-   150b6:	741c                	c.ld	a5,40(s0)
-   150b8:	f49c                	c.sd	a5,40(s1)
+   15f84:	02843783          	ld	a5,40(s0)
+   15f88:	02f4b423          	sd	a5,40(s1)
     flags = swizzle(o.flags, o.order, order);
-   150ba:	581c                	c.lw	a5,48(s0)
-   150bc:	d89c                	c.sw	a5,48(s1)
+   15f8c:	03042783          	lw	a5,48(s0)
+   15f90:	02f4a823          	sw	a5,48(s1)
     ehsize = swizzle(o.ehsize, o.order, order);
-   150be:	03445783          	lhu	a5,52(s0)
-   150c2:	02f49a23          	sh	a5,52(s1)
+   15f94:	03445783          	lhu	a5,52(s0)
+   15f98:	02f49a23          	sh	a5,52(s1)
     phentsize = swizzle(o.phentsize, o.order, order);
-   150c6:	03645783          	lhu	a5,54(s0)
-   150ca:	02f49b23          	sh	a5,54(s1)
+   15f9c:	03645783          	lhu	a5,54(s0)
+   15fa0:	02f49b23          	sh	a5,54(s1)
     phnum = swizzle(o.phnum, o.order, order);
-   150ce:	03845783          	lhu	a5,56(s0)
-   150d2:	02f49c23          	sh	a5,56(s1)
+   15fa4:	03845783          	lhu	a5,56(s0)
+   15fa8:	02f49c23          	sh	a5,56(s1)
     shentsize = swizzle(o.shentsize, o.order, order);
-   150d6:	03a45783          	lhu	a5,58(s0)
-   150da:	02f49d23          	sh	a5,58(s1)
+   15fac:	03a45783          	lhu	a5,58(s0)
+   15fb0:	02f49d23          	sh	a5,58(s1)
     shnum = swizzle(o.shnum, o.order, order);
-   150de:	03c45783          	lhu	a5,60(s0)
-   150e2:	02f49e23          	sh	a5,60(s1)
+   15fb4:	03c45783          	lhu	a5,60(s0)
+   15fb8:	02f49e23          	sh	a5,60(s1)
     shstrndx = swizzle(o.shstrndx, o.order, order);
-   150e6:	03e45783          	lhu	a5,62(s0)
-   150ea:	02f49f23          	sh	a5,62(s1)
+   15fbc:	03e45783          	lhu	a5,62(s0)
+   15fc0:	02f49f23          	sh	a5,62(s1)
   }
-   150ee:	b67d                	c.j	14c9c <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   15fc4:	b21ff06f          	jal	zero,15ae4 <void elf::canon_hdr<elf::Ehdr>(elf::Ehdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
 
-00000000000150f0 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)>:
+0000000000015fc8 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)>:
 void canon_hdr(Hdr<Elf64, byte_order::native> *out, const void *data,
-   150f0:	1101                	c.addi	sp,-32
-   150f2:	ec06                	c.sdsp	ra,24(sp)
-   150f4:	e822                	c.sdsp	s0,16(sp)
-   150f6:	e426                	c.sdsp	s1,8(sp)
-   150f8:	842a                	c.mv	s0,a0
-   150fa:	84ae                	c.mv	s1,a1
+   15fc8:	fe010113          	addi	sp,sp,-32
+   15fcc:	00113c23          	sd	ra,24(sp)
+   15fd0:	00813823          	sd	s0,16(sp)
+   15fd4:	00913423          	sd	s1,8(sp)
+   15fd8:	00050413          	addi	s0,a0,0
+   15fdc:	00058493          	addi	s1,a1,0
   switch (ei_class) {
-   150fc:	4785                	c.li	a5,1
-   150fe:	00f60a63          	beq	a2,a5,15112 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x22>
-   15102:	4789                	c.li	a5,2
-   15104:	0af60163          	beq	a2,a5,151a6 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0xb6>
+   15fe0:	00100793          	addi	a5,zero,1
+   15fe4:	02f60063          	beq	a2,a5,16004 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x3c>
+   15fe8:	00200793          	addi	a5,zero,2
+   15fec:	10f60063          	beq	a2,a5,160ec <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x124>
 }
-   15108:	60e2                	c.ldsp	ra,24(sp)
-   1510a:	6442                	c.ldsp	s0,16(sp)
-   1510c:	64a2                	c.ldsp	s1,8(sp)
-   1510e:	6105                	c.addi16sp	sp,32
-   15110:	8082                	c.jr	ra
-   15112:	4785                	c.li	a5,1
-   15114:	06f68263          	beq	a3,a5,15178 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x88>
-   15118:	4789                	c.li	a5,2
-   1511a:	fef697e3          	bne	a3,a5,15108 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   15ff0:	01813083          	ld	ra,24(sp)
+   15ff4:	01013403          	ld	s0,16(sp)
+   15ff8:	00813483          	ld	s1,8(sp)
+   15ffc:	02010113          	addi	sp,sp,32
+   16000:	00008067          	jalr	zero,0(ra)
+   16004:	00100793          	addi	a5,zero,1
+   16008:	0af68063          	beq	a3,a5,160a8 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0xe0>
+   1600c:	00200793          	addi	a5,zero,2
+   16010:	fef690e3          	bne	a3,a5,15ff0 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     return (T)__builtin_bswap32((std::uint32_t)v);
-   1511e:	4188                	c.lw	a0,0(a1)
-   15120:	851fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16014:	0005a503          	lw	a0,0(a1)
+   16018:	959fc0ef          	jal	ra,12970 <__bswapsi2@plt>
   Elf64::Xword filesz; // Size of segment in file
   Elf64::Xword memsz;  // Size of segment in memory
   Elf64::Xword align;  // Alignment of segment
 
   template <typename E2> void from(const E2 &o) {
     type = swizzle(o.type, o.order, order);
-   15124:	c008                	c.sw	a0,0(s0)
-   15126:	40c8                	c.lw	a0,4(s1)
-   15128:	849fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   1601c:	00a42023          	sw	a0,0(s0)
+   16020:	0044a503          	lw	a0,4(s1)
+   16024:	94dfc0ef          	jal	ra,12970 <__bswapsi2@plt>
     offset = swizzle(o.offset, o.order, order);
-   1512c:	1502                	c.slli	a0,0x20
-   1512e:	9101                	c.srli	a0,0x20
-   15130:	e408                	c.sd	a0,8(s0)
-   15132:	4488                	c.lw	a0,8(s1)
-   15134:	83dfd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16028:	02051513          	slli	a0,a0,0x20
+   1602c:	02055513          	srli	a0,a0,0x20
+   16030:	00a43423          	sd	a0,8(s0)
+   16034:	0084a503          	lw	a0,8(s1)
+   16038:	939fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     vaddr = swizzle(o.vaddr, o.order, order);
-   15138:	1502                	c.slli	a0,0x20
-   1513a:	9101                	c.srli	a0,0x20
-   1513c:	e808                	c.sd	a0,16(s0)
-   1513e:	44c8                	c.lw	a0,12(s1)
-   15140:	831fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   1603c:	02051513          	slli	a0,a0,0x20
+   16040:	02055513          	srli	a0,a0,0x20
+   16044:	00a43823          	sd	a0,16(s0)
+   16048:	00c4a503          	lw	a0,12(s1)
+   1604c:	925fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     paddr = swizzle(o.paddr, o.order, order);
-   15144:	1502                	c.slli	a0,0x20
-   15146:	9101                	c.srli	a0,0x20
-   15148:	ec08                	c.sd	a0,24(s0)
-   1514a:	4888                	c.lw	a0,16(s1)
-   1514c:	825fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16050:	02051513          	slli	a0,a0,0x20
+   16054:	02055513          	srli	a0,a0,0x20
+   16058:	00a43c23          	sd	a0,24(s0)
+   1605c:	0104a503          	lw	a0,16(s1)
+   16060:	911fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     filesz = swizzle(o.filesz, o.order, order);
-   15150:	1502                	c.slli	a0,0x20
-   15152:	9101                	c.srli	a0,0x20
-   15154:	f008                	c.sd	a0,32(s0)
-   15156:	48c8                	c.lw	a0,20(s1)
-   15158:	819fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16064:	02051513          	slli	a0,a0,0x20
+   16068:	02055513          	srli	a0,a0,0x20
+   1606c:	02a43023          	sd	a0,32(s0)
+   16070:	0144a503          	lw	a0,20(s1)
+   16074:	8fdfc0ef          	jal	ra,12970 <__bswapsi2@plt>
     memsz = swizzle(o.memsz, o.order, order);
-   1515c:	1502                	c.slli	a0,0x20
-   1515e:	9101                	c.srli	a0,0x20
-   15160:	f408                	c.sd	a0,40(s0)
-   15162:	4c88                	c.lw	a0,24(s1)
-   15164:	80dfd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16078:	02051513          	slli	a0,a0,0x20
+   1607c:	02055513          	srli	a0,a0,0x20
+   16080:	02a43423          	sd	a0,40(s0)
+   16084:	0184a503          	lw	a0,24(s1)
+   16088:	8e9fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     flags = swizzle(o.flags, o.order, order);
-   15168:	c048                	c.sw	a0,4(s0)
-   1516a:	4cc8                	c.lw	a0,28(s1)
-   1516c:	805fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   1608c:	00a42223          	sw	a0,4(s0)
+   16090:	01c4a503          	lw	a0,28(s1)
+   16094:	8ddfc0ef          	jal	ra,12970 <__bswapsi2@plt>
     align = swizzle(o.align, o.order, order);
-   15170:	1502                	c.slli	a0,0x20
-   15172:	9101                	c.srli	a0,0x20
-   15174:	f808                	c.sd	a0,48(s0)
+   16098:	02051513          	slli	a0,a0,0x20
+   1609c:	02055513          	srli	a0,a0,0x20
+   160a0:	02a43823          	sd	a0,48(s0)
   }
-   15176:	bf49                	c.j	15108 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   160a4:	f4dff06f          	jal	zero,15ff0 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     type = swizzle(o.type, o.order, order);
-   15178:	419c                	c.lw	a5,0(a1)
-   1517a:	c11c                	c.sw	a5,0(a0)
+   160a8:	0005a783          	lw	a5,0(a1)
+   160ac:	00f52023          	sw	a5,0(a0)
     offset = swizzle(o.offset, o.order, order);
-   1517c:	0045e783          	lwu	a5,4(a1)
-   15180:	e51c                	c.sd	a5,8(a0)
+   160b0:	0045e783          	lwu	a5,4(a1)
+   160b4:	00f53423          	sd	a5,8(a0)
     vaddr = swizzle(o.vaddr, o.order, order);
-   15182:	0085e783          	lwu	a5,8(a1)
-   15186:	e91c                	c.sd	a5,16(a0)
+   160b8:	0085e783          	lwu	a5,8(a1)
+   160bc:	00f53823          	sd	a5,16(a0)
     paddr = swizzle(o.paddr, o.order, order);
-   15188:	00c5e783          	lwu	a5,12(a1)
-   1518c:	ed1c                	c.sd	a5,24(a0)
+   160c0:	00c5e783          	lwu	a5,12(a1)
+   160c4:	00f53c23          	sd	a5,24(a0)
     filesz = swizzle(o.filesz, o.order, order);
-   1518e:	0105e783          	lwu	a5,16(a1)
-   15192:	f11c                	c.sd	a5,32(a0)
+   160c8:	0105e783          	lwu	a5,16(a1)
+   160cc:	02f53023          	sd	a5,32(a0)
     memsz = swizzle(o.memsz, o.order, order);
-   15194:	0145e783          	lwu	a5,20(a1)
-   15198:	f51c                	c.sd	a5,40(a0)
+   160d0:	0145e783          	lwu	a5,20(a1)
+   160d4:	02f53423          	sd	a5,40(a0)
     flags = swizzle(o.flags, o.order, order);
-   1519a:	4d9c                	c.lw	a5,24(a1)
-   1519c:	c15c                	c.sw	a5,4(a0)
+   160d8:	0185a783          	lw	a5,24(a1)
+   160dc:	00f52223          	sw	a5,4(a0)
     align = swizzle(o.align, o.order, order);
-   1519e:	01c5e783          	lwu	a5,28(a1)
-   151a2:	f91c                	c.sd	a5,48(a0)
+   160e0:	01c5e783          	lwu	a5,28(a1)
+   160e4:	02f53823          	sd	a5,48(a0)
   }
-   151a4:	b795                	c.j	15108 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
-   151a6:	4785                	c.li	a5,1
-   151a8:	04f68663          	beq	a3,a5,151f4 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x104>
-   151ac:	4789                	c.li	a5,2
-   151ae:	f4f69de3          	bne	a3,a5,15108 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
-   151b2:	4188                	c.lw	a0,0(a1)
-   151b4:	fbcfd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   160e8:	f09ff06f          	jal	zero,15ff0 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
+   160ec:	00100793          	addi	a5,zero,1
+   160f0:	06f68863          	beq	a3,a5,16160 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x198>
+   160f4:	00200793          	addi	a5,zero,2
+   160f8:	eef69ce3          	bne	a3,a5,15ff0 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
+   160fc:	0005a503          	lw	a0,0(a1)
+   16100:	871fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     type = swizzle(o.type, o.order, order);
-   151b8:	c008                	c.sw	a0,0(s0)
+   16104:	00a42023          	sw	a0,0(s0)
     return (T)__builtin_bswap64((std::uint64_t)v);
-   151ba:	6488                	c.ld	a0,8(s1)
-   151bc:	8e5fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   16108:	0084b503          	ld	a0,8(s1)
+   1610c:	995fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     offset = swizzle(o.offset, o.order, order);
-   151c0:	e408                	c.sd	a0,8(s0)
-   151c2:	6888                	c.ld	a0,16(s1)
-   151c4:	8ddfd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   16110:	00a43423          	sd	a0,8(s0)
+   16114:	0104b503          	ld	a0,16(s1)
+   16118:	989fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     vaddr = swizzle(o.vaddr, o.order, order);
-   151c8:	e808                	c.sd	a0,16(s0)
-   151ca:	6c88                	c.ld	a0,24(s1)
-   151cc:	8d5fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   1611c:	00a43823          	sd	a0,16(s0)
+   16120:	0184b503          	ld	a0,24(s1)
+   16124:	97dfc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     paddr = swizzle(o.paddr, o.order, order);
-   151d0:	ec08                	c.sd	a0,24(s0)
-   151d2:	7088                	c.ld	a0,32(s1)
-   151d4:	8cdfd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   16128:	00a43c23          	sd	a0,24(s0)
+   1612c:	0204b503          	ld	a0,32(s1)
+   16130:	971fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     filesz = swizzle(o.filesz, o.order, order);
-   151d8:	f008                	c.sd	a0,32(s0)
-   151da:	7488                	c.ld	a0,40(s1)
-   151dc:	8c5fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   16134:	02a43023          	sd	a0,32(s0)
+   16138:	0284b503          	ld	a0,40(s1)
+   1613c:	965fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     memsz = swizzle(o.memsz, o.order, order);
-   151e0:	f408                	c.sd	a0,40(s0)
+   16140:	02a43423          	sd	a0,40(s0)
     return (T)__builtin_bswap32((std::uint32_t)v);
-   151e2:	40c8                	c.lw	a0,4(s1)
-   151e4:	f8cfd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16144:	0044a503          	lw	a0,4(s1)
+   16148:	829fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     flags = swizzle(o.flags, o.order, order);
-   151e8:	c048                	c.sw	a0,4(s0)
+   1614c:	00a42223          	sw	a0,4(s0)
     return (T)__builtin_bswap64((std::uint64_t)v);
-   151ea:	7888                	c.ld	a0,48(s1)
-   151ec:	8b5fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   16150:	0304b503          	ld	a0,48(s1)
+   16154:	94dfc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     align = swizzle(o.align, o.order, order);
-   151f0:	f808                	c.sd	a0,48(s0)
+   16158:	02a43823          	sd	a0,48(s0)
   }
-   151f2:	bf19                	c.j	15108 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   1615c:	e95ff06f          	jal	zero,15ff0 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     type = swizzle(o.type, o.order, order);
-   151f4:	419c                	c.lw	a5,0(a1)
-   151f6:	c11c                	c.sw	a5,0(a0)
+   16160:	0005a783          	lw	a5,0(a1)
+   16164:	00f52023          	sw	a5,0(a0)
     offset = swizzle(o.offset, o.order, order);
-   151f8:	659c                	c.ld	a5,8(a1)
-   151fa:	e51c                	c.sd	a5,8(a0)
+   16168:	0085b783          	ld	a5,8(a1)
+   1616c:	00f53423          	sd	a5,8(a0)
     vaddr = swizzle(o.vaddr, o.order, order);
-   151fc:	699c                	c.ld	a5,16(a1)
-   151fe:	e91c                	c.sd	a5,16(a0)
+   16170:	0105b783          	ld	a5,16(a1)
+   16174:	00f53823          	sd	a5,16(a0)
     paddr = swizzle(o.paddr, o.order, order);
-   15200:	6d9c                	c.ld	a5,24(a1)
-   15202:	ed1c                	c.sd	a5,24(a0)
+   16178:	0185b783          	ld	a5,24(a1)
+   1617c:	00f53c23          	sd	a5,24(a0)
     filesz = swizzle(o.filesz, o.order, order);
-   15204:	719c                	c.ld	a5,32(a1)
-   15206:	f11c                	c.sd	a5,32(a0)
+   16180:	0205b783          	ld	a5,32(a1)
+   16184:	02f53023          	sd	a5,32(a0)
     memsz = swizzle(o.memsz, o.order, order);
-   15208:	759c                	c.ld	a5,40(a1)
-   1520a:	f51c                	c.sd	a5,40(a0)
+   16188:	0285b783          	ld	a5,40(a1)
+   1618c:	02f53423          	sd	a5,40(a0)
     flags = swizzle(o.flags, o.order, order);
-   1520c:	41dc                	c.lw	a5,4(a1)
-   1520e:	c15c                	c.sw	a5,4(a0)
+   16190:	0045a783          	lw	a5,4(a1)
+   16194:	00f52223          	sw	a5,4(a0)
     align = swizzle(o.align, o.order, order);
-   15210:	799c                	c.ld	a5,48(a1)
-   15212:	f91c                	c.sd	a5,48(a0)
+   16198:	0305b783          	ld	a5,48(a1)
+   1619c:	02f53823          	sd	a5,48(a0)
   }
-   15214:	bdd5                	c.j	15108 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   161a0:	e51ff06f          	jal	zero,15ff0 <void elf::canon_hdr<elf::Phdr>(elf::Phdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
 
-0000000000015216 <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)>:
+00000000000161a4 <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)>:
 void canon_hdr(Hdr<Elf64, byte_order::native> *out, const void *data,
-   15216:	1101                	c.addi	sp,-32
-   15218:	ec06                	c.sdsp	ra,24(sp)
-   1521a:	e822                	c.sdsp	s0,16(sp)
-   1521c:	e426                	c.sdsp	s1,8(sp)
-   1521e:	842a                	c.mv	s0,a0
-   15220:	84ae                	c.mv	s1,a1
+   161a4:	fe010113          	addi	sp,sp,-32
+   161a8:	00113c23          	sd	ra,24(sp)
+   161ac:	00813823          	sd	s0,16(sp)
+   161b0:	00913423          	sd	s1,8(sp)
+   161b4:	00050413          	addi	s0,a0,0
+   161b8:	00058493          	addi	s1,a1,0
   switch (ei_class) {
-   15222:	4785                	c.li	a5,1
-   15224:	00f60a63          	beq	a2,a5,15238 <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x22>
-   15228:	4789                	c.li	a5,2
-   1522a:	0af60f63          	beq	a2,a5,152e8 <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0xd2>
+   161bc:	00100793          	addi	a5,zero,1
+   161c0:	02f60063          	beq	a2,a5,161e0 <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x3c>
+   161c4:	00200793          	addi	a5,zero,2
+   161c8:	12f60463          	beq	a2,a5,162f0 <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x14c>
 }
-   1522e:	60e2                	c.ldsp	ra,24(sp)
-   15230:	6442                	c.ldsp	s0,16(sp)
-   15232:	64a2                	c.ldsp	s1,8(sp)
-   15234:	6105                	c.addi16sp	sp,32
-   15236:	8082                	c.jr	ra
-   15238:	4785                	c.li	a5,1
-   1523a:	06f68b63          	beq	a3,a5,152b0 <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x9a>
-   1523e:	4789                	c.li	a5,2
-   15240:	fef697e3          	bne	a3,a5,1522e <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   161cc:	01813083          	ld	ra,24(sp)
+   161d0:	01013403          	ld	s0,16(sp)
+   161d4:	00813483          	ld	s1,8(sp)
+   161d8:	02010113          	addi	sp,sp,32
+   161dc:	00008067          	jalr	zero,0(ra)
+   161e0:	00100793          	addi	a5,zero,1
+   161e4:	0af68c63          	beq	a3,a5,1629c <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0xf8>
+   161e8:	00200793          	addi	a5,zero,2
+   161ec:	fef690e3          	bne	a3,a5,161cc <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     return (T)__builtin_bswap32((std::uint32_t)v);
-   15244:	4188                	c.lw	a0,0(a1)
-   15246:	f2afd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   161f0:	0005a503          	lw	a0,0(a1)
+   161f4:	f7cfc0ef          	jal	ra,12970 <__bswapsi2@plt>
     name = swizzle(o.name, o.order, order);
-   1524a:	c008                	c.sw	a0,0(s0)
-   1524c:	40c8                	c.lw	a0,4(s1)
-   1524e:	f22fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   161f8:	00a42023          	sw	a0,0(s0)
+   161fc:	0044a503          	lw	a0,4(s1)
+   16200:	f70fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     type = swizzle(o.type, o.order, order);
-   15252:	c048                	c.sw	a0,4(s0)
-   15254:	4488                	c.lw	a0,8(s1)
-   15256:	f1afd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16204:	00a42223          	sw	a0,4(s0)
+   16208:	0084a503          	lw	a0,8(s1)
+   1620c:	f64fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     flags = (decltype(flags))swizzle(o.flags, o.order, order);
-   1525a:	1502                	c.slli	a0,0x20
-   1525c:	9101                	c.srli	a0,0x20
-   1525e:	e408                	c.sd	a0,8(s0)
-   15260:	44c8                	c.lw	a0,12(s1)
-   15262:	f0efd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16210:	02051513          	slli	a0,a0,0x20
+   16214:	02055513          	srli	a0,a0,0x20
+   16218:	00a43423          	sd	a0,8(s0)
+   1621c:	00c4a503          	lw	a0,12(s1)
+   16220:	f50fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     addr = swizzle(o.addr, o.order, order);
-   15266:	1502                	c.slli	a0,0x20
-   15268:	9101                	c.srli	a0,0x20
-   1526a:	e808                	c.sd	a0,16(s0)
-   1526c:	4888                	c.lw	a0,16(s1)
-   1526e:	f02fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16224:	02051513          	slli	a0,a0,0x20
+   16228:	02055513          	srli	a0,a0,0x20
+   1622c:	00a43823          	sd	a0,16(s0)
+   16230:	0104a503          	lw	a0,16(s1)
+   16234:	f3cfc0ef          	jal	ra,12970 <__bswapsi2@plt>
     offset = swizzle(o.offset, o.order, order);
-   15272:	1502                	c.slli	a0,0x20
-   15274:	9101                	c.srli	a0,0x20
-   15276:	ec08                	c.sd	a0,24(s0)
-   15278:	48c8                	c.lw	a0,20(s1)
-   1527a:	ef6fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16238:	02051513          	slli	a0,a0,0x20
+   1623c:	02055513          	srli	a0,a0,0x20
+   16240:	00a43c23          	sd	a0,24(s0)
+   16244:	0144a503          	lw	a0,20(s1)
+   16248:	f28fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     size = swizzle(o.size, o.order, order);
-   1527e:	1502                	c.slli	a0,0x20
-   15280:	9101                	c.srli	a0,0x20
-   15282:	f008                	c.sd	a0,32(s0)
-   15284:	4c88                	c.lw	a0,24(s1)
-   15286:	eeafd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   1624c:	02051513          	slli	a0,a0,0x20
+   16250:	02055513          	srli	a0,a0,0x20
+   16254:	02a43023          	sd	a0,32(s0)
+   16258:	0184a503          	lw	a0,24(s1)
+   1625c:	f14fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     link = (decltype(link))swizzle((typename E::Word)o.link, o.order, order);
-   1528a:	02a41423          	sh	a0,40(s0)
-   1528e:	4cc8                	c.lw	a0,28(s1)
-   15290:	ee0fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16260:	02a41423          	sh	a0,40(s0)
+   16264:	01c4a503          	lw	a0,28(s1)
+   16268:	f08fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     info = swizzle(o.info, o.order, order);
-   15294:	d448                	c.sw	a0,44(s0)
-   15296:	5088                	c.lw	a0,32(s1)
-   15298:	ed8fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   1626c:	02a42623          	sw	a0,44(s0)
+   16270:	0204a503          	lw	a0,32(s1)
+   16274:	efcfc0ef          	jal	ra,12970 <__bswapsi2@plt>
     addralign = swizzle(o.addralign, o.order, order);
-   1529c:	1502                	c.slli	a0,0x20
-   1529e:	9101                	c.srli	a0,0x20
-   152a0:	f808                	c.sd	a0,48(s0)
-   152a2:	50c8                	c.lw	a0,36(s1)
-   152a4:	eccfd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16278:	02051513          	slli	a0,a0,0x20
+   1627c:	02055513          	srli	a0,a0,0x20
+   16280:	02a43823          	sd	a0,48(s0)
+   16284:	0244a503          	lw	a0,36(s1)
+   16288:	ee8fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     entsize = swizzle(o.entsize, o.order, order);
-   152a8:	1502                	c.slli	a0,0x20
-   152aa:	9101                	c.srli	a0,0x20
-   152ac:	fc08                	c.sd	a0,56(s0)
+   1628c:	02051513          	slli	a0,a0,0x20
+   16290:	02055513          	srli	a0,a0,0x20
+   16294:	02a43c23          	sd	a0,56(s0)
   }
-   152ae:	b741                	c.j	1522e <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   16298:	f35ff06f          	jal	zero,161cc <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     name = swizzle(o.name, o.order, order);
-   152b0:	419c                	c.lw	a5,0(a1)
-   152b2:	c11c                	c.sw	a5,0(a0)
+   1629c:	0005a783          	lw	a5,0(a1)
+   162a0:	00f52023          	sw	a5,0(a0)
     type = swizzle(o.type, o.order, order);
-   152b4:	41dc                	c.lw	a5,4(a1)
-   152b6:	c15c                	c.sw	a5,4(a0)
+   162a4:	0045a783          	lw	a5,4(a1)
+   162a8:	00f52223          	sw	a5,4(a0)
     flags = (decltype(flags))swizzle(o.flags, o.order, order);
-   152b8:	0085e783          	lwu	a5,8(a1)
-   152bc:	e51c                	c.sd	a5,8(a0)
+   162ac:	0085e783          	lwu	a5,8(a1)
+   162b0:	00f53423          	sd	a5,8(a0)
     addr = swizzle(o.addr, o.order, order);
-   152be:	00c5e783          	lwu	a5,12(a1)
-   152c2:	e91c                	c.sd	a5,16(a0)
+   162b4:	00c5e783          	lwu	a5,12(a1)
+   162b8:	00f53823          	sd	a5,16(a0)
     offset = swizzle(o.offset, o.order, order);
-   152c4:	0105e783          	lwu	a5,16(a1)
-   152c8:	ed1c                	c.sd	a5,24(a0)
+   162bc:	0105e783          	lwu	a5,16(a1)
+   162c0:	00f53c23          	sd	a5,24(a0)
     size = swizzle(o.size, o.order, order);
-   152ca:	0145e783          	lwu	a5,20(a1)
-   152ce:	f11c                	c.sd	a5,32(a0)
+   162c4:	0145e783          	lwu	a5,20(a1)
+   162c8:	02f53023          	sd	a5,32(a0)
     link = (decltype(link))swizzle((typename E::Word)o.link, o.order, order);
-   152d0:	4d9c                	c.lw	a5,24(a1)
-   152d2:	02f51423          	sh	a5,40(a0)
+   162cc:	0185a783          	lw	a5,24(a1)
+   162d0:	02f51423          	sh	a5,40(a0)
     info = swizzle(o.info, o.order, order);
-   152d6:	4ddc                	c.lw	a5,28(a1)
-   152d8:	d55c                	c.sw	a5,44(a0)
+   162d4:	01c5a783          	lw	a5,28(a1)
+   162d8:	02f52623          	sw	a5,44(a0)
     addralign = swizzle(o.addralign, o.order, order);
-   152da:	0205e783          	lwu	a5,32(a1)
-   152de:	f91c                	c.sd	a5,48(a0)
+   162dc:	0205e783          	lwu	a5,32(a1)
+   162e0:	02f53823          	sd	a5,48(a0)
     entsize = swizzle(o.entsize, o.order, order);
-   152e0:	0245e783          	lwu	a5,36(a1)
-   152e4:	fd1c                	c.sd	a5,56(a0)
+   162e4:	0245e783          	lwu	a5,36(a1)
+   162e8:	02f53c23          	sd	a5,56(a0)
   }
-   152e6:	b7a1                	c.j	1522e <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
-   152e8:	4785                	c.li	a5,1
-   152ea:	04f68f63          	beq	a3,a5,15348 <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x132>
-   152ee:	4789                	c.li	a5,2
-   152f0:	f2f69fe3          	bne	a3,a5,1522e <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
-   152f4:	4188                	c.lw	a0,0(a1)
-   152f6:	e7afd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   162ec:	ee1ff06f          	jal	zero,161cc <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
+   162f0:	00100793          	addi	a5,zero,1
+   162f4:	08f68463          	beq	a3,a5,1637c <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x1d8>
+   162f8:	00200793          	addi	a5,zero,2
+   162fc:	ecf698e3          	bne	a3,a5,161cc <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
+   16300:	0005a503          	lw	a0,0(a1)
+   16304:	e6cfc0ef          	jal	ra,12970 <__bswapsi2@plt>
     name = swizzle(o.name, o.order, order);
-   152fa:	c008                	c.sw	a0,0(s0)
-   152fc:	40c8                	c.lw	a0,4(s1)
-   152fe:	e72fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16308:	00a42023          	sw	a0,0(s0)
+   1630c:	0044a503          	lw	a0,4(s1)
+   16310:	e60fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     type = swizzle(o.type, o.order, order);
-   15302:	c048                	c.sw	a0,4(s0)
+   16314:	00a42223          	sw	a0,4(s0)
     return (T)__builtin_bswap64((std::uint64_t)v);
-   15304:	6488                	c.ld	a0,8(s1)
-   15306:	f9afd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   16318:	0084b503          	ld	a0,8(s1)
+   1631c:	f84fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     flags = (decltype(flags))swizzle(o.flags, o.order, order);
-   1530a:	e408                	c.sd	a0,8(s0)
-   1530c:	6888                	c.ld	a0,16(s1)
-   1530e:	f92fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   16320:	00a43423          	sd	a0,8(s0)
+   16324:	0104b503          	ld	a0,16(s1)
+   16328:	f78fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     addr = swizzle(o.addr, o.order, order);
-   15312:	e808                	c.sd	a0,16(s0)
-   15314:	6c88                	c.ld	a0,24(s1)
-   15316:	f8afd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   1632c:	00a43823          	sd	a0,16(s0)
+   16330:	0184b503          	ld	a0,24(s1)
+   16334:	f6cfc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     offset = swizzle(o.offset, o.order, order);
-   1531a:	ec08                	c.sd	a0,24(s0)
-   1531c:	7088                	c.ld	a0,32(s1)
-   1531e:	f82fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   16338:	00a43c23          	sd	a0,24(s0)
+   1633c:	0204b503          	ld	a0,32(s1)
+   16340:	f60fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     size = swizzle(o.size, o.order, order);
-   15322:	f008                	c.sd	a0,32(s0)
+   16344:	02a43023          	sd	a0,32(s0)
     return (T)__builtin_bswap32((std::uint32_t)v);
-   15324:	5488                	c.lw	a0,40(s1)
-   15326:	e4afd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16348:	0284a503          	lw	a0,40(s1)
+   1634c:	e24fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     link = (decltype(link))swizzle((typename E::Word)o.link, o.order, order);
-   1532a:	02a41423          	sh	a0,40(s0)
-   1532e:	54c8                	c.lw	a0,44(s1)
-   15330:	e40fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16350:	02a41423          	sh	a0,40(s0)
+   16354:	02c4a503          	lw	a0,44(s1)
+   16358:	e18fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     info = swizzle(o.info, o.order, order);
-   15334:	d448                	c.sw	a0,44(s0)
+   1635c:	02a42623          	sw	a0,44(s0)
     return (T)__builtin_bswap64((std::uint64_t)v);
-   15336:	7888                	c.ld	a0,48(s1)
-   15338:	f68fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   16360:	0304b503          	ld	a0,48(s1)
+   16364:	f3cfc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     addralign = swizzle(o.addralign, o.order, order);
-   1533c:	f808                	c.sd	a0,48(s0)
-   1533e:	7c88                	c.ld	a0,56(s1)
-   15340:	f60fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   16368:	02a43823          	sd	a0,48(s0)
+   1636c:	0384b503          	ld	a0,56(s1)
+   16370:	f30fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     entsize = swizzle(o.entsize, o.order, order);
-   15344:	fc08                	c.sd	a0,56(s0)
+   16374:	02a43c23          	sd	a0,56(s0)
   }
-   15346:	b5e5                	c.j	1522e <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   16378:	e55ff06f          	jal	zero,161cc <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     name = swizzle(o.name, o.order, order);
-   15348:	419c                	c.lw	a5,0(a1)
-   1534a:	c11c                	c.sw	a5,0(a0)
+   1637c:	0005a783          	lw	a5,0(a1)
+   16380:	00f52023          	sw	a5,0(a0)
     type = swizzle(o.type, o.order, order);
-   1534c:	41dc                	c.lw	a5,4(a1)
-   1534e:	c15c                	c.sw	a5,4(a0)
+   16384:	0045a783          	lw	a5,4(a1)
+   16388:	00f52223          	sw	a5,4(a0)
     flags = (decltype(flags))swizzle(o.flags, o.order, order);
-   15350:	659c                	c.ld	a5,8(a1)
-   15352:	e51c                	c.sd	a5,8(a0)
+   1638c:	0085b783          	ld	a5,8(a1)
+   16390:	00f53423          	sd	a5,8(a0)
     addr = swizzle(o.addr, o.order, order);
-   15354:	699c                	c.ld	a5,16(a1)
-   15356:	e91c                	c.sd	a5,16(a0)
+   16394:	0105b783          	ld	a5,16(a1)
+   16398:	00f53823          	sd	a5,16(a0)
     offset = swizzle(o.offset, o.order, order);
-   15358:	6d9c                	c.ld	a5,24(a1)
-   1535a:	ed1c                	c.sd	a5,24(a0)
+   1639c:	0185b783          	ld	a5,24(a1)
+   163a0:	00f53c23          	sd	a5,24(a0)
     size = swizzle(o.size, o.order, order);
-   1535c:	719c                	c.ld	a5,32(a1)
-   1535e:	f11c                	c.sd	a5,32(a0)
+   163a4:	0205b783          	ld	a5,32(a1)
+   163a8:	02f53023          	sd	a5,32(a0)
     link = (decltype(link))swizzle((typename E::Word)o.link, o.order, order);
-   15360:	559c                	c.lw	a5,40(a1)
-   15362:	02f51423          	sh	a5,40(a0)
+   163ac:	0285a783          	lw	a5,40(a1)
+   163b0:	02f51423          	sh	a5,40(a0)
     info = swizzle(o.info, o.order, order);
-   15366:	55dc                	c.lw	a5,44(a1)
-   15368:	d55c                	c.sw	a5,44(a0)
+   163b4:	02c5a783          	lw	a5,44(a1)
+   163b8:	02f52623          	sw	a5,44(a0)
     addralign = swizzle(o.addralign, o.order, order);
-   1536a:	799c                	c.ld	a5,48(a1)
-   1536c:	f91c                	c.sd	a5,48(a0)
+   163bc:	0305b783          	ld	a5,48(a1)
+   163c0:	02f53823          	sd	a5,48(a0)
     entsize = swizzle(o.entsize, o.order, order);
-   1536e:	7d9c                	c.ld	a5,56(a1)
-   15370:	fd1c                	c.sd	a5,56(a0)
+   163c4:	0385b783          	ld	a5,56(a1)
+   163c8:	02f53c23          	sd	a5,56(a0)
   }
-   15372:	bd75                	c.j	1522e <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   163cc:	e01ff06f          	jal	zero,161cc <void elf::canon_hdr<elf::Shdr>(elf::Shdr<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
 
-0000000000015374 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)>:
+00000000000163d0 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)>:
 void canon_hdr(Hdr<Elf64, byte_order::native> *out, const void *data,
-   15374:	1101                	c.addi	sp,-32
-   15376:	ec06                	c.sdsp	ra,24(sp)
-   15378:	e822                	c.sdsp	s0,16(sp)
-   1537a:	e426                	c.sdsp	s1,8(sp)
-   1537c:	842a                	c.mv	s0,a0
-   1537e:	84ae                	c.mv	s1,a1
+   163d0:	fe010113          	addi	sp,sp,-32
+   163d4:	00113c23          	sd	ra,24(sp)
+   163d8:	00813823          	sd	s0,16(sp)
+   163dc:	00913423          	sd	s1,8(sp)
+   163e0:	00050413          	addi	s0,a0,0
+   163e4:	00058493          	addi	s1,a1,0
   switch (ei_class) {
-   15380:	4785                	c.li	a5,1
-   15382:	00f60a63          	beq	a2,a5,15396 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x22>
-   15386:	4789                	c.li	a5,2
-   15388:	08f60463          	beq	a2,a5,15410 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x9c>
+   163e8:	00100793          	addi	a5,zero,1
+   163ec:	02f60063          	beq	a2,a5,1640c <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x3c>
+   163f0:	00200793          	addi	a5,zero,2
+   163f4:	0af60c63          	beq	a2,a5,164ac <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0xdc>
 }
-   1538c:	60e2                	c.ldsp	ra,24(sp)
-   1538e:	6442                	c.ldsp	s0,16(sp)
-   15390:	64a2                	c.ldsp	s1,8(sp)
-   15392:	6105                	c.addi16sp	sp,32
-   15394:	8082                	c.jr	ra
-   15396:	4785                	c.li	a5,1
-   15398:	04f68763          	beq	a3,a5,153e6 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x72>
-   1539c:	4789                	c.li	a5,2
-   1539e:	fef697e3          	bne	a3,a5,1538c <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   163f8:	01813083          	ld	ra,24(sp)
+   163fc:	01013403          	ld	s0,16(sp)
+   16400:	00813483          	ld	s1,8(sp)
+   16404:	02010113          	addi	sp,sp,32
+   16408:	00008067          	jalr	zero,0(ra)
+   1640c:	00100793          	addi	a5,zero,1
+   16410:	06f68463          	beq	a3,a5,16478 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0xa8>
+   16414:	00200793          	addi	a5,zero,2
+   16418:	fef690e3          	bne	a3,a5,163f8 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     return (T)__builtin_bswap32((std::uint32_t)v);
-   153a2:	4188                	c.lw	a0,0(a1)
-   153a4:	dccfd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   1641c:	0005a503          	lw	a0,0(a1)
+   16420:	d50fc0ef          	jal	ra,12970 <__bswapsi2@plt>
   shn shnxd;           // Section table index
   Elf64::Addr value;   // Symbol value (address)
   Elf64::Xword size;   // Size of object
 
   template <typename E2> void from(const E2 &o) {
     name = swizzle(o.name, o.order, order);
-   153a8:	c008                	c.sw	a0,0(s0)
-   153aa:	40c8                	c.lw	a0,4(s1)
-   153ac:	dc4fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16424:	00a42023          	sw	a0,0(s0)
+   16428:	0044a503          	lw	a0,4(s1)
+   1642c:	d44fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     value = swizzle(o.value, o.order, order);
-   153b0:	1502                	c.slli	a0,0x20
-   153b2:	9101                	c.srli	a0,0x20
-   153b4:	e408                	c.sd	a0,8(s0)
-   153b6:	4488                	c.lw	a0,8(s1)
-   153b8:	db8fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   16430:	02051513          	slli	a0,a0,0x20
+   16434:	02055513          	srli	a0,a0,0x20
+   16438:	00a43423          	sd	a0,8(s0)
+   1643c:	0084a503          	lw	a0,8(s1)
+   16440:	d30fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     size = swizzle(o.size, o.order, order);
-   153bc:	1502                	c.slli	a0,0x20
-   153be:	9101                	c.srli	a0,0x20
-   153c0:	e808                	c.sd	a0,16(s0)
+   16444:	02051513          	slli	a0,a0,0x20
+   16448:	02055513          	srli	a0,a0,0x20
+   1644c:	00a43823          	sd	a0,16(s0)
     info = o.info;
-   153c2:	00c4c783          	lbu	a5,12(s1)
-   153c6:	00f40223          	sb	a5,4(s0)
+   16450:	00c4c783          	lbu	a5,12(s1)
+   16454:	00f40223          	sb	a5,4(s0)
     other = o.other;
-   153ca:	00d4c783          	lbu	a5,13(s1)
-   153ce:	00f402a3          	sb	a5,5(s0)
+   16458:	00d4c783          	lbu	a5,13(s1)
+   1645c:	00f402a3          	sb	a5,5(s0)
     shnxd = swizzle(o.shnxd, o.order, order);
-   153d2:	00e4d783          	lhu	a5,14(s1)
+   16460:	00e4d783          	lhu	a5,14(s1)
     return (T)(((x & 0xFF) << 8) | (x >> 8));
-   153d6:	0087d71b          	srliw	a4,a5,0x8
-   153da:	0087979b          	slliw	a5,a5,0x8
-   153de:	8fd9                	c.or	a5,a4
-   153e0:	00f41323          	sh	a5,6(s0)
+   16464:	0087d71b          	srliw	a4,a5,0x8
+   16468:	0087979b          	slliw	a5,a5,0x8
+   1646c:	00f767b3          	or	a5,a4,a5
+   16470:	00f41323          	sh	a5,6(s0)
   }
-   153e4:	b765                	c.j	1538c <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   16474:	f85ff06f          	jal	zero,163f8 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     name = swizzle(o.name, o.order, order);
-   153e6:	419c                	c.lw	a5,0(a1)
-   153e8:	c11c                	c.sw	a5,0(a0)
+   16478:	0005a783          	lw	a5,0(a1)
+   1647c:	00f52023          	sw	a5,0(a0)
     value = swizzle(o.value, o.order, order);
-   153ea:	0045e783          	lwu	a5,4(a1)
-   153ee:	e51c                	c.sd	a5,8(a0)
+   16480:	0045e783          	lwu	a5,4(a1)
+   16484:	00f53423          	sd	a5,8(a0)
     size = swizzle(o.size, o.order, order);
-   153f0:	0085e783          	lwu	a5,8(a1)
-   153f4:	e91c                	c.sd	a5,16(a0)
+   16488:	0085e783          	lwu	a5,8(a1)
+   1648c:	00f53823          	sd	a5,16(a0)
     info = o.info;
-   153f6:	00c5c783          	lbu	a5,12(a1)
-   153fa:	00f50223          	sb	a5,4(a0)
+   16490:	00c5c783          	lbu	a5,12(a1)
+   16494:	00f50223          	sb	a5,4(a0)
     other = o.other;
-   153fe:	00d5c783          	lbu	a5,13(a1)
-   15402:	00f502a3          	sb	a5,5(a0)
+   16498:	00d5c783          	lbu	a5,13(a1)
+   1649c:	00f502a3          	sb	a5,5(a0)
     shnxd = swizzle(o.shnxd, o.order, order);
-   15406:	00e5d783          	lhu	a5,14(a1)
-   1540a:	00f51323          	sh	a5,6(a0)
+   164a0:	00e5d783          	lhu	a5,14(a1)
+   164a4:	00f51323          	sh	a5,6(a0)
   }
-   1540e:	bfbd                	c.j	1538c <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
-   15410:	4785                	c.li	a5,1
-   15412:	04f68363          	beq	a3,a5,15458 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0xe4>
-   15416:	4789                	c.li	a5,2
-   15418:	f6f69ae3          	bne	a3,a5,1538c <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   164a8:	f51ff06f          	jal	zero,163f8 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
+   164ac:	00100793          	addi	a5,zero,1
+   164b0:	04f68c63          	beq	a3,a5,16508 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x138>
+   164b4:	00200793          	addi	a5,zero,2
+   164b8:	f4f690e3          	bne	a3,a5,163f8 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     return (T)__builtin_bswap32((std::uint32_t)v);
-   1541c:	4188                	c.lw	a0,0(a1)
-   1541e:	d52fd0ef          	jal	ra,12970 <__bswapsi2@plt>
+   164bc:	0005a503          	lw	a0,0(a1)
+   164c0:	cb0fc0ef          	jal	ra,12970 <__bswapsi2@plt>
     name = swizzle(o.name, o.order, order);
-   15422:	c008                	c.sw	a0,0(s0)
+   164c4:	00a42023          	sw	a0,0(s0)
     return (T)__builtin_bswap64((std::uint64_t)v);
-   15424:	6488                	c.ld	a0,8(s1)
-   15426:	e7afd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   164c8:	0084b503          	ld	a0,8(s1)
+   164cc:	dd4fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     value = swizzle(o.value, o.order, order);
-   1542a:	e408                	c.sd	a0,8(s0)
-   1542c:	6888                	c.ld	a0,16(s1)
-   1542e:	e72fd0ef          	jal	ra,12aa0 <__bswapdi2@plt>
+   164d0:	00a43423          	sd	a0,8(s0)
+   164d4:	0104b503          	ld	a0,16(s1)
+   164d8:	dc8fc0ef          	jal	ra,12aa0 <__bswapdi2@plt>
     size = swizzle(o.size, o.order, order);
-   15432:	e808                	c.sd	a0,16(s0)
+   164dc:	00a43823          	sd	a0,16(s0)
     info = o.info;
-   15434:	0044c783          	lbu	a5,4(s1)
-   15438:	00f40223          	sb	a5,4(s0)
+   164e0:	0044c783          	lbu	a5,4(s1)
+   164e4:	00f40223          	sb	a5,4(s0)
     other = o.other;
-   1543c:	0054c783          	lbu	a5,5(s1)
-   15440:	00f402a3          	sb	a5,5(s0)
+   164e8:	0054c783          	lbu	a5,5(s1)
+   164ec:	00f402a3          	sb	a5,5(s0)
     shnxd = swizzle(o.shnxd, o.order, order);
-   15444:	0064d783          	lhu	a5,6(s1)
+   164f0:	0064d783          	lhu	a5,6(s1)
     return (T)(((x & 0xFF) << 8) | (x >> 8));
-   15448:	0087d71b          	srliw	a4,a5,0x8
-   1544c:	0087979b          	slliw	a5,a5,0x8
-   15450:	8fd9                	c.or	a5,a4
-   15452:	00f41323          	sh	a5,6(s0)
+   164f4:	0087d71b          	srliw	a4,a5,0x8
+   164f8:	0087979b          	slliw	a5,a5,0x8
+   164fc:	00f767b3          	or	a5,a4,a5
+   16500:	00f41323          	sh	a5,6(s0)
   }
-   15456:	bf1d                	c.j	1538c <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   16504:	ef5ff06f          	jal	zero,163f8 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
     name = swizzle(o.name, o.order, order);
-   15458:	419c                	c.lw	a5,0(a1)
-   1545a:	c11c                	c.sw	a5,0(a0)
+   16508:	0005a783          	lw	a5,0(a1)
+   1650c:	00f52023          	sw	a5,0(a0)
     value = swizzle(o.value, o.order, order);
-   1545c:	659c                	c.ld	a5,8(a1)
-   1545e:	e51c                	c.sd	a5,8(a0)
+   16510:	0085b783          	ld	a5,8(a1)
+   16514:	00f53423          	sd	a5,8(a0)
     size = swizzle(o.size, o.order, order);
-   15460:	699c                	c.ld	a5,16(a1)
-   15462:	e91c                	c.sd	a5,16(a0)
+   16518:	0105b783          	ld	a5,16(a1)
+   1651c:	00f53823          	sd	a5,16(a0)
     info = o.info;
-   15464:	0045c783          	lbu	a5,4(a1)
-   15468:	00f50223          	sb	a5,4(a0)
+   16520:	0045c783          	lbu	a5,4(a1)
+   16524:	00f50223          	sb	a5,4(a0)
     other = o.other;
-   1546c:	0055c783          	lbu	a5,5(a1)
-   15470:	00f502a3          	sb	a5,5(a0)
+   16528:	0055c783          	lbu	a5,5(a1)
+   1652c:	00f502a3          	sb	a5,5(a0)
     shnxd = swizzle(o.shnxd, o.order, order);
-   15474:	0065d783          	lhu	a5,6(a1)
-   15478:	00f51323          	sh	a5,6(a0)
+   16530:	0065d783          	lhu	a5,6(a1)
+   16534:	00f51323          	sh	a5,6(a0)
   }
-   1547c:	bf01                	c.j	1538c <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x18>
+   16538:	ec1ff06f          	jal	zero,163f8 <void elf::canon_hdr<elf::Sym>(elf::Sym<elf::Elf64, (elf::byte_order)0>*, void const*, elf::elfclass, elf::elfdata)+0x28>
 
-000000000001547e <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)>:
+000000000001653c <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)>:
 
   template<typename _CharT, typename _Traits, typename _Alloc>
     template<typename _InIterator>
       _GLIBCXX20_CONSTEXPR
       void
       basic_string<_CharT, _Traits, _Alloc>::
-   1547e:	7179                	c.addi16sp	sp,-48
-   15480:	f406                	c.sdsp	ra,40(sp)
-   15482:	f022                	c.sdsp	s0,32(sp)
-   15484:	ec26                	c.sdsp	s1,24(sp)
-   15486:	e84a                	c.sdsp	s2,16(sp)
-   15488:	842a                	c.mv	s0,a0
-   1548a:	892e                	c.mv	s2,a1
+   1653c:	fd010113          	addi	sp,sp,-48
+   16540:	02113423          	sd	ra,40(sp)
+   16544:	02813023          	sd	s0,32(sp)
+   16548:	00913c23          	sd	s1,24(sp)
+   1654c:	01213823          	sd	s2,16(sp)
+   16550:	00050413          	addi	s0,a0,0
+   16554:	00058913          	addi	s2,a1,0
                random_access_iterator_tag)
     {
       // concept requirements
       __glibcxx_function_requires(_RandomAccessIteratorConcept<
 				  _RandomAccessIterator>)
       return __last - __first;
-   1548c:	40b604b3          	sub	s1,a2,a1
+   16558:	40b604b3          	sub	s1,a2,a1
       _M_construct(_InIterator __beg, _InIterator __end,
 		   std::forward_iterator_tag)
       {
 	size_type __dnew = static_cast<size_type>(std::distance(__beg, __end));
-   15490:	e426                	c.sdsp	s1,8(sp)
+   1655c:	00913423          	sd	s1,8(sp)
 
 	if (__dnew > size_type(_S_local_capacity))
-   15492:	47bd                	c.li	a5,15
-   15494:	0297e663          	bltu	a5,s1,154c0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)+0x42>
-   15498:	6108                	c.ld	a0,0(a0)
+   16560:	00f00793          	addi	a5,zero,15
+   16564:	0497e263          	bltu	a5,s1,165a8 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)+0x6c>
+   16568:	00053503          	ld	a0,0(a0)
 	if (__n == 1)
-   1549a:	4785                	c.li	a5,1
-   1549c:	02f49e63          	bne	s1,a5,154d8 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)+0x5a>
+   1656c:	00100793          	addi	a5,zero,1
+   16570:	06f49063          	bne	s1,a5,165d0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)+0x94>
 	__c1 = __c2;
-   154a0:	0005c783          	lbu	a5,0(a1)
-   154a4:	00f50023          	sb	a5,0(a0)
+   16574:	0005c783          	lbu	a5,0(a1)
+   16578:	00f50023          	sb	a5,0(a0)
 
 	this->_S_copy_chars(_M_data(), __beg, __end);
 
 	__guard._M_guarded = 0;
 
 	_M_set_length(__dnew);
-   154a8:	6722                	c.ldsp	a4,8(sp)
+   1657c:	00813703          	ld	a4,8(sp)
       { _M_string_length = __length; }
-   154aa:	e418                	c.sd	a4,8(s0)
-   154ac:	601c                	c.ld	a5,0(s0)
-   154ae:	97ba                	c.add	a5,a4
-   154b0:	00078023          	sb	zero,0(a5)
+   16580:	00e43423          	sd	a4,8(s0)
+   16584:	00043783          	ld	a5,0(s0)
+   16588:	00e787b3          	add	a5,a5,a4
+   1658c:	00078023          	sb	zero,0(a5)
       }
-   154b4:	70a2                	c.ldsp	ra,40(sp)
-   154b6:	7402                	c.ldsp	s0,32(sp)
-   154b8:	64e2                	c.ldsp	s1,24(sp)
-   154ba:	6942                	c.ldsp	s2,16(sp)
-   154bc:	6145                	c.addi16sp	sp,48
-   154be:	8082                	c.jr	ra
+   16590:	02813083          	ld	ra,40(sp)
+   16594:	02013403          	ld	s0,32(sp)
+   16598:	01813483          	ld	s1,24(sp)
+   1659c:	01013903          	ld	s2,16(sp)
+   165a0:	03010113          	addi	sp,sp,48
+   165a4:	00008067          	jalr	zero,0(ra)
 	    _M_data(_M_create(__dnew, size_type(0)));
-   154c0:	4601                	c.li	a2,0
-   154c2:	002c                	c.addi4spn	a1,sp,8
-   154c4:	f0cfd0ef          	jal	ra,12bd0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)@plt>
+   165a8:	00000613          	addi	a2,zero,0
+   165ac:	00810593          	addi	a1,sp,8
+   165b0:	e20fc0ef          	jal	ra,12bd0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)@plt>
       { _M_dataplus._M_p = __p; }
-   154c8:	e008                	c.sd	a0,0(s0)
+   165b4:	00a43023          	sd	a0,0(s0)
       { _M_allocated_capacity = __capacity; }
-   154ca:	67a2                	c.ldsp	a5,8(sp)
-   154cc:	e81c                	c.sd	a5,16(s0)
+   165b8:	00813783          	ld	a5,8(sp)
+   165bc:	00f43823          	sd	a5,16(s0)
 	  return __s1;
 #if __cplusplus >= 202002L
 	if (std::__is_constant_evaluated())
 	  return __gnu_cxx::char_traits<char_type>::copy(__s1, __s2, __n);
 #endif
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   154ce:	8626                	c.mv	a2,s1
-   154d0:	85ca                	c.mv	a1,s2
-   154d2:	e2efd0ef          	jal	ra,12b00 <memcpy@plt>
-   154d6:	bfc9                	c.j	154a8 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)+0x2a>
+   165c0:	00048613          	addi	a2,s1,0
+   165c4:	00090593          	addi	a1,s2,0
+   165c8:	d38fc0ef          	jal	ra,12b00 <memcpy@plt>
+   165cc:	fb1ff06f          	jal	zero,1657c <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)+0x40>
 	if (__n == 0)
-   154d8:	d8e1                	c.beqz	s1,154a8 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)+0x2a>
-   154da:	bfd5                	c.j	154ce <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)+0x50>
+   165d0:	fa0486e3          	beq	s1,zero,1657c <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)+0x40>
+   165d4:	fedff06f          	jal	zero,165c0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)+0x84>
 
-00000000000154dc <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)>:
+00000000000165d8 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)>:
 #if __cplusplus >= 201103L
   template<typename _Tp, typename _Alloc>
     template<typename... _Args>
       _GLIBCXX20_CONSTEXPR
       void
       vector<_Tp, _Alloc>::
-   154dc:	715d                	c.addi16sp	sp,-80
-   154de:	e486                	c.sdsp	ra,72(sp)
-   154e0:	e0a2                	c.sdsp	s0,64(sp)
-   154e2:	fc26                	c.sdsp	s1,56(sp)
-   154e4:	f84a                	c.sdsp	s2,48(sp)
-   154e6:	f44e                	c.sdsp	s3,40(sp)
-   154e8:	f052                	c.sdsp	s4,32(sp)
-   154ea:	ec56                	c.sdsp	s5,24(sp)
-   154ec:	e85a                	c.sdsp	s6,16(sp)
-   154ee:	e45e                	c.sdsp	s7,8(sp)
-   154f0:	e062                	c.sdsp	s8,0(sp)
+   165d8:	fb010113          	addi	sp,sp,-80
+   165dc:	04113423          	sd	ra,72(sp)
+   165e0:	04813023          	sd	s0,64(sp)
+   165e4:	02913c23          	sd	s1,56(sp)
+   165e8:	03213823          	sd	s2,48(sp)
+   165ec:	03313423          	sd	s3,40(sp)
+   165f0:	03413023          	sd	s4,32(sp)
+   165f4:	01513c23          	sd	s5,24(sp)
+   165f8:	01613823          	sd	s6,16(sp)
+   165fc:	01713423          	sd	s7,8(sp)
+   16600:	01813023          	sd	s8,0(sp)
       { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
-   154f2:	00853903          	ld	s2,8(a0)
-   154f6:	00053a03          	ld	s4,0(a0)
-   154fa:	414907b3          	sub	a5,s2,s4
-   154fe:	8791                	c.srai	a5,0x4
+   16604:	00853903          	ld	s2,8(a0)
+   16608:	00053a03          	ld	s4,0(a0)
+   1660c:	414907b3          	sub	a5,s2,s4
+   16610:	4047d793          	srai	a5,a5,0x4
       // Called by _M_fill_insert, _M_insert_aux etc.
       _GLIBCXX20_CONSTEXPR
       size_type
       _M_check_len(size_type __n, const char* __s) const
       {
 	if (max_size() - size() < __n)
-   15500:	577d                	c.li	a4,-1
-   15502:	8315                	c.srli	a4,0x5
-   15504:	02e78763          	beq	a5,a4,15532 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x56>
-   15508:	8aaa                	c.mv	s5,a0
-   1550a:	8bae                	c.mv	s7,a1
-   1550c:	84b2                	c.mv	s1,a2
-   1550e:	842e                	c.mv	s0,a1
+   16614:	fff00713          	addi	a4,zero,-1
+   16618:	00575713          	srli	a4,a4,0x5
+   1661c:	04e78463          	beq	a5,a4,16664 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x8c>
+   16620:	00050a93          	addi	s5,a0,0
+   16624:	00058b93          	addi	s7,a1,0
+   16628:	00060493          	addi	s1,a2,0
+   1662c:	00058413          	addi	s0,a1,0
       // concept requirements
       __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
       //return  __a < __b ? __b : __a;
       if (__a < __b)
 	return __b;
       return __a;
-   15510:	873e                	c.mv	a4,a5
+   16630:	00078713          	addi	a4,a5,0
       if (__a < __b)
-   15512:	03490663          	beq	s2,s4,1553e <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x62>
+   16634:	03490e63          	beq	s2,s4,16670 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x98>
 	  __throw_length_error(__N(__s));
 
 	const size_type __len = size() + (std::max)(size(), __n);
-   15516:	973e                	c.add	a4,a5
+   16638:	00e78733          	add	a4,a5,a4
 	return (__len < size() || __len > max_size()) ? max_size() : __len;
-   15518:	02f76763          	bltu	a4,a5,15546 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x6a>
-   1551c:	8b3a                	c.mv	s6,a4
-   1551e:	57fd                	c.li	a5,-1
-   15520:	8395                	c.srli	a5,0x5
-   15522:	00e7f363          	bgeu	a5,a4,15528 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x4c>
-   15526:	8b3e                	c.mv	s6,a5
+   1663c:	04f76263          	bltu	a4,a5,16680 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0xa8>
+   16640:	00070b13          	addi	s6,a4,0
+   16644:	fff00793          	addi	a5,zero,-1
+   16648:	0057d793          	srli	a5,a5,0x5
+   1664c:	00e7f463          	bgeu	a5,a4,16654 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x7c>
+   16650:	00078b13          	addi	s6,a5,0
     _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
     inline typename __normal_iterator<_Iterator, _Container>::difference_type
     operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
 	      const __normal_iterator<_Iterator, _Container>& __rhs)
     _GLIBCXX_NOEXCEPT
     { return __lhs.base() - __rhs.base(); }
-   15528:	414b8c33          	sub	s8,s7,s4
+   16654:	414b8c33          	sub	s8,s7,s4
 	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
-   1552c:	4981                	c.li	s3,0
-   1552e:	c715                	c.beqz	a4,1555a <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x7e>
-   15530:	a005                	c.j	15550 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x74>
+   16658:	00000993          	addi	s3,zero,0
+   1665c:	02070e63          	beq	a4,zero,16698 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0xc0>
+   16660:	02c0006f          	jal	zero,1668c <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0xb4>
 	  __throw_length_error(__N(__s));
-   15532:	00002517          	auipc	a0,0x2
-   15536:	80650513          	addi	a0,a0,-2042 # 16d38 <__libc_csu_fini+0x2d8>
-   1553a:	cb6fd0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   16664:	00002517          	auipc	a0,0x2
+   16668:	0a450513          	addi	a0,a0,164 # 18708 <__libc_csu_fini+0x2d4>
+   1666c:	b84fc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
 	return __b;
-   1553e:	4705                	c.li	a4,1
-   15540:	bfd9                	c.j	15516 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x3a>
+   16670:	00100713          	addi	a4,zero,1
+   16674:	fc5ff06f          	jal	zero,16638 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x60>
 	_ValueType;
       typedef typename iterator_traits<_ForwardIterator>::value_type
 	_ValueType2;
       static_assert(std::is_same<_ValueType, _ValueType2>::value,
 	  "relocation is only possible for values of the same type");
       _ForwardIterator __cur = __result;
-   15542:	86ce                	c.mv	a3,s3
-   15544:	a0a1                	c.j	1558c <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0xb0>
-   15546:	414b8c33          	sub	s8,s7,s4
+   16678:	00098693          	addi	a3,s3,0
+   1667c:	0680006f          	jal	zero,166e4 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x10c>
+   16680:	414b8c33          	sub	s8,s7,s4
 	return (__len < size() || __len > max_size()) ? max_size() : __len;
-   1554a:	5b7d                	c.li	s6,-1
-   1554c:	005b5b13          	srli	s6,s6,0x5
+   16684:	fff00b13          	addi	s6,zero,-1
+   16688:	005b5b13          	srli	s6,s6,0x5
 	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-   15550:	004b1513          	slli	a0,s6,0x4
-   15554:	d2cfd0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
-   15558:	89aa                	c.mv	s3,a0
+   1668c:	004b1513          	slli	a0,s6,0x4
+   16690:	bf0fc0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
+   16694:	00050993          	addi	s3,a0,0
 	  // The order of the three operations is dictated by the C++11
 	  // case, where the moves could alter a new element belonging
 	  // to the existing vector.  This is an issue only for callers
 	  // taking the element by lvalue ref (see last bullet of C++11
 	  // [res.on.arguments]).
 	  _Alloc_traits::construct(this->_M_impl,
-   1555a:	018987b3          	add	a5,s3,s8
+   16698:	018987b3          	add	a5,s3,s8
       : _M_ptr(__r._M_ptr), _M_refcount()
-   1555e:	6098                	c.ld	a4,0(s1)
-   15560:	e398                	c.sd	a4,0(a5)
+   1669c:	0004b703          	ld	a4,0(s1)
+   166a0:	00e7b023          	sd	a4,0(a5)
 	_Sp_counted_base<_Lp>* __tmp = __r._M_pi;
-   15562:	6498                	c.ld	a4,8(s1)
+   166a4:	0084b703          	ld	a4,8(s1)
 	__r._M_pi = _M_pi;
-   15564:	0004b423          	sd	zero,8(s1)
+   166a8:	0004b423          	sd	zero,8(s1)
 	_M_pi = __tmp;
-   15568:	e798                	c.sd	a4,8(a5)
+   166ac:	00e7b423          	sd	a4,8(a5)
 	__r._M_ptr = nullptr;
-   1556a:	0004b023          	sd	zero,0(s1)
+   166b0:	0004b023          	sd	zero,0(s1)
       for (; __first != __last; ++__first, (void)++__cur)
-   1556e:	fd440ae3          	beq	s0,s4,15542 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x66>
-   15572:	414b86b3          	sub	a3,s7,s4
-   15576:	96ce                	c.add	a3,s3
-   15578:	8752                	c.mv	a4,s4
+   166b4:	fd4402e3          	beq	s0,s4,16678 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0xa0>
+   166b8:	414b86b3          	sub	a3,s7,s4
+   166bc:	00d986b3          	add	a3,s3,a3
+   166c0:	000a0713          	addi	a4,s4,0
       _ForwardIterator __cur = __result;
-   1557a:	87ce                	c.mv	a5,s3
+   166c4:	00098793          	addi	a5,s3,0
       : _M_ptr(__r._M_ptr), _M_refcount()
-   1557c:	6310                	c.ld	a2,0(a4)
-   1557e:	e390                	c.sd	a2,0(a5)
+   166c8:	00073603          	ld	a2,0(a4)
+   166cc:	00c7b023          	sd	a2,0(a5)
 	_M_pi = __tmp;
-   15580:	6710                	c.ld	a2,8(a4)
-   15582:	e790                	c.sd	a2,8(a5)
+   166d0:	00873603          	ld	a2,8(a4)
+   166d4:	00c7b423          	sd	a2,8(a5)
       for (; __first != __last; ++__first, (void)++__cur)
-   15584:	0741                	c.addi	a4,16
-   15586:	07c1                	c.addi	a5,16
-   15588:	fed79ae3          	bne	a5,a3,1557c <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0xa0>
+   166d8:	01070713          	addi	a4,a4,16
+   166dc:	01078793          	addi	a5,a5,16
+   166e0:	fed794e3          	bne	a5,a3,166c8 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0xf0>
 	  if _GLIBCXX17_CONSTEXPR (_S_use_relocate())
 	    {
 	      __new_finish = _S_relocate(__old_start, __position.base(),
 					 __new_start, _M_get_Tp_allocator());
 
 	      ++__new_finish;
-   1558c:	01068493          	addi	s1,a3,16
-   15590:	01240e63          	beq	s0,s2,155ac <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0xd0>
-   15594:	41790bb3          	sub	s7,s2,s7
+   166e4:	01068493          	addi	s1,a3,16
+   166e8:	03240663          	beq	s0,s2,16714 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x13c>
+   166ec:	41790bb3          	sub	s7,s2,s7
       _ForwardIterator __cur = __result;
-   15598:	87a6                	c.mv	a5,s1
+   166f0:	00048793          	addi	a5,s1,0
       : _M_ptr(__r._M_ptr), _M_refcount()
-   1559a:	6018                	c.ld	a4,0(s0)
-   1559c:	e398                	c.sd	a4,0(a5)
+   166f4:	00043703          	ld	a4,0(s0)
+   166f8:	00e7b023          	sd	a4,0(a5)
 	_M_pi = __tmp;
-   1559e:	6418                	c.ld	a4,8(s0)
-   155a0:	e798                	c.sd	a4,8(a5)
+   166fc:	00843703          	ld	a4,8(s0)
+   16700:	00e7b423          	sd	a4,8(a5)
       for (; __first != __last; ++__first, (void)++__cur)
-   155a2:	0441                	c.addi	s0,16
-   155a4:	07c1                	c.addi	a5,16
-   155a6:	ff241ae3          	bne	s0,s2,1559a <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0xbe>
-   155aa:	94de                	c.add	s1,s7
+   16704:	01040413          	addi	s0,s0,16
+   16708:	01078793          	addi	a5,a5,16
+   1670c:	ff2414e3          	bne	s0,s2,166f4 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x11c>
+   16710:	017484b3          	add	s1,s1,s7
 	if (__p)
-   155ac:	000a0563          	beq	s4,zero,155b6 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0xda>
+   16714:	000a0663          	beq	s4,zero,16720 <void std::vector<elf::segment, std::allocator<elf::segment> >::_M_realloc_insert<elf::segment>(__gnu_cxx::__normal_iterator<elf::segment*, std::vector<elf::segment, std::allocator<elf::segment> > >, elf::segment&&)+0x148>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   155b0:	8552                	c.mv	a0,s4
-   155b2:	cbefd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16718:	000a0513          	addi	a0,s4,0
+   1671c:	b54fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
 #endif
 	std::_Destroy(__old_start, __old_finish, _M_get_Tp_allocator());
       _GLIBCXX_ASAN_ANNOTATE_REINIT;
       _M_deallocate(__old_start,
 		    this->_M_impl._M_end_of_storage - __old_start);
       this->_M_impl._M_start = __new_start;
-   155b6:	013ab023          	sd	s3,0(s5)
+   16720:	013ab023          	sd	s3,0(s5)
       this->_M_impl._M_finish = __new_finish;
-   155ba:	009ab423          	sd	s1,8(s5)
+   16724:	009ab423          	sd	s1,8(s5)
       this->_M_impl._M_end_of_storage = __new_start + __len;
-   155be:	0b12                	c.slli	s6,0x4
-   155c0:	99da                	c.add	s3,s6
-   155c2:	013ab823          	sd	s3,16(s5)
+   16728:	004b1b13          	slli	s6,s6,0x4
+   1672c:	016989b3          	add	s3,s3,s6
+   16730:	013ab823          	sd	s3,16(s5)
     }
-   155c6:	60a6                	c.ldsp	ra,72(sp)
-   155c8:	6406                	c.ldsp	s0,64(sp)
-   155ca:	74e2                	c.ldsp	s1,56(sp)
-   155cc:	7942                	c.ldsp	s2,48(sp)
-   155ce:	79a2                	c.ldsp	s3,40(sp)
-   155d0:	7a02                	c.ldsp	s4,32(sp)
-   155d2:	6ae2                	c.ldsp	s5,24(sp)
-   155d4:	6b42                	c.ldsp	s6,16(sp)
-   155d6:	6ba2                	c.ldsp	s7,8(sp)
-   155d8:	6c02                	c.ldsp	s8,0(sp)
-   155da:	6161                	c.addi16sp	sp,80
-   155dc:	8082                	c.jr	ra
+   16734:	04813083          	ld	ra,72(sp)
+   16738:	04013403          	ld	s0,64(sp)
+   1673c:	03813483          	ld	s1,56(sp)
+   16740:	03013903          	ld	s2,48(sp)
+   16744:	02813983          	ld	s3,40(sp)
+   16748:	02013a03          	ld	s4,32(sp)
+   1674c:	01813a83          	ld	s5,24(sp)
+   16750:	01013b03          	ld	s6,16(sp)
+   16754:	00813b83          	ld	s7,8(sp)
+   16758:	00013c03          	ld	s8,0(sp)
+   1675c:	05010113          	addi	sp,sp,80
+   16760:	00008067          	jalr	zero,0(ra)
 
-00000000000155de <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)>:
+0000000000016764 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)>:
       vector<_Tp, _Alloc>::
-   155de:	715d                	c.addi16sp	sp,-80
-   155e0:	e486                	c.sdsp	ra,72(sp)
-   155e2:	e0a2                	c.sdsp	s0,64(sp)
-   155e4:	fc26                	c.sdsp	s1,56(sp)
-   155e6:	f84a                	c.sdsp	s2,48(sp)
-   155e8:	f44e                	c.sdsp	s3,40(sp)
-   155ea:	f052                	c.sdsp	s4,32(sp)
-   155ec:	ec56                	c.sdsp	s5,24(sp)
-   155ee:	e85a                	c.sdsp	s6,16(sp)
-   155f0:	e45e                	c.sdsp	s7,8(sp)
-   155f2:	e062                	c.sdsp	s8,0(sp)
+   16764:	fb010113          	addi	sp,sp,-80
+   16768:	04113423          	sd	ra,72(sp)
+   1676c:	04813023          	sd	s0,64(sp)
+   16770:	02913c23          	sd	s1,56(sp)
+   16774:	03213823          	sd	s2,48(sp)
+   16778:	03313423          	sd	s3,40(sp)
+   1677c:	03413023          	sd	s4,32(sp)
+   16780:	01513c23          	sd	s5,24(sp)
+   16784:	01613823          	sd	s6,16(sp)
+   16788:	01713423          	sd	s7,8(sp)
+   1678c:	01813023          	sd	s8,0(sp)
       { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
-   155f4:	00853903          	ld	s2,8(a0)
-   155f8:	00053a03          	ld	s4,0(a0)
-   155fc:	414907b3          	sub	a5,s2,s4
-   15600:	8791                	c.srai	a5,0x4
+   16790:	00853903          	ld	s2,8(a0)
+   16794:	00053a03          	ld	s4,0(a0)
+   16798:	414907b3          	sub	a5,s2,s4
+   1679c:	4047d793          	srai	a5,a5,0x4
 	if (max_size() - size() < __n)
-   15602:	577d                	c.li	a4,-1
-   15604:	8315                	c.srli	a4,0x5
-   15606:	02e78763          	beq	a5,a4,15634 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x56>
-   1560a:	8aaa                	c.mv	s5,a0
-   1560c:	8bae                	c.mv	s7,a1
-   1560e:	84b2                	c.mv	s1,a2
-   15610:	842e                	c.mv	s0,a1
+   167a0:	fff00713          	addi	a4,zero,-1
+   167a4:	00575713          	srli	a4,a4,0x5
+   167a8:	04e78463          	beq	a5,a4,167f0 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x8c>
+   167ac:	00050a93          	addi	s5,a0,0
+   167b0:	00058b93          	addi	s7,a1,0
+   167b4:	00060493          	addi	s1,a2,0
+   167b8:	00058413          	addi	s0,a1,0
       return __a;
-   15612:	873e                	c.mv	a4,a5
+   167bc:	00078713          	addi	a4,a5,0
       if (__a < __b)
-   15614:	03490663          	beq	s2,s4,15640 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x62>
+   167c0:	03490e63          	beq	s2,s4,167fc <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x98>
 	const size_type __len = size() + (std::max)(size(), __n);
-   15618:	973e                	c.add	a4,a5
+   167c4:	00e78733          	add	a4,a5,a4
 	return (__len < size() || __len > max_size()) ? max_size() : __len;
-   1561a:	02f76763          	bltu	a4,a5,15648 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x6a>
-   1561e:	8b3a                	c.mv	s6,a4
-   15620:	57fd                	c.li	a5,-1
-   15622:	8395                	c.srli	a5,0x5
-   15624:	00e7f363          	bgeu	a5,a4,1562a <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x4c>
-   15628:	8b3e                	c.mv	s6,a5
-   1562a:	414b8c33          	sub	s8,s7,s4
+   167c8:	04f76263          	bltu	a4,a5,1680c <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0xa8>
+   167cc:	00070b13          	addi	s6,a4,0
+   167d0:	fff00793          	addi	a5,zero,-1
+   167d4:	0057d793          	srli	a5,a5,0x5
+   167d8:	00e7f463          	bgeu	a5,a4,167e0 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x7c>
+   167dc:	00078b13          	addi	s6,a5,0
+   167e0:	414b8c33          	sub	s8,s7,s4
 	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
-   1562e:	4981                	c.li	s3,0
-   15630:	c715                	c.beqz	a4,1565c <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x7e>
-   15632:	a005                	c.j	15652 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x74>
+   167e4:	00000993          	addi	s3,zero,0
+   167e8:	02070e63          	beq	a4,zero,16824 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0xc0>
+   167ec:	02c0006f          	jal	zero,16818 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0xb4>
 	  __throw_length_error(__N(__s));
-   15634:	00001517          	auipc	a0,0x1
-   15638:	70450513          	addi	a0,a0,1796 # 16d38 <__libc_csu_fini+0x2d8>
-   1563c:	bb4fd0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   167f0:	00002517          	auipc	a0,0x2
+   167f4:	f1850513          	addi	a0,a0,-232 # 18708 <__libc_csu_fini+0x2d4>
+   167f8:	9f8fc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
 	return __b;
-   15640:	4705                	c.li	a4,1
-   15642:	bfd9                	c.j	15618 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x3a>
+   167fc:	00100713          	addi	a4,zero,1
+   16800:	fc5ff06f          	jal	zero,167c4 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x60>
       _ForwardIterator __cur = __result;
-   15644:	86ce                	c.mv	a3,s3
-   15646:	a0a1                	c.j	1568e <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0xb0>
-   15648:	414b8c33          	sub	s8,s7,s4
+   16804:	00098693          	addi	a3,s3,0
+   16808:	0680006f          	jal	zero,16870 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x10c>
+   1680c:	414b8c33          	sub	s8,s7,s4
 	return (__len < size() || __len > max_size()) ? max_size() : __len;
-   1564c:	5b7d                	c.li	s6,-1
-   1564e:	005b5b13          	srli	s6,s6,0x5
+   16810:	fff00b13          	addi	s6,zero,-1
+   16814:	005b5b13          	srli	s6,s6,0x5
 	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-   15652:	004b1513          	slli	a0,s6,0x4
-   15656:	c2afd0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
-   1565a:	89aa                	c.mv	s3,a0
+   16818:	004b1513          	slli	a0,s6,0x4
+   1681c:	a64fc0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
+   16820:	00050993          	addi	s3,a0,0
 	  _Alloc_traits::construct(this->_M_impl,
-   1565c:	018987b3          	add	a5,s3,s8
+   16824:	018987b3          	add	a5,s3,s8
       : _M_ptr(__r._M_ptr), _M_refcount()
-   15660:	6098                	c.ld	a4,0(s1)
-   15662:	e398                	c.sd	a4,0(a5)
+   16828:	0004b703          	ld	a4,0(s1)
+   1682c:	00e7b023          	sd	a4,0(a5)
 	_Sp_counted_base<_Lp>* __tmp = __r._M_pi;
-   15664:	6498                	c.ld	a4,8(s1)
+   16830:	0084b703          	ld	a4,8(s1)
 	__r._M_pi = _M_pi;
-   15666:	0004b423          	sd	zero,8(s1)
+   16834:	0004b423          	sd	zero,8(s1)
 	_M_pi = __tmp;
-   1566a:	e798                	c.sd	a4,8(a5)
+   16838:	00e7b423          	sd	a4,8(a5)
 	__r._M_ptr = nullptr;
-   1566c:	0004b023          	sd	zero,0(s1)
+   1683c:	0004b023          	sd	zero,0(s1)
       for (; __first != __last; ++__first, (void)++__cur)
-   15670:	fd440ae3          	beq	s0,s4,15644 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x66>
-   15674:	414b86b3          	sub	a3,s7,s4
-   15678:	96ce                	c.add	a3,s3
-   1567a:	8752                	c.mv	a4,s4
+   16840:	fd4402e3          	beq	s0,s4,16804 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0xa0>
+   16844:	414b86b3          	sub	a3,s7,s4
+   16848:	00d986b3          	add	a3,s3,a3
+   1684c:	000a0713          	addi	a4,s4,0
       _ForwardIterator __cur = __result;
-   1567c:	87ce                	c.mv	a5,s3
+   16850:	00098793          	addi	a5,s3,0
       : _M_ptr(__r._M_ptr), _M_refcount()
-   1567e:	6310                	c.ld	a2,0(a4)
-   15680:	e390                	c.sd	a2,0(a5)
+   16854:	00073603          	ld	a2,0(a4)
+   16858:	00c7b023          	sd	a2,0(a5)
 	_M_pi = __tmp;
-   15682:	6710                	c.ld	a2,8(a4)
-   15684:	e790                	c.sd	a2,8(a5)
+   1685c:	00873603          	ld	a2,8(a4)
+   16860:	00c7b423          	sd	a2,8(a5)
       for (; __first != __last; ++__first, (void)++__cur)
-   15686:	0741                	c.addi	a4,16
-   15688:	07c1                	c.addi	a5,16
-   1568a:	fed79ae3          	bne	a5,a3,1567e <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0xa0>
+   16864:	01070713          	addi	a4,a4,16
+   16868:	01078793          	addi	a5,a5,16
+   1686c:	fed794e3          	bne	a5,a3,16854 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0xf0>
 	      ++__new_finish;
-   1568e:	01068493          	addi	s1,a3,16
-   15692:	01240e63          	beq	s0,s2,156ae <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0xd0>
-   15696:	41790bb3          	sub	s7,s2,s7
+   16870:	01068493          	addi	s1,a3,16
+   16874:	03240663          	beq	s0,s2,168a0 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x13c>
+   16878:	41790bb3          	sub	s7,s2,s7
       _ForwardIterator __cur = __result;
-   1569a:	87a6                	c.mv	a5,s1
+   1687c:	00048793          	addi	a5,s1,0
       : _M_ptr(__r._M_ptr), _M_refcount()
-   1569c:	6018                	c.ld	a4,0(s0)
-   1569e:	e398                	c.sd	a4,0(a5)
+   16880:	00043703          	ld	a4,0(s0)
+   16884:	00e7b023          	sd	a4,0(a5)
 	_M_pi = __tmp;
-   156a0:	6418                	c.ld	a4,8(s0)
-   156a2:	e798                	c.sd	a4,8(a5)
+   16888:	00843703          	ld	a4,8(s0)
+   1688c:	00e7b423          	sd	a4,8(a5)
       for (; __first != __last; ++__first, (void)++__cur)
-   156a4:	0441                	c.addi	s0,16
-   156a6:	07c1                	c.addi	a5,16
-   156a8:	ff241ae3          	bne	s0,s2,1569c <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0xbe>
-   156ac:	94de                	c.add	s1,s7
+   16890:	01040413          	addi	s0,s0,16
+   16894:	01078793          	addi	a5,a5,16
+   16898:	ff2414e3          	bne	s0,s2,16880 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x11c>
+   1689c:	017484b3          	add	s1,s1,s7
 	if (__p)
-   156ae:	000a0563          	beq	s4,zero,156b8 <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0xda>
+   168a0:	000a0663          	beq	s4,zero,168ac <void std::vector<elf::section, std::allocator<elf::section> >::_M_realloc_insert<elf::section>(__gnu_cxx::__normal_iterator<elf::section*, std::vector<elf::section, std::allocator<elf::section> > >, elf::section&&)+0x148>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   156b2:	8552                	c.mv	a0,s4
-   156b4:	bbcfd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   168a4:	000a0513          	addi	a0,s4,0
+   168a8:	9c8fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       this->_M_impl._M_start = __new_start;
-   156b8:	013ab023          	sd	s3,0(s5)
+   168ac:	013ab023          	sd	s3,0(s5)
       this->_M_impl._M_finish = __new_finish;
-   156bc:	009ab423          	sd	s1,8(s5)
+   168b0:	009ab423          	sd	s1,8(s5)
       this->_M_impl._M_end_of_storage = __new_start + __len;
-   156c0:	0b12                	c.slli	s6,0x4
-   156c2:	99da                	c.add	s3,s6
-   156c4:	013ab823          	sd	s3,16(s5)
+   168b4:	004b1b13          	slli	s6,s6,0x4
+   168b8:	016989b3          	add	s3,s3,s6
+   168bc:	013ab823          	sd	s3,16(s5)
     }
-   156c8:	60a6                	c.ldsp	ra,72(sp)
-   156ca:	6406                	c.ldsp	s0,64(sp)
-   156cc:	74e2                	c.ldsp	s1,56(sp)
-   156ce:	7942                	c.ldsp	s2,48(sp)
-   156d0:	79a2                	c.ldsp	s3,40(sp)
-   156d2:	7a02                	c.ldsp	s4,32(sp)
-   156d4:	6ae2                	c.ldsp	s5,24(sp)
-   156d6:	6b42                	c.ldsp	s6,16(sp)
-   156d8:	6ba2                	c.ldsp	s7,8(sp)
-   156da:	6c02                	c.ldsp	s8,0(sp)
-   156dc:	6161                	c.addi16sp	sp,80
-   156de:	8082                	c.jr	ra
+   168c0:	04813083          	ld	ra,72(sp)
+   168c4:	04013403          	ld	s0,64(sp)
+   168c8:	03813483          	ld	s1,56(sp)
+   168cc:	03013903          	ld	s2,48(sp)
+   168d0:	02813983          	ld	s3,40(sp)
+   168d4:	02013a03          	ld	s4,32(sp)
+   168d8:	01813a83          	ld	s5,24(sp)
+   168dc:	01013b03          	ld	s6,16(sp)
+   168e0:	00813b83          	ld	s7,8(sp)
+   168e4:	00013c03          	ld	s8,0(sp)
+   168e8:	05010113          	addi	sp,sp,80
+   168ec:	00008067          	jalr	zero,0(ra)
 
-00000000000156e0 <elf::create_mmap_loader(int)>:
+00000000000168f0 <elf::create_mmap_loader(int)>:
       throw range_error("offset exceeds file size");
     return (const char *)base + offset;
   }
 };
 
 std::shared_ptr<loader> create_mmap_loader(int fd) {
-   156e0:	715d                	c.addi16sp	sp,-80
-   156e2:	e486                	c.sdsp	ra,72(sp)
-   156e4:	e0a2                	c.sdsp	s0,64(sp)
-   156e6:	fc26                	c.sdsp	s1,56(sp)
-   156e8:	f84a                	c.sdsp	s2,48(sp)
-   156ea:	f44e                	c.sdsp	s3,40(sp)
-   156ec:	892a                	c.mv	s2,a0
-   156ee:	84ae                	c.mv	s1,a1
+   168f0:	fb010113          	addi	sp,sp,-80
+   168f4:	04113423          	sd	ra,72(sp)
+   168f8:	04813023          	sd	s0,64(sp)
+   168fc:	02913c23          	sd	s1,56(sp)
+   16900:	03213823          	sd	s2,48(sp)
+   16904:	03313423          	sd	s3,40(sp)
+   16908:	00050913          	addi	s2,a0,0
+   1690c:	00058493          	addi	s1,a1,0
 	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-   156f0:	05000513          	addi	a0,zero,80
-   156f4:	b8cfd0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
-   156f8:	842a                	c.mv	s0,a0
-   156fa:	00052423          	sw	zero,8(a0)
-   156fe:	00052623          	sw	zero,12(a0)
-   15702:	00052823          	sw	zero,16(a0)
-   15706:	00052a23          	sw	zero,20(a0)
-   1570a:	00052c23          	sw	zero,24(a0)
-   1570e:	00052e23          	sw	zero,28(a0)
-   15712:	02053023          	sd	zero,32(a0)
-   15716:	02053423          	sd	zero,40(a0)
+   16910:	05000513          	addi	a0,zero,80
+   16914:	96cfc0ef          	jal	ra,12a80 <operator new(unsigned long)@plt>
+   16918:	00050413          	addi	s0,a0,0
+   1691c:	00052423          	sw	zero,8(a0)
+   16920:	00052623          	sw	zero,12(a0)
+   16924:	00052823          	sw	zero,16(a0)
+   16928:	00052a23          	sw	zero,20(a0)
+   1692c:	00052c23          	sw	zero,24(a0)
+   16930:	00052e23          	sw	zero,28(a0)
+   16934:	02053023          	sd	zero,32(a0)
+   16938:	02053423          	sd	zero,40(a0)
       : _M_use_count(1), _M_weak_count(1) { }
-   1571a:	4785                	c.li	a5,1
-   1571c:	d91c                	c.sw	a5,48(a0)
-   1571e:	d95c                	c.sw	a5,52(a0)
+   1693c:	00100793          	addi	a5,zero,1
+   16940:	02f52823          	sw	a5,48(a0)
+   16944:	02f52a23          	sw	a5,52(a0)
 	: _M_impl(__a)
-   15720:	00005797          	auipc	a5,0x5
-   15724:	b287b783          	ld	a5,-1240(a5) # 1a248 <vtable for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x490>
-   15728:	07c1                	c.addi	a5,16
-   1572a:	e11c                	c.sd	a5,0(a0)
-   1572c:	03850993          	addi	s3,a0,56
+   16948:	00006797          	auipc	a5,0x6
+   1694c:	9007b783          	ld	a5,-1792(a5) # 1c248 <vtable for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>@@Base+0x490>
+   16950:	01078793          	addi	a5,a5,16
+   16954:	00f53023          	sd	a5,0(a0)
+   16958:	03850993          	addi	s3,a0,56
   mmap_loader(int fd) {
-   15730:	00005797          	auipc	a5,0x5
-   15734:	af87b783          	ld	a5,-1288(a5) # 1a228 <vtable for elf::mmap_loader@@Base+0x498>
-   15738:	07c1                	c.addi	a5,16
-   1573a:	fd1c                	c.sd	a5,56(a0)
+   1695c:	00006797          	auipc	a5,0x6
+   16960:	8cc7b783          	ld	a5,-1844(a5) # 1c228 <vtable for elf::mmap_loader@@Base+0x498>
+   16964:	01078793          	addi	a5,a5,16
+   16968:	02f53c23          	sd	a5,56(a0)
     off_t end = lseek(fd, 0, SEEK_END);
-   1573c:	4609                	c.li	a2,2
-   1573e:	4581                	c.li	a1,0
-   15740:	8526                	c.mv	a0,s1
-   15742:	c0efd0ef          	jal	ra,12b50 <lseek@plt>
+   1696c:	00200613          	addi	a2,zero,2
+   16970:	00000593          	addi	a1,zero,0
+   16974:	00048513          	addi	a0,s1,0
+   16978:	9d8fc0ef          	jal	ra,12b50 <lseek@plt>
     if (end == (off_t)-1)
-   15746:	57fd                	c.li	a5,-1
-   15748:	02f50363          	beq	a0,a5,1576e <elf::create_mmap_loader(int)+0x8e>
-   1574c:	85aa                	c.mv	a1,a0
+   1697c:	fff00793          	addi	a5,zero,-1
+   16980:	02f50e63          	beq	a0,a5,169bc <elf::create_mmap_loader(int)+0xcc>
+   16984:	00050593          	addi	a1,a0,0
     lim = end;
-   1574e:	e428                	c.sd	a0,72(s0)
+   16988:	04a43423          	sd	a0,72(s0)
     base = mmap(nullptr, lim, PROT_READ, MAP_SHARED, fd, 0);
-   15750:	4781                	c.li	a5,0
-   15752:	8726                	c.mv	a4,s1
-   15754:	4685                	c.li	a3,1
-   15756:	4605                	c.li	a2,1
-   15758:	4501                	c.li	a0,0
-   1575a:	ad6fd0ef          	jal	ra,12a30 <mmap@plt>
-   1575e:	e028                	c.sd	a0,64(s0)
+   1698c:	00000793          	addi	a5,zero,0
+   16990:	00048713          	addi	a4,s1,0
+   16994:	00100693          	addi	a3,zero,1
+   16998:	00100613          	addi	a2,zero,1
+   1699c:	00000513          	addi	a0,zero,0
+   169a0:	890fc0ef          	jal	ra,12a30 <mmap@plt>
+   169a4:	04a43023          	sd	a0,64(s0)
     if (base == MAP_FAILED)
-   15760:	57fd                	c.li	a5,-1
-   15762:	04f50a63          	beq	a0,a5,157b6 <elf::create_mmap_loader(int)+0xd6>
+   169a8:	fff00793          	addi	a5,zero,-1
+   169ac:	06f50663          	beq	a0,a5,16a18 <elf::create_mmap_loader(int)+0x128>
     close(fd);
-   15766:	8526                	c.mv	a0,s1
-   15768:	cc8fd0ef          	jal	ra,12c30 <close@plt>
-   1576c:	a075                	c.j	15818 <elf::create_mmap_loader(int)+0x138>
+   169b0:	00048513          	addi	a0,s1,0
+   169b4:	a7cfc0ef          	jal	ra,12c30 <close@plt>
+   169b8:	0e00006f          	jal	zero,16a98 <elf::create_mmap_loader(int)+0x1a8>
       throw system_error(errno, system_category(), "finding file length");
-   1576e:	02000513          	addi	a0,zero,32
-   15772:	a6efd0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   15776:	892a                	c.mv	s2,a0
-   15778:	ca8fd0ef          	jal	ra,12c20 <__errno_location@plt>
-   1577c:	4104                	c.lw	s1,0(a0)
-   1577e:	a82fd0ef          	jal	ra,12a00 <std::_V2::system_category()@plt>
-   15782:	862a                	c.mv	a2,a0
+   169bc:	02000513          	addi	a0,zero,32
+   169c0:	820fc0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   169c4:	00050913          	addi	s2,a0,0
+   169c8:	a58fc0ef          	jal	ra,12c20 <__errno_location@plt>
+   169cc:	00052483          	lw	s1,0(a0)
+   169d0:	830fc0ef          	jal	ra,12a00 <std::_V2::system_category()@plt>
+   169d4:	00050613          	addi	a2,a0,0
   public:
     error_code() noexcept
     : _M_value(0), _M_cat(&system_category()) { }
 
     error_code(int __v, const error_category& __cat) noexcept
     : _M_value(__v), _M_cat(&__cat) { }
-   15784:	c826                	c.swsp	s1,16(sp)
+   169d8:	00912823          	sw	s1,16(sp)
 
     system_error(error_code __ec, const char* __what)
     : runtime_error(__what + (": " + __ec.message())), _M_code(__ec) { }
 
     system_error(int __v, const error_category& __ecat, const char* __what)
     : system_error(error_code(__v, __ecat), __what) { }
-   15786:	00002697          	auipc	a3,0x2
-   1578a:	a2a68693          	addi	a3,a3,-1494 # 171b0 <std::_Sp_make_shared_tag::_S_ti()::__tag+0x38>
-   1578e:	65c2                	c.ldsp	a1,16(sp)
-   15790:	854a                	c.mv	a0,s2
-   15792:	00005317          	auipc	t1,0x5
-   15796:	a8e33303          	ld	t1,-1394(t1) # 1a220 <std::system_error::system_error(std::error_code, char const*)@@Base+0x48d4>
-   1579a:	9302                	c.jalr	t1
-   1579c:	00005617          	auipc	a2,0x5
-   157a0:	a7463603          	ld	a2,-1420(a2) # 1a210 <std::system_error::~system_error()@GLIBCXX_3.4.11>
-   157a4:	00005597          	auipc	a1,0x5
-   157a8:	a045b583          	ld	a1,-1532(a1) # 1a1a8 <typeinfo for std::system_error@GLIBCXX_3.4.11>
-   157ac:	854a                	c.mv	a0,s2
-   157ae:	bd2fd0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   169dc:	00002697          	auipc	a3,0x2
+   169e0:	1a468693          	addi	a3,a3,420 # 18b80 <std::_Sp_make_shared_tag::_S_ti()::__tag+0x38>
+   169e4:	01013583          	ld	a1,16(sp)
+   169e8:	00090513          	addi	a0,s2,0
+   169ec:	00006317          	auipc	t1,0x6
+   169f0:	83433303          	ld	t1,-1996(t1) # 1c220 <std::system_error::system_error(std::error_code, char const*)@@Base+0x55bc>
+   169f4:	000300e7          	jalr	ra,0(t1)
+   169f8:	00006617          	auipc	a2,0x6
+   169fc:	81863603          	ld	a2,-2024(a2) # 1c210 <std::system_error::~system_error()@GLIBCXX_3.4.11>
+   16a00:	00005597          	auipc	a1,0x5
+   16a04:	7a85b583          	ld	a1,1960(a1) # 1c1a8 <typeinfo for std::system_error@GLIBCXX_3.4.11>
+   16a08:	00090513          	addi	a0,s2,0
+   16a0c:	974fc0ef          	jal	ra,12b80 <__cxa_throw@plt>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   157b2:	84aa                	c.mv	s1,a0
-   157b4:	a0b9                	c.j	15802 <elf::create_mmap_loader(int)+0x122>
+   16a10:	00050493          	addi	s1,a0,0
+   16a14:	0640006f          	jal	zero,16a78 <elf::create_mmap_loader(int)+0x188>
       throw system_error(errno, system_category(), "mmap'ing file");
-   157b6:	02000513          	addi	a0,zero,32
-   157ba:	a26fd0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   157be:	892a                	c.mv	s2,a0
-   157c0:	c60fd0ef          	jal	ra,12c20 <__errno_location@plt>
-   157c4:	4104                	c.lw	s1,0(a0)
-   157c6:	a3afd0ef          	jal	ra,12a00 <std::_V2::system_category()@plt>
-   157ca:	862a                	c.mv	a2,a0
+   16a18:	02000513          	addi	a0,zero,32
+   16a1c:	fc5fb0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   16a20:	00050913          	addi	s2,a0,0
+   16a24:	9fcfc0ef          	jal	ra,12c20 <__errno_location@plt>
+   16a28:	00052483          	lw	s1,0(a0)
+   16a2c:	fd5fb0ef          	jal	ra,12a00 <std::_V2::system_category()@plt>
+   16a30:	00050613          	addi	a2,a0,0
     : _M_value(__v), _M_cat(&__cat) { }
-   157cc:	c026                	c.swsp	s1,0(sp)
+   16a34:	00912023          	sw	s1,0(sp)
     : system_error(error_code(__v, __ecat), __what) { }
-   157ce:	00002697          	auipc	a3,0x2
-   157d2:	9fa68693          	addi	a3,a3,-1542 # 171c8 <std::_Sp_make_shared_tag::_S_ti()::__tag+0x50>
-   157d6:	6582                	c.ldsp	a1,0(sp)
-   157d8:	854a                	c.mv	a0,s2
-   157da:	00005317          	auipc	t1,0x5
-   157de:	a4633303          	ld	t1,-1466(t1) # 1a220 <std::system_error::system_error(std::error_code, char const*)@@Base+0x48d4>
-   157e2:	9302                	c.jalr	t1
-   157e4:	00005617          	auipc	a2,0x5
-   157e8:	a2c63603          	ld	a2,-1492(a2) # 1a210 <std::system_error::~system_error()@GLIBCXX_3.4.11>
-   157ec:	00005597          	auipc	a1,0x5
-   157f0:	9bc5b583          	ld	a1,-1604(a1) # 1a1a8 <typeinfo for std::system_error@GLIBCXX_3.4.11>
-   157f4:	854a                	c.mv	a0,s2
-   157f6:	b8afd0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   16a38:	00002697          	auipc	a3,0x2
+   16a3c:	16068693          	addi	a3,a3,352 # 18b98 <std::_Sp_make_shared_tag::_S_ti()::__tag+0x50>
+   16a40:	00013583          	ld	a1,0(sp)
+   16a44:	00090513          	addi	a0,s2,0
+   16a48:	00005317          	auipc	t1,0x5
+   16a4c:	7d833303          	ld	t1,2008(t1) # 1c220 <std::system_error::system_error(std::error_code, char const*)@@Base+0x55bc>
+   16a50:	000300e7          	jalr	ra,0(t1)
+   16a54:	00005617          	auipc	a2,0x5
+   16a58:	7bc63603          	ld	a2,1980(a2) # 1c210 <std::system_error::~system_error()@GLIBCXX_3.4.11>
+   16a5c:	00005597          	auipc	a1,0x5
+   16a60:	74c5b583          	ld	a1,1868(a1) # 1c1a8 <typeinfo for std::system_error@GLIBCXX_3.4.11>
+   16a64:	00090513          	addi	a0,s2,0
+   16a68:	918fc0ef          	jal	ra,12b80 <__cxa_throw@plt>
       throw system_error(errno, system_category(), "finding file length");
-   157fa:	84aa                	c.mv	s1,a0
-   157fc:	854a                	c.mv	a0,s2
-   157fe:	a52fd0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   15802:	8522                	c.mv	a0,s0
-   15804:	a6cfd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   15808:	8526                	c.mv	a0,s1
-   1580a:	ba6fd0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   16a6c:	00050493          	addi	s1,a0,0
+   16a70:	00090513          	addi	a0,s2,0
+   16a74:	fddfb0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   16a78:	00040513          	addi	a0,s0,0
+   16a7c:	ff5fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16a80:	00048513          	addi	a0,s1,0
+   16a84:	92cfc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
       throw system_error(errno, system_category(), "mmap'ing file");
-   1580e:	84aa                	c.mv	s1,a0
-   15810:	854a                	c.mv	a0,s2
-   15812:	a3efd0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   15816:	b7f5                	c.j	15802 <elf::create_mmap_loader(int)+0x122>
+   16a88:	00050493          	addi	s1,a0,0
+   16a8c:	00090513          	addi	a0,s2,0
+   16a90:	fc1fb0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   16a94:	fe5ff06f          	jal	zero,16a78 <elf::create_mmap_loader(int)+0x188>
 	: _M_ptr(__r._M_ptr), _M_refcount()
-   15818:	01393023          	sd	s3,0(s2)
+   16a98:	01393023          	sd	s3,0(s2)
 	_M_pi = __tmp;
-   1581c:	00893423          	sd	s0,8(s2)
+   16a9c:	00893423          	sd	s0,8(s2)
   return make_shared<mmap_loader>(fd);
 }
-   15820:	854a                	c.mv	a0,s2
-   15822:	60a6                	c.ldsp	ra,72(sp)
-   15824:	6406                	c.ldsp	s0,64(sp)
-   15826:	74e2                	c.ldsp	s1,56(sp)
-   15828:	7942                	c.ldsp	s2,48(sp)
-   1582a:	79a2                	c.ldsp	s3,40(sp)
-   1582c:	6161                	c.addi16sp	sp,80
-   1582e:	8082                	c.jr	ra
+   16aa0:	00090513          	addi	a0,s2,0
+   16aa4:	04813083          	ld	ra,72(sp)
+   16aa8:	04013403          	ld	s0,64(sp)
+   16aac:	03813483          	ld	s1,56(sp)
+   16ab0:	03013903          	ld	s2,48(sp)
+   16ab4:	02813983          	ld	s3,40(sp)
+   16ab8:	05010113          	addi	sp,sp,80
+   16abc:	00008067          	jalr	zero,0(ra)
 
-0000000000015830 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+0000000000016ac0 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
       ~_Sp_counted_ptr_inplace() noexcept { }
-   15830:	8082                	c.jr	ra
+   16ac0:	00008067          	jalr	zero,0(ra)
 
-0000000000015832 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
+0000000000016ac4 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
       _M_dispose() noexcept
-   15832:	1141                	c.addi	sp,-16
-   15834:	e406                	c.sdsp	ra,8(sp)
+   16ac4:	ff010113          	addi	sp,sp,-16
+   16ac8:	00113423          	sd	ra,8(sp)
       __pointer->~_Tp();
-   15836:	7d1c                	c.ld	a5,56(a0)
-   15838:	639c                	c.ld	a5,0(a5)
-   1583a:	03850513          	addi	a0,a0,56
-   1583e:	9782                	c.jalr	a5
+   16acc:	03853783          	ld	a5,56(a0)
+   16ad0:	0007b783          	ld	a5,0(a5)
+   16ad4:	03850513          	addi	a0,a0,56
+   16ad8:	000780e7          	jalr	ra,0(a5)
       }
-   15840:	60a2                	c.ldsp	ra,8(sp)
-   15842:	0141                	c.addi	sp,16
-   15844:	8082                	c.jr	ra
+   16adc:	00813083          	ld	ra,8(sp)
+   16ae0:	01010113          	addi	sp,sp,16
+   16ae4:	00008067          	jalr	zero,0(ra)
 
-0000000000015846 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
+0000000000016ae8 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
       _M_get_deleter(const std::type_info& __ti) noexcept override
-   15846:	1141                	c.addi	sp,-16
-   15848:	e406                	c.sdsp	ra,8(sp)
-   1584a:	e022                	c.sdsp	s0,0(sp)
-   1584c:	03850413          	addi	s0,a0,56
+   16ae8:	ff010113          	addi	sp,sp,-16
+   16aec:	00113423          	sd	ra,8(sp)
+   16af0:	00813023          	sd	s0,0(sp)
+   16af4:	03850413          	addi	s0,a0,56
 	    ||
-   15850:	00005797          	auipc	a5,0x5
-   15854:	a087b783          	ld	a5,-1528(a5) # 1a258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x30e0>
-   15858:	02f58a63          	beq	a1,a5,1588c <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   16af8:	00005797          	auipc	a5,0x5
+   16afc:	7607b783          	ld	a5,1888(a5) # 1c258 <std::_Sp_make_shared_tag::_S_ti()::__tag@@Base+0x3710>
+   16b00:	02f58c63          	beq	a1,a5,16b38 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
     if (__name == __arg.__name)
-   1585c:	6588                	c.ld	a0,8(a1)
-   1585e:	00005797          	auipc	a5,0x5
-   15862:	9a27b783          	ld	a5,-1630(a5) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   15866:	02f50363          	beq	a0,a5,1588c <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   16b04:	0085b503          	ld	a0,8(a1)
+   16b08:	00005797          	auipc	a5,0x5
+   16b0c:	6f87b783          	ld	a5,1784(a5) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   16b10:	02f50463          	beq	a0,a5,16b38 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
     return __name[0] != '*' && __builtin_strcmp (__name, __arg.name()) == 0;
-   1586a:	00054703          	lbu	a4,0(a0)
-   1586e:	02a00793          	addi	a5,zero,42
-   15872:	02f70263          	beq	a4,a5,15896 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
-   15876:	00005597          	auipc	a1,0x5
-   1587a:	98a5b583          	ld	a1,-1654(a1) # 1a200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3460>
-   1587e:	8e2fd0ef          	jal	ra,12960 <strcmp@plt>
+   16b14:	00054703          	lbu	a4,0(a0)
+   16b18:	02a00793          	addi	a5,zero,42
+   16b1c:	02f70863          	beq	a4,a5,16b4c <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x64>
+   16b20:	00005597          	auipc	a1,0x5
+   16b24:	6e05b583          	ld	a1,1760(a1) # 1c200 <typeinfo name for std::_Sp_make_shared_tag@@Base+0x3a90>
+   16b28:	e39fb0ef          	jal	ra,12960 <strcmp@plt>
 	return nullptr;
-   15882:	00153513          	sltiu	a0,a0,1
-   15886:	40a00533          	sub	a0,zero,a0
-   1588a:	8c69                	c.and	s0,a0
+   16b2c:	00153513          	sltiu	a0,a0,1
+   16b30:	40a00533          	sub	a0,zero,a0
+   16b34:	00a47433          	and	s0,s0,a0
       }
-   1588c:	8522                	c.mv	a0,s0
-   1588e:	60a2                	c.ldsp	ra,8(sp)
-   15890:	6402                	c.ldsp	s0,0(sp)
-   15892:	0141                	c.addi	sp,16
-   15894:	8082                	c.jr	ra
+   16b38:	00040513          	addi	a0,s0,0
+   16b3c:	00813083          	ld	ra,8(sp)
+   16b40:	00013403          	ld	s0,0(sp)
+   16b44:	01010113          	addi	sp,sp,16
+   16b48:	00008067          	jalr	zero,0(ra)
 	return nullptr;
-   15896:	4401                	c.li	s0,0
-   15898:	bfd5                	c.j	1588c <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x46>
+   16b4c:	00000413          	addi	s0,zero,0
+   16b50:	fe9ff06f          	jal	zero,16b38 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
 
-000000000001589a <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+0000000000016b54 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
       ~_Sp_counted_ptr_inplace() noexcept { }
-   1589a:	1141                	c.addi	sp,-16
-   1589c:	e406                	c.sdsp	ra,8(sp)
-   1589e:	9d2fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   158a2:	60a2                	c.ldsp	ra,8(sp)
-   158a4:	0141                	c.addi	sp,16
-   158a6:	8082                	c.jr	ra
+   16b54:	ff010113          	addi	sp,sp,-16
+   16b58:	00113423          	sd	ra,8(sp)
+   16b5c:	f15fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16b60:	00813083          	ld	ra,8(sp)
+   16b64:	01010113          	addi	sp,sp,16
+   16b68:	00008067          	jalr	zero,0(ra)
 
-00000000000158a8 <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
+0000000000016b6c <std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
       _M_destroy() noexcept
-   158a8:	1141                	c.addi	sp,-16
-   158aa:	e406                	c.sdsp	ra,8(sp)
-   158ac:	9c4fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16b6c:	ff010113          	addi	sp,sp,-16
+   16b70:	00113423          	sd	ra,8(sp)
+   16b74:	efdfb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       }
-   158b0:	60a2                	c.ldsp	ra,8(sp)
-   158b2:	0141                	c.addi	sp,16
-   158b4:	8082                	c.jr	ra
+   16b78:	00813083          	ld	ra,8(sp)
+   16b7c:	01010113          	addi	sp,sp,16
+   16b80:	00008067          	jalr	zero,0(ra)
 
-00000000000158b6 <elf::mmap_loader::load(long, unsigned long)>:
+0000000000016b84 <elf::mmap_loader::load(long, unsigned long)>:
     if (offset + size > lim)
-   158b6:	962e                	c.add	a2,a1
-   158b8:	691c                	c.ld	a5,16(a0)
-   158ba:	00c7e563          	bltu	a5,a2,158c4 <elf::mmap_loader::load(long, unsigned long)+0xe>
+   16b84:	00c58633          	add	a2,a1,a2
+   16b88:	01053783          	ld	a5,16(a0)
+   16b8c:	00c7e863          	bltu	a5,a2,16b9c <elf::mmap_loader::load(long, unsigned long)+0x18>
     return (const char *)base + offset;
-   158be:	6508                	c.ld	a0,8(a0)
-   158c0:	952e                	c.add	a0,a1
+   16b90:	00853503          	ld	a0,8(a0)
+   16b94:	00b50533          	add	a0,a0,a1
   }
-   158c2:	8082                	c.jr	ra
+   16b98:	00008067          	jalr	zero,0(ra)
   const void *load(off_t offset, size_t size) {
-   158c4:	1101                	c.addi	sp,-32
-   158c6:	ec06                	c.sdsp	ra,24(sp)
-   158c8:	e822                	c.sdsp	s0,16(sp)
-   158ca:	e426                	c.sdsp	s1,8(sp)
+   16b9c:	fe010113          	addi	sp,sp,-32
+   16ba0:	00113c23          	sd	ra,24(sp)
+   16ba4:	00813823          	sd	s0,16(sp)
+   16ba8:	00913423          	sd	s1,8(sp)
       throw range_error("offset exceeds file size");
-   158cc:	4541                	c.li	a0,16
-   158ce:	912fd0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
-   158d2:	84aa                	c.mv	s1,a0
-   158d4:	00002597          	auipc	a1,0x2
-   158d8:	8b458593          	addi	a1,a1,-1868 # 17188 <std::_Sp_make_shared_tag::_S_ti()::__tag+0x10>
-   158dc:	ab4fd0ef          	jal	ra,12b90 <std::range_error::range_error(char const*)@plt>
-   158e0:	00005617          	auipc	a2,0x5
-   158e4:	91863603          	ld	a2,-1768(a2) # 1a1f8 <std::range_error::~range_error()@GLIBCXX_3.4>
-   158e8:	00005597          	auipc	a1,0x5
-   158ec:	9805b583          	ld	a1,-1664(a1) # 1a268 <typeinfo for std::range_error@GLIBCXX_3.4>
-   158f0:	8526                	c.mv	a0,s1
-   158f2:	a8efd0ef          	jal	ra,12b80 <__cxa_throw@plt>
-   158f6:	842a                	c.mv	s0,a0
-   158f8:	8526                	c.mv	a0,s1
-   158fa:	956fd0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
-   158fe:	8522                	c.mv	a0,s0
-   15900:	ab0fd0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   16bac:	01000513          	addi	a0,zero,16
+   16bb0:	e31fb0ef          	jal	ra,129e0 <__cxa_allocate_exception@plt>
+   16bb4:	00050493          	addi	s1,a0,0
+   16bb8:	00002597          	auipc	a1,0x2
+   16bbc:	fa058593          	addi	a1,a1,-96 # 18b58 <std::_Sp_make_shared_tag::_S_ti()::__tag+0x10>
+   16bc0:	fd1fb0ef          	jal	ra,12b90 <std::range_error::range_error(char const*)@plt>
+   16bc4:	00005617          	auipc	a2,0x5
+   16bc8:	63463603          	ld	a2,1588(a2) # 1c1f8 <std::range_error::~range_error()@GLIBCXX_3.4>
+   16bcc:	00005597          	auipc	a1,0x5
+   16bd0:	69c5b583          	ld	a1,1692(a1) # 1c268 <typeinfo for std::range_error@GLIBCXX_3.4>
+   16bd4:	00048513          	addi	a0,s1,0
+   16bd8:	fa9fb0ef          	jal	ra,12b80 <__cxa_throw@plt>
+   16bdc:	00050413          	addi	s0,a0,0
+   16be0:	00048513          	addi	a0,s1,0
+   16be4:	e6dfb0ef          	jal	ra,12a50 <__cxa_free_exception@plt>
+   16be8:	00040513          	addi	a0,s0,0
+   16bec:	fc5fb0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-0000000000015904 <elf::mmap_loader::~mmap_loader()>:
+0000000000016bf0 <elf::mmap_loader::~mmap_loader()>:
   ~mmap_loader() { munmap(base, lim); }
-   15904:	1141                	c.addi	sp,-16
-   15906:	e406                	c.sdsp	ra,8(sp)
-   15908:	00005797          	auipc	a5,0x5
-   1590c:	9207b783          	ld	a5,-1760(a5) # 1a228 <vtable for elf::mmap_loader@@Base+0x498>
-   15910:	07c1                	c.addi	a5,16
-   15912:	e11c                	c.sd	a5,0(a0)
-   15914:	690c                	c.ld	a1,16(a0)
-   15916:	6508                	c.ld	a0,8(a0)
-   15918:	948fd0ef          	jal	ra,12a60 <munmap@plt>
-   1591c:	60a2                	c.ldsp	ra,8(sp)
-   1591e:	0141                	c.addi	sp,16
-   15920:	8082                	c.jr	ra
+   16bf0:	ff010113          	addi	sp,sp,-16
+   16bf4:	00113423          	sd	ra,8(sp)
+   16bf8:	00005797          	auipc	a5,0x5
+   16bfc:	6307b783          	ld	a5,1584(a5) # 1c228 <vtable for elf::mmap_loader@@Base+0x498>
+   16c00:	01078793          	addi	a5,a5,16
+   16c04:	00f53023          	sd	a5,0(a0)
+   16c08:	01053583          	ld	a1,16(a0)
+   16c0c:	00853503          	ld	a0,8(a0)
+   16c10:	e51fb0ef          	jal	ra,12a60 <munmap@plt>
+   16c14:	00813083          	ld	ra,8(sp)
+   16c18:	01010113          	addi	sp,sp,16
+   16c1c:	00008067          	jalr	zero,0(ra)
 
-0000000000015922 <elf::mmap_loader::~mmap_loader()>:
-   15922:	1141                	c.addi	sp,-16
-   15924:	e406                	c.sdsp	ra,8(sp)
-   15926:	e022                	c.sdsp	s0,0(sp)
-   15928:	842a                	c.mv	s0,a0
-   1592a:	00005797          	auipc	a5,0x5
-   1592e:	8fe7b783          	ld	a5,-1794(a5) # 1a228 <vtable for elf::mmap_loader@@Base+0x498>
-   15932:	07c1                	c.addi	a5,16
-   15934:	e11c                	c.sd	a5,0(a0)
-   15936:	690c                	c.ld	a1,16(a0)
-   15938:	6508                	c.ld	a0,8(a0)
-   1593a:	926fd0ef          	jal	ra,12a60 <munmap@plt>
-   1593e:	8522                	c.mv	a0,s0
-   15940:	930fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   15944:	60a2                	c.ldsp	ra,8(sp)
-   15946:	6402                	c.ldsp	s0,0(sp)
-   15948:	0141                	c.addi	sp,16
-   1594a:	8082                	c.jr	ra
+0000000000016c20 <elf::mmap_loader::~mmap_loader()>:
+   16c20:	ff010113          	addi	sp,sp,-16
+   16c24:	00113423          	sd	ra,8(sp)
+   16c28:	00813023          	sd	s0,0(sp)
+   16c2c:	00050413          	addi	s0,a0,0
+   16c30:	00005797          	auipc	a5,0x5
+   16c34:	5f87b783          	ld	a5,1528(a5) # 1c228 <vtable for elf::mmap_loader@@Base+0x498>
+   16c38:	01078793          	addi	a5,a5,16
+   16c3c:	00f53023          	sd	a5,0(a0)
+   16c40:	01053583          	ld	a1,16(a0)
+   16c44:	00853503          	ld	a0,8(a0)
+   16c48:	e19fb0ef          	jal	ra,12a60 <munmap@plt>
+   16c4c:	00040513          	addi	a0,s0,0
+   16c50:	e21fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16c54:	00813083          	ld	ra,8(sp)
+   16c58:	00013403          	ld	s0,0(sp)
+   16c5c:	01010113          	addi	sp,sp,16
+   16c60:	00008067          	jalr	zero,0(ra)
 
-000000000001594c <std::system_error::system_error(std::error_code, char const*)>:
+0000000000016c64 <std::system_error::system_error(std::error_code, char const*)>:
     system_error(error_code __ec, const char* __what)
-   1594c:	7135                	c.addi16sp	sp,-160
-   1594e:	ed06                	c.sdsp	ra,152(sp)
-   15950:	e922                	c.sdsp	s0,144(sp)
-   15952:	e526                	c.sdsp	s1,136(sp)
-   15954:	e14a                	c.sdsp	s2,128(sp)
-   15956:	fcce                	c.sdsp	s3,120(sp)
-   15958:	84aa                	c.mv	s1,a0
-   1595a:	872e                	c.mv	a4,a1
-   1595c:	e02e                	c.sdsp	a1,0(sp)
-   1595e:	e432                	c.sdsp	a2,8(sp)
-   15960:	8936                	c.mv	s2,a3
+   16c64:	f6010113          	addi	sp,sp,-160
+   16c68:	08113c23          	sd	ra,152(sp)
+   16c6c:	08813823          	sd	s0,144(sp)
+   16c70:	08913423          	sd	s1,136(sp)
+   16c74:	09213023          	sd	s2,128(sp)
+   16c78:	07313c23          	sd	s3,120(sp)
+   16c7c:	00050493          	addi	s1,a0,0
+   16c80:	00058713          	addi	a4,a1,0
+   16c84:	00b13023          	sd	a1,0(sp)
+   16c88:	00c13423          	sd	a2,8(sp)
+   16c8c:	00068913          	addi	s2,a3,0
     category() const noexcept { return *_M_cat; }
-   15962:	85b2                	c.mv	a1,a2
+   16c90:	00060593          	addi	a1,a2,0
     { return category().message(value()); }
-   15964:	621c                	c.ld	a5,0(a2)
-   15966:	739c                	c.ld	a5,32(a5)
-   15968:	0007061b          	addiw	a2,a4,0
-   1596c:	0880                	c.addi4spn	s0,sp,80
-   1596e:	8522                	c.mv	a0,s0
-   15970:	9782                	c.jalr	a5
+   16c94:	00063783          	ld	a5,0(a2)
+   16c98:	0207b783          	ld	a5,32(a5)
+   16c9c:	0007061b          	addiw	a2,a4,0
+   16ca0:	05010413          	addi	s0,sp,80
+   16ca4:	00040513          	addi	a0,s0,0
+   16ca8:	000780e7          	jalr	ra,0(a5)
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   15972:	4709                	c.li	a4,2
-   15974:	00002697          	auipc	a3,0x2
-   15978:	83468693          	addi	a3,a3,-1996 # 171a8 <std::_Sp_make_shared_tag::_S_ti()::__tag+0x30>
-   1597c:	4601                	c.li	a2,0
-   1597e:	4581                	c.li	a1,0
-   15980:	8522                	c.mv	a0,s0
-   15982:	9befd0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   15986:	842a                	c.mv	s0,a0
+   16cac:	00200713          	addi	a4,zero,2
+   16cb0:	00002697          	auipc	a3,0x2
+   16cb4:	ec868693          	addi	a3,a3,-312 # 18b78 <std::_Sp_make_shared_tag::_S_ti()::__tag+0x30>
+   16cb8:	00000613          	addi	a2,zero,0
+   16cbc:	00000593          	addi	a1,zero,0
+   16cc0:	00040513          	addi	a0,s0,0
+   16cc4:	e7dfb0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   16cc8:	00050413          	addi	s0,a0,0
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   15988:	009c                	c.addi4spn	a5,sp,64
-   1598a:	f83e                	c.sdsp	a5,48(sp)
+   16ccc:	04010793          	addi	a5,sp,64
+   16cd0:	02f13823          	sd	a5,48(sp)
       { return _M_dataplus._M_p; }
-   1598c:	611c                	c.ld	a5,0(a0)
+   16cd4:	00053783          	ld	a5,0(a0)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   1598e:	01050993          	addi	s3,a0,16
+   16cd8:	01050993          	addi	s3,a0,16
 	if (__str._M_is_local())
-   15992:	03378863          	beq	a5,s3,159c2 <std::system_error::system_error(std::error_code, char const*)+0x76>
+   16cdc:	05378463          	beq	a5,s3,16d24 <std::system_error::system_error(std::error_code, char const*)+0xc0>
       { _M_dataplus._M_p = __p; }
-   15996:	f83e                	c.sdsp	a5,48(sp)
+   16ce0:	02f13823          	sd	a5,48(sp)
       { _M_allocated_capacity = __capacity; }
-   15998:	691c                	c.ld	a5,16(a0)
-   1599a:	e0be                	c.sdsp	a5,64(sp)
+   16ce4:	01053783          	ld	a5,16(a0)
+   16ce8:	04f13023          	sd	a5,64(sp)
       { _M_string_length = __length; }
-   1599c:	641c                	c.ld	a5,8(s0)
-   1599e:	fc3e                	c.sdsp	a5,56(sp)
+   16cec:	00843783          	ld	a5,8(s0)
+   16cf0:	02f13c23          	sd	a5,56(sp)
       { _M_dataplus._M_p = __p; }
-   159a0:	01343023          	sd	s3,0(s0)
+   16cf4:	01343023          	sd	s3,0(s0)
       { _M_string_length = __length; }
-   159a4:	00043423          	sd	zero,8(s0)
+   16cf8:	00043423          	sd	zero,8(s0)
 	__c1 = __c2;
-   159a8:	00040823          	sb	zero,16(s0)
+   16cfc:	00040823          	sb	zero,16(s0)
 	return __builtin_strlen(__s);
-   159ac:	854a                	c.mv	a0,s2
-   159ae:	822fd0ef          	jal	ra,129d0 <strlen@plt>
-   159b2:	872a                	c.mv	a4,a0
+   16d00:	00090513          	addi	a0,s2,0
+   16d04:	ccdfb0ef          	jal	ra,129d0 <strlen@plt>
+   16d08:	00050713          	addi	a4,a0,0
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   159b4:	86ca                	c.mv	a3,s2
-   159b6:	4601                	c.li	a2,0
-   159b8:	4581                	c.li	a1,0
-   159ba:	1808                	c.addi4spn	a0,sp,48
-   159bc:	984fd0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   159c0:	a809                	c.j	159d2 <std::system_error::system_error(std::error_code, char const*)+0x86>
+   16d0c:	00090693          	addi	a3,s2,0
+   16d10:	00000613          	addi	a2,zero,0
+   16d14:	00000593          	addi	a1,zero,0
+   16d18:	03010513          	addi	a0,sp,48
+   16d1c:	e25fb0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   16d20:	0200006f          	jal	zero,16d40 <std::system_error::system_error(std::error_code, char const*)+0xdc>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   159c2:	6510                	c.ld	a2,8(a0)
-   159c4:	0605                	c.addi	a2,1
+   16d24:	00853603          	ld	a2,8(a0)
+   16d28:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   159c6:	da79                	c.beqz	a2,1599c <std::system_error::system_error(std::error_code, char const*)+0x50>
+   16d2c:	fc0600e3          	beq	a2,zero,16cec <std::system_error::system_error(std::error_code, char const*)+0x88>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   159c8:	85ce                	c.mv	a1,s3
-   159ca:	0088                	c.addi4spn	a0,sp,64
-   159cc:	934fd0ef          	jal	ra,12b00 <memcpy@plt>
-   159d0:	b7f1                	c.j	1599c <std::system_error::system_error(std::error_code, char const*)+0x50>
+   16d30:	00098593          	addi	a1,s3,0
+   16d34:	04010513          	addi	a0,sp,64
+   16d38:	dc9fb0ef          	jal	ra,12b00 <memcpy@plt>
+   16d3c:	fb1ff06f          	jal	zero,16cec <std::system_error::system_error(std::error_code, char const*)+0x88>
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   159d2:	842a                	c.mv	s0,a0
+   16d40:	00050413          	addi	s0,a0,0
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   159d4:	101c                	c.addi4spn	a5,sp,32
-   159d6:	e83e                	c.sdsp	a5,16(sp)
+   16d44:	02010793          	addi	a5,sp,32
+   16d48:	00f13823          	sd	a5,16(sp)
       { return _M_dataplus._M_p; }
-   159d8:	611c                	c.ld	a5,0(a0)
+   16d4c:	00053783          	ld	a5,0(a0)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   159da:	01050913          	addi	s2,a0,16
+   16d50:	01050913          	addi	s2,a0,16
 	if (__str._M_is_local())
-   159de:	03278263          	beq	a5,s2,15a02 <std::system_error::system_error(std::error_code, char const*)+0xb6>
+   16d54:	03278a63          	beq	a5,s2,16d88 <std::system_error::system_error(std::error_code, char const*)+0x124>
       { _M_dataplus._M_p = __p; }
-   159e2:	e83e                	c.sdsp	a5,16(sp)
+   16d58:	00f13823          	sd	a5,16(sp)
       { _M_allocated_capacity = __capacity; }
-   159e4:	691c                	c.ld	a5,16(a0)
-   159e6:	f03e                	c.sdsp	a5,32(sp)
+   16d5c:	01053783          	ld	a5,16(a0)
+   16d60:	02f13023          	sd	a5,32(sp)
       { _M_string_length = __length; }
-   159e8:	641c                	c.ld	a5,8(s0)
-   159ea:	ec3e                	c.sdsp	a5,24(sp)
+   16d64:	00843783          	ld	a5,8(s0)
+   16d68:	00f13c23          	sd	a5,24(sp)
       { _M_dataplus._M_p = __p; }
-   159ec:	01243023          	sd	s2,0(s0)
+   16d6c:	01243023          	sd	s2,0(s0)
       { _M_string_length = __length; }
-   159f0:	00043423          	sd	zero,8(s0)
+   16d70:	00043423          	sd	zero,8(s0)
 	__c1 = __c2;
-   159f4:	00040823          	sb	zero,16(s0)
+   16d74:	00040823          	sb	zero,16(s0)
     : runtime_error(__what + (": " + __ec.message())), _M_code(__ec) { }
-   159f8:	080c                	c.addi4spn	a1,sp,16
-   159fa:	8526                	c.mv	a0,s1
-   159fc:	8f4fd0ef          	jal	ra,12af0 <std::runtime_error::runtime_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
-   15a00:	a809                	c.j	15a12 <std::system_error::system_error(std::error_code, char const*)+0xc6>
+   16d78:	01010593          	addi	a1,sp,16
+   16d7c:	00048513          	addi	a0,s1,0
+   16d80:	d71fb0ef          	jal	ra,12af0 <std::runtime_error::runtime_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
+   16d84:	0200006f          	jal	zero,16da4 <std::system_error::system_error(std::error_code, char const*)+0x140>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   15a02:	6510                	c.ld	a2,8(a0)
-   15a04:	0605                	c.addi	a2,1
+   16d88:	00853603          	ld	a2,8(a0)
+   16d8c:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   15a06:	d26d                	c.beqz	a2,159e8 <std::system_error::system_error(std::error_code, char const*)+0x9c>
+   16d90:	fc060ae3          	beq	a2,zero,16d64 <std::system_error::system_error(std::error_code, char const*)+0x100>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   15a08:	85ca                	c.mv	a1,s2
-   15a0a:	1008                	c.addi4spn	a0,sp,32
-   15a0c:	8f4fd0ef          	jal	ra,12b00 <memcpy@plt>
-   15a10:	bfe1                	c.j	159e8 <std::system_error::system_error(std::error_code, char const*)+0x9c>
+   16d94:	00090593          	addi	a1,s2,0
+   16d98:	02010513          	addi	a0,sp,32
+   16d9c:	d65fb0ef          	jal	ra,12b00 <memcpy@plt>
+   16da0:	fc5ff06f          	jal	zero,16d64 <std::system_error::system_error(std::error_code, char const*)+0x100>
       { return _M_dataplus._M_p; }
-   15a12:	6542                	c.ldsp	a0,16(sp)
+   16da4:	01013503          	ld	a0,16(sp)
 	if (!_M_is_local())
-   15a14:	101c                	c.addi4spn	a5,sp,32
-   15a16:	00f50463          	beq	a0,a5,15a1e <std::system_error::system_error(std::error_code, char const*)+0xd2>
-   15a1a:	856fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16da8:	02010793          	addi	a5,sp,32
+   16dac:	00f50463          	beq	a0,a5,16db4 <std::system_error::system_error(std::error_code, char const*)+0x150>
+   16db0:	cc1fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   15a1e:	7542                	c.ldsp	a0,48(sp)
+   16db4:	03013503          	ld	a0,48(sp)
 	if (!_M_is_local())
-   15a20:	009c                	c.addi4spn	a5,sp,64
-   15a22:	00f50463          	beq	a0,a5,15a2a <std::system_error::system_error(std::error_code, char const*)+0xde>
-   15a26:	84afd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16db8:	04010793          	addi	a5,sp,64
+   16dbc:	00f50463          	beq	a0,a5,16dc4 <std::system_error::system_error(std::error_code, char const*)+0x160>
+   16dc0:	cb1fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   15a2a:	6546                	c.ldsp	a0,80(sp)
+   16dc4:	05013503          	ld	a0,80(sp)
 	if (!_M_is_local())
-   15a2c:	109c                	c.addi4spn	a5,sp,96
-   15a2e:	00f50463          	beq	a0,a5,15a36 <std::system_error::system_error(std::error_code, char const*)+0xea>
-   15a32:	83efd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
-   15a36:	00005797          	auipc	a5,0x5
-   15a3a:	84a7b783          	ld	a5,-1974(a5) # 1a280 <vtable for std::system_error@GLIBCXX_3.4.11>
-   15a3e:	07c1                	c.addi	a5,16
-   15a40:	e09c                	c.sd	a5,0(s1)
-   15a42:	6782                	c.ldsp	a5,0(sp)
-   15a44:	e89c                	c.sd	a5,16(s1)
-   15a46:	67a2                	c.ldsp	a5,8(sp)
-   15a48:	ec9c                	c.sd	a5,24(s1)
-   15a4a:	60ea                	c.ldsp	ra,152(sp)
-   15a4c:	644a                	c.ldsp	s0,144(sp)
-   15a4e:	64aa                	c.ldsp	s1,136(sp)
-   15a50:	690a                	c.ldsp	s2,128(sp)
-   15a52:	79e6                	c.ldsp	s3,120(sp)
-   15a54:	610d                	c.addi16sp	sp,160
-   15a56:	8082                	c.jr	ra
+   16dc8:	06010793          	addi	a5,sp,96
+   16dcc:	00f50463          	beq	a0,a5,16dd4 <std::system_error::system_error(std::error_code, char const*)+0x170>
+   16dd0:	ca1fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16dd4:	00005797          	auipc	a5,0x5
+   16dd8:	4ac7b783          	ld	a5,1196(a5) # 1c280 <vtable for std::system_error@GLIBCXX_3.4.11>
+   16ddc:	01078793          	addi	a5,a5,16
+   16de0:	00f4b023          	sd	a5,0(s1)
+   16de4:	00013783          	ld	a5,0(sp)
+   16de8:	00f4b823          	sd	a5,16(s1)
+   16dec:	00813783          	ld	a5,8(sp)
+   16df0:	00f4bc23          	sd	a5,24(s1)
+   16df4:	09813083          	ld	ra,152(sp)
+   16df8:	09013403          	ld	s0,144(sp)
+   16dfc:	08813483          	ld	s1,136(sp)
+   16e00:	08013903          	ld	s2,128(sp)
+   16e04:	07813983          	ld	s3,120(sp)
+   16e08:	0a010113          	addi	sp,sp,160
+   16e0c:	00008067          	jalr	zero,0(ra)
       { return _M_dataplus._M_p; }
-   15a58:	842a                	c.mv	s0,a0
-   15a5a:	6542                	c.ldsp	a0,16(sp)
+   16e10:	00050413          	addi	s0,a0,0
+   16e14:	01013503          	ld	a0,16(sp)
 	if (!_M_is_local())
-   15a5c:	101c                	c.addi4spn	a5,sp,32
-   15a5e:	00f50463          	beq	a0,a5,15a66 <std::system_error::system_error(std::error_code, char const*)+0x11a>
-   15a62:	80efd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16e18:	02010793          	addi	a5,sp,32
+   16e1c:	00f50463          	beq	a0,a5,16e24 <std::system_error::system_error(std::error_code, char const*)+0x1c0>
+   16e20:	c51fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   15a66:	7542                	c.ldsp	a0,48(sp)
+   16e24:	03013503          	ld	a0,48(sp)
 	if (!_M_is_local())
-   15a68:	009c                	c.addi4spn	a5,sp,64
-   15a6a:	00f50463          	beq	a0,a5,15a72 <std::system_error::system_error(std::error_code, char const*)+0x126>
-   15a6e:	802fd0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16e28:	04010793          	addi	a5,sp,64
+   16e2c:	00f50463          	beq	a0,a5,16e34 <std::system_error::system_error(std::error_code, char const*)+0x1d0>
+   16e30:	c41fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   15a72:	6546                	c.ldsp	a0,80(sp)
+   16e34:	05013503          	ld	a0,80(sp)
 	if (!_M_is_local())
-   15a74:	109c                	c.addi4spn	a5,sp,96
-   15a76:	00f50463          	beq	a0,a5,15a7e <std::system_error::system_error(std::error_code, char const*)+0x132>
-   15a7a:	ff7fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   16e38:	06010793          	addi	a5,sp,96
+   16e3c:	00f50463          	beq	a0,a5,16e44 <std::system_error::system_error(std::error_code, char const*)+0x1e0>
+   16e40:	c31fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   15a7e:	8522                	c.mv	a0,s0
-   15a80:	930fd0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   16e44:	00040513          	addi	a0,s0,0
+   16e48:	d69fb0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
       { return _M_dataplus._M_p; }
-   15a84:	842a                	c.mv	s0,a0
-   15a86:	b7c5                	c.j	15a66 <std::system_error::system_error(std::error_code, char const*)+0x11a>
-   15a88:	842a                	c.mv	s0,a0
-   15a8a:	b7e5                	c.j	15a72 <std::system_error::system_error(std::error_code, char const*)+0x126>
+   16e4c:	00050413          	addi	s0,a0,0
+   16e50:	fd5ff06f          	jal	zero,16e24 <std::system_error::system_error(std::error_code, char const*)+0x1c0>
+   16e54:	00050413          	addi	s0,a0,0
+   16e58:	fddff06f          	jal	zero,16e34 <std::system_error::system_error(std::error_code, char const*)+0x1d0>
 
-0000000000015a8c <elf::to_string[abi:cxx11](elf::shf)>:
+0000000000016e5c <elf::to_string[abi:cxx11](elf::shf)>:
         return "(sht)0x" + to_hex((int)v);
 }
 
 std::string
 to_string(shf v)
 {
-   15a8c:	7159                	c.addi16sp	sp,-112
-   15a8e:	f486                	c.sdsp	ra,104(sp)
-   15a90:	f0a2                	c.sdsp	s0,96(sp)
-   15a92:	eca6                	c.sdsp	s1,88(sp)
-   15a94:	e8ca                	c.sdsp	s2,80(sp)
-   15a96:	e4ce                	c.sdsp	s3,72(sp)
-   15a98:	842a                	c.mv	s0,a0
-   15a9a:	84ae                	c.mv	s1,a1
+   16e5c:	f9010113          	addi	sp,sp,-112
+   16e60:	06113423          	sd	ra,104(sp)
+   16e64:	06813023          	sd	s0,96(sp)
+   16e68:	04913c23          	sd	s1,88(sp)
+   16e6c:	05213823          	sd	s2,80(sp)
+   16e70:	05313423          	sd	s3,72(sp)
+   16e74:	00050413          	addi	s0,a0,0
+   16e78:	00058493          	addi	s1,a1,0
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   15a9c:	01050913          	addi	s2,a0,16
+   16e7c:	01050913          	addi	s2,a0,16
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   15aa0:	01253023          	sd	s2,0(a0)
+   16e80:	01253023          	sd	s2,0(a0)
       { _M_string_length = __length; }
-   15aa4:	00053423          	sd	zero,8(a0)
+   16e84:	00053423          	sd	zero,8(a0)
 	__c1 = __c2;
-   15aa8:	00050823          	sb	zero,16(a0)
+   16e88:	00050823          	sb	zero,16(a0)
   return (shf)((std::uint64_t)a & (std::uint64_t)b);
-   15aac:	0015f793          	andi	a5,a1,1
+   16e8c:	0015f793          	andi	a5,a1,1
         std::string res;
         if ((v & shf::write) == shf::write) { res += "write|"; v &= ~shf::write; }
-   15ab0:	eb81                	c.bnez	a5,15ac0 <elf::to_string[abi:cxx11](elf::shf)+0x34>
-   15ab2:	0025f793          	andi	a5,a1,2
+   16e90:	00079c63          	bne	a5,zero,16ea8 <elf::to_string[abi:cxx11](elf::shf)+0x4c>
+   16e94:	0025f793          	andi	a5,a1,2
         if ((v & shf::alloc) == shf::alloc) { res += "alloc|"; v &= ~shf::alloc; }
-   15ab6:	eb8d                	c.bnez	a5,15ae8 <elf::to_string[abi:cxx11](elf::shf)+0x5c>
-   15ab8:	0045f793          	andi	a5,a1,4
+   16e98:	04079463          	bne	a5,zero,16ee0 <elf::to_string[abi:cxx11](elf::shf)+0x84>
+   16e9c:	0045f793          	andi	a5,a1,4
         if ((v & shf::execinstr) == shf::execinstr) { res += "execinstr|"; v &= ~shf::execinstr; }
-   15abc:	cbb9                	c.beqz	a5,15b12 <elf::to_string[abi:cxx11](elf::shf)+0x86>
-   15abe:	a849                	c.j	15b50 <elf::to_string[abi:cxx11](elf::shf)+0xc4>
+   16ea0:	06078c63          	beq	a5,zero,16f18 <elf::to_string[abi:cxx11](elf::shf)+0xbc>
+   16ea4:	0cc0006f          	jal	zero,16f70 <elf::to_string[abi:cxx11](elf::shf)+0x114>
 	return _M_append(__s, __n);
-   15ac0:	4619                	c.li	a2,6
-   15ac2:	00001597          	auipc	a1,0x1
-   15ac6:	79e58593          	addi	a1,a1,1950 # 17260 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x60>
-   15aca:	ee7fc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15ace:	ffe4f793          	andi	a5,s1,-2
-   15ad2:	0024f713          	andi	a4,s1,2
+   16ea8:	00600613          	addi	a2,zero,6
+   16eac:	00002597          	auipc	a1,0x2
+   16eb0:	d8458593          	addi	a1,a1,-636 # 18c30 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x60>
+   16eb4:	afdfb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   16eb8:	ffe4f793          	andi	a5,s1,-2
+   16ebc:	0024f713          	andi	a4,s1,2
   a = a & b;
-   15ad6:	84be                	c.mv	s1,a5
+   16ec0:	00078493          	addi	s1,a5,0
         if ((v & shf::alloc) == shf::alloc) { res += "alloc|"; v &= ~shf::alloc; }
-   15ad8:	cb15                	c.beqz	a4,15b0c <elf::to_string[abi:cxx11](elf::shf)+0x80>
+   16ec4:	04070663          	beq	a4,zero,16f10 <elf::to_string[abi:cxx11](elf::shf)+0xb4>
 	if (this->max_size() - (this->size() - __n1) < __n2)
-   15ada:	6414                	c.ld	a3,8(s0)
-   15adc:	577d                	c.li	a4,-1
-   15ade:	8309                	c.srli	a4,0x2
-   15ae0:	8f15                	c.sub	a4,a3
-   15ae2:	4695                	c.li	a3,5
-   15ae4:	00e6fb63          	bgeu	a3,a4,15afa <elf::to_string[abi:cxx11](elf::shf)+0x6e>
+   16ec8:	00843683          	ld	a3,8(s0)
+   16ecc:	fff00713          	addi	a4,zero,-1
+   16ed0:	00275713          	srli	a4,a4,0x2
+   16ed4:	40d70733          	sub	a4,a4,a3
+   16ed8:	00500693          	addi	a3,zero,5
+   16edc:	00e6fe63          	bgeu	a3,a4,16ef8 <elf::to_string[abi:cxx11](elf::shf)+0x9c>
 	return _M_append(__s, __n);
-   15ae8:	4619                	c.li	a2,6
-   15aea:	00001597          	auipc	a1,0x1
-   15aee:	79658593          	addi	a1,a1,1942 # 17280 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x80>
-   15af2:	8522                	c.mv	a0,s0
-   15af4:	ebdfc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15af8:	a809                	c.j	15b0a <elf::to_string[abi:cxx11](elf::shf)+0x7e>
+   16ee0:	00600613          	addi	a2,zero,6
+   16ee4:	00002597          	auipc	a1,0x2
+   16ee8:	d6c58593          	addi	a1,a1,-660 # 18c50 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x80>
+   16eec:	00040513          	addi	a0,s0,0
+   16ef0:	ac1fb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   16ef4:	0180006f          	jal	zero,16f0c <elf::to_string[abi:cxx11](elf::shf)+0xb0>
 	  __throw_length_error(__N(__s));
-   15afa:	00001517          	auipc	a0,0x1
-   15afe:	76e50513          	addi	a0,a0,1902 # 17268 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
-   15b02:	eeffc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   16ef8:	00002517          	auipc	a0,0x2
+   16efc:	d4050513          	addi	a0,a0,-704 # 18c38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
+   16f00:	af1fb0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
       { return _M_dataplus._M_p; }
-   15b06:	84aa                	c.mv	s1,a0
-   15b08:	a2a5                	c.j	15c70 <elf::to_string[abi:cxx11](elf::shf)+0x1e4>
+   16f04:	00050493          	addi	s1,a0,0
+   16f08:	2080006f          	jal	zero,17110 <elf::to_string[abi:cxx11](elf::shf)+0x2b4>
   return (shf)((std::uint64_t)a & (std::uint64_t)b);
-   15b0a:	98f5                	c.andi	s1,-3
-   15b0c:	0044f793          	andi	a5,s1,4
+   16f0c:	ffd4f493          	andi	s1,s1,-3
+   16f10:	0044f793          	andi	a5,s1,4
         if ((v & shf::execinstr) == shf::execinstr) { res += "execinstr|"; v &= ~shf::execinstr; }
-   15b10:	eb8d                	c.bnez	a5,15b42 <elf::to_string[abi:cxx11](elf::shf)+0xb6>
-   15b12:	0f0007b7          	lui	a5,0xf000
-   15b16:	00f4f733          	and	a4,s1,a5
+   16f14:	04079263          	bne	a5,zero,16f58 <elf::to_string[abi:cxx11](elf::shf)+0xfc>
+   16f18:	0f0007b7          	lui	a5,0xf000
+   16f1c:	00f4f733          	and	a4,s1,a5
         if ((v & shf::maskos) == shf::maskos) { res += "maskos|"; v &= ~shf::maskos; }
-   15b1a:	04f70c63          	beq	a4,a5,15b72 <elf::to_string[abi:cxx11](elf::shf)+0xe6>
-   15b1e:	47bd                	c.li	a5,15
-   15b20:	07f2                	c.slli	a5,0x1c
-   15b22:	00f4f733          	and	a4,s1,a5
+   16f20:	06f70e63          	beq	a4,a5,16f9c <elf::to_string[abi:cxx11](elf::shf)+0x140>
+   16f24:	00f00793          	addi	a5,zero,15
+   16f28:	01c79793          	slli	a5,a5,0x1c
+   16f2c:	00f4f733          	and	a4,s1,a5
         if ((v & shf::maskproc) == shf::maskproc) { res += "maskproc|"; v &= ~shf::maskproc; }
-   15b26:	08f70163          	beq	a4,a5,15ba8 <elf::to_string[abi:cxx11](elf::shf)+0x11c>
+   16f30:	0af70c63          	beq	a4,a5,16fe8 <elf::to_string[abi:cxx11](elf::shf)+0x18c>
       { return _M_string_length; }
-   15b2a:	640c                	c.ld	a1,8(s0)
+   16f34:	00843583          	ld	a1,8(s0)
         if (res.empty() || v != (shf)0) res += "(shf)0x" + to_hex((int)v);
-   15b2c:	c191                	c.beqz	a1,15b30 <elf::to_string[abi:cxx11](elf::shf)+0xa4>
-   15b2e:	c8c5                	c.beqz	s1,15bde <elf::to_string[abi:cxx11](elf::shf)+0x152>
-   15b30:	0004859b          	addiw	a1,s1,0
-   15b34:	850a                	c.mv	a0,sp
-   15b36:	00004317          	auipc	t1,0x4
-   15b3a:	6d233303          	ld	t1,1746(t1) # 1a208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3892>
-   15b3e:	9302                	c.jalr	t1
-   15b40:	a06d                	c.j	15bea <elf::to_string[abi:cxx11](elf::shf)+0x15e>
+   16f38:	00058463          	beq	a1,zero,16f40 <elf::to_string[abi:cxx11](elf::shf)+0xe4>
+   16f3c:	0e048e63          	beq	s1,zero,17038 <elf::to_string[abi:cxx11](elf::shf)+0x1dc>
+   16f40:	0004859b          	addiw	a1,s1,0
+   16f44:	00010513          	addi	a0,sp,0
+   16f48:	00005317          	auipc	t1,0x5
+   16f4c:	2c033303          	ld	t1,704(t1) # 1c208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3ef4>
+   16f50:	000300e7          	jalr	ra,0(t1)
+   16f54:	0f80006f          	jal	zero,1704c <elf::to_string[abi:cxx11](elf::shf)+0x1f0>
 	if (this->max_size() - (this->size() - __n1) < __n2)
-   15b42:	6418                	c.ld	a4,8(s0)
-   15b44:	57fd                	c.li	a5,-1
-   15b46:	8389                	c.srli	a5,0x2
-   15b48:	8f99                	c.sub	a5,a4
-   15b4a:	4725                	c.li	a4,9
-   15b4c:	00f77b63          	bgeu	a4,a5,15b62 <elf::to_string[abi:cxx11](elf::shf)+0xd6>
+   16f58:	00843703          	ld	a4,8(s0)
+   16f5c:	fff00793          	addi	a5,zero,-1
+   16f60:	0027d793          	srli	a5,a5,0x2
+   16f64:	40e787b3          	sub	a5,a5,a4
+   16f68:	00900713          	addi	a4,zero,9
+   16f6c:	00f77e63          	bgeu	a4,a5,16f88 <elf::to_string[abi:cxx11](elf::shf)+0x12c>
 	return _M_append(__s, __n);
-   15b50:	4629                	c.li	a2,10
-   15b52:	00001597          	auipc	a1,0x1
-   15b56:	73658593          	addi	a1,a1,1846 # 17288 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x88>
-   15b5a:	8522                	c.mv	a0,s0
-   15b5c:	e55fc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15b60:	a039                	c.j	15b6e <elf::to_string[abi:cxx11](elf::shf)+0xe2>
+   16f70:	00a00613          	addi	a2,zero,10
+   16f74:	00002597          	auipc	a1,0x2
+   16f78:	ce458593          	addi	a1,a1,-796 # 18c58 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x88>
+   16f7c:	00040513          	addi	a0,s0,0
+   16f80:	a31fb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   16f84:	0100006f          	jal	zero,16f94 <elf::to_string[abi:cxx11](elf::shf)+0x138>
 	  __throw_length_error(__N(__s));
-   15b62:	00001517          	auipc	a0,0x1
-   15b66:	70650513          	addi	a0,a0,1798 # 17268 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
-   15b6a:	e87fc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
-   15b6e:	98ed                	c.andi	s1,-5
+   16f88:	00002517          	auipc	a0,0x2
+   16f8c:	cb050513          	addi	a0,a0,-848 # 18c38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
+   16f90:	a61fb0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   16f94:	ffb4f493          	andi	s1,s1,-5
   return a;
-   15b70:	b74d                	c.j	15b12 <elf::to_string[abi:cxx11](elf::shf)+0x86>
+   16f98:	f81ff06f          	jal	zero,16f18 <elf::to_string[abi:cxx11](elf::shf)+0xbc>
 	if (this->max_size() - (this->size() - __n1) < __n2)
-   15b72:	6418                	c.ld	a4,8(s0)
-   15b74:	57fd                	c.li	a5,-1
-   15b76:	8389                	c.srli	a5,0x2
-   15b78:	8f99                	c.sub	a5,a4
-   15b7a:	4719                	c.li	a4,6
-   15b7c:	00f77b63          	bgeu	a4,a5,15b92 <elf::to_string[abi:cxx11](elf::shf)+0x106>
+   16f9c:	00843703          	ld	a4,8(s0)
+   16fa0:	fff00793          	addi	a5,zero,-1
+   16fa4:	0027d793          	srli	a5,a5,0x2
+   16fa8:	40e787b3          	sub	a5,a5,a4
+   16fac:	00600713          	addi	a4,zero,6
+   16fb0:	00f77e63          	bgeu	a4,a5,16fcc <elf::to_string[abi:cxx11](elf::shf)+0x170>
 	return _M_append(__s, __n);
-   15b80:	461d                	c.li	a2,7
-   15b82:	00001597          	auipc	a1,0x1
-   15b86:	71658593          	addi	a1,a1,1814 # 17298 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x98>
-   15b8a:	8522                	c.mv	a0,s0
-   15b8c:	e25fc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15b90:	a039                	c.j	15b9e <elf::to_string[abi:cxx11](elf::shf)+0x112>
+   16fb4:	00700613          	addi	a2,zero,7
+   16fb8:	00002597          	auipc	a1,0x2
+   16fbc:	cb058593          	addi	a1,a1,-848 # 18c68 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x98>
+   16fc0:	00040513          	addi	a0,s0,0
+   16fc4:	9edfb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   16fc8:	0100006f          	jal	zero,16fd8 <elf::to_string[abi:cxx11](elf::shf)+0x17c>
 	  __throw_length_error(__N(__s));
-   15b92:	00001517          	auipc	a0,0x1
-   15b96:	6d650513          	addi	a0,a0,1750 # 17268 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
-   15b9a:	e57fc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   16fcc:	00002517          	auipc	a0,0x2
+   16fd0:	c6c50513          	addi	a0,a0,-916 # 18c38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
+   16fd4:	a1dfb0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
   return (shf)((std::uint64_t)a & (std::uint64_t)b);
-   15b9e:	f10007b7          	lui	a5,0xf1000
-   15ba2:	17fd                	c.addi	a5,-1 # fffffffff0ffffff <__global_pointer$+0xfffffffff0fe57ff>
-   15ba4:	8cfd                	c.and	s1,a5
+   16fd8:	f10007b7          	lui	a5,0xf1000
+   16fdc:	fff78793          	addi	a5,a5,-1 # fffffffff0ffffff <__global_pointer$+0xfffffffff0fe37ff>
+   16fe0:	00f4f4b3          	and	s1,s1,a5
   return a;
-   15ba6:	bfa5                	c.j	15b1e <elf::to_string[abi:cxx11](elf::shf)+0x92>
+   16fe4:	f41ff06f          	jal	zero,16f24 <elf::to_string[abi:cxx11](elf::shf)+0xc8>
 	if (this->max_size() - (this->size() - __n1) < __n2)
-   15ba8:	6418                	c.ld	a4,8(s0)
-   15baa:	57fd                	c.li	a5,-1
-   15bac:	8389                	c.srli	a5,0x2
-   15bae:	8f99                	c.sub	a5,a4
-   15bb0:	4721                	c.li	a4,8
-   15bb2:	00f77b63          	bgeu	a4,a5,15bc8 <elf::to_string[abi:cxx11](elf::shf)+0x13c>
+   16fe8:	00843703          	ld	a4,8(s0)
+   16fec:	fff00793          	addi	a5,zero,-1
+   16ff0:	0027d793          	srli	a5,a5,0x2
+   16ff4:	40e787b3          	sub	a5,a5,a4
+   16ff8:	00800713          	addi	a4,zero,8
+   16ffc:	00f77e63          	bgeu	a4,a5,17018 <elf::to_string[abi:cxx11](elf::shf)+0x1bc>
 	return _M_append(__s, __n);
-   15bb6:	4625                	c.li	a2,9
-   15bb8:	00001597          	auipc	a1,0x1
-   15bbc:	6e858593          	addi	a1,a1,1768 # 172a0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xa0>
-   15bc0:	8522                	c.mv	a0,s0
-   15bc2:	deffc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15bc6:	a039                	c.j	15bd4 <elf::to_string[abi:cxx11](elf::shf)+0x148>
+   17000:	00900613          	addi	a2,zero,9
+   17004:	00002597          	auipc	a1,0x2
+   17008:	c6c58593          	addi	a1,a1,-916 # 18c70 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xa0>
+   1700c:	00040513          	addi	a0,s0,0
+   17010:	9a1fb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   17014:	0100006f          	jal	zero,17024 <elf::to_string[abi:cxx11](elf::shf)+0x1c8>
 	  __throw_length_error(__N(__s));
-   15bc8:	00001517          	auipc	a0,0x1
-   15bcc:	6a050513          	addi	a0,a0,1696 # 17268 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
-   15bd0:	e21fc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   17018:	00002517          	auipc	a0,0x2
+   1701c:	c2050513          	addi	a0,a0,-992 # 18c38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
+   17020:	9d1fb0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
   return (shf)((std::uint64_t)a & (std::uint64_t)b);
-   15bd4:	57c5                	c.li	a5,-15
-   15bd6:	07f2                	c.slli	a5,0x1c
-   15bd8:	17fd                	c.addi	a5,-1
-   15bda:	8cfd                	c.and	s1,a5
+   17024:	ff100793          	addi	a5,zero,-15
+   17028:	01c79793          	slli	a5,a5,0x1c
+   1702c:	fff78793          	addi	a5,a5,-1
+   17030:	00f4f4b3          	and	s1,s1,a5
   return a;
-   15bdc:	b7b9                	c.j	15b2a <elf::to_string[abi:cxx11](elf::shf)+0x9e>
+   17034:	f01ff06f          	jal	zero,16f34 <elf::to_string[abi:cxx11](elf::shf)+0xd8>
 	_M_erase(size() - 1, 1);
-   15bde:	4605                	c.li	a2,1
-   15be0:	15fd                	c.addi	a1,-1
-   15be2:	8522                	c.mv	a0,s0
-   15be4:	eedfc0ef          	jal	ra,12ad0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_erase(unsigned long, unsigned long)@plt>
+   17038:	00100613          	addi	a2,zero,1
+   1703c:	fff58593          	addi	a1,a1,-1
+   17040:	00040513          	addi	a0,s0,0
+   17044:	a8dfb0ef          	jal	ra,12ad0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_erase(unsigned long, unsigned long)@plt>
       }
-   15be8:	a845                	c.j	15c98 <elf::to_string[abi:cxx11](elf::shf)+0x20c>
+   17048:	0fc0006f          	jal	zero,17144 <elf::to_string[abi:cxx11](elf::shf)+0x2e8>
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   15bea:	471d                	c.li	a4,7
-   15bec:	00001697          	auipc	a3,0x1
-   15bf0:	6c468693          	addi	a3,a3,1732 # 172b0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xb0>
-   15bf4:	4601                	c.li	a2,0
-   15bf6:	4581                	c.li	a1,0
-   15bf8:	850a                	c.mv	a0,sp
-   15bfa:	f47fc0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   15bfe:	84aa                	c.mv	s1,a0
+   1704c:	00700713          	addi	a4,zero,7
+   17050:	00002697          	auipc	a3,0x2
+   17054:	c3068693          	addi	a3,a3,-976 # 18c80 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xb0>
+   17058:	00000613          	addi	a2,zero,0
+   1705c:	00000593          	addi	a1,zero,0
+   17060:	00010513          	addi	a0,sp,0
+   17064:	addfb0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   17068:	00050493          	addi	s1,a0,0
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   15c00:	181c                	c.addi4spn	a5,sp,48
-   15c02:	f03e                	c.sdsp	a5,32(sp)
+   1706c:	03010793          	addi	a5,sp,48
+   17070:	02f13023          	sd	a5,32(sp)
       { return _M_dataplus._M_p; }
-   15c04:	611c                	c.ld	a5,0(a0)
+   17074:	00053783          	ld	a5,0(a0)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   15c06:	01050993          	addi	s3,a0,16
+   17078:	01050993          	addi	s3,a0,16
 	if (__str._M_is_local())
-   15c0a:	03378863          	beq	a5,s3,15c3a <elf::to_string[abi:cxx11](elf::shf)+0x1ae>
+   1707c:	05378463          	beq	a5,s3,170c4 <elf::to_string[abi:cxx11](elf::shf)+0x268>
       { _M_dataplus._M_p = __p; }
-   15c0e:	f03e                	c.sdsp	a5,32(sp)
+   17080:	02f13023          	sd	a5,32(sp)
       { _M_allocated_capacity = __capacity; }
-   15c10:	691c                	c.ld	a5,16(a0)
-   15c12:	f83e                	c.sdsp	a5,48(sp)
+   17084:	01053783          	ld	a5,16(a0)
+   17088:	02f13823          	sd	a5,48(sp)
       { _M_string_length = __length; }
-   15c14:	6490                	c.ld	a2,8(s1)
-   15c16:	f432                	c.sdsp	a2,40(sp)
+   1708c:	0084b603          	ld	a2,8(s1)
+   17090:	02c13423          	sd	a2,40(sp)
       { _M_dataplus._M_p = __p; }
-   15c18:	0134b023          	sd	s3,0(s1)
+   17094:	0134b023          	sd	s3,0(s1)
       { _M_string_length = __length; }
-   15c1c:	0004b423          	sd	zero,8(s1)
-   15c20:	00048823          	sb	zero,16(s1)
+   17098:	0004b423          	sd	zero,8(s1)
+   1709c:	00048823          	sb	zero,16(s1)
       { return _M_dataplus._M_p; }
-   15c24:	7582                	c.ldsp	a1,32(sp)
+   170a0:	02013583          	ld	a1,32(sp)
 	if (this->max_size() - (this->size() - __n1) < __n2)
-   15c26:	6418                	c.ld	a4,8(s0)
-   15c28:	57fd                	c.li	a5,-1
-   15c2a:	8389                	c.srli	a5,0x2
-   15c2c:	8f99                	c.sub	a5,a4
-   15c2e:	00c7ee63          	bltu	a5,a2,15c4a <elf::to_string[abi:cxx11](elf::shf)+0x1be>
+   170a4:	00843703          	ld	a4,8(s0)
+   170a8:	fff00793          	addi	a5,zero,-1
+   170ac:	0027d793          	srli	a5,a5,0x2
+   170b0:	40e787b3          	sub	a5,a5,a4
+   170b4:	02c7e663          	bltu	a5,a2,170e0 <elf::to_string[abi:cxx11](elf::shf)+0x284>
 	return _M_append(__s, __n);
-   15c32:	8522                	c.mv	a0,s0
-   15c34:	d7dfc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15c38:	a0a1                	c.j	15c80 <elf::to_string[abi:cxx11](elf::shf)+0x1f4>
+   170b8:	00040513          	addi	a0,s0,0
+   170bc:	8f5fb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   170c0:	0640006f          	jal	zero,17124 <elf::to_string[abi:cxx11](elf::shf)+0x2c8>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   15c3a:	6510                	c.ld	a2,8(a0)
-   15c3c:	0605                	c.addi	a2,1
+   170c4:	00853603          	ld	a2,8(a0)
+   170c8:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   15c3e:	da79                	c.beqz	a2,15c14 <elf::to_string[abi:cxx11](elf::shf)+0x188>
+   170cc:	fc0600e3          	beq	a2,zero,1708c <elf::to_string[abi:cxx11](elf::shf)+0x230>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   15c40:	85ce                	c.mv	a1,s3
-   15c42:	1808                	c.addi4spn	a0,sp,48
-   15c44:	ebdfc0ef          	jal	ra,12b00 <memcpy@plt>
-   15c48:	b7f1                	c.j	15c14 <elf::to_string[abi:cxx11](elf::shf)+0x188>
+   170d0:	00098593          	addi	a1,s3,0
+   170d4:	03010513          	addi	a0,sp,48
+   170d8:	a29fb0ef          	jal	ra,12b00 <memcpy@plt>
+   170dc:	fb1ff06f          	jal	zero,1708c <elf::to_string[abi:cxx11](elf::shf)+0x230>
 	  __throw_length_error(__N(__s));
-   15c4a:	00001517          	auipc	a0,0x1
-   15c4e:	61e50513          	addi	a0,a0,1566 # 17268 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
-   15c52:	d9ffc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   170e0:	00002517          	auipc	a0,0x2
+   170e4:	b5850513          	addi	a0,a0,-1192 # 18c38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
+   170e8:	909fb0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
       { return _M_dataplus._M_p; }
-   15c56:	84aa                	c.mv	s1,a0
-   15c58:	7502                	c.ldsp	a0,32(sp)
+   170ec:	00050493          	addi	s1,a0,0
+   170f0:	02013503          	ld	a0,32(sp)
 	if (!_M_is_local())
-   15c5a:	181c                	c.addi4spn	a5,sp,48
-   15c5c:	00f50463          	beq	a0,a5,15c64 <elf::to_string[abi:cxx11](elf::shf)+0x1d8>
+   170f4:	03010793          	addi	a5,sp,48
+   170f8:	00f50463          	beq	a0,a5,17100 <elf::to_string[abi:cxx11](elf::shf)+0x2a4>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   15c60:	e11fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   170fc:	975fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   15c64:	6502                	c.ldsp	a0,0(sp)
+   17100:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   15c66:	081c                	c.addi4spn	a5,sp,16
-   15c68:	00f50463          	beq	a0,a5,15c70 <elf::to_string[abi:cxx11](elf::shf)+0x1e4>
-   15c6c:	e05fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17104:	01010793          	addi	a5,sp,16
+   17108:	00f50463          	beq	a0,a5,17110 <elf::to_string[abi:cxx11](elf::shf)+0x2b4>
+   1710c:	965fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   15c70:	6008                	c.ld	a0,0(s0)
+   17110:	00043503          	ld	a0,0(s0)
 	if (!_M_is_local())
-   15c72:	00a90463          	beq	s2,a0,15c7a <elf::to_string[abi:cxx11](elf::shf)+0x1ee>
-   15c76:	dfbfc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17114:	00a90463          	beq	s2,a0,1711c <elf::to_string[abi:cxx11](elf::shf)+0x2c0>
+   17118:	959fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   15c7a:	8526                	c.mv	a0,s1
-   15c7c:	f35fc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   1711c:	00048513          	addi	a0,s1,0
+   17120:	a91fb0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
       { return _M_dataplus._M_p; }
-   15c80:	7502                	c.ldsp	a0,32(sp)
+   17124:	02013503          	ld	a0,32(sp)
 	if (!_M_is_local())
-   15c82:	181c                	c.addi4spn	a5,sp,48
-   15c84:	00f50463          	beq	a0,a5,15c8c <elf::to_string[abi:cxx11](elf::shf)+0x200>
+   17128:	03010793          	addi	a5,sp,48
+   1712c:	00f50463          	beq	a0,a5,17134 <elf::to_string[abi:cxx11](elf::shf)+0x2d8>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   15c88:	de9fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17130:	941fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   15c8c:	6502                	c.ldsp	a0,0(sp)
+   17134:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   15c8e:	081c                	c.addi4spn	a5,sp,16
-   15c90:	00f50463          	beq	a0,a5,15c98 <elf::to_string[abi:cxx11](elf::shf)+0x20c>
-   15c94:	dddfc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17138:	01010793          	addi	a5,sp,16
+   1713c:	00f50463          	beq	a0,a5,17144 <elf::to_string[abi:cxx11](elf::shf)+0x2e8>
+   17140:	931fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
         else res.pop_back();
         return res;
 }
-   15c98:	8522                	c.mv	a0,s0
-   15c9a:	70a6                	c.ldsp	ra,104(sp)
-   15c9c:	7406                	c.ldsp	s0,96(sp)
-   15c9e:	64e6                	c.ldsp	s1,88(sp)
-   15ca0:	6946                	c.ldsp	s2,80(sp)
-   15ca2:	69a6                	c.ldsp	s3,72(sp)
-   15ca4:	6165                	c.addi16sp	sp,112
-   15ca6:	8082                	c.jr	ra
+   17144:	00040513          	addi	a0,s0,0
+   17148:	06813083          	ld	ra,104(sp)
+   1714c:	06013403          	ld	s0,96(sp)
+   17150:	05813483          	ld	s1,88(sp)
+   17154:	05013903          	ld	s2,80(sp)
+   17158:	04813983          	ld	s3,72(sp)
+   1715c:	07010113          	addi	sp,sp,112
+   17160:	00008067          	jalr	zero,0(ra)
       { return _M_dataplus._M_p; }
-   15ca8:	84aa                	c.mv	s1,a0
-   15caa:	bf6d                	c.j	15c64 <elf::to_string[abi:cxx11](elf::shf)+0x1d8>
+   17164:	00050493          	addi	s1,a0,0
+   17168:	f99ff06f          	jal	zero,17100 <elf::to_string[abi:cxx11](elf::shf)+0x2a4>
 
-0000000000015cac <elf::to_string[abi:cxx11](elf::pf)>:
+000000000001716c <elf::to_string[abi:cxx11](elf::pf)>:
         return "(pt)0x" + to_hex((int)v);
 }
 
 std::string
 to_string(pf v)
 {
-   15cac:	7159                	c.addi16sp	sp,-112
-   15cae:	f486                	c.sdsp	ra,104(sp)
-   15cb0:	f0a2                	c.sdsp	s0,96(sp)
-   15cb2:	eca6                	c.sdsp	s1,88(sp)
-   15cb4:	e8ca                	c.sdsp	s2,80(sp)
-   15cb6:	e4ce                	c.sdsp	s3,72(sp)
-   15cb8:	842a                	c.mv	s0,a0
-   15cba:	84ae                	c.mv	s1,a1
+   1716c:	f9010113          	addi	sp,sp,-112
+   17170:	06113423          	sd	ra,104(sp)
+   17174:	06813023          	sd	s0,96(sp)
+   17178:	04913c23          	sd	s1,88(sp)
+   1717c:	05213823          	sd	s2,80(sp)
+   17180:	05313423          	sd	s3,72(sp)
+   17184:	00050413          	addi	s0,a0,0
+   17188:	00058493          	addi	s1,a1,0
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   15cbc:	01050913          	addi	s2,a0,16
+   1718c:	01050913          	addi	s2,a0,16
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   15cc0:	01253023          	sd	s2,0(a0)
+   17190:	01253023          	sd	s2,0(a0)
       { _M_string_length = __length; }
-   15cc4:	00053423          	sd	zero,8(a0)
+   17194:	00053423          	sd	zero,8(a0)
 	__c1 = __c2;
-   15cc8:	00050823          	sb	zero,16(a0)
+   17198:	00050823          	sb	zero,16(a0)
         std::string res;
         if ((v & pf::x) == pf::x) { res += "x|"; v &= ~pf::x; }
-   15ccc:	0015f793          	andi	a5,a1,1
-   15cd0:	eb81                	c.bnez	a5,15ce0 <elf::to_string[abi:cxx11](elf::pf)+0x34>
+   1719c:	0015f793          	andi	a5,a1,1
+   171a0:	00079c63          	bne	a5,zero,171b8 <elf::to_string[abi:cxx11](elf::pf)+0x4c>
         if ((v & pf::w) == pf::w) { res += "w|"; v &= ~pf::w; }
-   15cd2:	0025f793          	andi	a5,a1,2
-   15cd6:	eb8d                	c.bnez	a5,15d08 <elf::to_string[abi:cxx11](elf::pf)+0x5c>
+   171a4:	0025f793          	andi	a5,a1,2
+   171a8:	04079463          	bne	a5,zero,171f0 <elf::to_string[abi:cxx11](elf::pf)+0x84>
         if ((v & pf::r) == pf::r) { res += "r|"; v &= ~pf::r; }
-   15cd8:	0045f793          	andi	a5,a1,4
-   15cdc:	cbb9                	c.beqz	a5,15d32 <elf::to_string[abi:cxx11](elf::pf)+0x86>
-   15cde:	a851                	c.j	15d72 <elf::to_string[abi:cxx11](elf::pf)+0xc6>
+   171ac:	0045f793          	andi	a5,a1,4
+   171b0:	06078c63          	beq	a5,zero,17228 <elf::to_string[abi:cxx11](elf::pf)+0xbc>
+   171b4:	0d00006f          	jal	zero,17284 <elf::to_string[abi:cxx11](elf::pf)+0x118>
 	return _M_append(__s, __n);
-   15ce0:	4609                	c.li	a2,2
-   15ce2:	00001597          	auipc	a1,0x1
-   15ce6:	5d658593          	addi	a1,a1,1494 # 172b8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xb8>
-   15cea:	cc7fc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   171b8:	00200613          	addi	a2,zero,2
+   171bc:	00002597          	auipc	a1,0x2
+   171c0:	acc58593          	addi	a1,a1,-1332 # 18c88 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xb8>
+   171c4:	fecfb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
   return (pf)((std::uint64_t)a & (std::uint64_t)b);
-   15cee:	ffe4f793          	andi	a5,s1,-2
+   171c8:	ffe4f793          	andi	a5,s1,-2
         if ((v & pf::w) == pf::w) { res += "w|"; v &= ~pf::w; }
-   15cf2:	0024f713          	andi	a4,s1,2
+   171cc:	0024f713          	andi	a4,s1,2
   a = a & b;
-   15cf6:	84be                	c.mv	s1,a5
-   15cf8:	cb15                	c.beqz	a4,15d2c <elf::to_string[abi:cxx11](elf::pf)+0x80>
+   171d0:	00078493          	addi	s1,a5,0
+   171d4:	04070663          	beq	a4,zero,17220 <elf::to_string[abi:cxx11](elf::pf)+0xb4>
 	if (this->max_size() - (this->size() - __n1) < __n2)
-   15cfa:	6414                	c.ld	a3,8(s0)
-   15cfc:	577d                	c.li	a4,-1
-   15cfe:	8309                	c.srli	a4,0x2
-   15d00:	8f15                	c.sub	a4,a3
-   15d02:	4685                	c.li	a3,1
-   15d04:	00e6fb63          	bgeu	a3,a4,15d1a <elf::to_string[abi:cxx11](elf::pf)+0x6e>
+   171d8:	00843683          	ld	a3,8(s0)
+   171dc:	fff00713          	addi	a4,zero,-1
+   171e0:	00275713          	srli	a4,a4,0x2
+   171e4:	40d70733          	sub	a4,a4,a3
+   171e8:	00100693          	addi	a3,zero,1
+   171ec:	00e6fe63          	bgeu	a3,a4,17208 <elf::to_string[abi:cxx11](elf::pf)+0x9c>
 	return _M_append(__s, __n);
-   15d08:	4609                	c.li	a2,2
-   15d0a:	00001597          	auipc	a1,0x1
-   15d0e:	5b658593          	addi	a1,a1,1462 # 172c0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xc0>
-   15d12:	8522                	c.mv	a0,s0
-   15d14:	c9dfc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15d18:	a809                	c.j	15d2a <elf::to_string[abi:cxx11](elf::pf)+0x7e>
+   171f0:	00200613          	addi	a2,zero,2
+   171f4:	00002597          	auipc	a1,0x2
+   171f8:	a9c58593          	addi	a1,a1,-1380 # 18c90 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xc0>
+   171fc:	00040513          	addi	a0,s0,0
+   17200:	fb0fb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   17204:	0180006f          	jal	zero,1721c <elf::to_string[abi:cxx11](elf::pf)+0xb0>
 	  __throw_length_error(__N(__s));
-   15d1a:	00001517          	auipc	a0,0x1
-   15d1e:	54e50513          	addi	a0,a0,1358 # 17268 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
-   15d22:	ccffc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   17208:	00002517          	auipc	a0,0x2
+   1720c:	a3050513          	addi	a0,a0,-1488 # 18c38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
+   17210:	fe0fb0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
       { return _M_dataplus._M_p; }
-   15d26:	84aa                	c.mv	s1,a0
-   15d28:	a29d                	c.j	15e8e <elf::to_string[abi:cxx11](elf::pf)+0x1e2>
+   17214:	00050493          	addi	s1,a0,0
+   17218:	2040006f          	jal	zero,1741c <elf::to_string[abi:cxx11](elf::pf)+0x2b0>
   return (pf)((std::uint64_t)a & (std::uint64_t)b);
-   15d2a:	98f5                	c.andi	s1,-3
+   1721c:	ffd4f493          	andi	s1,s1,-3
         if ((v & pf::r) == pf::r) { res += "r|"; v &= ~pf::r; }
-   15d2c:	0044f793          	andi	a5,s1,4
-   15d30:	eb95                	c.bnez	a5,15d64 <elf::to_string[abi:cxx11](elf::pf)+0xb8>
-   15d32:	00ff07b7          	lui	a5,0xff0
+   17220:	0044f793          	andi	a5,s1,4
+   17224:	04079463          	bne	a5,zero,1726c <elf::to_string[abi:cxx11](elf::pf)+0x100>
+   17228:	00ff07b7          	lui	a5,0xff0
         if ((v & pf::maskos) == pf::maskos) { res += "maskos|"; v &= ~pf::maskos; }
-   15d36:	8fe5                	c.and	a5,s1
-   15d38:	00ff0737          	lui	a4,0xff0
-   15d3c:	04e78c63          	beq	a5,a4,15d94 <elf::to_string[abi:cxx11](elf::pf)+0xe8>
-   15d40:	ff0007b7          	lui	a5,0xff000
+   1722c:	00f4f7b3          	and	a5,s1,a5
+   17230:	00ff0737          	lui	a4,0xff0
+   17234:	06e78e63          	beq	a5,a4,172b0 <elf::to_string[abi:cxx11](elf::pf)+0x144>
+   17238:	ff0007b7          	lui	a5,0xff000
         if ((v & pf::maskproc) == pf::maskproc) { res += "maskproc|"; v &= ~pf::maskproc; }
-   15d44:	8fe5                	c.and	a5,s1
-   15d46:	ff000737          	lui	a4,0xff000
-   15d4a:	08e78063          	beq	a5,a4,15dca <elf::to_string[abi:cxx11](elf::pf)+0x11e>
+   1723c:	00f4f7b3          	and	a5,s1,a5
+   17240:	ff000737          	lui	a4,0xff000
+   17244:	0ae78c63          	beq	a5,a4,172fc <elf::to_string[abi:cxx11](elf::pf)+0x190>
       { return _M_string_length; }
-   15d4e:	640c                	c.ld	a1,8(s0)
+   17248:	00843583          	ld	a1,8(s0)
         if (res.empty() || v != (pf)0) res += "(pf)0x" + to_hex((int)v);
-   15d50:	c191                	c.beqz	a1,15d54 <elf::to_string[abi:cxx11](elf::pf)+0xa8>
-   15d52:	c4cd                	c.beqz	s1,15dfc <elf::to_string[abi:cxx11](elf::pf)+0x150>
-   15d54:	85a6                	c.mv	a1,s1
-   15d56:	850a                	c.mv	a0,sp
-   15d58:	00004317          	auipc	t1,0x4
-   15d5c:	4b033303          	ld	t1,1200(t1) # 1a208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3892>
-   15d60:	9302                	c.jalr	t1
-   15d62:	a05d                	c.j	15e08 <elf::to_string[abi:cxx11](elf::pf)+0x15c>
+   1724c:	00058463          	beq	a1,zero,17254 <elf::to_string[abi:cxx11](elf::pf)+0xe8>
+   17250:	0e048a63          	beq	s1,zero,17344 <elf::to_string[abi:cxx11](elf::pf)+0x1d8>
+   17254:	00048593          	addi	a1,s1,0
+   17258:	00010513          	addi	a0,sp,0
+   1725c:	00005317          	auipc	t1,0x5
+   17260:	fac33303          	ld	t1,-84(t1) # 1c208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3ef4>
+   17264:	000300e7          	jalr	ra,0(t1)
+   17268:	0f00006f          	jal	zero,17358 <elf::to_string[abi:cxx11](elf::pf)+0x1ec>
 	if (this->max_size() - (this->size() - __n1) < __n2)
-   15d64:	6418                	c.ld	a4,8(s0)
-   15d66:	57fd                	c.li	a5,-1
-   15d68:	8389                	c.srli	a5,0x2
-   15d6a:	8f99                	c.sub	a5,a4
-   15d6c:	4705                	c.li	a4,1
-   15d6e:	00f77b63          	bgeu	a4,a5,15d84 <elf::to_string[abi:cxx11](elf::pf)+0xd8>
+   1726c:	00843703          	ld	a4,8(s0)
+   17270:	fff00793          	addi	a5,zero,-1
+   17274:	0027d793          	srli	a5,a5,0x2
+   17278:	40e787b3          	sub	a5,a5,a4
+   1727c:	00100713          	addi	a4,zero,1
+   17280:	00f77e63          	bgeu	a4,a5,1729c <elf::to_string[abi:cxx11](elf::pf)+0x130>
 	return _M_append(__s, __n);
-   15d72:	4609                	c.li	a2,2
-   15d74:	00001597          	auipc	a1,0x1
-   15d78:	51c58593          	addi	a1,a1,1308 # 17290 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x90>
-   15d7c:	8522                	c.mv	a0,s0
-   15d7e:	c33fc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15d82:	a039                	c.j	15d90 <elf::to_string[abi:cxx11](elf::pf)+0xe4>
+   17284:	00200613          	addi	a2,zero,2
+   17288:	00002597          	auipc	a1,0x2
+   1728c:	9d858593          	addi	a1,a1,-1576 # 18c60 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x90>
+   17290:	00040513          	addi	a0,s0,0
+   17294:	f1cfb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   17298:	0100006f          	jal	zero,172a8 <elf::to_string[abi:cxx11](elf::pf)+0x13c>
 	  __throw_length_error(__N(__s));
-   15d84:	00001517          	auipc	a0,0x1
-   15d88:	4e450513          	addi	a0,a0,1252 # 17268 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
-   15d8c:	c65fc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
-   15d90:	98ed                	c.andi	s1,-5
+   1729c:	00002517          	auipc	a0,0x2
+   172a0:	99c50513          	addi	a0,a0,-1636 # 18c38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
+   172a4:	f4cfb0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   172a8:	ffb4f493          	andi	s1,s1,-5
   return a;
-   15d92:	b745                	c.j	15d32 <elf::to_string[abi:cxx11](elf::pf)+0x86>
+   172ac:	f7dff06f          	jal	zero,17228 <elf::to_string[abi:cxx11](elf::pf)+0xbc>
 	if (this->max_size() - (this->size() - __n1) < __n2)
-   15d94:	6418                	c.ld	a4,8(s0)
-   15d96:	57fd                	c.li	a5,-1
-   15d98:	8389                	c.srli	a5,0x2
-   15d9a:	8f99                	c.sub	a5,a4
-   15d9c:	4719                	c.li	a4,6
-   15d9e:	00f77b63          	bgeu	a4,a5,15db4 <elf::to_string[abi:cxx11](elf::pf)+0x108>
+   172b0:	00843703          	ld	a4,8(s0)
+   172b4:	fff00793          	addi	a5,zero,-1
+   172b8:	0027d793          	srli	a5,a5,0x2
+   172bc:	40e787b3          	sub	a5,a5,a4
+   172c0:	00600713          	addi	a4,zero,6
+   172c4:	00f77e63          	bgeu	a4,a5,172e0 <elf::to_string[abi:cxx11](elf::pf)+0x174>
 	return _M_append(__s, __n);
-   15da2:	461d                	c.li	a2,7
-   15da4:	00001597          	auipc	a1,0x1
-   15da8:	4f458593          	addi	a1,a1,1268 # 17298 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x98>
-   15dac:	8522                	c.mv	a0,s0
-   15dae:	c03fc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15db2:	a039                	c.j	15dc0 <elf::to_string[abi:cxx11](elf::pf)+0x114>
+   172c8:	00700613          	addi	a2,zero,7
+   172cc:	00002597          	auipc	a1,0x2
+   172d0:	99c58593          	addi	a1,a1,-1636 # 18c68 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x98>
+   172d4:	00040513          	addi	a0,s0,0
+   172d8:	ed8fb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   172dc:	0100006f          	jal	zero,172ec <elf::to_string[abi:cxx11](elf::pf)+0x180>
 	  __throw_length_error(__N(__s));
-   15db4:	00001517          	auipc	a0,0x1
-   15db8:	4b450513          	addi	a0,a0,1204 # 17268 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
-   15dbc:	c35fc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   172e0:	00002517          	auipc	a0,0x2
+   172e4:	95850513          	addi	a0,a0,-1704 # 18c38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
+   172e8:	f08fb0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
   return (pf)((std::uint64_t)a & (std::uint64_t)b);
-   15dc0:	ff0107b7          	lui	a5,0xff010
-   15dc4:	17fd                	c.addi	a5,-1 # ffffffffff00ffff <__global_pointer$+0xfffffffffeff57ff>
-   15dc6:	8cfd                	c.and	s1,a5
+   172ec:	ff0107b7          	lui	a5,0xff010
+   172f0:	fff78793          	addi	a5,a5,-1 # ffffffffff00ffff <__global_pointer$+0xfffffffffeff37ff>
+   172f4:	00f4f4b3          	and	s1,s1,a5
   return a;
-   15dc8:	bfa5                	c.j	15d40 <elf::to_string[abi:cxx11](elf::pf)+0x94>
+   172f8:	f41ff06f          	jal	zero,17238 <elf::to_string[abi:cxx11](elf::pf)+0xcc>
 	if (this->max_size() - (this->size() - __n1) < __n2)
-   15dca:	6418                	c.ld	a4,8(s0)
-   15dcc:	57fd                	c.li	a5,-1
-   15dce:	8389                	c.srli	a5,0x2
-   15dd0:	8f99                	c.sub	a5,a4
-   15dd2:	4721                	c.li	a4,8
-   15dd4:	00f77b63          	bgeu	a4,a5,15dea <elf::to_string[abi:cxx11](elf::pf)+0x13e>
+   172fc:	00843703          	ld	a4,8(s0)
+   17300:	fff00793          	addi	a5,zero,-1
+   17304:	0027d793          	srli	a5,a5,0x2
+   17308:	40e787b3          	sub	a5,a5,a4
+   1730c:	00800713          	addi	a4,zero,8
+   17310:	00f77e63          	bgeu	a4,a5,1732c <elf::to_string[abi:cxx11](elf::pf)+0x1c0>
 	return _M_append(__s, __n);
-   15dd8:	4625                	c.li	a2,9
-   15dda:	00001597          	auipc	a1,0x1
-   15dde:	4c658593          	addi	a1,a1,1222 # 172a0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xa0>
-   15de2:	8522                	c.mv	a0,s0
-   15de4:	bcdfc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15de8:	a039                	c.j	15df6 <elf::to_string[abi:cxx11](elf::pf)+0x14a>
+   17314:	00900613          	addi	a2,zero,9
+   17318:	00002597          	auipc	a1,0x2
+   1731c:	95858593          	addi	a1,a1,-1704 # 18c70 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xa0>
+   17320:	00040513          	addi	a0,s0,0
+   17324:	e8cfb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   17328:	0100006f          	jal	zero,17338 <elf::to_string[abi:cxx11](elf::pf)+0x1cc>
 	  __throw_length_error(__N(__s));
-   15dea:	00001517          	auipc	a0,0x1
-   15dee:	47e50513          	addi	a0,a0,1150 # 17268 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
-   15df2:	bfffc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   1732c:	00002517          	auipc	a0,0x2
+   17330:	90c50513          	addi	a0,a0,-1780 # 18c38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
+   17334:	ebcfb0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
   return (pf)((std::uint64_t)a & (std::uint64_t)b);
-   15df6:	14a2                	c.slli	s1,0x28
-   15df8:	90a1                	c.srli	s1,0x28
+   17338:	02849493          	slli	s1,s1,0x28
+   1733c:	0284d493          	srli	s1,s1,0x28
   return a;
-   15dfa:	bf91                	c.j	15d4e <elf::to_string[abi:cxx11](elf::pf)+0xa2>
+   17340:	f09ff06f          	jal	zero,17248 <elf::to_string[abi:cxx11](elf::pf)+0xdc>
 	_M_erase(size() - 1, 1);
-   15dfc:	4605                	c.li	a2,1
-   15dfe:	15fd                	c.addi	a1,-1
-   15e00:	8522                	c.mv	a0,s0
-   15e02:	ccffc0ef          	jal	ra,12ad0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_erase(unsigned long, unsigned long)@plt>
+   17344:	00100613          	addi	a2,zero,1
+   17348:	fff58593          	addi	a1,a1,-1
+   1734c:	00040513          	addi	a0,s0,0
+   17350:	f80fb0ef          	jal	ra,12ad0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_erase(unsigned long, unsigned long)@plt>
       }
-   15e06:	a845                	c.j	15eb6 <elf::to_string[abi:cxx11](elf::pf)+0x20a>
+   17354:	0fc0006f          	jal	zero,17450 <elf::to_string[abi:cxx11](elf::pf)+0x2e4>
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   15e08:	4719                	c.li	a4,6
-   15e0a:	00001697          	auipc	a3,0x1
-   15e0e:	4be68693          	addi	a3,a3,1214 # 172c8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xc8>
-   15e12:	4601                	c.li	a2,0
-   15e14:	4581                	c.li	a1,0
-   15e16:	850a                	c.mv	a0,sp
-   15e18:	d29fc0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   15e1c:	84aa                	c.mv	s1,a0
+   17358:	00600713          	addi	a4,zero,6
+   1735c:	00002697          	auipc	a3,0x2
+   17360:	93c68693          	addi	a3,a3,-1732 # 18c98 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xc8>
+   17364:	00000613          	addi	a2,zero,0
+   17368:	00000593          	addi	a1,zero,0
+   1736c:	00010513          	addi	a0,sp,0
+   17370:	fd0fb0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   17374:	00050493          	addi	s1,a0,0
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   15e1e:	181c                	c.addi4spn	a5,sp,48
-   15e20:	f03e                	c.sdsp	a5,32(sp)
+   17378:	03010793          	addi	a5,sp,48
+   1737c:	02f13023          	sd	a5,32(sp)
       { return _M_dataplus._M_p; }
-   15e22:	611c                	c.ld	a5,0(a0)
+   17380:	00053783          	ld	a5,0(a0)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   15e24:	01050993          	addi	s3,a0,16
+   17384:	01050993          	addi	s3,a0,16
 	if (__str._M_is_local())
-   15e28:	03378863          	beq	a5,s3,15e58 <elf::to_string[abi:cxx11](elf::pf)+0x1ac>
+   17388:	05378463          	beq	a5,s3,173d0 <elf::to_string[abi:cxx11](elf::pf)+0x264>
       { _M_dataplus._M_p = __p; }
-   15e2c:	f03e                	c.sdsp	a5,32(sp)
+   1738c:	02f13023          	sd	a5,32(sp)
       { _M_allocated_capacity = __capacity; }
-   15e2e:	691c                	c.ld	a5,16(a0)
-   15e30:	f83e                	c.sdsp	a5,48(sp)
+   17390:	01053783          	ld	a5,16(a0)
+   17394:	02f13823          	sd	a5,48(sp)
       { _M_string_length = __length; }
-   15e32:	6490                	c.ld	a2,8(s1)
-   15e34:	f432                	c.sdsp	a2,40(sp)
+   17398:	0084b603          	ld	a2,8(s1)
+   1739c:	02c13423          	sd	a2,40(sp)
       { _M_dataplus._M_p = __p; }
-   15e36:	0134b023          	sd	s3,0(s1)
+   173a0:	0134b023          	sd	s3,0(s1)
       { _M_string_length = __length; }
-   15e3a:	0004b423          	sd	zero,8(s1)
-   15e3e:	00048823          	sb	zero,16(s1)
+   173a4:	0004b423          	sd	zero,8(s1)
+   173a8:	00048823          	sb	zero,16(s1)
       { return _M_dataplus._M_p; }
-   15e42:	7582                	c.ldsp	a1,32(sp)
+   173ac:	02013583          	ld	a1,32(sp)
 	if (this->max_size() - (this->size() - __n1) < __n2)
-   15e44:	6418                	c.ld	a4,8(s0)
-   15e46:	57fd                	c.li	a5,-1
-   15e48:	8389                	c.srli	a5,0x2
-   15e4a:	8f99                	c.sub	a5,a4
-   15e4c:	00c7ee63          	bltu	a5,a2,15e68 <elf::to_string[abi:cxx11](elf::pf)+0x1bc>
+   173b0:	00843703          	ld	a4,8(s0)
+   173b4:	fff00793          	addi	a5,zero,-1
+   173b8:	0027d793          	srli	a5,a5,0x2
+   173bc:	40e787b3          	sub	a5,a5,a4
+   173c0:	02c7e663          	bltu	a5,a2,173ec <elf::to_string[abi:cxx11](elf::pf)+0x280>
 	return _M_append(__s, __n);
-   15e50:	8522                	c.mv	a0,s0
-   15e52:	b5ffc0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
-   15e56:	a0a1                	c.j	15e9e <elf::to_string[abi:cxx11](elf::pf)+0x1f2>
+   173c4:	00040513          	addi	a0,s0,0
+   173c8:	de8fb0ef          	jal	ra,129b0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)@plt>
+   173cc:	0640006f          	jal	zero,17430 <elf::to_string[abi:cxx11](elf::pf)+0x2c4>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   15e58:	6510                	c.ld	a2,8(a0)
-   15e5a:	0605                	c.addi	a2,1
+   173d0:	00853603          	ld	a2,8(a0)
+   173d4:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   15e5c:	da79                	c.beqz	a2,15e32 <elf::to_string[abi:cxx11](elf::pf)+0x186>
+   173d8:	fc0600e3          	beq	a2,zero,17398 <elf::to_string[abi:cxx11](elf::pf)+0x22c>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   15e5e:	85ce                	c.mv	a1,s3
-   15e60:	1808                	c.addi4spn	a0,sp,48
-   15e62:	c9ffc0ef          	jal	ra,12b00 <memcpy@plt>
-   15e66:	b7f1                	c.j	15e32 <elf::to_string[abi:cxx11](elf::pf)+0x186>
+   173dc:	00098593          	addi	a1,s3,0
+   173e0:	03010513          	addi	a0,sp,48
+   173e4:	f1cfb0ef          	jal	ra,12b00 <memcpy@plt>
+   173e8:	fb1ff06f          	jal	zero,17398 <elf::to_string[abi:cxx11](elf::pf)+0x22c>
 	  __throw_length_error(__N(__s));
-   15e68:	00001517          	auipc	a0,0x1
-   15e6c:	40050513          	addi	a0,a0,1024 # 17268 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
-   15e70:	b81fc0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
+   173ec:	00002517          	auipc	a0,0x2
+   173f0:	84c50513          	addi	a0,a0,-1972 # 18c38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x68>
+   173f4:	dfcfb0ef          	jal	ra,129f0 <std::__throw_length_error(char const*)@plt>
       { return _M_dataplus._M_p; }
-   15e74:	84aa                	c.mv	s1,a0
-   15e76:	7502                	c.ldsp	a0,32(sp)
+   173f8:	00050493          	addi	s1,a0,0
+   173fc:	02013503          	ld	a0,32(sp)
 	if (!_M_is_local())
-   15e78:	181c                	c.addi4spn	a5,sp,48
-   15e7a:	00f50463          	beq	a0,a5,15e82 <elf::to_string[abi:cxx11](elf::pf)+0x1d6>
-   15e7e:	bf3fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17400:	03010793          	addi	a5,sp,48
+   17404:	00f50463          	beq	a0,a5,1740c <elf::to_string[abi:cxx11](elf::pf)+0x2a0>
+   17408:	e68fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   15e82:	6502                	c.ldsp	a0,0(sp)
+   1740c:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   15e84:	081c                	c.addi4spn	a5,sp,16
-   15e86:	00f50463          	beq	a0,a5,15e8e <elf::to_string[abi:cxx11](elf::pf)+0x1e2>
-   15e8a:	be7fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17410:	01010793          	addi	a5,sp,16
+   17414:	00f50463          	beq	a0,a5,1741c <elf::to_string[abi:cxx11](elf::pf)+0x2b0>
+   17418:	e58fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   15e8e:	6008                	c.ld	a0,0(s0)
+   1741c:	00043503          	ld	a0,0(s0)
 	if (!_M_is_local())
-   15e90:	00a90463          	beq	s2,a0,15e98 <elf::to_string[abi:cxx11](elf::pf)+0x1ec>
-   15e94:	bddfc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17420:	00a90463          	beq	s2,a0,17428 <elf::to_string[abi:cxx11](elf::pf)+0x2bc>
+   17424:	e4cfb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   15e98:	8526                	c.mv	a0,s1
-   15e9a:	d17fc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   17428:	00048513          	addi	a0,s1,0
+   1742c:	f84fb0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
       { return _M_dataplus._M_p; }
-   15e9e:	7502                	c.ldsp	a0,32(sp)
+   17430:	02013503          	ld	a0,32(sp)
 	if (!_M_is_local())
-   15ea0:	181c                	c.addi4spn	a5,sp,48
-   15ea2:	00f50463          	beq	a0,a5,15eaa <elf::to_string[abi:cxx11](elf::pf)+0x1fe>
+   17434:	03010793          	addi	a5,sp,48
+   17438:	00f50463          	beq	a0,a5,17440 <elf::to_string[abi:cxx11](elf::pf)+0x2d4>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   15ea6:	bcbfc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   1743c:	e34fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { return _M_dataplus._M_p; }
-   15eaa:	6502                	c.ldsp	a0,0(sp)
+   17440:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   15eac:	081c                	c.addi4spn	a5,sp,16
-   15eae:	00f50463          	beq	a0,a5,15eb6 <elf::to_string[abi:cxx11](elf::pf)+0x20a>
-   15eb2:	bbffc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17444:	01010793          	addi	a5,sp,16
+   17448:	00f50463          	beq	a0,a5,17450 <elf::to_string[abi:cxx11](elf::pf)+0x2e4>
+   1744c:	e24fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
         else res.pop_back();
         return res;
 }
-   15eb6:	8522                	c.mv	a0,s0
-   15eb8:	70a6                	c.ldsp	ra,104(sp)
-   15eba:	7406                	c.ldsp	s0,96(sp)
-   15ebc:	64e6                	c.ldsp	s1,88(sp)
-   15ebe:	6946                	c.ldsp	s2,80(sp)
-   15ec0:	69a6                	c.ldsp	s3,72(sp)
-   15ec2:	6165                	c.addi16sp	sp,112
-   15ec4:	8082                	c.jr	ra
+   17450:	00040513          	addi	a0,s0,0
+   17454:	06813083          	ld	ra,104(sp)
+   17458:	06013403          	ld	s0,96(sp)
+   1745c:	05813483          	ld	s1,88(sp)
+   17460:	05013903          	ld	s2,80(sp)
+   17464:	04813983          	ld	s3,72(sp)
+   17468:	07010113          	addi	sp,sp,112
+   1746c:	00008067          	jalr	zero,0(ra)
       { return _M_dataplus._M_p; }
-   15ec6:	84aa                	c.mv	s1,a0
-   15ec8:	bf6d                	c.j	15e82 <elf::to_string[abi:cxx11](elf::pf)+0x1d6>
+   17470:	00050493          	addi	s1,a0,0
+   17474:	f99ff06f          	jal	zero,1740c <elf::to_string[abi:cxx11](elf::pf)+0x2a0>
 
-0000000000015eca <elf::to_string[abi:cxx11](elf::elfdata)>:
+0000000000017478 <elf::to_string[abi:cxx11](elf::elfdata)>:
 {
-   15eca:	7139                	c.addi16sp	sp,-64
-   15ecc:	fc06                	c.sdsp	ra,56(sp)
-   15ece:	f822                	c.sdsp	s0,48(sp)
-   15ed0:	f426                	c.sdsp	s1,40(sp)
-   15ed2:	f04a                	c.sdsp	s2,32(sp)
-   15ed4:	842a                	c.mv	s0,a0
+   17478:	fc010113          	addi	sp,sp,-64
+   1747c:	02113c23          	sd	ra,56(sp)
+   17480:	02813823          	sd	s0,48(sp)
+   17484:	02913423          	sd	s1,40(sp)
+   17488:	03213023          	sd	s2,32(sp)
+   1748c:	00050413          	addi	s0,a0,0
         switch (v) {
-   15ed6:	4785                	c.li	a5,1
-   15ed8:	02f58763          	beq	a1,a5,15f06 <elf::to_string[abi:cxx11](elf::elfdata)+0x3c>
-   15edc:	4789                	c.li	a5,2
-   15ede:	04f58c63          	beq	a1,a5,15f36 <elf::to_string[abi:cxx11](elf::elfdata)+0x6c>
+   17490:	00100793          	addi	a5,zero,1
+   17494:	04f58063          	beq	a1,a5,174d4 <elf::to_string[abi:cxx11](elf::elfdata)+0x5c>
+   17498:	00200793          	addi	a5,zero,2
+   1749c:	06f58e63          	beq	a1,a5,17518 <elf::to_string[abi:cxx11](elf::elfdata)+0xa0>
         return "(elfdata)0x" + to_hex((int)v);
-   15ee2:	848a                	c.mv	s1,sp
-   15ee4:	8526                	c.mv	a0,s1
-   15ee6:	00004317          	auipc	t1,0x4
-   15eea:	32233303          	ld	t1,802(t1) # 1a208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3892>
-   15eee:	9302                	c.jalr	t1
+   174a0:	00010493          	addi	s1,sp,0
+   174a4:	00048513          	addi	a0,s1,0
+   174a8:	00005317          	auipc	t1,0x5
+   174ac:	d6033303          	ld	t1,-672(t1) # 1c208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3ef4>
+   174b0:	000300e7          	jalr	ra,0(t1)
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   15ef0:	472d                	c.li	a4,11
-   15ef2:	00001697          	auipc	a3,0x1
-   15ef6:	3ee68693          	addi	a3,a3,1006 # 172e0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xe0>
-   15efa:	4601                	c.li	a2,0
-   15efc:	4581                	c.li	a1,0
-   15efe:	8526                	c.mv	a0,s1
-   15f00:	c41fc0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   15f04:	a899                	c.j	15f5a <elf::to_string[abi:cxx11](elf::elfdata)+0x90>
+   174b4:	00b00713          	addi	a4,zero,11
+   174b8:	00001697          	auipc	a3,0x1
+   174bc:	7f868693          	addi	a3,a3,2040 # 18cb0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xe0>
+   174c0:	00000613          	addi	a2,zero,0
+   174c4:	00000593          	addi	a1,zero,0
+   174c8:	00048513          	addi	a0,s1,0
+   174cc:	e74fb0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   174d0:	0740006f          	jal	zero,17544 <elf::to_string[abi:cxx11](elf::elfdata)+0xcc>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   15f06:	01050793          	addi	a5,a0,16
+   174d4:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   15f0a:	e11c                	c.sd	a5,0(a0)
+   174d8:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   15f0c:	4681                	c.li	a3,0
-   15f0e:	00001617          	auipc	a2,0x1
-   15f12:	3c560613          	addi	a2,a2,965 # 172d3 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xd3>
-   15f16:	00001597          	auipc	a1,0x1
-   15f1a:	3ba58593          	addi	a1,a1,954 # 172d0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xd0>
-   15f1e:	00004317          	auipc	t1,0x4
-   15f22:	29233303          	ld	t1,658(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   15f26:	9302                	c.jalr	t1
+   174dc:	00000693          	addi	a3,zero,0
+   174e0:	00001617          	auipc	a2,0x1
+   174e4:	7c360613          	addi	a2,a2,1987 # 18ca3 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xd3>
+   174e8:	00001597          	auipc	a1,0x1
+   174ec:	7b858593          	addi	a1,a1,1976 # 18ca0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xd0>
+   174f0:	00005317          	auipc	t1,0x5
+   174f4:	cc033303          	ld	t1,-832(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   174f8:	000300e7          	jalr	ra,0(t1)
 }
-   15f28:	8522                	c.mv	a0,s0
-   15f2a:	70e2                	c.ldsp	ra,56(sp)
-   15f2c:	7442                	c.ldsp	s0,48(sp)
-   15f2e:	74a2                	c.ldsp	s1,40(sp)
-   15f30:	7902                	c.ldsp	s2,32(sp)
-   15f32:	6121                	c.addi16sp	sp,64
-   15f34:	8082                	c.jr	ra
+   174fc:	00040513          	addi	a0,s0,0
+   17500:	03813083          	ld	ra,56(sp)
+   17504:	03013403          	ld	s0,48(sp)
+   17508:	02813483          	ld	s1,40(sp)
+   1750c:	02013903          	ld	s2,32(sp)
+   17510:	04010113          	addi	sp,sp,64
+   17514:	00008067          	jalr	zero,0(ra)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   15f36:	01050793          	addi	a5,a0,16
+   17518:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   15f3a:	e11c                	c.sd	a5,0(a0)
+   1751c:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   15f3c:	4681                	c.li	a3,0
-   15f3e:	00001617          	auipc	a2,0x1
-   15f42:	39d60613          	addi	a2,a2,925 # 172db <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xdb>
-   15f46:	00001597          	auipc	a1,0x1
-   15f4a:	39258593          	addi	a1,a1,914 # 172d8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xd8>
-   15f4e:	00004317          	auipc	t1,0x4
-   15f52:	26233303          	ld	t1,610(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   15f56:	9302                	c.jalr	t1
+   17520:	00000693          	addi	a3,zero,0
+   17524:	00001617          	auipc	a2,0x1
+   17528:	78760613          	addi	a2,a2,1927 # 18cab <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xdb>
+   1752c:	00001597          	auipc	a1,0x1
+   17530:	77c58593          	addi	a1,a1,1916 # 18ca8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xd8>
+   17534:	00005317          	auipc	t1,0x5
+   17538:	c7c33303          	ld	t1,-900(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   1753c:	000300e7          	jalr	ra,0(t1)
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   15f58:	bfc1                	c.j	15f28 <elf::to_string[abi:cxx11](elf::elfdata)+0x5e>
+   17540:	fbdff06f          	jal	zero,174fc <elf::to_string[abi:cxx11](elf::elfdata)+0x84>
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   15f5a:	84aa                	c.mv	s1,a0
+   17544:	00050493          	addi	s1,a0,0
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   15f5c:	01040513          	addi	a0,s0,16
+   17548:	01040513          	addi	a0,s0,16
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   15f60:	e008                	c.sd	a0,0(s0)
+   1754c:	00a43023          	sd	a0,0(s0)
       { return _M_dataplus._M_p; }
-   15f62:	609c                	c.ld	a5,0(s1)
+   17550:	0004b783          	ld	a5,0(s1)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   15f64:	01048913          	addi	s2,s1,16
+   17554:	01048913          	addi	s2,s1,16
 	if (__str._M_is_local())
-   15f68:	03278463          	beq	a5,s2,15f90 <elf::to_string[abi:cxx11](elf::elfdata)+0xc6>
+   17558:	03278c63          	beq	a5,s2,17590 <elf::to_string[abi:cxx11](elf::elfdata)+0x118>
       { _M_dataplus._M_p = __p; }
-   15f6c:	e01c                	c.sd	a5,0(s0)
+   1755c:	00f43023          	sd	a5,0(s0)
       { _M_allocated_capacity = __capacity; }
-   15f6e:	689c                	c.ld	a5,16(s1)
-   15f70:	e81c                	c.sd	a5,16(s0)
+   17560:	0104b783          	ld	a5,16(s1)
+   17564:	00f43823          	sd	a5,16(s0)
       { _M_string_length = __length; }
-   15f72:	649c                	c.ld	a5,8(s1)
-   15f74:	e41c                	c.sd	a5,8(s0)
+   17568:	0084b783          	ld	a5,8(s1)
+   1756c:	00f43423          	sd	a5,8(s0)
       { _M_dataplus._M_p = __p; }
-   15f76:	0124b023          	sd	s2,0(s1)
+   17570:	0124b023          	sd	s2,0(s1)
       { _M_string_length = __length; }
-   15f7a:	0004b423          	sd	zero,8(s1)
+   17574:	0004b423          	sd	zero,8(s1)
 	__c1 = __c2;
-   15f7e:	00048823          	sb	zero,16(s1)
+   17578:	00048823          	sb	zero,16(s1)
       { return _M_dataplus._M_p; }
-   15f82:	6502                	c.ldsp	a0,0(sp)
+   1757c:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   15f84:	081c                	c.addi4spn	a5,sp,16
-   15f86:	faf501e3          	beq	a0,a5,15f28 <elf::to_string[abi:cxx11](elf::elfdata)+0x5e>
+   17580:	01010793          	addi	a5,sp,16
+   17584:	f6f50ce3          	beq	a0,a5,174fc <elf::to_string[abi:cxx11](elf::elfdata)+0x84>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   15f8a:	ae7fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17588:	ce8fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
-   15f8e:	bf69                	c.j	15f28 <elf::to_string[abi:cxx11](elf::elfdata)+0x5e>
+   1758c:	f71ff06f          	jal	zero,174fc <elf::to_string[abi:cxx11](elf::elfdata)+0x84>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   15f90:	6490                	c.ld	a2,8(s1)
-   15f92:	0605                	c.addi	a2,1
+   17590:	0084b603          	ld	a2,8(s1)
+   17594:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   15f94:	de79                	c.beqz	a2,15f72 <elf::to_string[abi:cxx11](elf::elfdata)+0xa8>
+   17598:	fc0608e3          	beq	a2,zero,17568 <elf::to_string[abi:cxx11](elf::elfdata)+0xf0>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   15f96:	85ca                	c.mv	a1,s2
-   15f98:	b69fc0ef          	jal	ra,12b00 <memcpy@plt>
-   15f9c:	bfd9                	c.j	15f72 <elf::to_string[abi:cxx11](elf::elfdata)+0xa8>
+   1759c:	00090593          	addi	a1,s2,0
+   175a0:	d60fb0ef          	jal	ra,12b00 <memcpy@plt>
+   175a4:	fc5ff06f          	jal	zero,17568 <elf::to_string[abi:cxx11](elf::elfdata)+0xf0>
       { return _M_dataplus._M_p; }
-   15f9e:	842a                	c.mv	s0,a0
-   15fa0:	6502                	c.ldsp	a0,0(sp)
+   175a8:	00050413          	addi	s0,a0,0
+   175ac:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   15fa2:	081c                	c.addi4spn	a5,sp,16
-   15fa4:	00f50463          	beq	a0,a5,15fac <elf::to_string[abi:cxx11](elf::elfdata)+0xe2>
-   15fa8:	ac9fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   175b0:	01010793          	addi	a5,sp,16
+   175b4:	00f50463          	beq	a0,a5,175bc <elf::to_string[abi:cxx11](elf::elfdata)+0x144>
+   175b8:	cb8fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   15fac:	8522                	c.mv	a0,s0
-   15fae:	c03fc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   175bc:	00040513          	addi	a0,s0,0
+   175c0:	df0fb0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-0000000000015fb2 <elf::to_string[abi:cxx11](elf::elfclass)>:
+00000000000175c4 <elf::to_string[abi:cxx11](elf::elfclass)>:
 {
-   15fb2:	7139                	c.addi16sp	sp,-64
-   15fb4:	fc06                	c.sdsp	ra,56(sp)
-   15fb6:	f822                	c.sdsp	s0,48(sp)
-   15fb8:	f426                	c.sdsp	s1,40(sp)
-   15fba:	f04a                	c.sdsp	s2,32(sp)
-   15fbc:	842a                	c.mv	s0,a0
+   175c4:	fc010113          	addi	sp,sp,-64
+   175c8:	02113c23          	sd	ra,56(sp)
+   175cc:	02813823          	sd	s0,48(sp)
+   175d0:	02913423          	sd	s1,40(sp)
+   175d4:	03213023          	sd	s2,32(sp)
+   175d8:	00050413          	addi	s0,a0,0
         switch (v) {
-   15fbe:	4785                	c.li	a5,1
-   15fc0:	02f58763          	beq	a1,a5,15fee <elf::to_string[abi:cxx11](elf::elfclass)+0x3c>
-   15fc4:	4789                	c.li	a5,2
-   15fc6:	04f58c63          	beq	a1,a5,1601e <elf::to_string[abi:cxx11](elf::elfclass)+0x6c>
+   175dc:	00100793          	addi	a5,zero,1
+   175e0:	04f58063          	beq	a1,a5,17620 <elf::to_string[abi:cxx11](elf::elfclass)+0x5c>
+   175e4:	00200793          	addi	a5,zero,2
+   175e8:	06f58e63          	beq	a1,a5,17664 <elf::to_string[abi:cxx11](elf::elfclass)+0xa0>
         return "(elfclass)0x" + to_hex((int)v);
-   15fca:	848a                	c.mv	s1,sp
-   15fcc:	8526                	c.mv	a0,s1
-   15fce:	00004317          	auipc	t1,0x4
-   15fd2:	23a33303          	ld	t1,570(t1) # 1a208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3892>
-   15fd6:	9302                	c.jalr	t1
+   175ec:	00010493          	addi	s1,sp,0
+   175f0:	00048513          	addi	a0,s1,0
+   175f4:	00005317          	auipc	t1,0x5
+   175f8:	c1433303          	ld	t1,-1004(t1) # 1c208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3ef4>
+   175fc:	000300e7          	jalr	ra,0(t1)
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   15fd8:	4731                	c.li	a4,12
-   15fda:	00001697          	auipc	a3,0x1
-   15fde:	32668693          	addi	a3,a3,806 # 17300 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x100>
-   15fe2:	4601                	c.li	a2,0
-   15fe4:	4581                	c.li	a1,0
-   15fe6:	8526                	c.mv	a0,s1
-   15fe8:	b59fc0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   15fec:	a899                	c.j	16042 <elf::to_string[abi:cxx11](elf::elfclass)+0x90>
+   17600:	00c00713          	addi	a4,zero,12
+   17604:	00001697          	auipc	a3,0x1
+   17608:	6cc68693          	addi	a3,a3,1740 # 18cd0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x100>
+   1760c:	00000613          	addi	a2,zero,0
+   17610:	00000593          	addi	a1,zero,0
+   17614:	00048513          	addi	a0,s1,0
+   17618:	d28fb0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   1761c:	0740006f          	jal	zero,17690 <elf::to_string[abi:cxx11](elf::elfclass)+0xcc>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   15fee:	01050793          	addi	a5,a0,16
+   17620:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   15ff2:	e11c                	c.sd	a5,0(a0)
+   17624:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   15ff4:	4681                	c.li	a3,0
-   15ff6:	00001617          	auipc	a2,0x1
-   15ffa:	2fc60613          	addi	a2,a2,764 # 172f2 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xf2>
-   15ffe:	00001597          	auipc	a1,0x1
-   16002:	2f258593          	addi	a1,a1,754 # 172f0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xf0>
-   16006:	00004317          	auipc	t1,0x4
-   1600a:	1aa33303          	ld	t1,426(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1600e:	9302                	c.jalr	t1
+   17628:	00000693          	addi	a3,zero,0
+   1762c:	00001617          	auipc	a2,0x1
+   17630:	69660613          	addi	a2,a2,1686 # 18cc2 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xf2>
+   17634:	00001597          	auipc	a1,0x1
+   17638:	68c58593          	addi	a1,a1,1676 # 18cc0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xf0>
+   1763c:	00005317          	auipc	t1,0x5
+   17640:	b7433303          	ld	t1,-1164(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17644:	000300e7          	jalr	ra,0(t1)
 }
-   16010:	8522                	c.mv	a0,s0
-   16012:	70e2                	c.ldsp	ra,56(sp)
-   16014:	7442                	c.ldsp	s0,48(sp)
-   16016:	74a2                	c.ldsp	s1,40(sp)
-   16018:	7902                	c.ldsp	s2,32(sp)
-   1601a:	6121                	c.addi16sp	sp,64
-   1601c:	8082                	c.jr	ra
+   17648:	00040513          	addi	a0,s0,0
+   1764c:	03813083          	ld	ra,56(sp)
+   17650:	03013403          	ld	s0,48(sp)
+   17654:	02813483          	ld	s1,40(sp)
+   17658:	02013903          	ld	s2,32(sp)
+   1765c:	04010113          	addi	sp,sp,64
+   17660:	00008067          	jalr	zero,0(ra)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1601e:	01050793          	addi	a5,a0,16
+   17664:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16022:	e11c                	c.sd	a5,0(a0)
+   17668:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16024:	4681                	c.li	a3,0
-   16026:	00001617          	auipc	a2,0x1
-   1602a:	2d460613          	addi	a2,a2,724 # 172fa <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xfa>
-   1602e:	00001597          	auipc	a1,0x1
-   16032:	2ca58593          	addi	a1,a1,714 # 172f8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xf8>
-   16036:	00004317          	auipc	t1,0x4
-   1603a:	17a33303          	ld	t1,378(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1603e:	9302                	c.jalr	t1
-   16040:	bfc1                	c.j	16010 <elf::to_string[abi:cxx11](elf::elfclass)+0x5e>
+   1766c:	00000693          	addi	a3,zero,0
+   17670:	00001617          	auipc	a2,0x1
+   17674:	65a60613          	addi	a2,a2,1626 # 18cca <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xfa>
+   17678:	00001597          	auipc	a1,0x1
+   1767c:	65058593          	addi	a1,a1,1616 # 18cc8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0xf8>
+   17680:	00005317          	auipc	t1,0x5
+   17684:	b3033303          	ld	t1,-1232(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17688:	000300e7          	jalr	ra,0(t1)
+   1768c:	fbdff06f          	jal	zero,17648 <elf::to_string[abi:cxx11](elf::elfclass)+0x84>
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   16042:	84aa                	c.mv	s1,a0
+   17690:	00050493          	addi	s1,a0,0
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16044:	01040513          	addi	a0,s0,16
+   17694:	01040513          	addi	a0,s0,16
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   16048:	e008                	c.sd	a0,0(s0)
+   17698:	00a43023          	sd	a0,0(s0)
       { return _M_dataplus._M_p; }
-   1604a:	609c                	c.ld	a5,0(s1)
+   1769c:	0004b783          	ld	a5,0(s1)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   1604c:	01048913          	addi	s2,s1,16
+   176a0:	01048913          	addi	s2,s1,16
 	if (__str._M_is_local())
-   16050:	03278463          	beq	a5,s2,16078 <elf::to_string[abi:cxx11](elf::elfclass)+0xc6>
+   176a4:	03278c63          	beq	a5,s2,176dc <elf::to_string[abi:cxx11](elf::elfclass)+0x118>
       { _M_dataplus._M_p = __p; }
-   16054:	e01c                	c.sd	a5,0(s0)
+   176a8:	00f43023          	sd	a5,0(s0)
       { _M_allocated_capacity = __capacity; }
-   16056:	689c                	c.ld	a5,16(s1)
-   16058:	e81c                	c.sd	a5,16(s0)
+   176ac:	0104b783          	ld	a5,16(s1)
+   176b0:	00f43823          	sd	a5,16(s0)
       { _M_string_length = __length; }
-   1605a:	649c                	c.ld	a5,8(s1)
-   1605c:	e41c                	c.sd	a5,8(s0)
+   176b4:	0084b783          	ld	a5,8(s1)
+   176b8:	00f43423          	sd	a5,8(s0)
       { _M_dataplus._M_p = __p; }
-   1605e:	0124b023          	sd	s2,0(s1)
+   176bc:	0124b023          	sd	s2,0(s1)
       { _M_string_length = __length; }
-   16062:	0004b423          	sd	zero,8(s1)
+   176c0:	0004b423          	sd	zero,8(s1)
 	__c1 = __c2;
-   16066:	00048823          	sb	zero,16(s1)
+   176c4:	00048823          	sb	zero,16(s1)
       { return _M_dataplus._M_p; }
-   1606a:	6502                	c.ldsp	a0,0(sp)
+   176c8:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   1606c:	081c                	c.addi4spn	a5,sp,16
-   1606e:	faf501e3          	beq	a0,a5,16010 <elf::to_string[abi:cxx11](elf::elfclass)+0x5e>
+   176cc:	01010793          	addi	a5,sp,16
+   176d0:	f6f50ce3          	beq	a0,a5,17648 <elf::to_string[abi:cxx11](elf::elfclass)+0x84>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   16072:	9fffc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   176d4:	b9cfb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
-   16076:	bf69                	c.j	16010 <elf::to_string[abi:cxx11](elf::elfclass)+0x5e>
+   176d8:	f71ff06f          	jal	zero,17648 <elf::to_string[abi:cxx11](elf::elfclass)+0x84>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   16078:	6490                	c.ld	a2,8(s1)
-   1607a:	0605                	c.addi	a2,1
+   176dc:	0084b603          	ld	a2,8(s1)
+   176e0:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   1607c:	de79                	c.beqz	a2,1605a <elf::to_string[abi:cxx11](elf::elfclass)+0xa8>
+   176e4:	fc0608e3          	beq	a2,zero,176b4 <elf::to_string[abi:cxx11](elf::elfclass)+0xf0>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   1607e:	85ca                	c.mv	a1,s2
-   16080:	a81fc0ef          	jal	ra,12b00 <memcpy@plt>
-   16084:	bfd9                	c.j	1605a <elf::to_string[abi:cxx11](elf::elfclass)+0xa8>
+   176e8:	00090593          	addi	a1,s2,0
+   176ec:	c14fb0ef          	jal	ra,12b00 <memcpy@plt>
+   176f0:	fc5ff06f          	jal	zero,176b4 <elf::to_string[abi:cxx11](elf::elfclass)+0xf0>
       { return _M_dataplus._M_p; }
-   16086:	842a                	c.mv	s0,a0
-   16088:	6502                	c.ldsp	a0,0(sp)
+   176f4:	00050413          	addi	s0,a0,0
+   176f8:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   1608a:	081c                	c.addi4spn	a5,sp,16
-   1608c:	00f50463          	beq	a0,a5,16094 <elf::to_string[abi:cxx11](elf::elfclass)+0xe2>
-   16090:	9e1fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   176fc:	01010793          	addi	a5,sp,16
+   17700:	00f50463          	beq	a0,a5,17708 <elf::to_string[abi:cxx11](elf::elfclass)+0x144>
+   17704:	b6cfb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   16094:	8522                	c.mv	a0,s0
-   16096:	b1bfc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   17708:	00040513          	addi	a0,s0,0
+   1770c:	ca4fb0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-000000000001609a <elf::to_string[abi:cxx11](elf::elfosabi)>:
+0000000000017710 <elf::to_string[abi:cxx11](elf::elfosabi)>:
 {
-   1609a:	7139                	c.addi16sp	sp,-64
-   1609c:	fc06                	c.sdsp	ra,56(sp)
-   1609e:	f822                	c.sdsp	s0,48(sp)
-   160a0:	f426                	c.sdsp	s1,40(sp)
-   160a2:	f04a                	c.sdsp	s2,32(sp)
-   160a4:	842a                	c.mv	s0,a0
+   17710:	fc010113          	addi	sp,sp,-64
+   17714:	02113c23          	sd	ra,56(sp)
+   17718:	02813823          	sd	s0,48(sp)
+   1771c:	02913423          	sd	s1,40(sp)
+   17720:	03213023          	sd	s2,32(sp)
+   17724:	00050413          	addi	s0,a0,0
         switch (v) {
-   160a6:	4785                	c.li	a5,1
-   160a8:	06f58163          	beq	a1,a5,1610a <elf::to_string[abi:cxx11](elf::elfosabi)+0x70>
-   160ac:	0ff00793          	addi	a5,zero,255
-   160b0:	06f58f63          	beq	a1,a5,1612e <elf::to_string[abi:cxx11](elf::elfosabi)+0x94>
-   160b4:	c19d                	c.beqz	a1,160da <elf::to_string[abi:cxx11](elf::elfosabi)+0x40>
+   17728:	00100793          	addi	a5,zero,1
+   1772c:	08f58463          	beq	a1,a5,177b4 <elf::to_string[abi:cxx11](elf::elfosabi)+0xa4>
+   17730:	0ff00793          	addi	a5,zero,255
+   17734:	0af58663          	beq	a1,a5,177e0 <elf::to_string[abi:cxx11](elf::elfosabi)+0xd0>
+   17738:	02058c63          	beq	a1,zero,17770 <elf::to_string[abi:cxx11](elf::elfosabi)+0x60>
         return "(elfosabi)0x" + to_hex((int)v);
-   160b6:	848a                	c.mv	s1,sp
-   160b8:	8526                	c.mv	a0,s1
-   160ba:	00004317          	auipc	t1,0x4
-   160be:	14e33303          	ld	t1,334(t1) # 1a208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3892>
-   160c2:	9302                	c.jalr	t1
+   1773c:	00010493          	addi	s1,sp,0
+   17740:	00048513          	addi	a0,s1,0
+   17744:	00005317          	auipc	t1,0x5
+   17748:	ac433303          	ld	t1,-1340(t1) # 1c208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3ef4>
+   1774c:	000300e7          	jalr	ra,0(t1)
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   160c4:	4731                	c.li	a4,12
-   160c6:	00001697          	auipc	a3,0x1
-   160ca:	26a68693          	addi	a3,a3,618 # 17330 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x130>
-   160ce:	4601                	c.li	a2,0
-   160d0:	4581                	c.li	a1,0
-   160d2:	8526                	c.mv	a0,s1
-   160d4:	a6dfc0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   160d8:	a8ad                	c.j	16152 <elf::to_string[abi:cxx11](elf::elfosabi)+0xb8>
+   17750:	00c00713          	addi	a4,zero,12
+   17754:	00001697          	auipc	a3,0x1
+   17758:	5ac68693          	addi	a3,a3,1452 # 18d00 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x130>
+   1775c:	00000613          	addi	a2,zero,0
+   17760:	00000593          	addi	a1,zero,0
+   17764:	00048513          	addi	a0,s1,0
+   17768:	bd8fb0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   1776c:	0a00006f          	jal	zero,1780c <elf::to_string[abi:cxx11](elf::elfosabi)+0xfc>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   160da:	01050793          	addi	a5,a0,16
+   17770:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   160de:	e11c                	c.sd	a5,0(a0)
+   17774:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   160e0:	4681                	c.li	a3,0
-   160e2:	00001617          	auipc	a2,0x1
-   160e6:	23260613          	addi	a2,a2,562 # 17314 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x114>
-   160ea:	00001597          	auipc	a1,0x1
-   160ee:	22658593          	addi	a1,a1,550 # 17310 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x110>
-   160f2:	00004317          	auipc	t1,0x4
-   160f6:	0be33303          	ld	t1,190(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   160fa:	9302                	c.jalr	t1
+   17778:	00000693          	addi	a3,zero,0
+   1777c:	00001617          	auipc	a2,0x1
+   17780:	56860613          	addi	a2,a2,1384 # 18ce4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x114>
+   17784:	00001597          	auipc	a1,0x1
+   17788:	55c58593          	addi	a1,a1,1372 # 18ce0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x110>
+   1778c:	00005317          	auipc	t1,0x5
+   17790:	a2433303          	ld	t1,-1500(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17794:	000300e7          	jalr	ra,0(t1)
 }
-   160fc:	8522                	c.mv	a0,s0
-   160fe:	70e2                	c.ldsp	ra,56(sp)
-   16100:	7442                	c.ldsp	s0,48(sp)
-   16102:	74a2                	c.ldsp	s1,40(sp)
-   16104:	7902                	c.ldsp	s2,32(sp)
-   16106:	6121                	c.addi16sp	sp,64
-   16108:	8082                	c.jr	ra
+   17798:	00040513          	addi	a0,s0,0
+   1779c:	03813083          	ld	ra,56(sp)
+   177a0:	03013403          	ld	s0,48(sp)
+   177a4:	02813483          	ld	s1,40(sp)
+   177a8:	02013903          	ld	s2,32(sp)
+   177ac:	04010113          	addi	sp,sp,64
+   177b0:	00008067          	jalr	zero,0(ra)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1610a:	01050793          	addi	a5,a0,16
+   177b4:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   1610e:	e11c                	c.sd	a5,0(a0)
+   177b8:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16110:	4681                	c.li	a3,0
-   16112:	00001617          	auipc	a2,0x1
-   16116:	20a60613          	addi	a2,a2,522 # 1731c <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x11c>
-   1611a:	00001597          	auipc	a1,0x1
-   1611e:	1fe58593          	addi	a1,a1,510 # 17318 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x118>
-   16122:	00004317          	auipc	t1,0x4
-   16126:	08e33303          	ld	t1,142(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1612a:	9302                	c.jalr	t1
-   1612c:	bfc1                	c.j	160fc <elf::to_string[abi:cxx11](elf::elfosabi)+0x62>
+   177bc:	00000693          	addi	a3,zero,0
+   177c0:	00001617          	auipc	a2,0x1
+   177c4:	52c60613          	addi	a2,a2,1324 # 18cec <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x11c>
+   177c8:	00001597          	auipc	a1,0x1
+   177cc:	52058593          	addi	a1,a1,1312 # 18ce8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x118>
+   177d0:	00005317          	auipc	t1,0x5
+   177d4:	9e033303          	ld	t1,-1568(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   177d8:	000300e7          	jalr	ra,0(t1)
+   177dc:	fbdff06f          	jal	zero,17798 <elf::to_string[abi:cxx11](elf::elfosabi)+0x88>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1612e:	01050793          	addi	a5,a0,16
+   177e0:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16132:	e11c                	c.sd	a5,0(a0)
+   177e4:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16134:	4681                	c.li	a3,0
-   16136:	00001617          	auipc	a2,0x1
-   1613a:	1f460613          	addi	a2,a2,500 # 1732a <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x12a>
-   1613e:	00001597          	auipc	a1,0x1
-   16142:	1e258593          	addi	a1,a1,482 # 17320 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x120>
-   16146:	00004317          	auipc	t1,0x4
-   1614a:	06a33303          	ld	t1,106(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1614e:	9302                	c.jalr	t1
-   16150:	b775                	c.j	160fc <elf::to_string[abi:cxx11](elf::elfosabi)+0x62>
+   177e8:	00000693          	addi	a3,zero,0
+   177ec:	00001617          	auipc	a2,0x1
+   177f0:	50e60613          	addi	a2,a2,1294 # 18cfa <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x12a>
+   177f4:	00001597          	auipc	a1,0x1
+   177f8:	4fc58593          	addi	a1,a1,1276 # 18cf0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x120>
+   177fc:	00005317          	auipc	t1,0x5
+   17800:	9b433303          	ld	t1,-1612(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17804:	000300e7          	jalr	ra,0(t1)
+   17808:	f91ff06f          	jal	zero,17798 <elf::to_string[abi:cxx11](elf::elfosabi)+0x88>
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   16152:	84aa                	c.mv	s1,a0
+   1780c:	00050493          	addi	s1,a0,0
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16154:	01040513          	addi	a0,s0,16
+   17810:	01040513          	addi	a0,s0,16
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   16158:	e008                	c.sd	a0,0(s0)
+   17814:	00a43023          	sd	a0,0(s0)
       { return _M_dataplus._M_p; }
-   1615a:	609c                	c.ld	a5,0(s1)
+   17818:	0004b783          	ld	a5,0(s1)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   1615c:	01048913          	addi	s2,s1,16
+   1781c:	01048913          	addi	s2,s1,16
 	if (__str._M_is_local())
-   16160:	03278463          	beq	a5,s2,16188 <elf::to_string[abi:cxx11](elf::elfosabi)+0xee>
+   17820:	03278c63          	beq	a5,s2,17858 <elf::to_string[abi:cxx11](elf::elfosabi)+0x148>
       { _M_dataplus._M_p = __p; }
-   16164:	e01c                	c.sd	a5,0(s0)
+   17824:	00f43023          	sd	a5,0(s0)
       { _M_allocated_capacity = __capacity; }
-   16166:	689c                	c.ld	a5,16(s1)
-   16168:	e81c                	c.sd	a5,16(s0)
+   17828:	0104b783          	ld	a5,16(s1)
+   1782c:	00f43823          	sd	a5,16(s0)
       { _M_string_length = __length; }
-   1616a:	649c                	c.ld	a5,8(s1)
-   1616c:	e41c                	c.sd	a5,8(s0)
+   17830:	0084b783          	ld	a5,8(s1)
+   17834:	00f43423          	sd	a5,8(s0)
       { _M_dataplus._M_p = __p; }
-   1616e:	0124b023          	sd	s2,0(s1)
+   17838:	0124b023          	sd	s2,0(s1)
       { _M_string_length = __length; }
-   16172:	0004b423          	sd	zero,8(s1)
+   1783c:	0004b423          	sd	zero,8(s1)
 	__c1 = __c2;
-   16176:	00048823          	sb	zero,16(s1)
+   17840:	00048823          	sb	zero,16(s1)
       { return _M_dataplus._M_p; }
-   1617a:	6502                	c.ldsp	a0,0(sp)
+   17844:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   1617c:	081c                	c.addi4spn	a5,sp,16
-   1617e:	f6f50fe3          	beq	a0,a5,160fc <elf::to_string[abi:cxx11](elf::elfosabi)+0x62>
+   17848:	01010793          	addi	a5,sp,16
+   1784c:	f4f506e3          	beq	a0,a5,17798 <elf::to_string[abi:cxx11](elf::elfosabi)+0x88>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   16182:	8effc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17850:	a20fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
-   16186:	bf9d                	c.j	160fc <elf::to_string[abi:cxx11](elf::elfosabi)+0x62>
+   17854:	f45ff06f          	jal	zero,17798 <elf::to_string[abi:cxx11](elf::elfosabi)+0x88>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   16188:	6490                	c.ld	a2,8(s1)
-   1618a:	0605                	c.addi	a2,1
+   17858:	0084b603          	ld	a2,8(s1)
+   1785c:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   1618c:	de79                	c.beqz	a2,1616a <elf::to_string[abi:cxx11](elf::elfosabi)+0xd0>
+   17860:	fc0608e3          	beq	a2,zero,17830 <elf::to_string[abi:cxx11](elf::elfosabi)+0x120>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   1618e:	85ca                	c.mv	a1,s2
-   16190:	971fc0ef          	jal	ra,12b00 <memcpy@plt>
-   16194:	bfd9                	c.j	1616a <elf::to_string[abi:cxx11](elf::elfosabi)+0xd0>
+   17864:	00090593          	addi	a1,s2,0
+   17868:	a98fb0ef          	jal	ra,12b00 <memcpy@plt>
+   1786c:	fc5ff06f          	jal	zero,17830 <elf::to_string[abi:cxx11](elf::elfosabi)+0x120>
       { return _M_dataplus._M_p; }
-   16196:	842a                	c.mv	s0,a0
-   16198:	6502                	c.ldsp	a0,0(sp)
+   17870:	00050413          	addi	s0,a0,0
+   17874:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   1619a:	081c                	c.addi4spn	a5,sp,16
-   1619c:	00f50463          	beq	a0,a5,161a4 <elf::to_string[abi:cxx11](elf::elfosabi)+0x10a>
-   161a0:	8d1fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17878:	01010793          	addi	a5,sp,16
+   1787c:	00f50463          	beq	a0,a5,17884 <elf::to_string[abi:cxx11](elf::elfosabi)+0x174>
+   17880:	9f0fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   161a4:	8522                	c.mv	a0,s0
-   161a6:	a0bfc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   17884:	00040513          	addi	a0,s0,0
+   17888:	b28fb0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-00000000000161aa <elf::to_string[abi:cxx11](elf::stb)>:
+000000000001788c <elf::to_string[abi:cxx11](elf::stb)>:
 
 std::string
 to_string(stb v)
 {
-   161aa:	7139                	c.addi16sp	sp,-64
-   161ac:	fc06                	c.sdsp	ra,56(sp)
-   161ae:	f822                	c.sdsp	s0,48(sp)
-   161b0:	f426                	c.sdsp	s1,40(sp)
-   161b2:	f04a                	c.sdsp	s2,32(sp)
-   161b4:	842a                	c.mv	s0,a0
+   1788c:	fc010113          	addi	sp,sp,-64
+   17890:	02113c23          	sd	ra,56(sp)
+   17894:	02813823          	sd	s0,48(sp)
+   17898:	02913423          	sd	s1,40(sp)
+   1789c:	03213023          	sd	s2,32(sp)
+   178a0:	00050413          	addi	s0,a0,0
         switch (v) {
-   161b6:	4785                	c.li	a5,1
-   161b8:	06f58063          	beq	a1,a5,16218 <elf::to_string[abi:cxx11](elf::stb)+0x6e>
-   161bc:	4789                	c.li	a5,2
-   161be:	06f58f63          	beq	a1,a5,1623c <elf::to_string[abi:cxx11](elf::stb)+0x92>
-   161c2:	c19d                	c.beqz	a1,161e8 <elf::to_string[abi:cxx11](elf::stb)+0x3e>
+   178a4:	00100793          	addi	a5,zero,1
+   178a8:	08f58463          	beq	a1,a5,17930 <elf::to_string[abi:cxx11](elf::stb)+0xa4>
+   178ac:	00200793          	addi	a5,zero,2
+   178b0:	0af58663          	beq	a1,a5,1795c <elf::to_string[abi:cxx11](elf::stb)+0xd0>
+   178b4:	02058c63          	beq	a1,zero,178ec <elf::to_string[abi:cxx11](elf::stb)+0x60>
         case stb::loos: break;
         case stb::hios: break;
         case stb::loproc: break;
         case stb::hiproc: break;
         }
         return "(stb)0x" + to_hex((int)v);
-   161c4:	848a                	c.mv	s1,sp
-   161c6:	8526                	c.mv	a0,s1
-   161c8:	00004317          	auipc	t1,0x4
-   161cc:	04033303          	ld	t1,64(t1) # 1a208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3892>
-   161d0:	9302                	c.jalr	t1
+   178b8:	00010493          	addi	s1,sp,0
+   178bc:	00048513          	addi	a0,s1,0
+   178c0:	00005317          	auipc	t1,0x5
+   178c4:	94833303          	ld	t1,-1720(t1) # 1c208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3ef4>
+   178c8:	000300e7          	jalr	ra,0(t1)
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   161d2:	471d                	c.li	a4,7
-   161d4:	00001697          	auipc	a3,0x1
-   161d8:	18468693          	addi	a3,a3,388 # 17358 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x158>
-   161dc:	4601                	c.li	a2,0
-   161de:	4581                	c.li	a1,0
-   161e0:	8526                	c.mv	a0,s1
-   161e2:	95ffc0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   161e6:	a8ad                	c.j	16260 <elf::to_string[abi:cxx11](elf::stb)+0xb6>
+   178cc:	00700713          	addi	a4,zero,7
+   178d0:	00001697          	auipc	a3,0x1
+   178d4:	45868693          	addi	a3,a3,1112 # 18d28 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x158>
+   178d8:	00000613          	addi	a2,zero,0
+   178dc:	00000593          	addi	a1,zero,0
+   178e0:	00048513          	addi	a0,s1,0
+   178e4:	a5cfb0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   178e8:	0a00006f          	jal	zero,17988 <elf::to_string[abi:cxx11](elf::stb)+0xfc>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   161e8:	01050793          	addi	a5,a0,16
+   178ec:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   161ec:	e11c                	c.sd	a5,0(a0)
+   178f0:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   161ee:	4681                	c.li	a3,0
-   161f0:	00001617          	auipc	a2,0x1
-   161f4:	15560613          	addi	a2,a2,341 # 17345 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x145>
-   161f8:	00001597          	auipc	a1,0x1
-   161fc:	14858593          	addi	a1,a1,328 # 17340 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x140>
-   16200:	00004317          	auipc	t1,0x4
-   16204:	fb033303          	ld	t1,-80(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16208:	9302                	c.jalr	t1
+   178f4:	00000693          	addi	a3,zero,0
+   178f8:	00001617          	auipc	a2,0x1
+   178fc:	41d60613          	addi	a2,a2,1053 # 18d15 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x145>
+   17900:	00001597          	auipc	a1,0x1
+   17904:	41058593          	addi	a1,a1,1040 # 18d10 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x140>
+   17908:	00005317          	auipc	t1,0x5
+   1790c:	8a833303          	ld	t1,-1880(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17910:	000300e7          	jalr	ra,0(t1)
 }
-   1620a:	8522                	c.mv	a0,s0
-   1620c:	70e2                	c.ldsp	ra,56(sp)
-   1620e:	7442                	c.ldsp	s0,48(sp)
-   16210:	74a2                	c.ldsp	s1,40(sp)
-   16212:	7902                	c.ldsp	s2,32(sp)
-   16214:	6121                	c.addi16sp	sp,64
-   16216:	8082                	c.jr	ra
+   17914:	00040513          	addi	a0,s0,0
+   17918:	03813083          	ld	ra,56(sp)
+   1791c:	03013403          	ld	s0,48(sp)
+   17920:	02813483          	ld	s1,40(sp)
+   17924:	02013903          	ld	s2,32(sp)
+   17928:	04010113          	addi	sp,sp,64
+   1792c:	00008067          	jalr	zero,0(ra)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16218:	01050793          	addi	a5,a0,16
+   17930:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   1621c:	e11c                	c.sd	a5,0(a0)
+   17934:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   1621e:	4681                	c.li	a3,0
-   16220:	00001617          	auipc	a2,0x1
-   16224:	12e60613          	addi	a2,a2,302 # 1734e <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x14e>
-   16228:	00001597          	auipc	a1,0x1
-   1622c:	12058593          	addi	a1,a1,288 # 17348 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x148>
-   16230:	00004317          	auipc	t1,0x4
-   16234:	f8033303          	ld	t1,-128(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16238:	9302                	c.jalr	t1
-   1623a:	bfc1                	c.j	1620a <elf::to_string[abi:cxx11](elf::stb)+0x60>
+   17938:	00000693          	addi	a3,zero,0
+   1793c:	00001617          	auipc	a2,0x1
+   17940:	3e260613          	addi	a2,a2,994 # 18d1e <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x14e>
+   17944:	00001597          	auipc	a1,0x1
+   17948:	3d458593          	addi	a1,a1,980 # 18d18 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x148>
+   1794c:	00005317          	auipc	t1,0x5
+   17950:	86433303          	ld	t1,-1948(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17954:	000300e7          	jalr	ra,0(t1)
+   17958:	fbdff06f          	jal	zero,17914 <elf::to_string[abi:cxx11](elf::stb)+0x88>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1623c:	01050793          	addi	a5,a0,16
+   1795c:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16240:	e11c                	c.sd	a5,0(a0)
+   17960:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16242:	4681                	c.li	a3,0
-   16244:	00001617          	auipc	a2,0x1
-   16248:	11060613          	addi	a2,a2,272 # 17354 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x154>
-   1624c:	00001597          	auipc	a1,0x1
-   16250:	10458593          	addi	a1,a1,260 # 17350 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x150>
-   16254:	00004317          	auipc	t1,0x4
-   16258:	f5c33303          	ld	t1,-164(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1625c:	9302                	c.jalr	t1
-   1625e:	b775                	c.j	1620a <elf::to_string[abi:cxx11](elf::stb)+0x60>
+   17964:	00000693          	addi	a3,zero,0
+   17968:	00001617          	auipc	a2,0x1
+   1796c:	3bc60613          	addi	a2,a2,956 # 18d24 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x154>
+   17970:	00001597          	auipc	a1,0x1
+   17974:	3b058593          	addi	a1,a1,944 # 18d20 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x150>
+   17978:	00005317          	auipc	t1,0x5
+   1797c:	83833303          	ld	t1,-1992(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17980:	000300e7          	jalr	ra,0(t1)
+   17984:	f91ff06f          	jal	zero,17914 <elf::to_string[abi:cxx11](elf::stb)+0x88>
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   16260:	84aa                	c.mv	s1,a0
+   17988:	00050493          	addi	s1,a0,0
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16262:	01040513          	addi	a0,s0,16
+   1798c:	01040513          	addi	a0,s0,16
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   16266:	e008                	c.sd	a0,0(s0)
+   17990:	00a43023          	sd	a0,0(s0)
       { return _M_dataplus._M_p; }
-   16268:	609c                	c.ld	a5,0(s1)
+   17994:	0004b783          	ld	a5,0(s1)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   1626a:	01048913          	addi	s2,s1,16
+   17998:	01048913          	addi	s2,s1,16
 	if (__str._M_is_local())
-   1626e:	03278463          	beq	a5,s2,16296 <elf::to_string[abi:cxx11](elf::stb)+0xec>
+   1799c:	03278c63          	beq	a5,s2,179d4 <elf::to_string[abi:cxx11](elf::stb)+0x148>
       { _M_dataplus._M_p = __p; }
-   16272:	e01c                	c.sd	a5,0(s0)
+   179a0:	00f43023          	sd	a5,0(s0)
       { _M_allocated_capacity = __capacity; }
-   16274:	689c                	c.ld	a5,16(s1)
-   16276:	e81c                	c.sd	a5,16(s0)
+   179a4:	0104b783          	ld	a5,16(s1)
+   179a8:	00f43823          	sd	a5,16(s0)
       { _M_string_length = __length; }
-   16278:	649c                	c.ld	a5,8(s1)
-   1627a:	e41c                	c.sd	a5,8(s0)
+   179ac:	0084b783          	ld	a5,8(s1)
+   179b0:	00f43423          	sd	a5,8(s0)
       { _M_dataplus._M_p = __p; }
-   1627c:	0124b023          	sd	s2,0(s1)
+   179b4:	0124b023          	sd	s2,0(s1)
       { _M_string_length = __length; }
-   16280:	0004b423          	sd	zero,8(s1)
+   179b8:	0004b423          	sd	zero,8(s1)
 	__c1 = __c2;
-   16284:	00048823          	sb	zero,16(s1)
+   179bc:	00048823          	sb	zero,16(s1)
       { return _M_dataplus._M_p; }
-   16288:	6502                	c.ldsp	a0,0(sp)
+   179c0:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   1628a:	081c                	c.addi4spn	a5,sp,16
-   1628c:	f6f50fe3          	beq	a0,a5,1620a <elf::to_string[abi:cxx11](elf::stb)+0x60>
+   179c4:	01010793          	addi	a5,sp,16
+   179c8:	f4f506e3          	beq	a0,a5,17914 <elf::to_string[abi:cxx11](elf::stb)+0x88>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   16290:	fe0fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   179cc:	8a4fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
-   16294:	bf9d                	c.j	1620a <elf::to_string[abi:cxx11](elf::stb)+0x60>
+   179d0:	f45ff06f          	jal	zero,17914 <elf::to_string[abi:cxx11](elf::stb)+0x88>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   16296:	6490                	c.ld	a2,8(s1)
-   16298:	0605                	c.addi	a2,1
+   179d4:	0084b603          	ld	a2,8(s1)
+   179d8:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   1629a:	de79                	c.beqz	a2,16278 <elf::to_string[abi:cxx11](elf::stb)+0xce>
+   179dc:	fc0608e3          	beq	a2,zero,179ac <elf::to_string[abi:cxx11](elf::stb)+0x120>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   1629c:	85ca                	c.mv	a1,s2
-   1629e:	863fc0ef          	jal	ra,12b00 <memcpy@plt>
-   162a2:	bfd9                	c.j	16278 <elf::to_string[abi:cxx11](elf::stb)+0xce>
+   179e0:	00090593          	addi	a1,s2,0
+   179e4:	91cfb0ef          	jal	ra,12b00 <memcpy@plt>
+   179e8:	fc5ff06f          	jal	zero,179ac <elf::to_string[abi:cxx11](elf::stb)+0x120>
       { return _M_dataplus._M_p; }
-   162a4:	842a                	c.mv	s0,a0
-   162a6:	6502                	c.ldsp	a0,0(sp)
+   179ec:	00050413          	addi	s0,a0,0
+   179f0:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   162a8:	081c                	c.addi4spn	a5,sp,16
-   162aa:	00f50463          	beq	a0,a5,162b2 <elf::to_string[abi:cxx11](elf::stb)+0x108>
-   162ae:	fc2fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   179f4:	01010793          	addi	a5,sp,16
+   179f8:	00f50463          	beq	a0,a5,17a00 <elf::to_string[abi:cxx11](elf::stb)+0x174>
+   179fc:	874fb0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   162b2:	8522                	c.mv	a0,s0
-   162b4:	8fdfc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   17a00:	00040513          	addi	a0,s0,0
+   17a04:	9acfb0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-00000000000162b8 <elf::to_string[abi:cxx11](elf::et)>:
+0000000000017a08 <elf::to_string[abi:cxx11](elf::et)>:
 {
-   162b8:	7139                	c.addi16sp	sp,-64
-   162ba:	fc06                	c.sdsp	ra,56(sp)
-   162bc:	f822                	c.sdsp	s0,48(sp)
-   162be:	f426                	c.sdsp	s1,40(sp)
-   162c0:	f04a                	c.sdsp	s2,32(sp)
-   162c2:	842a                	c.mv	s0,a0
+   17a08:	fc010113          	addi	sp,sp,-64
+   17a0c:	02113c23          	sd	ra,56(sp)
+   17a10:	02813823          	sd	s0,48(sp)
+   17a14:	02913423          	sd	s1,40(sp)
+   17a18:	03213023          	sd	s2,32(sp)
+   17a1c:	00050413          	addi	s0,a0,0
         switch (v) {
-   162c4:	4711                	c.li	a4,4
-   162c6:	0cb76c63          	bltu	a4,a1,1639e <elf::to_string[abi:cxx11](elf::et)+0xe6>
-   162ca:	00259793          	slli	a5,a1,0x2
-   162ce:	00001717          	auipc	a4,0x1
-   162d2:	17a70713          	addi	a4,a4,378 # 17448 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x248>
-   162d6:	97ba                	c.add	a5,a4
-   162d8:	439c                	c.lw	a5,0(a5)
-   162da:	97ba                	c.add	a5,a4
-   162dc:	8782                	c.jr	a5
+   17a20:	00400713          	addi	a4,zero,4
+   17a24:	10b76a63          	bltu	a4,a1,17b38 <elf::to_string[abi:cxx11](elf::et)+0x130>
+   17a28:	00259793          	slli	a5,a1,0x2
+   17a2c:	00001717          	auipc	a4,0x1
+   17a30:	3ec70713          	addi	a4,a4,1004 # 18e18 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x248>
+   17a34:	00e787b3          	add	a5,a5,a4
+   17a38:	0007a783          	lw	a5,0(a5)
+   17a3c:	00e787b3          	add	a5,a5,a4
+   17a40:	00078067          	jalr	zero,0(a5)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   162de:	01050793          	addi	a5,a0,16
+   17a44:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   162e2:	e11c                	c.sd	a5,0(a0)
+   17a48:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   162e4:	4681                	c.li	a3,0
-   162e6:	00001617          	auipc	a2,0x1
-   162ea:	07e60613          	addi	a2,a2,126 # 17364 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x164>
-   162ee:	00001597          	auipc	a1,0x1
-   162f2:	07258593          	addi	a1,a1,114 # 17360 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x160>
-   162f6:	00004317          	auipc	t1,0x4
-   162fa:	eba33303          	ld	t1,-326(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   162fe:	9302                	c.jalr	t1
+   17a4c:	00000693          	addi	a3,zero,0
+   17a50:	00001617          	auipc	a2,0x1
+   17a54:	2e460613          	addi	a2,a2,740 # 18d34 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x164>
+   17a58:	00001597          	auipc	a1,0x1
+   17a5c:	2d858593          	addi	a1,a1,728 # 18d30 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x160>
+   17a60:	00004317          	auipc	t1,0x4
+   17a64:	75033303          	ld	t1,1872(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17a68:	000300e7          	jalr	ra,0(t1)
 }
-   16300:	8522                	c.mv	a0,s0
-   16302:	70e2                	c.ldsp	ra,56(sp)
-   16304:	7442                	c.ldsp	s0,48(sp)
-   16306:	74a2                	c.ldsp	s1,40(sp)
-   16308:	7902                	c.ldsp	s2,32(sp)
-   1630a:	6121                	c.addi16sp	sp,64
-   1630c:	8082                	c.jr	ra
+   17a6c:	00040513          	addi	a0,s0,0
+   17a70:	03813083          	ld	ra,56(sp)
+   17a74:	03013403          	ld	s0,48(sp)
+   17a78:	02813483          	ld	s1,40(sp)
+   17a7c:	02013903          	ld	s2,32(sp)
+   17a80:	04010113          	addi	sp,sp,64
+   17a84:	00008067          	jalr	zero,0(ra)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1630e:	01050793          	addi	a5,a0,16
+   17a88:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16312:	e11c                	c.sd	a5,0(a0)
+   17a8c:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16314:	4681                	c.li	a3,0
-   16316:	00001617          	auipc	a2,0x1
-   1631a:	05560613          	addi	a2,a2,85 # 1736b <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x16b>
-   1631e:	00001597          	auipc	a1,0x1
-   16322:	04a58593          	addi	a1,a1,74 # 17368 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x168>
-   16326:	00004317          	auipc	t1,0x4
-   1632a:	e8a33303          	ld	t1,-374(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1632e:	9302                	c.jalr	t1
-   16330:	bfc1                	c.j	16300 <elf::to_string[abi:cxx11](elf::et)+0x48>
+   17a90:	00000693          	addi	a3,zero,0
+   17a94:	00001617          	auipc	a2,0x1
+   17a98:	2a760613          	addi	a2,a2,679 # 18d3b <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x16b>
+   17a9c:	00001597          	auipc	a1,0x1
+   17aa0:	29c58593          	addi	a1,a1,668 # 18d38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x168>
+   17aa4:	00004317          	auipc	t1,0x4
+   17aa8:	70c33303          	ld	t1,1804(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17aac:	000300e7          	jalr	ra,0(t1)
+   17ab0:	fbdff06f          	jal	zero,17a6c <elf::to_string[abi:cxx11](elf::et)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16332:	01050793          	addi	a5,a0,16
+   17ab4:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16336:	e11c                	c.sd	a5,0(a0)
+   17ab8:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16338:	4681                	c.li	a3,0
-   1633a:	00001617          	auipc	a2,0x1
-   1633e:	03a60613          	addi	a2,a2,58 # 17374 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x174>
-   16342:	00001597          	auipc	a1,0x1
-   16346:	02e58593          	addi	a1,a1,46 # 17370 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x170>
-   1634a:	00004317          	auipc	t1,0x4
-   1634e:	e6633303          	ld	t1,-410(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16352:	9302                	c.jalr	t1
-   16354:	b775                	c.j	16300 <elf::to_string[abi:cxx11](elf::et)+0x48>
+   17abc:	00000693          	addi	a3,zero,0
+   17ac0:	00001617          	auipc	a2,0x1
+   17ac4:	28460613          	addi	a2,a2,644 # 18d44 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x174>
+   17ac8:	00001597          	auipc	a1,0x1
+   17acc:	27858593          	addi	a1,a1,632 # 18d40 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x170>
+   17ad0:	00004317          	auipc	t1,0x4
+   17ad4:	6e033303          	ld	t1,1760(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17ad8:	000300e7          	jalr	ra,0(t1)
+   17adc:	f91ff06f          	jal	zero,17a6c <elf::to_string[abi:cxx11](elf::et)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16356:	01050793          	addi	a5,a0,16
+   17ae0:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   1635a:	e11c                	c.sd	a5,0(a0)
+   17ae4:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   1635c:	4681                	c.li	a3,0
-   1635e:	00001617          	auipc	a2,0x1
-   16362:	01d60613          	addi	a2,a2,29 # 1737b <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x17b>
-   16366:	00001597          	auipc	a1,0x1
-   1636a:	01258593          	addi	a1,a1,18 # 17378 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x178>
-   1636e:	00004317          	auipc	t1,0x4
-   16372:	e4233303          	ld	t1,-446(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16376:	9302                	c.jalr	t1
-   16378:	b761                	c.j	16300 <elf::to_string[abi:cxx11](elf::et)+0x48>
+   17ae8:	00000693          	addi	a3,zero,0
+   17aec:	00001617          	auipc	a2,0x1
+   17af0:	25f60613          	addi	a2,a2,607 # 18d4b <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x17b>
+   17af4:	00001597          	auipc	a1,0x1
+   17af8:	25458593          	addi	a1,a1,596 # 18d48 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x178>
+   17afc:	00004317          	auipc	t1,0x4
+   17b00:	6b433303          	ld	t1,1716(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17b04:	000300e7          	jalr	ra,0(t1)
+   17b08:	f65ff06f          	jal	zero,17a6c <elf::to_string[abi:cxx11](elf::et)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1637a:	01050793          	addi	a5,a0,16
+   17b0c:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   1637e:	e11c                	c.sd	a5,0(a0)
+   17b10:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16380:	4681                	c.li	a3,0
-   16382:	00001617          	auipc	a2,0x1
-   16386:	00260613          	addi	a2,a2,2 # 17384 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x184>
-   1638a:	00001597          	auipc	a1,0x1
-   1638e:	ff658593          	addi	a1,a1,-10 # 17380 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x180>
-   16392:	00004317          	auipc	t1,0x4
-   16396:	e1e33303          	ld	t1,-482(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1639a:	9302                	c.jalr	t1
-   1639c:	b795                	c.j	16300 <elf::to_string[abi:cxx11](elf::et)+0x48>
+   17b14:	00000693          	addi	a3,zero,0
+   17b18:	00001617          	auipc	a2,0x1
+   17b1c:	23c60613          	addi	a2,a2,572 # 18d54 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x184>
+   17b20:	00001597          	auipc	a1,0x1
+   17b24:	23058593          	addi	a1,a1,560 # 18d50 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x180>
+   17b28:	00004317          	auipc	t1,0x4
+   17b2c:	68833303          	ld	t1,1672(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17b30:	000300e7          	jalr	ra,0(t1)
+   17b34:	f39ff06f          	jal	zero,17a6c <elf::to_string[abi:cxx11](elf::et)+0x64>
         return "(et)0x" + to_hex((int)v);
-   1639e:	848a                	c.mv	s1,sp
-   163a0:	8526                	c.mv	a0,s1
-   163a2:	00004317          	auipc	t1,0x4
-   163a6:	e6633303          	ld	t1,-410(t1) # 1a208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3892>
-   163aa:	9302                	c.jalr	t1
+   17b38:	00010493          	addi	s1,sp,0
+   17b3c:	00048513          	addi	a0,s1,0
+   17b40:	00004317          	auipc	t1,0x4
+   17b44:	6c833303          	ld	t1,1736(t1) # 1c208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3ef4>
+   17b48:	000300e7          	jalr	ra,0(t1)
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   163ac:	4719                	c.li	a4,6
-   163ae:	00001697          	auipc	a3,0x1
-   163b2:	fda68693          	addi	a3,a3,-38 # 17388 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x188>
-   163b6:	4601                	c.li	a2,0
-   163b8:	4581                	c.li	a1,0
-   163ba:	8526                	c.mv	a0,s1
-   163bc:	f84fc0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   163c0:	84aa                	c.mv	s1,a0
+   17b4c:	00600713          	addi	a4,zero,6
+   17b50:	00001697          	auipc	a3,0x1
+   17b54:	20868693          	addi	a3,a3,520 # 18d58 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x188>
+   17b58:	00000613          	addi	a2,zero,0
+   17b5c:	00000593          	addi	a1,zero,0
+   17b60:	00048513          	addi	a0,s1,0
+   17b64:	fddfa0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   17b68:	00050493          	addi	s1,a0,0
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   163c2:	01040513          	addi	a0,s0,16
+   17b6c:	01040513          	addi	a0,s0,16
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   163c6:	e008                	c.sd	a0,0(s0)
+   17b70:	00a43023          	sd	a0,0(s0)
       { return _M_dataplus._M_p; }
-   163c8:	609c                	c.ld	a5,0(s1)
+   17b74:	0004b783          	ld	a5,0(s1)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   163ca:	01048913          	addi	s2,s1,16
+   17b78:	01048913          	addi	s2,s1,16
 	if (__str._M_is_local())
-   163ce:	03278463          	beq	a5,s2,163f6 <elf::to_string[abi:cxx11](elf::et)+0x13e>
+   17b7c:	03278c63          	beq	a5,s2,17bb4 <elf::to_string[abi:cxx11](elf::et)+0x1ac>
       { _M_dataplus._M_p = __p; }
-   163d2:	e01c                	c.sd	a5,0(s0)
+   17b80:	00f43023          	sd	a5,0(s0)
       { _M_allocated_capacity = __capacity; }
-   163d4:	689c                	c.ld	a5,16(s1)
-   163d6:	e81c                	c.sd	a5,16(s0)
+   17b84:	0104b783          	ld	a5,16(s1)
+   17b88:	00f43823          	sd	a5,16(s0)
       { _M_string_length = __length; }
-   163d8:	649c                	c.ld	a5,8(s1)
-   163da:	e41c                	c.sd	a5,8(s0)
+   17b8c:	0084b783          	ld	a5,8(s1)
+   17b90:	00f43423          	sd	a5,8(s0)
       { _M_dataplus._M_p = __p; }
-   163dc:	0124b023          	sd	s2,0(s1)
+   17b94:	0124b023          	sd	s2,0(s1)
       { _M_string_length = __length; }
-   163e0:	0004b423          	sd	zero,8(s1)
+   17b98:	0004b423          	sd	zero,8(s1)
 	__c1 = __c2;
-   163e4:	00048823          	sb	zero,16(s1)
+   17b9c:	00048823          	sb	zero,16(s1)
       { return _M_dataplus._M_p; }
-   163e8:	6502                	c.ldsp	a0,0(sp)
+   17ba0:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   163ea:	081c                	c.addi4spn	a5,sp,16
-   163ec:	f0f50ae3          	beq	a0,a5,16300 <elf::to_string[abi:cxx11](elf::et)+0x48>
+   17ba4:	01010793          	addi	a5,sp,16
+   17ba8:	ecf502e3          	beq	a0,a5,17a6c <elf::to_string[abi:cxx11](elf::et)+0x64>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   163f0:	e80fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17bac:	ec5fa0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
-   163f4:	b731                	c.j	16300 <elf::to_string[abi:cxx11](elf::et)+0x48>
+   17bb0:	ebdff06f          	jal	zero,17a6c <elf::to_string[abi:cxx11](elf::et)+0x64>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   163f6:	6490                	c.ld	a2,8(s1)
-   163f8:	0605                	c.addi	a2,1
+   17bb4:	0084b603          	ld	a2,8(s1)
+   17bb8:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   163fa:	de79                	c.beqz	a2,163d8 <elf::to_string[abi:cxx11](elf::et)+0x120>
+   17bbc:	fc0608e3          	beq	a2,zero,17b8c <elf::to_string[abi:cxx11](elf::et)+0x184>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   163fc:	85ca                	c.mv	a1,s2
-   163fe:	f02fc0ef          	jal	ra,12b00 <memcpy@plt>
-   16402:	bfd9                	c.j	163d8 <elf::to_string[abi:cxx11](elf::et)+0x120>
+   17bc0:	00090593          	addi	a1,s2,0
+   17bc4:	f3dfa0ef          	jal	ra,12b00 <memcpy@plt>
+   17bc8:	fc5ff06f          	jal	zero,17b8c <elf::to_string[abi:cxx11](elf::et)+0x184>
       { return _M_dataplus._M_p; }
-   16404:	842a                	c.mv	s0,a0
-   16406:	6502                	c.ldsp	a0,0(sp)
+   17bcc:	00050413          	addi	s0,a0,0
+   17bd0:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   16408:	081c                	c.addi4spn	a5,sp,16
-   1640a:	00f50463          	beq	a0,a5,16412 <elf::to_string[abi:cxx11](elf::et)+0x15a>
-   1640e:	e62fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17bd4:	01010793          	addi	a5,sp,16
+   17bd8:	00f50463          	beq	a0,a5,17be0 <elf::to_string[abi:cxx11](elf::et)+0x1d8>
+   17bdc:	e95fa0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   16412:	8522                	c.mv	a0,s0
-   16414:	f9cfc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   17be0:	00040513          	addi	a0,s0,0
+   17be4:	fcdfa0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-0000000000016418 <elf::to_string[abi:cxx11](elf::stt)>:
+0000000000017be8 <elf::to_string[abi:cxx11](elf::stt)>:
 
 std::string
 to_string(stt v)
 {
-   16418:	7139                	c.addi16sp	sp,-64
-   1641a:	fc06                	c.sdsp	ra,56(sp)
-   1641c:	f822                	c.sdsp	s0,48(sp)
-   1641e:	f426                	c.sdsp	s1,40(sp)
-   16420:	f04a                	c.sdsp	s2,32(sp)
-   16422:	842a                	c.mv	s0,a0
+   17be8:	fc010113          	addi	sp,sp,-64
+   17bec:	02113c23          	sd	ra,56(sp)
+   17bf0:	02813823          	sd	s0,48(sp)
+   17bf4:	02913423          	sd	s1,40(sp)
+   17bf8:	03213023          	sd	s2,32(sp)
+   17bfc:	00050413          	addi	s0,a0,0
         switch (v) {
-   16424:	4791                	c.li	a5,4
-   16426:	0cb7eb63          	bltu	a5,a1,164fc <elf::to_string[abi:cxx11](elf::stt)+0xe4>
-   1642a:	058a                	c.slli	a1,0x2
-   1642c:	00001717          	auipc	a4,0x1
-   16430:	03070713          	addi	a4,a4,48 # 1745c <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x25c>
-   16434:	95ba                	c.add	a1,a4
-   16436:	419c                	c.lw	a5,0(a1)
-   16438:	97ba                	c.add	a5,a4
-   1643a:	8782                	c.jr	a5
+   17c00:	00400793          	addi	a5,zero,4
+   17c04:	10b7ea63          	bltu	a5,a1,17d18 <elf::to_string[abi:cxx11](elf::stt)+0x130>
+   17c08:	00259593          	slli	a1,a1,0x2
+   17c0c:	00001717          	auipc	a4,0x1
+   17c10:	22070713          	addi	a4,a4,544 # 18e2c <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x25c>
+   17c14:	00e585b3          	add	a1,a1,a4
+   17c18:	0005a783          	lw	a5,0(a1)
+   17c1c:	00e787b3          	add	a5,a5,a4
+   17c20:	00078067          	jalr	zero,0(a5)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1643c:	01050793          	addi	a5,a0,16
+   17c24:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16440:	e11c                	c.sd	a5,0(a0)
+   17c28:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16442:	4681                	c.li	a3,0
-   16444:	00001617          	auipc	a2,0x1
-   16448:	f5260613          	addi	a2,a2,-174 # 17396 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x196>
-   1644c:	00001597          	auipc	a1,0x1
-   16450:	f4458593          	addi	a1,a1,-188 # 17390 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x190>
-   16454:	00004317          	auipc	t1,0x4
-   16458:	d5c33303          	ld	t1,-676(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1645c:	9302                	c.jalr	t1
+   17c2c:	00000693          	addi	a3,zero,0
+   17c30:	00001617          	auipc	a2,0x1
+   17c34:	13660613          	addi	a2,a2,310 # 18d66 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x196>
+   17c38:	00001597          	auipc	a1,0x1
+   17c3c:	12858593          	addi	a1,a1,296 # 18d60 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x190>
+   17c40:	00004317          	auipc	t1,0x4
+   17c44:	57033303          	ld	t1,1392(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17c48:	000300e7          	jalr	ra,0(t1)
         case stt::hios: break;
         case stt::loproc: break;
         case stt::hiproc: break;
         }
         return "(stt)0x" + to_hex((int)v);
 }
-   1645e:	8522                	c.mv	a0,s0
-   16460:	70e2                	c.ldsp	ra,56(sp)
-   16462:	7442                	c.ldsp	s0,48(sp)
-   16464:	74a2                	c.ldsp	s1,40(sp)
-   16466:	7902                	c.ldsp	s2,32(sp)
-   16468:	6121                	c.addi16sp	sp,64
-   1646a:	8082                	c.jr	ra
+   17c4c:	00040513          	addi	a0,s0,0
+   17c50:	03813083          	ld	ra,56(sp)
+   17c54:	03013403          	ld	s0,48(sp)
+   17c58:	02813483          	ld	s1,40(sp)
+   17c5c:	02013903          	ld	s2,32(sp)
+   17c60:	04010113          	addi	sp,sp,64
+   17c64:	00008067          	jalr	zero,0(ra)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1646c:	01050793          	addi	a5,a0,16
+   17c68:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16470:	e11c                	c.sd	a5,0(a0)
+   17c6c:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16472:	4681                	c.li	a3,0
-   16474:	00001617          	auipc	a2,0x1
-   16478:	f2a60613          	addi	a2,a2,-214 # 1739e <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x19e>
-   1647c:	00001597          	auipc	a1,0x1
-   16480:	f1c58593          	addi	a1,a1,-228 # 17398 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x198>
-   16484:	00004317          	auipc	t1,0x4
-   16488:	d2c33303          	ld	t1,-724(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1648c:	9302                	c.jalr	t1
-   1648e:	bfc1                	c.j	1645e <elf::to_string[abi:cxx11](elf::stt)+0x46>
+   17c70:	00000693          	addi	a3,zero,0
+   17c74:	00001617          	auipc	a2,0x1
+   17c78:	0fa60613          	addi	a2,a2,250 # 18d6e <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x19e>
+   17c7c:	00001597          	auipc	a1,0x1
+   17c80:	0ec58593          	addi	a1,a1,236 # 18d68 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x198>
+   17c84:	00004317          	auipc	t1,0x4
+   17c88:	52c33303          	ld	t1,1324(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17c8c:	000300e7          	jalr	ra,0(t1)
+   17c90:	fbdff06f          	jal	zero,17c4c <elf::to_string[abi:cxx11](elf::stt)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16490:	01050793          	addi	a5,a0,16
+   17c94:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16494:	e11c                	c.sd	a5,0(a0)
+   17c98:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16496:	4681                	c.li	a3,0
-   16498:	00001617          	auipc	a2,0x1
-   1649c:	f0c60613          	addi	a2,a2,-244 # 173a4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1a4>
-   164a0:	00001597          	auipc	a1,0x1
-   164a4:	f0058593          	addi	a1,a1,-256 # 173a0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1a0>
-   164a8:	00004317          	auipc	t1,0x4
-   164ac:	d0833303          	ld	t1,-760(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   164b0:	9302                	c.jalr	t1
-   164b2:	b775                	c.j	1645e <elf::to_string[abi:cxx11](elf::stt)+0x46>
+   17c9c:	00000693          	addi	a3,zero,0
+   17ca0:	00001617          	auipc	a2,0x1
+   17ca4:	0d460613          	addi	a2,a2,212 # 18d74 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1a4>
+   17ca8:	00001597          	auipc	a1,0x1
+   17cac:	0c858593          	addi	a1,a1,200 # 18d70 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1a0>
+   17cb0:	00004317          	auipc	t1,0x4
+   17cb4:	50033303          	ld	t1,1280(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17cb8:	000300e7          	jalr	ra,0(t1)
+   17cbc:	f91ff06f          	jal	zero,17c4c <elf::to_string[abi:cxx11](elf::stt)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   164b4:	01050793          	addi	a5,a0,16
+   17cc0:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   164b8:	e11c                	c.sd	a5,0(a0)
+   17cc4:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   164ba:	4681                	c.li	a3,0
-   164bc:	00001617          	auipc	a2,0x1
-   164c0:	ef360613          	addi	a2,a2,-269 # 173af <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1af>
-   164c4:	00001597          	auipc	a1,0x1
-   164c8:	ee458593          	addi	a1,a1,-284 # 173a8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1a8>
-   164cc:	00004317          	auipc	t1,0x4
-   164d0:	ce433303          	ld	t1,-796(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   164d4:	9302                	c.jalr	t1
-   164d6:	b761                	c.j	1645e <elf::to_string[abi:cxx11](elf::stt)+0x46>
+   17cc8:	00000693          	addi	a3,zero,0
+   17ccc:	00001617          	auipc	a2,0x1
+   17cd0:	0b360613          	addi	a2,a2,179 # 18d7f <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1af>
+   17cd4:	00001597          	auipc	a1,0x1
+   17cd8:	0a458593          	addi	a1,a1,164 # 18d78 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1a8>
+   17cdc:	00004317          	auipc	t1,0x4
+   17ce0:	4d433303          	ld	t1,1236(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17ce4:	000300e7          	jalr	ra,0(t1)
+   17ce8:	f65ff06f          	jal	zero,17c4c <elf::to_string[abi:cxx11](elf::stt)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   164d8:	01050793          	addi	a5,a0,16
+   17cec:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   164dc:	e11c                	c.sd	a5,0(a0)
+   17cf0:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   164de:	4681                	c.li	a3,0
-   164e0:	00001617          	auipc	a2,0x1
-   164e4:	ed460613          	addi	a2,a2,-300 # 173b4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1b4>
-   164e8:	00001597          	auipc	a1,0x1
-   164ec:	ec858593          	addi	a1,a1,-312 # 173b0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1b0>
-   164f0:	00004317          	auipc	t1,0x4
-   164f4:	cc033303          	ld	t1,-832(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   164f8:	9302                	c.jalr	t1
-   164fa:	b795                	c.j	1645e <elf::to_string[abi:cxx11](elf::stt)+0x46>
+   17cf4:	00000693          	addi	a3,zero,0
+   17cf8:	00001617          	auipc	a2,0x1
+   17cfc:	08c60613          	addi	a2,a2,140 # 18d84 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1b4>
+   17d00:	00001597          	auipc	a1,0x1
+   17d04:	08058593          	addi	a1,a1,128 # 18d80 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1b0>
+   17d08:	00004317          	auipc	t1,0x4
+   17d0c:	4a833303          	ld	t1,1192(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17d10:	000300e7          	jalr	ra,0(t1)
+   17d14:	f39ff06f          	jal	zero,17c4c <elf::to_string[abi:cxx11](elf::stt)+0x64>
         return "(stt)0x" + to_hex((int)v);
-   164fc:	848a                	c.mv	s1,sp
-   164fe:	8526                	c.mv	a0,s1
-   16500:	00004317          	auipc	t1,0x4
-   16504:	d0833303          	ld	t1,-760(t1) # 1a208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3892>
-   16508:	9302                	c.jalr	t1
+   17d18:	00010493          	addi	s1,sp,0
+   17d1c:	00048513          	addi	a0,s1,0
+   17d20:	00004317          	auipc	t1,0x4
+   17d24:	4e833303          	ld	t1,1256(t1) # 1c208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3ef4>
+   17d28:	000300e7          	jalr	ra,0(t1)
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   1650a:	471d                	c.li	a4,7
-   1650c:	00001697          	auipc	a3,0x1
-   16510:	eac68693          	addi	a3,a3,-340 # 173b8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1b8>
-   16514:	4601                	c.li	a2,0
-   16516:	4581                	c.li	a1,0
-   16518:	8526                	c.mv	a0,s1
-   1651a:	e26fc0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   1651e:	84aa                	c.mv	s1,a0
+   17d2c:	00700713          	addi	a4,zero,7
+   17d30:	00001697          	auipc	a3,0x1
+   17d34:	05868693          	addi	a3,a3,88 # 18d88 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1b8>
+   17d38:	00000613          	addi	a2,zero,0
+   17d3c:	00000593          	addi	a1,zero,0
+   17d40:	00048513          	addi	a0,s1,0
+   17d44:	dfdfa0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   17d48:	00050493          	addi	s1,a0,0
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16520:	01040513          	addi	a0,s0,16
+   17d4c:	01040513          	addi	a0,s0,16
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   16524:	e008                	c.sd	a0,0(s0)
+   17d50:	00a43023          	sd	a0,0(s0)
       { return _M_dataplus._M_p; }
-   16526:	609c                	c.ld	a5,0(s1)
+   17d54:	0004b783          	ld	a5,0(s1)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   16528:	01048913          	addi	s2,s1,16
+   17d58:	01048913          	addi	s2,s1,16
 	if (__str._M_is_local())
-   1652c:	03278463          	beq	a5,s2,16554 <elf::to_string[abi:cxx11](elf::stt)+0x13c>
+   17d5c:	03278c63          	beq	a5,s2,17d94 <elf::to_string[abi:cxx11](elf::stt)+0x1ac>
       { _M_dataplus._M_p = __p; }
-   16530:	e01c                	c.sd	a5,0(s0)
+   17d60:	00f43023          	sd	a5,0(s0)
       { _M_allocated_capacity = __capacity; }
-   16532:	689c                	c.ld	a5,16(s1)
-   16534:	e81c                	c.sd	a5,16(s0)
+   17d64:	0104b783          	ld	a5,16(s1)
+   17d68:	00f43823          	sd	a5,16(s0)
       { _M_string_length = __length; }
-   16536:	649c                	c.ld	a5,8(s1)
-   16538:	e41c                	c.sd	a5,8(s0)
+   17d6c:	0084b783          	ld	a5,8(s1)
+   17d70:	00f43423          	sd	a5,8(s0)
       { _M_dataplus._M_p = __p; }
-   1653a:	0124b023          	sd	s2,0(s1)
+   17d74:	0124b023          	sd	s2,0(s1)
       { _M_string_length = __length; }
-   1653e:	0004b423          	sd	zero,8(s1)
+   17d78:	0004b423          	sd	zero,8(s1)
 	__c1 = __c2;
-   16542:	00048823          	sb	zero,16(s1)
+   17d7c:	00048823          	sb	zero,16(s1)
       { return _M_dataplus._M_p; }
-   16546:	6502                	c.ldsp	a0,0(sp)
+   17d80:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   16548:	081c                	c.addi4spn	a5,sp,16
-   1654a:	f0f50ae3          	beq	a0,a5,1645e <elf::to_string[abi:cxx11](elf::stt)+0x46>
+   17d84:	01010793          	addi	a5,sp,16
+   17d88:	ecf502e3          	beq	a0,a5,17c4c <elf::to_string[abi:cxx11](elf::stt)+0x64>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   1654e:	d22fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17d8c:	ce5fa0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
-   16552:	b731                	c.j	1645e <elf::to_string[abi:cxx11](elf::stt)+0x46>
+   17d90:	ebdff06f          	jal	zero,17c4c <elf::to_string[abi:cxx11](elf::stt)+0x64>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   16554:	6490                	c.ld	a2,8(s1)
-   16556:	0605                	c.addi	a2,1
+   17d94:	0084b603          	ld	a2,8(s1)
+   17d98:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   16558:	de79                	c.beqz	a2,16536 <elf::to_string[abi:cxx11](elf::stt)+0x11e>
+   17d9c:	fc0608e3          	beq	a2,zero,17d6c <elf::to_string[abi:cxx11](elf::stt)+0x184>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   1655a:	85ca                	c.mv	a1,s2
-   1655c:	da4fc0ef          	jal	ra,12b00 <memcpy@plt>
-   16560:	bfd9                	c.j	16536 <elf::to_string[abi:cxx11](elf::stt)+0x11e>
+   17da0:	00090593          	addi	a1,s2,0
+   17da4:	d5dfa0ef          	jal	ra,12b00 <memcpy@plt>
+   17da8:	fc5ff06f          	jal	zero,17d6c <elf::to_string[abi:cxx11](elf::stt)+0x184>
       { return _M_dataplus._M_p; }
-   16562:	842a                	c.mv	s0,a0
-   16564:	6502                	c.ldsp	a0,0(sp)
+   17dac:	00050413          	addi	s0,a0,0
+   17db0:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   16566:	081c                	c.addi4spn	a5,sp,16
-   16568:	00f50463          	beq	a0,a5,16570 <elf::to_string[abi:cxx11](elf::stt)+0x158>
-   1656c:	d04fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17db4:	01010793          	addi	a5,sp,16
+   17db8:	00f50463          	beq	a0,a5,17dc0 <elf::to_string[abi:cxx11](elf::stt)+0x1d8>
+   17dbc:	cb5fa0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   16570:	8522                	c.mv	a0,s0
-   16572:	e3efc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   17dc0:	00040513          	addi	a0,s0,0
+   17dc4:	dedfa0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-0000000000016576 <elf::to_string[abi:cxx11](elf::pt)>:
+0000000000017dc8 <elf::to_string[abi:cxx11](elf::pt)>:
 {
-   16576:	7139                	c.addi16sp	sp,-64
-   16578:	fc06                	c.sdsp	ra,56(sp)
-   1657a:	f822                	c.sdsp	s0,48(sp)
-   1657c:	f426                	c.sdsp	s1,40(sp)
-   1657e:	f04a                	c.sdsp	s2,32(sp)
-   16580:	842a                	c.mv	s0,a0
+   17dc8:	fc010113          	addi	sp,sp,-64
+   17dcc:	02113c23          	sd	ra,56(sp)
+   17dd0:	02813823          	sd	s0,48(sp)
+   17dd4:	02913423          	sd	s1,40(sp)
+   17dd8:	03213023          	sd	s2,32(sp)
+   17ddc:	00050413          	addi	s0,a0,0
         switch (v) {
-   16582:	4799                	c.li	a5,6
-   16584:	10b7ef63          	bltu	a5,a1,166a2 <elf::to_string[abi:cxx11](elf::pt)+0x12c>
-   16588:	058a                	c.slli	a1,0x2
-   1658a:	00001717          	auipc	a4,0x1
-   1658e:	ee670713          	addi	a4,a4,-282 # 17470 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x270>
-   16592:	95ba                	c.add	a1,a4
-   16594:	419c                	c.lw	a5,0(a1)
-   16596:	97ba                	c.add	a5,a4
-   16598:	8782                	c.jr	a5
+   17de0:	00600793          	addi	a5,zero,6
+   17de4:	16b7e663          	bltu	a5,a1,17f50 <elf::to_string[abi:cxx11](elf::pt)+0x188>
+   17de8:	00259593          	slli	a1,a1,0x2
+   17dec:	00001717          	auipc	a4,0x1
+   17df0:	05470713          	addi	a4,a4,84 # 18e40 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x270>
+   17df4:	00e585b3          	add	a1,a1,a4
+   17df8:	0005a783          	lw	a5,0(a1)
+   17dfc:	00e787b3          	add	a5,a5,a4
+   17e00:	00078067          	jalr	zero,0(a5)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1659a:	01050793          	addi	a5,a0,16
+   17e04:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   1659e:	e11c                	c.sd	a5,0(a0)
+   17e08:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   165a0:	4681                	c.li	a3,0
-   165a2:	00001617          	auipc	a2,0x1
-   165a6:	e2260613          	addi	a2,a2,-478 # 173c4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1c4>
-   165aa:	00001597          	auipc	a1,0x1
-   165ae:	e1658593          	addi	a1,a1,-490 # 173c0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1c0>
-   165b2:	00004317          	auipc	t1,0x4
-   165b6:	bfe33303          	ld	t1,-1026(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   165ba:	9302                	c.jalr	t1
+   17e0c:	00000693          	addi	a3,zero,0
+   17e10:	00001617          	auipc	a2,0x1
+   17e14:	f8460613          	addi	a2,a2,-124 # 18d94 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1c4>
+   17e18:	00001597          	auipc	a1,0x1
+   17e1c:	f7858593          	addi	a1,a1,-136 # 18d90 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1c0>
+   17e20:	00004317          	auipc	t1,0x4
+   17e24:	39033303          	ld	t1,912(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17e28:	000300e7          	jalr	ra,0(t1)
 }
-   165bc:	8522                	c.mv	a0,s0
-   165be:	70e2                	c.ldsp	ra,56(sp)
-   165c0:	7442                	c.ldsp	s0,48(sp)
-   165c2:	74a2                	c.ldsp	s1,40(sp)
-   165c4:	7902                	c.ldsp	s2,32(sp)
-   165c6:	6121                	c.addi16sp	sp,64
-   165c8:	8082                	c.jr	ra
+   17e2c:	00040513          	addi	a0,s0,0
+   17e30:	03813083          	ld	ra,56(sp)
+   17e34:	03013403          	ld	s0,48(sp)
+   17e38:	02813483          	ld	s1,40(sp)
+   17e3c:	02013903          	ld	s2,32(sp)
+   17e40:	04010113          	addi	sp,sp,64
+   17e44:	00008067          	jalr	zero,0(ra)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   165ca:	01050793          	addi	a5,a0,16
+   17e48:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   165ce:	e11c                	c.sd	a5,0(a0)
+   17e4c:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   165d0:	4681                	c.li	a3,0
-   165d2:	00001617          	auipc	a2,0x1
-   165d6:	dfa60613          	addi	a2,a2,-518 # 173cc <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1cc>
-   165da:	00001597          	auipc	a1,0x1
-   165de:	dee58593          	addi	a1,a1,-530 # 173c8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1c8>
-   165e2:	00004317          	auipc	t1,0x4
-   165e6:	bce33303          	ld	t1,-1074(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   165ea:	9302                	c.jalr	t1
-   165ec:	bfc1                	c.j	165bc <elf::to_string[abi:cxx11](elf::pt)+0x46>
+   17e50:	00000693          	addi	a3,zero,0
+   17e54:	00001617          	auipc	a2,0x1
+   17e58:	f4860613          	addi	a2,a2,-184 # 18d9c <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1cc>
+   17e5c:	00001597          	auipc	a1,0x1
+   17e60:	f3c58593          	addi	a1,a1,-196 # 18d98 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1c8>
+   17e64:	00004317          	auipc	t1,0x4
+   17e68:	34c33303          	ld	t1,844(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17e6c:	000300e7          	jalr	ra,0(t1)
+   17e70:	fbdff06f          	jal	zero,17e2c <elf::to_string[abi:cxx11](elf::pt)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   165ee:	01050793          	addi	a5,a0,16
+   17e74:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   165f2:	e11c                	c.sd	a5,0(a0)
+   17e78:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   165f4:	4681                	c.li	a3,0
-   165f6:	00001617          	auipc	a2,0x1
-   165fa:	de160613          	addi	a2,a2,-543 # 173d7 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1d7>
-   165fe:	00001597          	auipc	a1,0x1
-   16602:	dd258593          	addi	a1,a1,-558 # 173d0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1d0>
-   16606:	00004317          	auipc	t1,0x4
-   1660a:	baa33303          	ld	t1,-1110(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1660e:	9302                	c.jalr	t1
-   16610:	b775                	c.j	165bc <elf::to_string[abi:cxx11](elf::pt)+0x46>
+   17e7c:	00000693          	addi	a3,zero,0
+   17e80:	00001617          	auipc	a2,0x1
+   17e84:	f2760613          	addi	a2,a2,-217 # 18da7 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1d7>
+   17e88:	00001597          	auipc	a1,0x1
+   17e8c:	f1858593          	addi	a1,a1,-232 # 18da0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1d0>
+   17e90:	00004317          	auipc	t1,0x4
+   17e94:	32033303          	ld	t1,800(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17e98:	000300e7          	jalr	ra,0(t1)
+   17e9c:	f91ff06f          	jal	zero,17e2c <elf::to_string[abi:cxx11](elf::pt)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16612:	01050793          	addi	a5,a0,16
+   17ea0:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16616:	e11c                	c.sd	a5,0(a0)
+   17ea4:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16618:	4681                	c.li	a3,0
-   1661a:	00001617          	auipc	a2,0x1
-   1661e:	dc460613          	addi	a2,a2,-572 # 173de <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1de>
-   16622:	00001597          	auipc	a1,0x1
-   16626:	db658593          	addi	a1,a1,-586 # 173d8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1d8>
-   1662a:	00004317          	auipc	t1,0x4
-   1662e:	b8633303          	ld	t1,-1146(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16632:	9302                	c.jalr	t1
-   16634:	b761                	c.j	165bc <elf::to_string[abi:cxx11](elf::pt)+0x46>
+   17ea8:	00000693          	addi	a3,zero,0
+   17eac:	00001617          	auipc	a2,0x1
+   17eb0:	f0260613          	addi	a2,a2,-254 # 18dae <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1de>
+   17eb4:	00001597          	auipc	a1,0x1
+   17eb8:	ef458593          	addi	a1,a1,-268 # 18da8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1d8>
+   17ebc:	00004317          	auipc	t1,0x4
+   17ec0:	2f433303          	ld	t1,756(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17ec4:	000300e7          	jalr	ra,0(t1)
+   17ec8:	f65ff06f          	jal	zero,17e2c <elf::to_string[abi:cxx11](elf::pt)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16636:	01050793          	addi	a5,a0,16
+   17ecc:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   1663a:	e11c                	c.sd	a5,0(a0)
+   17ed0:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   1663c:	4681                	c.li	a3,0
-   1663e:	00001617          	auipc	a2,0x1
-   16642:	da660613          	addi	a2,a2,-602 # 173e4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e4>
-   16646:	00001597          	auipc	a1,0x1
-   1664a:	d9a58593          	addi	a1,a1,-614 # 173e0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e0>
-   1664e:	00004317          	auipc	t1,0x4
-   16652:	b6233303          	ld	t1,-1182(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16656:	9302                	c.jalr	t1
-   16658:	b795                	c.j	165bc <elf::to_string[abi:cxx11](elf::pt)+0x46>
+   17ed4:	00000693          	addi	a3,zero,0
+   17ed8:	00001617          	auipc	a2,0x1
+   17edc:	edc60613          	addi	a2,a2,-292 # 18db4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e4>
+   17ee0:	00001597          	auipc	a1,0x1
+   17ee4:	ed058593          	addi	a1,a1,-304 # 18db0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e0>
+   17ee8:	00004317          	auipc	t1,0x4
+   17eec:	2c833303          	ld	t1,712(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17ef0:	000300e7          	jalr	ra,0(t1)
+   17ef4:	f39ff06f          	jal	zero,17e2c <elf::to_string[abi:cxx11](elf::pt)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1665a:	01050793          	addi	a5,a0,16
+   17ef8:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   1665e:	e11c                	c.sd	a5,0(a0)
+   17efc:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16660:	4681                	c.li	a3,0
-   16662:	00001617          	auipc	a2,0x1
-   16666:	d8b60613          	addi	a2,a2,-629 # 173ed <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1ed>
-   1666a:	00001597          	auipc	a1,0x1
-   1666e:	d7e58593          	addi	a1,a1,-642 # 173e8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e8>
-   16672:	00004317          	auipc	t1,0x4
-   16676:	b3e33303          	ld	t1,-1218(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1667a:	9302                	c.jalr	t1
-   1667c:	b781                	c.j	165bc <elf::to_string[abi:cxx11](elf::pt)+0x46>
+   17f00:	00000693          	addi	a3,zero,0
+   17f04:	00001617          	auipc	a2,0x1
+   17f08:	eb960613          	addi	a2,a2,-327 # 18dbd <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1ed>
+   17f0c:	00001597          	auipc	a1,0x1
+   17f10:	eac58593          	addi	a1,a1,-340 # 18db8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e8>
+   17f14:	00004317          	auipc	t1,0x4
+   17f18:	29c33303          	ld	t1,668(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17f1c:	000300e7          	jalr	ra,0(t1)
+   17f20:	f0dff06f          	jal	zero,17e2c <elf::to_string[abi:cxx11](elf::pt)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1667e:	01050793          	addi	a5,a0,16
+   17f24:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16682:	e11c                	c.sd	a5,0(a0)
+   17f28:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16684:	4681                	c.li	a3,0
-   16686:	00001617          	auipc	a2,0x1
-   1668a:	d6e60613          	addi	a2,a2,-658 # 173f4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1f4>
-   1668e:	00001597          	auipc	a1,0x1
-   16692:	d6258593          	addi	a1,a1,-670 # 173f0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1f0>
-   16696:	00004317          	auipc	t1,0x4
-   1669a:	b1a33303          	ld	t1,-1254(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1669e:	9302                	c.jalr	t1
-   166a0:	bf31                	c.j	165bc <elf::to_string[abi:cxx11](elf::pt)+0x46>
+   17f2c:	00000693          	addi	a3,zero,0
+   17f30:	00001617          	auipc	a2,0x1
+   17f34:	e9460613          	addi	a2,a2,-364 # 18dc4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1f4>
+   17f38:	00001597          	auipc	a1,0x1
+   17f3c:	e8858593          	addi	a1,a1,-376 # 18dc0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1f0>
+   17f40:	00004317          	auipc	t1,0x4
+   17f44:	27033303          	ld	t1,624(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   17f48:	000300e7          	jalr	ra,0(t1)
+   17f4c:	ee1ff06f          	jal	zero,17e2c <elf::to_string[abi:cxx11](elf::pt)+0x64>
         return "(pt)0x" + to_hex((int)v);
-   166a2:	848a                	c.mv	s1,sp
-   166a4:	8526                	c.mv	a0,s1
-   166a6:	00004317          	auipc	t1,0x4
-   166aa:	b6233303          	ld	t1,-1182(t1) # 1a208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3892>
-   166ae:	9302                	c.jalr	t1
+   17f50:	00010493          	addi	s1,sp,0
+   17f54:	00048513          	addi	a0,s1,0
+   17f58:	00004317          	auipc	t1,0x4
+   17f5c:	2b033303          	ld	t1,688(t1) # 1c208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3ef4>
+   17f60:	000300e7          	jalr	ra,0(t1)
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   166b0:	4719                	c.li	a4,6
-   166b2:	00001697          	auipc	a3,0x1
-   166b6:	d4668693          	addi	a3,a3,-698 # 173f8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1f8>
-   166ba:	4601                	c.li	a2,0
-   166bc:	4581                	c.li	a1,0
-   166be:	8526                	c.mv	a0,s1
-   166c0:	c80fc0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   166c4:	84aa                	c.mv	s1,a0
+   17f64:	00600713          	addi	a4,zero,6
+   17f68:	00001697          	auipc	a3,0x1
+   17f6c:	e6068693          	addi	a3,a3,-416 # 18dc8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1f8>
+   17f70:	00000613          	addi	a2,zero,0
+   17f74:	00000593          	addi	a1,zero,0
+   17f78:	00048513          	addi	a0,s1,0
+   17f7c:	bc5fa0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   17f80:	00050493          	addi	s1,a0,0
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   166c6:	01040513          	addi	a0,s0,16
+   17f84:	01040513          	addi	a0,s0,16
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   166ca:	e008                	c.sd	a0,0(s0)
+   17f88:	00a43023          	sd	a0,0(s0)
       { return _M_dataplus._M_p; }
-   166cc:	609c                	c.ld	a5,0(s1)
+   17f8c:	0004b783          	ld	a5,0(s1)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   166ce:	01048913          	addi	s2,s1,16
+   17f90:	01048913          	addi	s2,s1,16
 	if (__str._M_is_local())
-   166d2:	03278463          	beq	a5,s2,166fa <elf::to_string[abi:cxx11](elf::pt)+0x184>
+   17f94:	03278c63          	beq	a5,s2,17fcc <elf::to_string[abi:cxx11](elf::pt)+0x204>
       { _M_dataplus._M_p = __p; }
-   166d6:	e01c                	c.sd	a5,0(s0)
+   17f98:	00f43023          	sd	a5,0(s0)
       { _M_allocated_capacity = __capacity; }
-   166d8:	689c                	c.ld	a5,16(s1)
-   166da:	e81c                	c.sd	a5,16(s0)
+   17f9c:	0104b783          	ld	a5,16(s1)
+   17fa0:	00f43823          	sd	a5,16(s0)
       { _M_string_length = __length; }
-   166dc:	649c                	c.ld	a5,8(s1)
-   166de:	e41c                	c.sd	a5,8(s0)
+   17fa4:	0084b783          	ld	a5,8(s1)
+   17fa8:	00f43423          	sd	a5,8(s0)
       { _M_dataplus._M_p = __p; }
-   166e0:	0124b023          	sd	s2,0(s1)
+   17fac:	0124b023          	sd	s2,0(s1)
       { _M_string_length = __length; }
-   166e4:	0004b423          	sd	zero,8(s1)
+   17fb0:	0004b423          	sd	zero,8(s1)
 	__c1 = __c2;
-   166e8:	00048823          	sb	zero,16(s1)
+   17fb4:	00048823          	sb	zero,16(s1)
       { return _M_dataplus._M_p; }
-   166ec:	6502                	c.ldsp	a0,0(sp)
+   17fb8:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   166ee:	081c                	c.addi4spn	a5,sp,16
-   166f0:	ecf506e3          	beq	a0,a5,165bc <elf::to_string[abi:cxx11](elf::pt)+0x46>
+   17fbc:	01010793          	addi	a5,sp,16
+   17fc0:	e6f506e3          	beq	a0,a5,17e2c <elf::to_string[abi:cxx11](elf::pt)+0x64>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   166f4:	b7cfc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17fc4:	aadfa0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
-   166f8:	b5d1                	c.j	165bc <elf::to_string[abi:cxx11](elf::pt)+0x46>
+   17fc8:	e65ff06f          	jal	zero,17e2c <elf::to_string[abi:cxx11](elf::pt)+0x64>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   166fa:	6490                	c.ld	a2,8(s1)
-   166fc:	0605                	c.addi	a2,1
+   17fcc:	0084b603          	ld	a2,8(s1)
+   17fd0:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   166fe:	de79                	c.beqz	a2,166dc <elf::to_string[abi:cxx11](elf::pt)+0x166>
+   17fd4:	fc0608e3          	beq	a2,zero,17fa4 <elf::to_string[abi:cxx11](elf::pt)+0x1dc>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   16700:	85ca                	c.mv	a1,s2
-   16702:	bfefc0ef          	jal	ra,12b00 <memcpy@plt>
-   16706:	bfd9                	c.j	166dc <elf::to_string[abi:cxx11](elf::pt)+0x166>
+   17fd8:	00090593          	addi	a1,s2,0
+   17fdc:	b25fa0ef          	jal	ra,12b00 <memcpy@plt>
+   17fe0:	fc5ff06f          	jal	zero,17fa4 <elf::to_string[abi:cxx11](elf::pt)+0x1dc>
       { return _M_dataplus._M_p; }
-   16708:	842a                	c.mv	s0,a0
-   1670a:	6502                	c.ldsp	a0,0(sp)
+   17fe4:	00050413          	addi	s0,a0,0
+   17fe8:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   1670c:	081c                	c.addi4spn	a5,sp,16
-   1670e:	00f50463          	beq	a0,a5,16716 <elf::to_string[abi:cxx11](elf::pt)+0x1a0>
-   16712:	b5efc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   17fec:	01010793          	addi	a5,sp,16
+   17ff0:	00f50463          	beq	a0,a5,17ff8 <elf::to_string[abi:cxx11](elf::pt)+0x230>
+   17ff4:	a7dfa0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   16716:	8522                	c.mv	a0,s0
-   16718:	c98fc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   17ff8:	00040513          	addi	a0,s0,0
+   17ffc:	bb5fa0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-000000000001671c <elf::to_string[abi:cxx11](elf::sht)>:
+0000000000018000 <elf::to_string[abi:cxx11](elf::sht)>:
 {
-   1671c:	7139                	c.addi16sp	sp,-64
-   1671e:	fc06                	c.sdsp	ra,56(sp)
-   16720:	f822                	c.sdsp	s0,48(sp)
-   16722:	f426                	c.sdsp	s1,40(sp)
-   16724:	f04a                	c.sdsp	s2,32(sp)
-   16726:	842a                	c.mv	s0,a0
+   18000:	fc010113          	addi	sp,sp,-64
+   18004:	02113c23          	sd	ra,56(sp)
+   18008:	02813823          	sd	s0,48(sp)
+   1800c:	02913423          	sd	s1,40(sp)
+   18010:	03213023          	sd	s2,32(sp)
+   18014:	00050413          	addi	s0,a0,0
         switch (v) {
-   16728:	47ad                	c.li	a5,11
-   1672a:	1cb7e963          	bltu	a5,a1,168fc <elf::to_string[abi:cxx11](elf::sht)+0x1e0>
-   1672e:	058a                	c.slli	a1,0x2
-   16730:	00001717          	auipc	a4,0x1
-   16734:	d5c70713          	addi	a4,a4,-676 # 1748c <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x28c>
-   16738:	95ba                	c.add	a1,a4
-   1673a:	419c                	c.lw	a5,0(a1)
-   1673c:	97ba                	c.add	a5,a4
-   1673e:	8782                	c.jr	a5
+   18018:	00b00793          	addi	a5,zero,11
+   1801c:	24b7e463          	bltu	a5,a1,18264 <elf::to_string[abi:cxx11](elf::sht)+0x264>
+   18020:	00259593          	slli	a1,a1,0x2
+   18024:	00001717          	auipc	a4,0x1
+   18028:	e3870713          	addi	a4,a4,-456 # 18e5c <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x28c>
+   1802c:	00e585b3          	add	a1,a1,a4
+   18030:	0005a783          	lw	a5,0(a1)
+   18034:	00e787b3          	add	a5,a5,a4
+   18038:	00078067          	jalr	zero,0(a5)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16740:	01050793          	addi	a5,a0,16
+   1803c:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16744:	e11c                	c.sd	a5,0(a0)
+   18040:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16746:	4681                	c.li	a3,0
-   16748:	00001617          	auipc	a2,0x1
-   1674c:	c7c60613          	addi	a2,a2,-900 # 173c4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1c4>
-   16750:	00001597          	auipc	a1,0x1
-   16754:	c7058593          	addi	a1,a1,-912 # 173c0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1c0>
-   16758:	00004317          	auipc	t1,0x4
-   1675c:	a5833303          	ld	t1,-1448(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16760:	9302                	c.jalr	t1
+   18044:	00000693          	addi	a3,zero,0
+   18048:	00001617          	auipc	a2,0x1
+   1804c:	d4c60613          	addi	a2,a2,-692 # 18d94 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1c4>
+   18050:	00001597          	auipc	a1,0x1
+   18054:	d4058593          	addi	a1,a1,-704 # 18d90 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1c0>
+   18058:	00004317          	auipc	t1,0x4
+   1805c:	15833303          	ld	t1,344(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   18060:	000300e7          	jalr	ra,0(t1)
 }
-   16762:	8522                	c.mv	a0,s0
-   16764:	70e2                	c.ldsp	ra,56(sp)
-   16766:	7442                	c.ldsp	s0,48(sp)
-   16768:	74a2                	c.ldsp	s1,40(sp)
-   1676a:	7902                	c.ldsp	s2,32(sp)
-   1676c:	6121                	c.addi16sp	sp,64
-   1676e:	8082                	c.jr	ra
+   18064:	00040513          	addi	a0,s0,0
+   18068:	03813083          	ld	ra,56(sp)
+   1806c:	03013403          	ld	s0,48(sp)
+   18070:	02813483          	ld	s1,40(sp)
+   18074:	02013903          	ld	s2,32(sp)
+   18078:	04010113          	addi	sp,sp,64
+   1807c:	00008067          	jalr	zero,0(ra)
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16770:	01050793          	addi	a5,a0,16
+   18080:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16774:	e11c                	c.sd	a5,0(a0)
+   18084:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16776:	4681                	c.li	a3,0
-   16778:	00001617          	auipc	a2,0x1
-   1677c:	c9060613          	addi	a2,a2,-880 # 17408 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x208>
-   16780:	00001597          	auipc	a1,0x1
-   16784:	c8058593          	addi	a1,a1,-896 # 17400 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x200>
-   16788:	00004317          	auipc	t1,0x4
-   1678c:	a2833303          	ld	t1,-1496(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16790:	9302                	c.jalr	t1
-   16792:	bfc1                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   18088:	00000693          	addi	a3,zero,0
+   1808c:	00001617          	auipc	a2,0x1
+   18090:	d4c60613          	addi	a2,a2,-692 # 18dd8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x208>
+   18094:	00001597          	auipc	a1,0x1
+   18098:	d3c58593          	addi	a1,a1,-708 # 18dd0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x200>
+   1809c:	00004317          	auipc	t1,0x4
+   180a0:	11433303          	ld	t1,276(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   180a4:	000300e7          	jalr	ra,0(t1)
+   180a8:	fbdff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16794:	01050793          	addi	a5,a0,16
+   180ac:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16798:	e11c                	c.sd	a5,0(a0)
+   180b0:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   1679a:	4681                	c.li	a3,0
-   1679c:	00001617          	auipc	a2,0x1
-   167a0:	c7a60613          	addi	a2,a2,-902 # 17416 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x216>
-   167a4:	00001597          	auipc	a1,0x1
-   167a8:	c6c58593          	addi	a1,a1,-916 # 17410 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x210>
-   167ac:	00004317          	auipc	t1,0x4
-   167b0:	a0433303          	ld	t1,-1532(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   167b4:	9302                	c.jalr	t1
-   167b6:	b775                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   180b4:	00000693          	addi	a3,zero,0
+   180b8:	00001617          	auipc	a2,0x1
+   180bc:	d2e60613          	addi	a2,a2,-722 # 18de6 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x216>
+   180c0:	00001597          	auipc	a1,0x1
+   180c4:	d2058593          	addi	a1,a1,-736 # 18de0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x210>
+   180c8:	00004317          	auipc	t1,0x4
+   180cc:	0e833303          	ld	t1,232(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   180d0:	000300e7          	jalr	ra,0(t1)
+   180d4:	f91ff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   167b8:	01050793          	addi	a5,a0,16
+   180d8:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   167bc:	e11c                	c.sd	a5,0(a0)
+   180dc:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   167be:	4681                	c.li	a3,0
-   167c0:	00001617          	auipc	a2,0x1
-   167c4:	c5e60613          	addi	a2,a2,-930 # 1741e <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x21e>
-   167c8:	00001597          	auipc	a1,0x1
-   167cc:	c5058593          	addi	a1,a1,-944 # 17418 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x218>
-   167d0:	00004317          	auipc	t1,0x4
-   167d4:	9e033303          	ld	t1,-1568(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   167d8:	9302                	c.jalr	t1
-   167da:	b761                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   180e0:	00000693          	addi	a3,zero,0
+   180e4:	00001617          	auipc	a2,0x1
+   180e8:	d0a60613          	addi	a2,a2,-758 # 18dee <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x21e>
+   180ec:	00001597          	auipc	a1,0x1
+   180f0:	cfc58593          	addi	a1,a1,-772 # 18de8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x218>
+   180f4:	00004317          	auipc	t1,0x4
+   180f8:	0bc33303          	ld	t1,188(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   180fc:	000300e7          	jalr	ra,0(t1)
+   18100:	f65ff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   167dc:	01050793          	addi	a5,a0,16
+   18104:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   167e0:	e11c                	c.sd	a5,0(a0)
+   18108:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   167e2:	4681                	c.li	a3,0
-   167e4:	00001617          	auipc	a2,0x1
-   167e8:	c4060613          	addi	a2,a2,-960 # 17424 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x224>
-   167ec:	00001597          	auipc	a1,0x1
-   167f0:	c3458593          	addi	a1,a1,-972 # 17420 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x220>
-   167f4:	00004317          	auipc	t1,0x4
-   167f8:	9bc33303          	ld	t1,-1604(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   167fc:	9302                	c.jalr	t1
-   167fe:	b795                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   1810c:	00000693          	addi	a3,zero,0
+   18110:	00001617          	auipc	a2,0x1
+   18114:	ce460613          	addi	a2,a2,-796 # 18df4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x224>
+   18118:	00001597          	auipc	a1,0x1
+   1811c:	cd858593          	addi	a1,a1,-808 # 18df0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x220>
+   18120:	00004317          	auipc	t1,0x4
+   18124:	09033303          	ld	t1,144(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   18128:	000300e7          	jalr	ra,0(t1)
+   1812c:	f39ff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16800:	01050793          	addi	a5,a0,16
+   18130:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16804:	e11c                	c.sd	a5,0(a0)
+   18134:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16806:	4681                	c.li	a3,0
-   16808:	00001617          	auipc	a2,0x1
-   1680c:	c2460613          	addi	a2,a2,-988 # 1742c <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x22c>
-   16810:	00001597          	auipc	a1,0x1
-   16814:	c1858593          	addi	a1,a1,-1000 # 17428 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x228>
-   16818:	00004317          	auipc	t1,0x4
-   1681c:	99833303          	ld	t1,-1640(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16820:	9302                	c.jalr	t1
-   16822:	b781                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   18138:	00000693          	addi	a3,zero,0
+   1813c:	00001617          	auipc	a2,0x1
+   18140:	cc060613          	addi	a2,a2,-832 # 18dfc <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x22c>
+   18144:	00001597          	auipc	a1,0x1
+   18148:	cb458593          	addi	a1,a1,-844 # 18df8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x228>
+   1814c:	00004317          	auipc	t1,0x4
+   18150:	06433303          	ld	t1,100(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   18154:	000300e7          	jalr	ra,0(t1)
+   18158:	f0dff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16824:	01050793          	addi	a5,a0,16
+   1815c:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16828:	e11c                	c.sd	a5,0(a0)
+   18160:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   1682a:	4681                	c.li	a3,0
-   1682c:	00001617          	auipc	a2,0x1
-   16830:	bab60613          	addi	a2,a2,-1109 # 173d7 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1d7>
-   16834:	00001597          	auipc	a1,0x1
-   16838:	b9c58593          	addi	a1,a1,-1124 # 173d0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1d0>
-   1683c:	00004317          	auipc	t1,0x4
-   16840:	97433303          	ld	t1,-1676(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16844:	9302                	c.jalr	t1
-   16846:	bf31                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   18164:	00000693          	addi	a3,zero,0
+   18168:	00001617          	auipc	a2,0x1
+   1816c:	c3f60613          	addi	a2,a2,-961 # 18da7 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1d7>
+   18170:	00001597          	auipc	a1,0x1
+   18174:	c3058593          	addi	a1,a1,-976 # 18da0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1d0>
+   18178:	00004317          	auipc	t1,0x4
+   1817c:	03833303          	ld	t1,56(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   18180:	000300e7          	jalr	ra,0(t1)
+   18184:	ee1ff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16848:	01050793          	addi	a5,a0,16
+   18188:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   1684c:	e11c                	c.sd	a5,0(a0)
+   1818c:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   1684e:	4681                	c.li	a3,0
-   16850:	00001617          	auipc	a2,0x1
-   16854:	b9460613          	addi	a2,a2,-1132 # 173e4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e4>
-   16858:	00001597          	auipc	a1,0x1
-   1685c:	b8858593          	addi	a1,a1,-1144 # 173e0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e0>
-   16860:	00004317          	auipc	t1,0x4
-   16864:	95033303          	ld	t1,-1712(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   16868:	9302                	c.jalr	t1
-   1686a:	bde5                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   18190:	00000693          	addi	a3,zero,0
+   18194:	00001617          	auipc	a2,0x1
+   18198:	c2060613          	addi	a2,a2,-992 # 18db4 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e4>
+   1819c:	00001597          	auipc	a1,0x1
+   181a0:	c1458593          	addi	a1,a1,-1004 # 18db0 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e0>
+   181a4:	00004317          	auipc	t1,0x4
+   181a8:	00c33303          	ld	t1,12(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   181ac:	000300e7          	jalr	ra,0(t1)
+   181b0:	eb5ff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   1686c:	01050793          	addi	a5,a0,16
+   181b4:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16870:	e11c                	c.sd	a5,0(a0)
+   181b8:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16872:	4681                	c.li	a3,0
-   16874:	00001617          	auipc	a2,0x1
-   16878:	bc260613          	addi	a2,a2,-1086 # 17436 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x236>
-   1687c:	00001597          	auipc	a1,0x1
-   16880:	bb458593          	addi	a1,a1,-1100 # 17430 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x230>
-   16884:	00004317          	auipc	t1,0x4
-   16888:	92c33303          	ld	t1,-1748(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   1688c:	9302                	c.jalr	t1
-   1688e:	bdd1                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   181bc:	00000693          	addi	a3,zero,0
+   181c0:	00001617          	auipc	a2,0x1
+   181c4:	c4660613          	addi	a2,a2,-954 # 18e06 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x236>
+   181c8:	00001597          	auipc	a1,0x1
+   181cc:	c3858593          	addi	a1,a1,-968 # 18e00 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x230>
+   181d0:	00004317          	auipc	t1,0x4
+   181d4:	fe033303          	ld	t1,-32(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   181d8:	000300e7          	jalr	ra,0(t1)
+   181dc:	e89ff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16890:	01050793          	addi	a5,a0,16
+   181e0:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16894:	e11c                	c.sd	a5,0(a0)
+   181e4:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16896:	4681                	c.li	a3,0
-   16898:	00001617          	auipc	a2,0x1
-   1689c:	ad360613          	addi	a2,a2,-1325 # 1736b <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x16b>
-   168a0:	00001597          	auipc	a1,0x1
-   168a4:	ac858593          	addi	a1,a1,-1336 # 17368 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x168>
-   168a8:	00004317          	auipc	t1,0x4
-   168ac:	90833303          	ld	t1,-1784(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   168b0:	9302                	c.jalr	t1
-   168b2:	bd45                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   181e8:	00000693          	addi	a3,zero,0
+   181ec:	00001617          	auipc	a2,0x1
+   181f0:	b4f60613          	addi	a2,a2,-1201 # 18d3b <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x16b>
+   181f4:	00001597          	auipc	a1,0x1
+   181f8:	b4458593          	addi	a1,a1,-1212 # 18d38 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x168>
+   181fc:	00004317          	auipc	t1,0x4
+   18200:	fb433303          	ld	t1,-76(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   18204:	000300e7          	jalr	ra,0(t1)
+   18208:	e5dff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   168b4:	01050793          	addi	a5,a0,16
+   1820c:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   168b8:	e11c                	c.sd	a5,0(a0)
+   18210:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   168ba:	4681                	c.li	a3,0
-   168bc:	00001617          	auipc	a2,0x1
-   168c0:	b3160613          	addi	a2,a2,-1231 # 173ed <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1ed>
-   168c4:	00001597          	auipc	a1,0x1
-   168c8:	b2458593          	addi	a1,a1,-1244 # 173e8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e8>
-   168cc:	00004317          	auipc	t1,0x4
-   168d0:	8e433303          	ld	t1,-1820(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   168d4:	9302                	c.jalr	t1
-   168d6:	b571                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   18214:	00000693          	addi	a3,zero,0
+   18218:	00001617          	auipc	a2,0x1
+   1821c:	ba560613          	addi	a2,a2,-1115 # 18dbd <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1ed>
+   18220:	00001597          	auipc	a1,0x1
+   18224:	b9858593          	addi	a1,a1,-1128 # 18db8 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x1e8>
+   18228:	00004317          	auipc	t1,0x4
+   1822c:	f8833303          	ld	t1,-120(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   18230:	000300e7          	jalr	ra,0(t1)
+   18234:	e31ff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   168d8:	01050793          	addi	a5,a0,16
+   18238:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   168dc:	e11c                	c.sd	a5,0(a0)
+   1823c:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   168de:	4681                	c.li	a3,0
-   168e0:	00001617          	auipc	a2,0x1
-   168e4:	b5e60613          	addi	a2,a2,-1186 # 1743e <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x23e>
-   168e8:	00001597          	auipc	a1,0x1
-   168ec:	b5058593          	addi	a1,a1,-1200 # 17438 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x238>
-   168f0:	00004317          	auipc	t1,0x4
-   168f4:	8c033303          	ld	t1,-1856(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   168f8:	9302                	c.jalr	t1
-   168fa:	b5a5                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   18240:	00000693          	addi	a3,zero,0
+   18244:	00001617          	auipc	a2,0x1
+   18248:	bca60613          	addi	a2,a2,-1078 # 18e0e <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x23e>
+   1824c:	00001597          	auipc	a1,0x1
+   18250:	bbc58593          	addi	a1,a1,-1092 # 18e08 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x238>
+   18254:	00004317          	auipc	t1,0x4
+   18258:	f5c33303          	ld	t1,-164(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   1825c:	000300e7          	jalr	ra,0(t1)
+   18260:	e05ff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
         return "(sht)0x" + to_hex((int)v);
-   168fc:	848a                	c.mv	s1,sp
-   168fe:	8526                	c.mv	a0,s1
-   16900:	00004317          	auipc	t1,0x4
-   16904:	90833303          	ld	t1,-1784(t1) # 1a208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3892>
-   16908:	9302                	c.jalr	t1
+   18264:	00010493          	addi	s1,sp,0
+   18268:	00048513          	addi	a0,s1,0
+   1826c:	00004317          	auipc	t1,0x4
+   18270:	f9c33303          	ld	t1,-100(t1) # 1c208 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)@@Base+0x3ef4>
+   18274:	000300e7          	jalr	ra,0(t1)
 	return _M_replace(_M_check(__pos, "basic_string::replace"),
-   1690a:	471d                	c.li	a4,7
-   1690c:	00001697          	auipc	a3,0x1
-   16910:	b3468693          	addi	a3,a3,-1228 # 17440 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x240>
-   16914:	4601                	c.li	a2,0
-   16916:	4581                	c.li	a1,0
-   16918:	8526                	c.mv	a0,s1
-   1691a:	a26fc0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
-   1691e:	84aa                	c.mv	s1,a0
+   18278:	00700713          	addi	a4,zero,7
+   1827c:	00001697          	auipc	a3,0x1
+   18280:	b9468693          	addi	a3,a3,-1132 # 18e10 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x240>
+   18284:	00000613          	addi	a2,zero,0
+   18288:	00000593          	addi	a1,zero,0
+   1828c:	00048513          	addi	a0,s1,0
+   18290:	8b1fa0ef          	jal	ra,12b40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt>
+   18294:	00050493          	addi	s1,a0,0
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16920:	01040513          	addi	a0,s0,16
+   18298:	01040513          	addi	a0,s0,16
 	: allocator_type(std::move(__a)), _M_p(__dat) { }
-   16924:	e008                	c.sd	a0,0(s0)
+   1829c:	00a43023          	sd	a0,0(s0)
       { return _M_dataplus._M_p; }
-   16926:	609c                	c.ld	a5,0(s1)
+   182a0:	0004b783          	ld	a5,0(s1)
 	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
-   16928:	01048913          	addi	s2,s1,16
+   182a4:	01048913          	addi	s2,s1,16
 	if (__str._M_is_local())
-   1692c:	03278463          	beq	a5,s2,16954 <elf::to_string[abi:cxx11](elf::sht)+0x238>
+   182a8:	03278c63          	beq	a5,s2,182e0 <elf::to_string[abi:cxx11](elf::sht)+0x2e0>
       { _M_dataplus._M_p = __p; }
-   16930:	e01c                	c.sd	a5,0(s0)
+   182ac:	00f43023          	sd	a5,0(s0)
       { _M_allocated_capacity = __capacity; }
-   16932:	689c                	c.ld	a5,16(s1)
-   16934:	e81c                	c.sd	a5,16(s0)
+   182b0:	0104b783          	ld	a5,16(s1)
+   182b4:	00f43823          	sd	a5,16(s0)
       { _M_string_length = __length; }
-   16936:	649c                	c.ld	a5,8(s1)
-   16938:	e41c                	c.sd	a5,8(s0)
+   182b8:	0084b783          	ld	a5,8(s1)
+   182bc:	00f43423          	sd	a5,8(s0)
       { _M_dataplus._M_p = __p; }
-   1693a:	0124b023          	sd	s2,0(s1)
+   182c0:	0124b023          	sd	s2,0(s1)
       { _M_string_length = __length; }
-   1693e:	0004b423          	sd	zero,8(s1)
+   182c4:	0004b423          	sd	zero,8(s1)
 	__c1 = __c2;
-   16942:	00048823          	sb	zero,16(s1)
+   182c8:	00048823          	sb	zero,16(s1)
       { return _M_dataplus._M_p; }
-   16946:	6502                	c.ldsp	a0,0(sp)
+   182cc:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   16948:	081c                	c.addi4spn	a5,sp,16
-   1694a:	e0f50ce3          	beq	a0,a5,16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   182d0:	01010793          	addi	a5,sp,16
+   182d4:	d8f508e3          	beq	a0,a5,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-   1694e:	922fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   182d8:	f98fa0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
-   16952:	bd01                	c.j	16762 <elf::to_string[abi:cxx11](elf::sht)+0x46>
+   182dc:	d89ff06f          	jal	zero,18064 <elf::to_string[abi:cxx11](elf::sht)+0x64>
 	    traits_type::copy(_M_local_buf, __str._M_local_buf,
-   16954:	6490                	c.ld	a2,8(s1)
-   16956:	0605                	c.addi	a2,1
+   182e0:	0084b603          	ld	a2,8(s1)
+   182e4:	00160613          	addi	a2,a2,1
 	if (__n == 0)
-   16958:	de79                	c.beqz	a2,16936 <elf::to_string[abi:cxx11](elf::sht)+0x21a>
+   182e8:	fc0608e3          	beq	a2,zero,182b8 <elf::to_string[abi:cxx11](elf::sht)+0x2b8>
 	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
-   1695a:	85ca                	c.mv	a1,s2
-   1695c:	9a4fc0ef          	jal	ra,12b00 <memcpy@plt>
-   16960:	bfd9                	c.j	16936 <elf::to_string[abi:cxx11](elf::sht)+0x21a>
+   182ec:	00090593          	addi	a1,s2,0
+   182f0:	811fa0ef          	jal	ra,12b00 <memcpy@plt>
+   182f4:	fc5ff06f          	jal	zero,182b8 <elf::to_string[abi:cxx11](elf::sht)+0x2b8>
       { return _M_dataplus._M_p; }
-   16962:	842a                	c.mv	s0,a0
-   16964:	6502                	c.ldsp	a0,0(sp)
+   182f8:	00050413          	addi	s0,a0,0
+   182fc:	00013503          	ld	a0,0(sp)
 	if (!_M_is_local())
-   16966:	081c                	c.addi4spn	a5,sp,16
-   16968:	00f50463          	beq	a0,a5,16970 <elf::to_string[abi:cxx11](elf::sht)+0x254>
-   1696c:	904fc0ef          	jal	ra,12a70 <operator delete(void*)@plt>
+   18300:	01010793          	addi	a5,sp,16
+   18304:	00f50463          	beq	a0,a5,1830c <elf::to_string[abi:cxx11](elf::sht)+0x30c>
+   18308:	f68fa0ef          	jal	ra,12a70 <operator delete(void*)@plt>
       ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-   16970:	8522                	c.mv	a0,s0
-   16972:	a3efc0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
+   1830c:	00040513          	addi	a0,s0,0
+   18310:	8a1fa0ef          	jal	ra,12bb0 <_Unwind_Resume@plt>
 
-0000000000016976 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)>:
+0000000000018314 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)>:
 #define _ELFPP_TO_HEX_HH_
 
 #include <string>
 #include <type_traits>
 
 template <typename T> std::string to_hex(T v) {
-   16976:	7179                	c.addi16sp	sp,-48
-   16978:	f406                	c.sdsp	ra,40(sp)
-   1697a:	f022                	c.sdsp	s0,32(sp)
-   1697c:	ec26                	c.sdsp	s1,24(sp)
-   1697e:	84aa                	c.mv	s1,a0
+   18314:	fd010113          	addi	sp,sp,-48
+   18318:	02113423          	sd	ra,40(sp)
+   1831c:	02813023          	sd	s0,32(sp)
+   18320:	00913c23          	sd	s1,24(sp)
+   18324:	00050493          	addi	s1,a0,0
   static_assert(std::is_integral<T>::value,
                 "to_hex applied to non-integral type");
   if (v == 0)
-   16980:	c989                	c.beqz	a1,16992 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x1c>
+   18328:	00058c63          	beq	a1,zero,18340 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x2c>
     return std::string("0");
   char buf[sizeof(T) * 2 + 1];
   char *pos = &buf[sizeof(buf) - 1];
   *pos-- = '\0';
-   16982:	00010423          	sb	zero,8(sp)
-   16986:	00710413          	addi	s0,sp,7
+   1832c:	00010423          	sb	zero,8(sp)
+   18330:	00710413          	addi	s0,sp,7
   while (v && pos >= buf) {
     int digit = v & 0xf;
     if (digit < 10)
-   1698a:	46a5                	c.li	a3,9
+   18334:	00900693          	addi	a3,zero,9
   while (v && pos >= buf) {
-   1698c:	fff10613          	addi	a2,sp,-1
-   16990:	a82d                	c.j	169ca <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x54>
+   18338:	fff10613          	addi	a2,sp,-1
+   1833c:	0480006f          	jal	zero,18384 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x70>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   16992:	01050793          	addi	a5,a0,16
+   18340:	01050793          	addi	a5,a0,16
 	: allocator_type(__a), _M_p(__dat) { }
-   16996:	e11c                	c.sd	a5,0(a0)
+   18344:	00f53023          	sd	a5,0(a0)
 	_M_construct(__s, __end, forward_iterator_tag());
-   16998:	4681                	c.li	a3,0
-   1699a:	00001617          	auipc	a2,0x1
-   1699e:	8bf60613          	addi	a2,a2,-1857 # 17259 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x59>
-   169a2:	00001597          	auipc	a1,0x1
-   169a6:	8b658593          	addi	a1,a1,-1866 # 17258 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x58>
-   169aa:	00004317          	auipc	t1,0x4
-   169ae:	80633303          	ld	t1,-2042(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   169b2:	9302                	c.jalr	t1
-   169b4:	a0a1                	c.j	169fc <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x86>
-   169b6:	00e40023          	sb	a4,0(s0)
+   18348:	00000693          	addi	a3,zero,0
+   1834c:	00001617          	auipc	a2,0x1
+   18350:	8dd60613          	addi	a2,a2,-1827 # 18c29 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x59>
+   18354:	00001597          	auipc	a1,0x1
+   18358:	8d458593          	addi	a1,a1,-1836 # 18c28 <typeinfo name for std::_Sp_counted_ptr_inplace<elf::mmap_loader, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>+0x58>
+   1835c:	00004317          	auipc	t1,0x4
+   18360:	e5433303          	ld	t1,-428(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   18364:	000300e7          	jalr	ra,0(t1)
+   18368:	05c0006f          	jal	zero,183c4 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0xb0>
+   1836c:	00e40023          	sb	a4,0(s0)
       *pos = '0' + digit;
     else
       *pos = 'a' + (digit - 10);
     pos--;
-   169ba:	fff40793          	addi	a5,s0,-1
+   18370:	fff40793          	addi	a5,s0,-1
     v >>= 4;
-   169be:	4045d59b          	sraiw	a1,a1,0x4
+   18374:	4045d59b          	sraiw	a1,a1,0x4
   while (v && pos >= buf) {
-   169c2:	cd89                	c.beqz	a1,169dc <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x66>
-   169c4:	00c78c63          	beq	a5,a2,169dc <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x66>
+   18378:	02058063          	beq	a1,zero,18398 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x84>
+   1837c:	00c78e63          	beq	a5,a2,18398 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x84>
     pos--;
-   169c8:	843e                	c.mv	s0,a5
+   18380:	00078413          	addi	s0,a5,0
     int digit = v & 0xf;
-   169ca:	00f5f793          	andi	a5,a1,15
+   18384:	00f5f793          	andi	a5,a1,15
       *pos = 'a' + (digit - 10);
-   169ce:	05778713          	addi	a4,a5,87
+   18388:	05778713          	addi	a4,a5,87
     if (digit < 10)
-   169d2:	fef6c2e3          	blt	a3,a5,169b6 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x40>
+   1838c:	fef6c0e3          	blt	a3,a5,1836c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x58>
       *pos = '0' + digit;
-   169d6:	03078713          	addi	a4,a5,48
-   169da:	bff1                	c.j	169b6 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x40>
+   18390:	03078713          	addi	a4,a5,48
+   18394:	fd9ff06f          	jal	zero,1836c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > to_hex<int>(int)+0x58>
 	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
-   169dc:	01048793          	addi	a5,s1,16
+   18398:	01048793          	addi	a5,s1,16
 	: allocator_type(__a), _M_p(__dat) { }
-   169e0:	e09c                	c.sd	a5,0(s1)
+   1839c:	00f4b023          	sd	a5,0(s1)
 	return __builtin_strlen(__s);
-   169e2:	8522                	c.mv	a0,s0
-   169e4:	fedfb0ef          	jal	ra,129d0 <strlen@plt>
+   183a0:	00040513          	addi	a0,s0,0
+   183a4:	e2cfa0ef          	jal	ra,129d0 <strlen@plt>
 	_M_construct(__s, __end, forward_iterator_tag());
-   169e8:	4681                	c.li	a3,0
-   169ea:	00a40633          	add	a2,s0,a0
-   169ee:	85a2                	c.mv	a1,s0
-   169f0:	8526                	c.mv	a0,s1
-   169f2:	00003317          	auipc	t1,0x3
-   169f6:	7be33303          	ld	t1,1982(t1) # 1a1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x4d32>
-   169fa:	9302                	c.jalr	t1
+   183a8:	00000693          	addi	a3,zero,0
+   183ac:	00a40633          	add	a2,s0,a0
+   183b0:	00040593          	addi	a1,s0,0
+   183b4:	00048513          	addi	a0,s1,0
+   183b8:	00004317          	auipc	t1,0x4
+   183bc:	df833303          	ld	t1,-520(t1) # 1c1b0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@@Base+0x5c74>
+   183c0:	000300e7          	jalr	ra,0(t1)
   }
   return std::string(pos + 1);
 }
-   169fc:	8526                	c.mv	a0,s1
-   169fe:	70a2                	c.ldsp	ra,40(sp)
-   16a00:	7402                	c.ldsp	s0,32(sp)
-   16a02:	64e2                	c.ldsp	s1,24(sp)
-   16a04:	6145                	c.addi16sp	sp,48
-   16a06:	8082                	c.jr	ra
+   183c4:	00048513          	addi	a0,s1,0
+   183c8:	02813083          	ld	ra,40(sp)
+   183cc:	02013403          	ld	s0,32(sp)
+   183d0:	01813483          	ld	s1,24(sp)
+   183d4:	03010113          	addi	sp,sp,48
+   183d8:	00008067          	jalr	zero,0(ra)
 
-0000000000016a08 <__libc_csu_init>:
+00000000000183dc <__libc_csu_init>:
    the libc.a module in that it doesn't call the preinit array.  */
 
 
 void
 __libc_csu_init (int argc, char **argv, char **envp)
 {
-   16a08:	7139                	c.addi16sp	sp,-64
-   16a0a:	f822                	c.sdsp	s0,48(sp)
-   16a0c:	f04a                	c.sdsp	s2,32(sp)
+   183dc:	7139                	c.addi16sp	sp,-64
+   183de:	f822                	c.sdsp	s0,48(sp)
+   183e0:	f04a                	c.sdsp	s2,32(sp)
 
 #if ELF_INITFINI
   _init ();
 #endif
 
   const size_t size = __init_array_end - __init_array_start;
-   16a0e:	00003797          	auipc	a5,0x3
-   16a12:	0da78793          	addi	a5,a5,218 # 19ae8 <__do_global_dtors_aux_fini_array_entry>
-   16a16:	00003417          	auipc	s0,0x3
-   16a1a:	0ca40413          	addi	s0,s0,202 # 19ae0 <__frame_dummy_init_array_entry>
+   183e2:	00003797          	auipc	a5,0x3
+   183e6:	70678793          	addi	a5,a5,1798 # 1bae8 <__do_global_dtors_aux_fini_array_entry>
+   183ea:	00003417          	auipc	s0,0x3
+   183ee:	6f640413          	addi	s0,s0,1782 # 1bae0 <__frame_dummy_init_array_entry>
 {
-   16a1e:	fc06                	c.sdsp	ra,56(sp)
-   16a20:	f426                	c.sdsp	s1,40(sp)
-   16a22:	ec4e                	c.sdsp	s3,24(sp)
-   16a24:	e852                	c.sdsp	s4,16(sp)
-   16a26:	e456                	c.sdsp	s5,8(sp)
+   183f2:	fc06                	c.sdsp	ra,56(sp)
+   183f4:	f426                	c.sdsp	s1,40(sp)
+   183f6:	ec4e                	c.sdsp	s3,24(sp)
+   183f8:	e852                	c.sdsp	s4,16(sp)
+   183fa:	e456                	c.sdsp	s5,8(sp)
   const size_t size = __init_array_end - __init_array_start;
-   16a28:	40878933          	sub	s2,a5,s0
+   183fc:	40878933          	sub	s2,a5,s0
   for (size_t i = 0; i < size; i++)
-   16a2c:	02878163          	beq	a5,s0,16a4e <__libc_csu_init+0x46>
-   16a30:	89aa                	c.mv	s3,a0
-   16a32:	8a2e                	c.mv	s4,a1
-   16a34:	8ab2                	c.mv	s5,a2
-   16a36:	40395913          	srai	s2,s2,0x3
-   16a3a:	4481                	c.li	s1,0
+   18400:	02878163          	beq	a5,s0,18422 <__libc_csu_init+0x46>
+   18404:	89aa                	c.mv	s3,a0
+   18406:	8a2e                	c.mv	s4,a1
+   18408:	8ab2                	c.mv	s5,a2
+   1840a:	40395913          	srai	s2,s2,0x3
+   1840e:	4481                	c.li	s1,0
       (*__init_array_start [i]) (argc, argv, envp);
-   16a3c:	601c                	c.ld	a5,0(s0)
-   16a3e:	8656                	c.mv	a2,s5
-   16a40:	85d2                	c.mv	a1,s4
-   16a42:	854e                	c.mv	a0,s3
+   18410:	601c                	c.ld	a5,0(s0)
+   18412:	8656                	c.mv	a2,s5
+   18414:	85d2                	c.mv	a1,s4
+   18416:	854e                	c.mv	a0,s3
   for (size_t i = 0; i < size; i++)
-   16a44:	0485                	c.addi	s1,1
+   18418:	0485                	c.addi	s1,1
       (*__init_array_start [i]) (argc, argv, envp);
-   16a46:	9782                	c.jalr	a5
+   1841a:	9782                	c.jalr	a5
   for (size_t i = 0; i < size; i++)
-   16a48:	0421                	c.addi	s0,8
-   16a4a:	ff24e9e3          	bltu	s1,s2,16a3c <__libc_csu_init+0x34>
+   1841c:	0421                	c.addi	s0,8
+   1841e:	ff24e9e3          	bltu	s1,s2,18410 <__libc_csu_init+0x34>
 }
-   16a4e:	70e2                	c.ldsp	ra,56(sp)
-   16a50:	7442                	c.ldsp	s0,48(sp)
-   16a52:	74a2                	c.ldsp	s1,40(sp)
-   16a54:	7902                	c.ldsp	s2,32(sp)
-   16a56:	69e2                	c.ldsp	s3,24(sp)
-   16a58:	6a42                	c.ldsp	s4,16(sp)
-   16a5a:	6aa2                	c.ldsp	s5,8(sp)
-   16a5c:	6121                	c.addi16sp	sp,64
-   16a5e:	8082                	c.jr	ra
+   18422:	70e2                	c.ldsp	ra,56(sp)
+   18424:	7442                	c.ldsp	s0,48(sp)
+   18426:	74a2                	c.ldsp	s1,40(sp)
+   18428:	7902                	c.ldsp	s2,32(sp)
+   1842a:	69e2                	c.ldsp	s3,24(sp)
+   1842c:	6a42                	c.ldsp	s4,16(sp)
+   1842e:	6aa2                	c.ldsp	s5,8(sp)
+   18430:	6121                	c.addi16sp	sp,64
+   18432:	8082                	c.jr	ra
 
-0000000000016a60 <__libc_csu_fini>:
+0000000000018434 <__libc_csu_fini>:
 
 # if ELF_INITFINI
   _fini ();
 # endif
 #endif
 }
-   16a60:	8082                	c.jr	ra
+   18434:	8082                	c.jr	ra

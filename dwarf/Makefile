@@ -2,7 +2,7 @@
 # Typically uses the major version.
 SONAME = 0
 
-CXXFLAGS+=-g3 -ggdb3 -gvariable-location-views -gdwarf-4 -grecord-gcc-switches -O1 -Werror
+CXXFLAGS+=-g3 -ggdb3 -gvariable-location-views -gdwarf-4 -grecord-gcc-switches -O1 -Werror -march=rv64g -mabi=lp64d
 override CXXFLAGS+=-std=c++0x -Wall -fPIC
 
 all: libdwarf++.a libdwarf++.so.$(SONAME) libdwarf++.so libdwarf++.pc

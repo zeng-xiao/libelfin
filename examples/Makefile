@@ -1,4 +1,4 @@
-CXXFLAGS+=-g3 -ggdb3 -gvariable-location-views -gdwarf-4 -grecord-gcc-switches -O1 -Werror
+CXXFLAGS+=-g3 -ggdb3 -gvariable-location-views -gdwarf-4 -grecord-gcc-switches -O1 -Werror -march=rv64g -mabi=lp64d
 override CXXFLAGS+=-std=c++0x -Wall
 
 CLEAN :=
