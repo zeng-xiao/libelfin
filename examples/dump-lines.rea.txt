@@ -10,7 +10,7 @@ ELF Header:
   Version:                           0x1
   Entry point address:               0x16800
   Start of program headers:          64 (bytes into file)
-  Start of section headers:          4745032 (bytes into file)
+  Start of section headers:          4744952 (bytes into file)
   Flags:                             0x5, RVC, double-float ABI
   Size of this header:               64 (bytes)
   Size of program headers:           56 (bytes)
@@ -50,19 +50,19 @@ Section Headers:
   [26] .comment          PROGBITS        0000000000000000 032618 00002d 01  MS  0   0  1
   [27] .riscv.attributes RISCV_ATTRIBUTES 0000000000000000 032645 000035 00      0   0  1
   [28] .debug_aranges    PROGBITS        0000000000000000 032680 000ee0 00      0   0 16
-  [29] .debug_info       PROGBITS        0000000000000000 033560 1c36d8 00      0   0  1
-  [30] .debug_abbrev     PROGBITS        0000000000000000 1f6c38 00eca5 00      0   0  1
-  [31] .debug_line       PROGBITS        0000000000000000 2058dd 075b37 00      0   0  1
-  [32] .debug_frame      PROGBITS        0000000000000000 27b418 000068 00      0   0  8
-  [33] .debug_str        PROGBITS        0000000000000000 27b480 098f04 01  MS  0   0  1
-  [34] .debug_loc        PROGBITS        0000000000000000 314384 12c8da 00      0   0  1
-  [35] .debug_ranges     PROGBITS        0000000000000000 440c5e 02a4e0 00      0   0  1
-  [36] .debug_line_str   PROGBITS        0000000000000000 46b13e 00019e 01  MS  0   0  1
-  [37] .debug_loclists   PROGBITS        0000000000000000 46b2dc 00012b 00      0   0  1
-  [38] .debug_macro      PROGBITS        0000000000000000 46b407 00e0ba 00      0   0  1
-  [39] .symtab           SYMTAB          0000000000000000 4794c8 004dd0 18     40 242  8
-  [40] .strtab           STRTAB          0000000000000000 47e298 0082f7 00      0   0  1
-  [41] .shstrtab         STRTAB          0000000000000000 48658f 0001b5 00      0   0  1
+  [29] .debug_info       PROGBITS        0000000000000000 033560 1c36b0 00      0   0  1
+  [30] .debug_abbrev     PROGBITS        0000000000000000 1f6c10 00ec83 00      0   0  1
+  [31] .debug_line       PROGBITS        0000000000000000 205893 075b2f 00      0   0  1
+  [32] .debug_frame      PROGBITS        0000000000000000 27b3c8 000068 00      0   0  8
+  [33] .debug_str        PROGBITS        0000000000000000 27b430 098f04 01  MS  0   0  1
+  [34] .debug_loc        PROGBITS        0000000000000000 314334 12c8da 00      0   0  1
+  [35] .debug_ranges     PROGBITS        0000000000000000 440c0e 02a4e0 00      0   0  1
+  [36] .debug_line_str   PROGBITS        0000000000000000 46b0ee 00019e 01  MS  0   0  1
+  [37] .debug_loclists   PROGBITS        0000000000000000 46b28c 00012b 00      0   0  1
+  [38] .debug_macro      PROGBITS        0000000000000000 46b3b7 00e0ba 00      0   0  1
+  [39] .symtab           SYMTAB          0000000000000000 479478 004dd0 18     40 242  8
+  [40] .strtab           STRTAB          0000000000000000 47e248 0082f7 00      0   0  1
+  [41] .shstrtab         STRTAB          0000000000000000 48653f 0001b5 00      0   0  1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
   L (link order), O (extra OS processing required), G (group), T (TLS),

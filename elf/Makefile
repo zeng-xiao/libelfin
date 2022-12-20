@@ -5,11 +5,24 @@ SONAME = 0
 CXXFLAGS+=-g3 -ggdb3 -gvariable-location-views -gdwarf-4 -grecord-gcc-switches -O1 -Werror -march=rv64g -mabi=lp64d
 override CXXFLAGS+=-std=c++0x -Wall -fPIC
 
-all: libelf++.a libelf++.so libelf++.so.$(SONAME) libelf++.pc
+#objdumpArgs=-drswtaxzDC -M no-aliases
+objdumpArgs=-dwC -M no-aliases -S
+readelfArgs=-adW
+
+SRC=$(wildcard *.cc)
+obj=$(patsubst %.cc, %.obj.S, $(SRC))
+rea=$(patsubst %.cc, %.rea.txt, $(SRC))
+all: libelf++.a libelf++.so libelf++.so.$(SONAME) libelf++.pc $(obj) $(rea)
 
 SRCS := elf.cc mmap_loader.cc to_string.cc
 HDRS := elf++.hh data.hh common.hh to_hex.hh
 CLEAN :=
+
+%.obj.S:%.o
+	riscv64-unknown-linux-gnu-objdump $(objdumpArgs) $^ > $^.obj.S
+
+%.rea.txt:%.o
+	riscv64-unknown-linux-gnu-readelf $(readelfArgs) $^ > $^.rea.txt
 
 libelf++.a: $(SRCS:.cc=.o)
 	ar rcs $@ $^
@@ -68,6 +81,6 @@ install: libelf++.a libelf++.so libelf++.so.$(SONAME) libelf++.pc
 		> $(DESTDIR)$(PREFIX)/lib/pkgconfig/libelf++.pc
 
 clean:
-	rm -f $(CLEAN)
+	rm -f $(CLEAN)  *.obj.S *.rea.txt
 
 .DELETE_ON_ERROR:

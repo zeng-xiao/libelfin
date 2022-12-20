@@ -15,8 +15,8 @@
 
 ELFPP_BEGIN_NAMESPACE
 
-class elf;
-class loader;
+// class elf;
+// class loader;
 class section;
 class strtab;
 class symtab;
@@ -33,6 +33,23 @@ public:
   explicit format_error(const std::string &what_arg)
       : std::runtime_error(what_arg) {}
   explicit format_error(const char *what_arg) : std::runtime_error(what_arg) {}
+};
+
+/**
+ * An interface for loading sections of an ELF file.
+ */
+class loader {
+public:
+  virtual ~loader() {}
+
+  /**
+   * Load the requested file section into memory and return a
+   * pointer to the beginning of it.  This memory must remain
+   * valid and unchanged until the loader is destroyed.  If the
+   * loader cannot satisfy the full request for any reason
+   * (including a premature EOF), it must throw an exception.
+   */
+  virtual const void *load(off_t offset, size_t size) = 0;
 };
 
 /**
@@ -111,23 +128,6 @@ public:
 private:
   struct impl;
   std::shared_ptr<impl> m;
-};
-
-/**
- * An interface for loading sections of an ELF file.
- */
-class loader {
-public:
-  virtual ~loader() {}
-
-  /**
-   * Load the requested file section into memory and return a
-   * pointer to the beginning of it.  This memory must remain
-   * valid and unchanged until the loader is destroyed.  If the
-   * loader cannot satisfy the full request for any reason
-   * (including a premature EOF), it must throw an exception.
-   */
-  virtual const void *load(off_t offset, size_t size) = 0;
 };
 
 /**

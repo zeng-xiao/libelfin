@@ -1,0 +1,540 @@
+
+dump-segments.o:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+#include <fcntl.h>
+#include <inttypes.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+
+int main(int argc, char **argv) {
+   0:	f7010113          	addi	sp,sp,-144
+   4:	08113423          	sd	ra,136(sp)
+   8:	08813023          	sd	s0,128(sp)
+   c:	06913c23          	sd	s1,120(sp)
+  10:	07213823          	sd	s2,112(sp)
+  14:	07313423          	sd	s3,104(sp)
+  18:	07413023          	sd	s4,96(sp)
+  1c:	05513c23          	sd	s5,88(sp)
+  20:	05613823          	sd	s6,80(sp)
+  24:	05713423          	sd	s7,72(sp)
+  28:	05813023          	sd	s8,64(sp)
+  2c:	00058413          	addi	s0,a1,0
+
+0000000000000030 <.LM51>:
+  if (argc != 2) {
+  30:	00200793          	addi	a5,zero,2
+  34:	02f51e63          	bne	a0,a5,70 <.L34>
+
+0000000000000038 <.LM52>:
+    fprintf(stderr, "usage: %s elf-file\n", argv[0]);
+    return 2;
+  }
+
+  int fd = open(argv[1], O_RDONLY);
+  38:	00000593          	addi	a1,zero,0
+
+000000000000003c <.LM54>:
+  3c:	00843503          	ld	a0,8(s0)
+
+0000000000000040 <.LEHB0>:
+  40:	00000097          	auipc	ra,0x0
+  44:	000080e7          	jalr	ra,0(ra) # 40 <.LEHB0>
+
+0000000000000048 <.LVL20>:
+  48:	00050593          	addi	a1,a0,0
+
+000000000000004c <.LM56>:
+  if (fd < 0) {
+  4c:	04054463          	blt	a0,zero,94 <.L35>
+
+0000000000000050 <.LM57>:
+    fprintf(stderr, "%s: %s\n", argv[1], strerror(errno));
+    return 1;
+  }
+
+  elf::elf f(elf::create_mmap_loader(fd));
+  50:	03010513          	addi	a0,sp,48
+
+0000000000000054 <.LM59>:
+  54:	00000097          	auipc	ra,0x0
+  58:	000080e7          	jalr	ra,0(ra) # 54 <.LM59>
+
+000000000000005c <.LEHE0>:
+  5c:	03010593          	addi	a1,sp,48
+  60:	02010513          	addi	a0,sp,32
+
+0000000000000064 <.LEHB1>:
+  64:	00000097          	auipc	ra,0x0
+  68:	000080e7          	jalr	ra,0(ra) # 64 <.LEHB1>
+
+000000000000006c <.LEHE1>:
+  6c:	06c0006f          	jal	zero,d8 <.L36>
+
+0000000000000070 <.L34>:
+    fprintf(stderr, "usage: %s elf-file\n", argv[0]);
+  70:	0005b603          	ld	a2,0(a1)
+  74:	000005b7          	lui	a1,0x0
+  78:	00058593          	addi	a1,a1,0 # 0 <main>
+  7c:	000007b7          	lui	a5,0x0
+  80:	0007b503          	ld	a0,0(a5) # 0 <main>
+
+0000000000000084 <.LEHB2>:
+  84:	00000097          	auipc	ra,0x0
+  88:	000080e7          	jalr	ra,0(ra) # 84 <.LEHB2>
+
+000000000000008c <.LM64>:
+    return 2;
+  8c:	00200513          	addi	a0,zero,2
+  90:	1a00006f          	jal	zero,230 <.L32>
+
+0000000000000094 <.L35>:
+    fprintf(stderr, "%s: %s\n", argv[1], strerror(errno));
+  94:	000007b7          	lui	a5,0x0
+  98:	0007b483          	ld	s1,0(a5) # 0 <main>
+  9c:	00843403          	ld	s0,8(s0)
+
+00000000000000a0 <.LM68>:
+  a0:	00000097          	auipc	ra,0x0
+  a4:	000080e7          	jalr	ra,0(ra) # a0 <.LM68>
+
+00000000000000a8 <.LM69>:
+  a8:	00052503          	lw	a0,0(a0)
+  ac:	00000097          	auipc	ra,0x0
+  b0:	000080e7          	jalr	ra,0(ra) # ac <.LM69+0x4>
+
+00000000000000b4 <.LVL31>:
+  b4:	00050693          	addi	a3,a0,0
+  b8:	00040613          	addi	a2,s0,0
+  bc:	000005b7          	lui	a1,0x0
+  c0:	00058593          	addi	a1,a1,0 # 0 <main>
+  c4:	00048513          	addi	a0,s1,0
+  c8:	00000097          	auipc	ra,0x0
+  cc:	000080e7          	jalr	ra,0(ra) # c8 <.LVL31+0x14>
+
+00000000000000d0 <.LEHE2>:
+    return 1;
+  d0:	00100513          	addi	a0,zero,1
+  d4:	15c0006f          	jal	zero,230 <.L32>
+
+00000000000000d8 <.L36>:
+      explicit
+      __shared_count(const __weak_count<_Lp>& __r, std::nothrow_t) noexcept;
+
+      ~__shared_count() noexcept
+      {
+	if (_M_pi != nullptr)
+  d8:	03813503          	ld	a0,56(sp)
+
+00000000000000dc <.LM76>:
+  dc:	00050663          	beq	a0,zero,e8 <.L13>
+
+00000000000000e0 <.LM77>:
+	  _M_pi->_M_release();
+  e0:	00000097          	auipc	ra,0x0
+  e4:	000080e7          	jalr	ra,0(ra) # e0 <.LM77>
+
+00000000000000e8 <.L13>:
+  printf("  %-16s  %-16s   %-16s   %s\n", "Type", "Offset", "VirtAddr",
+  e8:	00000737          	lui	a4,0x0
+  ec:	00070713          	addi	a4,a4,0 # 0 <main>
+  f0:	000006b7          	lui	a3,0x0
+  f4:	00068693          	addi	a3,a3,0 # 0 <main>
+  f8:	00000637          	lui	a2,0x0
+  fc:	00060613          	addi	a2,a2,0 # 0 <main>
+ 100:	000005b7          	lui	a1,0x0
+ 104:	00058593          	addi	a1,a1,0 # 0 <main>
+ 108:	00000537          	lui	a0,0x0
+ 10c:	00050513          	addi	a0,a0,0 # 0 <main>
+
+0000000000000110 <.LEHB3>:
+ 110:	00000097          	auipc	ra,0x0
+ 114:	000080e7          	jalr	ra,0(ra) # 110 <.LEHB3>
+
+0000000000000118 <.LM81>:
+         "PhysAddr");
+  printf("  %-16s  %-16s   %-16s  %6s %5s\n", " ", "FileSiz", "MemSiz", "Flags",
+ 118:	000007b7          	lui	a5,0x0
+ 11c:	00078793          	addi	a5,a5,0 # 0 <main>
+ 120:	00000737          	lui	a4,0x0
+ 124:	00070713          	addi	a4,a4,0 # 0 <main>
+ 128:	000006b7          	lui	a3,0x0
+ 12c:	00068693          	addi	a3,a3,0 # 0 <main>
+ 130:	00000637          	lui	a2,0x0
+ 134:	00060613          	addi	a2,a2,0 # 0 <main>
+ 138:	000005b7          	lui	a1,0x0
+ 13c:	00058593          	addi	a1,a1,0 # 0 <main>
+ 140:	00000537          	lui	a0,0x0
+ 144:	00050513          	addi	a0,a0,0 # 0 <main>
+ 148:	00000097          	auipc	ra,0x0
+ 14c:	000080e7          	jalr	ra,0(ra) # 148 <.LM81+0x30>
+
+0000000000000150 <.LBB272>:
+         "Align");
+  for (auto &seg : f.segments()) {
+ 150:	02010513          	addi	a0,sp,32
+ 154:	00000097          	auipc	ra,0x0
+ 158:	000080e7          	jalr	ra,0(ra) # 154 <.LBB272+0x4>
+
+000000000000015c <.LBB273>:
+      _GLIBCXX_CONSTEXPR __normal_iterator() _GLIBCXX_NOEXCEPT
+      : _M_current(_Iterator()) { }
+
+      explicit _GLIBCXX20_CONSTEXPR
+      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+      : _M_current(__i) { }
+ 15c:	00053483          	ld	s1,0(a0)
+
+0000000000000160 <.LBB276>:
+ 160:	00853a83          	ld	s5,8(a0)
+
+0000000000000164 <.LBE276>:
+ 164:	0b548c63          	beq	s1,s5,21c <.L14>
+
+0000000000000168 <.LBB279>:
+    auto &hdr = seg.get_hdr();
+    printf("   %-16s 0x%016" PRIx64 " 0x%016" PRIx64 " 0x%016" PRIx64 "\n",
+ 168:	00000b37          	lui	s6,0x0
+
+000000000000016c <.LBB280>:
+
+      _GLIBCXX20_CONSTEXPR
+      void
+      _M_dispose()
+      {
+	if (!_M_is_local())
+ 16c:	01010913          	addi	s2,sp,16
+
+0000000000000170 <.LBE280>:
+           to_string(hdr.type).c_str(), hdr.offset, hdr.vaddr, hdr.paddr);
+    printf("   %-16s 0x%016" PRIx64 " 0x%016" PRIx64 " %-5s %-5" PRIx64 "\n",
+ 170:	00000bb7          	lui	s7,0x0
+ 174:	00000c37          	lui	s8,0x0
+ 178:	0940006f          	jal	zero,20c <.L17>
+
+000000000000017c <.L37>:
+    auto &hdr = seg.get_hdr();
+ 17c:	00050413          	addi	s0,a0,0
+
+0000000000000180 <.LM98>:
+           to_string(hdr.type).c_str(), hdr.offset, hdr.vaddr, hdr.paddr);
+ 180:	00052583          	lw	a1,0(a0)
+ 184:	00010513          	addi	a0,sp,0
+ 188:	00000097          	auipc	ra,0x0
+ 18c:	000080e7          	jalr	ra,0(ra) # 188 <.LM98+0x8>
+
+0000000000000190 <.LBB299>:
+    printf("   %-16s 0x%016" PRIx64 " 0x%016" PRIx64 " 0x%016" PRIx64 "\n",
+ 190:	01843703          	ld	a4,24(s0)
+ 194:	01043683          	ld	a3,16(s0)
+ 198:	00843603          	ld	a2,8(s0)
+ 19c:	00013583          	ld	a1,0(sp)
+ 1a0:	000b0513          	addi	a0,s6,0 # 0 <main>
+
+00000000000001a4 <.LEHB4>:
+ 1a4:	00000097          	auipc	ra,0x0
+ 1a8:	000080e7          	jalr	ra,0(ra) # 1a4 <.LEHB4>
+
+00000000000001ac <.LBB284>:
+      { return _M_dataplus._M_p; }
+ 1ac:	00013503          	ld	a0,0(sp)
+
+00000000000001b0 <.LBB287>:
+	if (!_M_is_local())
+ 1b0:	01250663          	beq	a0,s2,1bc <.L15>
+
+00000000000001b4 <.LBB288>:
+	    _GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n),
+				     std::align_val_t(alignof(_Tp)));
+	    return;
+	  }
+#endif
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+ 1b4:	00000097          	auipc	ra,0x0
+ 1b8:	000080e7          	jalr	ra,0(ra) # 1b4 <.LBB288>
+
+00000000000001bc <.L15>:
+           "", hdr.filesz, hdr.memsz, to_string(hdr.flags).c_str(), hdr.align);
+ 1bc:	02043983          	ld	s3,32(s0)
+
+00000000000001c0 <.LM124>:
+ 1c0:	02843a03          	ld	s4,40(s0)
+
+00000000000001c4 <.LM125>:
+ 1c4:	00442583          	lw	a1,4(s0)
+ 1c8:	00010513          	addi	a0,sp,0
+
+00000000000001cc <.LEHB5>:
+ 1cc:	00000097          	auipc	ra,0x0
+ 1d0:	000080e7          	jalr	ra,0(ra) # 1cc <.LEHB5>
+
+00000000000001d4 <.LBB302>:
+    printf("   %-16s 0x%016" PRIx64 " 0x%016" PRIx64 " %-5s %-5" PRIx64 "\n",
+ 1d4:	03043783          	ld	a5,48(s0)
+ 1d8:	00013703          	ld	a4,0(sp)
+ 1dc:	000a0693          	addi	a3,s4,0
+ 1e0:	00098613          	addi	a2,s3,0
+ 1e4:	000b8593          	addi	a1,s7,0 # 0 <main>
+ 1e8:	000c0513          	addi	a0,s8,0 # 0 <main>
+
+00000000000001ec <.LEHB6>:
+ 1ec:	00000097          	auipc	ra,0x0
+ 1f0:	000080e7          	jalr	ra,0(ra) # 1ec <.LEHB6>
+
+00000000000001f4 <.LBB304>:
+      { return _M_dataplus._M_p; }
+ 1f4:	00013503          	ld	a0,0(sp)
+
+00000000000001f8 <.LBB311>:
+	if (!_M_is_local())
+ 1f8:	01250663          	beq	a0,s2,204 <.L16>
+
+00000000000001fc <.LBB312>:
+ 1fc:	00000097          	auipc	ra,0x0
+ 200:	000080e7          	jalr	ra,0(ra) # 1fc <.LBB312>
+
+0000000000000204 <.L16>:
+  for (auto &seg : f.segments()) {
+ 204:	01048493          	addi	s1,s1,16
+
+0000000000000208 <.LM150>:
+ 208:	009a8a63          	beq	s5,s1,21c <.L14>
+
+000000000000020c <.L17>:
+    auto &hdr = seg.get_hdr();
+ 20c:	00048513          	addi	a0,s1,0
+
+0000000000000210 <.LEHB7>:
+ 210:	00000097          	auipc	ra,0x0
+ 214:	000080e7          	jalr	ra,0(ra) # 210 <.LEHB7>
+
+0000000000000218 <.LEHE7>:
+ 218:	f65ff06f          	jal	zero,17c <.L37>
+
+000000000000021c <.L14>:
+	if (_M_pi != nullptr)
+ 21c:	02813503          	ld	a0,40(sp)
+
+0000000000000220 <.LM161>:
+ 220:	00050663          	beq	a0,zero,22c <.L18>
+
+0000000000000224 <.LM162>:
+	  _M_pi->_M_release();
+ 224:	00000097          	auipc	ra,0x0
+ 228:	000080e7          	jalr	ra,0(ra) # 224 <.LM162>
+
+000000000000022c <.L18>:
+  }
+
+  return 0;
+ 22c:	00000513          	addi	a0,zero,0
+
+0000000000000230 <.L32>:
+}
+ 230:	08813083          	ld	ra,136(sp)
+ 234:	08013403          	ld	s0,128(sp)
+ 238:	07813483          	ld	s1,120(sp)
+ 23c:	07013903          	ld	s2,112(sp)
+ 240:	06813983          	ld	s3,104(sp)
+ 244:	06013a03          	ld	s4,96(sp)
+ 248:	05813a83          	ld	s5,88(sp)
+ 24c:	05013b03          	ld	s6,80(sp)
+ 250:	04813b83          	ld	s7,72(sp)
+ 254:	04013c03          	ld	s8,64(sp)
+ 258:	09010113          	addi	sp,sp,144
+ 25c:	00008067          	jalr	zero,0(ra)
+
+0000000000000260 <.L27>:
+	if (_M_pi != nullptr)
+ 260:	00050413          	addi	s0,a0,0
+
+0000000000000264 <.LBB385>:
+ 264:	03813503          	ld	a0,56(sp)
+
+0000000000000268 <.LM172>:
+ 268:	00050663          	beq	a0,zero,274 <.L20>
+
+000000000000026c <.LM173>:
+	  _M_pi->_M_release();
+ 26c:	00000097          	auipc	ra,0x0
+ 270:	000080e7          	jalr	ra,0(ra) # 26c <.LM173>
+
+0000000000000274 <.L20>:
+ 274:	00040513          	addi	a0,s0,0
+
+0000000000000278 <.LEHB8>:
+ 278:	00000097          	auipc	ra,0x0
+ 27c:	000080e7          	jalr	ra,0(ra) # 278 <.LEHB8>
+
+0000000000000280 <.L29>:
+      { return _M_dataplus._M_p; }
+ 280:	00050413          	addi	s0,a0,0
+
+0000000000000284 <.LBB328>:
+ 284:	00013503          	ld	a0,0(sp)
+
+0000000000000288 <.LBB329>:
+	if (!_M_is_local())
+ 288:	01010793          	addi	a5,sp,16
+ 28c:	00f50663          	beq	a0,a5,298 <.L23>
+
+0000000000000290 <.LBB331>:
+ 290:	00000097          	auipc	ra,0x0
+ 294:	000080e7          	jalr	ra,0(ra) # 290 <.LBB331>
+
+0000000000000298 <.L23>:
+	if (_M_pi != nullptr)
+ 298:	02813503          	ld	a0,40(sp)
+
+000000000000029c <.LM201>:
+ 29c:	00050663          	beq	a0,zero,2a8 <.L26>
+
+00000000000002a0 <.LM202>:
+	  _M_pi->_M_release();
+ 2a0:	00000097          	auipc	ra,0x0
+ 2a4:	000080e7          	jalr	ra,0(ra) # 2a0 <.LM202>
+
+00000000000002a8 <.L26>:
+ 2a8:	00040513          	addi	a0,s0,0
+ 2ac:	00000097          	auipc	ra,0x0
+ 2b0:	000080e7          	jalr	ra,0(ra) # 2ac <.L26+0x4>
+
+00000000000002b4 <.L30>:
+      { return _M_dataplus._M_p; }
+ 2b4:	00050413          	addi	s0,a0,0
+
+00000000000002b8 <.LBB350>:
+ 2b8:	00013503          	ld	a0,0(sp)
+
+00000000000002bc <.LBB351>:
+	if (!_M_is_local())
+ 2bc:	01010793          	addi	a5,sp,16
+ 2c0:	fcf50ce3          	beq	a0,a5,298 <.L23>
+
+00000000000002c4 <.LBB353>:
+ 2c4:	00000097          	auipc	ra,0x0
+ 2c8:	000080e7          	jalr	ra,0(ra) # 2c4 <.LBB353>
+
+00000000000002cc <.LBB359>:
+      }
+
+      _GLIBCXX20_CONSTEXPR
+      void
+      _M_destroy(size_type __size) throw()
+      { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
+ 2cc:	fcdff06f          	jal	zero,298 <.L23>
+
+00000000000002d0 <.L28>:
+	if (_M_pi != nullptr)
+ 2d0:	00050413          	addi	s0,a0,0
+ 2d4:	fc5ff06f          	jal	zero,298 <.L23>
+
+Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv:
+
+0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>:
+    {
+   0:	ff010113          	addi	sp,sp,-16
+   4:	00113423          	sd	ra,8(sp)
+   8:	00813023          	sd	s0,0(sp)
+   c:	00050413          	addi	s0,a0,0
+
+0000000000000010 <.LBB247>:
+
+  inline _Atomic_word
+  __attribute__ ((__always_inline__))
+  __exchange_and_add_dispatch(_Atomic_word* __mem, int __val)
+  {
+    if (__is_single_threaded())
+  10:	000007b7          	lui	a5,0x0
+  14:	0007c783          	lbu	a5,0(a5) # 0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
+  18:	02078463          	beq	a5,zero,40 <.L2>
+
+000000000000001c <.LBB251>:
+    _Atomic_word __result = *__mem;
+  1c:	03052503          	lw	a0,48(a0)
+
+0000000000000020 <.LM14>:
+    *__mem += __val;
+  20:	fff5079b          	addiw	a5,a0,-1
+  24:	02f42823          	sw	a5,48(s0)
+
+0000000000000028 <.L3>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+  28:	00100793          	addi	a5,zero,1
+  2c:	02f50463          	beq	a0,a5,54 <.L8>
+
+0000000000000030 <.L1>:
+    }
+  30:	00813083          	ld	ra,8(sp)
+  34:	00013403          	ld	s0,0(sp)
+
+0000000000000038 <.LM20>:
+  38:	01010113          	addi	sp,sp,16
+  3c:	00008067          	jalr	zero,0(ra)
+
+0000000000000040 <.L2>:
+      return __exchange_and_add_single(__mem, __val);
+    else
+      return __exchange_and_add(__mem, __val);
+  40:	fff00593          	addi	a1,zero,-1
+  44:	03050513          	addi	a0,a0,48
+  48:	00000097          	auipc	ra,0x0
+  4c:	000080e7          	jalr	ra,0(ra) # 48 <.L2+0x8>
+
+0000000000000050 <.LM23>:
+  50:	fd9ff06f          	jal	zero,28 <.L3>
+
+0000000000000054 <.L8>:
+	_M_dispose();
+  54:	00043783          	ld	a5,0(s0)
+  58:	0107b783          	ld	a5,16(a5)
+  5c:	00040513          	addi	a0,s0,0
+  60:	000780e7          	jalr	ra,0(a5)
+
+0000000000000064 <.LM28>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+  64:	0ff0000f          	fence	iorw,iorw
+
+0000000000000068 <.LBB257>:
+    if (__is_single_threaded())
+  68:	000007b7          	lui	a5,0x0
+  6c:	0007c783          	lbu	a5,0(a5) # 0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
+  70:	02078663          	beq	a5,zero,9c <.L5>
+
+0000000000000074 <.LBB261>:
+    _Atomic_word __result = *__mem;
+  74:	03442503          	lw	a0,52(s0)
+
+0000000000000078 <.LM38>:
+    *__mem += __val;
+  78:	fff5079b          	addiw	a5,a0,-1
+  7c:	02f42a23          	sw	a5,52(s0)
+
+0000000000000080 <.L6>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+  80:	00100793          	addi	a5,zero,1
+  84:	faf516e3          	bne	a0,a5,30 <.L1>
+
+0000000000000088 <.LM43>:
+	    _M_destroy();
+  88:	00043783          	ld	a5,0(s0)
+  8c:	0187b783          	ld	a5,24(a5)
+  90:	00040513          	addi	a0,s0,0
+  94:	000780e7          	jalr	ra,0(a5)
+
+0000000000000098 <.LBE255>:
+    }
+  98:	f99ff06f          	jal	zero,30 <.L1>
+
+000000000000009c <.L5>:
+      return __exchange_and_add(__mem, __val);
+  9c:	fff00593          	addi	a1,zero,-1
+  a0:	03440513          	addi	a0,s0,52
+  a4:	00000097          	auipc	ra,0x0
+  a8:	000080e7          	jalr	ra,0(ra) # a4 <.L5+0x8>
+
+00000000000000ac <.LM48>:
+  ac:	fd5ff06f          	jal	zero,80 <.L6>

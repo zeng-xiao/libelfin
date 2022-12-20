@@ -7,7 +7,7 @@ all-x86_64:
 	$(MAKE) -j$(shell nproc) -C examples
 
 all-riscv:
-	$(MAKE) -j$(shell nproc) -C  elf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++
+	$(MAKE) -j$(shell nproc) -C elf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++
 	$(MAKE) -j$(shell nproc) -C dwarf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++
 	$(MAKE) -j$(shell nproc) -C examples CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++
 
