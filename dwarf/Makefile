@@ -9,6 +9,10 @@ override CXXFLAGS+=-std=c++0x -Wall -fPIC
 objdumpArgs=-dwC -M no-aliases -S
 readelfArgs=-adW
 
+SRC=$(wildcard *.cc)
+obj=$(patsubst %.cc, %.obj.S, $(SRC))
+rea=$(patsubst %.cc, %.rea.txt, $(SRC))
+
 all: libdwarf++.a libdwarf++.so.$(SONAME) libdwarf++.so libdwarf++.pc $(obj) $(rea)
 
 SRCS := dwarf.cc cursor.cc die.cc value.cc abbrev.cc \
@@ -16,10 +20,6 @@ SRCS := dwarf.cc cursor.cc die.cc value.cc abbrev.cc \
 	die_str_map.cc elf.cc to_string.cc
 HDRS := dwarf++.hh data.hh internal.hh small_vector.hh ../elf/to_hex.hh
 CLEAN :=
-
-SRC=$(wildcard *.cc)
-obj=$(patsubst %.cc, %.obj.S, $(SRC))
-rea=$(patsubst %.cc, %.rea.txt, $(SRC))
 
 libdwarf++.a: $(SRCS:.cc=.o)
 	ar rcs $@ $^
@@ -46,6 +46,7 @@ to_string.cc: ../elf/enum-print.py dwarf++.hh data.hh Makefile
 CLEAN += to_string.cc
 
 libdwarf++.so.$(SONAME): $(SRCS:.cc=.o)
+	echo $(obj)
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) -shared -Wl,-soname,$@ -o $@ $^
 CLEAN += libdwarf++.so.*
 
