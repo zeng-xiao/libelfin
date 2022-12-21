@@ -2,16 +2,18 @@
 # Typically uses the major version.
 SONAME = 0
 
-CXXFLAGS+=-g3 -ggdb3 -gvariable-location-views -gdwarf-4 -grecord-gcc-switches -O1 -Werror -march=rv64g -mabi=lp64d
+CXXFLAGS+=-g3 -ggdb3 -gvariable-location-views -gdwarf-4 -grecord-gcc-switches -O1 -Werror
 override CXXFLAGS+=-std=c++0x -Wall -fPIC
 
 #objdumpArgs=-drswtaxzDC -M no-aliases
 objdumpArgs=-dwC -M no-aliases -S
 readelfArgs=-adW
 
+ifeq ($(findstring rv64, $(CXXFLAGS)), rv64)
 SRC=$(wildcard *.cc)
 obj=$(patsubst %.cc, %.obj.S, $(SRC))
 rea=$(patsubst %.cc, %.rea.txt, $(SRC))
+endif
 
 all: libdwarf++.a libdwarf++.so.$(SONAME) libdwarf++.so libdwarf++.pc $(obj) $(rea)
 
@@ -29,7 +31,6 @@ $(SRCS:.cc=.o): $(HDRS)
 
 %.obj.S:%.o
 	riscv64-unknown-linux-gnu-objdump $(objdumpArgs) $^ > $^.obj.S
-
 %.rea.txt:%.o
 	riscv64-unknown-linux-gnu-readelf $(readelfArgs) $^ > $^.rea.txt
 to_string.cc: ../elf/enum-print.py dwarf++.hh data.hh Makefile
