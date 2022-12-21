@@ -10,7 +10,7 @@ ELF Header:
   Version:                           0x1
   Entry point address:               0x0
   Start of program headers:          0 (bytes into file)
-  Start of section headers:          4112 (bytes into file)
+  Start of section headers:          4536 (bytes into file)
   Flags:                             0x4, double-float ABI
   Size of this header:               64 (bytes)
   Size of program headers:           0 (bytes)
@@ -23,20 +23,20 @@ Section Headers:
   [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al
   [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0
   [ 1] .text             PROGBITS        0000000000000000 000040 000140 00  AX  0   0  4
-  [ 2] .rela.text        RELA            0000000000000000 000a40 000330 18   I 13   1  8
+  [ 2] .rela.text        RELA            0000000000000000 000b70 000330 18   I 13   1  8
   [ 3] .data             PROGBITS        0000000000000000 000180 000000 00  WA  0   0  1
   [ 4] .bss              NOBITS          0000000000000000 000180 000000 00  WA  0   0  1
-  [ 5] .rodata           PROGBITS        0000000000000000 000180 0000d5 00   A  0   0  8
-  [ 6] .data.rel.ro.local PROGBITS        0000000000000000 000258 0000c0 00  WA  0   0  8
-  [ 7] .rela.data.rel.ro.local RELA            0000000000000000 000d70 000120 18   I 13   6  8
-  [ 8] .comment          PROGBITS        0000000000000000 000318 00001c 01  MS  0   0  1
-  [ 9] .note.GNU-stack   PROGBITS        0000000000000000 000334 000000 00      0   0  1
-  [10] .eh_frame         PROGBITS        0000000000000000 000338 000060 00   A  0   0  8
-  [11] .rela.eh_frame    RELA            0000000000000000 000e90 0000f0 18   I 13  10  8
-  [12] .riscv.attributes RISCV_ATTRIBUTES 0000000000000000 000398 000030 00      0   0  1
-  [13] .symtab           SYMTAB          0000000000000000 0003c8 000510 18     14  51  8
-  [14] .strtab           STRTAB          0000000000000000 0008d8 000161 00      0   0  1
-  [15] .shstrtab         STRTAB          0000000000000000 000f80 00008b 00      0   0  1
+  [ 5] .rodata           PROGBITS        0000000000000000 000180 000128 00   A  0   0  8
+  [ 6] .data.rel.ro.local PROGBITS        0000000000000000 0002a8 000110 00  WA  0   0  8
+  [ 7] .rela.data.rel.ro.local RELA            0000000000000000 000ea0 000198 18   I 13   6  8
+  [ 8] .comment          PROGBITS        0000000000000000 0003b8 00001c 01  MS  0   0  1
+  [ 9] .note.GNU-stack   PROGBITS        0000000000000000 0003d4 000000 00      0   0  1
+  [10] .eh_frame         PROGBITS        0000000000000000 0003d8 000060 00   A  0   0  8
+  [11] .rela.eh_frame    RELA            0000000000000000 001038 0000f0 18   I 13  10  8
+  [12] .riscv.attributes RISCV_ATTRIBUTES 0000000000000000 000438 000030 00      0   0  1
+  [13] .symtab           SYMTAB          0000000000000000 000468 000588 18     14  56  8
+  [14] .strtab           STRTAB          0000000000000000 0009f0 00017f 00      0   0  1
+  [15] .shstrtab         STRTAB          0000000000000000 001128 00008b 00      0   0  1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
   L (link order), O (extra OS processing required), G (group), T (TLS),
@@ -49,7 +49,7 @@ There are no program headers in this file.
 
 There is no dynamic section in this file.
 
-Relocation section '.rela.text' at offset 0xa40 contains 34 entries:
+Relocation section '.rela.text' at offset 0xb70 contains 34 entries:
     Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
 0000000000000018  0000000b00000017 R_RISCV_PCREL_HI20     0000000000000000 _ZN5dwarfL8sectionsE + 0
 0000000000000018  0000000000000033 R_RISCV_RELAX                             0
@@ -59,12 +59,12 @@ Relocation section '.rela.text' at offset 0xa40 contains 34 entries:
 0000000000000024  0000000000000033 R_RISCV_RELAX                             0
 0000000000000028  0000001700000018 R_RISCV_PCREL_LO12_I   0000000000000024 .L0  + 0
 0000000000000028  0000000000000033 R_RISCV_RELAX                             0
-0000000000000030  0000000b00000017 R_RISCV_PCREL_HI20     0000000000000000 _ZN5dwarfL8sectionsE + c0
-0000000000000030  0000000000000033 R_RISCV_RELAX                             c0
+0000000000000030  0000000b00000017 R_RISCV_PCREL_HI20     0000000000000000 _ZN5dwarfL8sectionsE + 110
+0000000000000030  0000000000000033 R_RISCV_RELAX                             110
 0000000000000034  0000001800000018 R_RISCV_PCREL_LO12_I   0000000000000030 .L0  + 0
 0000000000000034  0000000000000033 R_RISCV_RELAX                             0
 000000000000003c  0000001c00000011 R_RISCV_JAL            000000000000008c .L2 + 0
-0000000000000058  0000003400000013 R_RISCV_CALL_PLT       0000000000000000 strcmp + 0
+0000000000000058  0000003900000013 R_RISCV_CALL_PLT       0000000000000000 strcmp + 0
 0000000000000058  0000000000000033 R_RISCV_RELAX                             0
 0000000000000064  0000001d00000010 R_RISCV_BRANCH         0000000000000080 .L3 + 0
 000000000000007c  0000001e00000011 R_RISCV_JAL            000000000000009c .L4 + 0
@@ -77,8 +77,8 @@ Relocation section '.rela.text' at offset 0xa40 contains 34 entries:
 00000000000000d0  0000000000000033 R_RISCV_RELAX                             0
 00000000000000d4  0000001a00000018 R_RISCV_PCREL_LO12_I   00000000000000d0 .L0  + 0
 00000000000000d4  0000000000000033 R_RISCV_RELAX                             0
-00000000000000dc  0000000b00000017 R_RISCV_PCREL_HI20     0000000000000000 _ZN5dwarfL8sectionsE + c0
-00000000000000dc  0000000000000033 R_RISCV_RELAX                             c0
+00000000000000dc  0000000b00000017 R_RISCV_PCREL_HI20     0000000000000000 _ZN5dwarfL8sectionsE + 110
+00000000000000dc  0000000000000033 R_RISCV_RELAX                             110
 00000000000000e0  0000001b00000018 R_RISCV_PCREL_LO12_I   00000000000000dc .L0  + 0
 00000000000000e0  0000000000000033 R_RISCV_RELAX                             0
 00000000000000e8  0000002000000011 R_RISCV_JAL            0000000000000120 .L7 + 0
@@ -86,7 +86,7 @@ Relocation section '.rela.text' at offset 0xa40 contains 34 entries:
 0000000000000110  0000002200000011 R_RISCV_JAL            0000000000000130 .L9 + 0
 0000000000000128  0000002300000010 R_RISCV_BRANCH         00000000000000ec .L10 + 0
 
-Relocation section '.rela.data.rel.ro.local' at offset 0xd70 contains 12 entries:
+Relocation section '.rela.data.rel.ro.local' at offset 0xea0 contains 17 entries:
     Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
 0000000000000000  0000002400000002 R_RISCV_64             0000000000000018 .LC0 + 0
 0000000000000010  0000002500000002 R_RISCV_64             0000000000000028 .LC1 + 0
@@ -100,8 +100,13 @@ Relocation section '.rela.data.rel.ro.local' at offset 0xd70 contains 12 entries
 0000000000000090  0000002d00000002 R_RISCV_64             00000000000000a8 .LC9 + 0
 00000000000000a0  0000002e00000002 R_RISCV_64             00000000000000b8 .LC10 + 0
 00000000000000b0  0000002f00000002 R_RISCV_64             00000000000000c8 .LC11 + 0
+00000000000000c0  0000003000000002 R_RISCV_64             00000000000000d8 .LC12 + 0
+00000000000000d0  0000003100000002 R_RISCV_64             00000000000000e8 .LC13 + 0
+00000000000000e0  0000003200000002 R_RISCV_64             00000000000000f8 .LC14 + 0
+00000000000000f0  0000003300000002 R_RISCV_64             0000000000000108 .LC15 + 0
+0000000000000100  0000003400000002 R_RISCV_64             0000000000000118 .LC16 + 0
 
-Relocation section '.rela.eh_frame' at offset 0xe90 contains 10 entries:
+Relocation section '.rela.eh_frame' at offset 0x1038 contains 10 entries:
     Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
 000000000000001c  0000000c00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
 0000000000000020  0000001000000023 R_RISCV_ADD32          00000000000000b0 .L0  + 0
@@ -116,7 +121,7 @@ Relocation section '.rela.eh_frame' at offset 0xe90 contains 10 entries:
 
 The decoding of unwind sections for machine type RISC-V is not currently supported.
 
-Symbol table '.symtab' contains 54 entries:
+Symbol table '.symtab' contains 59 entries:
    Num:    Value          Size Type    Bind   Vis      Ndx Name
      0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
      1: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS elf.cc
@@ -129,7 +134,7 @@ Symbol table '.symtab' contains 54 entries:
      8: 0000000000000010     1 OBJECT  LOCAL  DEFAULT    5 _ZStL6ignore
      9: 0000000000000014     4 OBJECT  LOCAL  DEFAULT    5 _ZN9__gnu_cxxL21__default_lock_policyE
     10: 0000000000000000     0 SECTION LOCAL  DEFAULT    6 .data.rel.ro.local
-    11: 0000000000000000   192 OBJECT  LOCAL  DEFAULT    6 _ZN5dwarfL8sectionsE
+    11: 0000000000000000   272 OBJECT  LOCAL  DEFAULT    6 _ZN5dwarfL8sectionsE
     12: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    1 .L0 
     13: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    1 $x
     14: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT    1 .L0 
@@ -166,12 +171,17 @@ Symbol table '.symtab' contains 54 entries:
     45: 00000000000000a8     0 NOTYPE  LOCAL  DEFAULT    5 .LC9
     46: 00000000000000b8     0 NOTYPE  LOCAL  DEFAULT    5 .LC10
     47: 00000000000000c8     0 NOTYPE  LOCAL  DEFAULT    5 .LC11
-    48: 0000000000000000     0 SECTION LOCAL  DEFAULT    8 .comment
-    49: 0000000000000000     0 SECTION LOCAL  DEFAULT   10 .eh_frame
-    50: 0000000000000000     0 SECTION LOCAL  DEFAULT   12 .riscv.attributes
-    51: 0000000000000000   176 FUNC    GLOBAL DEFAULT    1 _ZN5dwarf3elf20section_name_to_typeEPKcPNS_12section_typeE
-    52: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND strcmp
-    53: 00000000000000b0   144 FUNC    GLOBAL DEFAULT    1 _ZN5dwarf3elf20section_type_to_nameENS_12section_typeE
+    48: 00000000000000d8     0 NOTYPE  LOCAL  DEFAULT    5 .LC12
+    49: 00000000000000e8     0 NOTYPE  LOCAL  DEFAULT    5 .LC13
+    50: 00000000000000f8     0 NOTYPE  LOCAL  DEFAULT    5 .LC14
+    51: 0000000000000108     0 NOTYPE  LOCAL  DEFAULT    5 .LC15
+    52: 0000000000000118     0 NOTYPE  LOCAL  DEFAULT    5 .LC16
+    53: 0000000000000000     0 SECTION LOCAL  DEFAULT    8 .comment
+    54: 0000000000000000     0 SECTION LOCAL  DEFAULT   10 .eh_frame
+    55: 0000000000000000     0 SECTION LOCAL  DEFAULT   12 .riscv.attributes
+    56: 0000000000000000   176 FUNC    GLOBAL DEFAULT    1 _ZN5dwarf3elf20section_name_to_typeEPKcPNS_12section_typeE
+    57: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND strcmp
+    58: 00000000000000b0   144 FUNC    GLOBAL DEFAULT    1 _ZN5dwarf3elf20section_type_to_nameENS_12section_typeE
 
 No version information found in this file.
 Attribute Section: riscv

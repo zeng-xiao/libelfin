@@ -26,6 +26,12 @@ static const struct {
     {".debug_ranges", section_type::ranges},
     {".debug_str", section_type::str},
     {".debug_types", section_type::types},
+    // just for dwarf 5
+    {".debug_names", section_type::names},
+    {".debug_macro", section_type::macro},
+    {".debug_loclists", section_type::loclists},
+    {".debug_rnglists", section_type::rnglists},
+    {".debug_line_str", section_type::line_str},
 };
 
 bool elf::section_name_to_type(const char *name, section_type *out) {

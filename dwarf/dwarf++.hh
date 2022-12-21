@@ -89,6 +89,12 @@ enum class section_type {
   ranges,
   str,
   types,
+  // just for dwarf 5
+  names,
+  macro,
+  loclists,
+  rnglists,
+  line_str,
 };
 
 std::string to_string(section_type v);

@@ -83,18 +83,19 @@ def expr_remainder(typ, arg):
         return "\"(%s)\" + std::to_string((int)%s)" % (typ, arg)
 
 def make_to_string(typ, arg):
-    print("std::string")
-    print("to_string(%s %s)" % (typ, arg))
-    print("{")
-    print("        switch (%s) {" % arg)
+    print("std::string to_string(%s %s) {" % (typ, arg))
+    print("  switch (%s) {" % arg)
     for key in enums[typ]:
         if key in options.exclude:
-            print("        case %s::%s: break;" % (typ, key))
+            print("  case %s::%s:" % (typ, key))
+            print("    break;")
             continue
-        print("        case %s::%s: return \"%s\";" % \
-            (typ, key, fmt_value(typ, key)))
-    print("        }")
-    print("        return %s;" % expr_remainder(typ, arg))
+        print("  case %s::%s:" %
+            (typ, key))
+        print("    return \"%s\";" % 
+            (fmt_value(typ, key)))
+    print("  }")
+    print("  return %s;" % expr_remainder(typ, arg))
     print("}")
     print()
 
