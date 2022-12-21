@@ -24,7 +24,22 @@ typedef std::uint64_t section_length;
 // represents the largest supported address type.
 typedef std::uint64_t taddr;
 
-// DIE tags (Section 7, figure 18).  typedef, friend, and namespace
+// Unit header unit type encodings (DWARF5 section 7.5.1 Table 7.2)
+enum class DW_UT {
+  // just DWARF 5
+  compile = 0x01,
+  type = 0x02,
+  partial = 0x03,
+  skeleton = 0x04,
+  split_compile = 0x05,
+  split_type = 0x06,
+  lo_user = 0x80,
+  hi_user = 0xff,
+};
+
+std::string to_string(DW_UT v);
+
+// DIE tags (Section 7.5.3, Table 7.3).  typedef, friend, and namespace
 // have a trailing underscore because they are reserved words.
 enum class DW_TAG {
   array_type = 0x01,
@@ -92,11 +107,21 @@ enum class DW_TAG {
   template_alias = 0x43,
   lo_user = 0x4080,
   hi_user = 0xffff,
+
+  /* New in DWARF Version 5  */
+  coarray_type = 0x44,
+  generic_subrange = 0x45,
+  dynamic_type = 0x46,
+  atomic_type = 0x47,
+  call_site = 0x48,
+  call_site_parameter = 0x49,
+  skeleton_unit = 0x4a,
+  immutable_type = 0x4b,
 };
 
 std::string to_string(DW_TAG v);
 
-// Child determination (Section 7, figure 19).
+// Child determination (Section 7.5.3, Table 7.4).
 enum class DW_CHILDREN : ubyte {
   no = 0x00,
   yes = 0x01,
@@ -104,7 +129,7 @@ enum class DW_CHILDREN : ubyte {
 
 std::string to_string(DW_CHILDREN v);
 
-// Attribute names (Section 7, figure 20).  inline, friend, mutable,
+// Attribute names (Section 7.5.4, Table 7.5).  inline, friend, mutable,
 // and explicit have a trailing underscore because they are reserved
 // words.
 enum class DW_AT {
@@ -208,13 +233,44 @@ enum class DW_AT {
   enum_class = 0x6d,      // flag
   linkage_name = 0x6e,    // string
 
+  // DWARF 5
+  string_length_bit_size = 0x6f,
+  string_length_byte_size = 0x70,
+  rank = 0x71,
+  str_offsets_base = 0x72,
+  addr_base = 0x73,
+  rnglists_base = 0x74,
+  dwo_name = 0x76,
+  reference = 0x77,
+  rvalue_reference = 0x78,
+  macros = 0x79,
+  call_all_calls = 0x7a,
+  call_all_source_calls = 0x7b,
+  call_all_tail_calls = 0x7c,
+  call_return_pc = 0x7d,
+  call_value = 0x7e,
+  call_origin = 0x7f,
+  call_parameter = 0x80,
+  call_pc = 0x81,
+  call_tail_call = 0x82,
+  call_target = 0x83,
+  call_target_clobbered = 0x84,
+  call_data_location = 0x85,
+  call_data_value = 0x86,
+  noreturn = 0x87,
+  alignment = 0x88,
+  export_symbols = 0x89,
+  deleted = 0x8a,
+  defaulted = 0x8b,
+  loclists_base = 0x8c,
+
   lo_user = 0x2000,
   hi_user = 0x3fff,
 };
 
 std::string to_string(DW_AT v);
 
-// Attribute form encodings (Section 7, figure 21)
+// Attribute form encodings (Section 7.5.6, Table 7.6)
 enum class DW_FORM {
   addr = 0x01,     // address
   block2 = 0x03,   // block
@@ -237,18 +293,39 @@ enum class DW_FORM {
   ref8 = 0x14,     // reference
 
   ref_udata = 0x15, // reference
-  indirect = 0x16,  // (Section 7.5.3)
+  indirect = 0x16,  // Section 7.5.3 p203
 
   // DWARF 4
-  sec_offset = 0x17,   // lineptr, loclistptr, macptr, rangelistptr
+  sec_offset = 0x17,   // addrptr lineptr loclist loclistsptr macptr rnglist
+                       // rnglistsptr stroffsetsptr
   exprloc = 0x18,      // exprloc
   flag_present = 0x19, // flag
   ref_sig8 = 0x20,     // reference
+
+  // DWARF 5
+  strx = 0x1a,            // string
+  addrx = 0x1b,           // address
+  ref_sup4 = 0x1c,        // reference
+  strp_sup = 0x1d,        // string
+  data16 = 0x1e,          // constant
+  line_strp = 0x1f,       // string
+  implictit_const = 0x21, // constant
+  loclistx = 0x22,        // loclist
+  rnglistx = 0x23,        // rnglist
+  ref_sup8 = 0x24,        // reference
+  strx1 = 0x25,           // string
+  strx2 = 0x26,           // string
+  strx3 = 0x27,           // string
+  strx4 = 0x28,           // string
+  addrx1 = 0x29,          // address
+  addrx2 = 0x2a,          // address
+  addrx3 = 0x2b,          // address
+  addrx4 = 0x2c,          // address
 };
 
 std::string to_string(DW_FORM v);
 
-// DWARF operation encodings (Section 7.7.1 and figure 24)
+// DWARF operation encodings (Section 7.7.1 and Table 7.9)
 enum class DW_OP : ubyte {
   addr = 0x03, // [constant address (size target specific)]
   deref = 0x06,
@@ -328,13 +405,42 @@ enum class DW_OP : ubyte {
   implicit_value = 0x9e, // [ULEB128 size, block of that size]
   stack_value = 0x9f,
 
+  // DWARF 5
+  implicit_pointer =
+      0xa0,           // 4- or 8-byte offset of DIE, SLEB128 constant offset
+  addrx = 0xa1,       // ULEB128 indirect address
+  constx = 0xa2,      // ULEB128 indirect constant
+  entry_value = 0xa3, // ULEB128 size, block of that size
+  const_type = 0xa4,  // ULEB128 type entry offset, 1-byte size, constant value
+  regval_type = 0xa5, // ULEB128 register number, ULEB128 constant offset
+  deref_type = 0xa6,  // 1-byte size, ULEB128 type entry offset
+  xderef_type = 0xa7, // 1-byte size, ULEB128 type entry offset
+  convert = 0xa8,     // ULEB128 type entry offset
+  reinterpret = 0xa9, // ULEB128 type entry offset
+
   lo_user = 0xe0,
   hi_user = 0xff,
 };
 
 std::string to_string(DW_OP v);
 
-// DW_AT::encoding constants (DWARF4 section 7.8 figure 25)
+// DW_AT::encoding constants (DWARF5 section 7.7.3 Table 7.10)
+enum class DW_LLE {
+  // just DWARF 5
+  end_of_list = 0x00,
+  base_addressx = 0x01,
+  startx_endx = 0x02,
+  startx_length = 0x03,
+  offset_pair = 0x04,
+  default_location = 0x05,
+  base_address = 0x06,
+  start_end = 0x07,
+  start_length = 0x08,
+};
+
+std::string to_string(DW_LLE v);
+
+// DW_AT::encoding constants (DWARF5 section 7.8 Table 7.11)
 enum class DW_ATE {
   address = 0x01,
   boolean = 0x02,
@@ -355,13 +461,17 @@ enum class DW_ATE {
   // DWARF 4
   UTF = 0x10,
 
+  // DWARF 5
+  UCS = 0x11,
+  ASSII = 0X12,
+
   lo_user = 0x80,
   hi_user = 0xff,
 };
 
 std::string to_string(DW_ATE v);
 
-// DW_AT::decimal_sign constants (DWARF4 section 7.8 figure 26)
+// DW_AT::decimal_sign constants (DWARF5 section 7.8 Table 7.12)
 enum class DW_DS {
   unsigned_ = 0x01,
   leading_overpunch = 0x02,
@@ -372,7 +482,7 @@ enum class DW_DS {
 
 std::string to_string(DW_DS v);
 
-// DW_AT::endianity constants (DWARF4 section 7.8 figure 27)
+// DW_AT::endianity constants (DWARF5 section 7.8 Table 7.13)
 enum class DW_END {
   default_ = 0x00,
   big = 0x01,
@@ -383,7 +493,7 @@ enum class DW_END {
 
 std::string to_string(DW_END v);
 
-// DW_AT::accessibility constants (DWARF4 section 7.9 figure 28)
+// DW_AT::accessibility constants (DWARF5 section 7.9 Table 7.14)
 enum class DW_ACCESS {
   public_ = 0x01,
   protected_ = 0x02,
@@ -392,7 +502,7 @@ enum class DW_ACCESS {
 
 std::string to_string(DW_ACCESS v);
 
-// DW_AT::visibility constants (DWARF4 section 7.10 figure 29)
+// DW_AT::visibility constants (DWARF5 section 7.10 Table 7.15)
 enum class DW_VIS {
   local = 0x01,
   exported = 0x02,
@@ -401,7 +511,7 @@ enum class DW_VIS {
 
 std::string to_string(DW_VIS v);
 
-// DW_AT::virtuality constants (DWARF4 section 7.11 figure 30)
+// DW_AT::virtuality constants (DWARF5 section 7.11 Table 7.16)
 enum class DW_VIRTUALITY {
   none = 0x00,
   virtual_ = 0x01,
@@ -410,7 +520,7 @@ enum class DW_VIRTUALITY {
 
 std::string to_string(DW_VIRTUALITY v);
 
-// DW_AT::language constants (DWARF4 section 7.12 figure 31)
+// DW_AT::language constants (DWARF5 section 7.12 Table 7.17)
 enum class DW_LANG {
   C89 = 0x0001,         // Lower bound 0
   C = 0x0002,           // Lower bound 0
@@ -433,13 +543,33 @@ enum class DW_LANG {
   UPC = 0x0012,            // Lower bound 0
   D = 0x0013,              // Lower bound 0
   Python = 0x0014,         // Lower bound 0
+
+  // DWARF5
+  OpenCL = 0x0015,         // Lower bound 0
+  Go = 0x0016,             // Lower bound 0
+  Modula3 = 0x0017,        // Lower bound 1
+  Haskell = 0x0018,        // Lower bound 0
+  C_plus_plus_03 = 0x0019, // Lower bound 0
+  C_plus_plus_11 = 0x001a, // Lower bound 0
+  OCaml = 0x001b,          // Lower bound 0
+  Rust = 0x001c,           // Lower bound 0
+  C11 = 0x001d,            // Lower bound 0
+  Swift = 0x001e,          // Lower bound 0
+  Julia = 0x001f,          // Lower bound 1
+  Dylan = 0x0020,          // Lower bound 0
+  C_plus_plus_14 = 0x0021, // Lower bound 0
+  Fortran03 = 0x0022,      // Lower bound 1
+  Fortran08 = 0x0023,      // Lower bound 1
+  RenderScript = 0x0024,   // Lower bound 0
+  BLISS = 0x0025,          // Lower bound 0
+
   lo_user = 0x8000,
   hi_user = 0xffff,
 };
 
 std::string to_string(DW_LANG v);
 
-// DW_AT::identifier_case constants (DWARF4 section 7.14 figure 32)
+// DW_AT::identifier_case constants (DWARF5 section 7.14 Table 7.18)
 enum class DW_ID {
   case_sensitive = 0x00,
   up_case = 0x01,
@@ -449,18 +579,23 @@ enum class DW_ID {
 
 std::string to_string(DW_ID v);
 
-// DW_AT::calling_convention constants (DWARF4 section 7.15 figure 33)
+// DW_AT::calling_convention constants (DWARF5 section 7.15 Table 7.19)
 enum class DW_CC {
   normal = 0x01,
   program = 0x02,
   nocall = 0x03,
+
+  // DWARF5
+  pass_by_reference = 0X4,
+  pass_by_value = 0X5,
+
   lo_user = 0x40,
   hi_user = 0xff,
 };
 
 std::string to_string(DW_CC v);
 
-// DW_AT::inline constants (DWARF4 section 7.16 figure 34)
+// DW_AT::inline constants (DWARF5 section 7.16 Table 7.20)
 enum class DW_INL {
   not_inlined = 0x00,
   inlined = 0x01,
@@ -470,7 +605,7 @@ enum class DW_INL {
 
 std::string to_string(DW_INL v);
 
-// DW_AT::ordering constants (DWARF4 section 7.17 figure 35)
+// DW_AT::ordering constants (DWARF5 section 7.17 Table 7.21)
 enum class DW_ORD {
   row_major = 0x00,
   col_major = 0x01,
@@ -478,7 +613,7 @@ enum class DW_ORD {
 
 std::string to_string(DW_ORD v);
 
-// DW_AT::discr_list constants (DWARF4 section 7.18 figure 36)
+// DW_AT::discr_list constants (DWARF5 section 7.18 Table 7.22)
 enum class DW_DSC {
   label = 0x00,
   range = 0x01,
@@ -486,7 +621,31 @@ enum class DW_DSC {
 
 std::string to_string(DW_DSC v);
 
-// Line number standard opcodes (DWARF4 section 7.21 figure 37)
+// DW_AT::discr_list constants (DWARF5 section 7.19 Table 7.23)
+enum class DW_IDX {
+  // just DWARF 5
+  compile_unit = 0x01, // constant
+  type_unit = 0x02,    // constant
+  die_offset = 0x03,   // reference
+  parent = 0x04,       // constant
+  type_hash = 0x05,    // DW_FROM_data8
+  lo_user = 0x2000,
+  hi_user = 0x3fff,
+};
+
+std::string to_string(DW_IDX v);
+
+// DW_AT::discr_list constants (DWARF5 section 7.20 Table 7.24)
+enum class DW_DEFAULTED {
+  // just DWARF 5
+  no = 0x00,
+  in_class = 0x01,
+  out_of_class = 0x01,
+};
+
+std::string to_string(DW_DEFAULTED v);
+
+// Line number standard opcodes (DWARF5 section 7.22 Table 7.25)
 enum class DW_LNS {
   copy = 0x01,
   advance_pc = 0x02,
@@ -506,7 +665,7 @@ enum class DW_LNS {
 
 std::string to_string(DW_LNS v);
 
-// Line number extended opcodes (DWARF4 section 7.21 figure 38)
+// Line number extended opcodes (DWARF5 section 7.22 Table 7.26)
 enum class DW_LNE {
   end_sequence = 0x01,
   set_address = 0x02,
@@ -521,6 +680,35 @@ enum class DW_LNE {
 };
 
 std::string to_string(DW_LNE v);
+
+// Line number header entry format encodings (DWARF5 section 7.22 Table 7.27)
+enum class DW_LNCT {
+  // just DWARF 5
+  path = 0x01,
+  directory_index = 0x02,
+  timestamp = 0x03,
+  size_ = 0x04,
+  MD5 = 0x80,
+  lo_user = 0x2000,
+  hi_user = 0x3fff,
+};
+
+std::string to_string(DW_LNCT v);
+
+// Macro information entry type encodings (DWARF5 section 7.25 Table 7.30)
+enum class DW_RLE {
+  // just DWARF 5
+  end_of_list = 0x00,
+  base_addressx = 0x01,
+  startx_endx = 0x02,
+  startx_length = 0x03,
+  offset_pair = 0x04,
+  base_address = 0x05,
+  start_end = 0x06,
+  start_length = 0x07,
+};
+
+std::string to_string(DW_RLE v);
 
 DWARFPP_END_NAMESPACE
 
