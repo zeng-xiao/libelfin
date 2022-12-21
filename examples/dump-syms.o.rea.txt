@@ -1,0 +1,1506 @@
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              REL (Relocatable file)
+  Machine:                           RISC-V
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          0 (bytes into file)
+  Start of section headers:          40256 (bytes into file)
+  Flags:                             0x4, double-float ABI
+  Size of this header:               64 (bytes)
+  Size of program headers:           0 (bytes)
+  Number of program headers:         0
+  Size of section headers:           64 (bytes)
+  Number of section headers:         127
+  Section header string table index: 126
+
+Section Headers:
+  [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0
+  [ 1] .group            GROUP           0000000000000000 000040 00000c 04     124 385  4
+  [ 2] .group            GROUP           0000000000000000 00004c 000008 04     124 389  4
+  [ 3] .group            GROUP           0000000000000000 000054 00000c 04     124 321  4
+  [ 4] .group            GROUP           0000000000000000 000060 00000c 04     124 322  4
+  [ 5] .group            GROUP           0000000000000000 00006c 00000c 04     124 323  4
+  [ 6] .group            GROUP           0000000000000000 000078 00000c 04     124 324  4
+  [ 7] .group            GROUP           0000000000000000 000084 00000c 04     124 325  4
+  [ 8] .group            GROUP           0000000000000000 000090 00000c 04     124 326  4
+  [ 9] .group            GROUP           0000000000000000 00009c 00000c 04     124 327  4
+  [10] .group            GROUP           0000000000000000 0000a8 00000c 04     124 328  4
+  [11] .group            GROUP           0000000000000000 0000b4 00000c 04     124 329  4
+  [12] .group            GROUP           0000000000000000 0000c0 00000c 04     124 330  4
+  [13] .group            GROUP           0000000000000000 0000cc 00000c 04     124 331  4
+  [14] .group            GROUP           0000000000000000 0000d8 00000c 04     124 332  4
+  [15] .group            GROUP           0000000000000000 0000e4 00000c 04     124 333  4
+  [16] .group            GROUP           0000000000000000 0000f0 000014 04     124 418  4
+  [17] .group            GROUP           0000000000000000 000104 00000c 04     124 423  4
+  [18] .group            GROUP           0000000000000000 000110 00000c 04     124 334  4
+  [19] .group            GROUP           0000000000000000 00011c 000008 04     124 424  4
+  [20] .group            GROUP           0000000000000000 000124 000008 04     124 427  4
+  [21] .group            GROUP           0000000000000000 00012c 00000c 04     124 335  4
+  [22] .group            GROUP           0000000000000000 000138 00000c 04     124 336  4
+  [23] .group            GROUP           0000000000000000 000144 00000c 04     124 337  4
+  [24] .group            GROUP           0000000000000000 000150 00000c 04     124 338  4
+  [25] .group            GROUP           0000000000000000 00015c 00000c 04     124 339  4
+  [26] .group            GROUP           0000000000000000 000168 00000c 04     124 388  4
+  [27] .group            GROUP           0000000000000000 000174 00000c 04     124 340  4
+  [28] .group            GROUP           0000000000000000 000180 00000c 04     124 341  4
+  [29] .group            GROUP           0000000000000000 00018c 00000c 04     124 447  4
+  [30] .group            GROUP           0000000000000000 000198 00000c 04     124 448  4
+  [31] .group            GROUP           0000000000000000 0001a4 00000c 04     124 465  4
+  [32] .group            GROUP           0000000000000000 0001b0 000008 04     124 464  4
+  [33] .group            GROUP           0000000000000000 0001b8 000008 04     124 449  4
+  [34] .group            GROUP           0000000000000000 0001c0 000008 04     124 458  4
+  [35] .group            GROUP           0000000000000000 0001c8 000008 04     124 460  4
+  [36] .group            GROUP           0000000000000000 0001d0 00000c 04     124 468  4
+  [37] .group            GROUP           0000000000000000 0001dc 000008 04     124 342  4
+  [38] .group            GROUP           0000000000000000 0001e4 000008 04     124 470  4
+  [39] .group            GROUP           0000000000000000 0001ec 00000c 04     124 419  4
+  [40] .text             PROGBITS        0000000000000000 0001f8 00065c 00  AX  0   0  4
+  [41] .rela.text        RELA            0000000000000000 005da8 0012d8 18   I 124  40  8
+  [42] .data             PROGBITS        0000000000000000 000854 000000 00  WA  0   0  1
+  [43] .bss              NOBITS          0000000000000000 000854 000000 00  WA  0   0  1
+  [44] .srodata          PROGBITS        0000000000000000 000858 000018 00   A  0   0  8
+  [45] .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv PROGBITS        0000000000000000 000870 0000d4 00 AXG  0   0  4
+  [46] .rela.text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv RELA            0000000000000000 007080 000108 18  IG 124  45  8
+  [47] .text._ZNK3elf3sym8get_dataEv PROGBITS        0000000000000000 000944 000028 00 AXG  0   0  4
+  [48] .text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_ PROGBITS        0000000000000000 00096c 00005c 00 AXG  0   0  4
+  [49] .rela.text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_ RELA            0000000000000000 007188 000030 18  IG 124  48  8
+  [50] .text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED2Ev PROGBITS        0000000000000000 0009c8 00003c 00 AXG  0   0  4
+  [51] .rela.text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED2Ev RELA            0000000000000000 0071b8 000030 18  IG 124  50  8
+  [52] .text._ZNSt10shared_ptrIN3elf3elf4implEEC2ERKS3_ PROGBITS        0000000000000000 000a04 000044 00 AXG  0   0  4
+  [53] .rela.text._ZNSt10shared_ptrIN3elf3elf4implEEC2ERKS3_ RELA            0000000000000000 0071e8 000030 18  IG 124  52  8
+  [54] .text._ZNSt10shared_ptrIN3elf3elf4implEED2Ev PROGBITS        0000000000000000 000a48 000038 00 AXG  0   0  4
+  [55] .rela.text._ZNSt10shared_ptrIN3elf3elf4implEED2Ev RELA            0000000000000000 007218 000030 18  IG 124  54  8
+  [56] .text._ZN3elf3elfC2ERKS0_ PROGBITS        0000000000000000 000a80 000044 00 AXG  0   0  4
+  [57] .rela.text._ZN3elf3elfC2ERKS0_ RELA            0000000000000000 007248 000030 18  IG 124  56  8
+  [58] .text._ZN3elf3elfD2Ev PROGBITS        0000000000000000 000ac4 000038 00 AXG  0   0  4
+  [59] .rela.text._ZN3elf3elfD2Ev RELA            0000000000000000 007278 000030 18  IG 124  58  8
+  [60] .text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_ PROGBITS        0000000000000000 000afc 00005c 00 AXG  0   0  4
+  [61] .rela.text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_ RELA            0000000000000000 0072a8 000030 18  IG 124  60  8
+  [62] .text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev PROGBITS        0000000000000000 000b58 00003c 00 AXG  0   0  4
+  [63] .rela.text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev RELA            0000000000000000 0072d8 000030 18  IG 124  62  8
+  [64] .text._ZNSt10shared_ptrIN3elf6strtab4implEEC2ERKS3_ PROGBITS        0000000000000000 000b94 000044 00 AXG  0   0  4
+  [65] .rela.text._ZNSt10shared_ptrIN3elf6strtab4implEEC2ERKS3_ RELA            0000000000000000 007308 000030 18  IG 124  64  8
+  [66] .text._ZNSt10shared_ptrIN3elf6strtab4implEED2Ev PROGBITS        0000000000000000 000bd8 000038 00 AXG  0   0  4
+  [67] .rela.text._ZNSt10shared_ptrIN3elf6strtab4implEED2Ev RELA            0000000000000000 007338 000030 18  IG 124  66  8
+  [68] .text._ZN3elf6strtabC2ERKS0_ PROGBITS        0000000000000000 000c10 000044 00 AXG  0   0  4
+  [69] .rela.text._ZN3elf6strtabC2ERKS0_ RELA            0000000000000000 007368 000030 18  IG 124  68  8
+  [70] .text._ZN3elf6strtabD2Ev PROGBITS        0000000000000000 000c54 000038 00 AXG  0   0  4
+  [71] .rela.text._ZN3elf6strtabD2Ev RELA            0000000000000000 007398 000030 18  IG 124  70  8
+  [72] .text._ZN3elf3symD2Ev PROGBITS        0000000000000000 000c8c 000038 00 AXG  0   0  4
+  [73] .rela.text._ZN3elf3symD2Ev RELA            0000000000000000 0073c8 000030 18  IG 124  72  8
+  [74] .text._ZNK3elf6symtab8iteratordeEv PROGBITS        0000000000000000 000cc4 0000e8 00 AXG  0   0  4
+  [75] .rela.text._ZNK3elf6symtab8iteratordeEv RELA            0000000000000000 0073f8 000198 18  IG 124  74  8
+  [76] .gcc_except_table._ZNK3elf6symtab8iteratordeEv PROGBITS        0000000000000000 000dac 00001e 00  AG  0   0  1
+  [77] .rela.gcc_except_table._ZNK3elf6symtab8iteratordeEv RELA            0000000000000000 007590 0000f0 18  IG 124  76  8
+  [78] .text._ZN3elf6symtab8iteratorppEv PROGBITS        0000000000000000 000dcc 00003c 00 AXG  0   0  4
+  [79] .rela.text._ZN3elf6symtab8iteratorppEv RELA            0000000000000000 007680 000030 18  IG 124  78  8
+  [80] .text._ZN3elf6symtab8iteratorD2Ev PROGBITS        0000000000000000 000e08 00004c 00 AXG  0   0  4
+  [81] .rela.text._ZN3elf6symtab8iteratorD2Ev RELA            0000000000000000 0076b0 000060 18  IG 124  80  8
+  [82] .text._ZN3elf6symtab8iteratorpLEl PROGBITS        0000000000000000 000e54 00004c 00 AXG  0   0  4
+  [83] .text._ZNK3elf6symtab8iteratorneERS1_ PROGBITS        0000000000000000 000ea0 000040 00 AXG  0   0  4
+  [84] .text._ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED2Ev PROGBITS        0000000000000000 000ee0 00003c 00 AXG  0   0  4
+  [85] .rela.text._ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED2Ev RELA            0000000000000000 007710 000030 18  IG 124  84  8
+  [86] .text._ZNSt10shared_ptrIN3elf6loaderEED2Ev PROGBITS        0000000000000000 000f1c 000038 00 AXG  0   0  4
+  [87] .rela.text._ZNSt10shared_ptrIN3elf6loaderEED2Ev RELA            0000000000000000 007740 000030 18  IG 124  86  8
+  [88] .text._ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev PROGBITS        0000000000000000 000f54 00003c 00 AXG  0   0  4
+  [89] .rela.text._ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev RELA            0000000000000000 007770 000030 18  IG 124  88  8
+  [90] .text._ZNSt10shared_ptrIN3elf6symtab4implEED2Ev PROGBITS        0000000000000000 000f90 000038 00 AXG  0   0  4
+  [91] .rela.text._ZNSt10shared_ptrIN3elf6symtab4implEED2Ev RELA            0000000000000000 0077a0 000030 18  IG 124  90  8
+  [92] .text._ZN3elf6symtabD2Ev PROGBITS        0000000000000000 000fc8 000038 00 AXG  0   0  4
+  [93] .rela.text._ZN3elf6symtabD2Ev RELA            0000000000000000 0077d0 000030 18  IG 124  92  8
+  [94] .rodata           PROGBITS        0000000000000000 001000 0000bb 00   A  0   0  8
+  [95] .gcc_except_table PROGBITS        0000000000000000 0010bb 0000bb 00   A  0   0  1
+  [96] .rela.gcc_except_table RELA            0000000000000000 007800 000780 18   I 124  95  8
+  [97] .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv PROGBITS        0000000000000000 001178 0000fc 00 AXG  0   0  4
+  [98] .rela.text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv RELA            0000000000000000 007f80 0000d8 18  IG 124  97  8
+  [99] .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED2Ev PROGBITS        0000000000000000 001274 000048 00 AXG  0   0  4
+  [100] .rela.text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED2Ev RELA            0000000000000000 008058 000048 18  IG 124  99  8
+  [101] .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2ERKS2_ PROGBITS        0000000000000000 0012bc 00005c 00 AXG  0   0  4
+  [102] .rela.text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2ERKS2_ RELA            0000000000000000 0080a0 000048 18  IG 124 101  8
+  [103] .text._ZNKSt6vectorIN3elf7sectionESaIS1_EE5beginEv PROGBITS        0000000000000000 001318 000044 00 AXG  0   0  4
+  [104] .rela.text._ZNKSt6vectorIN3elf7sectionESaIS1_EE5beginEv RELA            0000000000000000 0080e8 000030 18  IG 124 103  8
+  [105] .text._ZNKSt6vectorIN3elf7sectionESaIS1_EE3endEv PROGBITS        0000000000000000 00135c 000048 00 AXG  0   0  4
+  [106] .rela.text._ZNKSt6vectorIN3elf7sectionESaIS1_EE3endEv RELA            0000000000000000 008118 000030 18  IG 124 105  8
+  [107] .text._ZN9__gnu_cxxneIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESD_ PROGBITS        0000000000000000 0013a4 000068 00 AXG  0   0  4
+  [108] .rela.text._ZN9__gnu_cxxneIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESD_ RELA            0000000000000000 008148 000060 18  IG 124 107  8
+  [109] .text._ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEppEv PROGBITS        0000000000000000 00140c 000038 00 AXG  0   0  4
+  [110] .text._ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEdeEv PROGBITS        0000000000000000 001444 000028 00 AXG  0   0  4
+  [111] .text._ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE4typeEv PROGBITS        0000000000000000 00146c 000030 00 AXG  0   0  4
+  [112] .text._ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE7bindingEv PROGBITS        0000000000000000 00149c 000030 00 AXG  0   0  4
+  [113] .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv PROGBITS        0000000000000000 0014cc 00009c 00 AXG  0   0  4
+  [114] .rela.text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv RELA            0000000000000000 0081a8 0000c0 18  IG 124 113  8
+  [115] .text._ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEC2ERKS4_ PROGBITS        0000000000000000 001568 000034 00 AXG  0   0  4
+  [116] .text._ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEE4baseEv PROGBITS        0000000000000000 00159c 000024 00 AXG  0   0  4
+  [117] .sdata.DW.ref.__gxx_personality_v0 PROGBITS        0000000000000000 0015c0 000008 00 WAG  0   0  8
+  [118] .rela.sdata.DW.ref.__gxx_personality_v0 RELA            0000000000000000 008268 000018 18  IG 124 117  8
+  [119] .comment          PROGBITS        0000000000000000 0015c8 00001c 01  MS  0   0  1
+  [120] .note.GNU-stack   PROGBITS        0000000000000000 0015e4 000000 00      0   0  1
+  [121] .eh_frame         PROGBITS        0000000000000000 0015e8 000650 00   A  0   0  8
+  [122] .rela.eh_frame    RELA            0000000000000000 008280 0010e0 18   I 124 121  8
+  [123] .riscv.attributes RISCV_ATTRIBUTES 0000000000000000 001c38 000030 00      0   0  1
+  [124] .symtab           SYMTAB          0000000000000000 001c68 002c58 18     125 385  8
+  [125] .strtab           STRTAB          0000000000000000 0048c0 0014e1 00      0   0  1
+  [126] .shstrtab         STRTAB          0000000000000000 009360 0009da 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), p (processor specific)
+
+COMDAT group section [    1] `.group' [_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv] contains 2 sections:
+   [Index]    Name
+   [   45]   .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv
+   [   46]   .rela.text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv
+
+COMDAT group section [    2] `.group' [_ZNK3elf3sym8get_dataEv] contains 1 sections:
+   [Index]    Name
+   [   47]   .text._ZNK3elf3sym8get_dataEv
+
+COMDAT group section [    3] `.group' [_ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC5ERKS5_] contains 2 sections:
+   [Index]    Name
+   [   48]   .text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_
+   [   49]   .rela.text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_
+
+COMDAT group section [    4] `.group' [_ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED5Ev] contains 2 sections:
+   [Index]    Name
+   [   50]   .text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+   [   51]   .rela.text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+
+COMDAT group section [    5] `.group' [_ZNSt10shared_ptrIN3elf3elf4implEEC5ERKS3_] contains 2 sections:
+   [Index]    Name
+   [   52]   .text._ZNSt10shared_ptrIN3elf3elf4implEEC2ERKS3_
+   [   53]   .rela.text._ZNSt10shared_ptrIN3elf3elf4implEEC2ERKS3_
+
+COMDAT group section [    6] `.group' [_ZNSt10shared_ptrIN3elf3elf4implEED5Ev] contains 2 sections:
+   [Index]    Name
+   [   54]   .text._ZNSt10shared_ptrIN3elf3elf4implEED2Ev
+   [   55]   .rela.text._ZNSt10shared_ptrIN3elf3elf4implEED2Ev
+
+COMDAT group section [    7] `.group' [_ZN3elf3elfC5ERKS0_] contains 2 sections:
+   [Index]    Name
+   [   56]   .text._ZN3elf3elfC2ERKS0_
+   [   57]   .rela.text._ZN3elf3elfC2ERKS0_
+
+COMDAT group section [    8] `.group' [_ZN3elf3elfD5Ev] contains 2 sections:
+   [Index]    Name
+   [   58]   .text._ZN3elf3elfD2Ev
+   [   59]   .rela.text._ZN3elf3elfD2Ev
+
+COMDAT group section [    9] `.group' [_ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC5ERKS5_] contains 2 sections:
+   [Index]    Name
+   [   60]   .text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_
+   [   61]   .rela.text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_
+
+COMDAT group section [   10] `.group' [_ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED5Ev] contains 2 sections:
+   [Index]    Name
+   [   62]   .text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+   [   63]   .rela.text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+
+COMDAT group section [   11] `.group' [_ZNSt10shared_ptrIN3elf6strtab4implEEC5ERKS3_] contains 2 sections:
+   [Index]    Name
+   [   64]   .text._ZNSt10shared_ptrIN3elf6strtab4implEEC2ERKS3_
+   [   65]   .rela.text._ZNSt10shared_ptrIN3elf6strtab4implEEC2ERKS3_
+
+COMDAT group section [   12] `.group' [_ZNSt10shared_ptrIN3elf6strtab4implEED5Ev] contains 2 sections:
+   [Index]    Name
+   [   66]   .text._ZNSt10shared_ptrIN3elf6strtab4implEED2Ev
+   [   67]   .rela.text._ZNSt10shared_ptrIN3elf6strtab4implEED2Ev
+
+COMDAT group section [   13] `.group' [_ZN3elf6strtabC5ERKS0_] contains 2 sections:
+   [Index]    Name
+   [   68]   .text._ZN3elf6strtabC2ERKS0_
+   [   69]   .rela.text._ZN3elf6strtabC2ERKS0_
+
+COMDAT group section [   14] `.group' [_ZN3elf6strtabD5Ev] contains 2 sections:
+   [Index]    Name
+   [   70]   .text._ZN3elf6strtabD2Ev
+   [   71]   .rela.text._ZN3elf6strtabD2Ev
+
+COMDAT group section [   15] `.group' [_ZN3elf3symD5Ev] contains 2 sections:
+   [Index]    Name
+   [   72]   .text._ZN3elf3symD2Ev
+   [   73]   .rela.text._ZN3elf3symD2Ev
+
+COMDAT group section [   16] `.group' [_ZNK3elf6symtab8iteratordeEv] contains 4 sections:
+   [Index]    Name
+   [   74]   .text._ZNK3elf6symtab8iteratordeEv
+   [   75]   .rela.text._ZNK3elf6symtab8iteratordeEv
+   [   76]   .gcc_except_table._ZNK3elf6symtab8iteratordeEv
+   [   77]   .rela.gcc_except_table._ZNK3elf6symtab8iteratordeEv
+
+COMDAT group section [   17] `.group' [_ZN3elf6symtab8iteratorppEv] contains 2 sections:
+   [Index]    Name
+   [   78]   .text._ZN3elf6symtab8iteratorppEv
+   [   79]   .rela.text._ZN3elf6symtab8iteratorppEv
+
+COMDAT group section [   18] `.group' [_ZN3elf6symtab8iteratorD5Ev] contains 2 sections:
+   [Index]    Name
+   [   80]   .text._ZN3elf6symtab8iteratorD2Ev
+   [   81]   .rela.text._ZN3elf6symtab8iteratorD2Ev
+
+COMDAT group section [   19] `.group' [_ZN3elf6symtab8iteratorpLEl] contains 1 sections:
+   [Index]    Name
+   [   82]   .text._ZN3elf6symtab8iteratorpLEl
+
+COMDAT group section [   20] `.group' [_ZNK3elf6symtab8iteratorneERS1_] contains 1 sections:
+   [Index]    Name
+   [   83]   .text._ZNK3elf6symtab8iteratorneERS1_
+
+COMDAT group section [   21] `.group' [_ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED5Ev] contains 2 sections:
+   [Index]    Name
+   [   84]   .text._ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED2Ev
+   [   85]   .rela.text._ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED2Ev
+
+COMDAT group section [   22] `.group' [_ZNSt10shared_ptrIN3elf6loaderEED5Ev] contains 2 sections:
+   [Index]    Name
+   [   86]   .text._ZNSt10shared_ptrIN3elf6loaderEED2Ev
+   [   87]   .rela.text._ZNSt10shared_ptrIN3elf6loaderEED2Ev
+
+COMDAT group section [   23] `.group' [_ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED5Ev] contains 2 sections:
+   [Index]    Name
+   [   88]   .text._ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+   [   89]   .rela.text._ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+
+COMDAT group section [   24] `.group' [_ZNSt10shared_ptrIN3elf6symtab4implEED5Ev] contains 2 sections:
+   [Index]    Name
+   [   90]   .text._ZNSt10shared_ptrIN3elf6symtab4implEED2Ev
+   [   91]   .rela.text._ZNSt10shared_ptrIN3elf6symtab4implEED2Ev
+
+COMDAT group section [   25] `.group' [_ZN3elf6symtabD5Ev] contains 2 sections:
+   [Index]    Name
+   [   92]   .text._ZN3elf6symtabD2Ev
+   [   93]   .rela.text._ZN3elf6symtabD2Ev
+
+COMDAT group section [   26] `.group' [_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv] contains 2 sections:
+   [Index]    Name
+   [   97]   .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv
+   [   98]   .rela.text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv
+
+COMDAT group section [   27] `.group' [_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED5Ev] contains 2 sections:
+   [Index]    Name
+   [   99]   .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED2Ev
+   [  100]   .rela.text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED2Ev
+
+COMDAT group section [   28] `.group' [_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC5ERKS2_] contains 2 sections:
+   [Index]    Name
+   [  101]   .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2ERKS2_
+   [  102]   .rela.text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2ERKS2_
+
+COMDAT group section [   29] `.group' [_ZNKSt6vectorIN3elf7sectionESaIS1_EE5beginEv] contains 2 sections:
+   [Index]    Name
+   [  103]   .text._ZNKSt6vectorIN3elf7sectionESaIS1_EE5beginEv
+   [  104]   .rela.text._ZNKSt6vectorIN3elf7sectionESaIS1_EE5beginEv
+
+COMDAT group section [   30] `.group' [_ZNKSt6vectorIN3elf7sectionESaIS1_EE3endEv] contains 2 sections:
+   [Index]    Name
+   [  105]   .text._ZNKSt6vectorIN3elf7sectionESaIS1_EE3endEv
+   [  106]   .rela.text._ZNKSt6vectorIN3elf7sectionESaIS1_EE3endEv
+
+COMDAT group section [   31] `.group' [_ZN9__gnu_cxxneIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESD_] contains 2 sections:
+   [Index]    Name
+   [  107]   .text._ZN9__gnu_cxxneIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESD_
+   [  108]   .rela.text._ZN9__gnu_cxxneIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESD_
+
+COMDAT group section [   32] `.group' [_ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEppEv] contains 1 sections:
+   [Index]    Name
+   [  109]   .text._ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEppEv
+
+COMDAT group section [   33] `.group' [_ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEdeEv] contains 1 sections:
+   [Index]    Name
+   [  110]   .text._ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEdeEv
+
+COMDAT group section [   34] `.group' [_ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE4typeEv] contains 1 sections:
+   [Index]    Name
+   [  111]   .text._ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE4typeEv
+
+COMDAT group section [   35] `.group' [_ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE7bindingEv] contains 1 sections:
+   [Index]    Name
+   [  112]   .text._ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE7bindingEv
+
+COMDAT group section [   36] `.group' [_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv] contains 2 sections:
+   [Index]    Name
+   [  113]   .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv
+   [  114]   .rela.text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv
+
+COMDAT group section [   37] `.group' [_ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEC5ERKS4_] contains 1 sections:
+   [Index]    Name
+   [  115]   .text._ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEC2ERKS4_
+
+COMDAT group section [   38] `.group' [_ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEE4baseEv] contains 1 sections:
+   [Index]    Name
+   [  116]   .text._ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEE4baseEv
+
+COMDAT group section [   39] `.group' [DW.ref.__gxx_personality_v0] contains 2 sections:
+   [Index]    Name
+   [  117]   .sdata.DW.ref.__gxx_personality_v0
+   [  118]   .rela.sdata.DW.ref.__gxx_personality_v0
+
+There are no program headers in this file.
+
+There is no dynamic section in this file.
+
+Relocation section '.rela.text' at offset 0x5da8 contains 201 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000040  000000f200000010 R_RISCV_BRANCH         0000000000000074 .L41 + 0
+0000000000000044  000001b70000001a R_RISCV_HI20           0000000000000000 stderr + 0
+0000000000000044  0000000000000033 R_RISCV_RELAX                             0
+0000000000000048  000001b70000001b R_RISCV_LO12_I         0000000000000000 stderr + 0
+0000000000000048  0000000000000033 R_RISCV_RELAX                             0
+0000000000000058  000000e60000001a R_RISCV_HI20           0000000000000000 .LC0 + 0
+0000000000000058  0000000000000033 R_RISCV_RELAX                             0
+000000000000005c  000000e60000001b R_RISCV_LO12_I         0000000000000000 .LC0 + 0
+000000000000005c  0000000000000033 R_RISCV_RELAX                             0
+0000000000000064  000001b800000012 R_RISCV_CALL           0000000000000000 fprintf + 0
+0000000000000064  0000000000000033 R_RISCV_RELAX                             0
+0000000000000070  000000f300000011 R_RISCV_JAL            0000000000000508 .L52 + 0
+0000000000000088  000001b900000012 R_RISCV_CALL           0000000000000000 open + 0
+0000000000000088  0000000000000033 R_RISCV_RELAX                             0
+00000000000000a0  000000f400000010 R_RISCV_BRANCH         00000000000000fc .L43 + 0
+00000000000000a4  000001b70000001a R_RISCV_HI20           0000000000000000 stderr + 0
+00000000000000a4  0000000000000033 R_RISCV_RELAX                             0
+00000000000000a8  000001b70000001b R_RISCV_LO12_I         0000000000000000 stderr + 0
+00000000000000a8  0000000000000033 R_RISCV_RELAX                             0
+00000000000000b8  000001ba00000012 R_RISCV_CALL           0000000000000000 __errno_location + 0
+00000000000000b8  0000000000000033 R_RISCV_RELAX                             0
+00000000000000cc  000001bb00000012 R_RISCV_CALL           0000000000000000 strerror + 0
+00000000000000cc  0000000000000033 R_RISCV_RELAX                             0
+00000000000000e0  000000e70000001a R_RISCV_HI20           0000000000000018 .LC1 + 0
+00000000000000e0  0000000000000033 R_RISCV_RELAX                             0
+00000000000000e4  000000e70000001b R_RISCV_LO12_I         0000000000000018 .LC1 + 0
+00000000000000e4  0000000000000033 R_RISCV_RELAX                             0
+00000000000000ec  000001b800000012 R_RISCV_CALL           0000000000000000 fprintf + 0
+00000000000000ec  0000000000000033 R_RISCV_RELAX                             0
+00000000000000f8  000000f300000011 R_RISCV_JAL            0000000000000508 .L52 + 0
+000000000000010c  000001bc00000012 R_RISCV_CALL           0000000000000000 _ZN3elf18create_mmap_loaderEi + 0
+000000000000010c  0000000000000033 R_RISCV_RELAX                             0
+0000000000000124  000001bd00000012 R_RISCV_CALL           0000000000000000 _ZN3elf3elfC1ERKSt10shared_ptrINS_6loaderEE + 0
+0000000000000124  0000000000000033 R_RISCV_RELAX                             0
+0000000000000134  000001af00000012 R_RISCV_CALL           0000000000000000 _ZNSt10shared_ptrIN3elf6loaderEED1Ev + 0
+0000000000000134  0000000000000033 R_RISCV_RELAX                             0
+0000000000000144  000001be00000012 R_RISCV_CALL           0000000000000000 _ZNK3elf3elf8sectionsEv + 0
+0000000000000144  0000000000000033 R_RISCV_RELAX                             0
+0000000000000158  000001bf00000012 R_RISCV_CALL           0000000000000000 _ZNKSt6vectorIN3elf7sectionESaIS1_EE5beginEv + 0
+0000000000000158  0000000000000033 R_RISCV_RELAX                             0
+000000000000016c  000001c000000012 R_RISCV_CALL           0000000000000000 _ZNKSt6vectorIN3elf7sectionESaIS1_EE3endEv + 0
+000000000000016c  0000000000000033 R_RISCV_RELAX                             0
+000000000000017c  000000f500000011 R_RISCV_JAL            00000000000004d4 .L44 + 0
+0000000000000188  000001c100000012 R_RISCV_CALL           0000000000000000 _ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEdeEv + 0
+0000000000000188  0000000000000033 R_RISCV_RELAX                             0
+0000000000000198  000001c200000012 R_RISCV_CALL           0000000000000000 _ZNK3elf7section7get_hdrEv + 0
+0000000000000198  0000000000000033 R_RISCV_RELAX                             0
+00000000000001b0  000000f600000010 R_RISCV_BRANCH         00000000000001dc .L45 + 0
+00000000000001b8  000001c200000012 R_RISCV_CALL           0000000000000000 _ZNK3elf7section7get_hdrEv + 0
+00000000000001b8  0000000000000033 R_RISCV_RELAX                             0
+00000000000001d0  000000f600000010 R_RISCV_BRANCH         00000000000001dc .L45 + 0
+00000000000001d8  000000f700000011 R_RISCV_JAL            00000000000001e0 .L46 + 0
+00000000000001e0  000000f800000010 R_RISCV_BRANCH         00000000000004c0 .L76 + 0
+00000000000001f0  000001c300000012 R_RISCV_CALL           0000000000000000 _ZNK3elf7section8get_nameB5cxx11Ev + 0
+00000000000001f0  0000000000000033 R_RISCV_RELAX                             0
+0000000000000200  000001c400000012 R_RISCV_CALL           0000000000000000 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv + 0
+0000000000000200  0000000000000033 R_RISCV_RELAX                             0
+0000000000000210  000000e80000001a R_RISCV_HI20           0000000000000020 .LC2 + 0
+0000000000000210  0000000000000033 R_RISCV_RELAX                             0
+0000000000000214  000000e80000001b R_RISCV_LO12_I         0000000000000020 .LC2 + 0
+0000000000000214  0000000000000033 R_RISCV_RELAX                             0
+0000000000000218  000001c500000012 R_RISCV_CALL           0000000000000000 printf + 0
+0000000000000218  0000000000000033 R_RISCV_RELAX                             0
+0000000000000228  000001c600000012 R_RISCV_CALL           0000000000000000 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev + 0
+0000000000000228  0000000000000033 R_RISCV_RELAX                             0
+0000000000000230  000000e90000001a R_RISCV_HI20           0000000000000038 .LC3 + 0
+0000000000000230  0000000000000033 R_RISCV_RELAX                             0
+0000000000000234  000000e90000001b R_RISCV_LO12_I         0000000000000038 .LC3 + 0
+0000000000000234  0000000000000033 R_RISCV_RELAX                             0
+0000000000000238  000000ea0000001a R_RISCV_HI20           0000000000000040 .LC4 + 0
+0000000000000238  0000000000000033 R_RISCV_RELAX                             0
+000000000000023c  000000ea0000001b R_RISCV_LO12_I         0000000000000040 .LC4 + 0
+000000000000023c  0000000000000033 R_RISCV_RELAX                             0
+0000000000000240  000000eb0000001a R_RISCV_HI20           0000000000000048 .LC5 + 0
+0000000000000240  0000000000000033 R_RISCV_RELAX                             0
+0000000000000244  000000eb0000001b R_RISCV_LO12_I         0000000000000048 .LC5 + 0
+0000000000000244  0000000000000033 R_RISCV_RELAX                             0
+0000000000000248  000000ec0000001a R_RISCV_HI20           0000000000000050 .LC6 + 0
+0000000000000248  0000000000000033 R_RISCV_RELAX                             0
+000000000000024c  000000ec0000001b R_RISCV_LO12_I         0000000000000050 .LC6 + 0
+000000000000024c  0000000000000033 R_RISCV_RELAX                             0
+0000000000000250  000000ed0000001a R_RISCV_HI20           0000000000000058 .LC7 + 0
+0000000000000250  0000000000000033 R_RISCV_RELAX                             0
+0000000000000254  000000ed0000001b R_RISCV_LO12_I         0000000000000058 .LC7 + 0
+0000000000000254  0000000000000033 R_RISCV_RELAX                             0
+0000000000000258  000000ee0000001a R_RISCV_HI20           0000000000000060 .LC8 + 0
+0000000000000258  0000000000000033 R_RISCV_RELAX                             0
+000000000000025c  000000ee0000001b R_RISCV_LO12_I         0000000000000060 .LC8 + 0
+000000000000025c  0000000000000033 R_RISCV_RELAX                             0
+0000000000000260  000000ef0000001a R_RISCV_HI20           0000000000000068 .LC9 + 0
+0000000000000260  0000000000000033 R_RISCV_RELAX                             0
+0000000000000264  000000ef0000001b R_RISCV_LO12_I         0000000000000068 .LC9 + 0
+0000000000000264  0000000000000033 R_RISCV_RELAX                             0
+0000000000000268  000000f00000001a R_RISCV_HI20           0000000000000070 .LC10 + 0
+0000000000000268  0000000000000033 R_RISCV_RELAX                             0
+000000000000026c  000000f00000001b R_RISCV_LO12_I         0000000000000070 .LC10 + 0
+000000000000026c  0000000000000033 R_RISCV_RELAX                             0
+0000000000000270  000001c500000012 R_RISCV_CALL           0000000000000000 printf + 0
+0000000000000270  0000000000000033 R_RISCV_RELAX                             0
+0000000000000288  000001c700000012 R_RISCV_CALL           0000000000000000 _ZNK3elf7section9as_symtabEv + 0
+0000000000000288  0000000000000033 R_RISCV_RELAX                             0
+00000000000002a4  000001c800000012 R_RISCV_CALL           0000000000000000 _ZNK3elf6symtab5beginEv + 0
+00000000000002a4  0000000000000033 R_RISCV_RELAX                             0
+00000000000002b8  000001c900000012 R_RISCV_CALL           0000000000000000 _ZNK3elf6symtab3endEv + 0
+00000000000002b8  0000000000000033 R_RISCV_RELAX                             0
+00000000000002c0  000000f900000011 R_RISCV_JAL            000000000000046c .L49 + 0
+00000000000002d4  000001a200000012 R_RISCV_CALL           0000000000000000 _ZNK3elf6symtab8iteratordeEv + 0
+00000000000002d4  0000000000000033 R_RISCV_RELAX                             0
+00000000000002e4  0000018500000012 R_RISCV_CALL           0000000000000000 _ZNK3elf3sym8get_dataEv + 0
+00000000000002e4  0000000000000033 R_RISCV_RELAX                             0
+0000000000000310  000001ca00000012 R_RISCV_CALL           0000000000000000 _ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE4typeEv + 0
+0000000000000310  0000000000000033 R_RISCV_RELAX                             0
+000000000000032c  000001cb00000012 R_RISCV_CALL           0000000000000000 _ZN3elf9to_stringB5cxx11ENS_3sttE + 0
+000000000000032c  0000000000000033 R_RISCV_RELAX                             0
+000000000000033c  000001c400000012 R_RISCV_CALL           0000000000000000 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv + 0
+000000000000033c  0000000000000033 R_RISCV_RELAX                             0
+000000000000034c  000001cc00000012 R_RISCV_CALL           0000000000000000 _ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE7bindingEv + 0
+000000000000034c  0000000000000033 R_RISCV_RELAX                             0
+0000000000000368  000001cd00000012 R_RISCV_CALL           0000000000000000 _ZN3elf9to_stringB5cxx11ENS_3stbE + 0
+0000000000000368  0000000000000033 R_RISCV_RELAX                             0
+0000000000000378  000001c400000012 R_RISCV_CALL           0000000000000000 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv + 0
+0000000000000378  0000000000000033 R_RISCV_RELAX                             0
+0000000000000398  000001ce00000012 R_RISCV_CALL           0000000000000000 _ZN3elf5enums9to_stringB5cxx11ENS0_3shnE + 0
+0000000000000398  0000000000000033 R_RISCV_RELAX                             0
+00000000000003a8  000001c400000012 R_RISCV_CALL           0000000000000000 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv + 0
+00000000000003a8  0000000000000033 R_RISCV_RELAX                             0
+00000000000003c4  000001cf00000012 R_RISCV_CALL           0000000000000000 _ZNK3elf3sym8get_nameB5cxx11Ev + 0
+00000000000003c4  0000000000000033 R_RISCV_RELAX                             0
+00000000000003d4  000001c400000012 R_RISCV_CALL           0000000000000000 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv + 0
+00000000000003d4  0000000000000033 R_RISCV_RELAX                             0
+00000000000003fc  000000f10000001a R_RISCV_HI20           0000000000000098 .LC11 + 0
+00000000000003fc  0000000000000033 R_RISCV_RELAX                             0
+0000000000000400  000000f10000001b R_RISCV_LO12_I         0000000000000098 .LC11 + 0
+0000000000000400  0000000000000033 R_RISCV_RELAX                             0
+0000000000000404  000001c500000012 R_RISCV_CALL           0000000000000000 printf + 0
+0000000000000404  0000000000000033 R_RISCV_RELAX                             0
+0000000000000414  000001c600000012 R_RISCV_CALL           0000000000000000 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev + 0
+0000000000000414  0000000000000033 R_RISCV_RELAX                             0
+0000000000000424  000001c600000012 R_RISCV_CALL           0000000000000000 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev + 0
+0000000000000424  0000000000000033 R_RISCV_RELAX                             0
+0000000000000434  000001c600000012 R_RISCV_CALL           0000000000000000 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev + 0
+0000000000000434  0000000000000033 R_RISCV_RELAX                             0
+0000000000000444  000001c600000012 R_RISCV_CALL           0000000000000000 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev + 0
+0000000000000444  0000000000000033 R_RISCV_RELAX                             0
+0000000000000454  000001a100000012 R_RISCV_CALL           0000000000000000 _ZN3elf3symD1Ev + 0
+0000000000000454  0000000000000033 R_RISCV_RELAX                             0
+0000000000000464  000001a700000012 R_RISCV_CALL           0000000000000000 _ZN3elf6symtab8iteratorppEv + 0
+0000000000000464  0000000000000033 R_RISCV_RELAX                             0
+000000000000047c  000001ab00000012 R_RISCV_CALL           0000000000000000 _ZNK3elf6symtab8iteratorneERS1_ + 0
+000000000000047c  0000000000000033 R_RISCV_RELAX                             0
+0000000000000488  000000fa00000010 R_RISCV_BRANCH         00000000000002c4 .L50 + 0
+0000000000000494  000001aa00000012 R_RISCV_CALL           0000000000000000 _ZN3elf6symtab8iteratorD1Ev + 0
+0000000000000494  0000000000000033 R_RISCV_RELAX                             0
+00000000000004a4  000001aa00000012 R_RISCV_CALL           0000000000000000 _ZN3elf6symtab8iteratorD1Ev + 0
+00000000000004a4  0000000000000033 R_RISCV_RELAX                             0
+00000000000004b4  000001b500000012 R_RISCV_CALL           0000000000000000 _ZN3elf6symtabD1Ev + 0
+00000000000004b4  0000000000000033 R_RISCV_RELAX                             0
+00000000000004bc  000000fb00000011 R_RISCV_JAL            00000000000004c4 .L48 + 0
+00000000000004cc  000001d000000012 R_RISCV_CALL           0000000000000000 _ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEppEv + 0
+00000000000004cc  0000000000000033 R_RISCV_RELAX                             0
+00000000000004e4  000001d100000012 R_RISCV_CALL           0000000000000000 _ZN9__gnu_cxxneIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESD_ + 0
+00000000000004e4  0000000000000033 R_RISCV_RELAX                             0
+00000000000004f0  000000fc00000010 R_RISCV_BRANCH         0000000000000180 .L51 + 0
+0000000000000500  0000019300000012 R_RISCV_CALL           0000000000000000 _ZN3elf3elfD1Ev + 0
+0000000000000500  0000000000000033 R_RISCV_RELAX                             0
+000000000000050c  000000fd00000011 R_RISCV_JAL            0000000000000630 .L75 + 0
+000000000000051c  000001af00000012 R_RISCV_CALL           0000000000000000 _ZNSt10shared_ptrIN3elf6loaderEED1Ev + 0
+000000000000051c  0000000000000033 R_RISCV_RELAX                             0
+000000000000052c  000001a500000012 R_RISCV_CALL           0000000000000000 _Unwind_Resume + 0
+000000000000052c  0000000000000033 R_RISCV_RELAX                             0
+0000000000000540  000001c600000012 R_RISCV_CALL           0000000000000000 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev + 0
+0000000000000540  0000000000000033 R_RISCV_RELAX                             0
+0000000000000548  000000fe00000011 R_RISCV_JAL            0000000000000610 .L55 + 0
+0000000000000558  000001c600000012 R_RISCV_CALL           0000000000000000 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev + 0
+0000000000000558  0000000000000033 R_RISCV_RELAX                             0
+0000000000000560  000000ff00000011 R_RISCV_JAL            0000000000000568 .L57 + 0
+0000000000000570  000001c600000012 R_RISCV_CALL           0000000000000000 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev + 0
+0000000000000570  0000000000000033 R_RISCV_RELAX                             0
+0000000000000578  0000010000000011 R_RISCV_JAL            0000000000000580 .L58 + 0
+0000000000000588  000001c600000012 R_RISCV_CALL           0000000000000000 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev + 0
+0000000000000588  0000000000000033 R_RISCV_RELAX                             0
+0000000000000590  0000010100000011 R_RISCV_JAL            0000000000000598 .L59 + 0
+00000000000005a0  000001c600000012 R_RISCV_CALL           0000000000000000 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev + 0
+00000000000005a0  0000000000000033 R_RISCV_RELAX                             0
+00000000000005a8  0000010200000011 R_RISCV_JAL            00000000000005b0 .L60 + 0
+00000000000005b8  000001a100000012 R_RISCV_CALL           0000000000000000 _ZN3elf3symD1Ev + 0
+00000000000005b8  0000000000000033 R_RISCV_RELAX                             0
+00000000000005c0  0000010300000011 R_RISCV_JAL            00000000000005c8 .L61 + 0
+00000000000005d0  000001aa00000012 R_RISCV_CALL           0000000000000000 _ZN3elf6symtab8iteratorD1Ev + 0
+00000000000005d0  0000000000000033 R_RISCV_RELAX                             0
+00000000000005d8  0000010400000011 R_RISCV_JAL            00000000000005e0 .L62 + 0
+00000000000005e8  000001aa00000012 R_RISCV_CALL           0000000000000000 _ZN3elf6symtab8iteratorD1Ev + 0
+00000000000005e8  0000000000000033 R_RISCV_RELAX                             0
+00000000000005f0  0000010500000011 R_RISCV_JAL            00000000000005f8 .L63 + 0
+0000000000000600  000001b500000012 R_RISCV_CALL           0000000000000000 _ZN3elf6symtabD1Ev + 0
+0000000000000600  0000000000000033 R_RISCV_RELAX                             0
+0000000000000608  000000fe00000011 R_RISCV_JAL            0000000000000610 .L55 + 0
+0000000000000618  0000019300000012 R_RISCV_CALL           0000000000000000 _ZN3elf3elfD1Ev + 0
+0000000000000618  0000000000000033 R_RISCV_RELAX                             0
+0000000000000628  000001a500000012 R_RISCV_CALL           0000000000000000 _Unwind_Resume + 0
+0000000000000628  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv' at offset 0x7080 contains 11 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000028  000001820000001a R_RISCV_HI20           0000000000000000 __libc_single_threaded + 0
+0000000000000028  0000000000000033 R_RISCV_RELAX                             0
+000000000000002c  000001820000001b R_RISCV_LO12_I         0000000000000000 __libc_single_threaded + 0
+000000000000002c  0000000000000033 R_RISCV_RELAX                             0
+000000000000003c  0000010600000010 R_RISCV_BRANCH         0000000000000080 .L3 + 0
+000000000000007c  0000010700000011 R_RISCV_JAL            000000000000009c .L5 + 0
+000000000000008c  0000018300000012 R_RISCV_CALL           0000000000000000 _ZN9__gnu_cxx18__exchange_and_addEPVii + 0
+000000000000008c  0000000000000033 R_RISCV_RELAX                             0
+00000000000000b0  0000010800000010 R_RISCV_BRANCH         00000000000000c0 .L7 + 0
+00000000000000b8  0000018400000012 R_RISCV_CALL           0000000000000000 _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv + 0
+00000000000000b8  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_' at offset 0x7188 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000040  0000018700000012 R_RISCV_CALL           0000000000000000 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC1ERKS2_ + 0
+0000000000000040  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED2Ev' at offset 0x71b8 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000020  0000018a00000012 R_RISCV_CALL           0000000000000000 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED1Ev + 0
+0000000000000020  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt10shared_ptrIN3elf3elf4implEEC2ERKS3_' at offset 0x71e8 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000028  0000018600000012 R_RISCV_CALL           0000000000000000 _ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_ + 0
+0000000000000028  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt10shared_ptrIN3elf3elf4implEED2Ev' at offset 0x7218 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  0000018900000012 R_RISCV_CALL           0000000000000000 _ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED2Ev + 0
+000000000000001c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZN3elf3elfC2ERKS0_' at offset 0x7248 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000028  0000018d00000012 R_RISCV_CALL           0000000000000000 _ZNSt10shared_ptrIN3elf3elf4implEEC1ERKS3_ + 0
+0000000000000028  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZN3elf3elfD2Ev' at offset 0x7278 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  0000018f00000012 R_RISCV_CALL           0000000000000000 _ZNSt10shared_ptrIN3elf3elf4implEED1Ev + 0
+000000000000001c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_' at offset 0x72a8 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000040  0000018700000012 R_RISCV_CALL           0000000000000000 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC1ERKS2_ + 0
+0000000000000040  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev' at offset 0x72d8 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000020  0000018a00000012 R_RISCV_CALL           0000000000000000 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED1Ev + 0
+0000000000000020  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt10shared_ptrIN3elf6strtab4implEEC2ERKS3_' at offset 0x7308 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000028  0000019400000012 R_RISCV_CALL           0000000000000000 _ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_ + 0
+0000000000000028  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt10shared_ptrIN3elf6strtab4implEED2Ev' at offset 0x7338 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  0000019600000012 R_RISCV_CALL           0000000000000000 _ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev + 0
+000000000000001c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZN3elf6strtabC2ERKS0_' at offset 0x7368 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000028  0000019900000012 R_RISCV_CALL           0000000000000000 _ZNSt10shared_ptrIN3elf6strtab4implEEC1ERKS3_ + 0
+0000000000000028  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZN3elf6strtabD2Ev' at offset 0x7398 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  0000019b00000012 R_RISCV_CALL           0000000000000000 _ZNSt10shared_ptrIN3elf6strtab4implEED1Ev + 0
+000000000000001c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZN3elf3symD2Ev' at offset 0x73c8 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  0000019f00000012 R_RISCV_CALL           0000000000000000 _ZN3elf6strtabD1Ev + 0
+000000000000001c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNK3elf6symtab8iteratordeEv' at offset 0x73f8 contains 17 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000002c  0000019100000012 R_RISCV_CALL           0000000000000000 _ZN3elf3elfC1ERKS0_ + 0
+000000000000002c  0000000000000033 R_RISCV_RELAX                             0
+0000000000000050  0000019d00000012 R_RISCV_CALL           0000000000000000 _ZN3elf6strtabC1ERKS0_ + 0
+0000000000000050  0000000000000033 R_RISCV_RELAX                             0
+0000000000000070  000001a400000012 R_RISCV_CALL           0000000000000000 _ZN3elf3symC1ENS_3elfEPKvNS_6strtabE + 0
+0000000000000070  0000000000000033 R_RISCV_RELAX                             0
+0000000000000080  0000019f00000012 R_RISCV_CALL           0000000000000000 _ZN3elf6strtabD1Ev + 0
+0000000000000080  0000000000000033 R_RISCV_RELAX                             0
+0000000000000090  0000019300000012 R_RISCV_CALL           0000000000000000 _ZN3elf3elfD1Ev + 0
+0000000000000090  0000000000000033 R_RISCV_RELAX                             0
+0000000000000098  0000010900000011 R_RISCV_JAL            00000000000000d0 .L27 + 0
+00000000000000a8  0000019f00000012 R_RISCV_CALL           0000000000000000 _ZN3elf6strtabD1Ev + 0
+00000000000000a8  0000000000000033 R_RISCV_RELAX                             0
+00000000000000b8  0000019300000012 R_RISCV_CALL           0000000000000000 _ZN3elf3elfD1Ev + 0
+00000000000000b8  0000000000000033 R_RISCV_RELAX                             0
+00000000000000c8  000001a500000012 R_RISCV_CALL           0000000000000000 _Unwind_Resume + 0
+00000000000000c8  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.gcc_except_table._ZNK3elf6symtab8iteratordeEv' at offset 0x7590 contains 10 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000004  0000010a00000023 R_RISCV_ADD32          0000000000000070 .LEHB0 + 0
+0000000000000004  0000010b00000027 R_RISCV_SUB32          0000000000000000 .LFB2218 + 0
+0000000000000008  0000010c00000023 R_RISCV_ADD32          0000000000000078 .LEHE0 + 0
+0000000000000008  0000010a00000027 R_RISCV_SUB32          0000000000000070 .LEHB0 + 0
+000000000000000c  0000010d00000023 R_RISCV_ADD32          000000000000009c .L26 + 0
+000000000000000c  0000010b00000027 R_RISCV_SUB32          0000000000000000 .LFB2218 + 0
+0000000000000011  0000010e00000023 R_RISCV_ADD32          00000000000000c8 .LEHB1 + 0
+0000000000000011  0000010b00000027 R_RISCV_SUB32          0000000000000000 .LFB2218 + 0
+0000000000000015  0000010f00000023 R_RISCV_ADD32          00000000000000d0 .LEHE1 + 0
+0000000000000015  0000010e00000027 R_RISCV_SUB32          00000000000000c8 .LEHB1 + 0
+
+Relocation section '.rela.text._ZN3elf6symtab8iteratorppEv' at offset 0x7680 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  000001a800000012 R_RISCV_CALL           0000000000000000 _ZN3elf6symtab8iteratorpLEl + 0
+000000000000001c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZN3elf6symtab8iteratorD2Ev' at offset 0x76b0 contains 4 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000020  0000019f00000012 R_RISCV_CALL           0000000000000000 _ZN3elf6strtabD1Ev + 0
+0000000000000020  0000000000000033 R_RISCV_RELAX                             0
+0000000000000030  0000019300000012 R_RISCV_CALL           0000000000000000 _ZN3elf3elfD1Ev + 0
+0000000000000030  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED2Ev' at offset 0x7710 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000020  0000018a00000012 R_RISCV_CALL           0000000000000000 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED1Ev + 0
+0000000000000020  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt10shared_ptrIN3elf6loaderEED2Ev' at offset 0x7740 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  000001ac00000012 R_RISCV_CALL           0000000000000000 _ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED2Ev + 0
+000000000000001c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev' at offset 0x7770 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000020  0000018a00000012 R_RISCV_CALL           0000000000000000 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED1Ev + 0
+0000000000000020  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt10shared_ptrIN3elf6symtab4implEED2Ev' at offset 0x77a0 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  000001b000000012 R_RISCV_CALL           0000000000000000 _ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev + 0
+000000000000001c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZN3elf6symtabD2Ev' at offset 0x77d0 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  000001b300000012 R_RISCV_CALL           0000000000000000 _ZNSt10shared_ptrIN3elf6symtab4implEED1Ev + 0
+000000000000001c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.gcc_except_table' at offset 0x7800 contains 80 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000005  0000011000000023 R_RISCV_ADD32          0000000000000064 .LEHB2 + 0
+0000000000000005  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000009  0000011200000023 R_RISCV_ADD32          0000000000000114 .LEHE2 + 0
+0000000000000009  0000011000000027 R_RISCV_SUB32          0000000000000064 .LEHB2 + 0
+0000000000000012  0000011300000023 R_RISCV_ADD32          0000000000000124 .LEHB3 + 0
+0000000000000012  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000016  0000011400000023 R_RISCV_ADD32          000000000000012c .LEHE3 + 0
+0000000000000016  0000011300000027 R_RISCV_SUB32          0000000000000124 .LEHB3 + 0
+000000000000001a  0000011500000023 R_RISCV_ADD32          0000000000000510 .L64 + 0
+000000000000001a  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+000000000000001f  0000011600000023 R_RISCV_ADD32          0000000000000144 .LEHB4 + 0
+000000000000001f  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000023  0000011700000023 R_RISCV_ADD32          00000000000001f8 .LEHE4 + 0
+0000000000000023  0000011600000027 R_RISCV_SUB32          0000000000000144 .LEHB4 + 0
+0000000000000027  0000011800000023 R_RISCV_ADD32          000000000000060c .L65 + 0
+0000000000000027  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+000000000000002c  0000011900000023 R_RISCV_ADD32          0000000000000218 .LEHB5 + 0
+000000000000002c  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000030  0000011a00000023 R_RISCV_ADD32          0000000000000220 .LEHE5 + 0
+0000000000000030  0000011900000027 R_RISCV_SUB32          0000000000000218 .LEHB5 + 0
+0000000000000034  0000011b00000023 R_RISCV_ADD32          0000000000000534 .L66 + 0
+0000000000000034  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000039  0000011c00000023 R_RISCV_ADD32          0000000000000270 .LEHB6 + 0
+0000000000000039  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+000000000000003d  0000011d00000023 R_RISCV_ADD32          0000000000000290 .LEHE6 + 0
+000000000000003d  0000011c00000027 R_RISCV_SUB32          0000000000000270 .LEHB6 + 0
+0000000000000041  0000011800000023 R_RISCV_ADD32          000000000000060c .L65 + 0
+0000000000000041  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000046  0000011e00000023 R_RISCV_ADD32          00000000000002a4 .LEHB7 + 0
+0000000000000046  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+000000000000004a  0000011f00000023 R_RISCV_ADD32          00000000000002ac .LEHE7 + 0
+000000000000004a  0000011e00000027 R_RISCV_SUB32          00000000000002a4 .LEHB7 + 0
+000000000000004e  0000012000000023 R_RISCV_ADD32          00000000000005f4 .L67 + 0
+000000000000004e  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000053  0000012100000023 R_RISCV_ADD32          00000000000002b8 .LEHB8 + 0
+0000000000000053  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000057  0000012200000023 R_RISCV_ADD32          00000000000002c0 .LEHE8 + 0
+0000000000000057  0000012100000027 R_RISCV_SUB32          00000000000002b8 .LEHB8 + 0
+000000000000005b  0000012300000023 R_RISCV_ADD32          00000000000005dc .L68 + 0
+000000000000005b  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000060  0000012400000023 R_RISCV_ADD32          00000000000002d4 .LEHB9 + 0
+0000000000000060  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000064  0000012500000023 R_RISCV_ADD32          00000000000002dc .LEHE9 + 0
+0000000000000064  0000012400000027 R_RISCV_SUB32          00000000000002d4 .LEHB9 + 0
+0000000000000068  0000012600000023 R_RISCV_ADD32          00000000000005c4 .L69 + 0
+0000000000000068  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+000000000000006d  0000012700000023 R_RISCV_ADD32          000000000000032c .LEHB10 + 0
+000000000000006d  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000071  0000012800000023 R_RISCV_ADD32          0000000000000334 .LEHE10 + 0
+0000000000000071  0000012700000027 R_RISCV_SUB32          000000000000032c .LEHB10 + 0
+0000000000000075  0000012900000023 R_RISCV_ADD32          00000000000005ac .L70 + 0
+0000000000000075  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+000000000000007a  0000012a00000023 R_RISCV_ADD32          0000000000000368 .LEHB11 + 0
+000000000000007a  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+000000000000007e  0000012b00000023 R_RISCV_ADD32          0000000000000370 .LEHE11 + 0
+000000000000007e  0000012a00000027 R_RISCV_SUB32          0000000000000368 .LEHB11 + 0
+0000000000000082  0000012c00000023 R_RISCV_ADD32          0000000000000594 .L71 + 0
+0000000000000082  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000087  0000012d00000023 R_RISCV_ADD32          0000000000000398 .LEHB12 + 0
+0000000000000087  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+000000000000008b  0000012e00000023 R_RISCV_ADD32          00000000000003a0 .LEHE12 + 0
+000000000000008b  0000012d00000027 R_RISCV_SUB32          0000000000000398 .LEHB12 + 0
+000000000000008f  0000012f00000023 R_RISCV_ADD32          000000000000057c .L72 + 0
+000000000000008f  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000094  0000013000000023 R_RISCV_ADD32          00000000000003c4 .LEHB13 + 0
+0000000000000094  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+0000000000000098  0000013100000023 R_RISCV_ADD32          00000000000003cc .LEHE13 + 0
+0000000000000098  0000013000000027 R_RISCV_SUB32          00000000000003c4 .LEHB13 + 0
+000000000000009c  0000013200000023 R_RISCV_ADD32          0000000000000564 .L73 + 0
+000000000000009c  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+00000000000000a1  0000013300000023 R_RISCV_ADD32          0000000000000404 .LEHB14 + 0
+00000000000000a1  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+00000000000000a5  0000013400000023 R_RISCV_ADD32          000000000000040c .LEHE14 + 0
+00000000000000a5  0000013300000027 R_RISCV_SUB32          0000000000000404 .LEHB14 + 0
+00000000000000a9  0000013500000023 R_RISCV_ADD32          000000000000054c .L74 + 0
+00000000000000a9  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+00000000000000ae  0000013600000023 R_RISCV_ADD32          000000000000052c .LEHB15 + 0
+00000000000000ae  0000011100000027 R_RISCV_SUB32          0000000000000000 .LFB2276 + 0
+00000000000000b2  0000013700000023 R_RISCV_ADD32          0000000000000630 .LEHE15 + 0
+00000000000000b2  0000013600000027 R_RISCV_SUB32          000000000000052c .LEHB15 + 0
+
+Relocation section '.rela.text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv' at offset 0x7f80 contains 9 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000044  000001820000001a R_RISCV_HI20           0000000000000000 __libc_single_threaded + 0
+0000000000000044  0000000000000033 R_RISCV_RELAX                             0
+0000000000000048  000001820000001b R_RISCV_LO12_I         0000000000000000 __libc_single_threaded + 0
+0000000000000048  0000000000000033 R_RISCV_RELAX                             0
+0000000000000058  0000013800000010 R_RISCV_BRANCH         000000000000009c .L79 + 0
+0000000000000098  0000013900000011 R_RISCV_JAL            00000000000000b8 .L81 + 0
+00000000000000a8  0000018300000012 R_RISCV_CALL           0000000000000000 _ZN9__gnu_cxx18__exchange_and_addEPVii + 0
+00000000000000a8  0000000000000033 R_RISCV_RELAX                             0
+00000000000000cc  0000013a00000010 R_RISCV_BRANCH         00000000000000e8 .L83 + 0
+
+Relocation section '.rela.text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED2Ev' at offset 0x8058 contains 3 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  0000013b00000010 R_RISCV_BRANCH         0000000000000034 .L86 + 0
+000000000000002c  0000018100000012 R_RISCV_CALL           0000000000000000 _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv + 0
+000000000000002c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2ERKS2_' at offset 0x80a0 contains 3 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000030  0000013c00000010 R_RISCV_BRANCH         0000000000000048 .L89 + 0
+0000000000000040  000001d400000012 R_RISCV_CALL           0000000000000000 _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv + 0
+0000000000000040  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNKSt6vectorIN3elf7sectionESaIS1_EE5beginEv' at offset 0x80e8 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000024  000001d500000012 R_RISCV_CALL           0000000000000000 _ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEC1ERKS4_ + 0
+0000000000000024  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNKSt6vectorIN3elf7sectionESaIS1_EE3endEv' at offset 0x8118 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000028  000001d500000012 R_RISCV_CALL           0000000000000000 _ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEC1ERKS4_ + 0
+0000000000000028  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZN9__gnu_cxxneIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESD_' at offset 0x8148 contains 4 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000020  000001d600000012 R_RISCV_CALL           0000000000000000 _ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEE4baseEv + 0
+0000000000000020  0000000000000033 R_RISCV_RELAX                             0
+0000000000000034  000001d600000012 R_RISCV_CALL           0000000000000000 _ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEE4baseEv + 0
+0000000000000034  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv' at offset 0x81a8 contains 8 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000028  000001820000001a R_RISCV_HI20           0000000000000000 __libc_single_threaded + 0
+0000000000000028  0000000000000033 R_RISCV_RELAX                             0
+000000000000002c  000001820000001b R_RISCV_LO12_I         0000000000000000 __libc_single_threaded + 0
+000000000000002c  0000000000000033 R_RISCV_RELAX                             0
+000000000000003c  0000013d00000010 R_RISCV_BRANCH         0000000000000070 .L106 + 0
+000000000000006c  0000013e00000011 R_RISCV_JAL            0000000000000084 .L107 + 0
+000000000000007c  000001d700000012 R_RISCV_CALL           0000000000000000 _ZN9__gnu_cxx12__atomic_addEPVii + 0
+000000000000007c  0000000000000033 R_RISCV_RELAX                             0
+
+Relocation section '.rela.sdata.DW.ref.__gxx_personality_v0' at offset 0x8268 contains 1 entry:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000000  000001a600000002 R_RISCV_64             0000000000000000 __gxx_personality_v0 + 0
+
+Relocation section '.rela.eh_frame' at offset 0x8280 contains 180 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000001c  0000000b00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000020  0000000f00000023 R_RISCV_ADD32          00000000000000d4 .L0  + 0
+0000000000000020  0000000b00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000032  0000000e00000036 R_RISCV_SET8           00000000000000c8 .L0  + 0
+0000000000000032  0000000d00000025 R_RISCV_SUB8           0000000000000010 .L0  + 0
+0000000000000044  0000001100000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000048  0000001300000023 R_RISCV_ADD32          0000000000000028 .L0  + 0
+0000000000000048  0000001100000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000068  0000001500000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+000000000000006c  0000001900000023 R_RISCV_ADD32          000000000000005c .L0  + 0
+000000000000006c  0000001500000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+000000000000007e  0000001800000036 R_RISCV_SET8           0000000000000050 .L0  + 0
+000000000000007e  0000001700000025 R_RISCV_SUB8           0000000000000010 .L0  + 0
+0000000000000090  0000001b00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000094  0000001f00000023 R_RISCV_ADD32          000000000000003c .L0  + 0
+0000000000000094  0000001b00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000000a5  0000001e00000035 R_RISCV_SET6           0000000000000030 .L0  + 0
+00000000000000a5  0000001d00000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+00000000000000b8  0000002100000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000000bc  0000002500000023 R_RISCV_ADD32          0000000000000044 .L0  + 0
+00000000000000bc  0000002100000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000000cd  0000002400000035 R_RISCV_SET6           0000000000000038 .L0  + 0
+00000000000000cd  0000002300000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+00000000000000e0  0000002700000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000000e4  0000002b00000023 R_RISCV_ADD32          0000000000000038 .L0  + 0
+00000000000000e4  0000002700000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000000f5  0000002a00000035 R_RISCV_SET6           000000000000002c .L0  + 0
+00000000000000f5  0000002900000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+0000000000000108  0000002d00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+000000000000010c  0000003100000023 R_RISCV_ADD32          0000000000000044 .L0  + 0
+000000000000010c  0000002d00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+000000000000011d  0000003000000035 R_RISCV_SET6           0000000000000038 .L0  + 0
+000000000000011d  0000002f00000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+0000000000000130  0000003300000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000134  0000003700000023 R_RISCV_ADD32          0000000000000038 .L0  + 0
+0000000000000134  0000003300000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000145  0000003600000035 R_RISCV_SET6           000000000000002c .L0  + 0
+0000000000000145  0000003500000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+0000000000000158  0000003900000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+000000000000015c  0000003d00000023 R_RISCV_ADD32          000000000000005c .L0  + 0
+000000000000015c  0000003900000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+000000000000016e  0000003c00000036 R_RISCV_SET8           0000000000000050 .L0  + 0
+000000000000016e  0000003b00000025 R_RISCV_SUB8           0000000000000010 .L0  + 0
+0000000000000180  0000003f00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000184  0000004300000023 R_RISCV_ADD32          000000000000003c .L0  + 0
+0000000000000184  0000003f00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000195  0000004200000035 R_RISCV_SET6           0000000000000030 .L0  + 0
+0000000000000195  0000004100000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+00000000000001a8  0000004500000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000001ac  0000004900000023 R_RISCV_ADD32          0000000000000044 .L0  + 0
+00000000000001ac  0000004500000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000001bd  0000004800000035 R_RISCV_SET6           0000000000000038 .L0  + 0
+00000000000001bd  0000004700000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+00000000000001d0  0000004b00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000001d4  0000004f00000023 R_RISCV_ADD32          0000000000000038 .L0  + 0
+00000000000001d4  0000004b00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000001e5  0000004e00000035 R_RISCV_SET6           000000000000002c .L0  + 0
+00000000000001e5  0000004d00000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+00000000000001f8  0000005100000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000001fc  0000005500000023 R_RISCV_ADD32          0000000000000044 .L0  + 0
+00000000000001fc  0000005100000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+000000000000020d  0000005400000035 R_RISCV_SET6           0000000000000038 .L0  + 0
+000000000000020d  0000005300000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+0000000000000220  0000005700000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000224  0000005b00000023 R_RISCV_ADD32          0000000000000038 .L0  + 0
+0000000000000224  0000005700000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000235  0000005a00000035 R_RISCV_SET6           000000000000002c .L0  + 0
+0000000000000235  0000005900000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+0000000000000248  0000005d00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+000000000000024c  0000006100000023 R_RISCV_ADD32          0000000000000038 .L0  + 0
+000000000000024c  0000005d00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+000000000000025d  0000006000000035 R_RISCV_SET6           000000000000002c .L0  + 0
+000000000000025d  0000005f00000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+000000000000027b  000001a300000039 R_RISCV_32_PCREL       0000000000000000 DW.ref.__gxx_personality_v0 + 0
+000000000000028c  0000006300000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000290  0000006700000023 R_RISCV_ADD32          00000000000000e8 .L0  + 0
+0000000000000290  0000006300000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000295  0000013f00000039 R_RISCV_32_PCREL       0000000000000000 .LLSDA2218 + 0
+00000000000002a8  0000006600000036 R_RISCV_SET8           00000000000000d8 .L0  + 0
+00000000000002a8  0000006500000025 R_RISCV_SUB8           0000000000000014 .L0  + 0
+00000000000002bc  0000006a00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000002c0  0000006e00000023 R_RISCV_ADD32          000000000000003c .L0  + 0
+00000000000002c0  0000006a00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000002d1  0000006d00000035 R_RISCV_SET6           0000000000000030 .L0  + 0
+00000000000002d1  0000006c00000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+00000000000002e4  0000007000000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000002e8  0000007400000023 R_RISCV_ADD32          000000000000004c .L0  + 0
+00000000000002e8  0000007000000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000002f9  0000007300000035 R_RISCV_SET6           0000000000000040 .L0  + 0
+00000000000002f9  0000007200000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+000000000000030c  0000007600000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000310  0000007800000023 R_RISCV_ADD32          000000000000004c .L0  + 0
+0000000000000310  0000007600000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000330  0000007a00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000334  0000007c00000023 R_RISCV_ADD32          0000000000000040 .L0  + 0
+0000000000000334  0000007a00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000354  0000007e00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000358  0000008200000023 R_RISCV_ADD32          000000000000003c .L0  + 0
+0000000000000358  0000007e00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000369  0000008100000035 R_RISCV_SET6           0000000000000030 .L0  + 0
+0000000000000369  0000008000000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+000000000000037c  0000008400000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000380  0000008800000023 R_RISCV_ADD32          0000000000000038 .L0  + 0
+0000000000000380  0000008400000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000391  0000008700000035 R_RISCV_SET6           000000000000002c .L0  + 0
+0000000000000391  0000008600000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+00000000000003a4  0000008a00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000003a8  0000008e00000023 R_RISCV_ADD32          000000000000003c .L0  + 0
+00000000000003a8  0000008a00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000003b9  0000008d00000035 R_RISCV_SET6           0000000000000030 .L0  + 0
+00000000000003b9  0000008c00000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+00000000000003cc  0000009000000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000003d0  0000009400000023 R_RISCV_ADD32          0000000000000038 .L0  + 0
+00000000000003d0  0000009000000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000003e1  0000009300000035 R_RISCV_SET6           000000000000002c .L0  + 0
+00000000000003e1  0000009200000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+00000000000003f4  0000009600000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000003f8  0000009a00000023 R_RISCV_ADD32          0000000000000038 .L0  + 0
+00000000000003f8  0000009600000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000409  0000009900000035 R_RISCV_SET6           000000000000002c .L0  + 0
+0000000000000409  0000009800000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+000000000000041c  0000009c00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000420  000000a000000023 R_RISCV_ADD32          000000000000065c .L0  + 0
+0000000000000420  0000009c00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000425  0000014000000039 R_RISCV_32_PCREL       0000000000000000 .LLSDA2276 + 0
+0000000000000443  0000009f00000037 R_RISCV_SET16          0000000000000638 .L0  + 0
+0000000000000443  0000009e00000026 R_RISCV_SUB16          0000000000000028 .L0  + 0
+0000000000000464  000000a300000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000468  000000a700000023 R_RISCV_ADD32          00000000000000fc .L0  + 0
+0000000000000468  000000a300000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+000000000000047a  000000a600000036 R_RISCV_SET8           00000000000000f0 .L0  + 0
+000000000000047a  000000a500000025 R_RISCV_SUB8           0000000000000010 .L0  + 0
+000000000000048c  000000a900000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000490  000000ad00000023 R_RISCV_ADD32          0000000000000048 .L0  + 0
+0000000000000490  000000a900000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000004a1  000000ac00000035 R_RISCV_SET6           000000000000003c .L0  + 0
+00000000000004a1  000000ab00000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+00000000000004b4  000000af00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000004b8  000000b300000023 R_RISCV_ADD32          000000000000005c .L0  + 0
+00000000000004b8  000000af00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000004ca  000000b200000036 R_RISCV_SET8           0000000000000050 .L0  + 0
+00000000000004ca  000000b100000025 R_RISCV_SUB8           0000000000000010 .L0  + 0
+00000000000004dc  000000b500000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000004e0  000000b900000023 R_RISCV_ADD32          0000000000000044 .L0  + 0
+00000000000004e0  000000b500000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000004f1  000000b800000035 R_RISCV_SET6           0000000000000038 .L0  + 0
+00000000000004f1  000000b700000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+0000000000000504  000000bb00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000508  000000bf00000023 R_RISCV_ADD32          0000000000000048 .L0  + 0
+0000000000000508  000000bb00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000519  000000be00000035 R_RISCV_SET6           000000000000003c .L0  + 0
+0000000000000519  000000bd00000034 R_RISCV_SUB6           0000000000000010 .L0  + 0
+000000000000052c  000000c100000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000530  000000c500000023 R_RISCV_ADD32          0000000000000068 .L0  + 0
+0000000000000530  000000c100000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000544  000000c400000036 R_RISCV_SET8           0000000000000058 .L0  + 0
+0000000000000544  000000c300000025 R_RISCV_SUB8           0000000000000014 .L0  + 0
+0000000000000558  000000c700000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+000000000000055c  000000c900000023 R_RISCV_ADD32          0000000000000038 .L0  + 0
+000000000000055c  000000c700000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+000000000000057c  000000cb00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000580  000000cd00000023 R_RISCV_ADD32          0000000000000028 .L0  + 0
+0000000000000580  000000cb00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000005a0  000000cf00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000005a4  000000d100000023 R_RISCV_ADD32          0000000000000030 .L0  + 0
+00000000000005a4  000000cf00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000005c4  000000d300000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000005c8  000000d500000023 R_RISCV_ADD32          0000000000000030 .L0  + 0
+00000000000005c8  000000d300000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000005e8  000000d700000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+00000000000005ec  000000db00000023 R_RISCV_ADD32          000000000000009c .L0  + 0
+00000000000005ec  000000d700000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+00000000000005fe  000000da00000036 R_RISCV_SET8           0000000000000090 .L0  + 0
+00000000000005fe  000000d900000025 R_RISCV_SUB8           0000000000000010 .L0  + 0
+0000000000000610  000000dd00000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000614  000000df00000023 R_RISCV_ADD32          0000000000000034 .L0  + 0
+0000000000000614  000000dd00000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+0000000000000634  000000e100000039 R_RISCV_32_PCREL       0000000000000000 .L0  + 0
+0000000000000638  000000e300000023 R_RISCV_ADD32          0000000000000024 .L0  + 0
+0000000000000638  000000e100000027 R_RISCV_SUB32          0000000000000000 .L0  + 0
+
+The decoding of unwind sections for machine type RISC-V is not currently supported.
+
+Symbol table '.symtab' contains 473 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS dump-syms.cc
+     2: 0000000000000000     0 SECTION LOCAL  DEFAULT   40 .text
+     3: 0000000000000000     0 SECTION LOCAL  DEFAULT   42 .data
+     4: 0000000000000000     0 SECTION LOCAL  DEFAULT   43 .bss
+     5: 0000000000000000     0 SECTION LOCAL  DEFAULT   44 .srodata
+     6: 0000000000000000     1 OBJECT  LOCAL  DEFAULT   44 _ZStL19piecewise_construct
+     7: 0000000000000008     1 OBJECT  LOCAL  DEFAULT   44 _ZStL13allocator_arg
+     8: 0000000000000010     1 OBJECT  LOCAL  DEFAULT   44 _ZStL6ignore
+     9: 0000000000000014     4 OBJECT  LOCAL  DEFAULT   44 _ZN9__gnu_cxxL21__default_lock_policyE
+    10: 0000000000000000     0 SECTION LOCAL  DEFAULT   45 .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv
+    11: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   45 .L0 
+    12: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   45 $x
+    13: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   45 .L0 
+    14: 00000000000000c8     0 NOTYPE  LOCAL  DEFAULT   45 .L0 
+    15: 00000000000000d4     0 NOTYPE  LOCAL  DEFAULT   45 .L0 
+    16: 0000000000000000     0 SECTION LOCAL  DEFAULT   47 .text._ZNK3elf3sym8get_dataEv
+    17: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   47 .L0 
+    18: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   47 $x
+    19: 0000000000000028     0 NOTYPE  LOCAL  DEFAULT   47 .L0 
+    20: 0000000000000000     0 SECTION LOCAL  DEFAULT   48 .text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_
+    21: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   48 .L0 
+    22: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   48 $x
+    23: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   48 .L0 
+    24: 0000000000000050     0 NOTYPE  LOCAL  DEFAULT   48 .L0 
+    25: 000000000000005c     0 NOTYPE  LOCAL  DEFAULT   48 .L0 
+    26: 0000000000000000     0 SECTION LOCAL  DEFAULT   50 .text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+    27: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   50 .L0 
+    28: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   50 $x
+    29: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   50 .L0 
+    30: 0000000000000030     0 NOTYPE  LOCAL  DEFAULT   50 .L0 
+    31: 000000000000003c     0 NOTYPE  LOCAL  DEFAULT   50 .L0 
+    32: 0000000000000000     0 SECTION LOCAL  DEFAULT   52 .text._ZNSt10shared_ptrIN3elf3elf4implEEC2ERKS3_
+    33: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   52 .L0 
+    34: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   52 $x
+    35: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   52 .L0 
+    36: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   52 .L0 
+    37: 0000000000000044     0 NOTYPE  LOCAL  DEFAULT   52 .L0 
+    38: 0000000000000000     0 SECTION LOCAL  DEFAULT   54 .text._ZNSt10shared_ptrIN3elf3elf4implEED2Ev
+    39: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   54 .L0 
+    40: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   54 $x
+    41: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   54 .L0 
+    42: 000000000000002c     0 NOTYPE  LOCAL  DEFAULT   54 .L0 
+    43: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   54 .L0 
+    44: 0000000000000000     0 SECTION LOCAL  DEFAULT   56 .text._ZN3elf3elfC2ERKS0_
+    45: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   56 .L0 
+    46: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   56 $x
+    47: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   56 .L0 
+    48: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   56 .L0 
+    49: 0000000000000044     0 NOTYPE  LOCAL  DEFAULT   56 .L0 
+    50: 0000000000000000     0 SECTION LOCAL  DEFAULT   58 .text._ZN3elf3elfD2Ev
+    51: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   58 .L0 
+    52: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   58 $x
+    53: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   58 .L0 
+    54: 000000000000002c     0 NOTYPE  LOCAL  DEFAULT   58 .L0 
+    55: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   58 .L0 
+    56: 0000000000000000     0 SECTION LOCAL  DEFAULT   60 .text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_
+    57: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   60 .L0 
+    58: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   60 $x
+    59: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   60 .L0 
+    60: 0000000000000050     0 NOTYPE  LOCAL  DEFAULT   60 .L0 
+    61: 000000000000005c     0 NOTYPE  LOCAL  DEFAULT   60 .L0 
+    62: 0000000000000000     0 SECTION LOCAL  DEFAULT   62 .text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+    63: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   62 .L0 
+    64: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   62 $x
+    65: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   62 .L0 
+    66: 0000000000000030     0 NOTYPE  LOCAL  DEFAULT   62 .L0 
+    67: 000000000000003c     0 NOTYPE  LOCAL  DEFAULT   62 .L0 
+    68: 0000000000000000     0 SECTION LOCAL  DEFAULT   64 .text._ZNSt10shared_ptrIN3elf6strtab4implEEC2ERKS3_
+    69: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   64 .L0 
+    70: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   64 $x
+    71: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   64 .L0 
+    72: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   64 .L0 
+    73: 0000000000000044     0 NOTYPE  LOCAL  DEFAULT   64 .L0 
+    74: 0000000000000000     0 SECTION LOCAL  DEFAULT   66 .text._ZNSt10shared_ptrIN3elf6strtab4implEED2Ev
+    75: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   66 .L0 
+    76: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   66 $x
+    77: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   66 .L0 
+    78: 000000000000002c     0 NOTYPE  LOCAL  DEFAULT   66 .L0 
+    79: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   66 .L0 
+    80: 0000000000000000     0 SECTION LOCAL  DEFAULT   68 .text._ZN3elf6strtabC2ERKS0_
+    81: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   68 .L0 
+    82: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   68 $x
+    83: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   68 .L0 
+    84: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   68 .L0 
+    85: 0000000000000044     0 NOTYPE  LOCAL  DEFAULT   68 .L0 
+    86: 0000000000000000     0 SECTION LOCAL  DEFAULT   70 .text._ZN3elf6strtabD2Ev
+    87: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   70 .L0 
+    88: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   70 $x
+    89: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   70 .L0 
+    90: 000000000000002c     0 NOTYPE  LOCAL  DEFAULT   70 .L0 
+    91: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   70 .L0 
+    92: 0000000000000000     0 SECTION LOCAL  DEFAULT   72 .text._ZN3elf3symD2Ev
+    93: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   72 .L0 
+    94: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   72 $x
+    95: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   72 .L0 
+    96: 000000000000002c     0 NOTYPE  LOCAL  DEFAULT   72 .L0 
+    97: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   72 .L0 
+    98: 0000000000000000     0 SECTION LOCAL  DEFAULT   74 .text._ZNK3elf6symtab8iteratordeEv
+    99: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   74 .L0 
+   100: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   74 $x
+   101: 0000000000000014     0 NOTYPE  LOCAL  DEFAULT   74 .L0 
+   102: 00000000000000d8     0 NOTYPE  LOCAL  DEFAULT   74 .L0 
+   103: 00000000000000e8     0 NOTYPE  LOCAL  DEFAULT   74 .L0 
+   104: 0000000000000000     0 SECTION LOCAL  DEFAULT   76 .gcc_except_table._ZNK3elf6symtab8iteratordeEv
+   105: 0000000000000000     0 SECTION LOCAL  DEFAULT   78 .text._ZN3elf6symtab8iteratorppEv
+   106: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   78 .L0 
+   107: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   78 $x
+   108: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   78 .L0 
+   109: 0000000000000030     0 NOTYPE  LOCAL  DEFAULT   78 .L0 
+   110: 000000000000003c     0 NOTYPE  LOCAL  DEFAULT   78 .L0 
+   111: 0000000000000000     0 SECTION LOCAL  DEFAULT   80 .text._ZN3elf6symtab8iteratorD2Ev
+   112: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   80 .L0 
+   113: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   80 $x
+   114: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   80 .L0 
+   115: 0000000000000040     0 NOTYPE  LOCAL  DEFAULT   80 .L0 
+   116: 000000000000004c     0 NOTYPE  LOCAL  DEFAULT   80 .L0 
+   117: 0000000000000000     0 SECTION LOCAL  DEFAULT   82 .text._ZN3elf6symtab8iteratorpLEl
+   118: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   82 .L0 
+   119: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   82 $x
+   120: 000000000000004c     0 NOTYPE  LOCAL  DEFAULT   82 .L0 
+   121: 0000000000000000     0 SECTION LOCAL  DEFAULT   83 .text._ZNK3elf6symtab8iteratorneERS1_
+   122: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   83 .L0 
+   123: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   83 $x
+   124: 0000000000000040     0 NOTYPE  LOCAL  DEFAULT   83 .L0 
+   125: 0000000000000000     0 SECTION LOCAL  DEFAULT   84 .text._ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED2Ev
+   126: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   84 .L0 
+   127: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   84 $x
+   128: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   84 .L0 
+   129: 0000000000000030     0 NOTYPE  LOCAL  DEFAULT   84 .L0 
+   130: 000000000000003c     0 NOTYPE  LOCAL  DEFAULT   84 .L0 
+   131: 0000000000000000     0 SECTION LOCAL  DEFAULT   86 .text._ZNSt10shared_ptrIN3elf6loaderEED2Ev
+   132: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   86 .L0 
+   133: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   86 $x
+   134: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   86 .L0 
+   135: 000000000000002c     0 NOTYPE  LOCAL  DEFAULT   86 .L0 
+   136: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   86 .L0 
+   137: 0000000000000000     0 SECTION LOCAL  DEFAULT   88 .text._ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+   138: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   88 .L0 
+   139: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   88 $x
+   140: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   88 .L0 
+   141: 0000000000000030     0 NOTYPE  LOCAL  DEFAULT   88 .L0 
+   142: 000000000000003c     0 NOTYPE  LOCAL  DEFAULT   88 .L0 
+   143: 0000000000000000     0 SECTION LOCAL  DEFAULT   90 .text._ZNSt10shared_ptrIN3elf6symtab4implEED2Ev
+   144: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   90 .L0 
+   145: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   90 $x
+   146: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   90 .L0 
+   147: 000000000000002c     0 NOTYPE  LOCAL  DEFAULT   90 .L0 
+   148: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   90 .L0 
+   149: 0000000000000000     0 SECTION LOCAL  DEFAULT   92 .text._ZN3elf6symtabD2Ev
+   150: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   92 .L0 
+   151: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   92 $x
+   152: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   92 .L0 
+   153: 000000000000002c     0 NOTYPE  LOCAL  DEFAULT   92 .L0 
+   154: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   92 .L0 
+   155: 0000000000000000     0 SECTION LOCAL  DEFAULT   94 .rodata
+   156: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   40 .L0 
+   157: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   40 $x
+   158: 0000000000000028     0 NOTYPE  LOCAL  DEFAULT   40 .L0 
+   159: 0000000000000638     0 NOTYPE  LOCAL  DEFAULT   40 .L0 
+   160: 000000000000065c     0 NOTYPE  LOCAL  DEFAULT   40 .L0 
+   161: 0000000000000000     0 SECTION LOCAL  DEFAULT   95 .gcc_except_table
+   162: 0000000000000000     0 SECTION LOCAL  DEFAULT   97 .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv
+   163: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   97 .L0 
+   164: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   97 $x
+   165: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   97 .L0 
+   166: 00000000000000f0     0 NOTYPE  LOCAL  DEFAULT   97 .L0 
+   167: 00000000000000fc     0 NOTYPE  LOCAL  DEFAULT   97 .L0 
+   168: 0000000000000000     0 SECTION LOCAL  DEFAULT   99 .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED2Ev
+   169: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   99 .L0 
+   170: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   99 $x
+   171: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT   99 .L0 
+   172: 000000000000003c     0 NOTYPE  LOCAL  DEFAULT   99 .L0 
+   173: 0000000000000048     0 NOTYPE  LOCAL  DEFAULT   99 .L0 
+   174: 0000000000000000     0 SECTION LOCAL  DEFAULT  101 .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2ERKS2_
+   175: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  101 .L0 
+   176: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  101 $x
+   177: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT  101 .L0 
+   178: 0000000000000050     0 NOTYPE  LOCAL  DEFAULT  101 .L0 
+   179: 000000000000005c     0 NOTYPE  LOCAL  DEFAULT  101 .L0 
+   180: 0000000000000000     0 SECTION LOCAL  DEFAULT  103 .text._ZNKSt6vectorIN3elf7sectionESaIS1_EE5beginEv
+   181: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  103 .L0 
+   182: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  103 $x
+   183: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT  103 .L0 
+   184: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT  103 .L0 
+   185: 0000000000000044     0 NOTYPE  LOCAL  DEFAULT  103 .L0 
+   186: 0000000000000000     0 SECTION LOCAL  DEFAULT  105 .text._ZNKSt6vectorIN3elf7sectionESaIS1_EE3endEv
+   187: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  105 .L0 
+   188: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  105 $x
+   189: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT  105 .L0 
+   190: 000000000000003c     0 NOTYPE  LOCAL  DEFAULT  105 .L0 
+   191: 0000000000000048     0 NOTYPE  LOCAL  DEFAULT  105 .L0 
+   192: 0000000000000000     0 SECTION LOCAL  DEFAULT  107 .text._ZN9__gnu_cxxneIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESD_
+   193: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  107 .L0 
+   194: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  107 $x
+   195: 0000000000000014     0 NOTYPE  LOCAL  DEFAULT  107 .L0 
+   196: 0000000000000058     0 NOTYPE  LOCAL  DEFAULT  107 .L0 
+   197: 0000000000000068     0 NOTYPE  LOCAL  DEFAULT  107 .L0 
+   198: 0000000000000000     0 SECTION LOCAL  DEFAULT  109 .text._ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEppEv
+   199: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  109 .L0 
+   200: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  109 $x
+   201: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT  109 .L0 
+   202: 0000000000000000     0 SECTION LOCAL  DEFAULT  110 .text._ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEdeEv
+   203: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  110 .L0 
+   204: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  110 $x
+   205: 0000000000000028     0 NOTYPE  LOCAL  DEFAULT  110 .L0 
+   206: 0000000000000000     0 SECTION LOCAL  DEFAULT  111 .text._ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE4typeEv
+   207: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  111 .L0 
+   208: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  111 $x
+   209: 0000000000000030     0 NOTYPE  LOCAL  DEFAULT  111 .L0 
+   210: 0000000000000000     0 SECTION LOCAL  DEFAULT  112 .text._ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE7bindingEv
+   211: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  112 .L0 
+   212: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  112 $x
+   213: 0000000000000030     0 NOTYPE  LOCAL  DEFAULT  112 .L0 
+   214: 0000000000000000     0 SECTION LOCAL  DEFAULT  113 .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv
+   215: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  113 .L0 
+   216: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  113 $x
+   217: 0000000000000010     0 NOTYPE  LOCAL  DEFAULT  113 .L0 
+   218: 0000000000000090     0 NOTYPE  LOCAL  DEFAULT  113 .L0 
+   219: 000000000000009c     0 NOTYPE  LOCAL  DEFAULT  113 .L0 
+   220: 0000000000000000     0 SECTION LOCAL  DEFAULT  115 .text._ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEC2ERKS4_
+   221: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  115 .L0 
+   222: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  115 $x
+   223: 0000000000000034     0 NOTYPE  LOCAL  DEFAULT  115 .L0 
+   224: 0000000000000000     0 SECTION LOCAL  DEFAULT  116 .text._ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEE4baseEv
+   225: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  116 .L0 
+   226: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  116 $x
+   227: 0000000000000024     0 NOTYPE  LOCAL  DEFAULT  116 .L0 
+   228: 0000000000000000     0 SECTION LOCAL  DEFAULT  117 .sdata.DW.ref.__gxx_personality_v0
+   229: 0000000000000000     0 SECTION LOCAL  DEFAULT  120 .note.GNU-stack
+   230: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   94 .LC0
+   231: 0000000000000018     0 NOTYPE  LOCAL  DEFAULT   94 .LC1
+   232: 0000000000000020     0 NOTYPE  LOCAL  DEFAULT   94 .LC2
+   233: 0000000000000038     0 NOTYPE  LOCAL  DEFAULT   94 .LC3
+   234: 0000000000000040     0 NOTYPE  LOCAL  DEFAULT   94 .LC4
+   235: 0000000000000048     0 NOTYPE  LOCAL  DEFAULT   94 .LC5
+   236: 0000000000000050     0 NOTYPE  LOCAL  DEFAULT   94 .LC6
+   237: 0000000000000058     0 NOTYPE  LOCAL  DEFAULT   94 .LC7
+   238: 0000000000000060     0 NOTYPE  LOCAL  DEFAULT   94 .LC8
+   239: 0000000000000068     0 NOTYPE  LOCAL  DEFAULT   94 .LC9
+   240: 0000000000000070     0 NOTYPE  LOCAL  DEFAULT   94 .LC10
+   241: 0000000000000098     0 NOTYPE  LOCAL  DEFAULT   94 .LC11
+   242: 0000000000000074     0 NOTYPE  LOCAL  DEFAULT   40 .L41
+   243: 0000000000000508     0 NOTYPE  LOCAL  DEFAULT   40 .L52
+   244: 00000000000000fc     0 NOTYPE  LOCAL  DEFAULT   40 .L43
+   245: 00000000000004d4     0 NOTYPE  LOCAL  DEFAULT   40 .L44
+   246: 00000000000001dc     0 NOTYPE  LOCAL  DEFAULT   40 .L45
+   247: 00000000000001e0     0 NOTYPE  LOCAL  DEFAULT   40 .L46
+   248: 00000000000004c0     0 NOTYPE  LOCAL  DEFAULT   40 .L76
+   249: 000000000000046c     0 NOTYPE  LOCAL  DEFAULT   40 .L49
+   250: 00000000000002c4     0 NOTYPE  LOCAL  DEFAULT   40 .L50
+   251: 00000000000004c4     0 NOTYPE  LOCAL  DEFAULT   40 .L48
+   252: 0000000000000180     0 NOTYPE  LOCAL  DEFAULT   40 .L51
+   253: 0000000000000630     0 NOTYPE  LOCAL  DEFAULT   40 .L75
+   254: 0000000000000610     0 NOTYPE  LOCAL  DEFAULT   40 .L55
+   255: 0000000000000568     0 NOTYPE  LOCAL  DEFAULT   40 .L57
+   256: 0000000000000580     0 NOTYPE  LOCAL  DEFAULT   40 .L58
+   257: 0000000000000598     0 NOTYPE  LOCAL  DEFAULT   40 .L59
+   258: 00000000000005b0     0 NOTYPE  LOCAL  DEFAULT   40 .L60
+   259: 00000000000005c8     0 NOTYPE  LOCAL  DEFAULT   40 .L61
+   260: 00000000000005e0     0 NOTYPE  LOCAL  DEFAULT   40 .L62
+   261: 00000000000005f8     0 NOTYPE  LOCAL  DEFAULT   40 .L63
+   262: 0000000000000080     0 NOTYPE  LOCAL  DEFAULT   45 .L3
+   263: 000000000000009c     0 NOTYPE  LOCAL  DEFAULT   45 .L5
+   264: 00000000000000c0     0 NOTYPE  LOCAL  DEFAULT   45 .L7
+   265: 00000000000000d0     0 NOTYPE  LOCAL  DEFAULT   74 .L27
+   266: 0000000000000070     0 NOTYPE  LOCAL  DEFAULT   74 .LEHB0
+   267: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   74 .LFB2218
+   268: 0000000000000078     0 NOTYPE  LOCAL  DEFAULT   74 .LEHE0
+   269: 000000000000009c     0 NOTYPE  LOCAL  DEFAULT   74 .L26
+   270: 00000000000000c8     0 NOTYPE  LOCAL  DEFAULT   74 .LEHB1
+   271: 00000000000000d0     0 NOTYPE  LOCAL  DEFAULT   74 .LEHE1
+   272: 0000000000000064     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB2
+   273: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   40 .LFB2276
+   274: 0000000000000114     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE2
+   275: 0000000000000124     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB3
+   276: 000000000000012c     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE3
+   277: 0000000000000510     0 NOTYPE  LOCAL  DEFAULT   40 .L64
+   278: 0000000000000144     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB4
+   279: 00000000000001f8     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE4
+   280: 000000000000060c     0 NOTYPE  LOCAL  DEFAULT   40 .L65
+   281: 0000000000000218     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB5
+   282: 0000000000000220     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE5
+   283: 0000000000000534     0 NOTYPE  LOCAL  DEFAULT   40 .L66
+   284: 0000000000000270     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB6
+   285: 0000000000000290     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE6
+   286: 00000000000002a4     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB7
+   287: 00000000000002ac     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE7
+   288: 00000000000005f4     0 NOTYPE  LOCAL  DEFAULT   40 .L67
+   289: 00000000000002b8     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB8
+   290: 00000000000002c0     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE8
+   291: 00000000000005dc     0 NOTYPE  LOCAL  DEFAULT   40 .L68
+   292: 00000000000002d4     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB9
+   293: 00000000000002dc     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE9
+   294: 00000000000005c4     0 NOTYPE  LOCAL  DEFAULT   40 .L69
+   295: 000000000000032c     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB10
+   296: 0000000000000334     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE10
+   297: 00000000000005ac     0 NOTYPE  LOCAL  DEFAULT   40 .L70
+   298: 0000000000000368     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB11
+   299: 0000000000000370     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE11
+   300: 0000000000000594     0 NOTYPE  LOCAL  DEFAULT   40 .L71
+   301: 0000000000000398     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB12
+   302: 00000000000003a0     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE12
+   303: 000000000000057c     0 NOTYPE  LOCAL  DEFAULT   40 .L72
+   304: 00000000000003c4     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB13
+   305: 00000000000003cc     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE13
+   306: 0000000000000564     0 NOTYPE  LOCAL  DEFAULT   40 .L73
+   307: 0000000000000404     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB14
+   308: 000000000000040c     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE14
+   309: 000000000000054c     0 NOTYPE  LOCAL  DEFAULT   40 .L74
+   310: 000000000000052c     0 NOTYPE  LOCAL  DEFAULT   40 .LEHB15
+   311: 0000000000000630     0 NOTYPE  LOCAL  DEFAULT   40 .LEHE15
+   312: 000000000000009c     0 NOTYPE  LOCAL  DEFAULT   97 .L79
+   313: 00000000000000b8     0 NOTYPE  LOCAL  DEFAULT   97 .L81
+   314: 00000000000000e8     0 NOTYPE  LOCAL  DEFAULT   97 .L83
+   315: 0000000000000034     0 NOTYPE  LOCAL  DEFAULT   99 .L86
+   316: 0000000000000048     0 NOTYPE  LOCAL  DEFAULT  101 .L89
+   317: 0000000000000070     0 NOTYPE  LOCAL  DEFAULT  113 .L106
+   318: 0000000000000084     0 NOTYPE  LOCAL  DEFAULT  113 .L107
+   319: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   76 .LLSDA2218
+   320: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   95 .LLSDA2276
+   321: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    3 _ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC5ERKS5_
+   322: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    4 _ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED5Ev
+   323: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    5 _ZNSt10shared_ptrIN3elf3elf4implEEC5ERKS3_
+   324: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    6 _ZNSt10shared_ptrIN3elf3elf4implEED5Ev
+   325: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    7 _ZN3elf3elfC5ERKS0_
+   326: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    8 _ZN3elf3elfD5Ev
+   327: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    9 _ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC5ERKS5_
+   328: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   10 _ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED5Ev
+   329: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   11 _ZNSt10shared_ptrIN3elf6strtab4implEEC5ERKS3_
+   330: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   12 _ZNSt10shared_ptrIN3elf6strtab4implEED5Ev
+   331: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   13 _ZN3elf6strtabC5ERKS0_
+   332: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   14 _ZN3elf6strtabD5Ev
+   333: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   15 _ZN3elf3symD5Ev
+   334: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   18 _ZN3elf6symtab8iteratorD5Ev
+   335: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   21 _ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED5Ev
+   336: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   22 _ZNSt10shared_ptrIN3elf6loaderEED5Ev
+   337: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   23 _ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED5Ev
+   338: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   24 _ZNSt10shared_ptrIN3elf6symtab4implEED5Ev
+   339: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   25 _ZN3elf6symtabD5Ev
+   340: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   27 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED5Ev
+   341: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   28 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC5ERKS2_
+   342: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   37 _ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEC5ERKS4_
+   343: 0000000000000000     0 SECTION LOCAL  DEFAULT  119 .comment
+   344: 0000000000000000     0 SECTION LOCAL  DEFAULT  121 .eh_frame
+   345: 0000000000000000     0 SECTION LOCAL  DEFAULT  123 .riscv.attributes
+   346: 0000000000000000     0 SECTION LOCAL  DEFAULT    1 .group
+   347: 0000000000000000     0 SECTION LOCAL  DEFAULT    2 .group
+   348: 0000000000000000     0 SECTION LOCAL  DEFAULT    3 .group
+   349: 0000000000000000     0 SECTION LOCAL  DEFAULT    4 .group
+   350: 0000000000000000     0 SECTION LOCAL  DEFAULT    5 .group
+   351: 0000000000000000     0 SECTION LOCAL  DEFAULT    6 .group
+   352: 0000000000000000     0 SECTION LOCAL  DEFAULT    7 .group
+   353: 0000000000000000     0 SECTION LOCAL  DEFAULT    8 .group
+   354: 0000000000000000     0 SECTION LOCAL  DEFAULT    9 .group
+   355: 0000000000000000     0 SECTION LOCAL  DEFAULT   10 .group
+   356: 0000000000000000     0 SECTION LOCAL  DEFAULT   11 .group
+   357: 0000000000000000     0 SECTION LOCAL  DEFAULT   12 .group
+   358: 0000000000000000     0 SECTION LOCAL  DEFAULT   13 .group
+   359: 0000000000000000     0 SECTION LOCAL  DEFAULT   14 .group
+   360: 0000000000000000     0 SECTION LOCAL  DEFAULT   15 .group
+   361: 0000000000000000     0 SECTION LOCAL  DEFAULT   16 .group
+   362: 0000000000000000     0 SECTION LOCAL  DEFAULT   17 .group
+   363: 0000000000000000     0 SECTION LOCAL  DEFAULT   18 .group
+   364: 0000000000000000     0 SECTION LOCAL  DEFAULT   19 .group
+   365: 0000000000000000     0 SECTION LOCAL  DEFAULT   20 .group
+   366: 0000000000000000     0 SECTION LOCAL  DEFAULT   21 .group
+   367: 0000000000000000     0 SECTION LOCAL  DEFAULT   22 .group
+   368: 0000000000000000     0 SECTION LOCAL  DEFAULT   23 .group
+   369: 0000000000000000     0 SECTION LOCAL  DEFAULT   24 .group
+   370: 0000000000000000     0 SECTION LOCAL  DEFAULT   25 .group
+   371: 0000000000000000     0 SECTION LOCAL  DEFAULT   26 .group
+   372: 0000000000000000     0 SECTION LOCAL  DEFAULT   27 .group
+   373: 0000000000000000     0 SECTION LOCAL  DEFAULT   28 .group
+   374: 0000000000000000     0 SECTION LOCAL  DEFAULT   29 .group
+   375: 0000000000000000     0 SECTION LOCAL  DEFAULT   30 .group
+   376: 0000000000000000     0 SECTION LOCAL  DEFAULT   31 .group
+   377: 0000000000000000     0 SECTION LOCAL  DEFAULT   32 .group
+   378: 0000000000000000     0 SECTION LOCAL  DEFAULT   33 .group
+   379: 0000000000000000     0 SECTION LOCAL  DEFAULT   34 .group
+   380: 0000000000000000     0 SECTION LOCAL  DEFAULT   35 .group
+   381: 0000000000000000     0 SECTION LOCAL  DEFAULT   36 .group
+   382: 0000000000000000     0 SECTION LOCAL  DEFAULT   37 .group
+   383: 0000000000000000     0 SECTION LOCAL  DEFAULT   38 .group
+   384: 0000000000000000     0 SECTION LOCAL  DEFAULT   39 .group
+   385: 0000000000000000   212 FUNC    WEAK   DEFAULT   45 _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv
+   386: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __libc_single_threaded
+   387: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZN9__gnu_cxx18__exchange_and_addEPVii
+   388: 0000000000000000   252 FUNC    WEAK   DEFAULT   97 _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv
+   389: 0000000000000000    40 FUNC    WEAK   DEFAULT   47 _ZNK3elf3sym8get_dataEv
+   390: 0000000000000000    92 FUNC    WEAK   DEFAULT   48 _ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_
+   391: 0000000000000000    92 FUNC    WEAK   DEFAULT  101 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC1ERKS2_
+   392: 0000000000000000    92 FUNC    WEAK   DEFAULT   48 _ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC1ERKS5_
+   393: 0000000000000000    60 FUNC    WEAK   DEFAULT   50 _ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+   394: 0000000000000000    72 FUNC    WEAK   DEFAULT   99 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED1Ev
+   395: 0000000000000000    60 FUNC    WEAK   DEFAULT   50 _ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED1Ev
+   396: 0000000000000000    68 FUNC    WEAK   DEFAULT   52 _ZNSt10shared_ptrIN3elf3elf4implEEC2ERKS3_
+   397: 0000000000000000    68 FUNC    WEAK   DEFAULT   52 _ZNSt10shared_ptrIN3elf3elf4implEEC1ERKS3_
+   398: 0000000000000000    56 FUNC    WEAK   DEFAULT   54 _ZNSt10shared_ptrIN3elf3elf4implEED2Ev
+   399: 0000000000000000    56 FUNC    WEAK   DEFAULT   54 _ZNSt10shared_ptrIN3elf3elf4implEED1Ev
+   400: 0000000000000000    68 FUNC    WEAK   DEFAULT   56 _ZN3elf3elfC2ERKS0_
+   401: 0000000000000000    68 FUNC    WEAK   DEFAULT   56 _ZN3elf3elfC1ERKS0_
+   402: 0000000000000000    56 FUNC    WEAK   DEFAULT   58 _ZN3elf3elfD2Ev
+   403: 0000000000000000    56 FUNC    WEAK   DEFAULT   58 _ZN3elf3elfD1Ev
+   404: 0000000000000000    92 FUNC    WEAK   DEFAULT   60 _ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_
+   405: 0000000000000000    92 FUNC    WEAK   DEFAULT   60 _ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC1ERKS5_
+   406: 0000000000000000    60 FUNC    WEAK   DEFAULT   62 _ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+   407: 0000000000000000    60 FUNC    WEAK   DEFAULT   62 _ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED1Ev
+   408: 0000000000000000    68 FUNC    WEAK   DEFAULT   64 _ZNSt10shared_ptrIN3elf6strtab4implEEC2ERKS3_
+   409: 0000000000000000    68 FUNC    WEAK   DEFAULT   64 _ZNSt10shared_ptrIN3elf6strtab4implEEC1ERKS3_
+   410: 0000000000000000    56 FUNC    WEAK   DEFAULT   66 _ZNSt10shared_ptrIN3elf6strtab4implEED2Ev
+   411: 0000000000000000    56 FUNC    WEAK   DEFAULT   66 _ZNSt10shared_ptrIN3elf6strtab4implEED1Ev
+   412: 0000000000000000    68 FUNC    WEAK   DEFAULT   68 _ZN3elf6strtabC2ERKS0_
+   413: 0000000000000000    68 FUNC    WEAK   DEFAULT   68 _ZN3elf6strtabC1ERKS0_
+   414: 0000000000000000    56 FUNC    WEAK   DEFAULT   70 _ZN3elf6strtabD2Ev
+   415: 0000000000000000    56 FUNC    WEAK   DEFAULT   70 _ZN3elf6strtabD1Ev
+   416: 0000000000000000    56 FUNC    WEAK   DEFAULT   72 _ZN3elf3symD2Ev
+   417: 0000000000000000    56 FUNC    WEAK   DEFAULT   72 _ZN3elf3symD1Ev
+   418: 0000000000000000   232 FUNC    WEAK   DEFAULT   74 _ZNK3elf6symtab8iteratordeEv
+   419: 0000000000000000     8 OBJECT  WEAK   HIDDEN   117 DW.ref.__gxx_personality_v0
+   420: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZN3elf3symC1ENS_3elfEPKvNS_6strtabE
+   421: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _Unwind_Resume
+   422: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __gxx_personality_v0
+   423: 0000000000000000    60 FUNC    WEAK   DEFAULT   78 _ZN3elf6symtab8iteratorppEv
+   424: 0000000000000000    76 FUNC    WEAK   DEFAULT   82 _ZN3elf6symtab8iteratorpLEl
+   425: 0000000000000000    76 FUNC    WEAK   DEFAULT   80 _ZN3elf6symtab8iteratorD2Ev
+   426: 0000000000000000    76 FUNC    WEAK   DEFAULT   80 _ZN3elf6symtab8iteratorD1Ev
+   427: 0000000000000000    64 FUNC    WEAK   DEFAULT   83 _ZNK3elf6symtab8iteratorneERS1_
+   428: 0000000000000000    60 FUNC    WEAK   DEFAULT   84 _ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED2Ev
+   429: 0000000000000000    60 FUNC    WEAK   DEFAULT   84 _ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED1Ev
+   430: 0000000000000000    56 FUNC    WEAK   DEFAULT   86 _ZNSt10shared_ptrIN3elf6loaderEED2Ev
+   431: 0000000000000000    56 FUNC    WEAK   DEFAULT   86 _ZNSt10shared_ptrIN3elf6loaderEED1Ev
+   432: 0000000000000000    60 FUNC    WEAK   DEFAULT   88 _ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev
+   433: 0000000000000000    60 FUNC    WEAK   DEFAULT   88 _ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED1Ev
+   434: 0000000000000000    56 FUNC    WEAK   DEFAULT   90 _ZNSt10shared_ptrIN3elf6symtab4implEED2Ev
+   435: 0000000000000000    56 FUNC    WEAK   DEFAULT   90 _ZNSt10shared_ptrIN3elf6symtab4implEED1Ev
+   436: 0000000000000000    56 FUNC    WEAK   DEFAULT   92 _ZN3elf6symtabD2Ev
+   437: 0000000000000000    56 FUNC    WEAK   DEFAULT   92 _ZN3elf6symtabD1Ev
+   438: 0000000000000000  1628 FUNC    GLOBAL DEFAULT   40 main
+   439: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND stderr
+   440: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND fprintf
+   441: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND open
+   442: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __errno_location
+   443: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND strerror
+   444: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZN3elf18create_mmap_loaderEi
+   445: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZN3elf3elfC1ERKSt10shared_ptrINS_6loaderEE
+   446: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZNK3elf3elf8sectionsEv
+   447: 0000000000000000    68 FUNC    WEAK   DEFAULT  103 _ZNKSt6vectorIN3elf7sectionESaIS1_EE5beginEv
+   448: 0000000000000000    72 FUNC    WEAK   DEFAULT  105 _ZNKSt6vectorIN3elf7sectionESaIS1_EE3endEv
+   449: 0000000000000000    40 FUNC    WEAK   DEFAULT  110 _ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEdeEv
+   450: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZNK3elf7section7get_hdrEv
+   451: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZNK3elf7section8get_nameB5cxx11Ev
+   452: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv
+   453: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND printf
+   454: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+   455: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZNK3elf7section9as_symtabEv
+   456: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZNK3elf6symtab5beginEv
+   457: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZNK3elf6symtab3endEv
+   458: 0000000000000000    48 FUNC    WEAK   DEFAULT  111 _ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE4typeEv
+   459: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZN3elf9to_stringB5cxx11ENS_3sttE
+   460: 0000000000000000    48 FUNC    WEAK   DEFAULT  112 _ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE7bindingEv
+   461: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZN3elf9to_stringB5cxx11ENS_3stbE
+   462: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZN3elf5enums9to_stringB5cxx11ENS0_3shnE
+   463: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZNK3elf3sym8get_nameB5cxx11Ev
+   464: 0000000000000000    56 FUNC    WEAK   DEFAULT  109 _ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEppEv
+   465: 0000000000000000   104 FUNC    WEAK   DEFAULT  107 _ZN9__gnu_cxxneIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESD_
+   466: 0000000000000000    72 FUNC    WEAK   DEFAULT   99 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED2Ev
+   467: 0000000000000000    92 FUNC    WEAK   DEFAULT  101 _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2ERKS2_
+   468: 0000000000000000   156 FUNC    WEAK   DEFAULT  113 _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv
+   469: 0000000000000000    52 FUNC    WEAK   DEFAULT  115 _ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEC1ERKS4_
+   470: 0000000000000000    36 FUNC    WEAK   DEFAULT  116 _ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEE4baseEv
+   471: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _ZN9__gnu_cxx12__atomic_addEPVii
+   472: 0000000000000000    52 FUNC    WEAK   DEFAULT  115 _ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEC2ERKS4_
+
+No version information found in this file.
+Attribute Section: riscv
+File Attributes
+  Tag_RISCV_stack_align: 16-bytes
+  Tag_RISCV_arch: "rv64i2p0_m2p0_a2p0_f2p0_d2p0"
