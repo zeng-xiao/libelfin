@@ -154,7 +154,7 @@ enum class DW_AT {
   const_value = 0x1c,          // block, constant, string
   containing_type = 0x1d,      // reference
   default_value = 0x1e,        // constant, reference, flag
-  inline = 0x20,               // constant
+  inline_ = 0x20,              // constant
   is_optional = 0x21,          // flag
   lower_bound = 0x22,          // constant, exprloc, reference
   producer = 0x25,             // string
@@ -179,7 +179,7 @@ enum class DW_AT {
   encoding = 0x3e,             // constant
   external = 0x3f,             // flag
   frame_base = 0x40,           // exprloc, loclist
-  friend = 0x41,               // reference
+  friend_ = 0x41,              // reference
   identifier_case = 0x42,      // constant
   namelist_item = 0x44,        // reference
   priority = 0x45,             // reference
@@ -210,9 +210,9 @@ enum class DW_AT {
   decimal_sign = 0x5e,         // constant
   digit_count = 0x5f,          // constant
   picture_string = 0x60,       // string
-  mutable = 0x61,              // flag
+  mutable_ = 0x61,             // flag
   threads_scaled = 0x62,       // flag
-  explicit = 0x63,             // flag
+  explicit_ = 0x63,            // flag
   object_pointer = 0x64,       // reference
   endianity = 0x65,            // constant
   elemental = 0x66,            // flag

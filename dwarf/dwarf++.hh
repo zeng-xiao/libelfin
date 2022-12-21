@@ -501,18 +501,22 @@ public:
   enum class type {
     invalid,
     address,
+    addrptr, // DWARF5
     block,
     constant,
     uconstant,
     sconstant,
     exprloc,
     flag,
-    line,
-    loclist,
-    mac,
-    rangelist,
+    lineptr,
+    loclist,     // DWARF5
+    loclistsptr, // DWARF5
+    macptr,
     reference,
-    string
+    rnglist,     // DWARF5
+    rnglistsptr, // DWARF5
+    string,
+    stroffsetsptr // DWARF5
   };
 
   /**

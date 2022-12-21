@@ -11,6 +11,11 @@ DWARFPP_BEGIN_NAMESPACE
 static value::type resolve_type(DW_AT name, DW_FORM form) {
   switch (form) {
   case DW_FORM::addr:
+  case DW_FORM::addrx:
+  case DW_FORM::addrx1:
+  case DW_FORM::addrx2:
+  case DW_FORM::addrx3:
+  case DW_FORM::addrx4:
     return value::type::address;
 
   case DW_FORM::block:
@@ -41,6 +46,13 @@ static value::type resolve_type(DW_AT name, DW_FORM form) {
     case DW_AT::associated:
     case DW_AT::data_location:
     case DW_AT::byte_stride:
+    case DW_AT::rank:
+    case DW_AT::call_value:
+    case DW_AT::call_origin:
+    case DW_AT::call_target:
+    case DW_AT::call_target_clobbered:
+    case DW_AT::call_data_location:
+    case DW_AT::call_data_value:
       return value::type::exprloc;
     default:
       return value::type::block;
@@ -57,25 +69,23 @@ static value::type resolve_type(DW_AT name, DW_FORM form) {
     // XXX Should this be predicated on version?
     switch (name) {
     case DW_AT::location:
-    case DW_AT::stmt_list:
     case DW_AT::string_length:
     case DW_AT::return_addr:
-    case DW_AT::start_scope:
     case DW_AT::data_member_location:
     case DW_AT::frame_base:
-    case DW_AT::macro_info:
     case DW_AT::segment:
     case DW_AT::static_link:
     case DW_AT::use_location:
     case DW_AT::vtable_elem_location:
-    case DW_AT::ranges:
-      goto sec_offset;
+      return value::type::loclist;
     default:
       // Fall through
       break;
     }
   case DW_FORM::data1:
   case DW_FORM::data2:
+  case DW_FORM::data16:
+  case DW_FORM::implictit_const:
     return value::type::constant;
   case DW_FORM::udata:
     return value::type::uconstant;
@@ -89,17 +99,26 @@ static value::type resolve_type(DW_AT name, DW_FORM form) {
   case DW_FORM::flag_present:
     return value::type::flag;
 
+  case DW_FORM::ref_addr:
   case DW_FORM::ref1:
   case DW_FORM::ref2:
   case DW_FORM::ref4:
   case DW_FORM::ref8:
-  case DW_FORM::ref_addr:
-  case DW_FORM::ref_sig8:
   case DW_FORM::ref_udata:
+  case DW_FORM::ref_sig8:
+  case DW_FORM::ref_sup4:
+  case DW_FORM::ref_sup8:
     return value::type::reference;
 
   case DW_FORM::string:
   case DW_FORM::strp:
+  case DW_FORM::strx:
+  case DW_FORM::strp_sup:
+  case DW_FORM::line_strp:
+  case DW_FORM::strx1:
+  case DW_FORM::strx2:
+  case DW_FORM::strx3:
+  case DW_FORM::strx4:
     return value::type::string;
 
   case DW_FORM::indirect:
@@ -110,8 +129,16 @@ static value::type resolve_type(DW_AT name, DW_FORM form) {
   sec_offset:
     // The type of this form depends on the attribute
     switch (name) {
+    case DW_AT::low_pc:
+    case DW_AT::high_pc:
+    case DW_AT::entry_pc:
+    case DW_AT::trampoline:
+    case DW_AT::call_return_pc:
+    case DW_AT::call_pc:
+      return value::type::addrptr;
+
     case DW_AT::stmt_list:
-      return value::type::line;
+      return value::type::lineptr;
 
     case DW_AT::location:
     case DW_AT::string_length:
@@ -124,12 +151,23 @@ static value::type resolve_type(DW_AT name, DW_FORM form) {
     case DW_AT::vtable_elem_location:
       return value::type::loclist;
 
-    case DW_AT::macro_info:
-      return value::type::mac;
+    case DW_AT::use_location:
+      return value::type::loclistsptr;
+
+    case DW_AT::use_location:
+      return value::type::macptr;
 
     case DW_AT::start_scope:
     case DW_AT::ranges:
-      return value::type::rangelist;
+      return value::type::rnglist;
+
+    case DW_AT::start_scope:
+    case DW_AT::ranges:
+      return value::type::rnglistsptr;
+
+    case DW_AT::start_scope:
+    case DW_AT::ranges:
+      return value::type::stroffsetsptr;
 
     case DW_AT::lo_user... DW_AT::hi_user:
       // HACK: ignore vendor extensions
