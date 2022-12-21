@@ -1,0 +1,98 @@
+make -j1 -C elf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++  CXXFLAGS="-march=rv64g -mabi=lp64d"
+make[1]: Entering directory '/home/user/assembler/libelfin/elf'
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o elf.o elf.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o mmap_loader.o mmap_loader.cc
+python3 enum-print.py -u --hex --no-type --mask shf --mask pf \
+	-x loos -x hios -x loproc -x hiproc < data.hh >> to_string.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o to_string.o to_string.cc
+ar rcs libelf++.a elf.o mmap_loader.o to_string.o
+ln -s libelf++.so.0 libelf++.so
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC  -shared -Wl,-soname,libelf++.so.0 -o libelf++.so.0 elf.o mmap_loader.o to_string.o
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S elf.o > elf.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S mmap_loader.o > mmap_loader.o.obj.S
+riscv64-unknown-linux-gnu-readelf -adW elf.o > elf.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW mmap_loader.o > mmap_loader.o.rea.txt
+make[1]: Leaving directory '/home/user/assembler/libelfin/elf'
+make -j1 -C dwarf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++ CXXFLAGS="-march=rv64g -mabi=lp64d"
+make[1]: Entering directory '/home/user/assembler/libelfin/dwarf'
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o dwarf.o dwarf.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o cursor.o cursor.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o die.o die.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o value.o value.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o abbrev.o abbrev.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o expr.o expr.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o rangelist.o rangelist.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o line.o line.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o attrs.o attrs.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o die_str_map.o die_str_map.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o elf.o elf.cc
+python3 ../elf/enum-print.py < dwarf++.hh >> to_string.cc
+python3 ../elf/enum-print.py -s _ -u --hex -x hi_user -x lo_user < data.hh >> to_string.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC   -c -o to_string.o to_string.cc
+ar rcs libdwarf++.a dwarf.o cursor.o die.o value.o abbrev.o expr.o rangelist.o line.o attrs.o die_str_map.o elf.o to_string.o
+echo  value.obj.S  elf.obj.S  line.obj.S  attrs.obj.S  abbrev.obj.S  cursor.obj.S  die_str_map.obj.S  dwarf.obj.S  rangelist.obj.S  expr.obj.S  die.obj.S
+value.obj.S elf.obj.S line.obj.S attrs.obj.S abbrev.obj.S cursor.obj.S die_str_map.obj.S dwarf.obj.S rangelist.obj.S expr.obj.S die.obj.S
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall -fPIC  -shared -Wl,-soname,libdwarf++.so.0 -o libdwarf++.so.0 dwarf.o cursor.o die.o value.o abbrev.o expr.o rangelist.o line.o attrs.o die_str_map.o elf.o to_string.o
+ln -s libdwarf++.so.0 libdwarf++.so
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S abbrev.o > abbrev.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S value.o > value.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S elf.o > elf.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dwarf.o > dwarf.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S cursor.o > cursor.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S die_str_map.o > die_str_map.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S line.o > line.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S rangelist.o > rangelist.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S expr.o > expr.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S attrs.o > attrs.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S die.o > die.o.obj.S
+riscv64-unknown-linux-gnu-readelf -adW abbrev.o > abbrev.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW value.o > value.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW elf.o > elf.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dwarf.o > dwarf.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW cursor.o > cursor.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW die_str_map.o > die_str_map.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW line.o > line.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW rangelist.o > rangelist.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW expr.o > expr.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW attrs.o > attrs.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW die.o > die.o.rea.txt
+make[1]: Leaving directory '/home/user/assembler/libelfin/dwarf'
+make -j1 -C examples CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++ CXXFLAGS="-march=rv64g -mabi=lp64d"
+make[1]: Entering directory '/home/user/assembler/libelfin/examples'
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .dump-sections.o.d  -c -o dump-sections.o dump-sections.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .dump-sections.d   dump-sections.o ../dwarf/libdwarf++.a ../elf/libelf++.a   -o dump-sections
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .dump-segments.o.d  -c -o dump-segments.o dump-segments.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .dump-segments.d   dump-segments.o ../dwarf/libdwarf++.a ../elf/libelf++.a   -o dump-segments
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .dump-syms.o.d  -c -o dump-syms.o dump-syms.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .dump-syms.d   dump-syms.o ../dwarf/libdwarf++.a ../elf/libelf++.a   -o dump-syms
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .dump-tree.o.d  -c -o dump-tree.o dump-tree.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .dump-tree.d   dump-tree.o ../dwarf/libdwarf++.a ../elf/libelf++.a   -o dump-tree
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .dump-lines.o.d  -c -o dump-lines.o dump-lines.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .dump-lines.d   dump-lines.o ../dwarf/libdwarf++.a ../elf/libelf++.a   -o dump-lines
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .find-pc.o.d  -c -o find-pc.o find-pc.cc
+riscv64-unknown-linux-gnu-g++ -march=rv64g -mabi=lp64d -std=c++0x -Wall $(pkg-config --cflags libelf++ libdwarf++) -MD -MP -MF .find-pc.d   find-pc.o ../dwarf/libdwarf++.a ../elf/libelf++.a   -o find-pc
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S find-pc.o > find-pc.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dump-sections.o > dump-sections.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dump-tree.o > dump-tree.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dump-lines.o > dump-lines.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dump-segments.o > dump-segments.o.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dump-syms.o > dump-syms.o.obj.S
+riscv64-unknown-linux-gnu-readelf -adW find-pc.o > find-pc.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dump-sections.o > dump-sections.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dump-tree.o > dump-tree.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dump-lines.o > dump-lines.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dump-segments.o > dump-segments.o.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dump-syms.o > dump-syms.o.rea.txt
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S find-pc.o > find-pc.o.main.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dump-sections.o > dump-sections.o.main.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dump-tree.o > dump-tree.o.main.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dump-lines.o > dump-lines.o.main.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dump-segments.o > dump-segments.o.main.obj.S
+riscv64-unknown-linux-gnu-objdump -dwC -M no-aliases -S dump-syms.o > dump-syms.o.main.obj.S
+riscv64-unknown-linux-gnu-readelf -adW find-pc.o > find-pc.o.main.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dump-sections.o > dump-sections.o.main.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dump-tree.o > dump-tree.o.main.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dump-lines.o > dump-lines.o.main.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dump-segments.o > dump-segments.o.main.rea.txt
+riscv64-unknown-linux-gnu-readelf -adW dump-syms.o > dump-syms.o.main.rea.txt
+make[1]: Leaving directory '/home/user/assembler/libelfin/examples'
