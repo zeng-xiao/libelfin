@@ -21,6 +21,14 @@ enum class byte_order { lsb, msb };
 
 /**
  * Return this system's native byte order.
+ * Little Endian: low order bytes are stored at the starting address
+ *
+ * int i = 1 = 00 00 00 01;
+ *  |____|  address
+ *  |_01_|   0x00
+ *  |_00_|   0x01
+ *  |_00_|   0x02
+ *  |_00_|   0x03
  */
 static inline byte_order native_order() {
   static const union {
