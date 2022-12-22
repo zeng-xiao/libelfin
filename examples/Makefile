@@ -3,6 +3,10 @@ override CXXFLAGS+=-std=c++0x -Wall -g3 -ggdb3 -gvariable-location-views -gdwarf
 
 CLEAN :=
 
+#objdumpArgs=-drswtaxzDC -M no-aliases
+objdumpArgs=-dwC -M no-aliases -S
+readelfArgs=-adW
+
 ifeq ($(findstring rv64, $(CXXFLAGS)), rv64)
 SRC=$(wildcard *.cc)
 objo=$(patsubst %.cc, %.obj.S, $(SRC))
@@ -22,10 +26,6 @@ LIBS=../dwarf/libdwarf++.a ../elf/libelf++.a
 # Dependencies
 CPPFLAGS+=-MD -MP -MF .$@.d
 -include .*.d
-
-#objdumpArgs=-drswtaxzDC -M no-aliases
-objdumpArgs=-dwC -M no-aliases -S
-readelfArgs=-adW
 
 dump-sections: dump-sections.o $(LIBS)
 	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
@@ -53,11 +53,18 @@ CLEAN += find-pc find-pc.o
 
 %.obj.S:%.o
 	riscv64-unknown-linux-gnu-objdump $(objdumpArgs) $^ > $^.obj.S
+CLEAN += *.obj.S
+
 %.rea.txt:%.o
 	riscv64-unknown-linux-gnu-readelf $(readelfArgs) $^ > $^.rea.txt
+CLEAN += *.rea.txt
+
 %.main.obj.S:%.o
 	riscv64-unknown-linux-gnu-objdump $(objdumpArgs) $^ > $^.main.obj.S
+CLEAN += *.main.obj.S
+
 %.main.rea.txt:%.o
 	riscv64-unknown-linux-gnu-readelf $(readelfArgs) $^ > $^.main.rea.txt
+CLEAN += *.main.rea.txt
 clean:
-	rm -f $(CLEAN) .*.d *.obj.S *.rea.txt
+	rm -f $(CLEAN) .*.d

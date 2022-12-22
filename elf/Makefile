@@ -21,11 +21,6 @@ SRCS := elf.cc mmap_loader.cc to_string.cc
 HDRS := elf++.hh data.hh common.hh to_hex.hh
 CLEAN :=
 
-%.obj.S:%.o
-	riscv64-unknown-linux-gnu-objdump $(objdumpArgs) $^ > $^.obj.S
-%.rea.txt:%.o
-	riscv64-unknown-linux-gnu-readelf $(readelfArgs) $^ > $^.rea.txt
-
 libelf++.a: $(SRCS:.cc=.o)
 	ar rcs $@ $^
 CLEAN += libelf++.a $(SRCS:.cc=.o)
@@ -68,6 +63,14 @@ libelf++.pc: always
 	  echo "Cflags: -I\$${includedir}") > $@
 CLEAN += libelf++.pc
 
+%.obj.S:%.o
+	riscv64-unknown-linux-gnu-objdump $(objdumpArgs) $^ > $^.obj.S
+CLEAN += *.obj.S
+
+%.rea.txt:%.o
+	riscv64-unknown-linux-gnu-readelf $(readelfArgs) $^ > $^.rea.txt
+CLEAN += *.rea.txt
+
 .PHONY: always
 
 PREFIX?=/usr/local
@@ -83,6 +86,6 @@ install: libelf++.a libelf++.so libelf++.so.$(SONAME) libelf++.pc
 		> $(DESTDIR)$(PREFIX)/lib/pkgconfig/libelf++.pc
 
 clean:
-	rm -f $(CLEAN)  *.obj.S *.rea.txt
+	rm -f $(CLEAN)
 
 .DELETE_ON_ERROR:
