@@ -4,2751 +4,3397 @@ attrs.o:     file format elf64-littleriscv
 
 Disassembly of section .text:
 
-0000000000000000 <dwarf::_at_udynamic(dwarf::DW_AT, dwarf::die const&, dwarf::expr_context*, int)>:
-       0:	e4010113          	addi	sp,sp,-448
-       4:	1a113c23          	sd	ra,440(sp)
-       8:	1a813823          	sd	s0,432(sp)
-       c:	1a913423          	sd	s1,424(sp)
-      10:	1b213023          	sd	s2,416(sp)
-      14:	1c010413          	addi	s0,sp,448
-      18:	00050793          	addi	a5,a0,0
-      1c:	e4b43823          	sd	a1,-432(s0)
-      20:	e4c43423          	sd	a2,-440(s0)
-      24:	00068713          	addi	a4,a3,0
-      28:	e4f42e23          	sw	a5,-420(s0)
-      2c:	00070793          	addi	a5,a4,0
-      30:	e4f42c23          	sw	a5,-424(s0)
-      34:	e5842783          	lw	a5,-424(s0)
-      38:	0007871b          	addiw	a4,a5,0
-      3c:	01000793          	addi	a5,zero,16
-      40:	0ae7d463          	bge	a5,a4,e8 <.L8>
-      44:	01000513          	addi	a0,zero,16
-      48:	00000097          	auipc	ra,0x0
-      4c:	000080e7          	jalr	ra,0(ra) # 48 <dwarf::_at_udynamic(dwarf::DW_AT, dwarf::die const&, dwarf::expr_context*, int)+0x48>
-      50:	00050793          	addi	a5,a0,0
-      54:	00078493          	addi	s1,a5,0
-      58:	e9840793          	addi	a5,s0,-360
-      5c:	e5c42703          	lw	a4,-420(s0)
-      60:	00070593          	addi	a1,a4,0
-      64:	00078513          	addi	a0,a5,0
+0000000000000000 <dwarf::at_sibling(dwarf::die const&)>:
 
-0000000000000068 <.LEHB0>:
-      68:	00000097          	auipc	ra,0x0
-      6c:	000080e7          	jalr	ra,0(ra) # 68 <.LEHB0>
+//////////////////////////////////////////////////////////////////
+// 0x0X
+//
 
-0000000000000070 <.LEHE0>:
-      70:	e7840793          	addi	a5,s0,-392
-      74:	e9840713          	addi	a4,s0,-360
-      78:	00070613          	addi	a2,a4,0
-      7c:	00000597          	auipc	a1,0x0
-      80:	00058593          	addi	a1,a1,0 # 7c <.LEHE0+0xc>
-      84:	00078513          	addi	a0,a5,0
-      88:	00000317          	auipc	t1,0x0
-      8c:	00033303          	ld	t1,0(t1) # 88 <.LEHE0+0x18>
+AT_REFERENCE(sibling);
+       0:	fc010113          	addi	sp,sp,-64
+       4:	02113c23          	sd	ra,56(sp)
+       8:	02813823          	sd	s0,48(sp)
+       c:	02913423          	sd	s1,40(sp)
+      10:	00050413          	addi	s0,a0,0
 
-0000000000000090 <.LEHB1>:
-      90:	000300e7          	jalr	ra,0(t1)
+0000000000000014 <.LM12>:
+      14:	00100613          	addi	a2,zero,1
+      18:	00810493          	addi	s1,sp,8
+      1c:	00048513          	addi	a0,s1,0
 
-0000000000000094 <.LEHE1>:
-      94:	e7840793          	addi	a5,s0,-392
-      98:	00078593          	addi	a1,a5,0
-      9c:	00048513          	addi	a0,s1,0
-      a0:	00000317          	auipc	t1,0x0
-      a4:	00033303          	ld	t1,0(t1) # a0 <.LEHE1+0xc>
+0000000000000020 <.LM13>:
+      20:	00000097          	auipc	ra,0x0
+      24:	000080e7          	jalr	ra,0(ra) # 20 <.LM13>
 
-00000000000000a8 <.LEHB2>:
-      a8:	000300e7          	jalr	ra,0(t1)
+0000000000000028 <.LM14>:
+      28:	00048593          	addi	a1,s1,0
+      2c:	00040513          	addi	a0,s0,0
+      30:	00000097          	auipc	ra,0x0
+      34:	000080e7          	jalr	ra,0(ra) # 30 <.LM14+0x8>
 
-00000000000000ac <.LEHE2>:
-      ac:	e7840793          	addi	a5,s0,-392
-      b0:	00078513          	addi	a0,a5,0
-      b4:	00000097          	auipc	ra,0x0
-      b8:	000080e7          	jalr	ra,0(ra) # b4 <.LEHE2+0x8>
-      bc:	e9840793          	addi	a5,s0,-360
-      c0:	00078513          	addi	a0,a5,0
-      c4:	00000097          	auipc	ra,0x0
-      c8:	000080e7          	jalr	ra,0(ra) # c4 <.LEHE2+0x18>
-      cc:	00000617          	auipc	a2,0x0
-      d0:	00063603          	ld	a2,0(a2) # cc <.LEHE2+0x20>
-      d4:	00000597          	auipc	a1,0x0
-      d8:	0005b583          	ld	a1,0(a1) # d4 <.LEHE2+0x28>
-      dc:	00048513          	addi	a0,s1,0
+0000000000000038 <.LVL10>:
+      38:	00040513          	addi	a0,s0,0
+      3c:	03813083          	ld	ra,56(sp)
+      40:	03013403          	ld	s0,48(sp)
 
-00000000000000e0 <.LEHB3>:
-      e0:	00000097          	auipc	ra,0x0
-      e4:	000080e7          	jalr	ra,0(ra) # e0 <.LEHB3>
+0000000000000044 <.LM15>:
+      44:	02813483          	ld	s1,40(sp)
+      48:	04010113          	addi	sp,sp,64
+      4c:	00008067          	jalr	zero,0(ra)
 
-00000000000000e8 <.L8>:
-      e8:	e6040793          	addi	a5,s0,-416
-      ec:	e5c42703          	lw	a4,-420(s0)
-      f0:	00070613          	addi	a2,a4,0
-      f4:	e5043583          	ld	a1,-432(s0)
-      f8:	00078513          	addi	a0,a5,0
-      fc:	00000097          	auipc	ra,0x0
-     100:	000080e7          	jalr	ra,0(ra) # fc <.L8+0x14>
-     104:	e6040793          	addi	a5,s0,-416
-     108:	00078513          	addi	a0,a5,0
-     10c:	00000317          	auipc	t1,0x0
-     110:	00033303          	ld	t1,0(t1) # 10c <.L8+0x24>
-     114:	000300e7          	jalr	ra,0(t1)
-     118:	00050793          	addi	a5,a0,0
-     11c:	00078713          	addi	a4,a5,0
-     120:	00070693          	addi	a3,a4,0
-     124:	00c00793          	addi	a5,zero,12
-     128:	04f68663          	beq	a3,a5,174 <.L9>
-     12c:	00070693          	addi	a3,a4,0
-     130:	00c00793          	addi	a5,zero,12
-     134:	0cd7ce63          	blt	a5,a3,210 <.L10>
-     138:	00070693          	addi	a3,a4,0
-     13c:	00400793          	addi	a5,zero,4
-     140:	00d7c863          	blt	a5,a3,150 <.L11>
-     144:	00300793          	addi	a5,zero,3
-     148:	00f75a63          	bge	a4,a5,15c <.L12>
-     14c:	0c40006f          	jal	zero,210 <.L10>
+0000000000000050 <dwarf::at_name[abi:cxx11](dwarf::die const&)>:
+// XXX location
+AT_STRING(name);
+      50:	fc010113          	addi	sp,sp,-64
+      54:	02113c23          	sd	ra,56(sp)
+      58:	02813823          	sd	s0,48(sp)
+      5c:	02913423          	sd	s1,40(sp)
+      60:	00050413          	addi	s0,a0,0
 
-0000000000000150 <.L11>:
-     150:	00600793          	addi	a5,zero,6
-     154:	08f70063          	beq	a4,a5,1d4 <.L13>
-     158:	0b80006f          	jal	zero,210 <.L10>
+0000000000000064 <.LM18>:
+      64:	00300613          	addi	a2,zero,3
+      68:	00810493          	addi	s1,sp,8
+      6c:	00048513          	addi	a0,s1,0
 
-000000000000015c <.L12>:
-     15c:	e6040793          	addi	a5,s0,-416
-     160:	00078513          	addi	a0,a5,0
-     164:	00000097          	auipc	ra,0x0
-     168:	000080e7          	jalr	ra,0(ra) # 164 <.L12+0x8>
-     16c:	00050493          	addi	s1,a0,0
-     170:	1b80006f          	jal	zero,328 <.L15>
+0000000000000070 <.LM19>:
+      70:	00000097          	auipc	ra,0x0
+      74:	000080e7          	jalr	ra,0(ra) # 70 <.LM19>
 
-0000000000000174 <.L9>:
-     174:	eb840793          	addi	a5,s0,-328
-     178:	e6040713          	addi	a4,s0,-416
-     17c:	00070593          	addi	a1,a4,0
-     180:	00078513          	addi	a0,a5,0
-     184:	00000097          	auipc	ra,0x0
-     188:	000080e7          	jalr	ra,0(ra) # 184 <.L9+0x10>
+0000000000000078 <.LM20>:
+      78:	00048593          	addi	a1,s1,0
+      7c:	00040513          	addi	a0,s0,0
+      80:	00000097          	auipc	ra,0x0
+      84:	000080e7          	jalr	ra,0(ra) # 80 <.LM20+0x8>
 
-000000000000018c <.LEHE3>:
-     18c:	e5842783          	lw	a5,-424(s0)
-     190:	0017879b          	addiw	a5,a5,1
-     194:	0007869b          	addiw	a3,a5,0
-     198:	eb840713          	addi	a4,s0,-328
-     19c:	e5c42783          	lw	a5,-420(s0)
-     1a0:	e4843603          	ld	a2,-440(s0)
-     1a4:	00070593          	addi	a1,a4,0
-     1a8:	00078513          	addi	a0,a5,0
+0000000000000088 <.LVL15>:
+      88:	00040513          	addi	a0,s0,0
+      8c:	03813083          	ld	ra,56(sp)
+      90:	03013403          	ld	s0,48(sp)
 
-00000000000001ac <.LEHB4>:
-     1ac:	00000097          	auipc	ra,0x0
-     1b0:	000080e7          	jalr	ra,0(ra) # 1ac <.LEHB4>
+0000000000000094 <.LM21>:
+      94:	02813483          	ld	s1,40(sp)
+      98:	04010113          	addi	sp,sp,64
+      9c:	00008067          	jalr	zero,0(ra)
 
-00000000000001b4 <.LEHE4>:
-     1b4:	00050493          	addi	s1,a0,0
-     1b8:	00000013          	addi	zero,zero,0
-     1bc:	eb840793          	addi	a5,s0,-328
-     1c0:	00078513          	addi	a0,a5,0
-     1c4:	00000317          	auipc	t1,0x0
-     1c8:	00033303          	ld	t1,0(t1) # 1c4 <.LEHE4+0x10>
-     1cc:	000300e7          	jalr	ra,0(t1)
-     1d0:	1580006f          	jal	zero,328 <.L15>
+00000000000000a0 <dwarf::at_ordering(dwarf::die const&)>:
+AT_ENUM(ordering, DW_ORD);
+      a0:	fd010113          	addi	sp,sp,-48
+      a4:	02113423          	sd	ra,40(sp)
+      a8:	02813023          	sd	s0,32(sp)
+      ac:	00050593          	addi	a1,a0,0
 
-00000000000001d4 <.L13>:
-     1d4:	f4840793          	addi	a5,s0,-184
-     1d8:	e6040713          	addi	a4,s0,-416
-     1dc:	00070593          	addi	a1,a4,0
-     1e0:	00078513          	addi	a0,a5,0
+00000000000000b0 <.LM24>:
+      b0:	00900613          	addi	a2,zero,9
+      b4:	00810413          	addi	s0,sp,8
+      b8:	00040513          	addi	a0,s0,0
 
-00000000000001e4 <.LEHB5>:
-     1e4:	00000097          	auipc	ra,0x0
-     1e8:	000080e7          	jalr	ra,0(ra) # 1e4 <.LEHB5>
-     1ec:	f2840793          	addi	a5,s0,-216
-     1f0:	f4840713          	addi	a4,s0,-184
-     1f4:	e4843603          	ld	a2,-440(s0)
-     1f8:	00070593          	addi	a1,a4,0
-     1fc:	00078513          	addi	a0,a5,0
-     200:	00000097          	auipc	ra,0x0
-     204:	000080e7          	jalr	ra,0(ra) # 200 <.LEHB5+0x1c>
+00000000000000bc <.LM25>:
+      bc:	00000097          	auipc	ra,0x0
+      c0:	000080e7          	jalr	ra,0(ra) # bc <.LM25>
 
-0000000000000208 <.LEHE5>:
-     208:	f3043483          	ld	s1,-208(s0)
-     20c:	11c0006f          	jal	zero,328 <.L15>
+00000000000000c4 <.LM26>:
+      c4:	00040513          	addi	a0,s0,0
+      c8:	00000097          	auipc	ra,0x0
+      cc:	000080e7          	jalr	ra,0(ra) # c8 <.LM26+0x4>
 
-0000000000000210 <.L10>:
-     210:	01000513          	addi	a0,zero,16
-     214:	00000097          	auipc	ra,0x0
-     218:	000080e7          	jalr	ra,0(ra) # 214 <.L10+0x4>
-     21c:	00050793          	addi	a5,a0,0
-     220:	00078493          	addi	s1,a5,0
-     224:	fa040793          	addi	a5,s0,-96
-     228:	e5c42703          	lw	a4,-420(s0)
-     22c:	00070593          	addi	a1,a4,0
-     230:	00078513          	addi	a0,a5,0
+00000000000000d0 <.LVL20>:
+      d0:	0005051b          	addiw	a0,a0,0
+      d4:	02813083          	ld	ra,40(sp)
+      d8:	02013403          	ld	s0,32(sp)
+      dc:	03010113          	addi	sp,sp,48
+      e0:	00008067          	jalr	zero,0(ra)
 
-0000000000000234 <.LEHB6>:
-     234:	00000097          	auipc	ra,0x0
-     238:	000080e7          	jalr	ra,0(ra) # 234 <.LEHB6>
+00000000000000e4 <dwarf::at_low_pc(dwarf::die const&)>:
+//////////////////////////////////////////////////////////////////
+// 0x1X
+//
 
-000000000000023c <.LEHE6>:
-     23c:	f8040793          	addi	a5,s0,-128
-     240:	fa040713          	addi	a4,s0,-96
-     244:	00000617          	auipc	a2,0x0
-     248:	00060613          	addi	a2,a2,0 # 244 <.LEHE6+0x8>
-     24c:	00070593          	addi	a1,a4,0
-     250:	00078513          	addi	a0,a5,0
-     254:	00000317          	auipc	t1,0x0
-     258:	00033303          	ld	t1,0(t1) # 254 <.LEHE6+0x18>
+// XXX stmt_list
+AT_ADDRESS(low_pc);
+      e4:	fd010113          	addi	sp,sp,-48
+      e8:	02113423          	sd	ra,40(sp)
+      ec:	02813023          	sd	s0,32(sp)
+      f0:	00050593          	addi	a1,a0,0
 
-000000000000025c <.LEHB7>:
-     25c:	000300e7          	jalr	ra,0(t1)
+00000000000000f4 <.LM29>:
+      f4:	01100613          	addi	a2,zero,17
+      f8:	00810413          	addi	s0,sp,8
+      fc:	00040513          	addi	a0,s0,0
 
-0000000000000260 <.LEHE7>:
-     260:	e6040793          	addi	a5,s0,-416
-     264:	00078513          	addi	a0,a5,0
-     268:	00000317          	auipc	t1,0x0
-     26c:	00033303          	ld	t1,0(t1) # 268 <.LEHE7+0x8>
-     270:	000300e7          	jalr	ra,0(t1)
-     274:	00050793          	addi	a5,a0,0
-     278:	00078713          	addi	a4,a5,0
-     27c:	fc040793          	addi	a5,s0,-64
-     280:	00070593          	addi	a1,a4,0
-     284:	00078513          	addi	a0,a5,0
+0000000000000100 <.LM30>:
+     100:	00000097          	auipc	ra,0x0
+     104:	000080e7          	jalr	ra,0(ra) # 100 <.LM30>
 
-0000000000000288 <.LEHB8>:
-     288:	00000097          	auipc	ra,0x0
-     28c:	000080e7          	jalr	ra,0(ra) # 288 <.LEHB8>
+0000000000000108 <.LM31>:
+     108:	00040513          	addi	a0,s0,0
+     10c:	00000097          	auipc	ra,0x0
+     110:	000080e7          	jalr	ra,0(ra) # 10c <.LM31+0x4>
 
-0000000000000290 <.LEHE8>:
-     290:	f6040793          	addi	a5,s0,-160
-     294:	fc040693          	addi	a3,s0,-64
-     298:	f8040713          	addi	a4,s0,-128
-     29c:	00068613          	addi	a2,a3,0
-     2a0:	00070593          	addi	a1,a4,0
-     2a4:	00078513          	addi	a0,a5,0
-     2a8:	00000317          	auipc	t1,0x0
-     2ac:	00033303          	ld	t1,0(t1) # 2a8 <.LEHE8+0x18>
+0000000000000114 <.LVL24>:
+     114:	02813083          	ld	ra,40(sp)
+     118:	02013403          	ld	s0,32(sp)
+     11c:	03010113          	addi	sp,sp,48
+     120:	00008067          	jalr	zero,0(ra)
 
-00000000000002b0 <.LEHB9>:
-     2b0:	000300e7          	jalr	ra,0(t1)
+0000000000000124 <dwarf::at_language(dwarf::die const&)>:
+  default:
+    throw format_error(to_string(DW_AT::high_pc) + " has unexpected type " +
+                       to_string(v.get_type()));
+  }
+}
+AT_ENUM(language, DW_LANG);
+     124:	fd010113          	addi	sp,sp,-48
+     128:	02113423          	sd	ra,40(sp)
+     12c:	02813023          	sd	s0,32(sp)
+     130:	00050593          	addi	a1,a0,0
 
-00000000000002b4 <.LEHE9>:
-     2b4:	f6040793          	addi	a5,s0,-160
-     2b8:	00078593          	addi	a1,a5,0
-     2bc:	00048513          	addi	a0,s1,0
-     2c0:	00000317          	auipc	t1,0x0
-     2c4:	00033303          	ld	t1,0(t1) # 2c0 <.LEHE9+0xc>
+0000000000000134 <.LM34>:
+     134:	01300613          	addi	a2,zero,19
+     138:	00810413          	addi	s0,sp,8
+     13c:	00040513          	addi	a0,s0,0
 
-00000000000002c8 <.LEHB10>:
-     2c8:	000300e7          	jalr	ra,0(t1)
+0000000000000140 <.LM35>:
+     140:	00000097          	auipc	ra,0x0
+     144:	000080e7          	jalr	ra,0(ra) # 140 <.LM35>
 
-00000000000002cc <.LEHE10>:
-     2cc:	f6040793          	addi	a5,s0,-160
-     2d0:	00078513          	addi	a0,a5,0
-     2d4:	00000097          	auipc	ra,0x0
-     2d8:	000080e7          	jalr	ra,0(ra) # 2d4 <.LEHE10+0x8>
-     2dc:	fc040793          	addi	a5,s0,-64
-     2e0:	00078513          	addi	a0,a5,0
-     2e4:	00000097          	auipc	ra,0x0
-     2e8:	000080e7          	jalr	ra,0(ra) # 2e4 <.LEHE10+0x18>
-     2ec:	f8040793          	addi	a5,s0,-128
-     2f0:	00078513          	addi	a0,a5,0
-     2f4:	00000097          	auipc	ra,0x0
-     2f8:	000080e7          	jalr	ra,0(ra) # 2f4 <.LEHE10+0x28>
-     2fc:	fa040793          	addi	a5,s0,-96
-     300:	00078513          	addi	a0,a5,0
-     304:	00000097          	auipc	ra,0x0
-     308:	000080e7          	jalr	ra,0(ra) # 304 <.LEHE10+0x38>
-     30c:	00000617          	auipc	a2,0x0
-     310:	00063603          	ld	a2,0(a2) # 30c <.LEHE10+0x40>
-     314:	00000597          	auipc	a1,0x0
-     318:	0005b583          	ld	a1,0(a1) # 314 <.LEHE10+0x48>
-     31c:	00048513          	addi	a0,s1,0
+0000000000000148 <.LM36>:
+     148:	00040513          	addi	a0,s0,0
+     14c:	00000097          	auipc	ra,0x0
+     150:	000080e7          	jalr	ra,0(ra) # 14c <.LM36+0x4>
 
-0000000000000320 <.LEHB11>:
-     320:	00000097          	auipc	ra,0x0
-     324:	000080e7          	jalr	ra,0(ra) # 320 <.LEHB11>
+0000000000000154 <.LVL28>:
+     154:	0005051b          	addiw	a0,a0,0
+     158:	02813083          	ld	ra,40(sp)
+     15c:	02013403          	ld	s0,32(sp)
+     160:	03010113          	addi	sp,sp,48
+     164:	00008067          	jalr	zero,0(ra)
 
-0000000000000328 <.L15>:
-     328:	00048793          	addi	a5,s1,0
-     32c:	0fc0006f          	jal	zero,428 <.L34>
+0000000000000168 <dwarf::at_discr(dwarf::die const&)>:
+AT_REFERENCE(discr);
+     168:	fc010113          	addi	sp,sp,-64
+     16c:	02113c23          	sd	ra,56(sp)
+     170:	02813823          	sd	s0,48(sp)
+     174:	02913423          	sd	s1,40(sp)
+     178:	00050413          	addi	s0,a0,0
 
-0000000000000330 <.L27>:
-     330:	00050913          	addi	s2,a0,0
-     334:	e7840793          	addi	a5,s0,-392
-     338:	00078513          	addi	a0,a5,0
-     33c:	00000097          	auipc	ra,0x0
-     340:	000080e7          	jalr	ra,0(ra) # 33c <.L27+0xc>
-     344:	0080006f          	jal	zero,34c <.L17>
+000000000000017c <.LM39>:
+     17c:	01500613          	addi	a2,zero,21
+     180:	00810493          	addi	s1,sp,8
+     184:	00048513          	addi	a0,s1,0
 
-0000000000000348 <.L26>:
-     348:	00050913          	addi	s2,a0,0
+0000000000000188 <.LM40>:
+     188:	00000097          	auipc	ra,0x0
+     18c:	000080e7          	jalr	ra,0(ra) # 188 <.LM40>
 
-000000000000034c <.L17>:
-     34c:	e9840793          	addi	a5,s0,-360
-     350:	00078513          	addi	a0,a5,0
-     354:	00000097          	auipc	ra,0x0
-     358:	000080e7          	jalr	ra,0(ra) # 354 <.L17+0x8>
-     35c:	0080006f          	jal	zero,364 <.L18>
+0000000000000190 <.LM41>:
+     190:	00048593          	addi	a1,s1,0
+     194:	00040513          	addi	a0,s0,0
+     198:	00000097          	auipc	ra,0x0
+     19c:	000080e7          	jalr	ra,0(ra) # 198 <.LM41+0x8>
 
-0000000000000360 <.L25>:
-     360:	00050913          	addi	s2,a0,0
+00000000000001a0 <.LVL32>:
+     1a0:	00040513          	addi	a0,s0,0
+     1a4:	03813083          	ld	ra,56(sp)
+     1a8:	03013403          	ld	s0,48(sp)
 
-0000000000000364 <.L18>:
-     364:	00048513          	addi	a0,s1,0
-     368:	00000097          	auipc	ra,0x0
-     36c:	000080e7          	jalr	ra,0(ra) # 368 <.L18+0x4>
-     370:	00090793          	addi	a5,s2,0
-     374:	00078513          	addi	a0,a5,0
-     378:	00000097          	auipc	ra,0x0
-     37c:	000080e7          	jalr	ra,0(ra) # 378 <.L18+0x14>
+00000000000001ac <.LM42>:
+     1ac:	02813483          	ld	s1,40(sp)
+     1b0:	04010113          	addi	sp,sp,64
+     1b4:	00008067          	jalr	zero,0(ra)
 
-0000000000000380 <.L28>:
-     380:	00050493          	addi	s1,a0,0
-     384:	eb840793          	addi	a5,s0,-328
-     388:	00078513          	addi	a0,a5,0
-     38c:	00000317          	auipc	t1,0x0
-     390:	00033303          	ld	t1,0(t1) # 38c <.L28+0xc>
-     394:	000300e7          	jalr	ra,0(t1)
-     398:	00048793          	addi	a5,s1,0
-     39c:	00078513          	addi	a0,a5,0
-     3a0:	00000097          	auipc	ra,0x0
-     3a4:	000080e7          	jalr	ra,0(ra) # 3a0 <.L28+0x20>
+00000000000001b8 <dwarf::at_discr_value(dwarf::die const&)>:
+AT_ANY(discr_value); // XXX Signed or unsigned
+     1b8:	ff010113          	addi	sp,sp,-16
+     1bc:	00113423          	sd	ra,8(sp)
+     1c0:	00813023          	sd	s0,0(sp)
+     1c4:	00050413          	addi	s0,a0,0
 
-00000000000003a8 <.L33>:
-     3a8:	00050913          	addi	s2,a0,0
-     3ac:	f6040793          	addi	a5,s0,-160
-     3b0:	00078513          	addi	a0,a5,0
-     3b4:	00000097          	auipc	ra,0x0
-     3b8:	000080e7          	jalr	ra,0(ra) # 3b4 <.L33+0xc>
-     3bc:	0080006f          	jal	zero,3c4 <.L21>
+00000000000001c8 <.LM45>:
+     1c8:	01600613          	addi	a2,zero,22
+     1cc:	00000097          	auipc	ra,0x0
+     1d0:	000080e7          	jalr	ra,0(ra) # 1cc <.LM45+0x4>
 
-00000000000003c0 <.L32>:
-     3c0:	00050913          	addi	s2,a0,0
+00000000000001d4 <.LM46>:
+     1d4:	00040513          	addi	a0,s0,0
+     1d8:	00813083          	ld	ra,8(sp)
+     1dc:	00013403          	ld	s0,0(sp)
 
-00000000000003c4 <.L21>:
-     3c4:	fc040793          	addi	a5,s0,-64
-     3c8:	00078513          	addi	a0,a5,0
-     3cc:	00000097          	auipc	ra,0x0
-     3d0:	000080e7          	jalr	ra,0(ra) # 3cc <.L21+0x8>
-     3d4:	0080006f          	jal	zero,3dc <.L22>
+00000000000001e0 <.LM47>:
+     1e0:	01010113          	addi	sp,sp,16
+     1e4:	00008067          	jalr	zero,0(ra)
 
-00000000000003d8 <.L31>:
-     3d8:	00050913          	addi	s2,a0,0
+00000000000001e8 <dwarf::at_visibility(dwarf::die const&)>:
+AT_ENUM(visibility, DW_VIS);
+     1e8:	fd010113          	addi	sp,sp,-48
+     1ec:	02113423          	sd	ra,40(sp)
+     1f0:	02813023          	sd	s0,32(sp)
+     1f4:	00050593          	addi	a1,a0,0
 
-00000000000003dc <.L22>:
-     3dc:	f8040793          	addi	a5,s0,-128
-     3e0:	00078513          	addi	a0,a5,0
-     3e4:	00000097          	auipc	ra,0x0
-     3e8:	000080e7          	jalr	ra,0(ra) # 3e4 <.L22+0x8>
-     3ec:	0080006f          	jal	zero,3f4 <.L23>
+00000000000001f8 <.LM50>:
+     1f8:	01700613          	addi	a2,zero,23
+     1fc:	00810413          	addi	s0,sp,8
+     200:	00040513          	addi	a0,s0,0
 
-00000000000003f0 <.L30>:
-     3f0:	00050913          	addi	s2,a0,0
+0000000000000204 <.LM51>:
+     204:	00000097          	auipc	ra,0x0
+     208:	000080e7          	jalr	ra,0(ra) # 204 <.LM51>
 
-00000000000003f4 <.L23>:
-     3f4:	fa040793          	addi	a5,s0,-96
-     3f8:	00078513          	addi	a0,a5,0
+000000000000020c <.LM52>:
+     20c:	00040513          	addi	a0,s0,0
+     210:	00000097          	auipc	ra,0x0
+     214:	000080e7          	jalr	ra,0(ra) # 210 <.LM52+0x4>
+
+0000000000000218 <.LVL40>:
+     218:	0005051b          	addiw	a0,a0,0
+     21c:	02813083          	ld	ra,40(sp)
+     220:	02013403          	ld	s0,32(sp)
+     224:	03010113          	addi	sp,sp,48
+     228:	00008067          	jalr	zero,0(ra)
+
+000000000000022c <dwarf::at_import(dwarf::die const&)>:
+AT_REFERENCE(import);
+     22c:	fc010113          	addi	sp,sp,-64
+     230:	02113c23          	sd	ra,56(sp)
+     234:	02813823          	sd	s0,48(sp)
+     238:	02913423          	sd	s1,40(sp)
+     23c:	00050413          	addi	s0,a0,0
+
+0000000000000240 <.LM55>:
+     240:	01800613          	addi	a2,zero,24
+     244:	00810493          	addi	s1,sp,8
+     248:	00048513          	addi	a0,s1,0
+
+000000000000024c <.LM56>:
+     24c:	00000097          	auipc	ra,0x0
+     250:	000080e7          	jalr	ra,0(ra) # 24c <.LM56>
+
+0000000000000254 <.LM57>:
+     254:	00048593          	addi	a1,s1,0
+     258:	00040513          	addi	a0,s0,0
+     25c:	00000097          	auipc	ra,0x0
+     260:	000080e7          	jalr	ra,0(ra) # 25c <.LM57+0x8>
+
+0000000000000264 <.LVL44>:
+     264:	00040513          	addi	a0,s0,0
+     268:	03813083          	ld	ra,56(sp)
+     26c:	03013403          	ld	s0,48(sp)
+
+0000000000000270 <.LM58>:
+     270:	02813483          	ld	s1,40(sp)
+     274:	04010113          	addi	sp,sp,64
+     278:	00008067          	jalr	zero,0(ra)
+
+000000000000027c <dwarf::at_common_reference(dwarf::die const&)>:
+// XXX string_length
+AT_REFERENCE(common_reference);
+     27c:	fc010113          	addi	sp,sp,-64
+     280:	02113c23          	sd	ra,56(sp)
+     284:	02813823          	sd	s0,48(sp)
+     288:	02913423          	sd	s1,40(sp)
+     28c:	00050413          	addi	s0,a0,0
+
+0000000000000290 <.LM61>:
+     290:	01a00613          	addi	a2,zero,26
+     294:	00810493          	addi	s1,sp,8
+     298:	00048513          	addi	a0,s1,0
+
+000000000000029c <.LM62>:
+     29c:	00000097          	auipc	ra,0x0
+     2a0:	000080e7          	jalr	ra,0(ra) # 29c <.LM62>
+
+00000000000002a4 <.LM63>:
+     2a4:	00048593          	addi	a1,s1,0
+     2a8:	00040513          	addi	a0,s0,0
+     2ac:	00000097          	auipc	ra,0x0
+     2b0:	000080e7          	jalr	ra,0(ra) # 2ac <.LM63+0x8>
+
+00000000000002b4 <.LVL49>:
+     2b4:	00040513          	addi	a0,s0,0
+     2b8:	03813083          	ld	ra,56(sp)
+     2bc:	03013403          	ld	s0,48(sp)
+
+00000000000002c0 <.LM64>:
+     2c0:	02813483          	ld	s1,40(sp)
+     2c4:	04010113          	addi	sp,sp,64
+     2c8:	00008067          	jalr	zero,0(ra)
+
+00000000000002cc <dwarf::at_comp_dir[abi:cxx11](dwarf::die const&)>:
+AT_STRING(comp_dir);
+     2cc:	fc010113          	addi	sp,sp,-64
+     2d0:	02113c23          	sd	ra,56(sp)
+     2d4:	02813823          	sd	s0,48(sp)
+     2d8:	02913423          	sd	s1,40(sp)
+     2dc:	00050413          	addi	s0,a0,0
+
+00000000000002e0 <.LM67>:
+     2e0:	01b00613          	addi	a2,zero,27
+     2e4:	00810493          	addi	s1,sp,8
+     2e8:	00048513          	addi	a0,s1,0
+
+00000000000002ec <.LM68>:
+     2ec:	00000097          	auipc	ra,0x0
+     2f0:	000080e7          	jalr	ra,0(ra) # 2ec <.LM68>
+
+00000000000002f4 <.LM69>:
+     2f4:	00048593          	addi	a1,s1,0
+     2f8:	00040513          	addi	a0,s0,0
+     2fc:	00000097          	auipc	ra,0x0
+     300:	000080e7          	jalr	ra,0(ra) # 2fc <.LM69+0x8>
+
+0000000000000304 <.LVL54>:
+     304:	00040513          	addi	a0,s0,0
+     308:	03813083          	ld	ra,56(sp)
+     30c:	03013403          	ld	s0,48(sp)
+
+0000000000000310 <.LM70>:
+     310:	02813483          	ld	s1,40(sp)
+     314:	04010113          	addi	sp,sp,64
+     318:	00008067          	jalr	zero,0(ra)
+
+000000000000031c <dwarf::at_const_value(dwarf::die const&)>:
+AT_ANY(const_value);
+     31c:	ff010113          	addi	sp,sp,-16
+     320:	00113423          	sd	ra,8(sp)
+     324:	00813023          	sd	s0,0(sp)
+     328:	00050413          	addi	s0,a0,0
+
+000000000000032c <.LM73>:
+     32c:	01c00613          	addi	a2,zero,28
+     330:	00000097          	auipc	ra,0x0
+     334:	000080e7          	jalr	ra,0(ra) # 330 <.LM73+0x4>
+
+0000000000000338 <.LM74>:
+     338:	00040513          	addi	a0,s0,0
+     33c:	00813083          	ld	ra,8(sp)
+     340:	00013403          	ld	s0,0(sp)
+
+0000000000000344 <.LM75>:
+     344:	01010113          	addi	sp,sp,16
+     348:	00008067          	jalr	zero,0(ra)
+
+000000000000034c <dwarf::at_containing_type(dwarf::die const&)>:
+AT_REFERENCE(containing_type);
+     34c:	fc010113          	addi	sp,sp,-64
+     350:	02113c23          	sd	ra,56(sp)
+     354:	02813823          	sd	s0,48(sp)
+     358:	02913423          	sd	s1,40(sp)
+     35c:	00050413          	addi	s0,a0,0
+
+0000000000000360 <.LM78>:
+     360:	01d00613          	addi	a2,zero,29
+     364:	00810493          	addi	s1,sp,8
+     368:	00048513          	addi	a0,s1,0
+
+000000000000036c <.LM79>:
+     36c:	00000097          	auipc	ra,0x0
+     370:	000080e7          	jalr	ra,0(ra) # 36c <.LM79>
+
+0000000000000374 <.LM80>:
+     374:	00048593          	addi	a1,s1,0
+     378:	00040513          	addi	a0,s0,0
+     37c:	00000097          	auipc	ra,0x0
+     380:	000080e7          	jalr	ra,0(ra) # 37c <.LM80+0x8>
+
+0000000000000384 <.LVL62>:
+     384:	00040513          	addi	a0,s0,0
+     388:	03813083          	ld	ra,56(sp)
+     38c:	03013403          	ld	s0,48(sp)
+
+0000000000000390 <.LM81>:
+     390:	02813483          	ld	s1,40(sp)
+     394:	04010113          	addi	sp,sp,64
+     398:	00008067          	jalr	zero,0(ra)
+
+000000000000039c <dwarf::at_inline(dwarf::die const&)>:
+
+//////////////////////////////////////////////////////////////////
+// 0x2X
+//
+
+DW_INL at_inline(const die &d) {
+     39c:	fd010113          	addi	sp,sp,-48
+     3a0:	02113423          	sd	ra,40(sp)
+     3a4:	02813023          	sd	s0,32(sp)
+     3a8:	00050593          	addi	a1,a0,0
+
+00000000000003ac <.LM84>:
+  // XXX Missing attribute is equivalent to DW_INL_not_inlined
+  // (DWARF4 section 3.3.8)
+  return (DW_INL)d[DW_AT::inline_].as_uconstant();
+     3ac:	02000613          	addi	a2,zero,32
+     3b0:	00810413          	addi	s0,sp,8
+     3b4:	00040513          	addi	a0,s0,0
+
+00000000000003b8 <.LM86>:
+     3b8:	00000097          	auipc	ra,0x0
+     3bc:	000080e7          	jalr	ra,0(ra) # 3b8 <.LM86>
+
+00000000000003c0 <.LM87>:
+     3c0:	00040513          	addi	a0,s0,0
+     3c4:	00000097          	auipc	ra,0x0
+     3c8:	000080e7          	jalr	ra,0(ra) # 3c4 <.LM87+0x4>
+
+00000000000003cc <.LM88>:
+}
+     3cc:	0005051b          	addiw	a0,a0,0
+     3d0:	02813083          	ld	ra,40(sp)
+     3d4:	02013403          	ld	s0,32(sp)
+     3d8:	03010113          	addi	sp,sp,48
+     3dc:	00008067          	jalr	zero,0(ra)
+
+00000000000003e0 <dwarf::at_is_optional(dwarf::die const&)>:
+AT_FLAG(is_optional);
+     3e0:	fd010113          	addi	sp,sp,-48
+     3e4:	02113423          	sd	ra,40(sp)
+     3e8:	02813023          	sd	s0,32(sp)
+     3ec:	00050593          	addi	a1,a0,0
+
+00000000000003f0 <.LM91>:
+     3f0:	02100613          	addi	a2,zero,33
+     3f4:	00810413          	addi	s0,sp,8
+     3f8:	00040513          	addi	a0,s0,0
+
+00000000000003fc <.LM92>:
      3fc:	00000097          	auipc	ra,0x0
-     400:	000080e7          	jalr	ra,0(ra) # 3fc <.L23+0x8>
-     404:	0080006f          	jal	zero,40c <.L24>
+     400:	000080e7          	jalr	ra,0(ra) # 3fc <.LM92>
 
-0000000000000408 <.L29>:
-     408:	00050913          	addi	s2,a0,0
+0000000000000404 <.LM93>:
+     404:	00040513          	addi	a0,s0,0
+     408:	00000097          	auipc	ra,0x0
+     40c:	000080e7          	jalr	ra,0(ra) # 408 <.LM93+0x4>
 
-000000000000040c <.L24>:
-     40c:	00048513          	addi	a0,s1,0
-     410:	00000097          	auipc	ra,0x0
-     414:	000080e7          	jalr	ra,0(ra) # 410 <.L24+0x4>
-     418:	00090793          	addi	a5,s2,0
-     41c:	00078513          	addi	a0,a5,0
-     420:	00000097          	auipc	ra,0x0
-     424:	000080e7          	jalr	ra,0(ra) # 420 <.L24+0x14>
+0000000000000410 <.LVL71>:
+     410:	02813083          	ld	ra,40(sp)
+     414:	02013403          	ld	s0,32(sp)
+     418:	03010113          	addi	sp,sp,48
+     41c:	00008067          	jalr	zero,0(ra)
 
-0000000000000428 <.L34>:
-     428:	00078513          	addi	a0,a5,0
-     42c:	1b813083          	ld	ra,440(sp)
-     430:	1b013403          	ld	s0,432(sp)
-     434:	1a813483          	ld	s1,424(sp)
-     438:	1a013903          	ld	s2,416(sp)
-     43c:	1c010113          	addi	sp,sp,448
-     440:	00008067          	jalr	zero,0(ra)
+0000000000000420 <dwarf::at_producer[abi:cxx11](dwarf::die const&)>:
+AT_UDYNAMIC(lower_bound); // XXX Language-based default?
+AT_STRING(producer);
+     420:	fc010113          	addi	sp,sp,-64
+     424:	02113c23          	sd	ra,56(sp)
+     428:	02813823          	sd	s0,48(sp)
+     42c:	02913423          	sd	s1,40(sp)
+     430:	00050413          	addi	s0,a0,0
 
-0000000000000444 <dwarf::at_sibling(dwarf::die const&)>:
-     444:	fc010113          	addi	sp,sp,-64
-     448:	02113c23          	sd	ra,56(sp)
-     44c:	02813823          	sd	s0,48(sp)
-     450:	04010413          	addi	s0,sp,64
-     454:	fca43423          	sd	a0,-56(s0)
-     458:	fcb43023          	sd	a1,-64(s0)
-     45c:	fd840793          	addi	a5,s0,-40
-     460:	00100613          	addi	a2,zero,1
-     464:	fc043583          	ld	a1,-64(s0)
-     468:	00078513          	addi	a0,a5,0
-     46c:	00000097          	auipc	ra,0x0
-     470:	000080e7          	jalr	ra,0(ra) # 46c <dwarf::at_sibling(dwarf::die const&)+0x28>
-     474:	fc843783          	ld	a5,-56(s0)
-     478:	fd840713          	addi	a4,s0,-40
-     47c:	00070593          	addi	a1,a4,0
-     480:	00078513          	addi	a0,a5,0
-     484:	00000097          	auipc	ra,0x0
-     488:	000080e7          	jalr	ra,0(ra) # 484 <dwarf::at_sibling(dwarf::die const&)+0x40>
-     48c:	fc843503          	ld	a0,-56(s0)
-     490:	03813083          	ld	ra,56(sp)
-     494:	03013403          	ld	s0,48(sp)
-     498:	04010113          	addi	sp,sp,64
-     49c:	00008067          	jalr	zero,0(ra)
+0000000000000434 <.LM96>:
+     434:	02500613          	addi	a2,zero,37
+     438:	00810493          	addi	s1,sp,8
+     43c:	00048513          	addi	a0,s1,0
 
-00000000000004a0 <dwarf::at_name[abi:cxx11](dwarf::die const&)>:
-     4a0:	fc010113          	addi	sp,sp,-64
-     4a4:	02113c23          	sd	ra,56(sp)
-     4a8:	02813823          	sd	s0,48(sp)
-     4ac:	04010413          	addi	s0,sp,64
-     4b0:	fca43423          	sd	a0,-56(s0)
-     4b4:	fcb43023          	sd	a1,-64(s0)
-     4b8:	fd840793          	addi	a5,s0,-40
-     4bc:	00300613          	addi	a2,zero,3
-     4c0:	fc043583          	ld	a1,-64(s0)
-     4c4:	00078513          	addi	a0,a5,0
-     4c8:	00000097          	auipc	ra,0x0
-     4cc:	000080e7          	jalr	ra,0(ra) # 4c8 <dwarf::at_name[abi:cxx11](dwarf::die const&)+0x28>
-     4d0:	fc843783          	ld	a5,-56(s0)
-     4d4:	fd840713          	addi	a4,s0,-40
-     4d8:	00070593          	addi	a1,a4,0
-     4dc:	00078513          	addi	a0,a5,0
+0000000000000440 <.LM97>:
+     440:	00000097          	auipc	ra,0x0
+     444:	000080e7          	jalr	ra,0(ra) # 440 <.LM97>
+
+0000000000000448 <.LM98>:
+     448:	00048593          	addi	a1,s1,0
+     44c:	00040513          	addi	a0,s0,0
+     450:	00000097          	auipc	ra,0x0
+     454:	000080e7          	jalr	ra,0(ra) # 450 <.LM98+0x8>
+
+0000000000000458 <.LVL75>:
+     458:	00040513          	addi	a0,s0,0
+     45c:	03813083          	ld	ra,56(sp)
+     460:	03013403          	ld	s0,48(sp)
+
+0000000000000464 <.LM99>:
+     464:	02813483          	ld	s1,40(sp)
+     468:	04010113          	addi	sp,sp,64
+     46c:	00008067          	jalr	zero,0(ra)
+
+0000000000000470 <dwarf::at_prototyped(dwarf::die const&)>:
+AT_FLAG(prototyped);
+     470:	fd010113          	addi	sp,sp,-48
+     474:	02113423          	sd	ra,40(sp)
+     478:	02813023          	sd	s0,32(sp)
+     47c:	00050593          	addi	a1,a0,0
+
+0000000000000480 <.LM102>:
+     480:	02700613          	addi	a2,zero,39
+     484:	00810413          	addi	s0,sp,8
+     488:	00040513          	addi	a0,s0,0
+
+000000000000048c <.LM103>:
+     48c:	00000097          	auipc	ra,0x0
+     490:	000080e7          	jalr	ra,0(ra) # 48c <.LM103>
+
+0000000000000494 <.LM104>:
+     494:	00040513          	addi	a0,s0,0
+     498:	00000097          	auipc	ra,0x0
+     49c:	000080e7          	jalr	ra,0(ra) # 498 <.LM104+0x4>
+
+00000000000004a0 <.LVL80>:
+     4a0:	02813083          	ld	ra,40(sp)
+     4a4:	02013403          	ld	s0,32(sp)
+     4a8:	03010113          	addi	sp,sp,48
+     4ac:	00008067          	jalr	zero,0(ra)
+
+00000000000004b0 <dwarf::at_abstract_origin(dwarf::die const&)>:
+
+//////////////////////////////////////////////////////////////////
+// 0x3X
+//
+
+AT_REFERENCE(abstract_origin);
+     4b0:	fc010113          	addi	sp,sp,-64
+     4b4:	02113c23          	sd	ra,56(sp)
+     4b8:	02813823          	sd	s0,48(sp)
+     4bc:	02913423          	sd	s1,40(sp)
+     4c0:	00050413          	addi	s0,a0,0
+
+00000000000004c4 <.LM107>:
+     4c4:	03100613          	addi	a2,zero,49
+     4c8:	00810493          	addi	s1,sp,8
+     4cc:	00048513          	addi	a0,s1,0
+
+00000000000004d0 <.LM108>:
+     4d0:	00000097          	auipc	ra,0x0
+     4d4:	000080e7          	jalr	ra,0(ra) # 4d0 <.LM108>
+
+00000000000004d8 <.LM109>:
+     4d8:	00048593          	addi	a1,s1,0
+     4dc:	00040513          	addi	a0,s0,0
      4e0:	00000097          	auipc	ra,0x0
-     4e4:	000080e7          	jalr	ra,0(ra) # 4e0 <dwarf::at_name[abi:cxx11](dwarf::die const&)+0x40>
-     4e8:	fc843503          	ld	a0,-56(s0)
+     4e4:	000080e7          	jalr	ra,0(ra) # 4e0 <.LM109+0x8>
+
+00000000000004e8 <.LVL84>:
+     4e8:	00040513          	addi	a0,s0,0
      4ec:	03813083          	ld	ra,56(sp)
      4f0:	03013403          	ld	s0,48(sp)
-     4f4:	04010113          	addi	sp,sp,64
-     4f8:	00008067          	jalr	zero,0(ra)
 
-00000000000004fc <dwarf::at_ordering(dwarf::die const&)>:
-     4fc:	fc010113          	addi	sp,sp,-64
-     500:	02113c23          	sd	ra,56(sp)
-     504:	02813823          	sd	s0,48(sp)
-     508:	04010413          	addi	s0,sp,64
-     50c:	fca43423          	sd	a0,-56(s0)
-     510:	fd840793          	addi	a5,s0,-40
-     514:	00900613          	addi	a2,zero,9
-     518:	fc843583          	ld	a1,-56(s0)
-     51c:	00078513          	addi	a0,a5,0
-     520:	00000097          	auipc	ra,0x0
-     524:	000080e7          	jalr	ra,0(ra) # 520 <dwarf::at_ordering(dwarf::die const&)+0x24>
-     528:	fd840793          	addi	a5,s0,-40
-     52c:	00078513          	addi	a0,a5,0
-     530:	00000097          	auipc	ra,0x0
-     534:	000080e7          	jalr	ra,0(ra) # 530 <dwarf::at_ordering(dwarf::die const&)+0x34>
-     538:	00050793          	addi	a5,a0,0
-     53c:	0007879b          	addiw	a5,a5,0
-     540:	00078513          	addi	a0,a5,0
-     544:	03813083          	ld	ra,56(sp)
-     548:	03013403          	ld	s0,48(sp)
-     54c:	04010113          	addi	sp,sp,64
-     550:	00008067          	jalr	zero,0(ra)
+00000000000004f4 <.LM110>:
+     4f4:	02813483          	ld	s1,40(sp)
+     4f8:	04010113          	addi	sp,sp,64
+     4fc:	00008067          	jalr	zero,0(ra)
 
-0000000000000554 <dwarf::at_byte_size(dwarf::die const&, dwarf::expr_context*)>:
-     554:	fe010113          	addi	sp,sp,-32
-     558:	00113c23          	sd	ra,24(sp)
-     55c:	00813823          	sd	s0,16(sp)
-     560:	02010413          	addi	s0,sp,32
-     564:	fea43423          	sd	a0,-24(s0)
-     568:	feb43023          	sd	a1,-32(s0)
-     56c:	00000693          	addi	a3,zero,0
-     570:	fe043603          	ld	a2,-32(s0)
-     574:	fe843583          	ld	a1,-24(s0)
-     578:	00b00513          	addi	a0,zero,11
-     57c:	00000097          	auipc	ra,0x0
-     580:	000080e7          	jalr	ra,0(ra) # 57c <dwarf::at_byte_size(dwarf::die const&, dwarf::expr_context*)+0x28>
-     584:	00050793          	addi	a5,a0,0
-     588:	00078513          	addi	a0,a5,0
-     58c:	01813083          	ld	ra,24(sp)
-     590:	01013403          	ld	s0,16(sp)
-     594:	02010113          	addi	sp,sp,32
-     598:	00008067          	jalr	zero,0(ra)
+0000000000000500 <dwarf::at_accessibility(dwarf::die const&)>:
+AT_ENUM(accessibility, DW_ACCESS);
+     500:	fd010113          	addi	sp,sp,-48
+     504:	02113423          	sd	ra,40(sp)
+     508:	02813023          	sd	s0,32(sp)
+     50c:	00050593          	addi	a1,a0,0
 
-000000000000059c <dwarf::at_bit_offset(dwarf::die const&, dwarf::expr_context*)>:
-     59c:	fe010113          	addi	sp,sp,-32
-     5a0:	00113c23          	sd	ra,24(sp)
-     5a4:	00813823          	sd	s0,16(sp)
-     5a8:	02010413          	addi	s0,sp,32
-     5ac:	fea43423          	sd	a0,-24(s0)
-     5b0:	feb43023          	sd	a1,-32(s0)
-     5b4:	00000693          	addi	a3,zero,0
-     5b8:	fe043603          	ld	a2,-32(s0)
-     5bc:	fe843583          	ld	a1,-24(s0)
-     5c0:	00c00513          	addi	a0,zero,12
-     5c4:	00000097          	auipc	ra,0x0
-     5c8:	000080e7          	jalr	ra,0(ra) # 5c4 <dwarf::at_bit_offset(dwarf::die const&, dwarf::expr_context*)+0x28>
-     5cc:	00050793          	addi	a5,a0,0
-     5d0:	00078513          	addi	a0,a5,0
-     5d4:	01813083          	ld	ra,24(sp)
-     5d8:	01013403          	ld	s0,16(sp)
-     5dc:	02010113          	addi	sp,sp,32
-     5e0:	00008067          	jalr	zero,0(ra)
+0000000000000510 <.LM113>:
+     510:	03200613          	addi	a2,zero,50
+     514:	00810413          	addi	s0,sp,8
+     518:	00040513          	addi	a0,s0,0
 
-00000000000005e4 <dwarf::at_bit_size(dwarf::die const&, dwarf::expr_context*)>:
-     5e4:	fe010113          	addi	sp,sp,-32
-     5e8:	00113c23          	sd	ra,24(sp)
-     5ec:	00813823          	sd	s0,16(sp)
-     5f0:	02010413          	addi	s0,sp,32
-     5f4:	fea43423          	sd	a0,-24(s0)
-     5f8:	feb43023          	sd	a1,-32(s0)
-     5fc:	00000693          	addi	a3,zero,0
-     600:	fe043603          	ld	a2,-32(s0)
-     604:	fe843583          	ld	a1,-24(s0)
-     608:	00d00513          	addi	a0,zero,13
-     60c:	00000097          	auipc	ra,0x0
-     610:	000080e7          	jalr	ra,0(ra) # 60c <dwarf::at_bit_size(dwarf::die const&, dwarf::expr_context*)+0x28>
-     614:	00050793          	addi	a5,a0,0
-     618:	00078513          	addi	a0,a5,0
-     61c:	01813083          	ld	ra,24(sp)
-     620:	01013403          	ld	s0,16(sp)
-     624:	02010113          	addi	sp,sp,32
-     628:	00008067          	jalr	zero,0(ra)
+000000000000051c <.LM114>:
+     51c:	00000097          	auipc	ra,0x0
+     520:	000080e7          	jalr	ra,0(ra) # 51c <.LM114>
 
-000000000000062c <dwarf::at_low_pc(dwarf::die const&)>:
-     62c:	fc010113          	addi	sp,sp,-64
-     630:	02113c23          	sd	ra,56(sp)
-     634:	02813823          	sd	s0,48(sp)
-     638:	04010413          	addi	s0,sp,64
-     63c:	fca43423          	sd	a0,-56(s0)
-     640:	fd840793          	addi	a5,s0,-40
-     644:	01100613          	addi	a2,zero,17
-     648:	fc843583          	ld	a1,-56(s0)
-     64c:	00078513          	addi	a0,a5,0
-     650:	00000097          	auipc	ra,0x0
-     654:	000080e7          	jalr	ra,0(ra) # 650 <dwarf::at_low_pc(dwarf::die const&)+0x24>
-     658:	fd840793          	addi	a5,s0,-40
-     65c:	00078513          	addi	a0,a5,0
-     660:	00000097          	auipc	ra,0x0
-     664:	000080e7          	jalr	ra,0(ra) # 660 <dwarf::at_low_pc(dwarf::die const&)+0x34>
-     668:	00050793          	addi	a5,a0,0
-     66c:	00078513          	addi	a0,a5,0
-     670:	03813083          	ld	ra,56(sp)
-     674:	03013403          	ld	s0,48(sp)
-     678:	04010113          	addi	sp,sp,64
-     67c:	00008067          	jalr	zero,0(ra)
+0000000000000524 <.LM115>:
+     524:	00040513          	addi	a0,s0,0
+     528:	00000097          	auipc	ra,0x0
+     52c:	000080e7          	jalr	ra,0(ra) # 528 <.LM115+0x4>
 
-0000000000000680 <dwarf::at_high_pc(dwarf::die const&)>:
-     680:	f3010113          	addi	sp,sp,-208
-     684:	0c113423          	sd	ra,200(sp)
-     688:	0c813023          	sd	s0,192(sp)
-     68c:	0a913c23          	sd	s1,184(sp)
-     690:	0b213823          	sd	s2,176(sp)
-     694:	0d010413          	addi	s0,sp,208
-     698:	f2a43c23          	sd	a0,-200(s0)
-     69c:	f4840793          	addi	a5,s0,-184
-     6a0:	01200613          	addi	a2,zero,18
-     6a4:	f3843583          	ld	a1,-200(s0)
-     6a8:	00078513          	addi	a0,a5,0
+0000000000000530 <.LVL89>:
+     530:	0005051b          	addiw	a0,a0,0
+     534:	02813083          	ld	ra,40(sp)
+     538:	02013403          	ld	s0,32(sp)
+     53c:	03010113          	addi	sp,sp,48
+     540:	00008067          	jalr	zero,0(ra)
 
-00000000000006ac <.LEHB12>:
+0000000000000544 <dwarf::at_artificial(dwarf::die const&)>:
+// XXX const address_class
+AT_FLAG(artificial);
+     544:	fd010113          	addi	sp,sp,-48
+     548:	02113423          	sd	ra,40(sp)
+     54c:	02813023          	sd	s0,32(sp)
+     550:	00050593          	addi	a1,a0,0
+
+0000000000000554 <.LM118>:
+     554:	03400613          	addi	a2,zero,52
+     558:	00810413          	addi	s0,sp,8
+     55c:	00040513          	addi	a0,s0,0
+
+0000000000000560 <.LM119>:
+     560:	00000097          	auipc	ra,0x0
+     564:	000080e7          	jalr	ra,0(ra) # 560 <.LM119>
+
+0000000000000568 <.LM120>:
+     568:	00040513          	addi	a0,s0,0
+     56c:	00000097          	auipc	ra,0x0
+     570:	000080e7          	jalr	ra,0(ra) # 56c <.LM120+0x4>
+
+0000000000000574 <.LVL93>:
+     574:	02813083          	ld	ra,40(sp)
+     578:	02013403          	ld	s0,32(sp)
+     57c:	03010113          	addi	sp,sp,48
+     580:	00008067          	jalr	zero,0(ra)
+
+0000000000000584 <dwarf::at_calling_convention(dwarf::die const&)>:
+// XXX base_types
+AT_ENUM(calling_convention, DW_CC);
+     584:	fd010113          	addi	sp,sp,-48
+     588:	02113423          	sd	ra,40(sp)
+     58c:	02813023          	sd	s0,32(sp)
+     590:	00050593          	addi	a1,a0,0
+
+0000000000000594 <.LM123>:
+     594:	03600613          	addi	a2,zero,54
+     598:	00810413          	addi	s0,sp,8
+     59c:	00040513          	addi	a0,s0,0
+
+00000000000005a0 <.LM124>:
+     5a0:	00000097          	auipc	ra,0x0
+     5a4:	000080e7          	jalr	ra,0(ra) # 5a0 <.LM124>
+
+00000000000005a8 <.LM125>:
+     5a8:	00040513          	addi	a0,s0,0
+     5ac:	00000097          	auipc	ra,0x0
+     5b0:	000080e7          	jalr	ra,0(ra) # 5ac <.LM125+0x4>
+
+00000000000005b4 <.LVL97>:
+     5b4:	0005051b          	addiw	a0,a0,0
+     5b8:	02813083          	ld	ra,40(sp)
+     5bc:	02013403          	ld	s0,32(sp)
+     5c0:	03010113          	addi	sp,sp,48
+     5c4:	00008067          	jalr	zero,0(ra)
+
+00000000000005c8 <dwarf::at_data_member_location(dwarf::die const&, dwarf::expr_context*, unsigned long, unsigned long)>:
+AT_UDYNAMIC(count);
+expr_result at_data_member_location(const die &d, expr_context *ctx, taddr base,
+                                    taddr pc) {
+     5c8:	f6010113          	addi	sp,sp,-160
+     5cc:	08113c23          	sd	ra,152(sp)
+     5d0:	08813823          	sd	s0,144(sp)
+     5d4:	08913423          	sd	s1,136(sp)
+     5d8:	09213023          	sd	s2,128(sp)
+     5dc:	07313c23          	sd	s3,120(sp)
+     5e0:	00050413          	addi	s0,a0,0
+     5e4:	00060913          	addi	s2,a2,0
+     5e8:	00068493          	addi	s1,a3,0
+
+00000000000005ec <.LM128>:
+  value v(d[DW_AT::data_member_location]);
+     5ec:	03800613          	addi	a2,zero,56
+
+00000000000005f0 <.LM130>:
+     5f0:	04010513          	addi	a0,sp,64
+
+00000000000005f4 <.LEHB0>:
+     5f4:	00000097          	auipc	ra,0x0
+     5f8:	000080e7          	jalr	ra,0(ra) # 5f4 <.LEHB0>
+
+00000000000005fc <.LBB682>:
+  /**
+   * Return this value's byte offset within its section.
+   */
+  section_offset get_section_offset() const;
+
+  type get_type() const { return typ; }
+     5fc:	04c12783          	lw	a5,76(sp)
+
+0000000000000600 <.LBE682>:
+  switch (v.get_type()) {
+     600:	00600713          	addi	a4,zero,6
+     604:	08e78263          	beq	a5,a4,688 <.L48>
+     608:	04f74a63          	blt	a4,a5,65c <.L49>
+     60c:	ffd7879b          	addiw	a5,a5,-3
+     610:	00100713          	addi	a4,zero,1
+     614:	0cf76063          	bltu	a4,a5,6d4 <.L50>
+
+0000000000000618 <.LM138>:
+  case value::type::constant:
+  case value::type::uconstant:
+    return {expr_result::type::address, base + v.as_uconstant()};
+     618:	00043023          	sd	zero,0(s0)
+     61c:	00043423          	sd	zero,8(s0)
+     620:	00043823          	sd	zero,16(s0)
+     624:	00043c23          	sd	zero,24(s0)
+
+0000000000000628 <.LM142>:
+     628:	04010513          	addi	a0,sp,64
+     62c:	00000097          	auipc	ra,0x0
+     630:	000080e7          	jalr	ra,0(ra) # 62c <.LM142+0x4>
+
+0000000000000634 <.LEHE0>:
+     634:	00a484b3          	add	s1,s1,a0
+
+0000000000000638 <.LM144>:
+     638:	00943423          	sd	s1,8(s0)
+
+000000000000063c <.L47>:
+    throw std::runtime_error("not implemented");
+  default:
+    throw format_error("DW_AT_data_member_location has unexpected type " +
+                       to_string(v.get_type()));
+  }
+}
+     63c:	00040513          	addi	a0,s0,0
+     640:	09813083          	ld	ra,152(sp)
+     644:	09013403          	ld	s0,144(sp)
+
+0000000000000648 <.LM146>:
+     648:	08813483          	ld	s1,136(sp)
+     64c:	08013903          	ld	s2,128(sp)
+
+0000000000000650 <.LM147>:
+     650:	07813983          	ld	s3,120(sp)
+     654:	0a010113          	addi	sp,sp,160
+     658:	00008067          	jalr	zero,0(ra)
+
+000000000000065c <.L49>:
+  switch (v.get_type()) {
+     65c:	00900713          	addi	a4,zero,9
+     660:	06e79a63          	bne	a5,a4,6d4 <.L50>
+
+0000000000000664 <.LM149>:
+    throw std::runtime_error("not implemented");
+     664:	01000513          	addi	a0,zero,16
+     668:	00000097          	auipc	ra,0x0
+     66c:	000080e7          	jalr	ra,0(ra) # 668 <.LM149+0x4>
+
+0000000000000670 <.LVL108>:
+     670:	00050413          	addi	s0,a0,0
+
+0000000000000674 <.LM152>:
+     674:	00000597          	auipc	a1,0x0
+     678:	00058593          	addi	a1,a1,0 # 674 <.LM152>
+
+000000000000067c <.LEHB1>:
+     67c:	00000097          	auipc	ra,0x0
+     680:	000080e7          	jalr	ra,0(ra) # 67c <.LEHB1>
+
+0000000000000684 <.LEHE1>:
+     684:	0340006f          	jal	zero,6b8 <.L68>
+
+0000000000000688 <.L48>:
+    return v.as_exprloc().evaluate(ctx, base);
+     688:	04010593          	addi	a1,sp,64
+     68c:	05810993          	addi	s3,sp,88
+     690:	00098513          	addi	a0,s3,0
+
+0000000000000694 <.LEHB2>:
+     694:	00000097          	auipc	ra,0x0
+     698:	000080e7          	jalr	ra,0(ra) # 694 <.LEHB2>
+
+000000000000069c <.LM156>:
+     69c:	00048693          	addi	a3,s1,0
+     6a0:	00090613          	addi	a2,s2,0
+     6a4:	00098593          	addi	a1,s3,0
+     6a8:	00040513          	addi	a0,s0,0
      6ac:	00000097          	auipc	ra,0x0
-     6b0:	000080e7          	jalr	ra,0(ra) # 6ac <.LEHB12>
-     6b4:	f4840793          	addi	a5,s0,-184
-     6b8:	00078513          	addi	a0,a5,0
-     6bc:	00000317          	auipc	t1,0x0
-     6c0:	00033303          	ld	t1,0(t1) # 6bc <.LEHB12+0x10>
-     6c4:	000300e7          	jalr	ra,0(t1)
-     6c8:	00050793          	addi	a5,a0,0
-     6cc:	00078713          	addi	a4,a5,0
-     6d0:	00070693          	addi	a3,a4,0
-     6d4:	00100793          	addi	a5,zero,1
-     6d8:	02f68463          	beq	a3,a5,700 <.L50>
-     6dc:	00070793          	addi	a5,a4,0
-     6e0:	06f05263          	bge	zero,a5,744 <.L51>
-     6e4:	0007079b          	addiw	a5,a4,0
-     6e8:	ffd7879b          	addiw	a5,a5,-3
-     6ec:	0007879b          	addiw	a5,a5,0
-     6f0:	00078713          	addi	a4,a5,0
-     6f4:	00100793          	addi	a5,zero,1
-     6f8:	04e7e663          	bltu	a5,a4,744 <.L51>
-     6fc:	01c0006f          	jal	zero,718 <.L65>
+     6b0:	000080e7          	jalr	ra,0(ra) # 6ac <.LM156+0x10>
 
-0000000000000700 <.L50>:
-     700:	f4840793          	addi	a5,s0,-184
-     704:	00078513          	addi	a0,a5,0
-     708:	00000097          	auipc	ra,0x0
-     70c:	000080e7          	jalr	ra,0(ra) # 708 <.L50+0x8>
-     710:	00050793          	addi	a5,a0,0
-     714:	1c40006f          	jal	zero,8d8 <.L66>
+00000000000006b4 <.LVL113>:
+     6b4:	f89ff06f          	jal	zero,63c <.L47>
 
-0000000000000718 <.L65>:
-     718:	f3843503          	ld	a0,-200(s0)
-     71c:	00000097          	auipc	ra,0x0
-     720:	000080e7          	jalr	ra,0(ra) # 71c <.L65+0x4>
-     724:	00050493          	addi	s1,a0,0
-     728:	f4840793          	addi	a5,s0,-184
-     72c:	00078513          	addi	a0,a5,0
-     730:	00000097          	auipc	ra,0x0
-     734:	000080e7          	jalr	ra,0(ra) # 730 <.L65+0x18>
+00000000000006b8 <.L68>:
+    throw std::runtime_error("not implemented");
+     6b8:	00000617          	auipc	a2,0x0
+     6bc:	00063603          	ld	a2,0(a2) # 6b8 <.L68>
+     6c0:	00000597          	auipc	a1,0x0
+     6c4:	0005b583          	ld	a1,0(a1) # 6c0 <.L68+0x8>
+     6c8:	00040513          	addi	a0,s0,0
+     6cc:	00000097          	auipc	ra,0x0
+     6d0:	000080e7          	jalr	ra,0(ra) # 6cc <.L68+0x14>
 
-0000000000000738 <.LEHE12>:
-     738:	00050793          	addi	a5,a0,0
-     73c:	00f487b3          	add	a5,s1,a5
-     740:	1980006f          	jal	zero,8d8 <.L66>
+00000000000006d4 <.L50>:
+                       to_string(v.get_type()));
+     6d4:	01000513          	addi	a0,zero,16
+     6d8:	00000097          	auipc	ra,0x0
+     6dc:	000080e7          	jalr	ra,0(ra) # 6d8 <.L50+0x4>
 
-0000000000000744 <.L51>:
-     744:	01000513          	addi	a0,zero,16
-     748:	00000097          	auipc	ra,0x0
-     74c:	000080e7          	jalr	ra,0(ra) # 748 <.L51+0x4>
-     750:	00050793          	addi	a5,a0,0
-     754:	00078493          	addi	s1,a5,0
-     758:	fa040793          	addi	a5,s0,-96
-     75c:	01200593          	addi	a1,zero,18
-     760:	00078513          	addi	a0,a5,0
+00000000000006e0 <.LVL116>:
+     6e0:	00050493          	addi	s1,a0,0
 
-0000000000000764 <.LEHB13>:
-     764:	00000097          	auipc	ra,0x0
-     768:	000080e7          	jalr	ra,0(ra) # 764 <.LEHB13>
+00000000000006e4 <.LBB684>:
+     6e4:	04c12583          	lw	a1,76(sp)
+     6e8:	00010513          	addi	a0,sp,0
 
-000000000000076c <.LEHE13>:
-     76c:	f8040793          	addi	a5,s0,-128
-     770:	fa040713          	addi	a4,s0,-96
-     774:	00000617          	auipc	a2,0x0
-     778:	00060613          	addi	a2,a2,0 # 774 <.LEHE13+0x8>
-     77c:	00070593          	addi	a1,a4,0
-     780:	00078513          	addi	a0,a5,0
-     784:	00000317          	auipc	t1,0x0
-     788:	00033303          	ld	t1,0(t1) # 784 <.LEHE13+0x18>
+00000000000006ec <.LEHB3>:
+     6ec:	00000097          	auipc	ra,0x0
+     6f0:	000080e7          	jalr	ra,0(ra) # 6ec <.LEHB3>
 
-000000000000078c <.LEHB14>:
-     78c:	000300e7          	jalr	ra,0(t1)
+00000000000006f4 <.LBB686>:
+  template<typename _CharT, typename _Traits, typename _Alloc>
+    _GLIBCXX20_CONSTEXPR
+    inline basic_string<_CharT, _Traits, _Alloc>
+    operator+(const _CharT* __lhs,
+	      basic_string<_CharT, _Traits, _Alloc>&& __rhs)
+    { return std::move(__rhs.insert(0, __lhs)); }
+     6f4:	00000617          	auipc	a2,0x0
+     6f8:	00060613          	addi	a2,a2,0 # 6f4 <.LBB686>
+     6fc:	00000593          	addi	a1,zero,0
+     700:	00010513          	addi	a0,sp,0
 
-0000000000000790 <.LEHE14>:
-     790:	f4840793          	addi	a5,s0,-184
-     794:	00078513          	addi	a0,a5,0
-     798:	00000317          	auipc	t1,0x0
-     79c:	00033303          	ld	t1,0(t1) # 798 <.LEHE14+0x8>
-     7a0:	000300e7          	jalr	ra,0(t1)
-     7a4:	00050793          	addi	a5,a0,0
-     7a8:	00078713          	addi	a4,a5,0
-     7ac:	fc040793          	addi	a5,s0,-64
-     7b0:	00070593          	addi	a1,a4,0
-     7b4:	00078513          	addi	a0,a5,0
+0000000000000704 <.LEHB4>:
+     704:	00000097          	auipc	ra,0x0
+     708:	000080e7          	jalr	ra,0(ra) # 704 <.LEHB4>
 
-00000000000007b8 <.LEHB15>:
-     7b8:	00000097          	auipc	ra,0x0
-     7bc:	000080e7          	jalr	ra,0(ra) # 7b8 <.LEHB15>
+000000000000070c <.LEHE4>:
+     70c:	00050593          	addi	a1,a0,0
 
-00000000000007c0 <.LEHE15>:
-     7c0:	f6040793          	addi	a5,s0,-160
-     7c4:	fc040693          	addi	a3,s0,-64
-     7c8:	f8040713          	addi	a4,s0,-128
-     7cc:	00068613          	addi	a2,a3,0
-     7d0:	00070593          	addi	a1,a4,0
-     7d4:	00078513          	addi	a0,a5,0
-     7d8:	00000317          	auipc	t1,0x0
-     7dc:	00033303          	ld	t1,0(t1) # 7d8 <.LEHE15+0x18>
+0000000000000710 <.LM167>:
+     710:	02010413          	addi	s0,sp,32
 
-00000000000007e0 <.LEHB16>:
-     7e0:	000300e7          	jalr	ra,0(t1)
+0000000000000714 <.LM168>:
+     714:	00040513          	addi	a0,s0,0
+     718:	00000097          	auipc	ra,0x0
+     71c:	000080e7          	jalr	ra,0(ra) # 718 <.LM168+0x4>
 
-00000000000007e4 <.LEHE16>:
-     7e4:	f6040793          	addi	a5,s0,-160
-     7e8:	00078593          	addi	a1,a5,0
-     7ec:	00048513          	addi	a0,s1,0
-     7f0:	00000317          	auipc	t1,0x0
-     7f4:	00033303          	ld	t1,0(t1) # 7f0 <.LEHE16+0xc>
+0000000000000720 <.LBB688>:
+      : std::runtime_error(what_arg) {}
+     720:	00040593          	addi	a1,s0,0
+     724:	00048513          	addi	a0,s1,0
 
-00000000000007f8 <.LEHB17>:
-     7f8:	000300e7          	jalr	ra,0(t1)
+0000000000000728 <.LEHB5>:
+     728:	00000097          	auipc	ra,0x0
+     72c:	000080e7          	jalr	ra,0(ra) # 728 <.LEHB5>
 
-00000000000007fc <.LEHE17>:
-     7fc:	f6040793          	addi	a5,s0,-160
-     800:	00078513          	addi	a0,a5,0
-     804:	00000097          	auipc	ra,0x0
-     808:	000080e7          	jalr	ra,0(ra) # 804 <.LEHE17+0x8>
-     80c:	fc040793          	addi	a5,s0,-64
-     810:	00078513          	addi	a0,a5,0
-     814:	00000097          	auipc	ra,0x0
-     818:	000080e7          	jalr	ra,0(ra) # 814 <.LEHE17+0x18>
-     81c:	f8040793          	addi	a5,s0,-128
-     820:	00078513          	addi	a0,a5,0
-     824:	00000097          	auipc	ra,0x0
-     828:	000080e7          	jalr	ra,0(ra) # 824 <.LEHE17+0x28>
-     82c:	fa040793          	addi	a5,s0,-96
-     830:	00078513          	addi	a0,a5,0
-     834:	00000097          	auipc	ra,0x0
-     838:	000080e7          	jalr	ra,0(ra) # 834 <.LEHE17+0x38>
-     83c:	00000617          	auipc	a2,0x0
-     840:	00063603          	ld	a2,0(a2) # 83c <.LEHE17+0x40>
-     844:	00000597          	auipc	a1,0x0
-     848:	0005b583          	ld	a1,0(a1) # 844 <.LEHE17+0x48>
-     84c:	00048513          	addi	a0,s1,0
+0000000000000730 <.LEHE5>:
+     730:	00000797          	auipc	a5,0x0
+     734:	0007b783          	ld	a5,0(a5) # 730 <.LEHE5>
+     738:	01078793          	addi	a5,a5,16
+     73c:	00f4b023          	sd	a5,0(s1)
 
-0000000000000850 <.LEHB18>:
+0000000000000740 <.LBB690>:
+      { return _M_dataplus._M_p; }
+     740:	02013503          	ld	a0,32(sp)
+
+0000000000000744 <.LBB697>:
+	if (!_M_is_local())
+     744:	03010793          	addi	a5,sp,48
+     748:	00f50663          	beq	a0,a5,754 <.L54>
+
+000000000000074c <.LBB698>:
+	    _GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n),
+				     std::align_val_t(alignof(_Tp)));
+	    return;
+	  }
+#endif
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+     74c:	00000097          	auipc	ra,0x0
+     750:	000080e7          	jalr	ra,0(ra) # 74c <.LBB698>
+
+0000000000000754 <.L54>:
+      { return _M_dataplus._M_p; }
+     754:	00013503          	ld	a0,0(sp)
+
+0000000000000758 <.LBB713>:
+	if (!_M_is_local())
+     758:	01010793          	addi	a5,sp,16
+     75c:	00f50663          	beq	a0,a5,768 <.L55>
+
+0000000000000760 <.LBB714>:
+     760:	00000097          	auipc	ra,0x0
+     764:	000080e7          	jalr	ra,0(ra) # 760 <.LBB714>
+
+0000000000000768 <.L55>:
+     768:	00000617          	auipc	a2,0x0
+     76c:	00063603          	ld	a2,0(a2) # 768 <.L55>
+     770:	00000597          	auipc	a1,0x0
+     774:	0005b583          	ld	a1,0(a1) # 770 <.L55+0x8>
+     778:	00048513          	addi	a0,s1,0
+
+000000000000077c <.LEHB6>:
+     77c:	00000097          	auipc	ra,0x0
+     780:	000080e7          	jalr	ra,0(ra) # 77c <.LEHB6>
+
+0000000000000784 <.L62>:
+    throw std::runtime_error("not implemented");
+     784:	00050493          	addi	s1,a0,0
+
+0000000000000788 <.LM211>:
+     788:	00040513          	addi	a0,s0,0
+     78c:	00000097          	auipc	ra,0x0
+     790:	000080e7          	jalr	ra,0(ra) # 78c <.LM211+0x4>
+
+0000000000000794 <.LVL132>:
+     794:	00048513          	addi	a0,s1,0
+     798:	00000097          	auipc	ra,0x0
+     79c:	000080e7          	jalr	ra,0(ra) # 798 <.LVL132+0x4>
+
+00000000000007a0 <.L65>:
+      { return _M_dataplus._M_p; }
+     7a0:	00050413          	addi	s0,a0,0
+
+00000000000007a4 <.LBB730>:
+     7a4:	02013503          	ld	a0,32(sp)
+
+00000000000007a8 <.LBB731>:
+	if (!_M_is_local())
+     7a8:	03010793          	addi	a5,sp,48
+     7ac:	00f50663          	beq	a0,a5,7b8 <.L59>
+
+00000000000007b0 <.LBB733>:
+     7b0:	00000097          	auipc	ra,0x0
+     7b4:	000080e7          	jalr	ra,0(ra) # 7b0 <.LBB733>
+
+00000000000007b8 <.L59>:
+      { return _M_dataplus._M_p; }
+     7b8:	00013503          	ld	a0,0(sp)
+
+00000000000007bc <.LBB752>:
+	if (!_M_is_local())
+     7bc:	01010793          	addi	a5,sp,16
+     7c0:	00f50663          	beq	a0,a5,7cc <.L61>
+
+00000000000007c4 <.LBB754>:
+     7c4:	00000097          	auipc	ra,0x0
+     7c8:	000080e7          	jalr	ra,0(ra) # 7c4 <.LBB754>
+
+00000000000007cc <.L61>:
+                       to_string(v.get_type()));
+     7cc:	00048513          	addi	a0,s1,0
+     7d0:	00000097          	auipc	ra,0x0
+     7d4:	000080e7          	jalr	ra,0(ra) # 7d0 <.L61+0x4>
+
+00000000000007d8 <.LVL141>:
+     7d8:	00040513          	addi	a0,s0,0
+     7dc:	00000097          	auipc	ra,0x0
+     7e0:	000080e7          	jalr	ra,0(ra) # 7dc <.LVL141+0x4>
+
+00000000000007e4 <.L64>:
+      { return _M_dataplus._M_p; }
+     7e4:	00050413          	addi	s0,a0,0
+
+00000000000007e8 <.LM252>:
+     7e8:	fd1ff06f          	jal	zero,7b8 <.L59>
+
+00000000000007ec <.L63>:
+     7ec:	00050413          	addi	s0,a0,0
+
+00000000000007f0 <.LM255>:
+     7f0:	fddff06f          	jal	zero,7cc <.L61>
+
+00000000000007f4 <dwarf::at_declaration(dwarf::die const&)>:
+// XXX decl_column decl_file decl_line
+AT_FLAG(declaration);
+     7f4:	fd010113          	addi	sp,sp,-48
+     7f8:	02113423          	sd	ra,40(sp)
+     7fc:	02813023          	sd	s0,32(sp)
+     800:	00050593          	addi	a1,a0,0
+
+0000000000000804 <.LM258>:
+     804:	03c00613          	addi	a2,zero,60
+     808:	00810413          	addi	s0,sp,8
+     80c:	00040513          	addi	a0,s0,0
+
+0000000000000810 <.LM259>:
+     810:	00000097          	auipc	ra,0x0
+     814:	000080e7          	jalr	ra,0(ra) # 810 <.LM259>
+
+0000000000000818 <.LM260>:
+     818:	00040513          	addi	a0,s0,0
+     81c:	00000097          	auipc	ra,0x0
+     820:	000080e7          	jalr	ra,0(ra) # 81c <.LM260+0x4>
+
+0000000000000824 <.LVL149>:
+     824:	02813083          	ld	ra,40(sp)
+     828:	02013403          	ld	s0,32(sp)
+     82c:	03010113          	addi	sp,sp,48
+     830:	00008067          	jalr	zero,0(ra)
+
+0000000000000834 <dwarf::at_encoding(dwarf::die const&)>:
+// XXX discr_list
+AT_ENUM(encoding, DW_ATE);
+     834:	fd010113          	addi	sp,sp,-48
+     838:	02113423          	sd	ra,40(sp)
+     83c:	02813023          	sd	s0,32(sp)
+     840:	00050593          	addi	a1,a0,0
+
+0000000000000844 <.LM263>:
+     844:	03e00613          	addi	a2,zero,62
+     848:	00810413          	addi	s0,sp,8
+     84c:	00040513          	addi	a0,s0,0
+
+0000000000000850 <.LM264>:
      850:	00000097          	auipc	ra,0x0
-     854:	000080e7          	jalr	ra,0(ra) # 850 <.LEHB18>
+     854:	000080e7          	jalr	ra,0(ra) # 850 <.LM264>
 
-0000000000000858 <.L64>:
-     858:	00050913          	addi	s2,a0,0
-     85c:	f6040793          	addi	a5,s0,-160
-     860:	00078513          	addi	a0,a5,0
-     864:	00000097          	auipc	ra,0x0
-     868:	000080e7          	jalr	ra,0(ra) # 864 <.L64+0xc>
-     86c:	0080006f          	jal	zero,874 <.L56>
+0000000000000858 <.LM265>:
+     858:	00040513          	addi	a0,s0,0
+     85c:	00000097          	auipc	ra,0x0
+     860:	000080e7          	jalr	ra,0(ra) # 85c <.LM265+0x4>
 
-0000000000000870 <.L63>:
-     870:	00050913          	addi	s2,a0,0
+0000000000000864 <.LVL153>:
+     864:	0005051b          	addiw	a0,a0,0
+     868:	02813083          	ld	ra,40(sp)
+     86c:	02013403          	ld	s0,32(sp)
+     870:	03010113          	addi	sp,sp,48
+     874:	00008067          	jalr	zero,0(ra)
 
-0000000000000874 <.L56>:
-     874:	fc040793          	addi	a5,s0,-64
-     878:	00078513          	addi	a0,a5,0
-     87c:	00000097          	auipc	ra,0x0
-     880:	000080e7          	jalr	ra,0(ra) # 87c <.L56+0x8>
-     884:	0080006f          	jal	zero,88c <.L57>
+0000000000000878 <dwarf::at_external(dwarf::die const&)>:
+AT_FLAG(external);
+     878:	fd010113          	addi	sp,sp,-48
+     87c:	02113423          	sd	ra,40(sp)
+     880:	02813023          	sd	s0,32(sp)
+     884:	00050593          	addi	a1,a0,0
 
-0000000000000888 <.L62>:
-     888:	00050913          	addi	s2,a0,0
+0000000000000888 <.LM268>:
+     888:	03f00613          	addi	a2,zero,63
+     88c:	00810413          	addi	s0,sp,8
+     890:	00040513          	addi	a0,s0,0
 
-000000000000088c <.L57>:
-     88c:	f8040793          	addi	a5,s0,-128
-     890:	00078513          	addi	a0,a5,0
+0000000000000894 <.LM269>:
      894:	00000097          	auipc	ra,0x0
-     898:	000080e7          	jalr	ra,0(ra) # 894 <.L57+0x8>
-     89c:	0080006f          	jal	zero,8a4 <.L58>
+     898:	000080e7          	jalr	ra,0(ra) # 894 <.LM269>
 
-00000000000008a0 <.L61>:
-     8a0:	00050913          	addi	s2,a0,0
+000000000000089c <.LM270>:
+     89c:	00040513          	addi	a0,s0,0
+     8a0:	00000097          	auipc	ra,0x0
+     8a4:	000080e7          	jalr	ra,0(ra) # 8a0 <.LM270+0x4>
 
-00000000000008a4 <.L58>:
-     8a4:	fa040793          	addi	a5,s0,-96
-     8a8:	00078513          	addi	a0,a5,0
-     8ac:	00000097          	auipc	ra,0x0
-     8b0:	000080e7          	jalr	ra,0(ra) # 8ac <.L58+0x8>
-     8b4:	0080006f          	jal	zero,8bc <.L59>
+00000000000008a8 <.LVL157>:
+     8a8:	02813083          	ld	ra,40(sp)
+     8ac:	02013403          	ld	s0,32(sp)
+     8b0:	03010113          	addi	sp,sp,48
+     8b4:	00008067          	jalr	zero,0(ra)
 
-00000000000008b8 <.L60>:
-     8b8:	00050913          	addi	s2,a0,0
+00000000000008b8 <dwarf::at_friend(dwarf::die const&)>:
+//////////////////////////////////////////////////////////////////
+// 0x4X
+//
 
-00000000000008bc <.L59>:
-     8bc:	00048513          	addi	a0,s1,0
-     8c0:	00000097          	auipc	ra,0x0
-     8c4:	000080e7          	jalr	ra,0(ra) # 8c0 <.L59+0x4>
-     8c8:	00090793          	addi	a5,s2,0
-     8cc:	00078513          	addi	a0,a5,0
-     8d0:	00000097          	auipc	ra,0x0
-     8d4:	000080e7          	jalr	ra,0(ra) # 8d0 <.L59+0x14>
+// XXX frame_base
+die at_friend(const die &d) { return d[DW_AT::friend_].as_reference(); }
+     8b8:	fc010113          	addi	sp,sp,-64
+     8bc:	02113c23          	sd	ra,56(sp)
+     8c0:	02813823          	sd	s0,48(sp)
+     8c4:	02913423          	sd	s1,40(sp)
+     8c8:	00050413          	addi	s0,a0,0
 
-00000000000008d8 <.L66>:
-     8d8:	00078513          	addi	a0,a5,0
-     8dc:	0c813083          	ld	ra,200(sp)
-     8e0:	0c013403          	ld	s0,192(sp)
-     8e4:	0b813483          	ld	s1,184(sp)
-     8e8:	0b013903          	ld	s2,176(sp)
-     8ec:	0d010113          	addi	sp,sp,208
-     8f0:	00008067          	jalr	zero,0(ra)
+00000000000008cc <.LM273>:
+     8cc:	04100613          	addi	a2,zero,65
+     8d0:	00810493          	addi	s1,sp,8
+     8d4:	00048513          	addi	a0,s1,0
 
-00000000000008f4 <dwarf::at_language(dwarf::die const&)>:
-     8f4:	fc010113          	addi	sp,sp,-64
-     8f8:	02113c23          	sd	ra,56(sp)
-     8fc:	02813823          	sd	s0,48(sp)
-     900:	04010413          	addi	s0,sp,64
-     904:	fca43423          	sd	a0,-56(s0)
-     908:	fd840793          	addi	a5,s0,-40
-     90c:	01300613          	addi	a2,zero,19
-     910:	fc843583          	ld	a1,-56(s0)
-     914:	00078513          	addi	a0,a5,0
-     918:	00000097          	auipc	ra,0x0
-     91c:	000080e7          	jalr	ra,0(ra) # 918 <dwarf::at_language(dwarf::die const&)+0x24>
-     920:	fd840793          	addi	a5,s0,-40
-     924:	00078513          	addi	a0,a5,0
-     928:	00000097          	auipc	ra,0x0
-     92c:	000080e7          	jalr	ra,0(ra) # 928 <dwarf::at_language(dwarf::die const&)+0x34>
-     930:	00050793          	addi	a5,a0,0
-     934:	0007879b          	addiw	a5,a5,0
-     938:	00078513          	addi	a0,a5,0
-     93c:	03813083          	ld	ra,56(sp)
-     940:	03013403          	ld	s0,48(sp)
-     944:	04010113          	addi	sp,sp,64
+00000000000008d8 <.LM275>:
+     8d8:	00000097          	auipc	ra,0x0
+     8dc:	000080e7          	jalr	ra,0(ra) # 8d8 <.LM275>
+
+00000000000008e0 <.LM276>:
+     8e0:	00048593          	addi	a1,s1,0
+     8e4:	00040513          	addi	a0,s0,0
+     8e8:	00000097          	auipc	ra,0x0
+     8ec:	000080e7          	jalr	ra,0(ra) # 8e8 <.LM276+0x8>
+
+00000000000008f0 <.LM277>:
+     8f0:	00040513          	addi	a0,s0,0
+     8f4:	03813083          	ld	ra,56(sp)
+     8f8:	03013403          	ld	s0,48(sp)
+
+00000000000008fc <.LM278>:
+     8fc:	02813483          	ld	s1,40(sp)
+     900:	04010113          	addi	sp,sp,64
+     904:	00008067          	jalr	zero,0(ra)
+
+0000000000000908 <dwarf::at_identifier_case(dwarf::die const&)>:
+AT_ENUM(identifier_case, DW_ID);
+     908:	fd010113          	addi	sp,sp,-48
+     90c:	02113423          	sd	ra,40(sp)
+     910:	02813023          	sd	s0,32(sp)
+     914:	00050593          	addi	a1,a0,0
+
+0000000000000918 <.LM281>:
+     918:	04200613          	addi	a2,zero,66
+     91c:	00810413          	addi	s0,sp,8
+     920:	00040513          	addi	a0,s0,0
+
+0000000000000924 <.LM282>:
+     924:	00000097          	auipc	ra,0x0
+     928:	000080e7          	jalr	ra,0(ra) # 924 <.LM282>
+
+000000000000092c <.LM283>:
+     92c:	00040513          	addi	a0,s0,0
+     930:	00000097          	auipc	ra,0x0
+     934:	000080e7          	jalr	ra,0(ra) # 930 <.LM283+0x4>
+
+0000000000000938 <.LVL166>:
+     938:	0005051b          	addiw	a0,a0,0
+     93c:	02813083          	ld	ra,40(sp)
+     940:	02013403          	ld	s0,32(sp)
+     944:	03010113          	addi	sp,sp,48
      948:	00008067          	jalr	zero,0(ra)
 
-000000000000094c <dwarf::at_discr(dwarf::die const&)>:
+000000000000094c <dwarf::at_namelist_item(dwarf::die const&)>:
+// XXX macro_info
+AT_REFERENCE(namelist_item);
      94c:	fc010113          	addi	sp,sp,-64
      950:	02113c23          	sd	ra,56(sp)
      954:	02813823          	sd	s0,48(sp)
-     958:	04010413          	addi	s0,sp,64
-     95c:	fca43423          	sd	a0,-56(s0)
-     960:	fcb43023          	sd	a1,-64(s0)
-     964:	fd840793          	addi	a5,s0,-40
-     968:	01500613          	addi	a2,zero,21
-     96c:	fc043583          	ld	a1,-64(s0)
-     970:	00078513          	addi	a0,a5,0
-     974:	00000097          	auipc	ra,0x0
-     978:	000080e7          	jalr	ra,0(ra) # 974 <dwarf::at_discr(dwarf::die const&)+0x28>
-     97c:	fc843783          	ld	a5,-56(s0)
-     980:	fd840713          	addi	a4,s0,-40
-     984:	00070593          	addi	a1,a4,0
-     988:	00078513          	addi	a0,a5,0
-     98c:	00000097          	auipc	ra,0x0
-     990:	000080e7          	jalr	ra,0(ra) # 98c <dwarf::at_discr(dwarf::die const&)+0x40>
-     994:	fc843503          	ld	a0,-56(s0)
-     998:	03813083          	ld	ra,56(sp)
-     99c:	03013403          	ld	s0,48(sp)
-     9a0:	04010113          	addi	sp,sp,64
-     9a4:	00008067          	jalr	zero,0(ra)
+     958:	02913423          	sd	s1,40(sp)
+     95c:	00050413          	addi	s0,a0,0
 
-00000000000009a8 <dwarf::at_discr_value(dwarf::die const&)>:
-     9a8:	fe010113          	addi	sp,sp,-32
-     9ac:	00113c23          	sd	ra,24(sp)
-     9b0:	00813823          	sd	s0,16(sp)
-     9b4:	02010413          	addi	s0,sp,32
-     9b8:	fea43423          	sd	a0,-24(s0)
-     9bc:	feb43023          	sd	a1,-32(s0)
-     9c0:	fe843783          	ld	a5,-24(s0)
-     9c4:	01600613          	addi	a2,zero,22
-     9c8:	fe043583          	ld	a1,-32(s0)
-     9cc:	00078513          	addi	a0,a5,0
-     9d0:	00000097          	auipc	ra,0x0
-     9d4:	000080e7          	jalr	ra,0(ra) # 9d0 <dwarf::at_discr_value(dwarf::die const&)+0x28>
-     9d8:	fe843503          	ld	a0,-24(s0)
-     9dc:	01813083          	ld	ra,24(sp)
-     9e0:	01013403          	ld	s0,16(sp)
-     9e4:	02010113          	addi	sp,sp,32
+0000000000000960 <.LM286>:
+     960:	04400613          	addi	a2,zero,68
+     964:	00810493          	addi	s1,sp,8
+     968:	00048513          	addi	a0,s1,0
+
+000000000000096c <.LM287>:
+     96c:	00000097          	auipc	ra,0x0
+     970:	000080e7          	jalr	ra,0(ra) # 96c <.LM287>
+
+0000000000000974 <.LM288>:
+     974:	00048593          	addi	a1,s1,0
+     978:	00040513          	addi	a0,s0,0
+     97c:	00000097          	auipc	ra,0x0
+     980:	000080e7          	jalr	ra,0(ra) # 97c <.LM288+0x8>
+
+0000000000000984 <.LVL170>:
+     984:	00040513          	addi	a0,s0,0
+     988:	03813083          	ld	ra,56(sp)
+     98c:	03013403          	ld	s0,48(sp)
+
+0000000000000990 <.LM289>:
+     990:	02813483          	ld	s1,40(sp)
+     994:	04010113          	addi	sp,sp,64
+     998:	00008067          	jalr	zero,0(ra)
+
+000000000000099c <dwarf::at_priority(dwarf::die const&)>:
+AT_REFERENCE(priority); // XXX Computed might be useful
+     99c:	fc010113          	addi	sp,sp,-64
+     9a0:	02113c23          	sd	ra,56(sp)
+     9a4:	02813823          	sd	s0,48(sp)
+     9a8:	02913423          	sd	s1,40(sp)
+     9ac:	00050413          	addi	s0,a0,0
+
+00000000000009b0 <.LM292>:
+     9b0:	04500613          	addi	a2,zero,69
+     9b4:	00810493          	addi	s1,sp,8
+     9b8:	00048513          	addi	a0,s1,0
+
+00000000000009bc <.LM293>:
+     9bc:	00000097          	auipc	ra,0x0
+     9c0:	000080e7          	jalr	ra,0(ra) # 9bc <.LM293>
+
+00000000000009c4 <.LM294>:
+     9c4:	00048593          	addi	a1,s1,0
+     9c8:	00040513          	addi	a0,s0,0
+     9cc:	00000097          	auipc	ra,0x0
+     9d0:	000080e7          	jalr	ra,0(ra) # 9cc <.LM294+0x8>
+
+00000000000009d4 <.LVL175>:
+     9d4:	00040513          	addi	a0,s0,0
+     9d8:	03813083          	ld	ra,56(sp)
+     9dc:	03013403          	ld	s0,48(sp)
+
+00000000000009e0 <.LM295>:
+     9e0:	02813483          	ld	s1,40(sp)
+     9e4:	04010113          	addi	sp,sp,64
      9e8:	00008067          	jalr	zero,0(ra)
 
-00000000000009ec <dwarf::at_visibility(dwarf::die const&)>:
+00000000000009ec <dwarf::at_specification(dwarf::die const&)>:
+// XXX segment
+AT_REFERENCE(specification);
      9ec:	fc010113          	addi	sp,sp,-64
      9f0:	02113c23          	sd	ra,56(sp)
      9f4:	02813823          	sd	s0,48(sp)
-     9f8:	04010413          	addi	s0,sp,64
-     9fc:	fca43423          	sd	a0,-56(s0)
-     a00:	fd840793          	addi	a5,s0,-40
-     a04:	01700613          	addi	a2,zero,23
-     a08:	fc843583          	ld	a1,-56(s0)
-     a0c:	00078513          	addi	a0,a5,0
-     a10:	00000097          	auipc	ra,0x0
-     a14:	000080e7          	jalr	ra,0(ra) # a10 <dwarf::at_visibility(dwarf::die const&)+0x24>
-     a18:	fd840793          	addi	a5,s0,-40
-     a1c:	00078513          	addi	a0,a5,0
-     a20:	00000097          	auipc	ra,0x0
-     a24:	000080e7          	jalr	ra,0(ra) # a20 <dwarf::at_visibility(dwarf::die const&)+0x34>
-     a28:	00050793          	addi	a5,a0,0
-     a2c:	0007879b          	addiw	a5,a5,0
-     a30:	00078513          	addi	a0,a5,0
-     a34:	03813083          	ld	ra,56(sp)
-     a38:	03013403          	ld	s0,48(sp)
-     a3c:	04010113          	addi	sp,sp,64
-     a40:	00008067          	jalr	zero,0(ra)
+     9f8:	02913423          	sd	s1,40(sp)
+     9fc:	00050413          	addi	s0,a0,0
 
-0000000000000a44 <dwarf::at_import(dwarf::die const&)>:
-     a44:	fc010113          	addi	sp,sp,-64
-     a48:	02113c23          	sd	ra,56(sp)
-     a4c:	02813823          	sd	s0,48(sp)
-     a50:	04010413          	addi	s0,sp,64
-     a54:	fca43423          	sd	a0,-56(s0)
-     a58:	fcb43023          	sd	a1,-64(s0)
-     a5c:	fd840793          	addi	a5,s0,-40
-     a60:	01800613          	addi	a2,zero,24
-     a64:	fc043583          	ld	a1,-64(s0)
-     a68:	00078513          	addi	a0,a5,0
+0000000000000a00 <.LM298>:
+     a00:	04700613          	addi	a2,zero,71
+     a04:	00810493          	addi	s1,sp,8
+     a08:	00048513          	addi	a0,s1,0
+
+0000000000000a0c <.LM299>:
+     a0c:	00000097          	auipc	ra,0x0
+     a10:	000080e7          	jalr	ra,0(ra) # a0c <.LM299>
+
+0000000000000a14 <.LM300>:
+     a14:	00048593          	addi	a1,s1,0
+     a18:	00040513          	addi	a0,s0,0
+     a1c:	00000097          	auipc	ra,0x0
+     a20:	000080e7          	jalr	ra,0(ra) # a1c <.LM300+0x8>
+
+0000000000000a24 <.LVL180>:
+     a24:	00040513          	addi	a0,s0,0
+     a28:	03813083          	ld	ra,56(sp)
+     a2c:	03013403          	ld	s0,48(sp)
+
+0000000000000a30 <.LM301>:
+     a30:	02813483          	ld	s1,40(sp)
+     a34:	04010113          	addi	sp,sp,64
+     a38:	00008067          	jalr	zero,0(ra)
+
+0000000000000a3c <dwarf::at_type(dwarf::die const&)>:
+// XXX static_link
+AT_REFERENCE(type);
+     a3c:	fc010113          	addi	sp,sp,-64
+     a40:	02113c23          	sd	ra,56(sp)
+     a44:	02813823          	sd	s0,48(sp)
+     a48:	02913423          	sd	s1,40(sp)
+     a4c:	00050413          	addi	s0,a0,0
+
+0000000000000a50 <.LM304>:
+     a50:	04900613          	addi	a2,zero,73
+     a54:	00810493          	addi	s1,sp,8
+     a58:	00048513          	addi	a0,s1,0
+
+0000000000000a5c <.LM305>:
+     a5c:	00000097          	auipc	ra,0x0
+     a60:	000080e7          	jalr	ra,0(ra) # a5c <.LM305>
+
+0000000000000a64 <.LM306>:
+     a64:	00048593          	addi	a1,s1,0
+     a68:	00040513          	addi	a0,s0,0
      a6c:	00000097          	auipc	ra,0x0
-     a70:	000080e7          	jalr	ra,0(ra) # a6c <dwarf::at_import(dwarf::die const&)+0x28>
-     a74:	fc843783          	ld	a5,-56(s0)
-     a78:	fd840713          	addi	a4,s0,-40
-     a7c:	00070593          	addi	a1,a4,0
-     a80:	00078513          	addi	a0,a5,0
-     a84:	00000097          	auipc	ra,0x0
-     a88:	000080e7          	jalr	ra,0(ra) # a84 <dwarf::at_import(dwarf::die const&)+0x40>
-     a8c:	fc843503          	ld	a0,-56(s0)
-     a90:	03813083          	ld	ra,56(sp)
-     a94:	03013403          	ld	s0,48(sp)
-     a98:	04010113          	addi	sp,sp,64
-     a9c:	00008067          	jalr	zero,0(ra)
+     a70:	000080e7          	jalr	ra,0(ra) # a6c <.LM306+0x8>
 
-0000000000000aa0 <dwarf::at_common_reference(dwarf::die const&)>:
-     aa0:	fc010113          	addi	sp,sp,-64
-     aa4:	02113c23          	sd	ra,56(sp)
-     aa8:	02813823          	sd	s0,48(sp)
-     aac:	04010413          	addi	s0,sp,64
-     ab0:	fca43423          	sd	a0,-56(s0)
-     ab4:	fcb43023          	sd	a1,-64(s0)
-     ab8:	fd840793          	addi	a5,s0,-40
-     abc:	01a00613          	addi	a2,zero,26
-     ac0:	fc043583          	ld	a1,-64(s0)
-     ac4:	00078513          	addi	a0,a5,0
-     ac8:	00000097          	auipc	ra,0x0
-     acc:	000080e7          	jalr	ra,0(ra) # ac8 <dwarf::at_common_reference(dwarf::die const&)+0x28>
-     ad0:	fc843783          	ld	a5,-56(s0)
-     ad4:	fd840713          	addi	a4,s0,-40
-     ad8:	00070593          	addi	a1,a4,0
-     adc:	00078513          	addi	a0,a5,0
-     ae0:	00000097          	auipc	ra,0x0
-     ae4:	000080e7          	jalr	ra,0(ra) # ae0 <dwarf::at_common_reference(dwarf::die const&)+0x40>
-     ae8:	fc843503          	ld	a0,-56(s0)
-     aec:	03813083          	ld	ra,56(sp)
-     af0:	03013403          	ld	s0,48(sp)
-     af4:	04010113          	addi	sp,sp,64
-     af8:	00008067          	jalr	zero,0(ra)
+0000000000000a74 <.LVL185>:
+     a74:	00040513          	addi	a0,s0,0
+     a78:	03813083          	ld	ra,56(sp)
+     a7c:	03013403          	ld	s0,48(sp)
 
-0000000000000afc <dwarf::at_comp_dir[abi:cxx11](dwarf::die const&)>:
-     afc:	fc010113          	addi	sp,sp,-64
-     b00:	02113c23          	sd	ra,56(sp)
-     b04:	02813823          	sd	s0,48(sp)
-     b08:	04010413          	addi	s0,sp,64
-     b0c:	fca43423          	sd	a0,-56(s0)
-     b10:	fcb43023          	sd	a1,-64(s0)
-     b14:	fd840793          	addi	a5,s0,-40
-     b18:	01b00613          	addi	a2,zero,27
-     b1c:	fc043583          	ld	a1,-64(s0)
-     b20:	00078513          	addi	a0,a5,0
-     b24:	00000097          	auipc	ra,0x0
-     b28:	000080e7          	jalr	ra,0(ra) # b24 <dwarf::at_comp_dir[abi:cxx11](dwarf::die const&)+0x28>
-     b2c:	fc843783          	ld	a5,-56(s0)
-     b30:	fd840713          	addi	a4,s0,-40
-     b34:	00070593          	addi	a1,a4,0
-     b38:	00078513          	addi	a0,a5,0
-     b3c:	00000097          	auipc	ra,0x0
-     b40:	000080e7          	jalr	ra,0(ra) # b3c <dwarf::at_comp_dir[abi:cxx11](dwarf::die const&)+0x40>
-     b44:	fc843503          	ld	a0,-56(s0)
-     b48:	03813083          	ld	ra,56(sp)
-     b4c:	03013403          	ld	s0,48(sp)
-     b50:	04010113          	addi	sp,sp,64
-     b54:	00008067          	jalr	zero,0(ra)
+0000000000000a80 <.LM307>:
+     a80:	02813483          	ld	s1,40(sp)
+     a84:	04010113          	addi	sp,sp,64
+     a88:	00008067          	jalr	zero,0(ra)
 
-0000000000000b58 <dwarf::at_const_value(dwarf::die const&)>:
-     b58:	fe010113          	addi	sp,sp,-32
-     b5c:	00113c23          	sd	ra,24(sp)
-     b60:	00813823          	sd	s0,16(sp)
-     b64:	02010413          	addi	s0,sp,32
-     b68:	fea43423          	sd	a0,-24(s0)
-     b6c:	feb43023          	sd	a1,-32(s0)
-     b70:	fe843783          	ld	a5,-24(s0)
-     b74:	01c00613          	addi	a2,zero,28
-     b78:	fe043583          	ld	a1,-32(s0)
-     b7c:	00078513          	addi	a0,a5,0
-     b80:	00000097          	auipc	ra,0x0
-     b84:	000080e7          	jalr	ra,0(ra) # b80 <dwarf::at_const_value(dwarf::die const&)+0x28>
-     b88:	fe843503          	ld	a0,-24(s0)
-     b8c:	01813083          	ld	ra,24(sp)
-     b90:	01013403          	ld	s0,16(sp)
-     b94:	02010113          	addi	sp,sp,32
-     b98:	00008067          	jalr	zero,0(ra)
+0000000000000a8c <dwarf::at_variable_parameter(dwarf::die const&)>:
+// XXX use_location
+AT_FLAG(variable_parameter);
+     a8c:	fd010113          	addi	sp,sp,-48
+     a90:	02113423          	sd	ra,40(sp)
+     a94:	02813023          	sd	s0,32(sp)
+     a98:	00050593          	addi	a1,a0,0
 
-0000000000000b9c <dwarf::at_containing_type(dwarf::die const&)>:
-     b9c:	fc010113          	addi	sp,sp,-64
-     ba0:	02113c23          	sd	ra,56(sp)
-     ba4:	02813823          	sd	s0,48(sp)
-     ba8:	04010413          	addi	s0,sp,64
-     bac:	fca43423          	sd	a0,-56(s0)
-     bb0:	fcb43023          	sd	a1,-64(s0)
-     bb4:	fd840793          	addi	a5,s0,-40
-     bb8:	01d00613          	addi	a2,zero,29
-     bbc:	fc043583          	ld	a1,-64(s0)
-     bc0:	00078513          	addi	a0,a5,0
-     bc4:	00000097          	auipc	ra,0x0
-     bc8:	000080e7          	jalr	ra,0(ra) # bc4 <dwarf::at_containing_type(dwarf::die const&)+0x28>
-     bcc:	fc843783          	ld	a5,-56(s0)
-     bd0:	fd840713          	addi	a4,s0,-40
-     bd4:	00070593          	addi	a1,a4,0
-     bd8:	00078513          	addi	a0,a5,0
-     bdc:	00000097          	auipc	ra,0x0
-     be0:	000080e7          	jalr	ra,0(ra) # bdc <dwarf::at_containing_type(dwarf::die const&)+0x40>
-     be4:	fc843503          	ld	a0,-56(s0)
-     be8:	03813083          	ld	ra,56(sp)
-     bec:	03013403          	ld	s0,48(sp)
-     bf0:	04010113          	addi	sp,sp,64
-     bf4:	00008067          	jalr	zero,0(ra)
+0000000000000a9c <.LM310>:
+     a9c:	04b00613          	addi	a2,zero,75
+     aa0:	00810413          	addi	s0,sp,8
+     aa4:	00040513          	addi	a0,s0,0
 
-0000000000000bf8 <dwarf::at_inline(dwarf::die const&)>:
-     bf8:	fc010113          	addi	sp,sp,-64
-     bfc:	02113c23          	sd	ra,56(sp)
-     c00:	02813823          	sd	s0,48(sp)
-     c04:	04010413          	addi	s0,sp,64
-     c08:	fca43423          	sd	a0,-56(s0)
-     c0c:	fd840793          	addi	a5,s0,-40
-     c10:	02000613          	addi	a2,zero,32
-     c14:	fc843583          	ld	a1,-56(s0)
-     c18:	00078513          	addi	a0,a5,0
-     c1c:	00000097          	auipc	ra,0x0
-     c20:	000080e7          	jalr	ra,0(ra) # c1c <dwarf::at_inline(dwarf::die const&)+0x24>
-     c24:	fd840793          	addi	a5,s0,-40
-     c28:	00078513          	addi	a0,a5,0
-     c2c:	00000097          	auipc	ra,0x0
-     c30:	000080e7          	jalr	ra,0(ra) # c2c <dwarf::at_inline(dwarf::die const&)+0x34>
-     c34:	00050793          	addi	a5,a0,0
-     c38:	0007879b          	addiw	a5,a5,0
-     c3c:	00078513          	addi	a0,a5,0
-     c40:	03813083          	ld	ra,56(sp)
-     c44:	03013403          	ld	s0,48(sp)
-     c48:	04010113          	addi	sp,sp,64
-     c4c:	00008067          	jalr	zero,0(ra)
+0000000000000aa8 <.LM311>:
+     aa8:	00000097          	auipc	ra,0x0
+     aac:	000080e7          	jalr	ra,0(ra) # aa8 <.LM311>
 
-0000000000000c50 <dwarf::at_is_optional(dwarf::die const&)>:
-     c50:	fc010113          	addi	sp,sp,-64
-     c54:	02113c23          	sd	ra,56(sp)
-     c58:	02813823          	sd	s0,48(sp)
-     c5c:	04010413          	addi	s0,sp,64
-     c60:	fca43423          	sd	a0,-56(s0)
-     c64:	fd840793          	addi	a5,s0,-40
-     c68:	02100613          	addi	a2,zero,33
-     c6c:	fc843583          	ld	a1,-56(s0)
-     c70:	00078513          	addi	a0,a5,0
-     c74:	00000097          	auipc	ra,0x0
-     c78:	000080e7          	jalr	ra,0(ra) # c74 <dwarf::at_is_optional(dwarf::die const&)+0x24>
-     c7c:	fd840793          	addi	a5,s0,-40
-     c80:	00078513          	addi	a0,a5,0
-     c84:	00000097          	auipc	ra,0x0
-     c88:	000080e7          	jalr	ra,0(ra) # c84 <dwarf::at_is_optional(dwarf::die const&)+0x34>
-     c8c:	00050793          	addi	a5,a0,0
-     c90:	00078513          	addi	a0,a5,0
-     c94:	03813083          	ld	ra,56(sp)
-     c98:	03013403          	ld	s0,48(sp)
-     c9c:	04010113          	addi	sp,sp,64
-     ca0:	00008067          	jalr	zero,0(ra)
+0000000000000ab0 <.LM312>:
+     ab0:	00040513          	addi	a0,s0,0
+     ab4:	00000097          	auipc	ra,0x0
+     ab8:	000080e7          	jalr	ra,0(ra) # ab4 <.LM312+0x4>
 
-0000000000000ca4 <dwarf::at_lower_bound(dwarf::die const&, dwarf::expr_context*)>:
-     ca4:	fe010113          	addi	sp,sp,-32
-     ca8:	00113c23          	sd	ra,24(sp)
-     cac:	00813823          	sd	s0,16(sp)
-     cb0:	02010413          	addi	s0,sp,32
-     cb4:	fea43423          	sd	a0,-24(s0)
-     cb8:	feb43023          	sd	a1,-32(s0)
-     cbc:	00000693          	addi	a3,zero,0
-     cc0:	fe043603          	ld	a2,-32(s0)
-     cc4:	fe843583          	ld	a1,-24(s0)
-     cc8:	02200513          	addi	a0,zero,34
-     ccc:	00000097          	auipc	ra,0x0
-     cd0:	000080e7          	jalr	ra,0(ra) # ccc <dwarf::at_lower_bound(dwarf::die const&, dwarf::expr_context*)+0x28>
-     cd4:	00050793          	addi	a5,a0,0
-     cd8:	00078513          	addi	a0,a5,0
-     cdc:	01813083          	ld	ra,24(sp)
-     ce0:	01013403          	ld	s0,16(sp)
-     ce4:	02010113          	addi	sp,sp,32
-     ce8:	00008067          	jalr	zero,0(ra)
+0000000000000abc <.LVL190>:
+     abc:	02813083          	ld	ra,40(sp)
+     ac0:	02013403          	ld	s0,32(sp)
+     ac4:	03010113          	addi	sp,sp,48
+     ac8:	00008067          	jalr	zero,0(ra)
 
-0000000000000cec <dwarf::at_producer[abi:cxx11](dwarf::die const&)>:
-     cec:	fc010113          	addi	sp,sp,-64
-     cf0:	02113c23          	sd	ra,56(sp)
-     cf4:	02813823          	sd	s0,48(sp)
-     cf8:	04010413          	addi	s0,sp,64
-     cfc:	fca43423          	sd	a0,-56(s0)
-     d00:	fcb43023          	sd	a1,-64(s0)
-     d04:	fd840793          	addi	a5,s0,-40
-     d08:	02500613          	addi	a2,zero,37
-     d0c:	fc043583          	ld	a1,-64(s0)
-     d10:	00078513          	addi	a0,a5,0
-     d14:	00000097          	auipc	ra,0x0
-     d18:	000080e7          	jalr	ra,0(ra) # d14 <dwarf::at_producer[abi:cxx11](dwarf::die const&)+0x28>
-     d1c:	fc843783          	ld	a5,-56(s0)
-     d20:	fd840713          	addi	a4,s0,-40
-     d24:	00070593          	addi	a1,a4,0
-     d28:	00078513          	addi	a0,a5,0
-     d2c:	00000097          	auipc	ra,0x0
-     d30:	000080e7          	jalr	ra,0(ra) # d2c <dwarf::at_producer[abi:cxx11](dwarf::die const&)+0x40>
-     d34:	fc843503          	ld	a0,-56(s0)
-     d38:	03813083          	ld	ra,56(sp)
-     d3c:	03013403          	ld	s0,48(sp)
-     d40:	04010113          	addi	sp,sp,64
-     d44:	00008067          	jalr	zero,0(ra)
+0000000000000acc <dwarf::at_virtuality(dwarf::die const&)>:
+// XXX 7.11 The value DW_VIRTUALITY_none is equivalent to the absence
+// of the DW_AT_virtuality attribute.
+AT_ENUM(virtuality, DW_VIRTUALITY);
+     acc:	fd010113          	addi	sp,sp,-48
+     ad0:	02113423          	sd	ra,40(sp)
+     ad4:	02813023          	sd	s0,32(sp)
+     ad8:	00050593          	addi	a1,a0,0
 
-0000000000000d48 <dwarf::at_prototyped(dwarf::die const&)>:
-     d48:	fc010113          	addi	sp,sp,-64
-     d4c:	02113c23          	sd	ra,56(sp)
-     d50:	02813823          	sd	s0,48(sp)
-     d54:	04010413          	addi	s0,sp,64
-     d58:	fca43423          	sd	a0,-56(s0)
-     d5c:	fd840793          	addi	a5,s0,-40
-     d60:	02700613          	addi	a2,zero,39
-     d64:	fc843583          	ld	a1,-56(s0)
-     d68:	00078513          	addi	a0,a5,0
-     d6c:	00000097          	auipc	ra,0x0
-     d70:	000080e7          	jalr	ra,0(ra) # d6c <dwarf::at_prototyped(dwarf::die const&)+0x24>
-     d74:	fd840793          	addi	a5,s0,-40
-     d78:	00078513          	addi	a0,a5,0
+0000000000000adc <.LM315>:
+     adc:	04c00613          	addi	a2,zero,76
+     ae0:	00810413          	addi	s0,sp,8
+     ae4:	00040513          	addi	a0,s0,0
+
+0000000000000ae8 <.LM316>:
+     ae8:	00000097          	auipc	ra,0x0
+     aec:	000080e7          	jalr	ra,0(ra) # ae8 <.LM316>
+
+0000000000000af0 <.LM317>:
+     af0:	00040513          	addi	a0,s0,0
+     af4:	00000097          	auipc	ra,0x0
+     af8:	000080e7          	jalr	ra,0(ra) # af4 <.LM317+0x4>
+
+0000000000000afc <.LVL194>:
+     afc:	0005051b          	addiw	a0,a0,0
+     b00:	02813083          	ld	ra,40(sp)
+     b04:	02013403          	ld	s0,32(sp)
+     b08:	03010113          	addi	sp,sp,48
+     b0c:	00008067          	jalr	zero,0(ra)
+
+0000000000000b10 <dwarf::at_entry_pc(dwarf::die const&)>:
+// 0x5X
+//
+
+// XXX data_location
+AT_UDYNAMIC(byte_stride);
+AT_ADDRESS(entry_pc);
+     b10:	fd010113          	addi	sp,sp,-48
+     b14:	02113423          	sd	ra,40(sp)
+     b18:	02813023          	sd	s0,32(sp)
+     b1c:	00050593          	addi	a1,a0,0
+
+0000000000000b20 <.LM320>:
+     b20:	05200613          	addi	a2,zero,82
+     b24:	00810413          	addi	s0,sp,8
+     b28:	00040513          	addi	a0,s0,0
+
+0000000000000b2c <.LM321>:
+     b2c:	00000097          	auipc	ra,0x0
+     b30:	000080e7          	jalr	ra,0(ra) # b2c <.LM321>
+
+0000000000000b34 <.LM322>:
+     b34:	00040513          	addi	a0,s0,0
+     b38:	00000097          	auipc	ra,0x0
+     b3c:	000080e7          	jalr	ra,0(ra) # b38 <.LM322+0x4>
+
+0000000000000b40 <.LVL198>:
+     b40:	02813083          	ld	ra,40(sp)
+     b44:	02013403          	ld	s0,32(sp)
+     b48:	03010113          	addi	sp,sp,48
+     b4c:	00008067          	jalr	zero,0(ra)
+
+0000000000000b50 <dwarf::at_use_UTF8(dwarf::die const&)>:
+AT_FLAG(use_UTF8);
+     b50:	fd010113          	addi	sp,sp,-48
+     b54:	02113423          	sd	ra,40(sp)
+     b58:	02813023          	sd	s0,32(sp)
+     b5c:	00050593          	addi	a1,a0,0
+
+0000000000000b60 <.LM325>:
+     b60:	05300613          	addi	a2,zero,83
+     b64:	00810413          	addi	s0,sp,8
+     b68:	00040513          	addi	a0,s0,0
+
+0000000000000b6c <.LM326>:
+     b6c:	00000097          	auipc	ra,0x0
+     b70:	000080e7          	jalr	ra,0(ra) # b6c <.LM326>
+
+0000000000000b74 <.LM327>:
+     b74:	00040513          	addi	a0,s0,0
+     b78:	00000097          	auipc	ra,0x0
+     b7c:	000080e7          	jalr	ra,0(ra) # b78 <.LM327+0x4>
+
+0000000000000b80 <.LVL202>:
+     b80:	02813083          	ld	ra,40(sp)
+     b84:	02013403          	ld	s0,32(sp)
+     b88:	03010113          	addi	sp,sp,48
+     b8c:	00008067          	jalr	zero,0(ra)
+
+0000000000000b90 <dwarf::at_extension(dwarf::die const&)>:
+AT_REFERENCE(extension);
+     b90:	fc010113          	addi	sp,sp,-64
+     b94:	02113c23          	sd	ra,56(sp)
+     b98:	02813823          	sd	s0,48(sp)
+     b9c:	02913423          	sd	s1,40(sp)
+     ba0:	00050413          	addi	s0,a0,0
+
+0000000000000ba4 <.LM330>:
+     ba4:	05400613          	addi	a2,zero,84
+     ba8:	00810493          	addi	s1,sp,8
+     bac:	00048513          	addi	a0,s1,0
+
+0000000000000bb0 <.LM331>:
+     bb0:	00000097          	auipc	ra,0x0
+     bb4:	000080e7          	jalr	ra,0(ra) # bb0 <.LM331>
+
+0000000000000bb8 <.LM332>:
+     bb8:	00048593          	addi	a1,s1,0
+     bbc:	00040513          	addi	a0,s0,0
+     bc0:	00000097          	auipc	ra,0x0
+     bc4:	000080e7          	jalr	ra,0(ra) # bc0 <.LM332+0x8>
+
+0000000000000bc8 <.LVL206>:
+     bc8:	00040513          	addi	a0,s0,0
+     bcc:	03813083          	ld	ra,56(sp)
+     bd0:	03013403          	ld	s0,48(sp)
+
+0000000000000bd4 <.LM333>:
+     bd4:	02813483          	ld	s1,40(sp)
+     bd8:	04010113          	addi	sp,sp,64
+     bdc:	00008067          	jalr	zero,0(ra)
+
+0000000000000be0 <dwarf::at_ranges(dwarf::die const&)>:
+rangelist at_ranges(const die &d) { return d[DW_AT::ranges].as_rangelist(); }
+     be0:	fc010113          	addi	sp,sp,-64
+     be4:	02113c23          	sd	ra,56(sp)
+     be8:	02813823          	sd	s0,48(sp)
+     bec:	02913423          	sd	s1,40(sp)
+     bf0:	00050413          	addi	s0,a0,0
+
+0000000000000bf4 <.LM336>:
+     bf4:	05500613          	addi	a2,zero,85
+     bf8:	00810493          	addi	s1,sp,8
+     bfc:	00048513          	addi	a0,s1,0
+
+0000000000000c00 <.LM338>:
+     c00:	00000097          	auipc	ra,0x0
+     c04:	000080e7          	jalr	ra,0(ra) # c00 <.LM338>
+
+0000000000000c08 <.LM339>:
+     c08:	00048593          	addi	a1,s1,0
+     c0c:	00040513          	addi	a0,s0,0
+     c10:	00000097          	auipc	ra,0x0
+     c14:	000080e7          	jalr	ra,0(ra) # c10 <.LM339+0x8>
+
+0000000000000c18 <.LM340>:
+     c18:	00040513          	addi	a0,s0,0
+     c1c:	03813083          	ld	ra,56(sp)
+     c20:	03013403          	ld	s0,48(sp)
+
+0000000000000c24 <.LM341>:
+     c24:	02813483          	ld	s1,40(sp)
+     c28:	04010113          	addi	sp,sp,64
+     c2c:	00008067          	jalr	zero,0(ra)
+
+0000000000000c30 <dwarf::at_description[abi:cxx11](dwarf::die const&)>:
+// XXX trampoline
+// XXX const call_column, call_file, call_line
+AT_STRING(description);
+     c30:	fc010113          	addi	sp,sp,-64
+     c34:	02113c23          	sd	ra,56(sp)
+     c38:	02813823          	sd	s0,48(sp)
+     c3c:	02913423          	sd	s1,40(sp)
+     c40:	00050413          	addi	s0,a0,0
+
+0000000000000c44 <.LM344>:
+     c44:	05a00613          	addi	a2,zero,90
+     c48:	00810493          	addi	s1,sp,8
+     c4c:	00048513          	addi	a0,s1,0
+
+0000000000000c50 <.LM345>:
+     c50:	00000097          	auipc	ra,0x0
+     c54:	000080e7          	jalr	ra,0(ra) # c50 <.LM345>
+
+0000000000000c58 <.LM346>:
+     c58:	00048593          	addi	a1,s1,0
+     c5c:	00040513          	addi	a0,s0,0
+     c60:	00000097          	auipc	ra,0x0
+     c64:	000080e7          	jalr	ra,0(ra) # c60 <.LM346+0x8>
+
+0000000000000c68 <.LVL216>:
+     c68:	00040513          	addi	a0,s0,0
+     c6c:	03813083          	ld	ra,56(sp)
+     c70:	03013403          	ld	s0,48(sp)
+
+0000000000000c74 <.LM347>:
+     c74:	02813483          	ld	s1,40(sp)
+     c78:	04010113          	addi	sp,sp,64
+     c7c:	00008067          	jalr	zero,0(ra)
+
+0000000000000c80 <dwarf::at_small(dwarf::die const&)>:
+// XXX const binary_scale
+// XXX const decimal_scale
+AT_REFERENCE(small);
+     c80:	fc010113          	addi	sp,sp,-64
+     c84:	02113c23          	sd	ra,56(sp)
+     c88:	02813823          	sd	s0,48(sp)
+     c8c:	02913423          	sd	s1,40(sp)
+     c90:	00050413          	addi	s0,a0,0
+
+0000000000000c94 <.LM350>:
+     c94:	05d00613          	addi	a2,zero,93
+     c98:	00810493          	addi	s1,sp,8
+     c9c:	00048513          	addi	a0,s1,0
+
+0000000000000ca0 <.LM351>:
+     ca0:	00000097          	auipc	ra,0x0
+     ca4:	000080e7          	jalr	ra,0(ra) # ca0 <.LM351>
+
+0000000000000ca8 <.LM352>:
+     ca8:	00048593          	addi	a1,s1,0
+     cac:	00040513          	addi	a0,s0,0
+     cb0:	00000097          	auipc	ra,0x0
+     cb4:	000080e7          	jalr	ra,0(ra) # cb0 <.LM352+0x8>
+
+0000000000000cb8 <.LVL221>:
+     cb8:	00040513          	addi	a0,s0,0
+     cbc:	03813083          	ld	ra,56(sp)
+     cc0:	03013403          	ld	s0,48(sp)
+
+0000000000000cc4 <.LM353>:
+     cc4:	02813483          	ld	s1,40(sp)
+     cc8:	04010113          	addi	sp,sp,64
+     ccc:	00008067          	jalr	zero,0(ra)
+
+0000000000000cd0 <dwarf::at_picture_string[abi:cxx11](dwarf::die const&)>:
+
+//////////////////////////////////////////////////////////////////
+// 0x6X
+//
+
+AT_STRING(picture_string);
+     cd0:	fc010113          	addi	sp,sp,-64
+     cd4:	02113c23          	sd	ra,56(sp)
+     cd8:	02813823          	sd	s0,48(sp)
+     cdc:	02913423          	sd	s1,40(sp)
+     ce0:	00050413          	addi	s0,a0,0
+
+0000000000000ce4 <.LM356>:
+     ce4:	06000613          	addi	a2,zero,96
+     ce8:	00810493          	addi	s1,sp,8
+     cec:	00048513          	addi	a0,s1,0
+
+0000000000000cf0 <.LM357>:
+     cf0:	00000097          	auipc	ra,0x0
+     cf4:	000080e7          	jalr	ra,0(ra) # cf0 <.LM357>
+
+0000000000000cf8 <.LM358>:
+     cf8:	00048593          	addi	a1,s1,0
+     cfc:	00040513          	addi	a0,s0,0
+     d00:	00000097          	auipc	ra,0x0
+     d04:	000080e7          	jalr	ra,0(ra) # d00 <.LM358+0x8>
+
+0000000000000d08 <.LVL226>:
+     d08:	00040513          	addi	a0,s0,0
+     d0c:	03813083          	ld	ra,56(sp)
+     d10:	03013403          	ld	s0,48(sp)
+
+0000000000000d14 <.LM359>:
+     d14:	02813483          	ld	s1,40(sp)
+     d18:	04010113          	addi	sp,sp,64
+     d1c:	00008067          	jalr	zero,0(ra)
+
+0000000000000d20 <dwarf::at_mutable(dwarf::die const&)>:
+AT_FLAG_(mutable);
+     d20:	fd010113          	addi	sp,sp,-48
+     d24:	02113423          	sd	ra,40(sp)
+     d28:	02813023          	sd	s0,32(sp)
+     d2c:	00050593          	addi	a1,a0,0
+
+0000000000000d30 <.LM362>:
+     d30:	06100613          	addi	a2,zero,97
+     d34:	00810413          	addi	s0,sp,8
+     d38:	00040513          	addi	a0,s0,0
+
+0000000000000d3c <.LM363>:
+     d3c:	00000097          	auipc	ra,0x0
+     d40:	000080e7          	jalr	ra,0(ra) # d3c <.LM363>
+
+0000000000000d44 <.LM364>:
+     d44:	00040513          	addi	a0,s0,0
+     d48:	00000097          	auipc	ra,0x0
+     d4c:	000080e7          	jalr	ra,0(ra) # d48 <.LM364+0x4>
+
+0000000000000d50 <.LVL231>:
+     d50:	02813083          	ld	ra,40(sp)
+     d54:	02013403          	ld	s0,32(sp)
+     d58:	03010113          	addi	sp,sp,48
+     d5c:	00008067          	jalr	zero,0(ra)
+
+0000000000000d60 <dwarf::at_threads_scaled(dwarf::die const&)>:
+AT_FLAG(threads_scaled);
+     d60:	fd010113          	addi	sp,sp,-48
+     d64:	02113423          	sd	ra,40(sp)
+     d68:	02813023          	sd	s0,32(sp)
+     d6c:	00050593          	addi	a1,a0,0
+
+0000000000000d70 <.LM367>:
+     d70:	06200613          	addi	a2,zero,98
+     d74:	00810413          	addi	s0,sp,8
+     d78:	00040513          	addi	a0,s0,0
+
+0000000000000d7c <.LM368>:
      d7c:	00000097          	auipc	ra,0x0
-     d80:	000080e7          	jalr	ra,0(ra) # d7c <dwarf::at_prototyped(dwarf::die const&)+0x34>
-     d84:	00050793          	addi	a5,a0,0
-     d88:	00078513          	addi	a0,a5,0
-     d8c:	03813083          	ld	ra,56(sp)
-     d90:	03013403          	ld	s0,48(sp)
-     d94:	04010113          	addi	sp,sp,64
-     d98:	00008067          	jalr	zero,0(ra)
+     d80:	000080e7          	jalr	ra,0(ra) # d7c <.LM368>
 
-0000000000000d9c <dwarf::at_bit_stride(dwarf::die const&, dwarf::expr_context*)>:
-     d9c:	fe010113          	addi	sp,sp,-32
-     da0:	00113c23          	sd	ra,24(sp)
-     da4:	00813823          	sd	s0,16(sp)
-     da8:	02010413          	addi	s0,sp,32
-     dac:	fea43423          	sd	a0,-24(s0)
-     db0:	feb43023          	sd	a1,-32(s0)
-     db4:	00000693          	addi	a3,zero,0
-     db8:	fe043603          	ld	a2,-32(s0)
-     dbc:	fe843583          	ld	a1,-24(s0)
-     dc0:	02e00513          	addi	a0,zero,46
-     dc4:	00000097          	auipc	ra,0x0
-     dc8:	000080e7          	jalr	ra,0(ra) # dc4 <dwarf::at_bit_stride(dwarf::die const&, dwarf::expr_context*)+0x28>
-     dcc:	00050793          	addi	a5,a0,0
-     dd0:	00078513          	addi	a0,a5,0
-     dd4:	01813083          	ld	ra,24(sp)
-     dd8:	01013403          	ld	s0,16(sp)
-     ddc:	02010113          	addi	sp,sp,32
-     de0:	00008067          	jalr	zero,0(ra)
+0000000000000d84 <.LM369>:
+     d84:	00040513          	addi	a0,s0,0
+     d88:	00000097          	auipc	ra,0x0
+     d8c:	000080e7          	jalr	ra,0(ra) # d88 <.LM369+0x4>
 
-0000000000000de4 <dwarf::at_upper_bound(dwarf::die const&, dwarf::expr_context*)>:
-     de4:	fe010113          	addi	sp,sp,-32
-     de8:	00113c23          	sd	ra,24(sp)
-     dec:	00813823          	sd	s0,16(sp)
-     df0:	02010413          	addi	s0,sp,32
-     df4:	fea43423          	sd	a0,-24(s0)
-     df8:	feb43023          	sd	a1,-32(s0)
-     dfc:	00000693          	addi	a3,zero,0
-     e00:	fe043603          	ld	a2,-32(s0)
-     e04:	fe843583          	ld	a1,-24(s0)
-     e08:	02f00513          	addi	a0,zero,47
-     e0c:	00000097          	auipc	ra,0x0
-     e10:	000080e7          	jalr	ra,0(ra) # e0c <dwarf::at_upper_bound(dwarf::die const&, dwarf::expr_context*)+0x28>
-     e14:	00050793          	addi	a5,a0,0
-     e18:	00078513          	addi	a0,a5,0
-     e1c:	01813083          	ld	ra,24(sp)
-     e20:	01013403          	ld	s0,16(sp)
-     e24:	02010113          	addi	sp,sp,32
-     e28:	00008067          	jalr	zero,0(ra)
+0000000000000d90 <.LVL235>:
+     d90:	02813083          	ld	ra,40(sp)
+     d94:	02013403          	ld	s0,32(sp)
+     d98:	03010113          	addi	sp,sp,48
+     d9c:	00008067          	jalr	zero,0(ra)
 
-0000000000000e2c <dwarf::at_abstract_origin(dwarf::die const&)>:
-     e2c:	fc010113          	addi	sp,sp,-64
-     e30:	02113c23          	sd	ra,56(sp)
-     e34:	02813823          	sd	s0,48(sp)
-     e38:	04010413          	addi	s0,sp,64
-     e3c:	fca43423          	sd	a0,-56(s0)
-     e40:	fcb43023          	sd	a1,-64(s0)
-     e44:	fd840793          	addi	a5,s0,-40
-     e48:	03100613          	addi	a2,zero,49
-     e4c:	fc043583          	ld	a1,-64(s0)
-     e50:	00078513          	addi	a0,a5,0
-     e54:	00000097          	auipc	ra,0x0
-     e58:	000080e7          	jalr	ra,0(ra) # e54 <dwarf::at_abstract_origin(dwarf::die const&)+0x28>
-     e5c:	fc843783          	ld	a5,-56(s0)
-     e60:	fd840713          	addi	a4,s0,-40
-     e64:	00070593          	addi	a1,a4,0
-     e68:	00078513          	addi	a0,a5,0
-     e6c:	00000097          	auipc	ra,0x0
-     e70:	000080e7          	jalr	ra,0(ra) # e6c <dwarf::at_abstract_origin(dwarf::die const&)+0x40>
-     e74:	fc843503          	ld	a0,-56(s0)
-     e78:	03813083          	ld	ra,56(sp)
-     e7c:	03013403          	ld	s0,48(sp)
-     e80:	04010113          	addi	sp,sp,64
-     e84:	00008067          	jalr	zero,0(ra)
+0000000000000da0 <dwarf::at_explicit(dwarf::die const&)>:
+AT_FLAG_(explicit);
+     da0:	fd010113          	addi	sp,sp,-48
+     da4:	02113423          	sd	ra,40(sp)
+     da8:	02813023          	sd	s0,32(sp)
+     dac:	00050593          	addi	a1,a0,0
 
-0000000000000e88 <dwarf::at_accessibility(dwarf::die const&)>:
-     e88:	fc010113          	addi	sp,sp,-64
-     e8c:	02113c23          	sd	ra,56(sp)
-     e90:	02813823          	sd	s0,48(sp)
-     e94:	04010413          	addi	s0,sp,64
-     e98:	fca43423          	sd	a0,-56(s0)
-     e9c:	fd840793          	addi	a5,s0,-40
-     ea0:	03200613          	addi	a2,zero,50
-     ea4:	fc843583          	ld	a1,-56(s0)
-     ea8:	00078513          	addi	a0,a5,0
-     eac:	00000097          	auipc	ra,0x0
-     eb0:	000080e7          	jalr	ra,0(ra) # eac <dwarf::at_accessibility(dwarf::die const&)+0x24>
-     eb4:	fd840793          	addi	a5,s0,-40
-     eb8:	00078513          	addi	a0,a5,0
-     ebc:	00000097          	auipc	ra,0x0
-     ec0:	000080e7          	jalr	ra,0(ra) # ebc <dwarf::at_accessibility(dwarf::die const&)+0x34>
-     ec4:	00050793          	addi	a5,a0,0
-     ec8:	0007879b          	addiw	a5,a5,0
-     ecc:	00078513          	addi	a0,a5,0
-     ed0:	03813083          	ld	ra,56(sp)
-     ed4:	03013403          	ld	s0,48(sp)
-     ed8:	04010113          	addi	sp,sp,64
-     edc:	00008067          	jalr	zero,0(ra)
+0000000000000db0 <.LM372>:
+     db0:	06300613          	addi	a2,zero,99
+     db4:	00810413          	addi	s0,sp,8
+     db8:	00040513          	addi	a0,s0,0
 
-0000000000000ee0 <dwarf::at_artificial(dwarf::die const&)>:
-     ee0:	fc010113          	addi	sp,sp,-64
-     ee4:	02113c23          	sd	ra,56(sp)
-     ee8:	02813823          	sd	s0,48(sp)
-     eec:	04010413          	addi	s0,sp,64
-     ef0:	fca43423          	sd	a0,-56(s0)
-     ef4:	fd840793          	addi	a5,s0,-40
-     ef8:	03400613          	addi	a2,zero,52
-     efc:	fc843583          	ld	a1,-56(s0)
-     f00:	00078513          	addi	a0,a5,0
-     f04:	00000097          	auipc	ra,0x0
-     f08:	000080e7          	jalr	ra,0(ra) # f04 <dwarf::at_artificial(dwarf::die const&)+0x24>
-     f0c:	fd840793          	addi	a5,s0,-40
-     f10:	00078513          	addi	a0,a5,0
-     f14:	00000097          	auipc	ra,0x0
-     f18:	000080e7          	jalr	ra,0(ra) # f14 <dwarf::at_artificial(dwarf::die const&)+0x34>
-     f1c:	00050793          	addi	a5,a0,0
-     f20:	00078513          	addi	a0,a5,0
-     f24:	03813083          	ld	ra,56(sp)
-     f28:	03013403          	ld	s0,48(sp)
-     f2c:	04010113          	addi	sp,sp,64
+0000000000000dbc <.LM373>:
+     dbc:	00000097          	auipc	ra,0x0
+     dc0:	000080e7          	jalr	ra,0(ra) # dbc <.LM373>
+
+0000000000000dc4 <.LM374>:
+     dc4:	00040513          	addi	a0,s0,0
+     dc8:	00000097          	auipc	ra,0x0
+     dcc:	000080e7          	jalr	ra,0(ra) # dc8 <.LM374+0x4>
+
+0000000000000dd0 <.LVL239>:
+     dd0:	02813083          	ld	ra,40(sp)
+     dd4:	02013403          	ld	s0,32(sp)
+     dd8:	03010113          	addi	sp,sp,48
+     ddc:	00008067          	jalr	zero,0(ra)
+
+0000000000000de0 <dwarf::at_object_pointer(dwarf::die const&)>:
+AT_REFERENCE(object_pointer);
+     de0:	fc010113          	addi	sp,sp,-64
+     de4:	02113c23          	sd	ra,56(sp)
+     de8:	02813823          	sd	s0,48(sp)
+     dec:	02913423          	sd	s1,40(sp)
+     df0:	00050413          	addi	s0,a0,0
+
+0000000000000df4 <.LM377>:
+     df4:	06400613          	addi	a2,zero,100
+     df8:	00810493          	addi	s1,sp,8
+     dfc:	00048513          	addi	a0,s1,0
+
+0000000000000e00 <.LM378>:
+     e00:	00000097          	auipc	ra,0x0
+     e04:	000080e7          	jalr	ra,0(ra) # e00 <.LM378>
+
+0000000000000e08 <.LM379>:
+     e08:	00048593          	addi	a1,s1,0
+     e0c:	00040513          	addi	a0,s0,0
+     e10:	00000097          	auipc	ra,0x0
+     e14:	000080e7          	jalr	ra,0(ra) # e10 <.LM379+0x8>
+
+0000000000000e18 <.LVL243>:
+     e18:	00040513          	addi	a0,s0,0
+     e1c:	03813083          	ld	ra,56(sp)
+     e20:	03013403          	ld	s0,48(sp)
+
+0000000000000e24 <.LM380>:
+     e24:	02813483          	ld	s1,40(sp)
+     e28:	04010113          	addi	sp,sp,64
+     e2c:	00008067          	jalr	zero,0(ra)
+
+0000000000000e30 <dwarf::at_endianity(dwarf::die const&)>:
+AT_ENUM(endianity, DW_END);
+     e30:	fd010113          	addi	sp,sp,-48
+     e34:	02113423          	sd	ra,40(sp)
+     e38:	02813023          	sd	s0,32(sp)
+     e3c:	00050593          	addi	a1,a0,0
+
+0000000000000e40 <.LM383>:
+     e40:	06500613          	addi	a2,zero,101
+     e44:	00810413          	addi	s0,sp,8
+     e48:	00040513          	addi	a0,s0,0
+
+0000000000000e4c <.LM384>:
+     e4c:	00000097          	auipc	ra,0x0
+     e50:	000080e7          	jalr	ra,0(ra) # e4c <.LM384>
+
+0000000000000e54 <.LM385>:
+     e54:	00040513          	addi	a0,s0,0
+     e58:	00000097          	auipc	ra,0x0
+     e5c:	000080e7          	jalr	ra,0(ra) # e58 <.LM385+0x4>
+
+0000000000000e60 <.LVL248>:
+     e60:	0005051b          	addiw	a0,a0,0
+     e64:	02813083          	ld	ra,40(sp)
+     e68:	02013403          	ld	s0,32(sp)
+     e6c:	03010113          	addi	sp,sp,48
+     e70:	00008067          	jalr	zero,0(ra)
+
+0000000000000e74 <dwarf::at_elemental(dwarf::die const&)>:
+AT_FLAG(elemental);
+     e74:	fd010113          	addi	sp,sp,-48
+     e78:	02113423          	sd	ra,40(sp)
+     e7c:	02813023          	sd	s0,32(sp)
+     e80:	00050593          	addi	a1,a0,0
+
+0000000000000e84 <.LM388>:
+     e84:	06600613          	addi	a2,zero,102
+     e88:	00810413          	addi	s0,sp,8
+     e8c:	00040513          	addi	a0,s0,0
+
+0000000000000e90 <.LM389>:
+     e90:	00000097          	auipc	ra,0x0
+     e94:	000080e7          	jalr	ra,0(ra) # e90 <.LM389>
+
+0000000000000e98 <.LM390>:
+     e98:	00040513          	addi	a0,s0,0
+     e9c:	00000097          	auipc	ra,0x0
+     ea0:	000080e7          	jalr	ra,0(ra) # e9c <.LM390+0x4>
+
+0000000000000ea4 <.LVL252>:
+     ea4:	02813083          	ld	ra,40(sp)
+     ea8:	02013403          	ld	s0,32(sp)
+     eac:	03010113          	addi	sp,sp,48
+     eb0:	00008067          	jalr	zero,0(ra)
+
+0000000000000eb4 <dwarf::at_pure(dwarf::die const&)>:
+AT_FLAG(pure);
+     eb4:	fd010113          	addi	sp,sp,-48
+     eb8:	02113423          	sd	ra,40(sp)
+     ebc:	02813023          	sd	s0,32(sp)
+     ec0:	00050593          	addi	a1,a0,0
+
+0000000000000ec4 <.LM393>:
+     ec4:	06700613          	addi	a2,zero,103
+     ec8:	00810413          	addi	s0,sp,8
+     ecc:	00040513          	addi	a0,s0,0
+
+0000000000000ed0 <.LM394>:
+     ed0:	00000097          	auipc	ra,0x0
+     ed4:	000080e7          	jalr	ra,0(ra) # ed0 <.LM394>
+
+0000000000000ed8 <.LM395>:
+     ed8:	00040513          	addi	a0,s0,0
+     edc:	00000097          	auipc	ra,0x0
+     ee0:	000080e7          	jalr	ra,0(ra) # edc <.LM395+0x4>
+
+0000000000000ee4 <.LVL256>:
+     ee4:	02813083          	ld	ra,40(sp)
+     ee8:	02013403          	ld	s0,32(sp)
+     eec:	03010113          	addi	sp,sp,48
+     ef0:	00008067          	jalr	zero,0(ra)
+
+0000000000000ef4 <dwarf::at_recursive(dwarf::die const&)>:
+AT_FLAG(recursive);
+     ef4:	fd010113          	addi	sp,sp,-48
+     ef8:	02113423          	sd	ra,40(sp)
+     efc:	02813023          	sd	s0,32(sp)
+     f00:	00050593          	addi	a1,a0,0
+
+0000000000000f04 <.LM398>:
+     f04:	06800613          	addi	a2,zero,104
+     f08:	00810413          	addi	s0,sp,8
+     f0c:	00040513          	addi	a0,s0,0
+
+0000000000000f10 <.LM399>:
+     f10:	00000097          	auipc	ra,0x0
+     f14:	000080e7          	jalr	ra,0(ra) # f10 <.LM399>
+
+0000000000000f18 <.LM400>:
+     f18:	00040513          	addi	a0,s0,0
+     f1c:	00000097          	auipc	ra,0x0
+     f20:	000080e7          	jalr	ra,0(ra) # f1c <.LM400+0x4>
+
+0000000000000f24 <.LVL260>:
+     f24:	02813083          	ld	ra,40(sp)
+     f28:	02013403          	ld	s0,32(sp)
+     f2c:	03010113          	addi	sp,sp,48
      f30:	00008067          	jalr	zero,0(ra)
 
-0000000000000f34 <dwarf::at_calling_convention(dwarf::die const&)>:
+0000000000000f34 <dwarf::at_signature(dwarf::die const&)>:
+AT_REFERENCE(signature); // XXX Computed might be useful
      f34:	fc010113          	addi	sp,sp,-64
      f38:	02113c23          	sd	ra,56(sp)
      f3c:	02813823          	sd	s0,48(sp)
-     f40:	04010413          	addi	s0,sp,64
-     f44:	fca43423          	sd	a0,-56(s0)
-     f48:	fd840793          	addi	a5,s0,-40
-     f4c:	03600613          	addi	a2,zero,54
-     f50:	fc843583          	ld	a1,-56(s0)
-     f54:	00078513          	addi	a0,a5,0
-     f58:	00000097          	auipc	ra,0x0
-     f5c:	000080e7          	jalr	ra,0(ra) # f58 <dwarf::at_calling_convention(dwarf::die const&)+0x24>
-     f60:	fd840793          	addi	a5,s0,-40
-     f64:	00078513          	addi	a0,a5,0
-     f68:	00000097          	auipc	ra,0x0
-     f6c:	000080e7          	jalr	ra,0(ra) # f68 <dwarf::at_calling_convention(dwarf::die const&)+0x34>
-     f70:	00050793          	addi	a5,a0,0
-     f74:	0007879b          	addiw	a5,a5,0
-     f78:	00078513          	addi	a0,a5,0
-     f7c:	03813083          	ld	ra,56(sp)
-     f80:	03013403          	ld	s0,48(sp)
-     f84:	04010113          	addi	sp,sp,64
-     f88:	00008067          	jalr	zero,0(ra)
+     f40:	02913423          	sd	s1,40(sp)
+     f44:	00050413          	addi	s0,a0,0
 
-0000000000000f8c <dwarf::at_count(dwarf::die const&, dwarf::expr_context*)>:
-     f8c:	fe010113          	addi	sp,sp,-32
-     f90:	00113c23          	sd	ra,24(sp)
-     f94:	00813823          	sd	s0,16(sp)
-     f98:	02010413          	addi	s0,sp,32
-     f9c:	fea43423          	sd	a0,-24(s0)
-     fa0:	feb43023          	sd	a1,-32(s0)
-     fa4:	00000693          	addi	a3,zero,0
-     fa8:	fe043603          	ld	a2,-32(s0)
-     fac:	fe843583          	ld	a1,-24(s0)
-     fb0:	03700513          	addi	a0,zero,55
-     fb4:	00000097          	auipc	ra,0x0
-     fb8:	000080e7          	jalr	ra,0(ra) # fb4 <dwarf::at_count(dwarf::die const&, dwarf::expr_context*)+0x28>
-     fbc:	00050793          	addi	a5,a0,0
-     fc0:	00078513          	addi	a0,a5,0
-     fc4:	01813083          	ld	ra,24(sp)
-     fc8:	01013403          	ld	s0,16(sp)
-     fcc:	02010113          	addi	sp,sp,32
-     fd0:	00008067          	jalr	zero,0(ra)
+0000000000000f48 <.LM403>:
+     f48:	06900613          	addi	a2,zero,105
+     f4c:	00810493          	addi	s1,sp,8
+     f50:	00048513          	addi	a0,s1,0
 
-0000000000000fd4 <dwarf::at_data_member_location(dwarf::die const&, dwarf::expr_context*, unsigned long, unsigned long)>:
-     fd4:	f4010113          	addi	sp,sp,-192
-     fd8:	0a113c23          	sd	ra,184(sp)
-     fdc:	0a813823          	sd	s0,176(sp)
-     fe0:	0a913423          	sd	s1,168(sp)
-     fe4:	0b213023          	sd	s2,160(sp)
-     fe8:	0c010413          	addi	s0,sp,192
-     fec:	f6a43423          	sd	a0,-152(s0)
-     ff0:	f6b43023          	sd	a1,-160(s0)
-     ff4:	f4c43c23          	sd	a2,-168(s0)
-     ff8:	f4d43823          	sd	a3,-176(s0)
-     ffc:	f4e43423          	sd	a4,-184(s0)
-    1000:	f7040793          	addi	a5,s0,-144
-    1004:	03800613          	addi	a2,zero,56
-    1008:	f6043583          	ld	a1,-160(s0)
-    100c:	00078513          	addi	a0,a5,0
+0000000000000f54 <.LM404>:
+     f54:	00000097          	auipc	ra,0x0
+     f58:	000080e7          	jalr	ra,0(ra) # f54 <.LM404>
 
-0000000000001010 <.LEHB19>:
-    1010:	00000097          	auipc	ra,0x0
-    1014:	000080e7          	jalr	ra,0(ra) # 1010 <.LEHB19>
-    1018:	f7040793          	addi	a5,s0,-144
-    101c:	00078513          	addi	a0,a5,0
-    1020:	00000317          	auipc	t1,0x0
-    1024:	00033303          	ld	t1,0(t1) # 1020 <.LEHB19+0x10>
-    1028:	000300e7          	jalr	ra,0(t1)
-    102c:	00050793          	addi	a5,a0,0
-    1030:	00078713          	addi	a4,a5,0
-    1034:	00070693          	addi	a3,a4,0
-    1038:	00900793          	addi	a5,zero,9
-    103c:	0af68663          	beq	a3,a5,10e8 <.L110>
-    1040:	00070693          	addi	a3,a4,0
-    1044:	00900793          	addi	a5,zero,9
-    1048:	0ed7c263          	blt	a5,a3,112c <.L111>
-    104c:	00070693          	addi	a3,a4,0
-    1050:	00400793          	addi	a5,zero,4
-    1054:	00d7c863          	blt	a5,a3,1064 <.L112>
-    1058:	00300793          	addi	a5,zero,3
-    105c:	00f75a63          	bge	a4,a5,1070 <.L113>
-    1060:	0cc0006f          	jal	zero,112c <.L111>
+0000000000000f5c <.LM405>:
+     f5c:	00048593          	addi	a1,s1,0
+     f60:	00040513          	addi	a0,s0,0
+     f64:	00000097          	auipc	ra,0x0
+     f68:	000080e7          	jalr	ra,0(ra) # f64 <.LM405+0x8>
 
-0000000000001064 <.L112>:
-    1064:	00600793          	addi	a5,zero,6
-    1068:	04f70263          	beq	a4,a5,10ac <.L114>
-    106c:	0c00006f          	jal	zero,112c <.L111>
+0000000000000f6c <.LVL264>:
+     f6c:	00040513          	addi	a0,s0,0
+     f70:	03813083          	ld	ra,56(sp)
+     f74:	03013403          	ld	s0,48(sp)
 
-0000000000001070 <.L113>:
-    1070:	f6843783          	ld	a5,-152(s0)
-    1074:	0007b023          	sd	zero,0(a5)
-    1078:	0007b423          	sd	zero,8(a5)
-    107c:	0007b823          	sd	zero,16(a5)
-    1080:	0007bc23          	sd	zero,24(a5)
-    1084:	f7040793          	addi	a5,s0,-144
-    1088:	00078513          	addi	a0,a5,0
-    108c:	00000097          	auipc	ra,0x0
-    1090:	000080e7          	jalr	ra,0(ra) # 108c <.L113+0x1c>
-    1094:	00050713          	addi	a4,a0,0
-    1098:	f5043783          	ld	a5,-176(s0)
-    109c:	00f70733          	add	a4,a4,a5
-    10a0:	f6843783          	ld	a5,-152(s0)
-    10a4:	00e7b423          	sd	a4,8(a5)
-    10a8:	1b00006f          	jal	zero,1258 <.L125>
+0000000000000f78 <.LM406>:
+     f78:	02813483          	ld	s1,40(sp)
+     f7c:	04010113          	addi	sp,sp,64
+     f80:	00008067          	jalr	zero,0(ra)
 
-00000000000010ac <.L114>:
-    10ac:	f8840793          	addi	a5,s0,-120
-    10b0:	f7040713          	addi	a4,s0,-144
-    10b4:	00070593          	addi	a1,a4,0
-    10b8:	00078513          	addi	a0,a5,0
-    10bc:	00000097          	auipc	ra,0x0
-    10c0:	000080e7          	jalr	ra,0(ra) # 10bc <.L114+0x10>
-    10c4:	f6843783          	ld	a5,-152(s0)
-    10c8:	f8840713          	addi	a4,s0,-120
-    10cc:	f5043683          	ld	a3,-176(s0)
-    10d0:	f5843603          	ld	a2,-168(s0)
-    10d4:	00070593          	addi	a1,a4,0
-    10d8:	00078513          	addi	a0,a5,0
-    10dc:	00000097          	auipc	ra,0x0
-    10e0:	000080e7          	jalr	ra,0(ra) # 10dc <.L114+0x30>
+0000000000000f84 <dwarf::at_main_subprogram(dwarf::die const&)>:
+AT_FLAG(main_subprogram);
+     f84:	fd010113          	addi	sp,sp,-48
+     f88:	02113423          	sd	ra,40(sp)
+     f8c:	02813023          	sd	s0,32(sp)
+     f90:	00050593          	addi	a1,a0,0
 
-00000000000010e4 <.LEHE19>:
-    10e4:	1740006f          	jal	zero,1258 <.L125>
+0000000000000f94 <.LM409>:
+     f94:	06a00613          	addi	a2,zero,106
+     f98:	00810413          	addi	s0,sp,8
+     f9c:	00040513          	addi	a0,s0,0
 
-00000000000010e8 <.L110>:
-    10e8:	01000513          	addi	a0,zero,16
-    10ec:	00000097          	auipc	ra,0x0
-    10f0:	000080e7          	jalr	ra,0(ra) # 10ec <.L110+0x4>
-    10f4:	00050793          	addi	a5,a0,0
-    10f8:	00078493          	addi	s1,a5,0
-    10fc:	00000597          	auipc	a1,0x0
-    1100:	00058593          	addi	a1,a1,0 # 10fc <.L110+0x14>
-    1104:	00048513          	addi	a0,s1,0
+0000000000000fa0 <.LM410>:
+     fa0:	00000097          	auipc	ra,0x0
+     fa4:	000080e7          	jalr	ra,0(ra) # fa0 <.LM410>
 
-0000000000001108 <.LEHB20>:
-    1108:	00000097          	auipc	ra,0x0
-    110c:	000080e7          	jalr	ra,0(ra) # 1108 <.LEHB20>
+0000000000000fa8 <.LM411>:
+     fa8:	00040513          	addi	a0,s0,0
+     fac:	00000097          	auipc	ra,0x0
+     fb0:	000080e7          	jalr	ra,0(ra) # fac <.LM411+0x4>
 
-0000000000001110 <.LEHE20>:
-    1110:	00000617          	auipc	a2,0x0
-    1114:	00063603          	ld	a2,0(a2) # 1110 <.LEHE20>
-    1118:	00000597          	auipc	a1,0x0
-    111c:	0005b583          	ld	a1,0(a1) # 1118 <.LEHE20+0x8>
-    1120:	00048513          	addi	a0,s1,0
+0000000000000fb4 <.LVL269>:
+     fb4:	02813083          	ld	ra,40(sp)
+     fb8:	02013403          	ld	s0,32(sp)
+     fbc:	03010113          	addi	sp,sp,48
+     fc0:	00008067          	jalr	zero,0(ra)
 
-0000000000001124 <.LEHB21>:
-    1124:	00000097          	auipc	ra,0x0
-    1128:	000080e7          	jalr	ra,0(ra) # 1124 <.LEHB21>
+0000000000000fc4 <dwarf::at_const_expr(dwarf::die const&)>:
+// XXX const data_bit_offset
+AT_FLAG(const_expr);
+     fc4:	fd010113          	addi	sp,sp,-48
+     fc8:	02113423          	sd	ra,40(sp)
+     fcc:	02813023          	sd	s0,32(sp)
+     fd0:	00050593          	addi	a1,a0,0
 
-000000000000112c <.L111>:
-    112c:	01000513          	addi	a0,zero,16
+0000000000000fd4 <.LM414>:
+     fd4:	06c00613          	addi	a2,zero,108
+     fd8:	00810413          	addi	s0,sp,8
+     fdc:	00040513          	addi	a0,s0,0
+
+0000000000000fe0 <.LM415>:
+     fe0:	00000097          	auipc	ra,0x0
+     fe4:	000080e7          	jalr	ra,0(ra) # fe0 <.LM415>
+
+0000000000000fe8 <.LM416>:
+     fe8:	00040513          	addi	a0,s0,0
+     fec:	00000097          	auipc	ra,0x0
+     ff0:	000080e7          	jalr	ra,0(ra) # fec <.LM416+0x4>
+
+0000000000000ff4 <.LVL273>:
+     ff4:	02813083          	ld	ra,40(sp)
+     ff8:	02013403          	ld	s0,32(sp)
+     ffc:	03010113          	addi	sp,sp,48
+    1000:	00008067          	jalr	zero,0(ra)
+
+0000000000001004 <dwarf::at_enum_class(dwarf::die const&)>:
+AT_FLAG(enum_class);
+    1004:	fd010113          	addi	sp,sp,-48
+    1008:	02113423          	sd	ra,40(sp)
+    100c:	02813023          	sd	s0,32(sp)
+    1010:	00050593          	addi	a1,a0,0
+
+0000000000001014 <.LM419>:
+    1014:	06d00613          	addi	a2,zero,109
+    1018:	00810413          	addi	s0,sp,8
+    101c:	00040513          	addi	a0,s0,0
+
+0000000000001020 <.LM420>:
+    1020:	00000097          	auipc	ra,0x0
+    1024:	000080e7          	jalr	ra,0(ra) # 1020 <.LM420>
+
+0000000000001028 <.LM421>:
+    1028:	00040513          	addi	a0,s0,0
+    102c:	00000097          	auipc	ra,0x0
+    1030:	000080e7          	jalr	ra,0(ra) # 102c <.LM421+0x4>
+
+0000000000001034 <.LVL277>:
+    1034:	02813083          	ld	ra,40(sp)
+    1038:	02013403          	ld	s0,32(sp)
+    103c:	03010113          	addi	sp,sp,48
+    1040:	00008067          	jalr	zero,0(ra)
+
+0000000000001044 <dwarf::at_linkage_name[abi:cxx11](dwarf::die const&)>:
+AT_STRING(linkage_name);
+    1044:	fc010113          	addi	sp,sp,-64
+    1048:	02113c23          	sd	ra,56(sp)
+    104c:	02813823          	sd	s0,48(sp)
+    1050:	02913423          	sd	s1,40(sp)
+    1054:	00050413          	addi	s0,a0,0
+
+0000000000001058 <.LM424>:
+    1058:	06e00613          	addi	a2,zero,110
+    105c:	00810493          	addi	s1,sp,8
+    1060:	00048513          	addi	a0,s1,0
+
+0000000000001064 <.LM425>:
+    1064:	00000097          	auipc	ra,0x0
+    1068:	000080e7          	jalr	ra,0(ra) # 1064 <.LM425>
+
+000000000000106c <.LM426>:
+    106c:	00048593          	addi	a1,s1,0
+    1070:	00040513          	addi	a0,s0,0
+    1074:	00000097          	auipc	ra,0x0
+    1078:	000080e7          	jalr	ra,0(ra) # 1074 <.LM426+0x8>
+
+000000000000107c <.LVL281>:
+    107c:	00040513          	addi	a0,s0,0
+    1080:	03813083          	ld	ra,56(sp)
+    1084:	03013403          	ld	s0,48(sp)
+
+0000000000001088 <.LM427>:
+    1088:	02813483          	ld	s1,40(sp)
+    108c:	04010113          	addi	sp,sp,64
+    1090:	00008067          	jalr	zero,0(ra)
+
+0000000000001094 <dwarf::_at_udynamic(dwarf::DW_AT, dwarf::die const&, dwarf::expr_context*, int)>:
+                             int depth = 0) {
+    1094:	ed010113          	addi	sp,sp,-304
+    1098:	12113423          	sd	ra,296(sp)
+    109c:	12813023          	sd	s0,288(sp)
+    10a0:	10913c23          	sd	s1,280(sp)
+    10a4:	11213823          	sd	s2,272(sp)
+    10a8:	11313423          	sd	s3,264(sp)
+    10ac:	00050413          	addi	s0,a0,0
+
+00000000000010b0 <.LM598>:
+  if (depth > 16)
+    10b0:	01000793          	addi	a5,zero,16
+    10b4:	06d7c263          	blt	a5,a3,1118 <.L195>
+    10b8:	00060913          	addi	s2,a2,0
+    10bc:	00068493          	addi	s1,a3,0
+
+00000000000010c0 <.LM599>:
+  value v(d[attr]);
+    10c0:	00050613          	addi	a2,a0,0
+
+00000000000010c4 <.LM601>:
+    10c4:	0d010513          	addi	a0,sp,208
+
+00000000000010c8 <.LEHB7>:
+    10c8:	00000097          	auipc	ra,0x0
+    10cc:	000080e7          	jalr	ra,0(ra) # 10c8 <.LEHB7>
+
+00000000000010d0 <.LBB1212>:
+  type get_type() const { return typ; }
+    10d0:	0dc12783          	lw	a5,220(sp)
+
+00000000000010d4 <.LBE1212>:
+  switch (v.get_type()) {
+    10d4:	00600713          	addi	a4,zero,6
+    10d8:	16e78263          	beq	a5,a4,123c <.L152>
+    10dc:	0ef75663          	bge	a4,a5,11c8 <.L196>
+    10e0:	00c00713          	addi	a4,zero,12
+    10e4:	18e79463          	bne	a5,a4,126c <.L154>
+
+00000000000010e8 <.LM609>:
+    return _at_udynamic(attr, v.as_reference(), ctx, depth + 1);
+    10e8:	0d010593          	addi	a1,sp,208
+    10ec:	06010993          	addi	s3,sp,96
+    10f0:	00098513          	addi	a0,s3,0
+    10f4:	00000097          	auipc	ra,0x0
+    10f8:	000080e7          	jalr	ra,0(ra) # 10f4 <.LM609+0xc>
+
+00000000000010fc <.LEHE7>:
+    10fc:	0014869b          	addiw	a3,s1,1
+    1100:	00090613          	addi	a2,s2,0
+    1104:	00098593          	addi	a1,s3,0
+    1108:	00040513          	addi	a0,s0,0
+
+000000000000110c <.LEHB8>:
+    110c:	00000097          	auipc	ra,0x0
+    1110:	000080e7          	jalr	ra,0(ra) # 110c <.LEHB8>
+
+0000000000001114 <.LEHE8>:
+    1114:	0f00006f          	jal	zero,1204 <.L197>
+
+0000000000001118 <.L195>:
+    throw format_error("reference depth exceeded for " + to_string(attr));
+    1118:	01000513          	addi	a0,zero,16
+
+000000000000111c <.LM615>:
+    111c:	00000097          	auipc	ra,0x0
+    1120:	000080e7          	jalr	ra,0(ra) # 111c <.LM615>
+
+0000000000001124 <.LM616>:
+    1124:	00050493          	addi	s1,a0,0
+
+0000000000001128 <.LM617>:
+    1128:	00040593          	addi	a1,s0,0
+    112c:	04010513          	addi	a0,sp,64
+
+0000000000001130 <.LEHB9>:
     1130:	00000097          	auipc	ra,0x0
-    1134:	000080e7          	jalr	ra,0(ra) # 1130 <.L111+0x4>
-    1138:	00050793          	addi	a5,a0,0
-    113c:	00078493          	addi	s1,a5,0
-    1140:	f7040793          	addi	a5,s0,-144
-    1144:	00078513          	addi	a0,a5,0
-    1148:	00000317          	auipc	t1,0x0
-    114c:	00033303          	ld	t1,0(t1) # 1148 <.L111+0x1c>
-    1150:	000300e7          	jalr	ra,0(t1)
-    1154:	00050793          	addi	a5,a0,0
-    1158:	00078713          	addi	a4,a5,0
-    115c:	fc040793          	addi	a5,s0,-64
-    1160:	00070593          	addi	a1,a4,0
-    1164:	00078513          	addi	a0,a5,0
+    1134:	000080e7          	jalr	ra,0(ra) # 1130 <.LEHB9>
 
-0000000000001168 <.LEHB22>:
-    1168:	00000097          	auipc	ra,0x0
-    116c:	000080e7          	jalr	ra,0(ra) # 1168 <.LEHB22>
+0000000000001138 <.LBB1214>:
+    { return std::move(__rhs.insert(0, __lhs)); }
+    1138:	00000617          	auipc	a2,0x0
+    113c:	00060613          	addi	a2,a2,0 # 1138 <.LBB1214>
+    1140:	00000593          	addi	a1,zero,0
+    1144:	04010513          	addi	a0,sp,64
 
-0000000000001170 <.LEHE22>:
-    1170:	fa040793          	addi	a5,s0,-96
-    1174:	fc040713          	addi	a4,s0,-64
-    1178:	00070613          	addi	a2,a4,0
-    117c:	00000597          	auipc	a1,0x0
-    1180:	00058593          	addi	a1,a1,0 # 117c <.LEHE22+0xc>
-    1184:	00078513          	addi	a0,a5,0
-    1188:	00000317          	auipc	t1,0x0
-    118c:	00033303          	ld	t1,0(t1) # 1188 <.LEHE22+0x18>
+0000000000001148 <.LEHB10>:
+    1148:	00000097          	auipc	ra,0x0
+    114c:	000080e7          	jalr	ra,0(ra) # 1148 <.LEHB10>
 
-0000000000001190 <.LEHB23>:
-    1190:	000300e7          	jalr	ra,0(t1)
+0000000000001150 <.LEHE10>:
+    1150:	00050593          	addi	a1,a0,0
 
-0000000000001194 <.LEHE23>:
-    1194:	fa040793          	addi	a5,s0,-96
-    1198:	00078593          	addi	a1,a5,0
-    119c:	00048513          	addi	a0,s1,0
-    11a0:	00000317          	auipc	t1,0x0
-    11a4:	00033303          	ld	t1,0(t1) # 11a0 <.LEHE23+0xc>
+0000000000001154 <.LM622>:
+    1154:	06010413          	addi	s0,sp,96
+    1158:	00040513          	addi	a0,s0,0
+    115c:	00000097          	auipc	ra,0x0
+    1160:	000080e7          	jalr	ra,0(ra) # 115c <.LM622+0x8>
 
-00000000000011a8 <.LEHB24>:
-    11a8:	000300e7          	jalr	ra,0(t1)
+0000000000001164 <.LBB1216>:
+      : std::runtime_error(what_arg) {}
+    1164:	00040593          	addi	a1,s0,0
+    1168:	00048513          	addi	a0,s1,0
 
-00000000000011ac <.LEHE24>:
-    11ac:	fa040793          	addi	a5,s0,-96
-    11b0:	00078513          	addi	a0,a5,0
-    11b4:	00000097          	auipc	ra,0x0
-    11b8:	000080e7          	jalr	ra,0(ra) # 11b4 <.LEHE24+0x8>
-    11bc:	fc040793          	addi	a5,s0,-64
-    11c0:	00078513          	addi	a0,a5,0
-    11c4:	00000097          	auipc	ra,0x0
-    11c8:	000080e7          	jalr	ra,0(ra) # 11c4 <.LEHE24+0x18>
-    11cc:	00000617          	auipc	a2,0x0
-    11d0:	00063603          	ld	a2,0(a2) # 11cc <.LEHE24+0x20>
-    11d4:	00000597          	auipc	a1,0x0
-    11d8:	0005b583          	ld	a1,0(a1) # 11d4 <.LEHE24+0x28>
-    11dc:	00048513          	addi	a0,s1,0
+000000000000116c <.LEHB11>:
+    116c:	00000097          	auipc	ra,0x0
+    1170:	000080e7          	jalr	ra,0(ra) # 116c <.LEHB11>
 
-00000000000011e0 <.LEHB25>:
-    11e0:	00000097          	auipc	ra,0x0
-    11e4:	000080e7          	jalr	ra,0(ra) # 11e0 <.LEHB25>
+0000000000001174 <.LEHE11>:
+    1174:	00000797          	auipc	a5,0x0
+    1178:	0007b783          	ld	a5,0(a5) # 1174 <.LEHE11>
+    117c:	01078793          	addi	a5,a5,16
+    1180:	00f4b023          	sd	a5,0(s1)
 
-00000000000011e8 <.L121>:
-    11e8:	00050913          	addi	s2,a0,0
-    11ec:	00048513          	addi	a0,s1,0
-    11f0:	00000097          	auipc	ra,0x0
-    11f4:	000080e7          	jalr	ra,0(ra) # 11f0 <.L121+0x8>
-    11f8:	00090793          	addi	a5,s2,0
-    11fc:	00078513          	addi	a0,a5,0
-    1200:	00000097          	auipc	ra,0x0
-    1204:	000080e7          	jalr	ra,0(ra) # 1200 <.L121+0x18>
+0000000000001184 <.LBB1218>:
+      { return _M_dataplus._M_p; }
+    1184:	06013503          	ld	a0,96(sp)
 
-0000000000001208 <.L124>:
-    1208:	00050913          	addi	s2,a0,0
-    120c:	fa040793          	addi	a5,s0,-96
-    1210:	00078513          	addi	a0,a5,0
-    1214:	00000097          	auipc	ra,0x0
-    1218:	000080e7          	jalr	ra,0(ra) # 1214 <.L124+0xc>
-    121c:	0080006f          	jal	zero,1224 <.L119>
+0000000000001188 <.LBB1225>:
+	if (!_M_is_local())
+    1188:	07010793          	addi	a5,sp,112
+    118c:	00f50663          	beq	a0,a5,1198 <.L150>
 
-0000000000001220 <.L123>:
-    1220:	00050913          	addi	s2,a0,0
+0000000000001190 <.LBB1226>:
+    1190:	00000097          	auipc	ra,0x0
+    1194:	000080e7          	jalr	ra,0(ra) # 1190 <.LBB1226>
 
-0000000000001224 <.L119>:
-    1224:	fc040793          	addi	a5,s0,-64
-    1228:	00078513          	addi	a0,a5,0
-    122c:	00000097          	auipc	ra,0x0
-    1230:	000080e7          	jalr	ra,0(ra) # 122c <.L119+0x8>
-    1234:	0080006f          	jal	zero,123c <.L120>
+0000000000001198 <.L150>:
+      { return _M_dataplus._M_p; }
+    1198:	04013503          	ld	a0,64(sp)
 
-0000000000001238 <.L122>:
-    1238:	00050913          	addi	s2,a0,0
+000000000000119c <.LBB1241>:
+	if (!_M_is_local())
+    119c:	05010793          	addi	a5,sp,80
+    11a0:	00f50663          	beq	a0,a5,11ac <.L151>
 
-000000000000123c <.L120>:
-    123c:	00048513          	addi	a0,s1,0
-    1240:	00000097          	auipc	ra,0x0
-    1244:	000080e7          	jalr	ra,0(ra) # 1240 <.L120+0x4>
-    1248:	00090793          	addi	a5,s2,0
-    124c:	00078513          	addi	a0,a5,0
-    1250:	00000097          	auipc	ra,0x0
-    1254:	000080e7          	jalr	ra,0(ra) # 1250 <.L120+0x14>
+00000000000011a4 <.LBB1242>:
+    11a4:	00000097          	auipc	ra,0x0
+    11a8:	000080e7          	jalr	ra,0(ra) # 11a4 <.LBB1242>
 
-0000000000001258 <.L125>:
-    1258:	f6843503          	ld	a0,-152(s0)
-    125c:	0b813083          	ld	ra,184(sp)
-    1260:	0b013403          	ld	s0,176(sp)
-    1264:	0a813483          	ld	s1,168(sp)
-    1268:	0a013903          	ld	s2,160(sp)
-    126c:	0c010113          	addi	sp,sp,192
-    1270:	00008067          	jalr	zero,0(ra)
+00000000000011ac <.L151>:
+    11ac:	00000617          	auipc	a2,0x0
+    11b0:	00063603          	ld	a2,0(a2) # 11ac <.L151>
+    11b4:	00000597          	auipc	a1,0x0
+    11b8:	0005b583          	ld	a1,0(a1) # 11b4 <.L151+0x8>
+    11bc:	00048513          	addi	a0,s1,0
 
-0000000000001274 <dwarf::at_declaration(dwarf::die const&)>:
-    1274:	fc010113          	addi	sp,sp,-64
-    1278:	02113c23          	sd	ra,56(sp)
-    127c:	02813823          	sd	s0,48(sp)
-    1280:	04010413          	addi	s0,sp,64
-    1284:	fca43423          	sd	a0,-56(s0)
-    1288:	fd840793          	addi	a5,s0,-40
-    128c:	03c00613          	addi	a2,zero,60
-    1290:	fc843583          	ld	a1,-56(s0)
-    1294:	00078513          	addi	a0,a5,0
+00000000000011c0 <.LEHB12>:
+    11c0:	00000097          	auipc	ra,0x0
+    11c4:	000080e7          	jalr	ra,0(ra) # 11c0 <.LEHB12>
+
+00000000000011c8 <.L196>:
+  switch (v.get_type()) {
+    11c8:	ffd7879b          	addiw	a5,a5,-3
+    11cc:	00100713          	addi	a4,zero,1
+    11d0:	08f76e63          	bltu	a4,a5,126c <.L154>
+
+00000000000011d4 <.LM666>:
+    return v.as_uconstant();
+    11d4:	0d010513          	addi	a0,sp,208
+    11d8:	00000097          	auipc	ra,0x0
+    11dc:	000080e7          	jalr	ra,0(ra) # 11d8 <.LM666+0x4>
+
+00000000000011e0 <.LVL361>:
+    11e0:	00050413          	addi	s0,a0,0
+
+00000000000011e4 <.L148>:
+}
+    11e4:	00040513          	addi	a0,s0,0
+    11e8:	12813083          	ld	ra,296(sp)
+    11ec:	12013403          	ld	s0,288(sp)
+    11f0:	11813483          	ld	s1,280(sp)
+    11f4:	11013903          	ld	s2,272(sp)
+
+00000000000011f8 <.LM671>:
+    11f8:	10813983          	ld	s3,264(sp)
+    11fc:	13010113          	addi	sp,sp,304
+    1200:	00008067          	jalr	zero,0(ra)
+
+0000000000001204 <.L197>:
+    return _at_udynamic(attr, v.as_reference(), ctx, depth + 1);
+    1204:	00050413          	addi	s0,a0,0
+
+0000000000001208 <.LBB1250>:
+    end--;
+    end->~T();
+  }
+
+  void clear() {
+    for (T *p = base; p < end; ++p)
+    1208:	0b013503          	ld	a0,176(sp)
+
+000000000000120c <.LM677>:
+    120c:	0b813783          	ld	a5,184(sp)
+    1210:	00f57a63          	bgeu	a0,a5,1224 <.L158>
+
+0000000000001214 <.LM678>:
+    1214:	00050793          	addi	a5,a0,0
+
+0000000000001218 <.L159>:
+    1218:	00878793          	addi	a5,a5,8
+
+000000000000121c <.LM680>:
+    121c:	0b813703          	ld	a4,184(sp)
+    1220:	fee7ece3          	bltu	a5,a4,1218 <.L159>
+
+0000000000001224 <.L158>:
+    if ((char *)base != buf)
+    1224:	08010793          	addi	a5,sp,128
+
+0000000000001228 <.LM683>:
+    1228:	faf50ee3          	beq	a0,a5,11e4 <.L148>
+
+000000000000122c <.LM684>:
+      delete[] (char *)base;
+    122c:	fa050ce3          	beq	a0,zero,11e4 <.L148>
+    1230:	00000097          	auipc	ra,0x0
+    1234:	000080e7          	jalr	ra,0(ra) # 1230 <.LM684+0x4>
+
+0000000000001238 <.LM685>:
+    1238:	fadff06f          	jal	zero,11e4 <.L148>
+
+000000000000123c <.L152>:
+    return v.as_exprloc().evaluate(ctx).value;
+    123c:	0d010593          	addi	a1,sp,208
+    1240:	0e810413          	addi	s0,sp,232
+    1244:	00040513          	addi	a0,s0,0
+    1248:	00000097          	auipc	ra,0x0
+    124c:	000080e7          	jalr	ra,0(ra) # 1248 <.L152+0xc>
+
+0000000000001250 <.LM689>:
+    1250:	00090613          	addi	a2,s2,0
+    1254:	00040593          	addi	a1,s0,0
+    1258:	06010513          	addi	a0,sp,96
+    125c:	00000097          	auipc	ra,0x0
+    1260:	000080e7          	jalr	ra,0(ra) # 125c <.LM689+0xc>
+
+0000000000001264 <.LEHE12>:
+    1264:	06813403          	ld	s0,104(sp)
+    1268:	f7dff06f          	jal	zero,11e4 <.L148>
+
+000000000000126c <.L154>:
+                       to_string(v.get_type()));
+    126c:	01000513          	addi	a0,zero,16
+    1270:	00000097          	auipc	ra,0x0
+    1274:	000080e7          	jalr	ra,0(ra) # 1270 <.L154+0x4>
+
+0000000000001278 <.LVL373>:
+    1278:	00050493          	addi	s1,a0,0
+
+000000000000127c <.LM694>:
+    throw format_error(to_string(attr) + " has unexpected type " +
+    127c:	00040593          	addi	a1,s0,0
+    1280:	00010513          	addi	a0,sp,0
+
+0000000000001284 <.LEHB13>:
+    1284:	00000097          	auipc	ra,0x0
+    1288:	000080e7          	jalr	ra,0(ra) # 1284 <.LEHB13>
+
+000000000000128c <.LBB1256>:
+  template<typename _CharT, typename _Traits, typename _Alloc>
+    _GLIBCXX20_CONSTEXPR
+    inline basic_string<_CharT, _Traits, _Alloc>
+    operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+	      const _CharT* __rhs)
+    { return std::move(__lhs.append(__rhs)); }
+    128c:	00000597          	auipc	a1,0x0
+    1290:	00058593          	addi	a1,a1,0 # 128c <.LBB1256>
+    1294:	00010513          	addi	a0,sp,0
+
+0000000000001298 <.LEHB14>:
     1298:	00000097          	auipc	ra,0x0
-    129c:	000080e7          	jalr	ra,0(ra) # 1298 <dwarf::at_declaration(dwarf::die const&)+0x24>
-    12a0:	fd840793          	addi	a5,s0,-40
-    12a4:	00078513          	addi	a0,a5,0
+    129c:	000080e7          	jalr	ra,0(ra) # 1298 <.LEHB14>
+
+00000000000012a0 <.LEHE14>:
+    12a0:	00050593          	addi	a1,a0,0
+
+00000000000012a4 <.LM697>:
+    12a4:	02010513          	addi	a0,sp,32
     12a8:	00000097          	auipc	ra,0x0
-    12ac:	000080e7          	jalr	ra,0(ra) # 12a8 <dwarf::at_declaration(dwarf::die const&)+0x34>
-    12b0:	00050793          	addi	a5,a0,0
-    12b4:	00078513          	addi	a0,a5,0
-    12b8:	03813083          	ld	ra,56(sp)
-    12bc:	03013403          	ld	s0,48(sp)
-    12c0:	04010113          	addi	sp,sp,64
-    12c4:	00008067          	jalr	zero,0(ra)
+    12ac:	000080e7          	jalr	ra,0(ra) # 12a8 <.LM697+0x4>
 
-00000000000012c8 <dwarf::at_encoding(dwarf::die const&)>:
-    12c8:	fc010113          	addi	sp,sp,-64
-    12cc:	02113c23          	sd	ra,56(sp)
-    12d0:	02813823          	sd	s0,48(sp)
-    12d4:	04010413          	addi	s0,sp,64
-    12d8:	fca43423          	sd	a0,-56(s0)
-    12dc:	fd840793          	addi	a5,s0,-40
-    12e0:	03e00613          	addi	a2,zero,62
-    12e4:	fc843583          	ld	a1,-56(s0)
-    12e8:	00078513          	addi	a0,a5,0
-    12ec:	00000097          	auipc	ra,0x0
-    12f0:	000080e7          	jalr	ra,0(ra) # 12ec <dwarf::at_encoding(dwarf::die const&)+0x24>
-    12f4:	fd840793          	addi	a5,s0,-40
-    12f8:	00078513          	addi	a0,a5,0
-    12fc:	00000097          	auipc	ra,0x0
-    1300:	000080e7          	jalr	ra,0(ra) # 12fc <dwarf::at_encoding(dwarf::die const&)+0x34>
-    1304:	00050793          	addi	a5,a0,0
-    1308:	0007879b          	addiw	a5,a5,0
-    130c:	00078513          	addi	a0,a5,0
-    1310:	03813083          	ld	ra,56(sp)
-    1314:	03013403          	ld	s0,48(sp)
-    1318:	04010113          	addi	sp,sp,64
-    131c:	00008067          	jalr	zero,0(ra)
+00000000000012b0 <.LBB1258>:
+                       to_string(v.get_type()));
+    12b0:	0dc12583          	lw	a1,220(sp)
+    12b4:	04010513          	addi	a0,sp,64
 
-0000000000001320 <dwarf::at_external(dwarf::die const&)>:
-    1320:	fc010113          	addi	sp,sp,-64
-    1324:	02113c23          	sd	ra,56(sp)
-    1328:	02813823          	sd	s0,48(sp)
-    132c:	04010413          	addi	s0,sp,64
-    1330:	fca43423          	sd	a0,-56(s0)
-    1334:	fd840793          	addi	a5,s0,-40
-    1338:	03f00613          	addi	a2,zero,63
-    133c:	fc843583          	ld	a1,-56(s0)
-    1340:	00078513          	addi	a0,a5,0
-    1344:	00000097          	auipc	ra,0x0
-    1348:	000080e7          	jalr	ra,0(ra) # 1344 <dwarf::at_external(dwarf::die const&)+0x24>
-    134c:	fd840793          	addi	a5,s0,-40
-    1350:	00078513          	addi	a0,a5,0
-    1354:	00000097          	auipc	ra,0x0
-    1358:	000080e7          	jalr	ra,0(ra) # 1354 <dwarf::at_external(dwarf::die const&)+0x34>
-    135c:	00050793          	addi	a5,a0,0
-    1360:	00078513          	addi	a0,a5,0
-    1364:	03813083          	ld	ra,56(sp)
-    1368:	03013403          	ld	s0,48(sp)
-    136c:	04010113          	addi	sp,sp,64
-    1370:	00008067          	jalr	zero,0(ra)
+00000000000012b8 <.LEHB15>:
+    12b8:	00000097          	auipc	ra,0x0
+    12bc:	000080e7          	jalr	ra,0(ra) # 12b8 <.LEHB15>
 
-0000000000001374 <dwarf::at_friend(dwarf::die const&)>:
-    1374:	fc010113          	addi	sp,sp,-64
-    1378:	02113c23          	sd	ra,56(sp)
-    137c:	02813823          	sd	s0,48(sp)
-    1380:	04010413          	addi	s0,sp,64
-    1384:	fca43423          	sd	a0,-56(s0)
-    1388:	fcb43023          	sd	a1,-64(s0)
-    138c:	fd840793          	addi	a5,s0,-40
-    1390:	04100613          	addi	a2,zero,65
-    1394:	fc043583          	ld	a1,-64(s0)
-    1398:	00078513          	addi	a0,a5,0
-    139c:	00000097          	auipc	ra,0x0
-    13a0:	000080e7          	jalr	ra,0(ra) # 139c <dwarf::at_friend(dwarf::die const&)+0x28>
-    13a4:	fc843783          	ld	a5,-56(s0)
-    13a8:	fd840713          	addi	a4,s0,-40
-    13ac:	00070593          	addi	a1,a4,0
-    13b0:	00078513          	addi	a0,a5,0
-    13b4:	00000097          	auipc	ra,0x0
-    13b8:	000080e7          	jalr	ra,0(ra) # 13b4 <dwarf::at_friend(dwarf::die const&)+0x40>
-    13bc:	fc843503          	ld	a0,-56(s0)
-    13c0:	03813083          	ld	ra,56(sp)
-    13c4:	03013403          	ld	s0,48(sp)
-    13c8:	04010113          	addi	sp,sp,64
-    13cc:	00008067          	jalr	zero,0(ra)
+00000000000012c0 <.LEHE15>:
+    throw format_error(to_string(attr) + " has unexpected type " +
+    12c0:	04010613          	addi	a2,sp,64
+    12c4:	02010593          	addi	a1,sp,32
+    12c8:	06010513          	addi	a0,sp,96
+    12cc:	00000317          	auipc	t1,0x0
+    12d0:	00033303          	ld	t1,0(t1) # 12cc <.LEHE15+0xc>
 
-00000000000013d0 <dwarf::at_identifier_case(dwarf::die const&)>:
-    13d0:	fc010113          	addi	sp,sp,-64
-    13d4:	02113c23          	sd	ra,56(sp)
-    13d8:	02813823          	sd	s0,48(sp)
-    13dc:	04010413          	addi	s0,sp,64
-    13e0:	fca43423          	sd	a0,-56(s0)
-    13e4:	fd840793          	addi	a5,s0,-40
-    13e8:	04200613          	addi	a2,zero,66
-    13ec:	fc843583          	ld	a1,-56(s0)
-    13f0:	00078513          	addi	a0,a5,0
-    13f4:	00000097          	auipc	ra,0x0
-    13f8:	000080e7          	jalr	ra,0(ra) # 13f4 <dwarf::at_identifier_case(dwarf::die const&)+0x24>
-    13fc:	fd840793          	addi	a5,s0,-40
-    1400:	00078513          	addi	a0,a5,0
+00000000000012d4 <.LEHB16>:
+    12d4:	000300e7          	jalr	ra,0(t1)
+
+00000000000012d8 <.LBB1260>:
+    12d8:	06010593          	addi	a1,sp,96
+
+00000000000012dc <.LM706>:
+    12dc:	00048513          	addi	a0,s1,0
+
+00000000000012e0 <.LEHB17>:
+    12e0:	00000097          	auipc	ra,0x0
+    12e4:	000080e7          	jalr	ra,0(ra) # 12e0 <.LEHB17>
+
+00000000000012e8 <.LEHE17>:
+    12e8:	00000797          	auipc	a5,0x0
+    12ec:	0007b783          	ld	a5,0(a5) # 12e8 <.LEHE17>
+    12f0:	01078793          	addi	a5,a5,16
+    12f4:	00f4b023          	sd	a5,0(s1)
+
+00000000000012f8 <.LBB1262>:
+      { return _M_dataplus._M_p; }
+    12f8:	06013503          	ld	a0,96(sp)
+
+00000000000012fc <.LBB1269>:
+	if (!_M_is_local())
+    12fc:	07010793          	addi	a5,sp,112
+    1300:	00f50663          	beq	a0,a5,130c <.L161>
+
+0000000000001304 <.LBB1270>:
+    1304:	00000097          	auipc	ra,0x0
+    1308:	000080e7          	jalr	ra,0(ra) # 1304 <.LBB1270>
+
+000000000000130c <.L161>:
+      { return _M_dataplus._M_p; }
+    130c:	04013503          	ld	a0,64(sp)
+
+0000000000001310 <.LBB1285>:
+	if (!_M_is_local())
+    1310:	05010793          	addi	a5,sp,80
+    1314:	00f50663          	beq	a0,a5,1320 <.L162>
+
+0000000000001318 <.LBB1286>:
+    1318:	00000097          	auipc	ra,0x0
+    131c:	000080e7          	jalr	ra,0(ra) # 1318 <.LBB1286>
+
+0000000000001320 <.L162>:
+      { return _M_dataplus._M_p; }
+    1320:	02013503          	ld	a0,32(sp)
+
+0000000000001324 <.LBB1301>:
+	if (!_M_is_local())
+    1324:	03010793          	addi	a5,sp,48
+    1328:	00f50663          	beq	a0,a5,1334 <.L163>
+
+000000000000132c <.LBB1302>:
+    132c:	00000097          	auipc	ra,0x0
+    1330:	000080e7          	jalr	ra,0(ra) # 132c <.LBB1302>
+
+0000000000001334 <.L163>:
+      { return _M_dataplus._M_p; }
+    1334:	00013503          	ld	a0,0(sp)
+
+0000000000001338 <.LBB1317>:
+	if (!_M_is_local())
+    1338:	01010793          	addi	a5,sp,16
+    133c:	00f50663          	beq	a0,a5,1348 <.L164>
+
+0000000000001340 <.LBB1318>:
+    1340:	00000097          	auipc	ra,0x0
+    1344:	000080e7          	jalr	ra,0(ra) # 1340 <.LBB1318>
+
+0000000000001348 <.L164>:
+                       to_string(v.get_type()));
+    1348:	00000617          	auipc	a2,0x0
+    134c:	00063603          	ld	a2,0(a2) # 1348 <.L164>
+    1350:	00000597          	auipc	a1,0x0
+    1354:	0005b583          	ld	a1,0(a1) # 1350 <.L164+0x8>
+    1358:	00048513          	addi	a0,s1,0
+
+000000000000135c <.LEHB18>:
+    135c:	00000097          	auipc	ra,0x0
+    1360:	000080e7          	jalr	ra,0(ra) # 135c <.LEHB18>
+
+0000000000001364 <.L185>:
+      { return _M_dataplus._M_p; }
+    1364:	00050413          	addi	s0,a0,0
+
+0000000000001368 <.LBB1334>:
+    1368:	06013503          	ld	a0,96(sp)
+
+000000000000136c <.LBB1335>:
+	if (!_M_is_local())
+    136c:	07010793          	addi	a5,sp,112
+    1370:	00f50663          	beq	a0,a5,137c <.L167>
+
+0000000000001374 <.LBB1337>:
+    1374:	00000097          	auipc	ra,0x0
+    1378:	000080e7          	jalr	ra,0(ra) # 1374 <.LBB1337>
+
+000000000000137c <.L167>:
+      { return _M_dataplus._M_p; }
+    137c:	04013503          	ld	a0,64(sp)
+
+0000000000001380 <.LBB1356>:
+	if (!_M_is_local())
+    1380:	05010793          	addi	a5,sp,80
+    1384:	00f50663          	beq	a0,a5,1390 <.L169>
+
+0000000000001388 <.LBB1358>:
+    1388:	00000097          	auipc	ra,0x0
+    138c:	000080e7          	jalr	ra,0(ra) # 1388 <.LBB1358>
+
+0000000000001390 <.L169>:
+    throw format_error("reference depth exceeded for " + to_string(attr));
+    1390:	00048513          	addi	a0,s1,0
+    1394:	00000097          	auipc	ra,0x0
+    1398:	000080e7          	jalr	ra,0(ra) # 1394 <.L169+0x4>
+
+000000000000139c <.LVL402>:
+    139c:	00040513          	addi	a0,s0,0
+    13a0:	00000097          	auipc	ra,0x0
+    13a4:	000080e7          	jalr	ra,0(ra) # 13a0 <.LVL402+0x4>
+
+00000000000013a8 <.L184>:
+      { return _M_dataplus._M_p; }
+    13a8:	00050413          	addi	s0,a0,0
+    13ac:	fd1ff06f          	jal	zero,137c <.L167>
+
+00000000000013b0 <.L183>:
+    13b0:	00050413          	addi	s0,a0,0
+    13b4:	fddff06f          	jal	zero,1390 <.L169>
+
+00000000000013b8 <.L186>:
+    for (T *p = base; p < end; ++p)
+    13b8:	00050413          	addi	s0,a0,0
+
+00000000000013bc <.LBB1379>:
+    13bc:	0b013503          	ld	a0,176(sp)
+
+00000000000013c0 <.LM830>:
+    13c0:	00050793          	addi	a5,a0,0
+
+00000000000013c4 <.L171>:
+    13c4:	0b813703          	ld	a4,184(sp)
+    13c8:	02e7e263          	bltu	a5,a4,13ec <.L172>
+
+00000000000013cc <.LBE1379>:
+    if ((char *)base != buf)
+    13cc:	08010793          	addi	a5,sp,128
+
+00000000000013d0 <.LM834>:
+    13d0:	00f50863          	beq	a0,a5,13e0 <.L173>
+
+00000000000013d4 <.LM835>:
+      delete[] (char *)base;
+    13d4:	00050663          	beq	a0,zero,13e0 <.L173>
+    13d8:	00000097          	auipc	ra,0x0
+    13dc:	000080e7          	jalr	ra,0(ra) # 13d8 <.LM835+0x4>
+
+00000000000013e0 <.L173>:
+    13e0:	00040513          	addi	a0,s0,0
+    13e4:	00000097          	auipc	ra,0x0
+    13e8:	000080e7          	jalr	ra,0(ra) # 13e4 <.L173+0x4>
+
+00000000000013ec <.L172>:
+    for (T *p = base; p < end; ++p)
+    13ec:	00878793          	addi	a5,a5,8
+
+00000000000013f0 <.LM838>:
+    13f0:	fd5ff06f          	jal	zero,13c4 <.L171>
+
+00000000000013f4 <.L191>:
+    13f4:	00050413          	addi	s0,a0,0
+
+00000000000013f8 <.LBB1392>:
+    13f8:	06013503          	ld	a0,96(sp)
+
+00000000000013fc <.LBB1393>:
+	if (!_M_is_local())
+    13fc:	07010793          	addi	a5,sp,112
+    1400:	00f50663          	beq	a0,a5,140c <.L176>
+
+0000000000001404 <.LBB1395>:
     1404:	00000097          	auipc	ra,0x0
-    1408:	000080e7          	jalr	ra,0(ra) # 1404 <dwarf::at_identifier_case(dwarf::die const&)+0x34>
-    140c:	00050793          	addi	a5,a0,0
-    1410:	0007879b          	addiw	a5,a5,0
-    1414:	00078513          	addi	a0,a5,0
-    1418:	03813083          	ld	ra,56(sp)
-    141c:	03013403          	ld	s0,48(sp)
-    1420:	04010113          	addi	sp,sp,64
-    1424:	00008067          	jalr	zero,0(ra)
+    1408:	000080e7          	jalr	ra,0(ra) # 1404 <.LBB1395>
 
-0000000000001428 <dwarf::at_namelist_item(dwarf::die const&)>:
-    1428:	fc010113          	addi	sp,sp,-64
-    142c:	02113c23          	sd	ra,56(sp)
-    1430:	02813823          	sd	s0,48(sp)
-    1434:	04010413          	addi	s0,sp,64
-    1438:	fca43423          	sd	a0,-56(s0)
-    143c:	fcb43023          	sd	a1,-64(s0)
-    1440:	fd840793          	addi	a5,s0,-40
-    1444:	04400613          	addi	a2,zero,68
-    1448:	fc043583          	ld	a1,-64(s0)
-    144c:	00078513          	addi	a0,a5,0
-    1450:	00000097          	auipc	ra,0x0
-    1454:	000080e7          	jalr	ra,0(ra) # 1450 <dwarf::at_namelist_item(dwarf::die const&)+0x28>
-    1458:	fc843783          	ld	a5,-56(s0)
-    145c:	fd840713          	addi	a4,s0,-40
-    1460:	00070593          	addi	a1,a4,0
-    1464:	00078513          	addi	a0,a5,0
-    1468:	00000097          	auipc	ra,0x0
-    146c:	000080e7          	jalr	ra,0(ra) # 1468 <dwarf::at_namelist_item(dwarf::die const&)+0x40>
-    1470:	fc843503          	ld	a0,-56(s0)
-    1474:	03813083          	ld	ra,56(sp)
-    1478:	03013403          	ld	s0,48(sp)
-    147c:	04010113          	addi	sp,sp,64
-    1480:	00008067          	jalr	zero,0(ra)
+000000000000140c <.L176>:
+      { return _M_dataplus._M_p; }
+    140c:	04013503          	ld	a0,64(sp)
 
-0000000000001484 <dwarf::at_priority(dwarf::die const&)>:
-    1484:	fc010113          	addi	sp,sp,-64
-    1488:	02113c23          	sd	ra,56(sp)
-    148c:	02813823          	sd	s0,48(sp)
-    1490:	04010413          	addi	s0,sp,64
-    1494:	fca43423          	sd	a0,-56(s0)
-    1498:	fcb43023          	sd	a1,-64(s0)
-    149c:	fd840793          	addi	a5,s0,-40
-    14a0:	04500613          	addi	a2,zero,69
-    14a4:	fc043583          	ld	a1,-64(s0)
-    14a8:	00078513          	addi	a0,a5,0
-    14ac:	00000097          	auipc	ra,0x0
-    14b0:	000080e7          	jalr	ra,0(ra) # 14ac <dwarf::at_priority(dwarf::die const&)+0x28>
-    14b4:	fc843783          	ld	a5,-56(s0)
-    14b8:	fd840713          	addi	a4,s0,-40
-    14bc:	00070593          	addi	a1,a4,0
-    14c0:	00078513          	addi	a0,a5,0
+0000000000001410 <.LBB1414>:
+	if (!_M_is_local())
+    1410:	05010793          	addi	a5,sp,80
+    1414:	00f50663          	beq	a0,a5,1420 <.L178>
+
+0000000000001418 <.LBB1416>:
+    1418:	00000097          	auipc	ra,0x0
+    141c:	000080e7          	jalr	ra,0(ra) # 1418 <.LBB1416>
+
+0000000000001420 <.L178>:
+      { return _M_dataplus._M_p; }
+    1420:	02013503          	ld	a0,32(sp)
+
+0000000000001424 <.LBB1436>:
+	if (!_M_is_local())
+    1424:	03010793          	addi	a5,sp,48
+    1428:	00f50663          	beq	a0,a5,1434 <.L180>
+
+000000000000142c <.LBB1438>:
+    142c:	00000097          	auipc	ra,0x0
+    1430:	000080e7          	jalr	ra,0(ra) # 142c <.LBB1438>
+
+0000000000001434 <.L180>:
+      { return _M_dataplus._M_p; }
+    1434:	00013503          	ld	a0,0(sp)
+
+0000000000001438 <.LBB1458>:
+	if (!_M_is_local())
+    1438:	01010793          	addi	a5,sp,16
+    143c:	00f50663          	beq	a0,a5,1448 <.L182>
+
+0000000000001440 <.LBB1460>:
+    1440:	00000097          	auipc	ra,0x0
+    1444:	000080e7          	jalr	ra,0(ra) # 1440 <.LBB1460>
+
+0000000000001448 <.L182>:
+                       to_string(v.get_type()));
+    1448:	00048513          	addi	a0,s1,0
+    144c:	00000097          	auipc	ra,0x0
+    1450:	000080e7          	jalr	ra,0(ra) # 144c <.L182+0x4>
+
+0000000000001454 <.LVL428>:
+    1454:	00040513          	addi	a0,s0,0
+    1458:	00000097          	auipc	ra,0x0
+    145c:	000080e7          	jalr	ra,0(ra) # 1458 <.LVL428+0x4>
+
+0000000000001460 <.L190>:
+      { return _M_dataplus._M_p; }
+    1460:	00050413          	addi	s0,a0,0
+    1464:	fa9ff06f          	jal	zero,140c <.L176>
+
+0000000000001468 <.L189>:
+    1468:	00050413          	addi	s0,a0,0
+    146c:	fb5ff06f          	jal	zero,1420 <.L178>
+
+0000000000001470 <.L188>:
+    1470:	00050413          	addi	s0,a0,0
+    1474:	fc1ff06f          	jal	zero,1434 <.L180>
+
+0000000000001478 <.L187>:
+    1478:	00050413          	addi	s0,a0,0
+    147c:	fcdff06f          	jal	zero,1448 <.L182>
+
+0000000000001480 <dwarf::at_byte_size(dwarf::die const&, dwarf::expr_context*)>:
+AT_UDYNAMIC(byte_size);
+    1480:	ff010113          	addi	sp,sp,-16
+    1484:	00113423          	sd	ra,8(sp)
+    1488:	00058613          	addi	a2,a1,0
+
+000000000000148c <.LM921>:
+    148c:	00000693          	addi	a3,zero,0
+    1490:	00050593          	addi	a1,a0,0
+
+0000000000001494 <.LM922>:
+    1494:	00b00513          	addi	a0,zero,11
+
+0000000000001498 <.LM923>:
+    1498:	00000097          	auipc	ra,0x0
+    149c:	000080e7          	jalr	ra,0(ra) # 1498 <.LM923>
+
+00000000000014a0 <.LM924>:
+    14a0:	00813083          	ld	ra,8(sp)
+    14a4:	01010113          	addi	sp,sp,16
+    14a8:	00008067          	jalr	zero,0(ra)
+
+00000000000014ac <dwarf::at_bit_offset(dwarf::die const&, dwarf::expr_context*)>:
+AT_UDYNAMIC(bit_offset);
+    14ac:	ff010113          	addi	sp,sp,-16
+    14b0:	00113423          	sd	ra,8(sp)
+    14b4:	00058613          	addi	a2,a1,0
+
+00000000000014b8 <.LM927>:
+    14b8:	00000693          	addi	a3,zero,0
+    14bc:	00050593          	addi	a1,a0,0
+
+00000000000014c0 <.LM928>:
+    14c0:	00c00513          	addi	a0,zero,12
+
+00000000000014c4 <.LM929>:
     14c4:	00000097          	auipc	ra,0x0
-    14c8:	000080e7          	jalr	ra,0(ra) # 14c4 <dwarf::at_priority(dwarf::die const&)+0x40>
-    14cc:	fc843503          	ld	a0,-56(s0)
-    14d0:	03813083          	ld	ra,56(sp)
-    14d4:	03013403          	ld	s0,48(sp)
-    14d8:	04010113          	addi	sp,sp,64
-    14dc:	00008067          	jalr	zero,0(ra)
+    14c8:	000080e7          	jalr	ra,0(ra) # 14c4 <.LM929>
 
-00000000000014e0 <dwarf::at_specification(dwarf::die const&)>:
-    14e0:	fc010113          	addi	sp,sp,-64
-    14e4:	02113c23          	sd	ra,56(sp)
-    14e8:	02813823          	sd	s0,48(sp)
-    14ec:	04010413          	addi	s0,sp,64
-    14f0:	fca43423          	sd	a0,-56(s0)
-    14f4:	fcb43023          	sd	a1,-64(s0)
-    14f8:	fd840793          	addi	a5,s0,-40
-    14fc:	04700613          	addi	a2,zero,71
-    1500:	fc043583          	ld	a1,-64(s0)
-    1504:	00078513          	addi	a0,a5,0
-    1508:	00000097          	auipc	ra,0x0
-    150c:	000080e7          	jalr	ra,0(ra) # 1508 <dwarf::at_specification(dwarf::die const&)+0x28>
-    1510:	fc843783          	ld	a5,-56(s0)
-    1514:	fd840713          	addi	a4,s0,-40
-    1518:	00070593          	addi	a1,a4,0
-    151c:	00078513          	addi	a0,a5,0
-    1520:	00000097          	auipc	ra,0x0
-    1524:	000080e7          	jalr	ra,0(ra) # 1520 <dwarf::at_specification(dwarf::die const&)+0x40>
-    1528:	fc843503          	ld	a0,-56(s0)
-    152c:	03813083          	ld	ra,56(sp)
-    1530:	03013403          	ld	s0,48(sp)
-    1534:	04010113          	addi	sp,sp,64
-    1538:	00008067          	jalr	zero,0(ra)
+00000000000014cc <.LM930>:
+    14cc:	00813083          	ld	ra,8(sp)
+    14d0:	01010113          	addi	sp,sp,16
+    14d4:	00008067          	jalr	zero,0(ra)
 
-000000000000153c <dwarf::at_type(dwarf::die const&)>:
-    153c:	fc010113          	addi	sp,sp,-64
-    1540:	02113c23          	sd	ra,56(sp)
-    1544:	02813823          	sd	s0,48(sp)
-    1548:	04010413          	addi	s0,sp,64
-    154c:	fca43423          	sd	a0,-56(s0)
-    1550:	fcb43023          	sd	a1,-64(s0)
-    1554:	fd840793          	addi	a5,s0,-40
-    1558:	04900613          	addi	a2,zero,73
-    155c:	fc043583          	ld	a1,-64(s0)
-    1560:	00078513          	addi	a0,a5,0
-    1564:	00000097          	auipc	ra,0x0
-    1568:	000080e7          	jalr	ra,0(ra) # 1564 <dwarf::at_type(dwarf::die const&)+0x28>
-    156c:	fc843783          	ld	a5,-56(s0)
-    1570:	fd840713          	addi	a4,s0,-40
-    1574:	00070593          	addi	a1,a4,0
-    1578:	00078513          	addi	a0,a5,0
-    157c:	00000097          	auipc	ra,0x0
-    1580:	000080e7          	jalr	ra,0(ra) # 157c <dwarf::at_type(dwarf::die const&)+0x40>
-    1584:	fc843503          	ld	a0,-56(s0)
-    1588:	03813083          	ld	ra,56(sp)
-    158c:	03013403          	ld	s0,48(sp)
-    1590:	04010113          	addi	sp,sp,64
-    1594:	00008067          	jalr	zero,0(ra)
+00000000000014d8 <dwarf::at_bit_size(dwarf::die const&, dwarf::expr_context*)>:
+AT_UDYNAMIC(bit_size);
+    14d8:	ff010113          	addi	sp,sp,-16
+    14dc:	00113423          	sd	ra,8(sp)
+    14e0:	00058613          	addi	a2,a1,0
 
-0000000000001598 <dwarf::at_variable_parameter(dwarf::die const&)>:
-    1598:	fc010113          	addi	sp,sp,-64
-    159c:	02113c23          	sd	ra,56(sp)
-    15a0:	02813823          	sd	s0,48(sp)
-    15a4:	04010413          	addi	s0,sp,64
-    15a8:	fca43423          	sd	a0,-56(s0)
-    15ac:	fd840793          	addi	a5,s0,-40
-    15b0:	04b00613          	addi	a2,zero,75
-    15b4:	fc843583          	ld	a1,-56(s0)
-    15b8:	00078513          	addi	a0,a5,0
-    15bc:	00000097          	auipc	ra,0x0
-    15c0:	000080e7          	jalr	ra,0(ra) # 15bc <dwarf::at_variable_parameter(dwarf::die const&)+0x24>
-    15c4:	fd840793          	addi	a5,s0,-40
-    15c8:	00078513          	addi	a0,a5,0
+00000000000014e4 <.LM933>:
+    14e4:	00000693          	addi	a3,zero,0
+    14e8:	00050593          	addi	a1,a0,0
+
+00000000000014ec <.LM934>:
+    14ec:	00d00513          	addi	a0,zero,13
+
+00000000000014f0 <.LM935>:
+    14f0:	00000097          	auipc	ra,0x0
+    14f4:	000080e7          	jalr	ra,0(ra) # 14f0 <.LM935>
+
+00000000000014f8 <.LM936>:
+    14f8:	00813083          	ld	ra,8(sp)
+    14fc:	01010113          	addi	sp,sp,16
+    1500:	00008067          	jalr	zero,0(ra)
+
+0000000000001504 <dwarf::at_lower_bound(dwarf::die const&, dwarf::expr_context*)>:
+AT_UDYNAMIC(lower_bound); // XXX Language-based default?
+    1504:	ff010113          	addi	sp,sp,-16
+    1508:	00113423          	sd	ra,8(sp)
+    150c:	00058613          	addi	a2,a1,0
+
+0000000000001510 <.LM939>:
+    1510:	00000693          	addi	a3,zero,0
+    1514:	00050593          	addi	a1,a0,0
+
+0000000000001518 <.LM940>:
+    1518:	02200513          	addi	a0,zero,34
+
+000000000000151c <.LM941>:
+    151c:	00000097          	auipc	ra,0x0
+    1520:	000080e7          	jalr	ra,0(ra) # 151c <.LM941>
+
+0000000000001524 <.LM942>:
+    1524:	00813083          	ld	ra,8(sp)
+    1528:	01010113          	addi	sp,sp,16
+    152c:	00008067          	jalr	zero,0(ra)
+
+0000000000001530 <dwarf::at_bit_stride(dwarf::die const&, dwarf::expr_context*)>:
+AT_UDYNAMIC(bit_stride);
+    1530:	ff010113          	addi	sp,sp,-16
+    1534:	00113423          	sd	ra,8(sp)
+    1538:	00058613          	addi	a2,a1,0
+
+000000000000153c <.LM945>:
+    153c:	00000693          	addi	a3,zero,0
+    1540:	00050593          	addi	a1,a0,0
+
+0000000000001544 <.LM946>:
+    1544:	02e00513          	addi	a0,zero,46
+
+0000000000001548 <.LM947>:
+    1548:	00000097          	auipc	ra,0x0
+    154c:	000080e7          	jalr	ra,0(ra) # 1548 <.LM947>
+
+0000000000001550 <.LM948>:
+    1550:	00813083          	ld	ra,8(sp)
+    1554:	01010113          	addi	sp,sp,16
+    1558:	00008067          	jalr	zero,0(ra)
+
+000000000000155c <dwarf::at_upper_bound(dwarf::die const&, dwarf::expr_context*)>:
+AT_UDYNAMIC(upper_bound);
+    155c:	ff010113          	addi	sp,sp,-16
+    1560:	00113423          	sd	ra,8(sp)
+    1564:	00058613          	addi	a2,a1,0
+
+0000000000001568 <.LM951>:
+    1568:	00000693          	addi	a3,zero,0
+    156c:	00050593          	addi	a1,a0,0
+
+0000000000001570 <.LM952>:
+    1570:	02f00513          	addi	a0,zero,47
+
+0000000000001574 <.LM953>:
+    1574:	00000097          	auipc	ra,0x0
+    1578:	000080e7          	jalr	ra,0(ra) # 1574 <.LM953>
+
+000000000000157c <.LM954>:
+    157c:	00813083          	ld	ra,8(sp)
+    1580:	01010113          	addi	sp,sp,16
+    1584:	00008067          	jalr	zero,0(ra)
+
+0000000000001588 <dwarf::at_count(dwarf::die const&, dwarf::expr_context*)>:
+AT_UDYNAMIC(count);
+    1588:	ff010113          	addi	sp,sp,-16
+    158c:	00113423          	sd	ra,8(sp)
+    1590:	00058613          	addi	a2,a1,0
+
+0000000000001594 <.LM957>:
+    1594:	00000693          	addi	a3,zero,0
+    1598:	00050593          	addi	a1,a0,0
+
+000000000000159c <.LM958>:
+    159c:	03700513          	addi	a0,zero,55
+
+00000000000015a0 <.LM959>:
+    15a0:	00000097          	auipc	ra,0x0
+    15a4:	000080e7          	jalr	ra,0(ra) # 15a0 <.LM959>
+
+00000000000015a8 <.LM960>:
+    15a8:	00813083          	ld	ra,8(sp)
+    15ac:	01010113          	addi	sp,sp,16
+    15b0:	00008067          	jalr	zero,0(ra)
+
+00000000000015b4 <dwarf::at_allocated(dwarf::die const&, dwarf::expr_context*)>:
+AT_UDYNAMIC(allocated);
+    15b4:	ff010113          	addi	sp,sp,-16
+    15b8:	00113423          	sd	ra,8(sp)
+    15bc:	00058613          	addi	a2,a1,0
+
+00000000000015c0 <.LM963>:
+    15c0:	00000693          	addi	a3,zero,0
+    15c4:	00050593          	addi	a1,a0,0
+
+00000000000015c8 <.LM964>:
+    15c8:	04e00513          	addi	a0,zero,78
+
+00000000000015cc <.LM965>:
     15cc:	00000097          	auipc	ra,0x0
-    15d0:	000080e7          	jalr	ra,0(ra) # 15cc <dwarf::at_variable_parameter(dwarf::die const&)+0x34>
-    15d4:	00050793          	addi	a5,a0,0
-    15d8:	00078513          	addi	a0,a5,0
-    15dc:	03813083          	ld	ra,56(sp)
-    15e0:	03013403          	ld	s0,48(sp)
-    15e4:	04010113          	addi	sp,sp,64
-    15e8:	00008067          	jalr	zero,0(ra)
+    15d0:	000080e7          	jalr	ra,0(ra) # 15cc <.LM965>
 
-00000000000015ec <dwarf::at_virtuality(dwarf::die const&)>:
-    15ec:	fc010113          	addi	sp,sp,-64
-    15f0:	02113c23          	sd	ra,56(sp)
-    15f4:	02813823          	sd	s0,48(sp)
-    15f8:	04010413          	addi	s0,sp,64
-    15fc:	fca43423          	sd	a0,-56(s0)
-    1600:	fd840793          	addi	a5,s0,-40
-    1604:	04c00613          	addi	a2,zero,76
-    1608:	fc843583          	ld	a1,-56(s0)
-    160c:	00078513          	addi	a0,a5,0
-    1610:	00000097          	auipc	ra,0x0
-    1614:	000080e7          	jalr	ra,0(ra) # 1610 <dwarf::at_virtuality(dwarf::die const&)+0x24>
-    1618:	fd840793          	addi	a5,s0,-40
-    161c:	00078513          	addi	a0,a5,0
-    1620:	00000097          	auipc	ra,0x0
-    1624:	000080e7          	jalr	ra,0(ra) # 1620 <dwarf::at_virtuality(dwarf::die const&)+0x34>
-    1628:	00050793          	addi	a5,a0,0
-    162c:	0007879b          	addiw	a5,a5,0
-    1630:	00078513          	addi	a0,a5,0
-    1634:	03813083          	ld	ra,56(sp)
-    1638:	03013403          	ld	s0,48(sp)
-    163c:	04010113          	addi	sp,sp,64
-    1640:	00008067          	jalr	zero,0(ra)
+00000000000015d4 <.LM966>:
+    15d4:	00813083          	ld	ra,8(sp)
+    15d8:	01010113          	addi	sp,sp,16
+    15dc:	00008067          	jalr	zero,0(ra)
 
-0000000000001644 <dwarf::at_allocated(dwarf::die const&, dwarf::expr_context*)>:
-    1644:	fe010113          	addi	sp,sp,-32
-    1648:	00113c23          	sd	ra,24(sp)
-    164c:	00813823          	sd	s0,16(sp)
-    1650:	02010413          	addi	s0,sp,32
-    1654:	fea43423          	sd	a0,-24(s0)
-    1658:	feb43023          	sd	a1,-32(s0)
-    165c:	00000693          	addi	a3,zero,0
-    1660:	fe043603          	ld	a2,-32(s0)
-    1664:	fe843583          	ld	a1,-24(s0)
-    1668:	04e00513          	addi	a0,zero,78
-    166c:	00000097          	auipc	ra,0x0
-    1670:	000080e7          	jalr	ra,0(ra) # 166c <dwarf::at_allocated(dwarf::die const&, dwarf::expr_context*)+0x28>
-    1674:	00050793          	addi	a5,a0,0
-    1678:	00078513          	addi	a0,a5,0
-    167c:	01813083          	ld	ra,24(sp)
-    1680:	01013403          	ld	s0,16(sp)
-    1684:	02010113          	addi	sp,sp,32
-    1688:	00008067          	jalr	zero,0(ra)
+00000000000015e0 <dwarf::at_associated(dwarf::die const&, dwarf::expr_context*)>:
+AT_UDYNAMIC(associated);
+    15e0:	ff010113          	addi	sp,sp,-16
+    15e4:	00113423          	sd	ra,8(sp)
+    15e8:	00058613          	addi	a2,a1,0
 
-000000000000168c <dwarf::at_associated(dwarf::die const&, dwarf::expr_context*)>:
-    168c:	fe010113          	addi	sp,sp,-32
-    1690:	00113c23          	sd	ra,24(sp)
-    1694:	00813823          	sd	s0,16(sp)
-    1698:	02010413          	addi	s0,sp,32
-    169c:	fea43423          	sd	a0,-24(s0)
-    16a0:	feb43023          	sd	a1,-32(s0)
-    16a4:	00000693          	addi	a3,zero,0
-    16a8:	fe043603          	ld	a2,-32(s0)
-    16ac:	fe843583          	ld	a1,-24(s0)
-    16b0:	04f00513          	addi	a0,zero,79
-    16b4:	00000097          	auipc	ra,0x0
-    16b8:	000080e7          	jalr	ra,0(ra) # 16b4 <dwarf::at_associated(dwarf::die const&, dwarf::expr_context*)+0x28>
-    16bc:	00050793          	addi	a5,a0,0
-    16c0:	00078513          	addi	a0,a5,0
-    16c4:	01813083          	ld	ra,24(sp)
-    16c8:	01013403          	ld	s0,16(sp)
-    16cc:	02010113          	addi	sp,sp,32
-    16d0:	00008067          	jalr	zero,0(ra)
+00000000000015ec <.LM969>:
+    15ec:	00000693          	addi	a3,zero,0
+    15f0:	00050593          	addi	a1,a0,0
 
-00000000000016d4 <dwarf::at_byte_stride(dwarf::die const&, dwarf::expr_context*)>:
-    16d4:	fe010113          	addi	sp,sp,-32
-    16d8:	00113c23          	sd	ra,24(sp)
-    16dc:	00813823          	sd	s0,16(sp)
-    16e0:	02010413          	addi	s0,sp,32
-    16e4:	fea43423          	sd	a0,-24(s0)
-    16e8:	feb43023          	sd	a1,-32(s0)
-    16ec:	00000693          	addi	a3,zero,0
-    16f0:	fe043603          	ld	a2,-32(s0)
-    16f4:	fe843583          	ld	a1,-24(s0)
-    16f8:	05100513          	addi	a0,zero,81
-    16fc:	00000097          	auipc	ra,0x0
-    1700:	000080e7          	jalr	ra,0(ra) # 16fc <dwarf::at_byte_stride(dwarf::die const&, dwarf::expr_context*)+0x28>
-    1704:	00050793          	addi	a5,a0,0
-    1708:	00078513          	addi	a0,a5,0
-    170c:	01813083          	ld	ra,24(sp)
-    1710:	01013403          	ld	s0,16(sp)
-    1714:	02010113          	addi	sp,sp,32
-    1718:	00008067          	jalr	zero,0(ra)
+00000000000015f4 <.LM970>:
+    15f4:	04f00513          	addi	a0,zero,79
 
-000000000000171c <dwarf::at_entry_pc(dwarf::die const&)>:
-    171c:	fc010113          	addi	sp,sp,-64
-    1720:	02113c23          	sd	ra,56(sp)
-    1724:	02813823          	sd	s0,48(sp)
-    1728:	04010413          	addi	s0,sp,64
-    172c:	fca43423          	sd	a0,-56(s0)
-    1730:	fd840793          	addi	a5,s0,-40
-    1734:	05200613          	addi	a2,zero,82
-    1738:	fc843583          	ld	a1,-56(s0)
-    173c:	00078513          	addi	a0,a5,0
-    1740:	00000097          	auipc	ra,0x0
-    1744:	000080e7          	jalr	ra,0(ra) # 1740 <dwarf::at_entry_pc(dwarf::die const&)+0x24>
-    1748:	fd840793          	addi	a5,s0,-40
-    174c:	00078513          	addi	a0,a5,0
+00000000000015f8 <.LM971>:
+    15f8:	00000097          	auipc	ra,0x0
+    15fc:	000080e7          	jalr	ra,0(ra) # 15f8 <.LM971>
+
+0000000000001600 <.LM972>:
+    1600:	00813083          	ld	ra,8(sp)
+    1604:	01010113          	addi	sp,sp,16
+    1608:	00008067          	jalr	zero,0(ra)
+
+000000000000160c <dwarf::at_byte_stride(dwarf::die const&, dwarf::expr_context*)>:
+AT_UDYNAMIC(byte_stride);
+    160c:	ff010113          	addi	sp,sp,-16
+    1610:	00113423          	sd	ra,8(sp)
+    1614:	00058613          	addi	a2,a1,0
+
+0000000000001618 <.LM975>:
+    1618:	00000693          	addi	a3,zero,0
+    161c:	00050593          	addi	a1,a0,0
+
+0000000000001620 <.LM976>:
+    1620:	05100513          	addi	a0,zero,81
+
+0000000000001624 <.LM977>:
+    1624:	00000097          	auipc	ra,0x0
+    1628:	000080e7          	jalr	ra,0(ra) # 1624 <.LM977>
+
+000000000000162c <.LM978>:
+    162c:	00813083          	ld	ra,8(sp)
+    1630:	01010113          	addi	sp,sp,16
+    1634:	00008067          	jalr	zero,0(ra)
+
+0000000000001638 <dwarf::at_high_pc(dwarf::die const&)>:
+taddr at_high_pc(const die &d) {
+    1638:	f4010113          	addi	sp,sp,-192
+    163c:	0a113c23          	sd	ra,184(sp)
+    1640:	0a813823          	sd	s0,176(sp)
+    1644:	0a913423          	sd	s1,168(sp)
+    1648:	00050413          	addi	s0,a0,0
+
+000000000000164c <.LM981>:
+  value v(d[DW_AT::high_pc]);
+    164c:	01200613          	addi	a2,zero,18
+    1650:	00050593          	addi	a1,a0,0
+    1654:	08810513          	addi	a0,sp,136
+
+0000000000001658 <.LEHB19>:
+    1658:	00000097          	auipc	ra,0x0
+    165c:	000080e7          	jalr	ra,0(ra) # 1658 <.LEHB19>
+
+0000000000001660 <.LBB1475>:
+  type get_type() const { return typ; }
+    1660:	09412783          	lw	a5,148(sp)
+
+0000000000001664 <.LBE1475>:
+  switch (v.get_type()) {
+    1664:	00100713          	addi	a4,zero,1
+    1668:	04e78063          	beq	a5,a4,16a8 <.L219>
+    166c:	ffd7879b          	addiw	a5,a5,-3
+    1670:	04f76463          	bltu	a4,a5,16b8 <.L220>
+
+0000000000001674 <.LM990>:
+    return at_low_pc(d) + v.as_uconstant();
+    1674:	00040513          	addi	a0,s0,0
+    1678:	00000097          	auipc	ra,0x0
+    167c:	000080e7          	jalr	ra,0(ra) # 1678 <.LM990+0x4>
+
+0000000000001680 <.LVL476>:
+    1680:	00050413          	addi	s0,a0,0
+
+0000000000001684 <.LM994>:
+    1684:	08810513          	addi	a0,sp,136
+    1688:	00000097          	auipc	ra,0x0
+    168c:	000080e7          	jalr	ra,0(ra) # 1688 <.LM994+0x4>
+
+0000000000001690 <.LM995>:
+    1690:	00a40533          	add	a0,s0,a0
+
+0000000000001694 <.L218>:
+}
+    1694:	0b813083          	ld	ra,184(sp)
+    1698:	0b013403          	ld	s0,176(sp)
+    169c:	0a813483          	ld	s1,168(sp)
+    16a0:	0c010113          	addi	sp,sp,192
+    16a4:	00008067          	jalr	zero,0(ra)
+
+00000000000016a8 <.L219>:
+    return v.as_address();
+    16a8:	08810513          	addi	a0,sp,136
+    16ac:	00000097          	auipc	ra,0x0
+    16b0:	000080e7          	jalr	ra,0(ra) # 16ac <.L219+0x4>
+
+00000000000016b4 <.LEHE19>:
+    16b4:	fe1ff06f          	jal	zero,1694 <.L218>
+
+00000000000016b8 <.L220>:
+                       to_string(v.get_type()));
+    16b8:	01000513          	addi	a0,zero,16
+    16bc:	00000097          	auipc	ra,0x0
+    16c0:	000080e7          	jalr	ra,0(ra) # 16bc <.L220+0x4>
+
+00000000000016c4 <.LVL481>:
+    16c4:	00050493          	addi	s1,a0,0
+
+00000000000016c8 <.LM1003>:
+    throw format_error(to_string(DW_AT::high_pc) + " has unexpected type " +
+    16c8:	01200593          	addi	a1,zero,18
+    16cc:	00810513          	addi	a0,sp,8
+
+00000000000016d0 <.LEHB20>:
+    16d0:	00000097          	auipc	ra,0x0
+    16d4:	000080e7          	jalr	ra,0(ra) # 16d0 <.LEHB20>
+
+00000000000016d8 <.LBB1477>:
+    { return std::move(__lhs.append(__rhs)); }
+    16d8:	00000597          	auipc	a1,0x0
+    16dc:	00058593          	addi	a1,a1,0 # 16d8 <.LBB1477>
+    16e0:	00810513          	addi	a0,sp,8
+
+00000000000016e4 <.LEHB21>:
+    16e4:	00000097          	auipc	ra,0x0
+    16e8:	000080e7          	jalr	ra,0(ra) # 16e4 <.LEHB21>
+
+00000000000016ec <.LEHE21>:
+    16ec:	00050593          	addi	a1,a0,0
+
+00000000000016f0 <.LM1008>:
+    16f0:	02810513          	addi	a0,sp,40
+    16f4:	00000097          	auipc	ra,0x0
+    16f8:	000080e7          	jalr	ra,0(ra) # 16f4 <.LM1008+0x4>
+
+00000000000016fc <.LBB1479>:
+                       to_string(v.get_type()));
+    16fc:	09412583          	lw	a1,148(sp)
+    1700:	04810513          	addi	a0,sp,72
+
+0000000000001704 <.LEHB22>:
+    1704:	00000097          	auipc	ra,0x0
+    1708:	000080e7          	jalr	ra,0(ra) # 1704 <.LEHB22>
+
+000000000000170c <.LEHE22>:
+    throw format_error(to_string(DW_AT::high_pc) + " has unexpected type " +
+    170c:	04810613          	addi	a2,sp,72
+    1710:	02810593          	addi	a1,sp,40
+    1714:	06810513          	addi	a0,sp,104
+    1718:	00000317          	auipc	t1,0x0
+    171c:	00033303          	ld	t1,0(t1) # 1718 <.LEHE22+0xc>
+
+0000000000001720 <.LEHB23>:
+    1720:	000300e7          	jalr	ra,0(t1)
+
+0000000000001724 <.LBB1481>:
+      : std::runtime_error(what_arg) {}
+    1724:	06810593          	addi	a1,sp,104
+
+0000000000001728 <.LM1017>:
+    1728:	00048513          	addi	a0,s1,0
+
+000000000000172c <.LEHB24>:
+    172c:	00000097          	auipc	ra,0x0
+    1730:	000080e7          	jalr	ra,0(ra) # 172c <.LEHB24>
+
+0000000000001734 <.LEHE24>:
+    1734:	00000797          	auipc	a5,0x0
+    1738:	0007b783          	ld	a5,0(a5) # 1734 <.LEHE24>
+    173c:	01078793          	addi	a5,a5,16
+    1740:	00f4b023          	sd	a5,0(s1)
+
+0000000000001744 <.LBB1483>:
+      { return _M_dataplus._M_p; }
+    1744:	06813503          	ld	a0,104(sp)
+
+0000000000001748 <.LBB1490>:
+	if (!_M_is_local())
+    1748:	07810793          	addi	a5,sp,120
+    174c:	00f50663          	beq	a0,a5,1758 <.L222>
+
+0000000000001750 <.LBB1491>:
     1750:	00000097          	auipc	ra,0x0
-    1754:	000080e7          	jalr	ra,0(ra) # 1750 <dwarf::at_entry_pc(dwarf::die const&)+0x34>
-    1758:	00050793          	addi	a5,a0,0
-    175c:	00078513          	addi	a0,a5,0
-    1760:	03813083          	ld	ra,56(sp)
-    1764:	03013403          	ld	s0,48(sp)
-    1768:	04010113          	addi	sp,sp,64
-    176c:	00008067          	jalr	zero,0(ra)
+    1754:	000080e7          	jalr	ra,0(ra) # 1750 <.LBB1491>
 
-0000000000001770 <dwarf::at_use_UTF8(dwarf::die const&)>:
-    1770:	fc010113          	addi	sp,sp,-64
-    1774:	02113c23          	sd	ra,56(sp)
-    1778:	02813823          	sd	s0,48(sp)
-    177c:	04010413          	addi	s0,sp,64
-    1780:	fca43423          	sd	a0,-56(s0)
-    1784:	fd840793          	addi	a5,s0,-40
-    1788:	05300613          	addi	a2,zero,83
-    178c:	fc843583          	ld	a1,-56(s0)
-    1790:	00078513          	addi	a0,a5,0
-    1794:	00000097          	auipc	ra,0x0
-    1798:	000080e7          	jalr	ra,0(ra) # 1794 <dwarf::at_use_UTF8(dwarf::die const&)+0x24>
-    179c:	fd840793          	addi	a5,s0,-40
-    17a0:	00078513          	addi	a0,a5,0
-    17a4:	00000097          	auipc	ra,0x0
-    17a8:	000080e7          	jalr	ra,0(ra) # 17a4 <dwarf::at_use_UTF8(dwarf::die const&)+0x34>
-    17ac:	00050793          	addi	a5,a0,0
-    17b0:	00078513          	addi	a0,a5,0
-    17b4:	03813083          	ld	ra,56(sp)
-    17b8:	03013403          	ld	s0,48(sp)
-    17bc:	04010113          	addi	sp,sp,64
-    17c0:	00008067          	jalr	zero,0(ra)
+0000000000001758 <.L222>:
+      { return _M_dataplus._M_p; }
+    1758:	04813503          	ld	a0,72(sp)
 
-00000000000017c4 <dwarf::at_extension(dwarf::die const&)>:
-    17c4:	fc010113          	addi	sp,sp,-64
-    17c8:	02113c23          	sd	ra,56(sp)
-    17cc:	02813823          	sd	s0,48(sp)
-    17d0:	04010413          	addi	s0,sp,64
-    17d4:	fca43423          	sd	a0,-56(s0)
-    17d8:	fcb43023          	sd	a1,-64(s0)
-    17dc:	fd840793          	addi	a5,s0,-40
-    17e0:	05400613          	addi	a2,zero,84
-    17e4:	fc043583          	ld	a1,-64(s0)
-    17e8:	00078513          	addi	a0,a5,0
-    17ec:	00000097          	auipc	ra,0x0
-    17f0:	000080e7          	jalr	ra,0(ra) # 17ec <dwarf::at_extension(dwarf::die const&)+0x28>
-    17f4:	fc843783          	ld	a5,-56(s0)
-    17f8:	fd840713          	addi	a4,s0,-40
-    17fc:	00070593          	addi	a1,a4,0
-    1800:	00078513          	addi	a0,a5,0
-    1804:	00000097          	auipc	ra,0x0
-    1808:	000080e7          	jalr	ra,0(ra) # 1804 <dwarf::at_extension(dwarf::die const&)+0x40>
-    180c:	fc843503          	ld	a0,-56(s0)
-    1810:	03813083          	ld	ra,56(sp)
-    1814:	03013403          	ld	s0,48(sp)
-    1818:	04010113          	addi	sp,sp,64
-    181c:	00008067          	jalr	zero,0(ra)
+000000000000175c <.LBB1506>:
+	if (!_M_is_local())
+    175c:	05810793          	addi	a5,sp,88
+    1760:	00f50663          	beq	a0,a5,176c <.L223>
 
-0000000000001820 <dwarf::at_ranges(dwarf::die const&)>:
-    1820:	fc010113          	addi	sp,sp,-64
-    1824:	02113c23          	sd	ra,56(sp)
-    1828:	02813823          	sd	s0,48(sp)
-    182c:	04010413          	addi	s0,sp,64
-    1830:	fca43423          	sd	a0,-56(s0)
-    1834:	fcb43023          	sd	a1,-64(s0)
-    1838:	fd840793          	addi	a5,s0,-40
-    183c:	05500613          	addi	a2,zero,85
-    1840:	fc043583          	ld	a1,-64(s0)
-    1844:	00078513          	addi	a0,a5,0
-    1848:	00000097          	auipc	ra,0x0
-    184c:	000080e7          	jalr	ra,0(ra) # 1848 <dwarf::at_ranges(dwarf::die const&)+0x28>
-    1850:	fc843783          	ld	a5,-56(s0)
-    1854:	fd840713          	addi	a4,s0,-40
-    1858:	00070593          	addi	a1,a4,0
-    185c:	00078513          	addi	a0,a5,0
+0000000000001764 <.LBB1507>:
+    1764:	00000097          	auipc	ra,0x0
+    1768:	000080e7          	jalr	ra,0(ra) # 1764 <.LBB1507>
+
+000000000000176c <.L223>:
+      { return _M_dataplus._M_p; }
+    176c:	02813503          	ld	a0,40(sp)
+
+0000000000001770 <.LBB1522>:
+	if (!_M_is_local())
+    1770:	03810793          	addi	a5,sp,56
+    1774:	00f50663          	beq	a0,a5,1780 <.L224>
+
+0000000000001778 <.LBB1523>:
+    1778:	00000097          	auipc	ra,0x0
+    177c:	000080e7          	jalr	ra,0(ra) # 1778 <.LBB1523>
+
+0000000000001780 <.L224>:
+      { return _M_dataplus._M_p; }
+    1780:	00813503          	ld	a0,8(sp)
+
+0000000000001784 <.LBB1538>:
+	if (!_M_is_local())
+    1784:	01810793          	addi	a5,sp,24
+    1788:	00f50663          	beq	a0,a5,1794 <.L225>
+
+000000000000178c <.LBB1539>:
+    178c:	00000097          	auipc	ra,0x0
+    1790:	000080e7          	jalr	ra,0(ra) # 178c <.LBB1539>
+
+0000000000001794 <.L225>:
+                       to_string(v.get_type()));
+    1794:	00000617          	auipc	a2,0x0
+    1798:	00063603          	ld	a2,0(a2) # 1794 <.L225>
+    179c:	00000597          	auipc	a1,0x0
+    17a0:	0005b583          	ld	a1,0(a1) # 179c <.L225+0x8>
+    17a4:	00048513          	addi	a0,s1,0
+
+00000000000017a8 <.LEHB25>:
+    17a8:	00000097          	auipc	ra,0x0
+    17ac:	000080e7          	jalr	ra,0(ra) # 17a8 <.LEHB25>
+
+00000000000017b0 <.L239>:
+      { return _M_dataplus._M_p; }
+    17b0:	00050413          	addi	s0,a0,0
+
+00000000000017b4 <.LBB1555>:
+    17b4:	06813503          	ld	a0,104(sp)
+
+00000000000017b8 <.LBB1556>:
+	if (!_M_is_local())
+    17b8:	07810793          	addi	a5,sp,120
+    17bc:	00f50663          	beq	a0,a5,17c8 <.L228>
+
+00000000000017c0 <.LBB1558>:
+    17c0:	00000097          	auipc	ra,0x0
+    17c4:	000080e7          	jalr	ra,0(ra) # 17c0 <.LBB1558>
+
+00000000000017c8 <.L228>:
+      { return _M_dataplus._M_p; }
+    17c8:	04813503          	ld	a0,72(sp)
+
+00000000000017cc <.LBB1577>:
+	if (!_M_is_local())
+    17cc:	05810793          	addi	a5,sp,88
+    17d0:	00f50663          	beq	a0,a5,17dc <.L230>
+
+00000000000017d4 <.LBB1579>:
+    17d4:	00000097          	auipc	ra,0x0
+    17d8:	000080e7          	jalr	ra,0(ra) # 17d4 <.LBB1579>
+
+00000000000017dc <.L230>:
+      { return _M_dataplus._M_p; }
+    17dc:	02813503          	ld	a0,40(sp)
+
+00000000000017e0 <.LBB1599>:
+	if (!_M_is_local())
+    17e0:	03810793          	addi	a5,sp,56
+    17e4:	00f50663          	beq	a0,a5,17f0 <.L232>
+
+00000000000017e8 <.LBB1601>:
+    17e8:	00000097          	auipc	ra,0x0
+    17ec:	000080e7          	jalr	ra,0(ra) # 17e8 <.LBB1601>
+
+00000000000017f0 <.L232>:
+      { return _M_dataplus._M_p; }
+    17f0:	00813503          	ld	a0,8(sp)
+
+00000000000017f4 <.LBB1621>:
+	if (!_M_is_local())
+    17f4:	01810793          	addi	a5,sp,24
+    17f8:	00f50663          	beq	a0,a5,1804 <.L234>
+
+00000000000017fc <.LBB1623>:
+    17fc:	00000097          	auipc	ra,0x0
+    1800:	000080e7          	jalr	ra,0(ra) # 17fc <.LBB1623>
+
+0000000000001804 <.L234>:
+    1804:	00048513          	addi	a0,s1,0
+    1808:	00000097          	auipc	ra,0x0
+    180c:	000080e7          	jalr	ra,0(ra) # 1808 <.L234+0x4>
+
+0000000000001810 <.LVL517>:
+    1810:	00040513          	addi	a0,s0,0
+    1814:	00000097          	auipc	ra,0x0
+    1818:	000080e7          	jalr	ra,0(ra) # 1814 <.LVL517+0x4>
+
+000000000000181c <.L238>:
+      { return _M_dataplus._M_p; }
+    181c:	00050413          	addi	s0,a0,0
+
+0000000000001820 <.LM1169>:
+    1820:	fa9ff06f          	jal	zero,17c8 <.L228>
+
+0000000000001824 <.L237>:
+    1824:	00050413          	addi	s0,a0,0
+
+0000000000001828 <.LM1171>:
+    1828:	fb5ff06f          	jal	zero,17dc <.L230>
+
+000000000000182c <.L236>:
+    182c:	00050413          	addi	s0,a0,0
+
+0000000000001830 <.LM1173>:
+    1830:	fc1ff06f          	jal	zero,17f0 <.L232>
+
+0000000000001834 <.L235>:
+    1834:	00050413          	addi	s0,a0,0
+
+0000000000001838 <.LM1176>:
+    1838:	fcdff06f          	jal	zero,1804 <.L234>
+
+000000000000183c <dwarf::die_pc_range(dwarf::die const&)>:
+
+rangelist die_pc_range(const die &d) {
+    183c:	fc010113          	addi	sp,sp,-64
+    1840:	02113c23          	sd	ra,56(sp)
+    1844:	02813823          	sd	s0,48(sp)
+    1848:	02913423          	sd	s1,40(sp)
+    184c:	03213023          	sd	s2,32(sp)
+    1850:	00050493          	addi	s1,a0,0
+    1854:	00058413          	addi	s0,a1,0
+
+0000000000001858 <.LM1179>:
+  // DWARF4 section 2.17
+  if (d.has(DW_AT::ranges))
+    1858:	05500593          	addi	a1,zero,85
+
+000000000000185c <.LM1181>:
+    185c:	00040513          	addi	a0,s0,0
+
+0000000000001860 <.LM1182>:
     1860:	00000097          	auipc	ra,0x0
-    1864:	000080e7          	jalr	ra,0(ra) # 1860 <dwarf::at_ranges(dwarf::die const&)+0x40>
-    1868:	fc843503          	ld	a0,-56(s0)
-    186c:	03813083          	ld	ra,56(sp)
-    1870:	03013403          	ld	s0,48(sp)
-    1874:	04010113          	addi	sp,sp,64
-    1878:	00008067          	jalr	zero,0(ra)
+    1864:	000080e7          	jalr	ra,0(ra) # 1860 <.LM1182>
 
-000000000000187c <dwarf::at_description[abi:cxx11](dwarf::die const&)>:
-    187c:	fc010113          	addi	sp,sp,-64
-    1880:	02113c23          	sd	ra,56(sp)
-    1884:	02813823          	sd	s0,48(sp)
-    1888:	04010413          	addi	s0,sp,64
-    188c:	fca43423          	sd	a0,-56(s0)
-    1890:	fcb43023          	sd	a1,-64(s0)
-    1894:	fd840793          	addi	a5,s0,-40
-    1898:	05a00613          	addi	a2,zero,90
-    189c:	fc043583          	ld	a1,-64(s0)
-    18a0:	00078513          	addi	a0,a5,0
-    18a4:	00000097          	auipc	ra,0x0
-    18a8:	000080e7          	jalr	ra,0(ra) # 18a4 <dwarf::at_description[abi:cxx11](dwarf::die const&)+0x28>
-    18ac:	fc843783          	ld	a5,-56(s0)
-    18b0:	fd840713          	addi	a4,s0,-40
-    18b4:	00070593          	addi	a1,a4,0
-    18b8:	00078513          	addi	a0,a5,0
-    18bc:	00000097          	auipc	ra,0x0
-    18c0:	000080e7          	jalr	ra,0(ra) # 18bc <dwarf::at_description[abi:cxx11](dwarf::die const&)+0x40>
-    18c4:	fc843503          	ld	a0,-56(s0)
-    18c8:	03813083          	ld	ra,56(sp)
-    18cc:	03013403          	ld	s0,48(sp)
-    18d0:	04010113          	addi	sp,sp,64
-    18d4:	00008067          	jalr	zero,0(ra)
+0000000000001868 <.LM1183>:
+    1868:	02050863          	beq	a0,zero,1898 <.L242>
 
-00000000000018d8 <dwarf::at_small(dwarf::die const&)>:
-    18d8:	fc010113          	addi	sp,sp,-64
-    18dc:	02113c23          	sd	ra,56(sp)
-    18e0:	02813823          	sd	s0,48(sp)
-    18e4:	04010413          	addi	s0,sp,64
-    18e8:	fca43423          	sd	a0,-56(s0)
-    18ec:	fcb43023          	sd	a1,-64(s0)
-    18f0:	fd840793          	addi	a5,s0,-40
-    18f4:	05d00613          	addi	a2,zero,93
-    18f8:	fc043583          	ld	a1,-64(s0)
-    18fc:	00078513          	addi	a0,a5,0
-    1900:	00000097          	auipc	ra,0x0
-    1904:	000080e7          	jalr	ra,0(ra) # 1900 <dwarf::at_small(dwarf::die const&)+0x28>
-    1908:	fc843783          	ld	a5,-56(s0)
-    190c:	fd840713          	addi	a4,s0,-40
-    1910:	00070593          	addi	a1,a4,0
-    1914:	00078513          	addi	a0,a5,0
-    1918:	00000097          	auipc	ra,0x0
-    191c:	000080e7          	jalr	ra,0(ra) # 1918 <dwarf::at_small(dwarf::die const&)+0x40>
-    1920:	fc843503          	ld	a0,-56(s0)
-    1924:	03813083          	ld	ra,56(sp)
-    1928:	03013403          	ld	s0,48(sp)
-    192c:	04010113          	addi	sp,sp,64
-    1930:	00008067          	jalr	zero,0(ra)
+000000000000186c <.LM1184>:
+    return at_ranges(d);
+    186c:	00040593          	addi	a1,s0,0
+    1870:	00048513          	addi	a0,s1,0
+    1874:	00000097          	auipc	ra,0x0
+    1878:	000080e7          	jalr	ra,0(ra) # 1874 <.LM1184+0x8>
 
-0000000000001934 <dwarf::at_picture_string[abi:cxx11](dwarf::die const&)>:
-    1934:	fc010113          	addi	sp,sp,-64
-    1938:	02113c23          	sd	ra,56(sp)
-    193c:	02813823          	sd	s0,48(sp)
-    1940:	04010413          	addi	s0,sp,64
-    1944:	fca43423          	sd	a0,-56(s0)
-    1948:	fcb43023          	sd	a1,-64(s0)
-    194c:	fd840793          	addi	a5,s0,-40
-    1950:	06000613          	addi	a2,zero,96
-    1954:	fc043583          	ld	a1,-64(s0)
-    1958:	00078513          	addi	a0,a5,0
-    195c:	00000097          	auipc	ra,0x0
-    1960:	000080e7          	jalr	ra,0(ra) # 195c <dwarf::at_picture_string[abi:cxx11](dwarf::die const&)+0x28>
-    1964:	fc843783          	ld	a5,-56(s0)
-    1968:	fd840713          	addi	a4,s0,-40
-    196c:	00070593          	addi	a1,a4,0
-    1970:	00078513          	addi	a0,a5,0
-    1974:	00000097          	auipc	ra,0x0
-    1978:	000080e7          	jalr	ra,0(ra) # 1974 <dwarf::at_picture_string[abi:cxx11](dwarf::die const&)+0x40>
-    197c:	fc843503          	ld	a0,-56(s0)
-    1980:	03813083          	ld	ra,56(sp)
-    1984:	03013403          	ld	s0,48(sp)
-    1988:	04010113          	addi	sp,sp,64
-    198c:	00008067          	jalr	zero,0(ra)
+000000000000187c <.L241>:
+  taddr low = at_low_pc(d);
+  taddr high = d.has(DW_AT::high_pc) ? at_high_pc(d) : (low + 1);
+  return rangelist({{low, high}});
+}
+    187c:	00048513          	addi	a0,s1,0
+    1880:	03813083          	ld	ra,56(sp)
+    1884:	03013403          	ld	s0,48(sp)
 
-0000000000001990 <dwarf::at_mutable(dwarf::die const&)>:
-    1990:	fc010113          	addi	sp,sp,-64
-    1994:	02113c23          	sd	ra,56(sp)
-    1998:	02813823          	sd	s0,48(sp)
-    199c:	04010413          	addi	s0,sp,64
-    19a0:	fca43423          	sd	a0,-56(s0)
-    19a4:	fd840793          	addi	a5,s0,-40
-    19a8:	06100613          	addi	a2,zero,97
-    19ac:	fc843583          	ld	a1,-56(s0)
-    19b0:	00078513          	addi	a0,a5,0
-    19b4:	00000097          	auipc	ra,0x0
-    19b8:	000080e7          	jalr	ra,0(ra) # 19b4 <dwarf::at_mutable(dwarf::die const&)+0x24>
-    19bc:	fd840793          	addi	a5,s0,-40
-    19c0:	00078513          	addi	a0,a5,0
-    19c4:	00000097          	auipc	ra,0x0
-    19c8:	000080e7          	jalr	ra,0(ra) # 19c4 <dwarf::at_mutable(dwarf::die const&)+0x34>
-    19cc:	00050793          	addi	a5,a0,0
-    19d0:	00078513          	addi	a0,a5,0
-    19d4:	03813083          	ld	ra,56(sp)
-    19d8:	03013403          	ld	s0,48(sp)
-    19dc:	04010113          	addi	sp,sp,64
-    19e0:	00008067          	jalr	zero,0(ra)
+0000000000001888 <.LM1187>:
+    1888:	02813483          	ld	s1,40(sp)
 
-00000000000019e4 <dwarf::at_threads_scaled(dwarf::die const&)>:
-    19e4:	fc010113          	addi	sp,sp,-64
-    19e8:	02113c23          	sd	ra,56(sp)
-    19ec:	02813823          	sd	s0,48(sp)
-    19f0:	04010413          	addi	s0,sp,64
-    19f4:	fca43423          	sd	a0,-56(s0)
-    19f8:	fd840793          	addi	a5,s0,-40
-    19fc:	06200613          	addi	a2,zero,98
-    1a00:	fc843583          	ld	a1,-56(s0)
-    1a04:	00078513          	addi	a0,a5,0
-    1a08:	00000097          	auipc	ra,0x0
-    1a0c:	000080e7          	jalr	ra,0(ra) # 1a08 <dwarf::at_threads_scaled(dwarf::die const&)+0x24>
-    1a10:	fd840793          	addi	a5,s0,-40
-    1a14:	00078513          	addi	a0,a5,0
-    1a18:	00000097          	auipc	ra,0x0
-    1a1c:	000080e7          	jalr	ra,0(ra) # 1a18 <dwarf::at_threads_scaled(dwarf::die const&)+0x34>
-    1a20:	00050793          	addi	a5,a0,0
-    1a24:	00078513          	addi	a0,a5,0
-    1a28:	03813083          	ld	ra,56(sp)
-    1a2c:	03013403          	ld	s0,48(sp)
-    1a30:	04010113          	addi	sp,sp,64
-    1a34:	00008067          	jalr	zero,0(ra)
+000000000000188c <.LM1188>:
+    188c:	02013903          	ld	s2,32(sp)
+    1890:	04010113          	addi	sp,sp,64
+    1894:	00008067          	jalr	zero,0(ra)
 
-0000000000001a38 <dwarf::at_explicit(dwarf::die const&)>:
-    1a38:	fc010113          	addi	sp,sp,-64
-    1a3c:	02113c23          	sd	ra,56(sp)
-    1a40:	02813823          	sd	s0,48(sp)
-    1a44:	04010413          	addi	s0,sp,64
-    1a48:	fca43423          	sd	a0,-56(s0)
-    1a4c:	fd840793          	addi	a5,s0,-40
-    1a50:	06300613          	addi	a2,zero,99
-    1a54:	fc843583          	ld	a1,-56(s0)
-    1a58:	00078513          	addi	a0,a5,0
-    1a5c:	00000097          	auipc	ra,0x0
-    1a60:	000080e7          	jalr	ra,0(ra) # 1a5c <dwarf::at_explicit(dwarf::die const&)+0x24>
-    1a64:	fd840793          	addi	a5,s0,-40
-    1a68:	00078513          	addi	a0,a5,0
-    1a6c:	00000097          	auipc	ra,0x0
-    1a70:	000080e7          	jalr	ra,0(ra) # 1a6c <dwarf::at_explicit(dwarf::die const&)+0x34>
-    1a74:	00050793          	addi	a5,a0,0
-    1a78:	00078513          	addi	a0,a5,0
-    1a7c:	03813083          	ld	ra,56(sp)
-    1a80:	03013403          	ld	s0,48(sp)
-    1a84:	04010113          	addi	sp,sp,64
-    1a88:	00008067          	jalr	zero,0(ra)
+0000000000001898 <.L242>:
+  taddr low = at_low_pc(d);
+    1898:	00040513          	addi	a0,s0,0
+    189c:	00000097          	auipc	ra,0x0
+    18a0:	000080e7          	jalr	ra,0(ra) # 189c <.L242+0x4>
 
-0000000000001a8c <dwarf::at_object_pointer(dwarf::die const&)>:
-    1a8c:	fc010113          	addi	sp,sp,-64
-    1a90:	02113c23          	sd	ra,56(sp)
-    1a94:	02813823          	sd	s0,48(sp)
-    1a98:	04010413          	addi	s0,sp,64
-    1a9c:	fca43423          	sd	a0,-56(s0)
-    1aa0:	fcb43023          	sd	a1,-64(s0)
-    1aa4:	fd840793          	addi	a5,s0,-40
-    1aa8:	06400613          	addi	a2,zero,100
-    1aac:	fc043583          	ld	a1,-64(s0)
-    1ab0:	00078513          	addi	a0,a5,0
-    1ab4:	00000097          	auipc	ra,0x0
-    1ab8:	000080e7          	jalr	ra,0(ra) # 1ab4 <dwarf::at_object_pointer(dwarf::die const&)+0x28>
-    1abc:	fc843783          	ld	a5,-56(s0)
-    1ac0:	fd840713          	addi	a4,s0,-40
-    1ac4:	00070593          	addi	a1,a4,0
-    1ac8:	00078513          	addi	a0,a5,0
-    1acc:	00000097          	auipc	ra,0x0
-    1ad0:	000080e7          	jalr	ra,0(ra) # 1acc <dwarf::at_object_pointer(dwarf::die const&)+0x40>
-    1ad4:	fc843503          	ld	a0,-56(s0)
-    1ad8:	03813083          	ld	ra,56(sp)
-    1adc:	03013403          	ld	s0,48(sp)
-    1ae0:	04010113          	addi	sp,sp,64
-    1ae4:	00008067          	jalr	zero,0(ra)
+00000000000018a4 <.LVL534>:
+    18a4:	00050913          	addi	s2,a0,0
 
-0000000000001ae8 <dwarf::at_endianity(dwarf::die const&)>:
-    1ae8:	fc010113          	addi	sp,sp,-64
-    1aec:	02113c23          	sd	ra,56(sp)
-    1af0:	02813823          	sd	s0,48(sp)
-    1af4:	04010413          	addi	s0,sp,64
-    1af8:	fca43423          	sd	a0,-56(s0)
-    1afc:	fd840793          	addi	a5,s0,-40
-    1b00:	06500613          	addi	a2,zero,101
-    1b04:	fc843583          	ld	a1,-56(s0)
-    1b08:	00078513          	addi	a0,a5,0
-    1b0c:	00000097          	auipc	ra,0x0
-    1b10:	000080e7          	jalr	ra,0(ra) # 1b0c <dwarf::at_endianity(dwarf::die const&)+0x24>
-    1b14:	fd840793          	addi	a5,s0,-40
-    1b18:	00078513          	addi	a0,a5,0
-    1b1c:	00000097          	auipc	ra,0x0
-    1b20:	000080e7          	jalr	ra,0(ra) # 1b1c <dwarf::at_endianity(dwarf::die const&)+0x34>
-    1b24:	00050793          	addi	a5,a0,0
-    1b28:	0007879b          	addiw	a5,a5,0
-    1b2c:	00078513          	addi	a0,a5,0
-    1b30:	03813083          	ld	ra,56(sp)
-    1b34:	03013403          	ld	s0,48(sp)
-    1b38:	04010113          	addi	sp,sp,64
-    1b3c:	00008067          	jalr	zero,0(ra)
+00000000000018a8 <.LM1191>:
+  taddr high = d.has(DW_AT::high_pc) ? at_high_pc(d) : (low + 1);
+    18a8:	01200593          	addi	a1,zero,18
+    18ac:	00040513          	addi	a0,s0,0
 
-0000000000001b40 <dwarf::at_elemental(dwarf::die const&)>:
-    1b40:	fc010113          	addi	sp,sp,-64
-    1b44:	02113c23          	sd	ra,56(sp)
-    1b48:	02813823          	sd	s0,48(sp)
-    1b4c:	04010413          	addi	s0,sp,64
-    1b50:	fca43423          	sd	a0,-56(s0)
-    1b54:	fd840793          	addi	a5,s0,-40
-    1b58:	06600613          	addi	a2,zero,102
-    1b5c:	fc843583          	ld	a1,-56(s0)
-    1b60:	00078513          	addi	a0,a5,0
-    1b64:	00000097          	auipc	ra,0x0
-    1b68:	000080e7          	jalr	ra,0(ra) # 1b64 <dwarf::at_elemental(dwarf::die const&)+0x24>
-    1b6c:	fd840793          	addi	a5,s0,-40
-    1b70:	00078513          	addi	a0,a5,0
-    1b74:	00000097          	auipc	ra,0x0
-    1b78:	000080e7          	jalr	ra,0(ra) # 1b74 <dwarf::at_elemental(dwarf::die const&)+0x34>
-    1b7c:	00050793          	addi	a5,a0,0
-    1b80:	00078513          	addi	a0,a5,0
-    1b84:	03813083          	ld	ra,56(sp)
-    1b88:	03013403          	ld	s0,48(sp)
-    1b8c:	04010113          	addi	sp,sp,64
-    1b90:	00008067          	jalr	zero,0(ra)
+00000000000018b0 <.LM1193>:
+    18b0:	00000097          	auipc	ra,0x0
+    18b4:	000080e7          	jalr	ra,0(ra) # 18b0 <.LM1193>
 
-0000000000001b94 <dwarf::at_pure(dwarf::die const&)>:
-    1b94:	fc010113          	addi	sp,sp,-64
-    1b98:	02113c23          	sd	ra,56(sp)
-    1b9c:	02813823          	sd	s0,48(sp)
-    1ba0:	04010413          	addi	s0,sp,64
-    1ba4:	fca43423          	sd	a0,-56(s0)
-    1ba8:	fd840793          	addi	a5,s0,-40
-    1bac:	06700613          	addi	a2,zero,103
-    1bb0:	fc843583          	ld	a1,-56(s0)
-    1bb4:	00078513          	addi	a0,a5,0
-    1bb8:	00000097          	auipc	ra,0x0
-    1bbc:	000080e7          	jalr	ra,0(ra) # 1bb8 <dwarf::at_pure(dwarf::die const&)+0x24>
-    1bc0:	fd840793          	addi	a5,s0,-40
-    1bc4:	00078513          	addi	a0,a5,0
-    1bc8:	00000097          	auipc	ra,0x0
-    1bcc:	000080e7          	jalr	ra,0(ra) # 1bc8 <dwarf::at_pure(dwarf::die const&)+0x34>
-    1bd0:	00050793          	addi	a5,a0,0
-    1bd4:	00078513          	addi	a0,a5,0
-    1bd8:	03813083          	ld	ra,56(sp)
-    1bdc:	03013403          	ld	s0,48(sp)
-    1be0:	04010113          	addi	sp,sp,64
-    1be4:	00008067          	jalr	zero,0(ra)
+00000000000018b8 <.LM1194>:
+    18b8:	00190793          	addi	a5,s2,1
+    18bc:	02051863          	bne	a0,zero,18ec <.L247>
 
-0000000000001be8 <dwarf::at_recursive(dwarf::die const&)>:
-    1be8:	fc010113          	addi	sp,sp,-64
-    1bec:	02113c23          	sd	ra,56(sp)
-    1bf0:	02813823          	sd	s0,48(sp)
-    1bf4:	04010413          	addi	s0,sp,64
-    1bf8:	fca43423          	sd	a0,-56(s0)
-    1bfc:	fd840793          	addi	a5,s0,-40
-    1c00:	06800613          	addi	a2,zero,104
-    1c04:	fc843583          	ld	a1,-56(s0)
-    1c08:	00078513          	addi	a0,a5,0
-    1c0c:	00000097          	auipc	ra,0x0
-    1c10:	000080e7          	jalr	ra,0(ra) # 1c0c <dwarf::at_recursive(dwarf::die const&)+0x24>
-    1c14:	fd840793          	addi	a5,s0,-40
-    1c18:	00078513          	addi	a0,a5,0
-    1c1c:	00000097          	auipc	ra,0x0
-    1c20:	000080e7          	jalr	ra,0(ra) # 1c1c <dwarf::at_recursive(dwarf::die const&)+0x34>
-    1c24:	00050793          	addi	a5,a0,0
-    1c28:	00078513          	addi	a0,a5,0
-    1c2c:	03813083          	ld	ra,56(sp)
-    1c30:	03013403          	ld	s0,48(sp)
-    1c34:	04010113          	addi	sp,sp,64
-    1c38:	00008067          	jalr	zero,0(ra)
+00000000000018c0 <.L245>:
+			   _MoveConstructiblePair<_U1, _U2>()
+			  && _PCCP::template
+			   _ImplicitlyMoveConvertiblePair<_U1, _U2>(),
+                         bool>::type=true>
+	constexpr pair(_U1&& __x, _U2&& __y)
+	: first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
+    18c0:	01213823          	sd	s2,16(sp)
 
-0000000000001c3c <dwarf::at_signature(dwarf::die const&)>:
-    1c3c:	fc010113          	addi	sp,sp,-64
-    1c40:	02113c23          	sd	ra,56(sp)
-    1c44:	02813823          	sd	s0,48(sp)
-    1c48:	04010413          	addi	s0,sp,64
-    1c4c:	fca43423          	sd	a0,-56(s0)
-    1c50:	fcb43023          	sd	a1,-64(s0)
-    1c54:	fd840793          	addi	a5,s0,-40
-    1c58:	06900613          	addi	a2,zero,105
-    1c5c:	fc043583          	ld	a1,-64(s0)
-    1c60:	00078513          	addi	a0,a5,0
-    1c64:	00000097          	auipc	ra,0x0
-    1c68:	000080e7          	jalr	ra,0(ra) # 1c64 <dwarf::at_signature(dwarf::die const&)+0x28>
-    1c6c:	fc843783          	ld	a5,-56(s0)
-    1c70:	fd840713          	addi	a4,s0,-40
-    1c74:	00070593          	addi	a1,a4,0
-    1c78:	00078513          	addi	a0,a5,0
-    1c7c:	00000097          	auipc	ra,0x0
-    1c80:	000080e7          	jalr	ra,0(ra) # 1c7c <dwarf::at_signature(dwarf::die const&)+0x40>
-    1c84:	fc843503          	ld	a0,-56(s0)
-    1c88:	03813083          	ld	ra,56(sp)
-    1c8c:	03013403          	ld	s0,48(sp)
-    1c90:	04010113          	addi	sp,sp,64
-    1c94:	00008067          	jalr	zero,0(ra)
+00000000000018c4 <.LM1198>:
+    18c4:	00f13c23          	sd	a5,24(sp)
 
-0000000000001c98 <dwarf::at_main_subprogram(dwarf::die const&)>:
-    1c98:	fc010113          	addi	sp,sp,-64
-    1c9c:	02113c23          	sd	ra,56(sp)
-    1ca0:	02813823          	sd	s0,48(sp)
-    1ca4:	04010413          	addi	s0,sp,64
-    1ca8:	fca43423          	sd	a0,-56(s0)
-    1cac:	fd840793          	addi	a5,s0,-40
-    1cb0:	06a00613          	addi	a2,zero,106
-    1cb4:	fc843583          	ld	a1,-56(s0)
-    1cb8:	00078513          	addi	a0,a5,0
-    1cbc:	00000097          	auipc	ra,0x0
-    1cc0:	000080e7          	jalr	ra,0(ra) # 1cbc <dwarf::at_main_subprogram(dwarf::die const&)+0x24>
-    1cc4:	fd840793          	addi	a5,s0,-40
-    1cc8:	00078513          	addi	a0,a5,0
-    1ccc:	00000097          	auipc	ra,0x0
-    1cd0:	000080e7          	jalr	ra,0(ra) # 1ccc <dwarf::at_main_subprogram(dwarf::die const&)+0x34>
-    1cd4:	00050793          	addi	a5,a0,0
-    1cd8:	00078513          	addi	a0,a5,0
-    1cdc:	03813083          	ld	ra,56(sp)
-    1ce0:	03013403          	ld	s0,48(sp)
-    1ce4:	04010113          	addi	sp,sp,64
-    1ce8:	00008067          	jalr	zero,0(ra)
+00000000000018c8 <.LBE1638>:
+  return rangelist({{low, high}});
+    18c8:	01010793          	addi	a5,sp,16
 
-0000000000001cec <dwarf::at_const_expr(dwarf::die const&)>:
-    1cec:	fc010113          	addi	sp,sp,-64
-    1cf0:	02113c23          	sd	ra,56(sp)
-    1cf4:	02813823          	sd	s0,48(sp)
-    1cf8:	04010413          	addi	s0,sp,64
-    1cfc:	fca43423          	sd	a0,-56(s0)
-    1d00:	fd840793          	addi	a5,s0,-40
-    1d04:	06c00613          	addi	a2,zero,108
-    1d08:	fc843583          	ld	a1,-56(s0)
-    1d0c:	00078513          	addi	a0,a5,0
-    1d10:	00000097          	auipc	ra,0x0
-    1d14:	000080e7          	jalr	ra,0(ra) # 1d10 <dwarf::at_const_expr(dwarf::die const&)+0x24>
-    1d18:	fd840793          	addi	a5,s0,-40
-    1d1c:	00078513          	addi	a0,a5,0
-    1d20:	00000097          	auipc	ra,0x0
-    1d24:	000080e7          	jalr	ra,0(ra) # 1d20 <dwarf::at_const_expr(dwarf::die const&)+0x34>
-    1d28:	00050793          	addi	a5,a0,0
-    1d2c:	00078513          	addi	a0,a5,0
-    1d30:	03813083          	ld	ra,56(sp)
-    1d34:	03013403          	ld	s0,48(sp)
-    1d38:	04010113          	addi	sp,sp,64
-    1d3c:	00008067          	jalr	zero,0(ra)
+00000000000018cc <.LM1201>:
+    18cc:	00f13023          	sd	a5,0(sp)
+    18d0:	00100793          	addi	a5,zero,1
+    18d4:	00f13423          	sd	a5,8(sp)
+    18d8:	00010593          	addi	a1,sp,0
+    18dc:	00048513          	addi	a0,s1,0
+    18e0:	00000097          	auipc	ra,0x0
+    18e4:	000080e7          	jalr	ra,0(ra) # 18e0 <.LM1201+0x14>
 
-0000000000001d40 <dwarf::at_enum_class(dwarf::die const&)>:
-    1d40:	fc010113          	addi	sp,sp,-64
-    1d44:	02113c23          	sd	ra,56(sp)
-    1d48:	02813823          	sd	s0,48(sp)
-    1d4c:	04010413          	addi	s0,sp,64
-    1d50:	fca43423          	sd	a0,-56(s0)
-    1d54:	fd840793          	addi	a5,s0,-40
-    1d58:	06d00613          	addi	a2,zero,109
-    1d5c:	fc843583          	ld	a1,-56(s0)
-    1d60:	00078513          	addi	a0,a5,0
-    1d64:	00000097          	auipc	ra,0x0
-    1d68:	000080e7          	jalr	ra,0(ra) # 1d64 <dwarf::at_enum_class(dwarf::die const&)+0x24>
-    1d6c:	fd840793          	addi	a5,s0,-40
-    1d70:	00078513          	addi	a0,a5,0
-    1d74:	00000097          	auipc	ra,0x0
-    1d78:	000080e7          	jalr	ra,0(ra) # 1d74 <dwarf::at_enum_class(dwarf::die const&)+0x34>
-    1d7c:	00050793          	addi	a5,a0,0
-    1d80:	00078513          	addi	a0,a5,0
-    1d84:	03813083          	ld	ra,56(sp)
-    1d88:	03013403          	ld	s0,48(sp)
-    1d8c:	04010113          	addi	sp,sp,64
-    1d90:	00008067          	jalr	zero,0(ra)
+00000000000018e8 <.LM1202>:
+    18e8:	f95ff06f          	jal	zero,187c <.L241>
 
-0000000000001d94 <dwarf::at_linkage_name[abi:cxx11](dwarf::die const&)>:
-    1d94:	fc010113          	addi	sp,sp,-64
-    1d98:	02113c23          	sd	ra,56(sp)
-    1d9c:	02813823          	sd	s0,48(sp)
-    1da0:	04010413          	addi	s0,sp,64
-    1da4:	fca43423          	sd	a0,-56(s0)
-    1da8:	fcb43023          	sd	a1,-64(s0)
-    1dac:	fd840793          	addi	a5,s0,-40
-    1db0:	06e00613          	addi	a2,zero,110
-    1db4:	fc043583          	ld	a1,-64(s0)
-    1db8:	00078513          	addi	a0,a5,0
-    1dbc:	00000097          	auipc	ra,0x0
-    1dc0:	000080e7          	jalr	ra,0(ra) # 1dbc <dwarf::at_linkage_name[abi:cxx11](dwarf::die const&)+0x28>
-    1dc4:	fc843783          	ld	a5,-56(s0)
-    1dc8:	fd840713          	addi	a4,s0,-40
-    1dcc:	00070593          	addi	a1,a4,0
-    1dd0:	00078513          	addi	a0,a5,0
-    1dd4:	00000097          	auipc	ra,0x0
-    1dd8:	000080e7          	jalr	ra,0(ra) # 1dd4 <dwarf::at_linkage_name[abi:cxx11](dwarf::die const&)+0x40>
-    1ddc:	fc843503          	ld	a0,-56(s0)
-    1de0:	03813083          	ld	ra,56(sp)
-    1de4:	03013403          	ld	s0,48(sp)
-    1de8:	04010113          	addi	sp,sp,64
-    1dec:	00008067          	jalr	zero,0(ra)
+00000000000018ec <.L247>:
+  taddr high = d.has(DW_AT::high_pc) ? at_high_pc(d) : (low + 1);
+    18ec:	00040513          	addi	a0,s0,0
+    18f0:	00000097          	auipc	ra,0x0
+    18f4:	000080e7          	jalr	ra,0(ra) # 18f0 <.L247+0x4>
 
-0000000000001df0 <dwarf::die_pc_range(dwarf::die const&)>:
-    1df0:	fb010113          	addi	sp,sp,-80
-    1df4:	04113423          	sd	ra,72(sp)
-    1df8:	04813023          	sd	s0,64(sp)
-    1dfc:	05010413          	addi	s0,sp,80
-    1e00:	faa43c23          	sd	a0,-72(s0)
-    1e04:	fab43823          	sd	a1,-80(s0)
-    1e08:	05500593          	addi	a1,zero,85
-    1e0c:	fb043503          	ld	a0,-80(s0)
-    1e10:	00000097          	auipc	ra,0x0
-    1e14:	000080e7          	jalr	ra,0(ra) # 1e10 <dwarf::die_pc_range(dwarf::die const&)+0x20>
-    1e18:	00050793          	addi	a5,a0,0
-    1e1c:	00078e63          	beq	a5,zero,1e38 <.L198>
-    1e20:	fb843783          	ld	a5,-72(s0)
-    1e24:	fb043583          	ld	a1,-80(s0)
-    1e28:	00078513          	addi	a0,a5,0
-    1e2c:	00000097          	auipc	ra,0x0
-    1e30:	000080e7          	jalr	ra,0(ra) # 1e2c <dwarf::die_pc_range(dwarf::die const&)+0x3c>
-    1e34:	0980006f          	jal	zero,1ecc <.L202>
-
-0000000000001e38 <.L198>:
-    1e38:	fb043503          	ld	a0,-80(s0)
-    1e3c:	00000097          	auipc	ra,0x0
-    1e40:	000080e7          	jalr	ra,0(ra) # 1e3c <.L198+0x4>
-    1e44:	00050793          	addi	a5,a0,0
-    1e48:	fcf43423          	sd	a5,-56(s0)
-    1e4c:	01200593          	addi	a1,zero,18
-    1e50:	fb043503          	ld	a0,-80(s0)
-    1e54:	00000097          	auipc	ra,0x0
-    1e58:	000080e7          	jalr	ra,0(ra) # 1e54 <.L198+0x1c>
-    1e5c:	00050793          	addi	a5,a0,0
-    1e60:	00078c63          	beq	a5,zero,1e78 <.L200>
-    1e64:	fb043503          	ld	a0,-80(s0)
-    1e68:	00000097          	auipc	ra,0x0
-    1e6c:	000080e7          	jalr	ra,0(ra) # 1e68 <.L198+0x30>
-    1e70:	00050793          	addi	a5,a0,0
-    1e74:	00c0006f          	jal	zero,1e80 <.L201>
-
-0000000000001e78 <.L200>:
-    1e78:	fc843783          	ld	a5,-56(s0)
-    1e7c:	00178793          	addi	a5,a5,1
-
-0000000000001e80 <.L201>:
-    1e80:	fcf43023          	sd	a5,-64(s0)
-    1e84:	fc040693          	addi	a3,s0,-64
-    1e88:	fc840713          	addi	a4,s0,-56
-    1e8c:	fe040793          	addi	a5,s0,-32
-    1e90:	00068613          	addi	a2,a3,0
-    1e94:	00070593          	addi	a1,a4,0
-    1e98:	00078513          	addi	a0,a5,0
-    1e9c:	00000317          	auipc	t1,0x0
-    1ea0:	00033303          	ld	t1,0(t1) # 1e9c <.L201+0x1c>
-    1ea4:	000300e7          	jalr	ra,0(t1)
-    1ea8:	fe040793          	addi	a5,s0,-32
-    1eac:	fcf43823          	sd	a5,-48(s0)
-    1eb0:	00100793          	addi	a5,zero,1
-    1eb4:	fcf43c23          	sd	a5,-40(s0)
-    1eb8:	fd040793          	addi	a5,s0,-48
-    1ebc:	00078593          	addi	a1,a5,0
-    1ec0:	fb843503          	ld	a0,-72(s0)
-    1ec4:	00000097          	auipc	ra,0x0
-    1ec8:	000080e7          	jalr	ra,0(ra) # 1ec4 <.L201+0x44>
-
-0000000000001ecc <.L202>:
-    1ecc:	fb843503          	ld	a0,-72(s0)
-    1ed0:	04813083          	ld	ra,72(sp)
-    1ed4:	04013403          	ld	s0,64(sp)
-    1ed8:	05010113          	addi	sp,sp,80
-    1edc:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt17integral_constantIbLb1EEcvbEv:
-
-0000000000000000 <std::integral_constant<bool, true>::operator bool() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	00100793          	addi	a5,zero,1
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf12format_errorC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE:
-
-0000000000000000 <dwarf::format_error::format_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	fe043583          	ld	a1,-32(s0)
-  20:	00078513          	addi	a0,a5,0
-  24:	00000097          	auipc	ra,0x0
-  28:	000080e7          	jalr	ra,0(ra) # 24 <dwarf::format_error::format_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x24>
-  2c:	00000797          	auipc	a5,0x0
-  30:	0007b783          	ld	a5,0(a5) # 2c <dwarf::format_error::format_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x2c>
-  34:	01078713          	addi	a4,a5,16
-  38:	fe843783          	ld	a5,-24(s0)
-  3c:	00e7b023          	sd	a4,0(a5)
-  40:	00000013          	addi	zero,zero,0
-  44:	01813083          	ld	ra,24(sp)
-  48:	01013403          	ld	s0,16(sp)
-  4c:	02010113          	addi	sp,sp,32
-  50:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf3dieD2Ev:
-
-0000000000000000 <dwarf::die::~die()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	02078793          	addi	a5,a5,32
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <dwarf::die::~die()+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00000013          	addi	zero,zero,0
-  30:	01813083          	ld	ra,24(sp)
-  34:	01013403          	ld	s0,16(sp)
-  38:	02010113          	addi	sp,sp,32
-  3c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNK5dwarf5value8get_typeEv:
-
-0000000000000000 <dwarf::value::get_type() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00c7a783          	lw	a5,12(a5)
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt4pairImmEC1IRmS2_Lb1EEEOT_OT0_:
-
-0000000000000000 <std::pair<unsigned long, unsigned long>::pair<unsigned long&, unsigned long&, true>(unsigned long&, unsigned long&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe043503          	ld	a0,-32(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::pair<unsigned long, unsigned long>::pair<unsigned long&, unsigned long&, true>(unsigned long&, unsigned long&)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050793          	addi	a5,a0,0
-  30:	0007b703          	ld	a4,0(a5)
-  34:	fe843783          	ld	a5,-24(s0)
-  38:	00e7b023          	sd	a4,0(a5)
-  3c:	fd843503          	ld	a0,-40(s0)
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <std::pair<unsigned long, unsigned long>::pair<unsigned long&, unsigned long&, true>(unsigned long&, unsigned long&)+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-  4c:	00050793          	addi	a5,a0,0
-  50:	0007b703          	ld	a4,0(a5)
-  54:	fe843783          	ld	a5,-24(s0)
-  58:	00e7b423          	sd	a4,8(a5)
-  5c:	00000013          	addi	zero,zero,0
-  60:	02813083          	ld	ra,40(sp)
-  64:	02013403          	ld	s0,32(sp)
-  68:	03010113          	addi	sp,sp,48
-  6c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardIRmEOT_RNSt16remove_referenceIS1_E4typeE:
-
-0000000000000000 <unsigned long& std::forward<unsigned long&>(std::remove_reference<unsigned long&>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf12small_vectorImLj6EED2Ev:
-
-0000000000000000 <dwarf::small_vector<unsigned long, 6u>::~small_vector()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <dwarf::small_vector<unsigned long, 6u>::~small_vector()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	fe843783          	ld	a5,-24(s0)
-  28:	0307b703          	ld	a4,48(a5)
-  2c:	fe843783          	ld	a5,-24(s0)
-  30:	02f70263          	beq	a4,a5,54 <.L205>
-  34:	fe843783          	ld	a5,-24(s0)
-  38:	0307b783          	ld	a5,48(a5)
-  3c:	00078c63          	beq	a5,zero,54 <.L205>
-  40:	fe843783          	ld	a5,-24(s0)
-  44:	0307b783          	ld	a5,48(a5)
-  48:	00078513          	addi	a0,a5,0
-  4c:	00000097          	auipc	ra,0x0
-  50:	000080e7          	jalr	ra,0(ra) # 4c <dwarf::small_vector<unsigned long, 6u>::~small_vector()+0x4c>
-
-0000000000000054 <.L205>:
-  54:	00000013          	addi	zero,zero,0
-  58:	01813083          	ld	ra,24(sp)
-  5c:	01013403          	ld	s0,16(sp)
-  60:	02010113          	addi	sp,sp,32
-  64:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_OS8_:
-
-0000000000000000 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe043603          	ld	a2,-32(s0)
-  20:	00000593          	addi	a1,zero,0
-  24:	fd843503          	ld	a0,-40(s0)
-  28:	00000097          	auipc	ra,0x0
-  2c:	000080e7          	jalr	ra,0(ra) # 28 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)+0x28>
-  30:	00050793          	addi	a5,a0,0
-  34:	00078513          	addi	a0,a5,0
-  38:	00000317          	auipc	t1,0x0
-  3c:	00033303          	ld	t1,0(t1) # 38 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)+0x38>
-  40:	000300e7          	jalr	ra,0(t1)
-  44:	00050793          	addi	a5,a0,0
-  48:	00078593          	addi	a1,a5,0
-  4c:	fe843503          	ld	a0,-24(s0)
-  50:	00000097          	auipc	ra,0x0
-  54:	000080e7          	jalr	ra,0(ra) # 50 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)+0x50>
-  58:	fe843503          	ld	a0,-24(s0)
-  5c:	02813083          	ld	ra,40(sp)
-  60:	02013403          	ld	s0,32(sp)
-  64:	03010113          	addi	sp,sp,48
-  68:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_:
-
-0000000000000000 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fd843583          	ld	a1,-40(s0)
-  20:	fe043503          	ld	a0,-32(s0)
-  24:	00000097          	auipc	ra,0x0
-  28:	000080e7          	jalr	ra,0(ra) # 24 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)+0x24>
-  2c:	00050793          	addi	a5,a0,0
-  30:	00078513          	addi	a0,a5,0
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)+0x34>
-  3c:	000300e7          	jalr	ra,0(t1)
-  40:	00050793          	addi	a5,a0,0
-  44:	00078593          	addi	a1,a5,0
-  48:	fe843503          	ld	a0,-24(s0)
-  4c:	00000097          	auipc	ra,0x0
-  50:	000080e7          	jalr	ra,0(ra) # 4c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)+0x4c>
-  54:	fe843503          	ld	a0,-24(s0)
-  58:	02813083          	ld	ra,40(sp)
-  5c:	02013403          	ld	s0,32(sp)
-  60:	03010113          	addi	sp,sp,48
-  64:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_S9_:
-
-0000000000000000 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)>:
-   0:	f9010113          	addi	sp,sp,-112
-   4:	06113423          	sd	ra,104(sp)
-   8:	06813023          	sd	s0,96(sp)
-   c:	04913c23          	sd	s1,88(sp)
-  10:	07010413          	addi	s0,sp,112
-  14:	faa43423          	sd	a0,-88(s0)
-  18:	fab43023          	sd	a1,-96(s0)
-  1c:	f8c43c23          	sd	a2,-104(s0)
-  20:	fc040fa3          	sb	zero,-33(s0)
-  24:	fb840793          	addi	a5,s0,-72
-  28:	00078513          	addi	a0,a5,0
-  2c:	00000317          	auipc	t1,0x0
-  30:	00033303          	ld	t1,0(t1) # 2c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)+0x2c>
-  34:	000300e7          	jalr	ra,0(t1)
-  38:	00050793          	addi	a5,a0,0
-  3c:	00078863          	beq	a5,zero,4c <.L211>
-  40:	00100793          	addi	a5,zero,1
-  44:	fcf40fa3          	sb	a5,-33(s0)
-  48:	07c0006f          	jal	zero,c4 <.L212>
-
-000000000000004c <.L211>:
-  4c:	fc040793          	addi	a5,s0,-64
-  50:	fa043583          	ld	a1,-96(s0)
-  54:	00078513          	addi	a0,a5,0
-  58:	00000097          	auipc	ra,0x0
-  5c:	000080e7          	jalr	ra,0(ra) # 58 <.L211+0xc>
-  60:	fc840793          	addi	a5,s0,-56
-  64:	f9843583          	ld	a1,-104(s0)
-  68:	00078513          	addi	a0,a5,0
-  6c:	00000097          	auipc	ra,0x0
-  70:	000080e7          	jalr	ra,0(ra) # 6c <.L211+0x20>
-  74:	fc840713          	addi	a4,s0,-56
-  78:	fc040793          	addi	a5,s0,-64
-  7c:	00070593          	addi	a1,a4,0
-  80:	00078513          	addi	a0,a5,0
-  84:	00000317          	auipc	t1,0x0
-  88:	00033303          	ld	t1,0(t1) # 84 <.L211+0x38>
-  8c:	000300e7          	jalr	ra,0(t1)
-  90:	00050793          	addi	a5,a0,0
-  94:	00078493          	addi	s1,a5,0
-  98:	fc840793          	addi	a5,s0,-56
-  9c:	00078513          	addi	a0,a5,0
-  a0:	00000097          	auipc	ra,0x0
-  a4:	000080e7          	jalr	ra,0(ra) # a0 <.L211+0x54>
-  a8:	fc040793          	addi	a5,s0,-64
-  ac:	00078513          	addi	a0,a5,0
-  b0:	00000097          	auipc	ra,0x0
-  b4:	000080e7          	jalr	ra,0(ra) # b0 <.L211+0x64>
-  b8:	00048663          	beq	s1,zero,c4 <.L212>
-  bc:	00100793          	addi	a5,zero,1
-  c0:	fcf40fa3          	sb	a5,-33(s0)
-
-00000000000000c4 <.L212>:
-  c4:	fdf44783          	lbu	a5,-33(s0)
-  c8:	0ff7f793          	andi	a5,a5,255
-  cc:	0a078663          	beq	a5,zero,178 <.L213>
-  d0:	fa043503          	ld	a0,-96(s0)
-  d4:	00000097          	auipc	ra,0x0
-  d8:	000080e7          	jalr	ra,0(ra) # d4 <.L212+0x10>
-  dc:	00050493          	addi	s1,a0,0
-  e0:	f9843503          	ld	a0,-104(s0)
-  e4:	00000097          	auipc	ra,0x0
-  e8:	000080e7          	jalr	ra,0(ra) # e4 <.L212+0x20>
-  ec:	00050793          	addi	a5,a0,0
-  f0:	00f487b3          	add	a5,s1,a5
-  f4:	fcf43823          	sd	a5,-48(s0)
-  f8:	fa043503          	ld	a0,-96(s0)
-  fc:	00000097          	auipc	ra,0x0
- 100:	000080e7          	jalr	ra,0(ra) # fc <.L212+0x38>
- 104:	00050713          	addi	a4,a0,0
- 108:	fd043783          	ld	a5,-48(s0)
- 10c:	02f77263          	bgeu	a4,a5,130 <.L214>
- 110:	f9843503          	ld	a0,-104(s0)
- 114:	00000097          	auipc	ra,0x0
- 118:	000080e7          	jalr	ra,0(ra) # 114 <.L212+0x50>
- 11c:	00050713          	addi	a4,a0,0
- 120:	fd043783          	ld	a5,-48(s0)
- 124:	00f76663          	bltu	a4,a5,130 <.L214>
- 128:	00100793          	addi	a5,zero,1
- 12c:	0080006f          	jal	zero,134 <.L215>
-
-0000000000000130 <.L214>:
- 130:	00000793          	addi	a5,zero,0
-
-0000000000000134 <.L215>:
- 134:	04078263          	beq	a5,zero,178 <.L213>
- 138:	fa043603          	ld	a2,-96(s0)
- 13c:	00000593          	addi	a1,zero,0
- 140:	f9843503          	ld	a0,-104(s0)
- 144:	00000097          	auipc	ra,0x0
- 148:	000080e7          	jalr	ra,0(ra) # 144 <.L215+0x10>
- 14c:	00050793          	addi	a5,a0,0
- 150:	00078513          	addi	a0,a5,0
- 154:	00000317          	auipc	t1,0x0
- 158:	00033303          	ld	t1,0(t1) # 154 <.L215+0x20>
- 15c:	000300e7          	jalr	ra,0(t1)
- 160:	00050793          	addi	a5,a0,0
- 164:	00078593          	addi	a1,a5,0
- 168:	fa843503          	ld	a0,-88(s0)
- 16c:	00000097          	auipc	ra,0x0
- 170:	000080e7          	jalr	ra,0(ra) # 16c <.L215+0x38>
- 174:	03c0006f          	jal	zero,1b0 <.L216>
-
-0000000000000178 <.L213>:
- 178:	f9843583          	ld	a1,-104(s0)
- 17c:	fa043503          	ld	a0,-96(s0)
- 180:	00000097          	auipc	ra,0x0
- 184:	000080e7          	jalr	ra,0(ra) # 180 <.L213+0x8>
- 188:	00050793          	addi	a5,a0,0
- 18c:	00078513          	addi	a0,a5,0
- 190:	00000317          	auipc	t1,0x0
- 194:	00033303          	ld	t1,0(t1) # 190 <.L213+0x18>
- 198:	000300e7          	jalr	ra,0(t1)
- 19c:	00050793          	addi	a5,a0,0
- 1a0:	00078593          	addi	a1,a5,0
- 1a4:	fa843503          	ld	a0,-88(s0)
- 1a8:	00000097          	auipc	ra,0x0
- 1ac:	000080e7          	jalr	ra,0(ra) # 1a8 <.L213+0x30>
-
-00000000000001b0 <.L216>:
- 1b0:	fa843503          	ld	a0,-88(s0)
- 1b4:	06813083          	ld	ra,104(sp)
- 1b8:	06013403          	ld	s0,96(sp)
- 1bc:	05813483          	ld	s1,88(sp)
- 1c0:	07010113          	addi	sp,sp,112
- 1c4:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf12small_vectorImLj6EE5clearEv:
-
-0000000000000000 <dwarf::small_vector<unsigned long, 6u>::clear()>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02813423          	sd	s0,40(sp)
-   8:	03010413          	addi	s0,sp,48
-   c:	fca43c23          	sd	a0,-40(s0)
-  10:	fd843783          	ld	a5,-40(s0)
-  14:	0307b783          	ld	a5,48(a5)
-  18:	fef43423          	sd	a5,-24(s0)
-  1c:	0100006f          	jal	zero,2c <.L218>
-
-0000000000000020 <.L219>:
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	00878793          	addi	a5,a5,8
-  28:	fef43423          	sd	a5,-24(s0)
-
-000000000000002c <.L218>:
-  2c:	fd843783          	ld	a5,-40(s0)
-  30:	0387b783          	ld	a5,56(a5)
-  34:	fe843703          	ld	a4,-24(s0)
-  38:	fef764e3          	bltu	a4,a5,20 <.L219>
-  3c:	fd843783          	ld	a5,-40(s0)
-  40:	0307b703          	ld	a4,48(a5)
-  44:	fd843783          	ld	a5,-40(s0)
-  48:	02e7bc23          	sd	a4,56(a5)
-  4c:	00000013          	addi	zero,zero,0
-  50:	02813403          	ld	s0,40(sp)
-  54:	03010113          	addi	sp,sp,48
-  58:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt4moveIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEONSt16remove_referenceIT_E4typeEOS8_:
-
-0000000000000000 <std::remove_reference<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type&& std::move<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSteqRKSaIcES1_:
-
-0000000000000000 <std::operator==(std::allocator<char> const&, std::allocator<char> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	00100793          	addi	a5,zero,1
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
+00000000000018f8 <.LVL543>:
+    18f8:	00050793          	addi	a5,a0,0
+    18fc:	fc5ff06f          	jal	zero,18c0 <.L245>
 
 Disassembly of section .text._ZN5dwarf12format_errorD2Ev:
 
 0000000000000000 <dwarf::format_error::~format_error()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	00000797          	auipc	a5,0x0
-  18:	0007b783          	ld	a5,0(a5) # 14 <dwarf::format_error::~format_error()+0x14>
-  1c:	01078713          	addi	a4,a5,16
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	00e7b023          	sd	a4,0(a5)
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	00078513          	addi	a0,a5,0
-  30:	00000097          	auipc	ra,0x0
-  34:	000080e7          	jalr	ra,0(ra) # 30 <dwarf::format_error::~format_error()+0x30>
-  38:	00000013          	addi	zero,zero,0
-  3c:	01813083          	ld	ra,24(sp)
-  40:	01013403          	ld	s0,16(sp)
-  44:	02010113          	addi	sp,sp,32
-  48:	00008067          	jalr	zero,0(ra)
+class format_error : public std::runtime_error {
+   0:	ff010113          	addi	sp,sp,-16
+   4:	00113423          	sd	ra,8(sp)
+
+0000000000000008 <.LM3>:
+   8:	00000797          	auipc	a5,0x0
+   c:	0007b783          	ld	a5,0(a5) # 8 <.LM3>
+  10:	01078793          	addi	a5,a5,16
+  14:	00f53023          	sd	a5,0(a0)
+  18:	00000097          	auipc	ra,0x0
+  1c:	000080e7          	jalr	ra,0(ra) # 18 <.LM3+0x10>
+
+0000000000000020 <.LM4>:
+  20:	00813083          	ld	ra,8(sp)
+  24:	01010113          	addi	sp,sp,16
+  28:	00008067          	jalr	zero,0(ra)
 
 Disassembly of section .text._ZN5dwarf12format_errorD0Ev:
 
 0000000000000000 <dwarf::format_error::~format_error()>:
+   0:	ff010113          	addi	sp,sp,-16
+   4:	00113423          	sd	ra,8(sp)
+   8:	00813023          	sd	s0,0(sp)
+   c:	00050413          	addi	s0,a0,0
+
+0000000000000010 <.LBB680>:
+  10:	00000797          	auipc	a5,0x0
+  14:	0007b783          	ld	a5,0(a5) # 10 <.LBB680>
+  18:	01078793          	addi	a5,a5,16
+  1c:	00f53023          	sd	a5,0(a0)
+  20:	00000097          	auipc	ra,0x0
+  24:	000080e7          	jalr	ra,0(ra) # 20 <.LBB680+0x10>
+
+0000000000000028 <.LBE680>:
+  28:	00040513          	addi	a0,s0,0
+  2c:	00000097          	auipc	ra,0x0
+  30:	000080e7          	jalr	ra,0(ra) # 2c <.LBE680+0x4>
+
+0000000000000034 <.LVL5>:
+  34:	00813083          	ld	ra,8(sp)
+  38:	00013403          	ld	s0,0(sp)
+
+000000000000003c <.LM9>:
+  3c:	01010113          	addi	sp,sp,16
+  40:	00008067          	jalr	zero,0(ra)
+
+Disassembly of section .text._ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_S9_:
+
+0000000000000000 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)>:
+    operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
    0:	fe010113          	addi	sp,sp,-32
    4:	00113c23          	sd	ra,24(sp)
    8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <dwarf::format_error::~format_error()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	fe843503          	ld	a0,-24(s0)
-  28:	00000097          	auipc	ra,0x0
-  2c:	000080e7          	jalr	ra,0(ra) # 28 <dwarf::format_error::~format_error()+0x28>
-  30:	01813083          	ld	ra,24(sp)
-  34:	01013403          	ld	s0,16(sp)
-  38:	02010113          	addi	sp,sp,32
-  3c:	00008067          	jalr	zero,0(ra)
+   c:	00913423          	sd	s1,8(sp)
+  10:	01213023          	sd	s2,0(sp)
+  14:	00050413          	addi	s0,a0,0
+  18:	00058513          	addi	a0,a1,0
+
+000000000000001c <.LM430>:
+  1c:	00060793          	addi	a5,a2,0
+
+0000000000000020 <.LBB880>:
+      { return _M_string_length; }
+  20:	0085b703          	ld	a4,8(a1)
+
+0000000000000024 <.LBB883>:
+  24:	00863603          	ld	a2,8(a2)
+
+0000000000000028 <.LBE883>:
+	  const auto __size = __lhs.size() + __rhs.size();
+  28:	00e60833          	add	a6,a2,a4
+
+000000000000002c <.LBB885>:
+      { return _M_dataplus._M_p; }
+  2c:	0005b683          	ld	a3,0(a1)
+
+0000000000000030 <.LBB890>:
+	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
+  30:	01058593          	addi	a1,a1,16
+
+0000000000000034 <.LBE887>:
+	return _M_is_local() ? size_type(_S_local_capacity)
+  34:	08b68863          	beq	a3,a1,c4 <.L141>
+  38:	01053583          	ld	a1,16(a0)
+
+000000000000003c <.L132>:
+	  if (__size > __lhs.capacity() && __size <= __rhs.capacity())
+  3c:	0105fc63          	bgeu	a1,a6,54 <.L133>
+
+0000000000000040 <.LBB893>:
+	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
+  40:	01078593          	addi	a1,a5,16
+
+0000000000000044 <.LBE895>:
+	return _M_is_local() ? size_type(_S_local_capacity)
+  44:	0007b883          	ld	a7,0(a5)
+  48:	08b88263          	beq	a7,a1,cc <.L142>
+  4c:	0107b583          	ld	a1,16(a5)
+
+0000000000000050 <.L134>:
+	  if (__size > __lhs.capacity() && __size <= __rhs.capacity())
+  50:	0905f263          	bgeu	a1,a6,d4 <.L144>
+
+0000000000000054 <.L133>:
+      { return _M_dataplus._M_p; }
+  54:	0007b583          	ld	a1,0(a5)
+
+0000000000000058 <.LBB943>:
+	if (this->max_size() - (this->size() - __n1) < __n2)
+  58:	fff00793          	addi	a5,zero,-1
+
+000000000000005c <.LM466>:
+  5c:	0027d793          	srli	a5,a5,0x2
+  60:	40e787b3          	sub	a5,a5,a4
+  64:	0cc7ee63          	bltu	a5,a2,140 <.L145>
+
+0000000000000068 <.LBE945>:
+	return _M_append(__s, __n);
+  68:	00000097          	auipc	ra,0x0
+  6c:	000080e7          	jalr	ra,0(ra) # 68 <.LBE945>
+
+0000000000000070 <.LM469>:
+  70:	00050493          	addi	s1,a0,0
+
+0000000000000074 <.LBB951>:
+	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
+  74:	01040513          	addi	a0,s0,16
+
+0000000000000078 <.LBB956>:
+	: allocator_type(std::move(__a)), _M_p(__dat) { }
+  78:	00a43023          	sd	a0,0(s0)
+
+000000000000007c <.LBB961>:
+      { return _M_dataplus._M_p; }
+  7c:	0004b783          	ld	a5,0(s1)
+
+0000000000000080 <.LBB964>:
+	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
+  80:	01048913          	addi	s2,s1,16
+
+0000000000000084 <.LBE961>:
+	if (__str._M_is_local())
+  84:	0d278663          	beq	a5,s2,150 <.L146>
+
+0000000000000088 <.LBB966>:
+      { _M_dataplus._M_p = __p; }
+  88:	00f43023          	sd	a5,0(s0)
+
+000000000000008c <.LBB969>:
+      { _M_allocated_capacity = __capacity; }
+  8c:	0104b783          	ld	a5,16(s1)
+  90:	00f43823          	sd	a5,16(s0)
+
+0000000000000094 <.L140>:
+      { _M_string_length = __length; }
+  94:	0084b783          	ld	a5,8(s1)
+  98:	00f43423          	sd	a5,8(s0)
+
+000000000000009c <.LBB974>:
+      { _M_dataplus._M_p = __p; }
+  9c:	0124b023          	sd	s2,0(s1)
+
+00000000000000a0 <.LBB977>:
+      { _M_string_length = __length; }
+  a0:	0004b423          	sd	zero,8(s1)
+
+00000000000000a4 <.LBB980>:
+#if __cpp_constexpr_dynamic_alloc
+	if (std::__is_constant_evaluated())
+	  std::construct_at(__builtin_addressof(__c1), __c2);
+	else
+#endif
+	__c1 = __c2;
+  a4:	00048823          	sb	zero,16(s1)
+
+00000000000000a8 <.L131>:
+    }
+  a8:	00040513          	addi	a0,s0,0
+  ac:	01813083          	ld	ra,24(sp)
+  b0:	01013403          	ld	s0,16(sp)
+
+00000000000000b4 <.LM518>:
+  b4:	00813483          	ld	s1,8(sp)
+  b8:	00013903          	ld	s2,0(sp)
+  bc:	02010113          	addi	sp,sp,32
+  c0:	00008067          	jalr	zero,0(ra)
+
+00000000000000c4 <.L141>:
+	return _M_is_local() ? size_type(_S_local_capacity)
+  c4:	00f00593          	addi	a1,zero,15
+  c8:	f75ff06f          	jal	zero,3c <.L132>
+
+00000000000000cc <.L142>:
+  cc:	00f00593          	addi	a1,zero,15
+  d0:	f81ff06f          	jal	zero,50 <.L134>
+
+00000000000000d4 <.L144>:
+	return _M_replace(_M_check(__pos, "basic_string::replace"),
+  d4:	00000613          	addi	a2,zero,0
+
+00000000000000d8 <.LM525>:
+  d8:	00000593          	addi	a1,zero,0
+  dc:	00078513          	addi	a0,a5,0
+
+00000000000000e0 <.LM526>:
+  e0:	00000097          	auipc	ra,0x0
+  e4:	000080e7          	jalr	ra,0(ra) # e0 <.LM526>
+
+00000000000000e8 <.LM527>:
+  e8:	00050493          	addi	s1,a0,0
+
+00000000000000ec <.LBB905>:
+	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
+  ec:	01040513          	addi	a0,s0,16
+
+00000000000000f0 <.LBB910>:
+	: allocator_type(std::move(__a)), _M_p(__dat) { }
+  f0:	00a43023          	sd	a0,0(s0)
+
+00000000000000f4 <.LBB915>:
+      { return _M_dataplus._M_p; }
+  f4:	0004b783          	ld	a5,0(s1)
+
+00000000000000f8 <.LBB918>:
+	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
+  f8:	01048913          	addi	s2,s1,16
+
+00000000000000fc <.LBE915>:
+	if (__str._M_is_local())
+  fc:	03278463          	beq	a5,s2,124 <.L147>
+
+0000000000000100 <.LBB920>:
+      { _M_dataplus._M_p = __p; }
+ 100:	00f43023          	sd	a5,0(s0)
+
+0000000000000104 <.LBB923>:
+      { _M_allocated_capacity = __capacity; }
+ 104:	0104b783          	ld	a5,16(s1)
+ 108:	00f43823          	sd	a5,16(s0)
+
+000000000000010c <.L136>:
+      { _M_string_length = __length; }
+ 10c:	0084b783          	ld	a5,8(s1)
+ 110:	00f43423          	sd	a5,8(s0)
+
+0000000000000114 <.LBB928>:
+      { _M_dataplus._M_p = __p; }
+ 114:	0124b023          	sd	s2,0(s1)
+
+0000000000000118 <.LBB931>:
+      { _M_string_length = __length; }
+ 118:	0004b423          	sd	zero,8(s1)
+
+000000000000011c <.LBB934>:
+ 11c:	00048823          	sb	zero,16(s1)
+
+0000000000000120 <.LBE931>:
+      }
+ 120:	f89ff06f          	jal	zero,a8 <.L131>
+
+0000000000000124 <.L147>:
+	    traits_type::copy(_M_local_buf, __str._M_local_buf,
+ 124:	0084b603          	ld	a2,8(s1)
+ 128:	00160613          	addi	a2,a2,1
+
+000000000000012c <.LBB937>:
+      }
+
+      static _GLIBCXX20_CONSTEXPR char_type*
+      copy(char_type* __s1, const char_type* __s2, size_t __n)
+      {
+	if (__n == 0)
+ 12c:	fe0600e3          	beq	a2,zero,10c <.L136>
+
+0000000000000130 <.LM581>:
+	  return __s1;
+#if __cplusplus >= 202002L
+	if (std::__is_constant_evaluated())
+	  return __gnu_cxx::char_traits<char_type>::copy(__s1, __s2, __n);
+#endif
+	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
+ 130:	00090593          	addi	a1,s2,0
+ 134:	00000097          	auipc	ra,0x0
+ 138:	000080e7          	jalr	ra,0(ra) # 134 <.LM581+0x4>
+
+000000000000013c <.LM583>:
+ 13c:	fd1ff06f          	jal	zero,10c <.L136>
+
+0000000000000140 <.L145>:
+	  __throw_length_error(__N(__s));
+ 140:	00000517          	auipc	a0,0x0
+ 144:	00050513          	addi	a0,a0,0 # 140 <.L145>
+
+0000000000000148 <.LM586>:
+ 148:	00000097          	auipc	ra,0x0
+ 14c:	000080e7          	jalr	ra,0(ra) # 148 <.LM586>
+
+0000000000000150 <.L146>:
+	    traits_type::copy(_M_local_buf, __str._M_local_buf,
+ 150:	0084b603          	ld	a2,8(s1)
+ 154:	00160613          	addi	a2,a2,1
+
+0000000000000158 <.LBB983>:
+	if (__n == 0)
+ 158:	f2060ee3          	beq	a2,zero,94 <.L140>
+
+000000000000015c <.LM593>:
+	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
+ 15c:	00090593          	addi	a1,s2,0
+ 160:	00000097          	auipc	ra,0x0
+ 164:	000080e7          	jalr	ra,0(ra) # 160 <.LM593+0x4>
+
+0000000000000168 <.LM595>:
+ 168:	f2dff06f          	jal	zero,94 <.L140>

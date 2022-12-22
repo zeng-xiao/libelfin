@@ -4,7840 +4,3513 @@ rangelist.o:     file format elf64-littleriscv
 
 Disassembly of section .text:
 
-0000000000000000 <dwarf::native_order()>:
-   0:	ff010113          	addi	sp,sp,-16
-   4:	00813423          	sd	s0,8(sp)
-   8:	01010413          	addi	s0,sp,16
-   c:	00100793          	addi	a5,zero,1
-  10:	0007871b          	addiw	a4,a5,0
-  14:	00100793          	addi	a5,zero,1
-  18:	40f707b3          	sub	a5,a4,a5
-  1c:	00f037b3          	sltu	a5,zero,a5
-  20:	0ff7f793          	andi	a5,a5,255
-  24:	0007879b          	addiw	a5,a5,0
-  28:	00078513          	addi	a0,a5,0
-  2c:	00813403          	ld	s0,8(sp)
-  30:	01010113          	addi	sp,sp,16
-  34:	00008067          	jalr	zero,0(ra)
-
-0000000000000038 <dwarf::rangelist::rangelist(std::shared_ptr<dwarf::section> const&, unsigned long, unsigned int, unsigned long)>:
-  38:	fb010113          	addi	sp,sp,-80
-  3c:	04113423          	sd	ra,72(sp)
-  40:	04813023          	sd	s0,64(sp)
-  44:	02913c23          	sd	s1,56(sp)
-  48:	05010413          	addi	s0,sp,80
-  4c:	fca43c23          	sd	a0,-40(s0)
-  50:	fcb43823          	sd	a1,-48(s0)
-  54:	fcc43423          	sd	a2,-56(s0)
-  58:	00068793          	addi	a5,a3,0
-  5c:	fae43c23          	sd	a4,-72(s0)
-  60:	fcf42223          	sw	a5,-60(s0)
-  64:	fd843783          	ld	a5,-40(s0)
-  68:	00078513          	addi	a0,a5,0
-  6c:	00000317          	auipc	t1,0x0
-  70:	00033303          	ld	t1,0(t1) # 6c <dwarf::rangelist::rangelist(std::shared_ptr<dwarf::section> const&, unsigned long, unsigned int, unsigned long)+0x34>
-  74:	000300e7          	jalr	ra,0(t1)
-  78:	fd043503          	ld	a0,-48(s0)
-  7c:	00000317          	auipc	t1,0x0
-  80:	00033303          	ld	t1,0(t1) # 7c <dwarf::rangelist::rangelist(std::shared_ptr<dwarf::section> const&, unsigned long, unsigned int, unsigned long)+0x44>
-  84:	000300e7          	jalr	ra,0(t1)
-  88:	00050593          	addi	a1,a0,0
-  8c:	fd843783          	ld	a5,-40(s0)
-  90:	01878513          	addi	a0,a5,24
-  94:	fc442783          	lw	a5,-60(s0)
-  98:	00000713          	addi	a4,zero,0
-  9c:	fff00693          	addi	a3,zero,-1
-  a0:	fc843603          	ld	a2,-56(s0)
-  a4:	00000317          	auipc	t1,0x0
-  a8:	00033303          	ld	t1,0(t1) # a4 <dwarf::rangelist::rangelist(std::shared_ptr<dwarf::section> const&, unsigned long, unsigned int, unsigned long)+0x6c>
-
-00000000000000ac <.LEHB5>:
-  ac:	000300e7          	jalr	ra,0(t1)
-
-00000000000000b0 <.LEHE5>:
-  b0:	fd843783          	ld	a5,-40(s0)
-  b4:	fb843703          	ld	a4,-72(s0)
-  b8:	02e7b423          	sd	a4,40(a5)
-  bc:	02c0006f          	jal	zero,e8 <.L83>
-
-00000000000000c0 <.L82>:
-  c0:	00050493          	addi	s1,a0,0
-  c4:	fd843783          	ld	a5,-40(s0)
-  c8:	00078513          	addi	a0,a5,0
-  cc:	00000317          	auipc	t1,0x0
-  d0:	00033303          	ld	t1,0(t1) # cc <.L82+0xc>
-  d4:	000300e7          	jalr	ra,0(t1)
-  d8:	00048793          	addi	a5,s1,0
-  dc:	00078513          	addi	a0,a5,0
-
-00000000000000e0 <.LEHB6>:
-  e0:	00000097          	auipc	ra,0x0
-  e4:	000080e7          	jalr	ra,0(ra) # e0 <.LEHB6>
-
-00000000000000e8 <.L83>:
-  e8:	04813083          	ld	ra,72(sp)
-  ec:	04013403          	ld	s0,64(sp)
-  f0:	03813483          	ld	s1,56(sp)
-  f4:	05010113          	addi	sp,sp,80
-  f8:	00008067          	jalr	zero,0(ra)
-
-00000000000000fc <dwarf::rangelist::rangelist(std::initializer_list<std::pair<unsigned long, unsigned long> > const&)>:
-  fc:	f6010113          	addi	sp,sp,-160
- 100:	08113c23          	sd	ra,152(sp)
- 104:	08813823          	sd	s0,144(sp)
- 108:	08913423          	sd	s1,136(sp)
- 10c:	0a010413          	addi	s0,sp,160
- 110:	f6a43423          	sd	a0,-152(s0)
- 114:	f6b43023          	sd	a1,-160(s0)
- 118:	f6843783          	ld	a5,-152(s0)
- 11c:	00078513          	addi	a0,a5,0
- 120:	00000317          	auipc	t1,0x0
- 124:	00033303          	ld	t1,0(t1) # 120 <dwarf::rangelist::rangelist(std::initializer_list<std::pair<unsigned long, unsigned long> > const&)+0x24>
- 128:	000300e7          	jalr	ra,0(t1)
- 12c:	f6843783          	ld	a5,-152(s0)
- 130:	01878793          	addi	a5,a5,24
- 134:	00078513          	addi	a0,a5,0
- 138:	00000317          	auipc	t1,0x0
- 13c:	00033303          	ld	t1,0(t1) # 138 <dwarf::rangelist::rangelist(std::initializer_list<std::pair<unsigned long, unsigned long> > const&)+0x3c>
- 140:	000300e7          	jalr	ra,0(t1)
- 144:	f6843483          	ld	s1,-152(s0)
- 148:	f6043503          	ld	a0,-160(s0)
- 14c:	00000317          	auipc	t1,0x0
- 150:	00033303          	ld	t1,0(t1) # 14c <dwarf::rangelist::rangelist(std::initializer_list<std::pair<unsigned long, unsigned long> > const&)+0x50>
- 154:	000300e7          	jalr	ra,0(t1)
- 158:	00050793          	addi	a5,a0,0
- 15c:	00178793          	addi	a5,a5,1
- 160:	00179793          	slli	a5,a5,0x1
- 164:	00078593          	addi	a1,a5,0
- 168:	00048513          	addi	a0,s1,0
- 16c:	00000317          	auipc	t1,0x0
- 170:	00033303          	ld	t1,0(t1) # 16c <dwarf::rangelist::rangelist(std::initializer_list<std::pair<unsigned long, unsigned long> > const&)+0x70>
-
-0000000000000174 <.LEHB7>:
- 174:	000300e7          	jalr	ra,0(t1)
- 178:	f6043783          	ld	a5,-160(s0)
- 17c:	fcf43823          	sd	a5,-48(s0)
- 180:	fd043503          	ld	a0,-48(s0)
- 184:	00000317          	auipc	t1,0x0
- 188:	00033303          	ld	t1,0(t1) # 184 <.LEHB7+0x10>
- 18c:	000300e7          	jalr	ra,0(t1)
- 190:	fca43c23          	sd	a0,-40(s0)
- 194:	fd043503          	ld	a0,-48(s0)
- 198:	00000317          	auipc	t1,0x0
- 19c:	00033303          	ld	t1,0(t1) # 198 <.LEHB7+0x24>
- 1a0:	000300e7          	jalr	ra,0(t1)
- 1a4:	fca43423          	sd	a0,-56(s0)
- 1a8:	0540006f          	jal	zero,1fc <.L85>
-
-00000000000001ac <.L86>:
- 1ac:	fd843783          	ld	a5,-40(s0)
- 1b0:	fcf43023          	sd	a5,-64(s0)
- 1b4:	f6843783          	ld	a5,-152(s0)
- 1b8:	fc043703          	ld	a4,-64(s0)
- 1bc:	00070593          	addi	a1,a4,0
- 1c0:	00078513          	addi	a0,a5,0
- 1c4:	00000317          	auipc	t1,0x0
- 1c8:	00033303          	ld	t1,0(t1) # 1c4 <.L86+0x18>
- 1cc:	000300e7          	jalr	ra,0(t1)
- 1d0:	f6843703          	ld	a4,-152(s0)
- 1d4:	fc043783          	ld	a5,-64(s0)
- 1d8:	00878793          	addi	a5,a5,8
- 1dc:	00078593          	addi	a1,a5,0
- 1e0:	00070513          	addi	a0,a4,0
- 1e4:	00000317          	auipc	t1,0x0
- 1e8:	00033303          	ld	t1,0(t1) # 1e4 <.L86+0x38>
- 1ec:	000300e7          	jalr	ra,0(t1)
- 1f0:	fd843783          	ld	a5,-40(s0)
- 1f4:	01078793          	addi	a5,a5,16
- 1f8:	fcf43c23          	sd	a5,-40(s0)
-
-00000000000001fc <.L85>:
- 1fc:	fd843703          	ld	a4,-40(s0)
- 200:	fc843783          	ld	a5,-56(s0)
- 204:	faf714e3          	bne	a4,a5,1ac <.L86>
- 208:	f6843783          	ld	a5,-152(s0)
- 20c:	f6043c23          	sd	zero,-136(s0)
- 210:	f7840713          	addi	a4,s0,-136
- 214:	00070593          	addi	a1,a4,0
- 218:	00078513          	addi	a0,a5,0
- 21c:	00000317          	auipc	t1,0x0
- 220:	00033303          	ld	t1,0(t1) # 21c <.L85+0x20>
- 224:	000300e7          	jalr	ra,0(t1)
- 228:	f6843783          	ld	a5,-152(s0)
- 22c:	f8043023          	sd	zero,-128(s0)
- 230:	f8040713          	addi	a4,s0,-128
- 234:	00070593          	addi	a1,a4,0
- 238:	00078513          	addi	a0,a5,0
- 23c:	00000317          	auipc	t1,0x0
- 240:	00033303          	ld	t1,0(t1) # 23c <.L85+0x40>
- 244:	000300e7          	jalr	ra,0(t1)
- 248:	f6843783          	ld	a5,-152(s0)
- 24c:	01878493          	addi	s1,a5,24
- 250:	00900793          	addi	a5,zero,9
- 254:	f8f42e23          	sw	a5,-100(s0)
- 258:	f6843783          	ld	a5,-152(s0)
- 25c:	00078513          	addi	a0,a5,0
- 260:	00000317          	auipc	t1,0x0
- 264:	00033303          	ld	t1,0(t1) # 260 <.L85+0x64>
- 268:	000300e7          	jalr	ra,0(t1)
- 26c:	00050793          	addi	a5,a0,0
- 270:	faf43023          	sd	a5,-96(s0)
- 274:	f6843783          	ld	a5,-152(s0)
- 278:	00078513          	addi	a0,a5,0
- 27c:	00000317          	auipc	t1,0x0
- 280:	00033303          	ld	t1,0(t1) # 27c <.L85+0x80>
- 284:	000300e7          	jalr	ra,0(t1)
- 288:	00050793          	addi	a5,a0,0
- 28c:	00379793          	slli	a5,a5,0x3
- 290:	faf43423          	sd	a5,-88(s0)
- 294:	00000097          	auipc	ra,0x0
- 298:	000080e7          	jalr	ra,0(ra) # 294 <.L85+0x98>
- 29c:	00050793          	addi	a5,a0,0
- 2a0:	faf42823          	sw	a5,-80(s0)
- 2a4:	fa042a23          	sw	zero,-76(s0)
- 2a8:	00800793          	addi	a5,zero,8
- 2ac:	faf43c23          	sd	a5,-72(s0)
- 2b0:	f8840513          	addi	a0,s0,-120
- 2b4:	fb840813          	addi	a6,s0,-72
- 2b8:	fb440793          	addi	a5,s0,-76
- 2bc:	fb040713          	addi	a4,s0,-80
- 2c0:	fa840693          	addi	a3,s0,-88
- 2c4:	fa040613          	addi	a2,s0,-96
- 2c8:	f9c40593          	addi	a1,s0,-100
- 2cc:	00000317          	auipc	t1,0x0
- 2d0:	00033303          	ld	t1,0(t1) # 2cc <.L85+0xd0>
- 2d4:	000300e7          	jalr	ra,0(t1)
-
-00000000000002d8 <.LEHE7>:
- 2d8:	f8840793          	addi	a5,s0,-120
- 2dc:	00078593          	addi	a1,a5,0
- 2e0:	00048513          	addi	a0,s1,0
- 2e4:	00000317          	auipc	t1,0x0
- 2e8:	00033303          	ld	t1,0(t1) # 2e4 <.LEHE7+0xc>
- 2ec:	000300e7          	jalr	ra,0(t1)
- 2f0:	f8840793          	addi	a5,s0,-120
- 2f4:	00078513          	addi	a0,a5,0
- 2f8:	00000317          	auipc	t1,0x0
- 2fc:	00033303          	ld	t1,0(t1) # 2f8 <.LEHE7+0x20>
- 300:	000300e7          	jalr	ra,0(t1)
- 304:	f6843783          	ld	a5,-152(s0)
- 308:	0207b423          	sd	zero,40(a5)
- 30c:	0440006f          	jal	zero,350 <.L89>
-
-0000000000000310 <.L88>:
- 310:	00050493          	addi	s1,a0,0
- 314:	f6843783          	ld	a5,-152(s0)
- 318:	01878793          	addi	a5,a5,24
- 31c:	00078513          	addi	a0,a5,0
- 320:	00000317          	auipc	t1,0x0
- 324:	00033303          	ld	t1,0(t1) # 320 <.L88+0x10>
- 328:	000300e7          	jalr	ra,0(t1)
- 32c:	f6843783          	ld	a5,-152(s0)
- 330:	00078513          	addi	a0,a5,0
- 334:	00000317          	auipc	t1,0x0
- 338:	00033303          	ld	t1,0(t1) # 334 <.L88+0x24>
- 33c:	000300e7          	jalr	ra,0(t1)
- 340:	00048793          	addi	a5,s1,0
- 344:	00078513          	addi	a0,a5,0
-
-0000000000000348 <.LEHB8>:
- 348:	00000097          	auipc	ra,0x0
- 34c:	000080e7          	jalr	ra,0(ra) # 348 <.LEHB8>
-
-0000000000000350 <.L89>:
- 350:	09813083          	ld	ra,152(sp)
- 354:	09013403          	ld	s0,144(sp)
- 358:	08813483          	ld	s1,136(sp)
- 35c:	0a010113          	addi	sp,sp,160
- 360:	00008067          	jalr	zero,0(ra)
-
-0000000000000364 <dwarf::rangelist::begin() const>:
- 364:	fe010113          	addi	sp,sp,-32
- 368:	00113c23          	sd	ra,24(sp)
- 36c:	00813823          	sd	s0,16(sp)
- 370:	02010413          	addi	s0,sp,32
- 374:	fea43423          	sd	a0,-24(s0)
- 378:	feb43023          	sd	a1,-32(s0)
- 37c:	fe043783          	ld	a5,-32(s0)
- 380:	01878793          	addi	a5,a5,24
- 384:	00078513          	addi	a0,a5,0
- 388:	00000317          	auipc	t1,0x0
- 38c:	00033303          	ld	t1,0(t1) # 388 <dwarf::rangelist::begin() const+0x24>
- 390:	000300e7          	jalr	ra,0(t1)
- 394:	00050793          	addi	a5,a0,0
- 398:	02078663          	beq	a5,zero,3c4 <.L92>
- 39c:	fe043783          	ld	a5,-32(s0)
- 3a0:	01878713          	addi	a4,a5,24
- 3a4:	fe043783          	ld	a5,-32(s0)
- 3a8:	0287b783          	ld	a5,40(a5)
- 3ac:	00078613          	addi	a2,a5,0
- 3b0:	00070593          	addi	a1,a4,0
- 3b4:	fe843503          	ld	a0,-24(s0)
- 3b8:	00000097          	auipc	ra,0x0
- 3bc:	000080e7          	jalr	ra,0(ra) # 3b8 <dwarf::rangelist::begin() const+0x54>
- 3c0:	0180006f          	jal	zero,3d8 <.L93>
-
-00000000000003c4 <.L92>:
- 3c4:	fe843783          	ld	a5,-24(s0)
- 3c8:	fe043583          	ld	a1,-32(s0)
- 3cc:	00078513          	addi	a0,a5,0
- 3d0:	00000097          	auipc	ra,0x0
- 3d4:	000080e7          	jalr	ra,0(ra) # 3d0 <.L92+0xc>
-
-00000000000003d8 <.L93>:
- 3d8:	fe843503          	ld	a0,-24(s0)
- 3dc:	01813083          	ld	ra,24(sp)
- 3e0:	01013403          	ld	s0,16(sp)
- 3e4:	02010113          	addi	sp,sp,32
- 3e8:	00008067          	jalr	zero,0(ra)
-
-00000000000003ec <dwarf::rangelist::end() const>:
- 3ec:	fe010113          	addi	sp,sp,-32
- 3f0:	00113c23          	sd	ra,24(sp)
- 3f4:	00813823          	sd	s0,16(sp)
- 3f8:	02010413          	addi	s0,sp,32
- 3fc:	fea43423          	sd	a0,-24(s0)
- 400:	feb43023          	sd	a1,-32(s0)
- 404:	fe843503          	ld	a0,-24(s0)
- 408:	00000317          	auipc	t1,0x0
- 40c:	00033303          	ld	t1,0(t1) # 408 <dwarf::rangelist::end() const+0x1c>
- 410:	000300e7          	jalr	ra,0(t1)
- 414:	fe843503          	ld	a0,-24(s0)
- 418:	01813083          	ld	ra,24(sp)
- 41c:	01013403          	ld	s0,16(sp)
- 420:	02010113          	addi	sp,sp,32
- 424:	00008067          	jalr	zero,0(ra)
-
-0000000000000428 <dwarf::rangelist::contains(unsigned long) const>:
- 428:	f5010113          	addi	sp,sp,-176
- 42c:	0a113423          	sd	ra,168(sp)
- 430:	0a813023          	sd	s0,160(sp)
- 434:	08913c23          	sd	s1,152(sp)
- 438:	09213823          	sd	s2,144(sp)
- 43c:	0b010413          	addi	s0,sp,176
- 440:	f4a43c23          	sd	a0,-168(s0)
- 444:	f4b43823          	sd	a1,-176(s0)
- 448:	00000493          	addi	s1,zero,0
- 44c:	f5843783          	ld	a5,-168(s0)
- 450:	fcf43c23          	sd	a5,-40(s0)
- 454:	f6840793          	addi	a5,s0,-152
- 458:	fd843583          	ld	a1,-40(s0)
- 45c:	00078513          	addi	a0,a5,0
-
-0000000000000460 <.LEHB9>:
- 460:	00000097          	auipc	ra,0x0
- 464:	000080e7          	jalr	ra,0(ra) # 460 <.LEHB9>
-
-0000000000000468 <.LEHE9>:
- 468:	f9840793          	addi	a5,s0,-104
- 46c:	fd843583          	ld	a1,-40(s0)
- 470:	00078513          	addi	a0,a5,0
-
-0000000000000474 <.LEHB10>:
- 474:	00000097          	auipc	ra,0x0
- 478:	000080e7          	jalr	ra,0(ra) # 474 <.LEHB10>
-
-000000000000047c <.LEHE10>:
- 47c:	0680006f          	jal	zero,4e4 <.L97>
-
-0000000000000480 <.L100>:
- 480:	f6840793          	addi	a5,s0,-152
- 484:	00078513          	addi	a0,a5,0
- 488:	00000317          	auipc	t1,0x0
- 48c:	00033303          	ld	t1,0(t1) # 488 <.L100+0x8>
- 490:	000300e7          	jalr	ra,0(t1)
- 494:	00050793          	addi	a5,a0,0
- 498:	0007b703          	ld	a4,0(a5)
- 49c:	fce43423          	sd	a4,-56(s0)
- 4a0:	0087b783          	ld	a5,8(a5)
- 4a4:	fcf43823          	sd	a5,-48(s0)
- 4a8:	fc840793          	addi	a5,s0,-56
- 4ac:	f5043583          	ld	a1,-176(s0)
- 4b0:	00078513          	addi	a0,a5,0
- 4b4:	00000317          	auipc	t1,0x0
- 4b8:	00033303          	ld	t1,0(t1) # 4b4 <.L100+0x34>
- 4bc:	000300e7          	jalr	ra,0(t1)
- 4c0:	00050793          	addi	a5,a0,0
- 4c4:	00078863          	beq	a5,zero,4d4 <.L98>
- 4c8:	00100493          	addi	s1,zero,1
- 4cc:	00000913          	addi	s2,zero,0
- 4d0:	03c0006f          	jal	zero,50c <.L99>
-
-00000000000004d4 <.L98>:
- 4d4:	f6840793          	addi	a5,s0,-152
- 4d8:	00078513          	addi	a0,a5,0
-
-00000000000004dc <.LEHB11>:
- 4dc:	00000097          	auipc	ra,0x0
- 4e0:	000080e7          	jalr	ra,0(ra) # 4dc <.LEHB11>
-
-00000000000004e4 <.L97>:
- 4e4:	f9840713          	addi	a4,s0,-104
- 4e8:	f6840793          	addi	a5,s0,-152
- 4ec:	00070593          	addi	a1,a4,0
- 4f0:	00078513          	addi	a0,a5,0
- 4f4:	00000317          	auipc	t1,0x0
- 4f8:	00033303          	ld	t1,0(t1) # 4f4 <.L97+0x10>
- 4fc:	000300e7          	jalr	ra,0(t1)
- 500:	00050793          	addi	a5,a0,0
- 504:	f6079ee3          	bne	a5,zero,480 <.L100>
- 508:	00100913          	addi	s2,zero,1
-
-000000000000050c <.L99>:
- 50c:	f9840793          	addi	a5,s0,-104
- 510:	00078513          	addi	a0,a5,0
- 514:	00000317          	auipc	t1,0x0
- 518:	00033303          	ld	t1,0(t1) # 514 <.L99+0x8>
- 51c:	000300e7          	jalr	ra,0(t1)
- 520:	00090713          	addi	a4,s2,0
- 524:	00100793          	addi	a5,zero,1
- 528:	00f71663          	bne	a4,a5,534 <.L101>
- 52c:	00100913          	addi	s2,zero,1
- 530:	0080006f          	jal	zero,538 <.L102>
-
-0000000000000534 <.L101>:
- 534:	00000913          	addi	s2,zero,0
-
-0000000000000538 <.L102>:
- 538:	f6840793          	addi	a5,s0,-152
- 53c:	00078513          	addi	a0,a5,0
- 540:	00000317          	auipc	t1,0x0
- 544:	00033303          	ld	t1,0(t1) # 540 <.L102+0x8>
- 548:	000300e7          	jalr	ra,0(t1)
- 54c:	00090713          	addi	a4,s2,0
- 550:	00100793          	addi	a5,zero,1
- 554:	00f71663          	bne	a4,a5,560 <.L104>
- 558:	00000013          	addi	zero,zero,0
- 55c:	00000493          	addi	s1,zero,0
-
-0000000000000560 <.L104>:
- 560:	00048793          	addi	a5,s1,0
- 564:	0480006f          	jal	zero,5ac <.L109>
-
-0000000000000568 <.L108>:
- 568:	00050493          	addi	s1,a0,0
- 56c:	f9840793          	addi	a5,s0,-104
- 570:	00078513          	addi	a0,a5,0
- 574:	00000317          	auipc	t1,0x0
- 578:	00033303          	ld	t1,0(t1) # 574 <.L108+0xc>
- 57c:	000300e7          	jalr	ra,0(t1)
- 580:	0080006f          	jal	zero,588 <.L106>
-
-0000000000000584 <.L107>:
- 584:	00050493          	addi	s1,a0,0
-
-0000000000000588 <.L106>:
- 588:	f6840793          	addi	a5,s0,-152
- 58c:	00078513          	addi	a0,a5,0
- 590:	00000317          	auipc	t1,0x0
- 594:	00033303          	ld	t1,0(t1) # 590 <.L106+0x8>
- 598:	000300e7          	jalr	ra,0(t1)
- 59c:	00048793          	addi	a5,s1,0
- 5a0:	00078513          	addi	a0,a5,0
-
-00000000000005a4 <.LEHB12>:
- 5a4:	00000097          	auipc	ra,0x0
- 5a8:	000080e7          	jalr	ra,0(ra) # 5a4 <.LEHB12>
-
-00000000000005ac <.L109>:
- 5ac:	00078513          	addi	a0,a5,0
- 5b0:	0a813083          	ld	ra,168(sp)
- 5b4:	0a013403          	ld	s0,160(sp)
- 5b8:	09813483          	ld	s1,152(sp)
- 5bc:	09013903          	ld	s2,144(sp)
- 5c0:	0b010113          	addi	sp,sp,176
- 5c4:	00008067          	jalr	zero,0(ra)
-
-00000000000005c8 <dwarf::rangelist::iterator::iterator(std::shared_ptr<dwarf::section> const&, unsigned long)>:
- 5c8:	fc010113          	addi	sp,sp,-64
- 5cc:	02113c23          	sd	ra,56(sp)
- 5d0:	02813823          	sd	s0,48(sp)
- 5d4:	02913423          	sd	s1,40(sp)
- 5d8:	04010413          	addi	s0,sp,64
- 5dc:	fca43c23          	sd	a0,-40(s0)
- 5e0:	fcb43823          	sd	a1,-48(s0)
- 5e4:	fcc43423          	sd	a2,-56(s0)
- 5e8:	fd843783          	ld	a5,-40(s0)
- 5ec:	fd043583          	ld	a1,-48(s0)
- 5f0:	00078513          	addi	a0,a5,0
- 5f4:	00000317          	auipc	t1,0x0
- 5f8:	00033303          	ld	t1,0(t1) # 5f4 <dwarf::rangelist::iterator::iterator(std::shared_ptr<dwarf::section> const&, unsigned long)+0x2c>
- 5fc:	000300e7          	jalr	ra,0(t1)
- 600:	fd843783          	ld	a5,-40(s0)
- 604:	fc843703          	ld	a4,-56(s0)
- 608:	00e7b823          	sd	a4,16(a5)
- 60c:	fd843783          	ld	a5,-40(s0)
- 610:	0007bc23          	sd	zero,24(a5)
- 614:	fd843503          	ld	a0,-40(s0)
-
-0000000000000618 <.LEHB13>:
- 618:	00000097          	auipc	ra,0x0
- 61c:	000080e7          	jalr	ra,0(ra) # 618 <.LEHB13>
-
-0000000000000620 <.LEHE13>:
- 620:	02c0006f          	jal	zero,64c <.L113>
-
-0000000000000624 <.L112>:
- 624:	00050493          	addi	s1,a0,0
- 628:	fd843783          	ld	a5,-40(s0)
- 62c:	00078513          	addi	a0,a5,0
- 630:	00000317          	auipc	t1,0x0
- 634:	00033303          	ld	t1,0(t1) # 630 <.L112+0xc>
- 638:	000300e7          	jalr	ra,0(t1)
- 63c:	00048793          	addi	a5,s1,0
- 640:	00078513          	addi	a0,a5,0
-
-0000000000000644 <.LEHB14>:
- 644:	00000097          	auipc	ra,0x0
- 648:	000080e7          	jalr	ra,0(ra) # 644 <.LEHB14>
-
-000000000000064c <.L113>:
- 64c:	03813083          	ld	ra,56(sp)
- 650:	03013403          	ld	s0,48(sp)
- 654:	02813483          	ld	s1,40(sp)
- 658:	04010113          	addi	sp,sp,64
- 65c:	00008067          	jalr	zero,0(ra)
-
-0000000000000660 <dwarf::rangelist::iterator::operator++()>:
- 660:	fa010113          	addi	sp,sp,-96
- 664:	04113c23          	sd	ra,88(sp)
- 668:	04813823          	sd	s0,80(sp)
- 66c:	04913423          	sd	s1,72(sp)
- 670:	06010413          	addi	s0,sp,96
- 674:	faa43423          	sd	a0,-88(s0)
- 678:	fff00793          	addi	a5,zero,-1
- 67c:	fcf43c23          	sd	a5,-40(s0)
- 680:	fa843783          	ld	a5,-88(s0)
- 684:	00078513          	addi	a0,a5,0
- 688:	00000317          	auipc	t1,0x0
- 68c:	00033303          	ld	t1,0(t1) # 688 <dwarf::rangelist::iterator::operator++()+0x28>
- 690:	000300e7          	jalr	ra,0(t1)
- 694:	00050793          	addi	a5,a0,0
- 698:	0207a783          	lw	a5,32(a5)
- 69c:	00078713          	addi	a4,a5,0
- 6a0:	00700793          	addi	a5,zero,7
- 6a4:	00e7b7b3          	sltu	a5,a5,a4
- 6a8:	0017c793          	xori	a5,a5,1
- 6ac:	0ff7f793          	andi	a5,a5,255
- 6b0:	04078263          	beq	a5,zero,6f4 <.L115>
- 6b4:	fa843783          	ld	a5,-88(s0)
- 6b8:	00078513          	addi	a0,a5,0
- 6bc:	00000317          	auipc	t1,0x0
- 6c0:	00033303          	ld	t1,0(t1) # 6bc <dwarf::rangelist::iterator::operator++()+0x5c>
- 6c4:	000300e7          	jalr	ra,0(t1)
- 6c8:	00050793          	addi	a5,a0,0
- 6cc:	0207a783          	lw	a5,32(a5)
- 6d0:	0037979b          	slliw	a5,a5,0x3
- 6d4:	0007879b          	addiw	a5,a5,0
- 6d8:	00100713          	addi	a4,zero,1
- 6dc:	00f717bb          	sllw	a5,a4,a5
- 6e0:	0007879b          	addiw	a5,a5,0
- 6e4:	00078713          	addi	a4,a5,0
- 6e8:	fd843783          	ld	a5,-40(s0)
- 6ec:	00e787b3          	add	a5,a5,a4
- 6f0:	fcf43c23          	sd	a5,-40(s0)
-
-00000000000006f4 <.L115>:
- 6f4:	fa843703          	ld	a4,-88(s0)
- 6f8:	fc840793          	addi	a5,s0,-56
- 6fc:	00070593          	addi	a1,a4,0
- 700:	00078513          	addi	a0,a5,0
- 704:	00000317          	auipc	t1,0x0
- 708:	00033303          	ld	t1,0(t1) # 704 <.L115+0x10>
- 70c:	000300e7          	jalr	ra,0(t1)
- 710:	fa843783          	ld	a5,-88(s0)
- 714:	0187b683          	ld	a3,24(a5)
- 718:	fc840713          	addi	a4,s0,-56
- 71c:	fb040793          	addi	a5,s0,-80
- 720:	00068613          	addi	a2,a3,0
- 724:	00070593          	addi	a1,a4,0
- 728:	00078513          	addi	a0,a5,0
- 72c:	00000317          	auipc	t1,0x0
- 730:	00033303          	ld	t1,0(t1) # 72c <.L115+0x38>
- 734:	000300e7          	jalr	ra,0(t1)
- 738:	fc840793          	addi	a5,s0,-56
- 73c:	00078513          	addi	a0,a5,0
- 740:	00000317          	auipc	t1,0x0
- 744:	00033303          	ld	t1,0(t1) # 740 <.L115+0x4c>
- 748:	000300e7          	jalr	ra,0(t1)
-
-000000000000074c <.L120>:
- 74c:	fb040793          	addi	a5,s0,-80
- 750:	00078513          	addi	a0,a5,0
- 754:	00000317          	auipc	t1,0x0
- 758:	00033303          	ld	t1,0(t1) # 754 <.L120+0x8>
-
-000000000000075c <.LEHB15>:
- 75c:	000300e7          	jalr	ra,0(t1)
- 760:	00050713          	addi	a4,a0,0
- 764:	fa843783          	ld	a5,-88(s0)
- 768:	02e7b023          	sd	a4,32(a5)
- 76c:	fb040793          	addi	a5,s0,-80
- 770:	00078513          	addi	a0,a5,0
- 774:	00000317          	auipc	t1,0x0
- 778:	00033303          	ld	t1,0(t1) # 774 <.LEHB15+0x18>
- 77c:	000300e7          	jalr	ra,0(t1)
-
-0000000000000780 <.LEHE15>:
- 780:	00050713          	addi	a4,a0,0
- 784:	fa843783          	ld	a5,-88(s0)
- 788:	02e7b423          	sd	a4,40(a5)
- 78c:	fa843783          	ld	a5,-88(s0)
- 790:	0207b783          	ld	a5,32(a5)
- 794:	02079863          	bne	a5,zero,7c4 <.L116>
- 798:	fa843783          	ld	a5,-88(s0)
- 79c:	0287b783          	ld	a5,40(a5)
- 7a0:	02079263          	bne	a5,zero,7c4 <.L116>
- 7a4:	fa843783          	ld	a5,-88(s0)
- 7a8:	00078513          	addi	a0,a5,0
- 7ac:	00000317          	auipc	t1,0x0
- 7b0:	00033303          	ld	t1,0(t1) # 7ac <.LEHE15+0x2c>
- 7b4:	000300e7          	jalr	ra,0(t1)
- 7b8:	fa843783          	ld	a5,-88(s0)
- 7bc:	0007bc23          	sd	zero,24(a5)
- 7c0:	0800006f          	jal	zero,840 <.L117>
-
-00000000000007c4 <.L116>:
- 7c4:	fa843783          	ld	a5,-88(s0)
- 7c8:	0207b783          	ld	a5,32(a5)
- 7cc:	fd843703          	ld	a4,-40(s0)
- 7d0:	00f71c63          	bne	a4,a5,7e8 <.L118>
- 7d4:	fa843783          	ld	a5,-88(s0)
- 7d8:	0287b703          	ld	a4,40(a5)
- 7dc:	fa843783          	ld	a5,-88(s0)
- 7e0:	00e7b823          	sd	a4,16(a5)
- 7e4:	f69ff06f          	jal	zero,74c <.L120>
-
-00000000000007e8 <.L118>:
- 7e8:	fa843783          	ld	a5,-88(s0)
- 7ec:	0207b703          	ld	a4,32(a5)
- 7f0:	fa843783          	ld	a5,-88(s0)
- 7f4:	0107b783          	ld	a5,16(a5)
- 7f8:	00f70733          	add	a4,a4,a5
- 7fc:	fa843783          	ld	a5,-88(s0)
- 800:	02e7b023          	sd	a4,32(a5)
- 804:	fa843783          	ld	a5,-88(s0)
- 808:	0287b703          	ld	a4,40(a5)
- 80c:	fa843783          	ld	a5,-88(s0)
- 810:	0107b783          	ld	a5,16(a5)
- 814:	00f70733          	add	a4,a4,a5
- 818:	fa843783          	ld	a5,-88(s0)
- 81c:	02e7b423          	sd	a4,40(a5)
- 820:	fb040793          	addi	a5,s0,-80
- 824:	00078513          	addi	a0,a5,0
- 828:	00000317          	auipc	t1,0x0
- 82c:	00033303          	ld	t1,0(t1) # 828 <.L118+0x40>
- 830:	000300e7          	jalr	ra,0(t1)
- 834:	00050713          	addi	a4,a0,0
- 838:	fa843783          	ld	a5,-88(s0)
- 83c:	00e7bc23          	sd	a4,24(a5)
-
-0000000000000840 <.L117>:
- 840:	fa843483          	ld	s1,-88(s0)
- 844:	fb040793          	addi	a5,s0,-80
- 848:	00078513          	addi	a0,a5,0
- 84c:	00000317          	auipc	t1,0x0
- 850:	00033303          	ld	t1,0(t1) # 84c <.L117+0xc>
- 854:	000300e7          	jalr	ra,0(t1)
- 858:	00048793          	addi	a5,s1,0
- 85c:	02c0006f          	jal	zero,888 <.L125>
-
-0000000000000860 <.L123>:
- 860:	00050493          	addi	s1,a0,0
- 864:	fb040793          	addi	a5,s0,-80
- 868:	00078513          	addi	a0,a5,0
- 86c:	00000317          	auipc	t1,0x0
- 870:	00033303          	ld	t1,0(t1) # 86c <.L123+0xc>
- 874:	000300e7          	jalr	ra,0(t1)
- 878:	00048793          	addi	a5,s1,0
- 87c:	00078513          	addi	a0,a5,0
-
-0000000000000880 <.LEHB16>:
- 880:	00000097          	auipc	ra,0x0
- 884:	000080e7          	jalr	ra,0(ra) # 880 <.LEHB16>
-
-0000000000000888 <.L125>:
- 888:	00078513          	addi	a0,a5,0
- 88c:	05813083          	ld	ra,88(sp)
- 890:	05013403          	ld	s0,80(sp)
- 894:	04813483          	ld	s1,72(sp)
- 898:	06010113          	addi	sp,sp,96
- 89c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt23__is_constant_evaluatedv:
-
-0000000000000000 <std::__is_constant_evaluated()>:
-   0:	ff010113          	addi	sp,sp,-16
-   4:	00813423          	sd	s0,8(sp)
-   8:	01010413          	addi	s0,sp,16
-   c:	00000793          	addi	a5,zero,0
-  10:	00078513          	addi	a0,a5,0
-  14:	00813403          	ld	s0,8(sp)
-  18:	01010113          	addi	sp,sp,16
-  1c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZnwmPv:
-
-0000000000000000 <operator new(unsigned long, void*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe043783          	ld	a5,-32(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZdlPvS_:
-
-0000000000000000 <operator delete(void*, void*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	00000013          	addi	zero,zero,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt7__cxx119to_stringEj:
-
-0000000000000000 <std::__cxx11::to_string(unsigned int)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	02913423          	sd	s1,40(sp)
-  10:	04010413          	addi	s0,sp,64
-  14:	fca43423          	sd	a0,-56(s0)
-  18:	00058793          	addi	a5,a1,0
-  1c:	fcf42223          	sw	a5,-60(s0)
-  20:	fc442783          	lw	a5,-60(s0)
-  24:	00a00593          	addi	a1,zero,10
-  28:	00078513          	addi	a0,a5,0
-  2c:	00000317          	auipc	t1,0x0
-  30:	00033303          	ld	t1,0(t1) # 2c <std::__cxx11::to_string(unsigned int)+0x2c>
-  34:	000300e7          	jalr	ra,0(t1)
-  38:	00050793          	addi	a5,a0,0
-  3c:	0007879b          	addiw	a5,a5,0
-  40:	02079493          	slli	s1,a5,0x20
-  44:	0204d493          	srli	s1,s1,0x20
-  48:	fd840793          	addi	a5,s0,-40
-  4c:	00078513          	addi	a0,a5,0
-  50:	00000097          	auipc	ra,0x0
-  54:	000080e7          	jalr	ra,0(ra) # 50 <std::__cxx11::to_string(unsigned int)+0x50>
-  58:	fd840793          	addi	a5,s0,-40
-  5c:	00078693          	addi	a3,a5,0
-  60:	00000613          	addi	a2,zero,0
-  64:	00048593          	addi	a1,s1,0
-  68:	fc843503          	ld	a0,-56(s0)
-  6c:	00000097          	auipc	ra,0x0
-  70:	000080e7          	jalr	ra,0(ra) # 6c <std::__cxx11::to_string(unsigned int)+0x6c>
-  74:	fd840793          	addi	a5,s0,-40
-  78:	00078513          	addi	a0,a5,0
-  7c:	00000097          	auipc	ra,0x0
-  80:	000080e7          	jalr	ra,0(ra) # 7c <std::__cxx11::to_string(unsigned int)+0x7c>
-  84:	00000593          	addi	a1,zero,0
-  88:	fc843503          	ld	a0,-56(s0)
-  8c:	00000097          	auipc	ra,0x0
-  90:	000080e7          	jalr	ra,0(ra) # 8c <std::__cxx11::to_string(unsigned int)+0x8c>
-  94:	00050493          	addi	s1,a0,0
-  98:	fc843503          	ld	a0,-56(s0)
-  9c:	00000097          	auipc	ra,0x0
-  a0:	000080e7          	jalr	ra,0(ra) # 9c <std::__cxx11::to_string(unsigned int)+0x9c>
-  a4:	00050793          	addi	a5,a0,0
-  a8:	0007879b          	addiw	a5,a5,0
-  ac:	fc442703          	lw	a4,-60(s0)
-  b0:	00070613          	addi	a2,a4,0
-  b4:	00078593          	addi	a1,a5,0
-  b8:	00048513          	addi	a0,s1,0
-  bc:	00000317          	auipc	t1,0x0
-  c0:	00033303          	ld	t1,0(t1) # bc <std::__cxx11::to_string(unsigned int)+0xbc>
-  c4:	000300e7          	jalr	ra,0(t1)
-  c8:	00000013          	addi	zero,zero,0
-  cc:	fc843503          	ld	a0,-56(s0)
-  d0:	03813083          	ld	ra,56(sp)
-  d4:	03013403          	ld	s0,48(sp)
-  d8:	02813483          	ld	s1,40(sp)
-  dc:	04010113          	addi	sp,sp,64
-  e0:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt9type_info4nameEv:
-
-0000000000000000 <std::type_info::name() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0087b783          	ld	a5,8(a5)
-  18:	0007c783          	lbu	a5,0(a5)
-  1c:	00078713          	addi	a4,a5,0
-  20:	02a00793          	addi	a5,zero,42
-  24:	00f71a63          	bne	a4,a5,38 <.L9>
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	0087b783          	ld	a5,8(a5)
-  30:	00178793          	addi	a5,a5,1
-  34:	00c0006f          	jal	zero,40 <.L11>
-
-0000000000000038 <.L9>:
-  38:	fe843783          	ld	a5,-24(s0)
-  3c:	0087b783          	ld	a5,8(a5)
-
-0000000000000040 <.L11>:
-  40:	00078513          	addi	a0,a5,0
-  44:	01813403          	ld	s0,24(sp)
-  48:	02010113          	addi	sp,sp,32
-  4c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt9type_infoeqERKS_:
-
-0000000000000000 <std::type_info::operator==(std::type_info const&) const>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	03010413          	addi	s0,sp,48
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fcb43823          	sd	a1,-48(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::type_info::operator==(std::type_info const&) const+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00050793          	addi	a5,a0,0
-  2c:	00078e63          	beq	a5,zero,48 <.L13>
-  30:	fd843703          	ld	a4,-40(s0)
-  34:	fd043783          	ld	a5,-48(s0)
-  38:	40f707b3          	sub	a5,a4,a5
-  3c:	0017b793          	sltiu	a5,a5,1
-  40:	0ff7f793          	andi	a5,a5,255
-  44:	07c0006f          	jal	zero,c0 <.L14>
-
-0000000000000048 <.L13>:
-  48:	fd843783          	ld	a5,-40(s0)
-  4c:	0087b703          	ld	a4,8(a5)
-  50:	fd043783          	ld	a5,-48(s0)
-  54:	0087b783          	ld	a5,8(a5)
-  58:	00f71663          	bne	a4,a5,64 <.L15>
-  5c:	00100793          	addi	a5,zero,1
-  60:	0600006f          	jal	zero,c0 <.L14>
-
-0000000000000064 <.L15>:
-  64:	fd843783          	ld	a5,-40(s0)
-  68:	0087b783          	ld	a5,8(a5)
-  6c:	0007c783          	lbu	a5,0(a5)
-  70:	00078713          	addi	a4,a5,0
-  74:	02a00793          	addi	a5,zero,42
-  78:	04f70063          	beq	a4,a5,b8 <.L16>
-  7c:	fd843783          	ld	a5,-40(s0)
-  80:	0087b483          	ld	s1,8(a5)
-  84:	fd043503          	ld	a0,-48(s0)
-  88:	00000317          	auipc	t1,0x0
-  8c:	00033303          	ld	t1,0(t1) # 88 <.L15+0x24>
-  90:	000300e7          	jalr	ra,0(t1)
-  94:	00050793          	addi	a5,a0,0
-  98:	00078593          	addi	a1,a5,0
-  9c:	00048513          	addi	a0,s1,0
-  a0:	00000097          	auipc	ra,0x0
-  a4:	000080e7          	jalr	ra,0(ra) # a0 <.L15+0x3c>
-  a8:	00050793          	addi	a5,a0,0
-  ac:	00079663          	bne	a5,zero,b8 <.L16>
-  b0:	00100793          	addi	a5,zero,1
-  b4:	0080006f          	jal	zero,bc <.L18>
-
-00000000000000b8 <.L16>:
-  b8:	00000793          	addi	a5,zero,0
-
-00000000000000bc <.L18>:
-  bc:	00000013          	addi	zero,zero,0
-
-00000000000000c0 <.L14>:
-  c0:	00078513          	addi	a0,a5,0
-  c4:	02813083          	ld	ra,40(sp)
-  c8:	02013403          	ld	s0,32(sp)
-  cc:	01813483          	ld	s1,24(sp)
-  d0:	03010113          	addi	sp,sp,48
-  d4:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN9__gnu_cxx7__mutexC2Ev:
-
-0000000000000000 <__gnu_cxx::__mutex::__mutex()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0007a023          	sw	zero,0(a5)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	0007a223          	sw	zero,4(a5)
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	0007a423          	sw	zero,8(a5)
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	0007a623          	sw	zero,12(a5)
-  30:	fe843783          	ld	a5,-24(s0)
-  34:	0007a823          	sw	zero,16(a5)
-  38:	fe843783          	ld	a5,-24(s0)
-  3c:	0007aa23          	sw	zero,20(a5)
-  40:	fe843783          	ld	a5,-24(s0)
-  44:	0007bc23          	sd	zero,24(a5)
-  48:	fe843783          	ld	a5,-24(s0)
-  4c:	0207b023          	sd	zero,32(a5)
-  50:	00000013          	addi	zero,zero,0
-  54:	01813403          	ld	s0,24(sp)
-  58:	02010113          	addi	sp,sp,32
-  5c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv:
-
-0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	fc843783          	ld	a5,-56(s0)
-  18:	03078793          	addi	a5,a5,48
-  1c:	fef43423          	sd	a5,-24(s0)
-  20:	fff00793          	addi	a5,zero,-1
-  24:	fef42223          	sw	a5,-28(s0)
-  28:	00000797          	auipc	a5,0x0
-  2c:	0007b783          	ld	a5,0(a5) # 28 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()+0x28>
-  30:	0007c783          	lbu	a5,0(a5)
-  34:	0007879b          	addiw	a5,a5,0
-  38:	00f037b3          	sltu	a5,zero,a5
-  3c:	0ff7f793          	andi	a5,a5,255
-  40:	04078263          	beq	a5,zero,84 <.L22>
-  44:	fe843783          	ld	a5,-24(s0)
-  48:	fcf43c23          	sd	a5,-40(s0)
-  4c:	fe442783          	lw	a5,-28(s0)
-  50:	fcf42a23          	sw	a5,-44(s0)
-  54:	fd843783          	ld	a5,-40(s0)
-  58:	0007a783          	lw	a5,0(a5)
-  5c:	fcf42823          	sw	a5,-48(s0)
-  60:	fd843783          	ld	a5,-40(s0)
-  64:	0007a783          	lw	a5,0(a5)
-  68:	fd442703          	lw	a4,-44(s0)
-  6c:	00f707bb          	addw	a5,a4,a5
-  70:	0007871b          	addiw	a4,a5,0
-  74:	fd843783          	ld	a5,-40(s0)
-  78:	00e7a023          	sw	a4,0(a5)
-  7c:	fd042783          	lw	a5,-48(s0)
-  80:	0200006f          	jal	zero,a0 <.L24>
-
-0000000000000084 <.L22>:
-  84:	fe442783          	lw	a5,-28(s0)
-  88:	00078593          	addi	a1,a5,0
-  8c:	fe843503          	ld	a0,-24(s0)
-  90:	00000097          	auipc	ra,0x0
-  94:	000080e7          	jalr	ra,0(ra) # 90 <.L22+0xc>
-  98:	00050793          	addi	a5,a0,0
-  9c:	00000013          	addi	zero,zero,0
-
-00000000000000a0 <.L24>:
-  a0:	00078713          	addi	a4,a5,0
-  a4:	00100793          	addi	a5,zero,1
-  a8:	40f707b3          	sub	a5,a4,a5
-  ac:	0017b793          	sltiu	a5,a5,1
-  b0:	0ff7f793          	andi	a5,a5,255
-  b4:	00078a63          	beq	a5,zero,c8 <.L26>
-  b8:	fc843503          	ld	a0,-56(s0)
-  bc:	00000317          	auipc	t1,0x0
-  c0:	00033303          	ld	t1,0(t1) # bc <.L24+0x1c>
-  c4:	000300e7          	jalr	ra,0(t1)
-
-00000000000000c8 <.L26>:
-  c8:	00000013          	addi	zero,zero,0
-  cc:	03813083          	ld	ra,56(sp)
-  d0:	03013403          	ld	s0,48(sp)
-  d4:	04010113          	addi	sp,sp,64
-  d8:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt19_Sp_make_shared_tag5_S_tiEv:
-
-0000000000000000 <std::_Sp_make_shared_tag::_S_ti()>:
-   0:	ff010113          	addi	sp,sp,-16
-   4:	00813423          	sd	s0,8(sp)
-   8:	01010413          	addi	s0,sp,16
-   c:	00000797          	auipc	a5,0x0
-  10:	0007b783          	ld	a5,0(a5) # c <std::_Sp_make_shared_tag::_S_ti()+0xc>
-  14:	00078513          	addi	a0,a5,0
-  18:	00813403          	ld	s0,8(sp)
-  1c:	01010113          	addi	sp,sp,16
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNK5dwarf9rangelist5entry8containsEm:
-
-0000000000000000 <dwarf::rangelist::entry::contains(unsigned long) const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0007b783          	ld	a5,0(a5)
-  1c:	fe043703          	ld	a4,-32(s0)
-  20:	00f76e63          	bltu	a4,a5,3c <.L30>
-  24:	fe843783          	ld	a5,-24(s0)
-  28:	0087b783          	ld	a5,8(a5)
-  2c:	fe043703          	ld	a4,-32(s0)
-  30:	00f77663          	bgeu	a4,a5,3c <.L30>
-  34:	00100793          	addi	a5,zero,1
-  38:	0080006f          	jal	zero,40 <.L31>
-
-000000000000003c <.L30>:
-  3c:	00000793          	addi	a5,zero,0
-
-0000000000000040 <.L31>:
-  40:	00078513          	addi	a0,a5,0
-  44:	01813403          	ld	s0,24(sp)
-  48:	02010113          	addi	sp,sp,32
-  4c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EED2Ev:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::~__shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00878793          	addi	a5,a5,8
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::~__shared_ptr()+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00000013          	addi	zero,zero,0
-  30:	01813083          	ld	ra,24(sp)
-  34:	01013403          	ld	s0,16(sp)
-  38:	02010113          	addi	sp,sp,32
-  3c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN5dwarf7sectionEED2Ev:
-
-0000000000000000 <std::shared_ptr<dwarf::section>::~shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::shared_ptr<dwarf::section>::~shared_ptr()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf9rangelist8iteratorC2Ev:
-
-0000000000000000 <dwarf::rangelist::iterator::iterator()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00000593          	addi	a1,zero,0
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <dwarf::rangelist::iterator::iterator()+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	fe843783          	ld	a5,-24(s0)
-  30:	0007b823          	sd	zero,16(a5)
-  34:	fe843783          	ld	a5,-24(s0)
-  38:	0007bc23          	sd	zero,24(a5)
-  3c:	00000013          	addi	zero,zero,0
-  40:	01813083          	ld	ra,24(sp)
-  44:	01013403          	ld	s0,16(sp)
-  48:	02010113          	addi	sp,sp,32
-  4c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNK5dwarf9rangelist8iteratordeEv:
-
-0000000000000000 <dwarf::rangelist::iterator::operator*() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	02078793          	addi	a5,a5,32
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNK5dwarf9rangelist8iteratoreqERKS1_:
-
-0000000000000000 <dwarf::rangelist::iterator::operator==(dwarf::rangelist::iterator const&) const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	fe043703          	ld	a4,-32(s0)
-  20:	00070593          	addi	a1,a4,0
-  24:	00078513          	addi	a0,a5,0
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <dwarf::rangelist::iterator::operator==(dwarf::rangelist::iterator const&) const+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00050793          	addi	a5,a0,0
-  38:	02078063          	beq	a5,zero,58 <.L39>
-  3c:	fe843783          	ld	a5,-24(s0)
-  40:	0187b703          	ld	a4,24(a5)
-  44:	fe043783          	ld	a5,-32(s0)
-  48:	0187b783          	ld	a5,24(a5)
-  4c:	00f71663          	bne	a4,a5,58 <.L39>
-  50:	00100793          	addi	a5,zero,1
-  54:	0080006f          	jal	zero,5c <.L40>
-
-0000000000000058 <.L39>:
-  58:	00000793          	addi	a5,zero,0
-
-000000000000005c <.L40>:
-  5c:	00078513          	addi	a0,a5,0
-  60:	01813083          	ld	ra,24(sp)
-  64:	01013403          	ld	s0,16(sp)
-  68:	02010113          	addi	sp,sp,32
-  6c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNK5dwarf9rangelist8iteratorneERKS1_:
-
-0000000000000000 <dwarf::rangelist::iterator::operator!=(dwarf::rangelist::iterator const&) const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043583          	ld	a1,-32(s0)
-  1c:	fe843503          	ld	a0,-24(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <dwarf::rangelist::iterator::operator!=(dwarf::rangelist::iterator const&) const+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050793          	addi	a5,a0,0
-  30:	0017c793          	xori	a5,a5,1
-  34:	0ff7f793          	andi	a5,a5,255
-  38:	00078513          	addi	a0,a5,0
-  3c:	01813083          	ld	ra,24(sp)
-  40:	01013403          	ld	s0,16(sp)
-  44:	02010113          	addi	sp,sp,32
-  48:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf7sectionC2ENS_12section_typeEPKvmNS_10byte_orderENS_6formatEj:
-
-0000000000000000 <dwarf::section::section(dwarf::section_type, void const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned int)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02813c23          	sd	s0,56(sp)
-   8:	04010413          	addi	s0,sp,64
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fcc43c23          	sd	a2,-40(s0)
-  14:	fcd43823          	sd	a3,-48(s0)
-  18:	00070613          	addi	a2,a4,0
-  1c:	00078693          	addi	a3,a5,0
-  20:	00080713          	addi	a4,a6,0
-  24:	00058793          	addi	a5,a1,0
-  28:	fef42223          	sw	a5,-28(s0)
-  2c:	00060793          	addi	a5,a2,0
-  30:	fef42023          	sw	a5,-32(s0)
-  34:	00068793          	addi	a5,a3,0
-  38:	fcf42623          	sw	a5,-52(s0)
-  3c:	00070793          	addi	a5,a4,0
-  40:	fcf42423          	sw	a5,-56(s0)
-  44:	fe843783          	ld	a5,-24(s0)
-  48:	fe442703          	lw	a4,-28(s0)
-  4c:	00e7a023          	sw	a4,0(a5)
-  50:	fe843783          	ld	a5,-24(s0)
-  54:	fd843703          	ld	a4,-40(s0)
-  58:	00e7b423          	sd	a4,8(a5)
-  5c:	fd843703          	ld	a4,-40(s0)
-  60:	fd043783          	ld	a5,-48(s0)
-  64:	00f70733          	add	a4,a4,a5
-  68:	fe843783          	ld	a5,-24(s0)
-  6c:	00e7b823          	sd	a4,16(a5)
-  70:	fe843783          	ld	a5,-24(s0)
-  74:	fcc42703          	lw	a4,-52(s0)
-  78:	00e7ac23          	sw	a4,24(a5)
-  7c:	fe843783          	ld	a5,-24(s0)
-  80:	fe042703          	lw	a4,-32(s0)
-  84:	00e7ae23          	sw	a4,28(a5)
-  88:	fe843783          	ld	a5,-24(s0)
-  8c:	fc842703          	lw	a4,-56(s0)
-  90:	02e7a023          	sw	a4,32(a5)
-  94:	00000013          	addi	zero,zero,0
-  98:	03813403          	ld	s0,56(sp)
-  9c:	04010113          	addi	sp,sp,64
-  a0:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf7section5sliceEmmNS_6formatEj:
-
-0000000000000000 <dwarf::section::slice(unsigned long, unsigned long, dwarf::format, unsigned int)>:
-   0:	fa010113          	addi	sp,sp,-96
-   4:	04113c23          	sd	ra,88(sp)
-   8:	04813823          	sd	s0,80(sp)
-   c:	04913423          	sd	s1,72(sp)
-  10:	06010413          	addi	s0,sp,96
-  14:	fca43423          	sd	a0,-56(s0)
-  18:	fcb43023          	sd	a1,-64(s0)
-  1c:	fac43c23          	sd	a2,-72(s0)
-  20:	fad43823          	sd	a3,-80(s0)
-  24:	00070693          	addi	a3,a4,0
-  28:	00078713          	addi	a4,a5,0
-  2c:	00068793          	addi	a5,a3,0
-  30:	faf42623          	sw	a5,-84(s0)
-  34:	00070793          	addi	a5,a4,0
-  38:	faf42423          	sw	a5,-88(s0)
-  3c:	fac42783          	lw	a5,-84(s0)
-  40:	00079863          	bne	a5,zero,50 <.L48>
-  44:	fc043783          	ld	a5,-64(s0)
-  48:	0187a783          	lw	a5,24(a5)
-  4c:	faf42623          	sw	a5,-84(s0)
-
-0000000000000050 <.L48>:
-  50:	fa842783          	lw	a5,-88(s0)
-  54:	00079863          	bne	a5,zero,64 <.L49>
-  58:	fc043783          	ld	a5,-64(s0)
-  5c:	0207a783          	lw	a5,32(a5)
-  60:	faf42423          	sw	a5,-88(s0)
-
-0000000000000064 <.L49>:
-  64:	fc043483          	ld	s1,-64(s0)
-  68:	fc043783          	ld	a5,-64(s0)
-  6c:	0087b703          	ld	a4,8(a5)
-  70:	fb843783          	ld	a5,-72(s0)
-  74:	00f707b3          	add	a5,a4,a5
-  78:	fcf43823          	sd	a5,-48(s0)
-  7c:	fc043783          	ld	a5,-64(s0)
-  80:	0107b703          	ld	a4,16(a5)
-  84:	fc043783          	ld	a5,-64(s0)
-  88:	0087b783          	ld	a5,8(a5)
-  8c:	40f707b3          	sub	a5,a4,a5
-  90:	fcf43c23          	sd	a5,-40(s0)
-  94:	fd840713          	addi	a4,s0,-40
-  98:	fb040793          	addi	a5,s0,-80
-  9c:	00070593          	addi	a1,a4,0
-  a0:	00078513          	addi	a0,a5,0
-  a4:	00000317          	auipc	t1,0x0
-  a8:	00033303          	ld	t1,0(t1) # a4 <.L49+0x40>
-  ac:	000300e7          	jalr	ra,0(t1)
-  b0:	00050593          	addi	a1,a0,0
-  b4:	fc043783          	ld	a5,-64(s0)
-  b8:	01c78713          	addi	a4,a5,28
-  bc:	fc843503          	ld	a0,-56(s0)
-  c0:	fa840693          	addi	a3,s0,-88
-  c4:	fac40793          	addi	a5,s0,-84
-  c8:	fd040613          	addi	a2,s0,-48
-  cc:	00068813          	addi	a6,a3,0
-  d0:	00058693          	addi	a3,a1,0
-  d4:	00048593          	addi	a1,s1,0
-  d8:	00000317          	auipc	t1,0x0
-  dc:	00033303          	ld	t1,0(t1) # d8 <.L49+0x74>
-  e0:	000300e7          	jalr	ra,0(t1)
-  e4:	fc843503          	ld	a0,-56(s0)
-  e8:	05813083          	ld	ra,88(sp)
-  ec:	05013403          	ld	s0,80(sp)
-  f0:	04813483          	ld	s1,72(sp)
-  f4:	06010113          	addi	sp,sp,96
-  f8:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EEC2ERKS4_:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043783          	ld	a5,-32(s0)
-  1c:	0007b703          	ld	a4,0(a5)
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	00e7b023          	sd	a4,0(a5)
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	00878713          	addi	a4,a5,8
-  30:	fe043783          	ld	a5,-32(s0)
-  34:	00878793          	addi	a5,a5,8
-  38:	00078593          	addi	a1,a5,0
-  3c:	00070513          	addi	a0,a4,0
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1> const&)+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-  4c:	00000013          	addi	zero,zero,0
-  50:	01813083          	ld	ra,24(sp)
-  54:	01013403          	ld	s0,16(sp)
-  58:	02010113          	addi	sp,sp,32
-  5c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN5dwarf7sectionEEC2ERKS2_:
-
-0000000000000000 <std::shared_ptr<dwarf::section>::shared_ptr(std::shared_ptr<dwarf::section> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	fe043703          	ld	a4,-32(s0)
-  20:	00070593          	addi	a1,a4,0
-  24:	00078513          	addi	a0,a5,0
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <std::shared_ptr<dwarf::section>::shared_ptr(std::shared_ptr<dwarf::section> const&)+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00000013          	addi	zero,zero,0
-  38:	01813083          	ld	ra,24(sp)
-  3c:	01013403          	ld	s0,16(sp)
-  40:	02010113          	addi	sp,sp,32
-  44:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf6cursorC2ESt10shared_ptrINS_7sectionEEm:
-
-0000000000000000 <dwarf::cursor::cursor(std::shared_ptr<dwarf::section>, unsigned long)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	fe043583          	ld	a1,-32(s0)
-  24:	00078513          	addi	a0,a5,0
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <dwarf::cursor::cursor(std::shared_ptr<dwarf::section>, unsigned long)+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	fe043503          	ld	a0,-32(s0)
-  38:	00000317          	auipc	t1,0x0
-  3c:	00033303          	ld	t1,0(t1) # 38 <dwarf::cursor::cursor(std::shared_ptr<dwarf::section>, unsigned long)+0x38>
-  40:	000300e7          	jalr	ra,0(t1)
-  44:	00050793          	addi	a5,a0,0
-  48:	0087b703          	ld	a4,8(a5)
-  4c:	fd843783          	ld	a5,-40(s0)
-  50:	00f70733          	add	a4,a4,a5
-  54:	fe843783          	ld	a5,-24(s0)
-  58:	00e7b823          	sd	a4,16(a5)
-  5c:	00000013          	addi	zero,zero,0
-  60:	02813083          	ld	ra,40(sp)
-  64:	02013403          	ld	s0,32(sp)
-  68:	03010113          	addi	sp,sp,48
-  6c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf6cursor6ensureEm:
-
-0000000000000000 <dwarf::cursor::ensure(unsigned long)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	03010413          	addi	s0,sp,48
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fcb43823          	sd	a1,-48(s0)
-  1c:	fd843783          	ld	a5,-40(s0)
-  20:	00078513          	addi	a0,a5,0
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <dwarf::cursor::ensure(unsigned long)+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050793          	addi	a5,a0,0
-  34:	0107b703          	ld	a4,16(a5)
-  38:	fd843783          	ld	a5,-40(s0)
-  3c:	0107b783          	ld	a5,16(a5)
-  40:	40f707b3          	sub	a5,a4,a5
-  44:	00078713          	addi	a4,a5,0
-  48:	fd043783          	ld	a5,-48(s0)
-  4c:	02f76663          	bltu	a4,a5,78 <.L55>
-  50:	fd843783          	ld	a5,-40(s0)
-  54:	0107b483          	ld	s1,16(a5)
-  58:	fd843783          	ld	a5,-40(s0)
-  5c:	00078513          	addi	a0,a5,0
-  60:	00000317          	auipc	t1,0x0
-  64:	00033303          	ld	t1,0(t1) # 60 <dwarf::cursor::ensure(unsigned long)+0x60>
-  68:	000300e7          	jalr	ra,0(t1)
-  6c:	00050793          	addi	a5,a0,0
-  70:	0107b783          	ld	a5,16(a5)
-  74:	00f4e663          	bltu	s1,a5,80 <.L56>
-
-0000000000000078 <.L55>:
-  78:	00100793          	addi	a5,zero,1
-  7c:	0080006f          	jal	zero,84 <.L57>
-
-0000000000000080 <.L56>:
-  80:	00000793          	addi	a5,zero,0
-
-0000000000000084 <.L57>:
-  84:	00078863          	beq	a5,zero,94 <.L59>
-  88:	fd843503          	ld	a0,-40(s0)
-  8c:	00000097          	auipc	ra,0x0
-  90:	000080e7          	jalr	ra,0(ra) # 8c <.L57+0x8>
-
-0000000000000094 <.L59>:
-  94:	00000013          	addi	zero,zero,0
-  98:	02813083          	ld	ra,40(sp)
-  9c:	02013403          	ld	s0,32(sp)
-  a0:	01813483          	ld	s1,24(sp)
-  a4:	03010113          	addi	sp,sp,48
-  a8:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf6cursor7addressEv:
-
-0000000000000000 <dwarf::cursor::address()>:
-   0:	f7010113          	addi	sp,sp,-144
-   4:	08113423          	sd	ra,136(sp)
-   8:	08813023          	sd	s0,128(sp)
-   c:	06913c23          	sd	s1,120(sp)
-  10:	07213823          	sd	s2,112(sp)
-  14:	09010413          	addi	s0,sp,144
-  18:	f6a43c23          	sd	a0,-136(s0)
-  1c:	f7843783          	ld	a5,-136(s0)
-  20:	00078513          	addi	a0,a5,0
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <dwarf::cursor::address()+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050793          	addi	a5,a0,0
-  34:	0207a783          	lw	a5,32(a5)
-  38:	00078693          	addi	a3,a5,0
-  3c:	00800713          	addi	a4,zero,8
-  40:	08e68e63          	beq	a3,a4,dc <.L61>
-  44:	00078693          	addi	a3,a5,0
-  48:	00800713          	addi	a4,zero,8
-  4c:	0ad76463          	bltu	a4,a3,f4 <.L62>
-  50:	00078693          	addi	a3,a5,0
-  54:	00400713          	addi	a4,zero,4
-  58:	04e68e63          	beq	a3,a4,b4 <.L63>
-  5c:	00078693          	addi	a3,a5,0
-  60:	00400713          	addi	a4,zero,4
-  64:	08d76863          	bltu	a4,a3,f4 <.L62>
-  68:	00078693          	addi	a3,a5,0
-  6c:	00100713          	addi	a4,zero,1
-  70:	00e68a63          	beq	a3,a4,84 <.L64>
-  74:	00078713          	addi	a4,a5,0
-  78:	00200793          	addi	a5,zero,2
-  7c:	02f70063          	beq	a4,a5,9c <.L65>
-  80:	0740006f          	jal	zero,f4 <.L62>
-
-0000000000000084 <.L64>:
-  84:	f7843503          	ld	a0,-136(s0)
-  88:	00000317          	auipc	t1,0x0
-  8c:	00033303          	ld	t1,0(t1) # 88 <.L64+0x4>
-
-0000000000000090 <.LEHB0>:
-  90:	000300e7          	jalr	ra,0(t1)
-  94:	00050793          	addi	a5,a0,0
-  98:	1ac0006f          	jal	zero,244 <.L73>
-
-000000000000009c <.L65>:
-  9c:	f7843503          	ld	a0,-136(s0)
-  a0:	00000317          	auipc	t1,0x0
-  a4:	00033303          	ld	t1,0(t1) # a0 <.L65+0x4>
-  a8:	000300e7          	jalr	ra,0(t1)
-  ac:	00050793          	addi	a5,a0,0
-  b0:	1940006f          	jal	zero,244 <.L73>
-
-00000000000000b4 <.L63>:
-  b4:	f7843503          	ld	a0,-136(s0)
-  b8:	00000317          	auipc	t1,0x0
-  bc:	00033303          	ld	t1,0(t1) # b8 <.L63+0x4>
-  c0:	000300e7          	jalr	ra,0(t1)
-  c4:	00050793          	addi	a5,a0,0
-  c8:	0007879b          	addiw	a5,a5,0
-  cc:	0007879b          	addiw	a5,a5,0
-  d0:	02079793          	slli	a5,a5,0x20
-  d4:	0207d793          	srli	a5,a5,0x20
-  d8:	16c0006f          	jal	zero,244 <.L73>
-
-00000000000000dc <.L61>:
-  dc:	f7843503          	ld	a0,-136(s0)
-  e0:	00000317          	auipc	t1,0x0
-  e4:	00033303          	ld	t1,0(t1) # e0 <.L61+0x4>
-  e8:	000300e7          	jalr	ra,0(t1)
-
-00000000000000ec <.LEHE0>:
-  ec:	00050793          	addi	a5,a0,0
-  f0:	1540006f          	jal	zero,244 <.L73>
-
-00000000000000f4 <.L62>:
-  f4:	01000513          	addi	a0,zero,16
-  f8:	00000097          	auipc	ra,0x0
-  fc:	000080e7          	jalr	ra,0(ra) # f8 <.L62+0x4>
- 100:	00050793          	addi	a5,a0,0
- 104:	00078493          	addi	s1,a5,0
- 108:	f7843783          	ld	a5,-136(s0)
- 10c:	00078513          	addi	a0,a5,0
- 110:	00000317          	auipc	t1,0x0
- 114:	00033303          	ld	t1,0(t1) # 110 <.L62+0x1c>
- 118:	000300e7          	jalr	ra,0(t1)
- 11c:	00050793          	addi	a5,a0,0
- 120:	0207a703          	lw	a4,32(a5)
- 124:	fc040793          	addi	a5,s0,-64
- 128:	00070593          	addi	a1,a4,0
- 12c:	00078513          	addi	a0,a5,0
- 130:	00000317          	auipc	t1,0x0
- 134:	00033303          	ld	t1,0(t1) # 130 <.L62+0x3c>
- 138:	000300e7          	jalr	ra,0(t1)
- 13c:	fa040793          	addi	a5,s0,-96
- 140:	fc040713          	addi	a4,s0,-64
- 144:	00070613          	addi	a2,a4,0
- 148:	00000597          	auipc	a1,0x0
- 14c:	00058593          	addi	a1,a1,0 # 148 <.L62+0x54>
- 150:	00078513          	addi	a0,a5,0
- 154:	00000317          	auipc	t1,0x0
- 158:	00033303          	ld	t1,0(t1) # 154 <.L62+0x60>
-
-000000000000015c <.LEHB1>:
- 15c:	000300e7          	jalr	ra,0(t1)
-
-0000000000000160 <.LEHE1>:
- 160:	f8040793          	addi	a5,s0,-128
- 164:	fa040713          	addi	a4,s0,-96
- 168:	00000617          	auipc	a2,0x0
- 16c:	00060613          	addi	a2,a2,0 # 168 <.LEHE1+0x8>
- 170:	00070593          	addi	a1,a4,0
- 174:	00078513          	addi	a0,a5,0
- 178:	00000317          	auipc	t1,0x0
- 17c:	00033303          	ld	t1,0(t1) # 178 <.LEHE1+0x18>
-
-0000000000000180 <.LEHB2>:
- 180:	000300e7          	jalr	ra,0(t1)
-
-0000000000000184 <.LEHE2>:
- 184:	f8040793          	addi	a5,s0,-128
- 188:	00078593          	addi	a1,a5,0
- 18c:	00048513          	addi	a0,s1,0
-
-0000000000000190 <.LEHB3>:
- 190:	00000097          	auipc	ra,0x0
- 194:	000080e7          	jalr	ra,0(ra) # 190 <.LEHB3>
-
-0000000000000198 <.LEHE3>:
- 198:	f8040793          	addi	a5,s0,-128
- 19c:	00078513          	addi	a0,a5,0
- 1a0:	00000097          	auipc	ra,0x0
- 1a4:	000080e7          	jalr	ra,0(ra) # 1a0 <.LEHE3+0x8>
- 1a8:	fa040793          	addi	a5,s0,-96
- 1ac:	00078513          	addi	a0,a5,0
- 1b0:	00000097          	auipc	ra,0x0
- 1b4:	000080e7          	jalr	ra,0(ra) # 1b0 <.LEHE3+0x18>
- 1b8:	fc040793          	addi	a5,s0,-64
- 1bc:	00078513          	addi	a0,a5,0
- 1c0:	00000097          	auipc	ra,0x0
- 1c4:	000080e7          	jalr	ra,0(ra) # 1c0 <.LEHE3+0x28>
- 1c8:	00000617          	auipc	a2,0x0
- 1cc:	00063603          	ld	a2,0(a2) # 1c8 <.LEHE3+0x30>
- 1d0:	00000597          	auipc	a1,0x0
- 1d4:	0005b583          	ld	a1,0(a1) # 1d0 <.LEHE3+0x38>
- 1d8:	00048513          	addi	a0,s1,0
-
-00000000000001dc <.LEHB4>:
- 1dc:	00000097          	auipc	ra,0x0
- 1e0:	000080e7          	jalr	ra,0(ra) # 1dc <.LEHB4>
-
-00000000000001e4 <.L72>:
- 1e4:	00050913          	addi	s2,a0,0
- 1e8:	f8040793          	addi	a5,s0,-128
- 1ec:	00078513          	addi	a0,a5,0
- 1f0:	00000097          	auipc	ra,0x0
- 1f4:	000080e7          	jalr	ra,0(ra) # 1f0 <.L72+0xc>
- 1f8:	0080006f          	jal	zero,200 <.L68>
-
-00000000000001fc <.L71>:
- 1fc:	00050913          	addi	s2,a0,0
-
-0000000000000200 <.L68>:
- 200:	fa040793          	addi	a5,s0,-96
- 204:	00078513          	addi	a0,a5,0
- 208:	00000097          	auipc	ra,0x0
- 20c:	000080e7          	jalr	ra,0(ra) # 208 <.L68+0x8>
- 210:	0080006f          	jal	zero,218 <.L69>
-
-0000000000000214 <.L70>:
- 214:	00050913          	addi	s2,a0,0
-
-0000000000000218 <.L69>:
- 218:	fc040793          	addi	a5,s0,-64
- 21c:	00078513          	addi	a0,a5,0
- 220:	00000097          	auipc	ra,0x0
- 224:	000080e7          	jalr	ra,0(ra) # 220 <.L69+0x8>
- 228:	00048513          	addi	a0,s1,0
- 22c:	00000097          	auipc	ra,0x0
- 230:	000080e7          	jalr	ra,0(ra) # 22c <.L69+0x14>
- 234:	00090793          	addi	a5,s2,0
- 238:	00078513          	addi	a0,a5,0
- 23c:	00000097          	auipc	ra,0x0
- 240:	000080e7          	jalr	ra,0(ra) # 23c <.L69+0x24>
-
-0000000000000244 <.L73>:
- 244:	00078513          	addi	a0,a5,0
- 248:	08813083          	ld	ra,136(sp)
- 24c:	08013403          	ld	s0,128(sp)
- 250:	07813483          	ld	s1,120(sp)
- 254:	07013903          	ld	s2,112(sp)
- 258:	09010113          	addi	sp,sp,144
- 25c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf6cursorD2Ev:
-
-0000000000000000 <dwarf::cursor::~cursor()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <dwarf::cursor::~cursor()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNK5dwarf6cursor18get_section_offsetEv:
-
-0000000000000000 <dwarf::cursor::get_section_offset() const>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	03010413          	addi	s0,sp,48
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fd843783          	ld	a5,-40(s0)
-  1c:	0107b483          	ld	s1,16(a5)
-  20:	fd843783          	ld	a5,-40(s0)
-  24:	00078513          	addi	a0,a5,0
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <dwarf::cursor::get_section_offset() const+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00050793          	addi	a5,a0,0
-  38:	0087b783          	ld	a5,8(a5)
-  3c:	40f487b3          	sub	a5,s1,a5
-  40:	00078513          	addi	a0,a5,0
-  44:	02813083          	ld	ra,40(sp)
-  48:	02013403          	ld	s0,32(sp)
-  4c:	01813483          	ld	s1,24(sp)
-  50:	03010113          	addi	sp,sp,48
-  54:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12_Vector_baseImSaImEE12_Vector_implD2Ev:
-
-0000000000000000 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_impl::~_Vector_impl()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_impl::~_Vector_impl()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12_Vector_baseImSaImEEC2Ev:
-
-0000000000000000 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_base()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_base()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEEC2Ev:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::vector()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::vector<unsigned long, std::allocator<unsigned long> >::vector()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf9rangelist8iteratorD2Ev:
-
-0000000000000000 <dwarf::rangelist::iterator::~iterator()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <dwarf::rangelist::iterator::~iterator()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt8__detail14__to_chars_lenIjEEjT_i:
-
-0000000000000000 <unsigned int std::__detail::__to_chars_len<unsigned int>(unsigned int, int)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02813c23          	sd	s0,56(sp)
-   8:	04010413          	addi	s0,sp,64
-   c:	00050793          	addi	a5,a0,0
-  10:	00058713          	addi	a4,a1,0
-  14:	fcf42623          	sw	a5,-52(s0)
-  18:	00070793          	addi	a5,a4,0
-  1c:	fcf42423          	sw	a5,-56(s0)
-  20:	00100793          	addi	a5,zero,1
-  24:	fef42623          	sw	a5,-20(s0)
-  28:	fc842783          	lw	a5,-56(s0)
-  2c:	02f787bb          	mulw	a5,a5,a5
-  30:	0007879b          	addiw	a5,a5,0
-  34:	fef42423          	sw	a5,-24(s0)
-  38:	fc842783          	lw	a5,-56(s0)
-  3c:	fe842703          	lw	a4,-24(s0)
-  40:	02f707bb          	mulw	a5,a4,a5
-  44:	fef42223          	sw	a5,-28(s0)
-  48:	fc842783          	lw	a5,-56(s0)
-  4c:	fe442703          	lw	a4,-28(s0)
-  50:	02f707bb          	mulw	a5,a4,a5
-  54:	0007879b          	addiw	a5,a5,0
-  58:	02079793          	slli	a5,a5,0x20
-  5c:	0207d793          	srli	a5,a5,0x20
-  60:	fcf43c23          	sd	a5,-40(s0)
-
-0000000000000064 <.L132>:
-  64:	fc842703          	lw	a4,-56(s0)
-  68:	fcc42783          	lw	a5,-52(s0)
-  6c:	0007879b          	addiw	a5,a5,0
-  70:	00e7f663          	bgeu	a5,a4,7c <.L127>
-  74:	fec42783          	lw	a5,-20(s0)
-  78:	0900006f          	jal	zero,108 <.L128>
-
-000000000000007c <.L127>:
-  7c:	fcc42783          	lw	a5,-52(s0)
-  80:	00078713          	addi	a4,a5,0
-  84:	fe842783          	lw	a5,-24(s0)
-  88:	0007071b          	addiw	a4,a4,0
-  8c:	0007879b          	addiw	a5,a5,0
-  90:	00f77a63          	bgeu	a4,a5,a4 <.L129>
-  94:	fec42783          	lw	a5,-20(s0)
-  98:	0017879b          	addiw	a5,a5,1
-  9c:	0007879b          	addiw	a5,a5,0
-  a0:	0680006f          	jal	zero,108 <.L128>
-
-00000000000000a4 <.L129>:
-  a4:	fcc42783          	lw	a5,-52(s0)
-  a8:	00078713          	addi	a4,a5,0
-  ac:	fe442783          	lw	a5,-28(s0)
-  b0:	0007071b          	addiw	a4,a4,0
-  b4:	0007879b          	addiw	a5,a5,0
-  b8:	00f77a63          	bgeu	a4,a5,cc <.L130>
-  bc:	fec42783          	lw	a5,-20(s0)
-  c0:	0027879b          	addiw	a5,a5,2
-  c4:	0007879b          	addiw	a5,a5,0
-  c8:	0400006f          	jal	zero,108 <.L128>
-
-00000000000000cc <.L130>:
-  cc:	fcc46783          	lwu	a5,-52(s0)
-  d0:	fd843703          	ld	a4,-40(s0)
-  d4:	00e7fa63          	bgeu	a5,a4,e8 <.L131>
-  d8:	fec42783          	lw	a5,-20(s0)
-  dc:	0037879b          	addiw	a5,a5,3
-  e0:	0007879b          	addiw	a5,a5,0
-  e4:	0240006f          	jal	zero,108 <.L128>
-
-00000000000000e8 <.L131>:
-  e8:	fcc46703          	lwu	a4,-52(s0)
-  ec:	fd843783          	ld	a5,-40(s0)
-  f0:	02f757b3          	divu	a5,a4,a5
-  f4:	fcf42623          	sw	a5,-52(s0)
-  f8:	fec42783          	lw	a5,-20(s0)
-  fc:	0047879b          	addiw	a5,a5,4
- 100:	fef42623          	sw	a5,-20(s0)
- 104:	f61ff06f          	jal	zero,64 <.L132>
-
-0000000000000108 <.L128>:
- 108:	00078513          	addi	a0,a5,0
- 10c:	03813403          	ld	s0,56(sp)
- 110:	04010113          	addi	sp,sp,64
- 114:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt8__detail18__to_chars_10_implIjEEvPcjT_:
-
-0000000000000000 <void std::__detail::__to_chars_10_impl<unsigned int>(char*, unsigned int, unsigned int)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02813423          	sd	s0,40(sp)
-   8:	03010413          	addi	s0,sp,48
-   c:	fca43c23          	sd	a0,-40(s0)
-  10:	00058793          	addi	a5,a1,0
-  14:	00060713          	addi	a4,a2,0
-  18:	fcf42a23          	sw	a5,-44(s0)
-  1c:	00070793          	addi	a5,a4,0
-  20:	fcf42823          	sw	a5,-48(s0)
-  24:	fd442783          	lw	a5,-44(s0)
-  28:	fff7879b          	addiw	a5,a5,-1
-  2c:	fef42623          	sw	a5,-20(s0)
-  30:	0a80006f          	jal	zero,d8 <.L134>
-
-0000000000000034 <.L135>:
-  34:	fd042783          	lw	a5,-48(s0)
-  38:	00078713          	addi	a4,a5,0
-  3c:	06400793          	addi	a5,zero,100
-  40:	02f777bb          	remuw	a5,a4,a5
-  44:	0007879b          	addiw	a5,a5,0
-  48:	0017979b          	slliw	a5,a5,0x1
-  4c:	fef42223          	sw	a5,-28(s0)
-  50:	fd042783          	lw	a5,-48(s0)
-  54:	00078713          	addi	a4,a5,0
-  58:	06400793          	addi	a5,zero,100
-  5c:	02f757bb          	divuw	a5,a4,a5
-  60:	fcf42823          	sw	a5,-48(s0)
-  64:	fe442783          	lw	a5,-28(s0)
-  68:	0017879b          	addiw	a5,a5,1
-  6c:	0007861b          	addiw	a2,a5,0
-  70:	fec46783          	lwu	a5,-20(s0)
-  74:	fd843703          	ld	a4,-40(s0)
-  78:	00f707b3          	add	a5,a4,a5
-  7c:	00000697          	auipc	a3,0x0
-  80:	0006b683          	ld	a3,0(a3) # 7c <.L135+0x48>
-  84:	02061713          	slli	a4,a2,0x20
-  88:	02075713          	srli	a4,a4,0x20
-  8c:	00e68733          	add	a4,a3,a4
-  90:	00074703          	lbu	a4,0(a4)
-  94:	00e78023          	sb	a4,0(a5)
-  98:	fec42783          	lw	a5,-20(s0)
-  9c:	fff7879b          	addiw	a5,a5,-1
-  a0:	0007879b          	addiw	a5,a5,0
-  a4:	02079793          	slli	a5,a5,0x20
-  a8:	0207d793          	srli	a5,a5,0x20
-  ac:	fd843703          	ld	a4,-40(s0)
-  b0:	00f707b3          	add	a5,a4,a5
-  b4:	00000697          	auipc	a3,0x0
-  b8:	0006b683          	ld	a3,0(a3) # b4 <.L135+0x80>
-  bc:	fe446703          	lwu	a4,-28(s0)
-  c0:	00e68733          	add	a4,a3,a4
-  c4:	00074703          	lbu	a4,0(a4)
-  c8:	00e78023          	sb	a4,0(a5)
-  cc:	fec42783          	lw	a5,-20(s0)
-  d0:	ffe7879b          	addiw	a5,a5,-2
-  d4:	fef42623          	sw	a5,-20(s0)
-
-00000000000000d8 <.L134>:
-  d8:	fd042783          	lw	a5,-48(s0)
-  dc:	0007871b          	addiw	a4,a5,0
-  e0:	06300793          	addi	a5,zero,99
-  e4:	f4e7e8e3          	bltu	a5,a4,34 <.L135>
-  e8:	fd042783          	lw	a5,-48(s0)
-  ec:	0007871b          	addiw	a4,a5,0
-  f0:	00900793          	addi	a5,zero,9
-  f4:	06e7f063          	bgeu	a5,a4,154 <.L136>
-  f8:	fd042783          	lw	a5,-48(s0)
-  fc:	0017979b          	slliw	a5,a5,0x1
- 100:	fef42423          	sw	a5,-24(s0)
- 104:	fe842783          	lw	a5,-24(s0)
- 108:	0017879b          	addiw	a5,a5,1
- 10c:	0007871b          	addiw	a4,a5,0
- 110:	fd843783          	ld	a5,-40(s0)
- 114:	00178793          	addi	a5,a5,1
- 118:	00000697          	auipc	a3,0x0
- 11c:	0006b683          	ld	a3,0(a3) # 118 <.L134+0x40>
- 120:	02071713          	slli	a4,a4,0x20
- 124:	02075713          	srli	a4,a4,0x20
- 128:	00e68733          	add	a4,a3,a4
- 12c:	00074703          	lbu	a4,0(a4)
- 130:	00e78023          	sb	a4,0(a5)
- 134:	00000717          	auipc	a4,0x0
- 138:	00073703          	ld	a4,0(a4) # 134 <.L134+0x5c>
- 13c:	fe846783          	lwu	a5,-24(s0)
- 140:	00f707b3          	add	a5,a4,a5
- 144:	0007c703          	lbu	a4,0(a5)
- 148:	fd843783          	ld	a5,-40(s0)
- 14c:	00e78023          	sb	a4,0(a5)
- 150:	01c0006f          	jal	zero,16c <.L138>
-
-0000000000000154 <.L136>:
- 154:	fd042783          	lw	a5,-48(s0)
- 158:	0ff7f793          	andi	a5,a5,255
- 15c:	0307879b          	addiw	a5,a5,48
- 160:	0ff7f713          	andi	a4,a5,255
- 164:	fd843783          	ld	a5,-40(s0)
- 168:	00e78023          	sb	a4,0(a5)
-
-000000000000016c <.L138>:
- 16c:	00000013          	addi	zero,zero,0
- 170:	02813403          	ld	s0,40(sp)
- 174:	03010113          	addi	sp,sp,48
- 178:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv:
-
-0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release_last_use()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	fc843783          	ld	a5,-56(s0)
-  18:	0007b783          	ld	a5,0(a5)
-  1c:	01078793          	addi	a5,a5,16
-  20:	0007b783          	ld	a5,0(a5)
-  24:	fc843503          	ld	a0,-56(s0)
-  28:	000780e7          	jalr	ra,0(a5)
-  2c:	0ff0000f          	fence	iorw,iorw
-  30:	fc843783          	ld	a5,-56(s0)
-  34:	03478793          	addi	a5,a5,52
-  38:	fef43423          	sd	a5,-24(s0)
-  3c:	fff00793          	addi	a5,zero,-1
-  40:	fef42223          	sw	a5,-28(s0)
-  44:	00000797          	auipc	a5,0x0
-  48:	0007b783          	ld	a5,0(a5) # 44 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release_last_use()+0x44>
-  4c:	0007c783          	lbu	a5,0(a5)
-  50:	0007879b          	addiw	a5,a5,0
-  54:	00f037b3          	sltu	a5,zero,a5
-  58:	0ff7f793          	andi	a5,a5,255
-  5c:	04078263          	beq	a5,zero,a0 <.L141>
-  60:	fe843783          	ld	a5,-24(s0)
-  64:	fcf43c23          	sd	a5,-40(s0)
-  68:	fe442783          	lw	a5,-28(s0)
-  6c:	fcf42a23          	sw	a5,-44(s0)
-  70:	fd843783          	ld	a5,-40(s0)
-  74:	0007a783          	lw	a5,0(a5)
-  78:	fcf42823          	sw	a5,-48(s0)
-  7c:	fd843783          	ld	a5,-40(s0)
-  80:	0007a783          	lw	a5,0(a5)
-  84:	fd442703          	lw	a4,-44(s0)
-  88:	00f707bb          	addw	a5,a4,a5
-  8c:	0007871b          	addiw	a4,a5,0
-  90:	fd843783          	ld	a5,-40(s0)
-  94:	00e7a023          	sw	a4,0(a5)
-  98:	fd042783          	lw	a5,-48(s0)
-  9c:	0200006f          	jal	zero,bc <.L143>
-
-00000000000000a0 <.L141>:
-  a0:	fe442783          	lw	a5,-28(s0)
-  a4:	00078593          	addi	a1,a5,0
-  a8:	fe843503          	ld	a0,-24(s0)
-  ac:	00000097          	auipc	ra,0x0
-  b0:	000080e7          	jalr	ra,0(ra) # ac <.L141+0xc>
-  b4:	00050793          	addi	a5,a0,0
-  b8:	00000013          	addi	zero,zero,0
-
-00000000000000bc <.L143>:
-  bc:	00078713          	addi	a4,a5,0
-  c0:	00100793          	addi	a5,zero,1
-  c4:	40f707b3          	sub	a5,a4,a5
-  c8:	0017b793          	sltiu	a5,a5,1
-  cc:	0ff7f793          	andi	a5,a5,255
-  d0:	00078e63          	beq	a5,zero,ec <.L145>
-  d4:	fc843783          	ld	a5,-56(s0)
-  d8:	0007b783          	ld	a5,0(a5)
-  dc:	01878793          	addi	a5,a5,24
-  e0:	0007b783          	ld	a5,0(a5)
-  e4:	fc843503          	ld	a0,-56(s0)
-  e8:	000780e7          	jalr	ra,0(a5)
-
-00000000000000ec <.L145>:
-  ec:	00000013          	addi	zero,zero,0
-  f0:	03813083          	ld	ra,56(sp)
-  f4:	03013403          	ld	s0,48(sp)
-  f8:	04010113          	addi	sp,sp,64
-  fc:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN5dwarf7sectionEEC2EDn:
-
-0000000000000000 <std::shared_ptr<dwarf::section>::shared_ptr(decltype(nullptr))>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843503          	ld	a0,-24(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::shared_ptr<dwarf::section>::shared_ptr(decltype(nullptr))+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED2Ev:
-
-0000000000000000 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::~__shared_count()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0007b783          	ld	a5,0(a5)
-  1c:	00078e63          	beq	a5,zero,38 <.L149>
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	0007b783          	ld	a5,0(a5)
-  28:	00078513          	addi	a0,a5,0
-  2c:	00000317          	auipc	t1,0x0
-  30:	00033303          	ld	t1,0(t1) # 2c <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::~__shared_count()+0x2c>
-  34:	000300e7          	jalr	ra,0(t1)
-
-0000000000000038 <.L149>:
-  38:	00000013          	addi	zero,zero,0
-  3c:	01813083          	ld	ra,24(sp)
-  40:	01013403          	ld	s0,16(sp)
-  44:	02010113          	addi	sp,sp,32
-  48:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSteqIN5dwarf7sectionES1_EbRKSt10shared_ptrIT_ERKS2_IT0_E:
-
-0000000000000000 <bool std::operator==<dwarf::section, dwarf::section>(std::shared_ptr<dwarf::section> const&, std::shared_ptr<dwarf::section> const&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	03010413          	addi	s0,sp,48
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fcb43823          	sd	a1,-48(s0)
-  1c:	fd843783          	ld	a5,-40(s0)
-  20:	00078513          	addi	a0,a5,0
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <bool std::operator==<dwarf::section, dwarf::section>(std::shared_ptr<dwarf::section> const&, std::shared_ptr<dwarf::section> const&)+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050493          	addi	s1,a0,0
-  34:	fd043783          	ld	a5,-48(s0)
-  38:	00078513          	addi	a0,a5,0
-  3c:	00000317          	auipc	t1,0x0
-  40:	00033303          	ld	t1,0(t1) # 3c <bool std::operator==<dwarf::section, dwarf::section>(std::shared_ptr<dwarf::section> const&, std::shared_ptr<dwarf::section> const&)+0x3c>
-  44:	000300e7          	jalr	ra,0(t1)
-  48:	00050793          	addi	a5,a0,0
-  4c:	40f487b3          	sub	a5,s1,a5
-  50:	0017b793          	sltiu	a5,a5,1
-  54:	0ff7f793          	andi	a5,a5,255
-  58:	00078513          	addi	a0,a5,0
-  5c:	02813083          	ld	ra,40(sp)
-  60:	02013403          	ld	s0,32(sp)
-  64:	01813483          	ld	s1,24(sp)
-  68:	03010113          	addi	sp,sp,48
-  6c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt3minImERKT_S2_S2_:
-
-0000000000000000 <unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe043783          	ld	a5,-32(s0)
-  18:	0007b703          	ld	a4,0(a5)
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	0007b783          	ld	a5,0(a5)
-  24:	00f77663          	bgeu	a4,a5,30 <.L153>
-  28:	fe043783          	ld	a5,-32(s0)
-  2c:	0080006f          	jal	zero,34 <.L154>
-
-0000000000000030 <.L153>:
-  30:	fe843783          	ld	a5,-24(s0)
-
-0000000000000034 <.L154>:
-  34:	00078513          	addi	a0,a5,0
-  38:	01813403          	ld	s0,24(sp)
-  3c:	02010113          	addi	sp,sp,32
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt3maxImERKT_S2_S2_:
-
-0000000000000000 <unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0007b703          	ld	a4,0(a5)
-  1c:	fe043783          	ld	a5,-32(s0)
-  20:	0007b783          	ld	a5,0(a5)
-  24:	00f77663          	bgeu	a4,a5,30 <.L156>
-  28:	fe043783          	ld	a5,-32(s0)
-  2c:	0080006f          	jal	zero,34 <.L157>
-
-0000000000000030 <.L156>:
-  30:	fe843783          	ld	a5,-24(s0)
-
-0000000000000034 <.L157>:
-  34:	00078513          	addi	a0,a5,0
-  38:	01813403          	ld	s0,24(sp)
-  3c:	02010113          	addi	sp,sp,32
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt11make_sharedIN5dwarf7sectionEJRNS0_12section_typeEPKcRKmRKNS0_10byte_orderERNS0_6formatERjEESt10shared_ptrINSt9enable_ifIXntsrSt8is_arrayIT_E5valueESH_E4typeEEDpOT0_:
-
-0000000000000000 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)>:
-   0:	f7010113          	addi	sp,sp,-144
-   4:	08113423          	sd	ra,136(sp)
-   8:	08813023          	sd	s0,128(sp)
-   c:	06913c23          	sd	s1,120(sp)
-  10:	07213823          	sd	s2,112(sp)
-  14:	07313423          	sd	s3,104(sp)
-  18:	07413023          	sd	s4,96(sp)
-  1c:	05513c23          	sd	s5,88(sp)
-  20:	05613823          	sd	s6,80(sp)
-  24:	09010413          	addi	s0,sp,144
-  28:	faa43423          	sd	a0,-88(s0)
-  2c:	fab43023          	sd	a1,-96(s0)
-  30:	f8c43c23          	sd	a2,-104(s0)
-  34:	f8d43823          	sd	a3,-112(s0)
-  38:	f8e43423          	sd	a4,-120(s0)
-  3c:	f8f43023          	sd	a5,-128(s0)
-  40:	f7043c23          	sd	a6,-136(s0)
-  44:	fb840793          	addi	a5,s0,-72
-  48:	00078b13          	addi	s6,a5,0
-  4c:	fa043503          	ld	a0,-96(s0)
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	00050493          	addi	s1,a0,0
-  60:	f9843503          	ld	a0,-104(s0)
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00050913          	addi	s2,a0,0
-  74:	f9043503          	ld	a0,-112(s0)
-  78:	00000317          	auipc	t1,0x0
-  7c:	00033303          	ld	t1,0(t1) # 78 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x78>
-  80:	000300e7          	jalr	ra,0(t1)
-  84:	00050993          	addi	s3,a0,0
-  88:	f8843503          	ld	a0,-120(s0)
-  8c:	00000317          	auipc	t1,0x0
-  90:	00033303          	ld	t1,0(t1) # 8c <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x8c>
-  94:	000300e7          	jalr	ra,0(t1)
-  98:	00050a13          	addi	s4,a0,0
-  9c:	f8043503          	ld	a0,-128(s0)
-  a0:	00000317          	auipc	t1,0x0
-  a4:	00033303          	ld	t1,0(t1) # a0 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xa0>
-  a8:	000300e7          	jalr	ra,0(t1)
-  ac:	00050a93          	addi	s5,a0,0
-  b0:	f7843503          	ld	a0,-136(s0)
-  b4:	00000317          	auipc	t1,0x0
-  b8:	00033303          	ld	t1,0(t1) # b4 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xb4>
-  bc:	000300e7          	jalr	ra,0(t1)
-  c0:	00050793          	addi	a5,a0,0
-  c4:	00078893          	addi	a7,a5,0
-  c8:	000a8813          	addi	a6,s5,0
-  cc:	000a0793          	addi	a5,s4,0
-  d0:	00098713          	addi	a4,s3,0
-  d4:	00090693          	addi	a3,s2,0
-  d8:	00048613          	addi	a2,s1,0
-  dc:	000b0593          	addi	a1,s6,0
-  e0:	fa843503          	ld	a0,-88(s0)
-  e4:	00000317          	auipc	t1,0x0
-  e8:	00033303          	ld	t1,0(t1) # e4 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xe4>
-  ec:	000300e7          	jalr	ra,0(t1)
-  f0:	fa843503          	ld	a0,-88(s0)
-  f4:	08813083          	ld	ra,136(sp)
-  f8:	08013403          	ld	s0,128(sp)
-  fc:	07813483          	ld	s1,120(sp)
- 100:	07013903          	ld	s2,112(sp)
- 104:	06813983          	ld	s3,104(sp)
- 108:	06013a03          	ld	s4,96(sp)
- 10c:	05813a83          	ld	s5,88(sp)
- 110:	05013b03          	ld	s6,80(sp)
- 114:	09010113          	addi	sp,sp,144
- 118:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN5dwarf7sectionEEC2Ev:
-
-0000000000000000 <std::shared_ptr<dwarf::section>::shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::shared_ptr<dwarf::section>::shared_ptr()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt19__shared_ptr_accessIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1ELb0ELb0EEptEv:
-
-0000000000000000 <std::__shared_ptr_access<dwarf::section, (__gnu_cxx::_Lock_policy)1, false, false>::operator->() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::__shared_ptr_access<dwarf::section, (__gnu_cxx::_Lock_policy)1, false, false>::operator->() const+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	00050793          	addi	a5,a0,0
-  28:	00078513          	addi	a0,a5,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2ERKS2_:
-
-0000000000000000 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count(std::__shared_count<(__gnu_cxx::_Lock_policy)1> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043783          	ld	a5,-32(s0)
-  1c:	0007b703          	ld	a4,0(a5)
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	00e7b023          	sd	a4,0(a5)
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	0007b783          	ld	a5,0(a5)
-  30:	00078e63          	beq	a5,zero,4c <.L165>
-  34:	fe843783          	ld	a5,-24(s0)
-  38:	0007b783          	ld	a5,0(a5)
-  3c:	00078513          	addi	a0,a5,0
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count(std::__shared_count<(__gnu_cxx::_Lock_policy)1> const&)+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-
-000000000000004c <.L165>:
-  4c:	00000013          	addi	zero,zero,0
-  50:	01813083          	ld	ra,24(sp)
-  54:	01013403          	ld	s0,16(sp)
-  58:	02010113          	addi	sp,sp,32
-  5c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf6cursor5fixedIhEET_v:
-
-0000000000000000 <unsigned char dwarf::cursor::fixed<unsigned char>()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	00100593          	addi	a1,zero,1
-  18:	fc843503          	ld	a0,-56(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <unsigned char dwarf::cursor::fixed<unsigned char>()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	fe043423          	sd	zero,-24(s0)
-  2c:	fc843783          	ld	a5,-56(s0)
-  30:	0107b783          	ld	a5,16(a5)
-  34:	fcf43c23          	sd	a5,-40(s0)
-  38:	fc843783          	ld	a5,-56(s0)
-  3c:	00078513          	addi	a0,a5,0
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <unsigned char dwarf::cursor::fixed<unsigned char>()+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-  4c:	00050793          	addi	a5,a0,0
-  50:	01c7a783          	lw	a5,28(a5)
-  54:	0017b793          	sltiu	a5,a5,1
-  58:	0ff7f793          	andi	a5,a5,255
-  5c:	04078c63          	beq	a5,zero,b4 <.L167>
-  60:	fe042223          	sw	zero,-28(s0)
-  64:	0400006f          	jal	zero,a4 <.L168>
-
-0000000000000068 <.L169>:
-  68:	fe446783          	lwu	a5,-28(s0)
-  6c:	fd843703          	ld	a4,-40(s0)
-  70:	00f707b3          	add	a5,a4,a5
-  74:	0007c783          	lbu	a5,0(a5)
-  78:	00078713          	addi	a4,a5,0
-  7c:	fe442783          	lw	a5,-28(s0)
-  80:	0037979b          	slliw	a5,a5,0x3
-  84:	0007879b          	addiw	a5,a5,0
-  88:	00f717b3          	sll	a5,a4,a5
-  8c:	fe843703          	ld	a4,-24(s0)
-  90:	00f767b3          	or	a5,a4,a5
-  94:	fef43423          	sd	a5,-24(s0)
-  98:	fe442783          	lw	a5,-28(s0)
-  9c:	0017879b          	addiw	a5,a5,1
-  a0:	fef42223          	sw	a5,-28(s0)
-
-00000000000000a4 <.L168>:
-  a4:	fe442783          	lw	a5,-28(s0)
-  a8:	0007879b          	addiw	a5,a5,0
-  ac:	fa078ee3          	beq	a5,zero,68 <.L169>
-  b0:	0440006f          	jal	zero,f4 <.L170>
-
-00000000000000b4 <.L167>:
-  b4:	fe042023          	sw	zero,-32(s0)
-  b8:	0300006f          	jal	zero,e8 <.L171>
-
-00000000000000bc <.L172>:
-  bc:	fe843783          	ld	a5,-24(s0)
-  c0:	00879793          	slli	a5,a5,0x8
-  c4:	fe046703          	lwu	a4,-32(s0)
-  c8:	fd843683          	ld	a3,-40(s0)
-  cc:	00e68733          	add	a4,a3,a4
-  d0:	00074703          	lbu	a4,0(a4)
-  d4:	00e7e7b3          	or	a5,a5,a4
-  d8:	fef43423          	sd	a5,-24(s0)
-  dc:	fe042783          	lw	a5,-32(s0)
-  e0:	0017879b          	addiw	a5,a5,1
-  e4:	fef42023          	sw	a5,-32(s0)
-
-00000000000000e8 <.L171>:
-  e8:	fe042783          	lw	a5,-32(s0)
-  ec:	0007879b          	addiw	a5,a5,0
-  f0:	fc0786e3          	beq	a5,zero,bc <.L172>
-
-00000000000000f4 <.L170>:
-  f4:	fc843783          	ld	a5,-56(s0)
-  f8:	0107b783          	ld	a5,16(a5)
-  fc:	00178713          	addi	a4,a5,1
- 100:	fc843783          	ld	a5,-56(s0)
- 104:	00e7b823          	sd	a4,16(a5)
- 108:	fe843783          	ld	a5,-24(s0)
- 10c:	0ff7f793          	andi	a5,a5,255
- 110:	00078513          	addi	a0,a5,0
- 114:	03813083          	ld	ra,56(sp)
- 118:	03013403          	ld	s0,48(sp)
- 11c:	04010113          	addi	sp,sp,64
+0000000000000000 <dwarf::rangelist::rangelist(std::shared_ptr<dwarf::section> const&, unsigned long, unsigned int, unsigned long)>:
+
+using namespace std;
+
+DWARFPP_BEGIN_NAMESPACE
+
+rangelist::rangelist(const std::shared_ptr<section> &sec, section_offset off,
+   0:	fb010113          	addi	sp,sp,-80
+   4:	04113423          	sd	ra,72(sp)
+   8:	04813023          	sd	s0,64(sp)
+   c:	02913c23          	sd	s1,56(sp)
+  10:	03213823          	sd	s2,48(sp)
+  14:	03313423          	sd	s3,40(sp)
+  18:	03413023          	sd	s4,32(sp)
+  1c:	01513c23          	sd	s5,24(sp)
+  20:	01613823          	sd	s6,16(sp)
+  24:	00050413          	addi	s0,a0,0
+  28:	00068993          	addi	s3,a3,0
+  2c:	00070a13          	addi	s4,a4,0
+
+0000000000000030 <.LBB1895>:
+	pointer _M_finish;
+	pointer _M_end_of_storage;
+
+	_GLIBCXX20_CONSTEXPR
+	_Vector_impl_data() _GLIBCXX_NOEXCEPT
+	: _M_start(), _M_finish(), _M_end_of_storage()
+  30:	00053023          	sd	zero,0(a0)
+
+0000000000000034 <.LM500>:
+  34:	00053423          	sd	zero,8(a0)
+
+0000000000000038 <.LM501>:
+  38:	00053823          	sd	zero,16(a0)
+
+000000000000003c <.LBB1902>:
+        { __shared_ptr(__p, std::move(__d), std::move(__a)).swap(*this); }
+
+      /// Return the stored pointer.
+      element_type*
+      get() const noexcept
+      { return _M_ptr; }
+  3c:	0005b903          	ld	s2,0(a1)
+
+0000000000000040 <.LM507>:
+  40:	fff00793          	addi	a5,zero,-1
+  44:	00f13023          	sd	a5,0(sp)
+
+0000000000000048 <.LBB1906>:
+
+  std::shared_ptr<section> slice(section_offset start, section_length len,
+                                 format fmt = format::unknown,
+                                 unsigned addr_size = 0) {
+    if (fmt == format::unknown)
+      fmt = this->fmt;
+  48:	01892a83          	lw	s5,24(s2)
+
+000000000000004c <.LM513>:
+    if (addr_size == 0)
+  4c:	00069463          	bne	a3,zero,54 <.L77>
+
+0000000000000050 <.LM514>:
+      addr_size = this->addr_size;
+  50:	02092983          	lw	s3,32(s2)
+
+0000000000000054 <.L77>:
+
+    return std::make_shared<section>(
+        type, begin + start, std::min(len, (section_length)(end - begin)), ord,
+  54:	00893703          	ld	a4,8(s2)
+
+0000000000000058 <.LM518>:
+  58:	00c704b3          	add	s1,a4,a2
+
+000000000000005c <.LM519>:
+  5c:	01093783          	ld	a5,16(s2)
+
+0000000000000060 <.LM520>:
+  60:	40e787b3          	sub	a5,a5,a4
+
+0000000000000064 <.LM521>:
+  64:	00f13423          	sd	a5,8(sp)
+
+0000000000000068 <.LBB1908>:
+    min(const _Tp& __a, const _Tp& __b)
+    {
+      // concept requirements
+      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
+      //return __b < __a ? __b : __a;
+      if (__b < __a)
+  68:	fff00713          	addi	a4,zero,-1
+
+000000000000006c <.LM524>:
+	return __b;
+  6c:	00810b13          	addi	s6,sp,8
+
+0000000000000070 <.LM525>:
+      if (__b < __a)
+  70:	00e79463          	bne	a5,a4,78 <.L78>
+
+0000000000000074 <.LM526>:
+      return __a;
+  74:	00010b13          	addi	s6,sp,0
+
+0000000000000078 <.L78>:
+
+    protected:
+      // This constructor is non-standard, it is used by allocate_shared.
+      template<typename _Alloc, typename... _Args>
+	__shared_ptr(_Sp_alloc_shared_tag<_Alloc> __tag, _Args&&... __args)
+	: _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
+  78:	00043c23          	sd	zero,24(s0)
+
+000000000000007c <.LBB1915>:
+	    std::align_val_t __al = std::align_val_t(alignof(_Tp));
+	    return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp),
+							   __al));
+	  }
+#endif
+	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+  7c:	06000513          	addi	a0,zero,96
+
+0000000000000080 <.LEHB5>:
+  80:	00000097          	auipc	ra,0x0
+  84:	000080e7          	jalr	ra,0(ra) # 80 <.LEHB5>
+
+0000000000000088 <.LBB1923>:
+    __mutex(const __mutex&);
+    __mutex& operator=(const __mutex&);
+
+  public:
+    __mutex() 
+    { 
+  88:	00052423          	sw	zero,8(a0)
+  8c:	00052623          	sw	zero,12(a0)
+  90:	00052823          	sw	zero,16(a0)
+  94:	00052a23          	sw	zero,20(a0)
+  98:	00052c23          	sw	zero,24(a0)
+  9c:	00052e23          	sw	zero,28(a0)
+  a0:	02053023          	sd	zero,32(a0)
+  a4:	02053423          	sd	zero,40(a0)
+
+00000000000000a8 <.LBE1930>:
+      : _M_use_count(1), _M_weak_count(1) { }
+  a8:	00100793          	addi	a5,zero,1
+  ac:	02f52823          	sw	a5,48(a0)
+
+00000000000000b0 <.LM556>:
+  b0:	02f52a23          	sw	a5,52(a0)
+
+00000000000000b4 <.LBE1928>:
+	: _M_impl(__a)
+  b4:	00000797          	auipc	a5,0x0
+  b8:	0007b783          	ld	a5,0(a5) # b4 <.LBE1928>
+  bc:	01078793          	addi	a5,a5,16
+  c0:	00f53023          	sd	a5,0(a0)
+
+00000000000000c4 <.LBB1933>:
+	  // Allow std::_Construct to be used in constant expressions.
+	  std::construct_at(__p, std::forward<_Args>(__args)...);
+	  return;
+	}
+#endif
+      ::new((void*)__p) _Tp(std::forward<_Args>(__args)...);
+  c4:	00092683          	lw	a3,0(s2)
+  c8:	000b3703          	ld	a4,0(s6)
+  cc:	01c92783          	lw	a5,28(s2)
+
+00000000000000d0 <.LBB1939>:
+      : type(type), begin((char *)begin), end((char *)begin + length), fmt(fmt),
+  d0:	02d52c23          	sw	a3,56(a0)
+
+00000000000000d4 <.LM569>:
+  d4:	04953023          	sd	s1,64(a0)
+
+00000000000000d8 <.LM570>:
+  d8:	00e484b3          	add	s1,s1,a4
+
+00000000000000dc <.LM571>:
+  dc:	04953423          	sd	s1,72(a0)
+
+00000000000000e0 <.LM572>:
+  e0:	05552823          	sw	s5,80(a0)
+
+00000000000000e4 <.LM573>:
+        ord(ord), addr_size(addr_size) {}
+  e4:	04f52a23          	sw	a5,84(a0)
+
+00000000000000e8 <.LM574>:
+  e8:	05352c23          	sw	s3,88(a0)
+
+00000000000000ec <.LBB1941>:
+	  _M_pi = __pi;
+  ec:	02a43023          	sd	a0,32(s0)
+
+00000000000000f0 <.LBB1942>:
+      __aligned_buffer(std::nullptr_t) { }
+
+      void*
+      _M_addr() noexcept
+      {
+        return static_cast<void*>(&_M_storage);
+  f0:	03850793          	addi	a5,a0,56
+
+00000000000000f4 <.LBE1942>:
+	  __p = __pi->_M_ptr();
+  f4:	00f43c23          	sd	a5,24(s0)
+
+00000000000000f8 <.LBB1946>:
+                     unsigned cu_addr_size, taddr cu_low_pc)
+    : sec(sec->slice(off, ~0, format::unknown, cu_addr_size)),
+      base_addr(cu_low_pc) {}
+  f8:	03443423          	sd	s4,40(s0)
+
+00000000000000fc <.LM592>:
+  fc:	04813083          	ld	ra,72(sp)
+ 100:	04013403          	ld	s0,64(sp)
+
+0000000000000104 <.LM593>:
+ 104:	03813483          	ld	s1,56(sp)
+ 108:	03013903          	ld	s2,48(sp)
+ 10c:	02813983          	ld	s3,40(sp)
+ 110:	02013a03          	ld	s4,32(sp)
+
+0000000000000114 <.LM594>:
+ 114:	01813a83          	ld	s5,24(sp)
+ 118:	01013b03          	ld	s6,16(sp)
+ 11c:	05010113          	addi	sp,sp,80
  120:	00008067          	jalr	zero,0(ra)
 
-Disassembly of section .text._ZN5dwarf6cursor5fixedItEET_v:
-
-0000000000000000 <unsigned short dwarf::cursor::fixed<unsigned short>()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	00200593          	addi	a1,zero,2
-  18:	fc843503          	ld	a0,-56(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <unsigned short dwarf::cursor::fixed<unsigned short>()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	fe043423          	sd	zero,-24(s0)
-  2c:	fc843783          	ld	a5,-56(s0)
-  30:	0107b783          	ld	a5,16(a5)
-  34:	fcf43c23          	sd	a5,-40(s0)
-  38:	fc843783          	ld	a5,-56(s0)
-  3c:	00078513          	addi	a0,a5,0
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <unsigned short dwarf::cursor::fixed<unsigned short>()+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-  4c:	00050793          	addi	a5,a0,0
-  50:	01c7a783          	lw	a5,28(a5)
-  54:	0017b793          	sltiu	a5,a5,1
-  58:	0ff7f793          	andi	a5,a5,255
-  5c:	04078e63          	beq	a5,zero,b8 <.L175>
-  60:	fe042223          	sw	zero,-28(s0)
-  64:	0400006f          	jal	zero,a4 <.L176>
-
-0000000000000068 <.L177>:
-  68:	fe446783          	lwu	a5,-28(s0)
-  6c:	fd843703          	ld	a4,-40(s0)
-  70:	00f707b3          	add	a5,a4,a5
-  74:	0007c783          	lbu	a5,0(a5)
-  78:	00078713          	addi	a4,a5,0
-  7c:	fe442783          	lw	a5,-28(s0)
-  80:	0037979b          	slliw	a5,a5,0x3
-  84:	0007879b          	addiw	a5,a5,0
-  88:	00f717b3          	sll	a5,a4,a5
-  8c:	fe843703          	ld	a4,-24(s0)
-  90:	00f767b3          	or	a5,a4,a5
-  94:	fef43423          	sd	a5,-24(s0)
-  98:	fe442783          	lw	a5,-28(s0)
-  9c:	0017879b          	addiw	a5,a5,1
-  a0:	fef42223          	sw	a5,-28(s0)
-
-00000000000000a4 <.L176>:
-  a4:	fe442783          	lw	a5,-28(s0)
-  a8:	0007871b          	addiw	a4,a5,0
-  ac:	00100793          	addi	a5,zero,1
-  b0:	fae7fce3          	bgeu	a5,a4,68 <.L177>
-  b4:	0480006f          	jal	zero,fc <.L178>
-
-00000000000000b8 <.L175>:
-  b8:	fe042023          	sw	zero,-32(s0)
-  bc:	0300006f          	jal	zero,ec <.L179>
-
-00000000000000c0 <.L180>:
-  c0:	fe843783          	ld	a5,-24(s0)
-  c4:	00879793          	slli	a5,a5,0x8
-  c8:	fe046703          	lwu	a4,-32(s0)
-  cc:	fd843683          	ld	a3,-40(s0)
-  d0:	00e68733          	add	a4,a3,a4
-  d4:	00074703          	lbu	a4,0(a4)
-  d8:	00e7e7b3          	or	a5,a5,a4
-  dc:	fef43423          	sd	a5,-24(s0)
-  e0:	fe042783          	lw	a5,-32(s0)
-  e4:	0017879b          	addiw	a5,a5,1
-  e8:	fef42023          	sw	a5,-32(s0)
-
-00000000000000ec <.L179>:
-  ec:	fe042783          	lw	a5,-32(s0)
-  f0:	0007871b          	addiw	a4,a5,0
-  f4:	00100793          	addi	a5,zero,1
-  f8:	fce7f4e3          	bgeu	a5,a4,c0 <.L180>
-
-00000000000000fc <.L178>:
-  fc:	fc843783          	ld	a5,-56(s0)
- 100:	0107b783          	ld	a5,16(a5)
- 104:	00278713          	addi	a4,a5,2
- 108:	fc843783          	ld	a5,-56(s0)
- 10c:	00e7b823          	sd	a4,16(a5)
- 110:	fe843783          	ld	a5,-24(s0)
- 114:	03079793          	slli	a5,a5,0x30
- 118:	0307d793          	srli	a5,a5,0x30
- 11c:	00078513          	addi	a0,a5,0
- 120:	03813083          	ld	ra,56(sp)
- 124:	03013403          	ld	s0,48(sp)
- 128:	04010113          	addi	sp,sp,64
- 12c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf6cursor5fixedIjEET_v:
-
-0000000000000000 <unsigned int dwarf::cursor::fixed<unsigned int>()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	00400593          	addi	a1,zero,4
-  18:	fc843503          	ld	a0,-56(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <unsigned int dwarf::cursor::fixed<unsigned int>()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	fe043423          	sd	zero,-24(s0)
-  2c:	fc843783          	ld	a5,-56(s0)
-  30:	0107b783          	ld	a5,16(a5)
-  34:	fcf43c23          	sd	a5,-40(s0)
-  38:	fc843783          	ld	a5,-56(s0)
-  3c:	00078513          	addi	a0,a5,0
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <unsigned int dwarf::cursor::fixed<unsigned int>()+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-  4c:	00050793          	addi	a5,a0,0
-  50:	01c7a783          	lw	a5,28(a5)
-  54:	0017b793          	sltiu	a5,a5,1
-  58:	0ff7f793          	andi	a5,a5,255
-  5c:	04078e63          	beq	a5,zero,b8 <.L183>
-  60:	fe042223          	sw	zero,-28(s0)
-  64:	0400006f          	jal	zero,a4 <.L184>
-
-0000000000000068 <.L185>:
-  68:	fe446783          	lwu	a5,-28(s0)
-  6c:	fd843703          	ld	a4,-40(s0)
-  70:	00f707b3          	add	a5,a4,a5
-  74:	0007c783          	lbu	a5,0(a5)
-  78:	00078713          	addi	a4,a5,0
-  7c:	fe442783          	lw	a5,-28(s0)
-  80:	0037979b          	slliw	a5,a5,0x3
-  84:	0007879b          	addiw	a5,a5,0
-  88:	00f717b3          	sll	a5,a4,a5
-  8c:	fe843703          	ld	a4,-24(s0)
-  90:	00f767b3          	or	a5,a4,a5
-  94:	fef43423          	sd	a5,-24(s0)
-  98:	fe442783          	lw	a5,-28(s0)
-  9c:	0017879b          	addiw	a5,a5,1
-  a0:	fef42223          	sw	a5,-28(s0)
-
-00000000000000a4 <.L184>:
-  a4:	fe442783          	lw	a5,-28(s0)
-  a8:	0007871b          	addiw	a4,a5,0
-  ac:	00300793          	addi	a5,zero,3
-  b0:	fae7fce3          	bgeu	a5,a4,68 <.L185>
-  b4:	0480006f          	jal	zero,fc <.L186>
-
-00000000000000b8 <.L183>:
-  b8:	fe042023          	sw	zero,-32(s0)
-  bc:	0300006f          	jal	zero,ec <.L187>
-
-00000000000000c0 <.L188>:
-  c0:	fe843783          	ld	a5,-24(s0)
-  c4:	00879793          	slli	a5,a5,0x8
-  c8:	fe046703          	lwu	a4,-32(s0)
-  cc:	fd843683          	ld	a3,-40(s0)
-  d0:	00e68733          	add	a4,a3,a4
-  d4:	00074703          	lbu	a4,0(a4)
-  d8:	00e7e7b3          	or	a5,a5,a4
-  dc:	fef43423          	sd	a5,-24(s0)
-  e0:	fe042783          	lw	a5,-32(s0)
-  e4:	0017879b          	addiw	a5,a5,1
-  e8:	fef42023          	sw	a5,-32(s0)
-
-00000000000000ec <.L187>:
-  ec:	fe042783          	lw	a5,-32(s0)
-  f0:	0007871b          	addiw	a4,a5,0
-  f4:	00300793          	addi	a5,zero,3
-  f8:	fce7f4e3          	bgeu	a5,a4,c0 <.L188>
-
-00000000000000fc <.L186>:
-  fc:	fc843783          	ld	a5,-56(s0)
- 100:	0107b783          	ld	a5,16(a5)
- 104:	00478713          	addi	a4,a5,4
- 108:	fc843783          	ld	a5,-56(s0)
- 10c:	00e7b823          	sd	a4,16(a5)
- 110:	fe843783          	ld	a5,-24(s0)
- 114:	0007879b          	addiw	a5,a5,0
- 118:	00078513          	addi	a0,a5,0
- 11c:	03813083          	ld	ra,56(sp)
- 120:	03013403          	ld	s0,48(sp)
- 124:	04010113          	addi	sp,sp,64
- 128:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN5dwarf6cursor5fixedImEET_v:
-
-0000000000000000 <unsigned long dwarf::cursor::fixed<unsigned long>()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	00800593          	addi	a1,zero,8
-  18:	fc843503          	ld	a0,-56(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <unsigned long dwarf::cursor::fixed<unsigned long>()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	fe043423          	sd	zero,-24(s0)
-  2c:	fc843783          	ld	a5,-56(s0)
-  30:	0107b783          	ld	a5,16(a5)
-  34:	fcf43c23          	sd	a5,-40(s0)
-  38:	fc843783          	ld	a5,-56(s0)
-  3c:	00078513          	addi	a0,a5,0
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <unsigned long dwarf::cursor::fixed<unsigned long>()+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-  4c:	00050793          	addi	a5,a0,0
-  50:	01c7a783          	lw	a5,28(a5)
-  54:	0017b793          	sltiu	a5,a5,1
-  58:	0ff7f793          	andi	a5,a5,255
-  5c:	04078e63          	beq	a5,zero,b8 <.L191>
-  60:	fe042223          	sw	zero,-28(s0)
-  64:	0400006f          	jal	zero,a4 <.L192>
-
-0000000000000068 <.L193>:
-  68:	fe446783          	lwu	a5,-28(s0)
-  6c:	fd843703          	ld	a4,-40(s0)
-  70:	00f707b3          	add	a5,a4,a5
-  74:	0007c783          	lbu	a5,0(a5)
-  78:	00078713          	addi	a4,a5,0
-  7c:	fe442783          	lw	a5,-28(s0)
-  80:	0037979b          	slliw	a5,a5,0x3
-  84:	0007879b          	addiw	a5,a5,0
-  88:	00f717b3          	sll	a5,a4,a5
-  8c:	fe843703          	ld	a4,-24(s0)
-  90:	00f767b3          	or	a5,a4,a5
-  94:	fef43423          	sd	a5,-24(s0)
-  98:	fe442783          	lw	a5,-28(s0)
-  9c:	0017879b          	addiw	a5,a5,1
-  a0:	fef42223          	sw	a5,-28(s0)
-
-00000000000000a4 <.L192>:
-  a4:	fe442783          	lw	a5,-28(s0)
-  a8:	0007871b          	addiw	a4,a5,0
-  ac:	00700793          	addi	a5,zero,7
-  b0:	fae7fce3          	bgeu	a5,a4,68 <.L193>
-  b4:	0480006f          	jal	zero,fc <.L194>
-
-00000000000000b8 <.L191>:
-  b8:	fe042023          	sw	zero,-32(s0)
-  bc:	0300006f          	jal	zero,ec <.L195>
-
-00000000000000c0 <.L196>:
-  c0:	fe843783          	ld	a5,-24(s0)
-  c4:	00879793          	slli	a5,a5,0x8
-  c8:	fe046703          	lwu	a4,-32(s0)
-  cc:	fd843683          	ld	a3,-40(s0)
-  d0:	00e68733          	add	a4,a3,a4
-  d4:	00074703          	lbu	a4,0(a4)
-  d8:	00e7e7b3          	or	a5,a5,a4
-  dc:	fef43423          	sd	a5,-24(s0)
-  e0:	fe042783          	lw	a5,-32(s0)
-  e4:	0017879b          	addiw	a5,a5,1
-  e8:	fef42023          	sw	a5,-32(s0)
-
-00000000000000ec <.L195>:
-  ec:	fe042783          	lw	a5,-32(s0)
-  f0:	0007871b          	addiw	a4,a5,0
-  f4:	00700793          	addi	a5,zero,7
-  f8:	fce7f4e3          	bgeu	a5,a4,c0 <.L196>
-
-00000000000000fc <.L194>:
-  fc:	fc843783          	ld	a5,-56(s0)
- 100:	0107b783          	ld	a5,16(a5)
- 104:	00878713          	addi	a4,a5,8
- 108:	fc843783          	ld	a5,-56(s0)
- 10c:	00e7b823          	sd	a4,16(a5)
- 110:	fe843783          	ld	a5,-24(s0)
- 114:	00078513          	addi	a0,a5,0
- 118:	03813083          	ld	ra,56(sp)
- 11c:	03013403          	ld	s0,48(sp)
- 120:	04010113          	addi	sp,sp,64
- 124:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_OS8_:
-
-0000000000000000 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe043603          	ld	a2,-32(s0)
-  20:	00000593          	addi	a1,zero,0
-  24:	fd843503          	ld	a0,-40(s0)
-  28:	00000097          	auipc	ra,0x0
-  2c:	000080e7          	jalr	ra,0(ra) # 28 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)+0x28>
-  30:	00050793          	addi	a5,a0,0
-  34:	00078513          	addi	a0,a5,0
-  38:	00000317          	auipc	t1,0x0
-  3c:	00033303          	ld	t1,0(t1) # 38 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)+0x38>
-  40:	000300e7          	jalr	ra,0(t1)
-  44:	00050793          	addi	a5,a0,0
-  48:	00078593          	addi	a1,a5,0
-  4c:	fe843503          	ld	a0,-24(s0)
-  50:	00000097          	auipc	ra,0x0
-  54:	000080e7          	jalr	ra,0(ra) # 50 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)+0x50>
-  58:	fe843503          	ld	a0,-24(s0)
-  5c:	02813083          	ld	ra,40(sp)
-  60:	02013403          	ld	s0,32(sp)
-  64:	03010113          	addi	sp,sp,48
-  68:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_:
-
-0000000000000000 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fd843583          	ld	a1,-40(s0)
-  20:	fe043503          	ld	a0,-32(s0)
-  24:	00000097          	auipc	ra,0x0
-  28:	000080e7          	jalr	ra,0(ra) # 24 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)+0x24>
-  2c:	00050793          	addi	a5,a0,0
-  30:	00078513          	addi	a0,a5,0
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)+0x34>
-  3c:	000300e7          	jalr	ra,0(t1)
-  40:	00050793          	addi	a5,a0,0
-  44:	00078593          	addi	a1,a5,0
-  48:	fe843503          	ld	a0,-24(s0)
-  4c:	00000097          	auipc	ra,0x0
-  50:	000080e7          	jalr	ra,0(ra) # 4c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)+0x4c>
-  54:	fe843503          	ld	a0,-24(s0)
-  58:	02813083          	ld	ra,40(sp)
-  5c:	02013403          	ld	s0,32(sp)
-  60:	03010113          	addi	sp,sp,48
-  64:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12_Vector_baseImSaImEE12_Vector_implC2Ev:
-
-0000000000000000 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_impl::_Vector_impl()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_impl::_Vector_impl()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	fe843783          	ld	a5,-24(s0)
-  28:	00078513          	addi	a0,a5,0
-  2c:	00000317          	auipc	t1,0x0
-  30:	00033303          	ld	t1,0(t1) # 2c <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_impl::_Vector_impl()+0x2c>
-  34:	000300e7          	jalr	ra,0(t1)
-  38:	00000013          	addi	zero,zero,0
-  3c:	01813083          	ld	ra,24(sp)
-  40:	01013403          	ld	s0,16(sp)
-  44:	02010113          	addi	sp,sp,32
-  48:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSaImED2Ev:
-
-0000000000000000 <std::allocator<unsigned long>::~allocator()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::allocator<unsigned long>::~allocator()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12_Vector_baseImSaImEED2Ev:
-
-0000000000000000 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::~_Vector_base()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0007b683          	ld	a3,0(a5)
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	0107b703          	ld	a4,16(a5)
-  24:	fe843783          	ld	a5,-24(s0)
-  28:	0007b783          	ld	a5,0(a5)
-  2c:	40f707b3          	sub	a5,a4,a5
-  30:	4037d793          	srai	a5,a5,0x3
-  34:	00078613          	addi	a2,a5,0
-  38:	00068593          	addi	a1,a3,0
-  3c:	fe843503          	ld	a0,-24(s0)
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::~_Vector_base()+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-  4c:	fe843783          	ld	a5,-24(s0)
-  50:	00078513          	addi	a0,a5,0
-  54:	00000317          	auipc	t1,0x0
-  58:	00033303          	ld	t1,0(t1) # 54 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::~_Vector_base()+0x54>
-  5c:	000300e7          	jalr	ra,0(t1)
-  60:	00000013          	addi	zero,zero,0
-  64:	01813083          	ld	ra,24(sp)
-  68:	01013403          	ld	s0,16(sp)
-  6c:	02010113          	addi	sp,sp,32
-  70:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEED2Ev:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::~vector()>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	01213823          	sd	s2,16(sp)
-  14:	03010413          	addi	s0,sp,48
-  18:	fca43c23          	sd	a0,-40(s0)
-  1c:	fd843783          	ld	a5,-40(s0)
-  20:	0007b483          	ld	s1,0(a5)
-  24:	fd843783          	ld	a5,-40(s0)
-  28:	0087b903          	ld	s2,8(a5)
-  2c:	fd843783          	ld	a5,-40(s0)
-  30:	00078513          	addi	a0,a5,0
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <std::vector<unsigned long, std::allocator<unsigned long> >::~vector()+0x34>
-  3c:	000300e7          	jalr	ra,0(t1)
-  40:	00050793          	addi	a5,a0,0
-  44:	00078613          	addi	a2,a5,0
-  48:	00090593          	addi	a1,s2,0
-  4c:	00048513          	addi	a0,s1,0
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <std::vector<unsigned long, std::allocator<unsigned long> >::~vector()+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	fd843783          	ld	a5,-40(s0)
-  60:	00078513          	addi	a0,a5,0
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <std::vector<unsigned long, std::allocator<unsigned long> >::~vector()+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00000013          	addi	zero,zero,0
-  74:	02813083          	ld	ra,40(sp)
-  78:	02013403          	ld	s0,32(sp)
-  7c:	01813483          	ld	s1,24(sp)
-  80:	01013903          	ld	s2,16(sp)
-  84:	03010113          	addi	sp,sp,48
-  88:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt16initializer_listISt4pairImmEE4sizeEv:
-
-0000000000000000 <std::initializer_list<std::pair<unsigned long, unsigned long> >::size() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0087b783          	ld	a5,8(a5)
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE15_S_use_relocateEv:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::_S_use_relocate()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	00078513          	addi	a0,a5,0
-  14:	00000317          	auipc	t1,0x0
-  18:	00033303          	ld	t1,0(t1) # 14 <std::vector<unsigned long, std::allocator<unsigned long> >::_S_use_relocate()+0x14>
-  1c:	000300e7          	jalr	ra,0(t1)
-  20:	00050793          	addi	a5,a0,0
-  24:	00078513          	addi	a0,a5,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE19_S_nothrow_relocateESt17integral_constantIbLb1EE:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::_S_nothrow_relocate(std::integral_constant<bool, true>)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea40423          	sb	a0,-24(s0)
-  10:	00100793          	addi	a5,zero,1
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE7reserveEm:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::reserve(unsigned long)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	02913423          	sd	s1,40(sp)
-  10:	03213023          	sd	s2,32(sp)
-  14:	04010413          	addi	s0,sp,64
-  18:	fca43423          	sd	a0,-56(s0)
-  1c:	fcb43023          	sd	a1,-64(s0)
-  20:	fc843503          	ld	a0,-56(s0)
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <std::vector<unsigned long, std::allocator<unsigned long> >::reserve(unsigned long)+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050713          	addi	a4,a0,0
-  34:	fc043783          	ld	a5,-64(s0)
-  38:	00f737b3          	sltu	a5,a4,a5
-  3c:	0ff7f793          	andi	a5,a5,255
-  40:	00078a63          	beq	a5,zero,54 <.L213>
-  44:	00000517          	auipc	a0,0x0
-  48:	00050513          	addi	a0,a0,0 # 44 <std::vector<unsigned long, std::allocator<unsigned long> >::reserve(unsigned long)+0x44>
-  4c:	00000097          	auipc	ra,0x0
-  50:	000080e7          	jalr	ra,0(ra) # 4c <std::vector<unsigned long, std::allocator<unsigned long> >::reserve(unsigned long)+0x4c>
-
-0000000000000054 <.L213>:
-  54:	fc843503          	ld	a0,-56(s0)
-  58:	00000317          	auipc	t1,0x0
-  5c:	00033303          	ld	t1,0(t1) # 58 <.L213+0x4>
-  60:	000300e7          	jalr	ra,0(t1)
-  64:	00050713          	addi	a4,a0,0
-  68:	fc043783          	ld	a5,-64(s0)
-  6c:	00f737b3          	sltu	a5,a4,a5
-  70:	0ff7f793          	andi	a5,a5,255
-  74:	1a078463          	beq	a5,zero,21c <.L217>
-  78:	fc843503          	ld	a0,-56(s0)
-  7c:	00000317          	auipc	t1,0x0
-  80:	00033303          	ld	t1,0(t1) # 7c <.L213+0x28>
-  84:	000300e7          	jalr	ra,0(t1)
-  88:	fca43823          	sd	a0,-48(s0)
-  8c:	00000317          	auipc	t1,0x0
-  90:	00033303          	ld	t1,0(t1) # 8c <.L213+0x38>
-  94:	000300e7          	jalr	ra,0(t1)
-  98:	00050793          	addi	a5,a0,0
-  9c:	06078663          	beq	a5,zero,108 <.L215>
-  a0:	fc843783          	ld	a5,-56(s0)
-  a4:	fc043583          	ld	a1,-64(s0)
-  a8:	00078513          	addi	a0,a5,0
-  ac:	00000317          	auipc	t1,0x0
-  b0:	00033303          	ld	t1,0(t1) # ac <.L213+0x58>
-  b4:	000300e7          	jalr	ra,0(t1)
-  b8:	00050793          	addi	a5,a0,0
-  bc:	fcf43c23          	sd	a5,-40(s0)
-  c0:	fc843783          	ld	a5,-56(s0)
-  c4:	0007b483          	ld	s1,0(a5)
-  c8:	fc843783          	ld	a5,-56(s0)
-  cc:	0087b903          	ld	s2,8(a5)
-  d0:	fc843783          	ld	a5,-56(s0)
-  d4:	00078513          	addi	a0,a5,0
-  d8:	00000317          	auipc	t1,0x0
-  dc:	00033303          	ld	t1,0(t1) # d8 <.L213+0x84>
-  e0:	000300e7          	jalr	ra,0(t1)
-  e4:	00050793          	addi	a5,a0,0
-  e8:	00078693          	addi	a3,a5,0
-  ec:	fd843603          	ld	a2,-40(s0)
-  f0:	00090593          	addi	a1,s2,0
-  f4:	00048513          	addi	a0,s1,0
-  f8:	00000317          	auipc	t1,0x0
-  fc:	00033303          	ld	t1,0(t1) # f8 <.L213+0xa4>
- 100:	000300e7          	jalr	ra,0(t1)
- 104:	0a00006f          	jal	zero,1a4 <.L216>
-
-0000000000000108 <.L215>:
- 108:	fc843783          	ld	a5,-56(s0)
- 10c:	0007b783          	ld	a5,0(a5)
- 110:	00078513          	addi	a0,a5,0
- 114:	00000317          	auipc	t1,0x0
- 118:	00033303          	ld	t1,0(t1) # 114 <.L215+0xc>
- 11c:	000300e7          	jalr	ra,0(t1)
- 120:	00050493          	addi	s1,a0,0
- 124:	fc843783          	ld	a5,-56(s0)
- 128:	0087b783          	ld	a5,8(a5)
- 12c:	00078513          	addi	a0,a5,0
- 130:	00000317          	auipc	t1,0x0
- 134:	00033303          	ld	t1,0(t1) # 130 <.L215+0x28>
- 138:	000300e7          	jalr	ra,0(t1)
- 13c:	00050793          	addi	a5,a0,0
- 140:	00078693          	addi	a3,a5,0
- 144:	00048613          	addi	a2,s1,0
- 148:	fc043583          	ld	a1,-64(s0)
- 14c:	fc843503          	ld	a0,-56(s0)
- 150:	00000317          	auipc	t1,0x0
- 154:	00033303          	ld	t1,0(t1) # 150 <.L215+0x48>
- 158:	000300e7          	jalr	ra,0(t1)
- 15c:	00050793          	addi	a5,a0,0
- 160:	fcf43c23          	sd	a5,-40(s0)
- 164:	fc843783          	ld	a5,-56(s0)
- 168:	0007b483          	ld	s1,0(a5)
- 16c:	fc843783          	ld	a5,-56(s0)
- 170:	0087b903          	ld	s2,8(a5)
- 174:	fc843783          	ld	a5,-56(s0)
- 178:	00078513          	addi	a0,a5,0
- 17c:	00000317          	auipc	t1,0x0
- 180:	00033303          	ld	t1,0(t1) # 17c <.L215+0x74>
- 184:	000300e7          	jalr	ra,0(t1)
- 188:	00050793          	addi	a5,a0,0
- 18c:	00078613          	addi	a2,a5,0
- 190:	00090593          	addi	a1,s2,0
- 194:	00048513          	addi	a0,s1,0
- 198:	00000317          	auipc	t1,0x0
- 19c:	00033303          	ld	t1,0(t1) # 198 <.L215+0x90>
- 1a0:	000300e7          	jalr	ra,0(t1)
-
-00000000000001a4 <.L216>:
- 1a4:	fc843683          	ld	a3,-56(s0)
- 1a8:	fc843783          	ld	a5,-56(s0)
- 1ac:	0007b583          	ld	a1,0(a5)
- 1b0:	fc843783          	ld	a5,-56(s0)
- 1b4:	0107b703          	ld	a4,16(a5)
- 1b8:	fc843783          	ld	a5,-56(s0)
- 1bc:	0007b783          	ld	a5,0(a5)
- 1c0:	40f707b3          	sub	a5,a4,a5
- 1c4:	4037d793          	srai	a5,a5,0x3
- 1c8:	00078613          	addi	a2,a5,0
- 1cc:	00068513          	addi	a0,a3,0
- 1d0:	00000317          	auipc	t1,0x0
- 1d4:	00033303          	ld	t1,0(t1) # 1d0 <.L216+0x2c>
- 1d8:	000300e7          	jalr	ra,0(t1)
- 1dc:	fc843783          	ld	a5,-56(s0)
- 1e0:	fd843703          	ld	a4,-40(s0)
- 1e4:	00e7b023          	sd	a4,0(a5)
- 1e8:	fd043783          	ld	a5,-48(s0)
- 1ec:	00379793          	slli	a5,a5,0x3
- 1f0:	fd843703          	ld	a4,-40(s0)
- 1f4:	00f70733          	add	a4,a4,a5
- 1f8:	fc843783          	ld	a5,-56(s0)
- 1fc:	00e7b423          	sd	a4,8(a5)
- 200:	fc843783          	ld	a5,-56(s0)
- 204:	0007b703          	ld	a4,0(a5)
- 208:	fc043783          	ld	a5,-64(s0)
- 20c:	00379793          	slli	a5,a5,0x3
- 210:	00f70733          	add	a4,a4,a5
- 214:	fc843783          	ld	a5,-56(s0)
- 218:	00e7b823          	sd	a4,16(a5)
-
-000000000000021c <.L217>:
- 21c:	00000013          	addi	zero,zero,0
- 220:	03813083          	ld	ra,56(sp)
- 224:	03013403          	ld	s0,48(sp)
- 228:	02813483          	ld	s1,40(sp)
- 22c:	02013903          	ld	s2,32(sp)
- 230:	04010113          	addi	sp,sp,64
- 234:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt16initializer_listISt4pairImmEE5beginEv:
-
-0000000000000000 <std::initializer_list<std::pair<unsigned long, unsigned long> >::begin() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0007b783          	ld	a5,0(a5)
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt16initializer_listISt4pairImmEE3endEv:
-
-0000000000000000 <std::initializer_list<std::pair<unsigned long, unsigned long> >::end() const>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	03010413          	addi	s0,sp,48
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fd843503          	ld	a0,-40(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::initializer_list<std::pair<unsigned long, unsigned long> >::end() const+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00050493          	addi	s1,a0,0
-  2c:	fd843503          	ld	a0,-40(s0)
-  30:	00000317          	auipc	t1,0x0
-  34:	00033303          	ld	t1,0(t1) # 30 <std::initializer_list<std::pair<unsigned long, unsigned long> >::end() const+0x30>
-  38:	000300e7          	jalr	ra,0(t1)
-  3c:	00050793          	addi	a5,a0,0
-  40:	00479793          	slli	a5,a5,0x4
-  44:	00f487b3          	add	a5,s1,a5
-  48:	00078513          	addi	a0,a5,0
-  4c:	02813083          	ld	ra,40(sp)
-  50:	02013403          	ld	s0,32(sp)
-  54:	01813483          	ld	s1,24(sp)
-  58:	03010113          	addi	sp,sp,48
-  5c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE9push_backERKm:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::push_back(unsigned long const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	0087b703          	ld	a4,8(a5)
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	0107b783          	ld	a5,16(a5)
-  28:	04f70063          	beq	a4,a5,68 <.L223>
-  2c:	fe843703          	ld	a4,-24(s0)
-  30:	fe843783          	ld	a5,-24(s0)
-  34:	0087b783          	ld	a5,8(a5)
-  38:	fe043603          	ld	a2,-32(s0)
-  3c:	00078593          	addi	a1,a5,0
-  40:	00070513          	addi	a0,a4,0
-  44:	00000317          	auipc	t1,0x0
-  48:	00033303          	ld	t1,0(t1) # 44 <std::vector<unsigned long, std::allocator<unsigned long> >::push_back(unsigned long const&)+0x44>
-  4c:	000300e7          	jalr	ra,0(t1)
-  50:	fe843783          	ld	a5,-24(s0)
-  54:	0087b783          	ld	a5,8(a5)
-  58:	00878713          	addi	a4,a5,8
-  5c:	fe843783          	ld	a5,-24(s0)
-  60:	00e7b423          	sd	a4,8(a5)
-  64:	0300006f          	jal	zero,94 <.L225>
-
-0000000000000068 <.L223>:
-  68:	fe843503          	ld	a0,-24(s0)
-  6c:	00000317          	auipc	t1,0x0
-  70:	00033303          	ld	t1,0(t1) # 6c <.L223+0x4>
-  74:	000300e7          	jalr	ra,0(t1)
-  78:	00050793          	addi	a5,a0,0
-  7c:	fe043603          	ld	a2,-32(s0)
-  80:	00078593          	addi	a1,a5,0
-  84:	fe843503          	ld	a0,-24(s0)
-  88:	00000317          	auipc	t1,0x0
-  8c:	00033303          	ld	t1,0(t1) # 88 <.L223+0x20>
-  90:	000300e7          	jalr	ra,0(t1)
-
-0000000000000094 <.L225>:
-  94:	00000013          	addi	zero,zero,0
-  98:	01813083          	ld	ra,24(sp)
-  9c:	01013403          	ld	s0,16(sp)
-  a0:	02010113          	addi	sp,sp,32
-  a4:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE9push_backEOm:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::push_back(unsigned long&&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043503          	ld	a0,-32(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::vector<unsigned long, std::allocator<unsigned long> >::push_back(unsigned long&&)+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00050793          	addi	a5,a0,0
-  2c:	00078593          	addi	a1,a5,0
-  30:	fe843503          	ld	a0,-24(s0)
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <std::vector<unsigned long, std::allocator<unsigned long> >::push_back(unsigned long&&)+0x34>
-  3c:	000300e7          	jalr	ra,0(t1)
-  40:	00000013          	addi	zero,zero,0
-  44:	01813083          	ld	ra,24(sp)
-  48:	01013403          	ld	s0,16(sp)
-  4c:	02010113          	addi	sp,sp,32
-  50:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE4dataEv:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::data()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0007b783          	ld	a5,0(a5)
-  1c:	00078593          	addi	a1,a5,0
-  20:	fe843503          	ld	a0,-24(s0)
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <std::vector<unsigned long, std::allocator<unsigned long> >::data()+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050793          	addi	a5,a0,0
-  34:	00078513          	addi	a0,a5,0
-  38:	01813083          	ld	ra,24(sp)
-  3c:	01013403          	ld	s0,16(sp)
-  40:	02010113          	addi	sp,sp,32
-  44:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt6vectorImSaImEE4sizeEv:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::size() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0087b703          	ld	a4,8(a5)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	0007b783          	ld	a5,0(a5)
-  20:	40f707b3          	sub	a5,a4,a5
-  24:	4037d793          	srai	a5,a5,0x3
-  28:	00078513          	addi	a0,a5,0
-  2c:	01813403          	ld	s0,24(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt11make_sharedIN5dwarf7sectionEJNS0_12section_typeEPKcmNS0_10byte_orderENS0_6formatEmEESt10shared_ptrINSt9enable_ifIXntsrSt8is_arrayIT_E5valueESA_E4typeEEDpOT0_:
-
-0000000000000000 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)>:
-   0:	f7010113          	addi	sp,sp,-144
-   4:	08113423          	sd	ra,136(sp)
-   8:	08813023          	sd	s0,128(sp)
-   c:	06913c23          	sd	s1,120(sp)
-  10:	07213823          	sd	s2,112(sp)
-  14:	07313423          	sd	s3,104(sp)
-  18:	07413023          	sd	s4,96(sp)
-  1c:	05513c23          	sd	s5,88(sp)
-  20:	05613823          	sd	s6,80(sp)
-  24:	09010413          	addi	s0,sp,144
-  28:	faa43423          	sd	a0,-88(s0)
-  2c:	fab43023          	sd	a1,-96(s0)
-  30:	f8c43c23          	sd	a2,-104(s0)
-  34:	f8d43823          	sd	a3,-112(s0)
-  38:	f8e43423          	sd	a4,-120(s0)
-  3c:	f8f43023          	sd	a5,-128(s0)
-  40:	f7043c23          	sd	a6,-136(s0)
-  44:	fb840793          	addi	a5,s0,-72
-  48:	00078b13          	addi	s6,a5,0
-  4c:	fa043503          	ld	a0,-96(s0)
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	00050493          	addi	s1,a0,0
-  60:	f9843503          	ld	a0,-104(s0)
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00050913          	addi	s2,a0,0
-  74:	f9043503          	ld	a0,-112(s0)
-  78:	00000317          	auipc	t1,0x0
-  7c:	00033303          	ld	t1,0(t1) # 78 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x78>
-  80:	000300e7          	jalr	ra,0(t1)
-  84:	00050993          	addi	s3,a0,0
-  88:	f8843503          	ld	a0,-120(s0)
-  8c:	00000317          	auipc	t1,0x0
-  90:	00033303          	ld	t1,0(t1) # 8c <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x8c>
-  94:	000300e7          	jalr	ra,0(t1)
-  98:	00050a13          	addi	s4,a0,0
-  9c:	f8043503          	ld	a0,-128(s0)
-  a0:	00000317          	auipc	t1,0x0
-  a4:	00033303          	ld	t1,0(t1) # a0 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xa0>
-  a8:	000300e7          	jalr	ra,0(t1)
-  ac:	00050a93          	addi	s5,a0,0
-  b0:	f7843503          	ld	a0,-136(s0)
-  b4:	00000317          	auipc	t1,0x0
-  b8:	00033303          	ld	t1,0(t1) # b4 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xb4>
-  bc:	000300e7          	jalr	ra,0(t1)
-  c0:	00050793          	addi	a5,a0,0
-  c4:	00078893          	addi	a7,a5,0
-  c8:	000a8813          	addi	a6,s5,0
-  cc:	000a0793          	addi	a5,s4,0
-  d0:	00098713          	addi	a4,s3,0
-  d4:	00090693          	addi	a3,s2,0
-  d8:	00048613          	addi	a2,s1,0
-  dc:	000b0593          	addi	a1,s6,0
-  e0:	fa843503          	ld	a0,-88(s0)
-  e4:	00000317          	auipc	t1,0x0
-  e8:	00033303          	ld	t1,0(t1) # e4 <std::shared_ptr<std::enable_if<!std::is_array<dwarf::section>::value, dwarf::section>::type> std::make_shared<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xe4>
-  ec:	000300e7          	jalr	ra,0(t1)
-  f0:	fa843503          	ld	a0,-88(s0)
-  f4:	08813083          	ld	ra,136(sp)
-  f8:	08013403          	ld	s0,128(sp)
-  fc:	07813483          	ld	s1,120(sp)
- 100:	07013903          	ld	s2,112(sp)
- 104:	06813983          	ld	s3,104(sp)
- 108:	06013a03          	ld	s4,96(sp)
- 10c:	05813a83          	ld	s5,88(sp)
- 110:	05013b03          	ld	s6,80(sp)
- 114:	09010113          	addi	sp,sp,144
- 118:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN5dwarf7sectionEEaSEOS2_:
-
-0000000000000000 <std::shared_ptr<dwarf::section>::operator=(std::shared_ptr<dwarf::section>&&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	03010413          	addi	s0,sp,48
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fcb43823          	sd	a1,-48(s0)
-  1c:	fd843483          	ld	s1,-40(s0)
-  20:	fd043503          	ld	a0,-48(s0)
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <std::shared_ptr<dwarf::section>::operator=(std::shared_ptr<dwarf::section>&&)+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050793          	addi	a5,a0,0
-  34:	00078593          	addi	a1,a5,0
-  38:	00048513          	addi	a0,s1,0
-  3c:	00000317          	auipc	t1,0x0
-  40:	00033303          	ld	t1,0(t1) # 3c <std::shared_ptr<dwarf::section>::operator=(std::shared_ptr<dwarf::section>&&)+0x3c>
-  44:	000300e7          	jalr	ra,0(t1)
-  48:	fd843783          	ld	a5,-40(s0)
-  4c:	00078513          	addi	a0,a5,0
-  50:	02813083          	ld	ra,40(sp)
-  54:	02013403          	ld	s0,32(sp)
-  58:	01813483          	ld	s1,24(sp)
-  5c:	03010113          	addi	sp,sp,48
-  60:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EEcvbEv:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::operator bool() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0007b783          	ld	a5,0(a5)
-  18:	00f037b3          	sltu	a5,zero,a5
-  1c:	0ff7f793          	andi	a5,a5,255
-  20:	00078513          	addi	a0,a5,0
-  24:	01813403          	ld	s0,24(sp)
-  28:	02010113          	addi	sp,sp,32
-  2c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EE5resetEv:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::reset()>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fe040793          	addi	a5,s0,-32
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::reset()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	fe040793          	addi	a5,s0,-32
-  2c:	fd843583          	ld	a1,-40(s0)
-  30:	00078513          	addi	a0,a5,0
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::reset()+0x34>
-  3c:	000300e7          	jalr	ra,0(t1)
-  40:	fe040793          	addi	a5,s0,-32
-  44:	00078513          	addi	a0,a5,0
-  48:	00000317          	auipc	t1,0x0
-  4c:	00033303          	ld	t1,0(t1) # 48 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::reset()+0x48>
-  50:	000300e7          	jalr	ra,0(t1)
-  54:	00000013          	addi	zero,zero,0
-  58:	02813083          	ld	ra,40(sp)
-  5c:	02013403          	ld	s0,32(sp)
-  60:	03010113          	addi	sp,sp,48
-  64:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_destroyEv:
-
-0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078e63          	beq	a5,zero,34 <.L240>
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	0007b783          	ld	a5,0(a5)
-  24:	00878793          	addi	a5,a5,8
-  28:	0007b783          	ld	a5,0(a5)
-  2c:	fe843503          	ld	a0,-24(s0)
-  30:	000780e7          	jalr	ra,0(a5)
-
-0000000000000034 <.L240>:
-  34:	00000013          	addi	zero,zero,0
-  38:	01813083          	ld	ra,24(sp)
-  3c:	01013403          	ld	s0,16(sp)
-  40:	02010113          	addi	sp,sp,32
-  44:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EE3getEv:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::get() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0007b783          	ld	a5,0(a5)
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardImEOT_RNSt16remove_referenceIS0_E4typeE:
-
-0000000000000000 <unsigned long&& std::forward<unsigned long>(std::remove_reference<unsigned long>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardIRN5dwarf12section_typeEEOT_RNSt16remove_referenceIS3_E4typeE:
-
-0000000000000000 <dwarf::section_type& std::forward<dwarf::section_type&>(std::remove_reference<dwarf::section_type&>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardIPKcEOT_RNSt16remove_referenceIS2_E4typeE:
-
-0000000000000000 <char const*&& std::forward<char const*>(std::remove_reference<char const*>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardIRKmEOT_RNSt16remove_referenceIS2_E4typeE:
-
-0000000000000000 <unsigned long const& std::forward<unsigned long const&>(std::remove_reference<unsigned long const&>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardIRKN5dwarf10byte_orderEEOT_RNSt16remove_referenceIS4_E4typeE:
-
-0000000000000000 <dwarf::byte_order const& std::forward<dwarf::byte_order const&>(std::remove_reference<dwarf::byte_order const&>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardIRN5dwarf6formatEEOT_RNSt16remove_referenceIS3_E4typeE:
-
-0000000000000000 <dwarf::format& std::forward<dwarf::format&>(std::remove_reference<dwarf::format&>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardIRjEOT_RNSt16remove_referenceIS1_E4typeE:
-
-0000000000000000 <unsigned int& std::forward<unsigned int&>(std::remove_reference<unsigned int&>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN5dwarf7sectionEEC2ISaIvEJRNS0_12section_typeEPKcRKmRKNS0_10byte_orderERNS0_6formatERjEEESt20_Sp_alloc_shared_tagIT_EDpOT0_:
-
-0000000000000000 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)>:
-   0:	f8010113          	addi	sp,sp,-128
-   4:	06113c23          	sd	ra,120(sp)
-   8:	06813823          	sd	s0,112(sp)
-   c:	06913423          	sd	s1,104(sp)
-  10:	07213023          	sd	s2,96(sp)
-  14:	05313c23          	sd	s3,88(sp)
-  18:	05413823          	sd	s4,80(sp)
-  1c:	05513423          	sd	s5,72(sp)
-  20:	05613023          	sd	s6,64(sp)
-  24:	08010413          	addi	s0,sp,128
-  28:	faa43c23          	sd	a0,-72(s0)
-  2c:	fab43823          	sd	a1,-80(s0)
-  30:	fac43423          	sd	a2,-88(s0)
-  34:	fad43023          	sd	a3,-96(s0)
-  38:	f8e43c23          	sd	a4,-104(s0)
-  3c:	f8f43823          	sd	a5,-112(s0)
-  40:	f9043423          	sd	a6,-120(s0)
-  44:	f9143023          	sd	a7,-128(s0)
-  48:	fb843483          	ld	s1,-72(s0)
-  4c:	fa843503          	ld	a0,-88(s0)
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	00050913          	addi	s2,a0,0
-  60:	fa043503          	ld	a0,-96(s0)
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00050993          	addi	s3,a0,0
-  74:	f9843503          	ld	a0,-104(s0)
-  78:	00000317          	auipc	t1,0x0
-  7c:	00033303          	ld	t1,0(t1) # 78 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x78>
-  80:	000300e7          	jalr	ra,0(t1)
-  84:	00050a13          	addi	s4,a0,0
-  88:	f9043503          	ld	a0,-112(s0)
-  8c:	00000317          	auipc	t1,0x0
-  90:	00033303          	ld	t1,0(t1) # 8c <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x8c>
-  94:	000300e7          	jalr	ra,0(t1)
-  98:	00050a93          	addi	s5,a0,0
-  9c:	f8843503          	ld	a0,-120(s0)
-  a0:	00000317          	auipc	t1,0x0
-  a4:	00033303          	ld	t1,0(t1) # a0 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xa0>
-  a8:	000300e7          	jalr	ra,0(t1)
-  ac:	00050b13          	addi	s6,a0,0
-  b0:	f8043503          	ld	a0,-128(s0)
-  b4:	00000317          	auipc	t1,0x0
-  b8:	00033303          	ld	t1,0(t1) # b4 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xb4>
-  bc:	000300e7          	jalr	ra,0(t1)
-  c0:	00050793          	addi	a5,a0,0
-  c4:	00078893          	addi	a7,a5,0
-  c8:	000b0813          	addi	a6,s6,0
-  cc:	000a8793          	addi	a5,s5,0
-  d0:	000a0713          	addi	a4,s4,0
-  d4:	00098693          	addi	a3,s3,0
-  d8:	00090613          	addi	a2,s2,0
-  dc:	fb043583          	ld	a1,-80(s0)
-  e0:	00048513          	addi	a0,s1,0
-  e4:	00000317          	auipc	t1,0x0
-  e8:	00033303          	ld	t1,0(t1) # e4 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xe4>
-  ec:	000300e7          	jalr	ra,0(t1)
-  f0:	00000013          	addi	zero,zero,0
-  f4:	07813083          	ld	ra,120(sp)
-  f8:	07013403          	ld	s0,112(sp)
-  fc:	06813483          	ld	s1,104(sp)
- 100:	06013903          	ld	s2,96(sp)
- 104:	05813983          	ld	s3,88(sp)
- 108:	05013a03          	ld	s4,80(sp)
- 10c:	04813a83          	ld	s5,72(sp)
- 110:	04013b03          	ld	s6,64(sp)
- 114:	08010113          	addi	sp,sp,128
- 118:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt4moveIRSt10shared_ptrIN5dwarf7sectionEEEONSt16remove_referenceIT_E4typeEOS6_:
-
-0000000000000000 <std::remove_reference<std::shared_ptr<dwarf::section>&>::type&& std::move<std::shared_ptr<dwarf::section>&>(std::shared_ptr<dwarf::section>&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EEC2EOS4_:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043783          	ld	a5,-32(s0)
-  1c:	0007b703          	ld	a4,0(a5)
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	00e7b023          	sd	a4,0(a5)
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	00878793          	addi	a5,a5,8
-  30:	00078513          	addi	a0,a5,0
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&&)+0x34>
-  3c:	000300e7          	jalr	ra,0(t1)
-  40:	fe843783          	ld	a5,-24(s0)
-  44:	00878713          	addi	a4,a5,8
-  48:	fe043783          	ld	a5,-32(s0)
-  4c:	00878793          	addi	a5,a5,8
-  50:	00078593          	addi	a1,a5,0
-  54:	00070513          	addi	a0,a4,0
-  58:	00000317          	auipc	t1,0x0
-  5c:	00033303          	ld	t1,0(t1) # 58 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&&)+0x58>
-  60:	000300e7          	jalr	ra,0(t1)
-  64:	fe043783          	ld	a5,-32(s0)
-  68:	0007b023          	sd	zero,0(a5)
-  6c:	00000013          	addi	zero,zero,0
-  70:	01813083          	ld	ra,24(sp)
-  74:	01013403          	ld	s0,16(sp)
-  78:	02010113          	addi	sp,sp,32
-  7c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EEC2Ev:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0007b023          	sd	zero,0(a5)
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	00878793          	addi	a5,a5,8
-  24:	00078513          	addi	a0,a5,0
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr()+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00000013          	addi	zero,zero,0
-  38:	01813083          	ld	ra,24(sp)
-  3c:	01013403          	ld	s0,16(sp)
-  40:	02010113          	addi	sp,sp,32
-  44:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt19__shared_ptr_accessIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1ELb0ELb0EE6_M_getEv:
-
-0000000000000000 <std::__shared_ptr_access<dwarf::section, (__gnu_cxx::_Lock_policy)1, false, false>::_M_get() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::__shared_ptr_access<dwarf::section, (__gnu_cxx::_Lock_policy)1, false, false>::_M_get() const+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	00050793          	addi	a5,a0,0
-  28:	00078513          	addi	a0,a5,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv:
-
-0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_add_ref_copy()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	fc843783          	ld	a5,-56(s0)
-  18:	03078793          	addi	a5,a5,48
-  1c:	fef43423          	sd	a5,-24(s0)
-  20:	00100793          	addi	a5,zero,1
-  24:	fef42223          	sw	a5,-28(s0)
-  28:	00000797          	auipc	a5,0x0
-  2c:	0007b783          	ld	a5,0(a5) # 28 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_add_ref_copy()+0x28>
-  30:	0007c783          	lbu	a5,0(a5)
-  34:	0007879b          	addiw	a5,a5,0
-  38:	00f037b3          	sltu	a5,zero,a5
-  3c:	0ff7f793          	andi	a5,a5,255
-  40:	02078a63          	beq	a5,zero,74 <.L266>
-  44:	fe843783          	ld	a5,-24(s0)
-  48:	fcf43c23          	sd	a5,-40(s0)
-  4c:	fe442783          	lw	a5,-28(s0)
-  50:	fcf42a23          	sw	a5,-44(s0)
-  54:	fd843783          	ld	a5,-40(s0)
-  58:	0007a783          	lw	a5,0(a5)
-  5c:	fd442703          	lw	a4,-44(s0)
-  60:	00f707bb          	addw	a5,a4,a5
-  64:	0007871b          	addiw	a4,a5,0
-  68:	fd843783          	ld	a5,-40(s0)
-  6c:	00e7a023          	sw	a4,0(a5)
-  70:	0180006f          	jal	zero,88 <.L267>
-
-0000000000000074 <.L266>:
-  74:	fe442783          	lw	a5,-28(s0)
-  78:	00078593          	addi	a1,a5,0
-  7c:	fe843503          	ld	a0,-24(s0)
-  80:	00000097          	auipc	ra,0x0
-  84:	000080e7          	jalr	ra,0(ra) # 80 <.L266+0xc>
-
-0000000000000088 <.L267>:
-  88:	00000013          	addi	zero,zero,0
-  8c:	00000013          	addi	zero,zero,0
-  90:	03813083          	ld	ra,56(sp)
-  94:	03013403          	ld	s0,48(sp)
-  98:	04010113          	addi	sp,sp,64
-  9c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt4moveIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEONSt16remove_referenceIT_E4typeEOS8_:
-
-0000000000000000 <std::remove_reference<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>::type&& std::move<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSaImEC2Ev:
-
-0000000000000000 <std::allocator<unsigned long>::allocator()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::allocator<unsigned long>::allocator()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12_Vector_baseImSaImEE17_Vector_impl_dataC2Ev:
-
-0000000000000000 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_Vector_impl_data::_Vector_impl_data()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0007b023          	sd	zero,0(a5)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	0007b423          	sd	zero,8(a5)
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	0007b823          	sd	zero,16(a5)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813403          	ld	s0,24(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorImED2Ev:
-
-0000000000000000 <std::__new_allocator<unsigned long>::~__new_allocator()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	00000013          	addi	zero,zero,0
-  14:	01813403          	ld	s0,24(sp)
-  18:	02010113          	addi	sp,sp,32
-  1c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12_Vector_baseImSaImEE13_M_deallocateEPmm:
-
-0000000000000000 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_deallocate(unsigned long*, unsigned long)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe043783          	ld	a5,-32(s0)
-  20:	02078063          	beq	a5,zero,40 <.L275>
-  24:	fe843783          	ld	a5,-24(s0)
-  28:	fd843603          	ld	a2,-40(s0)
-  2c:	fe043583          	ld	a1,-32(s0)
-  30:	00078513          	addi	a0,a5,0
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_deallocate(unsigned long*, unsigned long)+0x34>
-  3c:	000300e7          	jalr	ra,0(t1)
-
-0000000000000040 <.L275>:
-  40:	00000013          	addi	zero,zero,0
-  44:	02813083          	ld	ra,40(sp)
-  48:	02013403          	ld	s0,32(sp)
-  4c:	03010113          	addi	sp,sp,48
-  50:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12_Vector_baseImSaImEE19_M_get_Tp_allocatorEv:
-
-0000000000000000 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_get_Tp_allocator()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt8_DestroyIPmmEvT_S1_RSaIT0_E:
-
-0000000000000000 <void std::_Destroy<unsigned long*, unsigned long>(unsigned long*, unsigned long*, std::allocator<unsigned long>&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe043583          	ld	a1,-32(s0)
-  20:	fe843503          	ld	a0,-24(s0)
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <void std::_Destroy<unsigned long*, unsigned long>(unsigned long*, unsigned long*, std::allocator<unsigned long>&)+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00000013          	addi	zero,zero,0
-  34:	02813083          	ld	ra,40(sp)
-  38:	02013403          	ld	s0,32(sp)
-  3c:	03010113          	addi	sp,sp,48
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt6vectorImSaImEE8max_sizeEv:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::max_size() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::vector<unsigned long, std::allocator<unsigned long> >::max_size() const+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00050793          	addi	a5,a0,0
-  2c:	00078513          	addi	a0,a5,0
-  30:	00000317          	auipc	t1,0x0
-  34:	00033303          	ld	t1,0(t1) # 30 <std::vector<unsigned long, std::allocator<unsigned long> >::max_size() const+0x30>
-  38:	000300e7          	jalr	ra,0(t1)
-  3c:	00050793          	addi	a5,a0,0
-  40:	00078513          	addi	a0,a5,0
-  44:	01813083          	ld	ra,24(sp)
-  48:	01013403          	ld	s0,16(sp)
-  4c:	02010113          	addi	sp,sp,32
-  50:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt6vectorImSaImEE8capacityEv:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::capacity() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0107b703          	ld	a4,16(a5)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	0007b783          	ld	a5,0(a5)
-  20:	40f707b3          	sub	a5,a4,a5
-  24:	4037d793          	srai	a5,a5,0x3
-  28:	00078513          	addi	a0,a5,0
-  2c:	01813403          	ld	s0,24(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12_Vector_baseImSaImEE11_M_allocateEm:
-
-0000000000000000 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_allocate(unsigned long)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043783          	ld	a5,-32(s0)
-  1c:	02078263          	beq	a5,zero,40 <.L284>
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	fe043583          	ld	a1,-32(s0)
-  28:	00078513          	addi	a0,a5,0
-  2c:	00000317          	auipc	t1,0x0
-  30:	00033303          	ld	t1,0(t1) # 2c <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_allocate(unsigned long)+0x2c>
-  34:	000300e7          	jalr	ra,0(t1)
-  38:	00050793          	addi	a5,a0,0
-  3c:	0080006f          	jal	zero,44 <.L286>
-
-0000000000000040 <.L284>:
-  40:	00000793          	addi	a5,zero,0
-
-0000000000000044 <.L286>:
-  44:	00078513          	addi	a0,a5,0
-  48:	01813083          	ld	ra,24(sp)
-  4c:	01013403          	ld	s0,16(sp)
-  50:	02010113          	addi	sp,sp,32
-  54:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE11_S_relocateEPmS2_S2_RS0_:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::_S_relocate(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fcd43823          	sd	a3,-48(s0)
-  20:	00078713          	addi	a4,a5,0
-  24:	fd043683          	ld	a3,-48(s0)
-  28:	fd843603          	ld	a2,-40(s0)
-  2c:	fe043583          	ld	a1,-32(s0)
-  30:	fe843503          	ld	a0,-24(s0)
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <std::vector<unsigned long, std::allocator<unsigned long> >::_S_relocate(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)+0x34>
-  3c:	000300e7          	jalr	ra,0(t1)
-  40:	00050793          	addi	a5,a0,0
-  44:	00078513          	addi	a0,a5,0
-  48:	02813083          	ld	ra,40(sp)
-  4c:	02013403          	ld	s0,32(sp)
-  50:	03010113          	addi	sp,sp,48
-  54:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt32__make_move_if_noexcept_iteratorImSt13move_iteratorIPmEET0_PT_:
-
-0000000000000000 <std::move_iterator<unsigned long*> std::__make_move_if_noexcept_iterator<unsigned long, std::move_iterator<unsigned long*> >(unsigned long*)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fe840793          	addi	a5,s0,-24
-  18:	fd843583          	ld	a1,-40(s0)
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::move_iterator<unsigned long*> std::__make_move_if_noexcept_iterator<unsigned long, std::move_iterator<unsigned long*> >(unsigned long*)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	fe843783          	ld	a5,-24(s0)
-  30:	00078513          	addi	a0,a5,0
-  34:	02813083          	ld	ra,40(sp)
-  38:	02013403          	ld	s0,32(sp)
-  3c:	03010113          	addi	sp,sp,48
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE20_M_allocate_and_copyISt13move_iteratorIPmEEES4_mT_S6_:
-
-0000000000000000 <unsigned long* std::vector<unsigned long, std::allocator<unsigned long> >::_M_allocate_and_copy<std::move_iterator<unsigned long*> >(unsigned long, std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>)>:
-   0:	fb010113          	addi	sp,sp,-80
-   4:	04113423          	sd	ra,72(sp)
-   8:	04813023          	sd	s0,64(sp)
-   c:	02913c23          	sd	s1,56(sp)
-  10:	05010413          	addi	s0,sp,80
-  14:	fca43423          	sd	a0,-56(s0)
-  18:	fcb43023          	sd	a1,-64(s0)
-  1c:	fac43c23          	sd	a2,-72(s0)
-  20:	fad43823          	sd	a3,-80(s0)
-  24:	fc843783          	ld	a5,-56(s0)
-  28:	fc043583          	ld	a1,-64(s0)
-  2c:	00078513          	addi	a0,a5,0
-  30:	00000317          	auipc	t1,0x0
-  34:	00033303          	ld	t1,0(t1) # 30 <unsigned long* std::vector<unsigned long, std::allocator<unsigned long> >::_M_allocate_and_copy<std::move_iterator<unsigned long*> >(unsigned long, std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>)+0x30>
-
-0000000000000038 <.LEHB17>:
-  38:	000300e7          	jalr	ra,0(t1)
-
-000000000000003c <.LEHE17>:
-  3c:	00050793          	addi	a5,a0,0
-  40:	fcf43c23          	sd	a5,-40(s0)
-  44:	fc843783          	ld	a5,-56(s0)
-  48:	00078513          	addi	a0,a5,0
-  4c:	00000317          	auipc	t1,0x0
-  50:	00033303          	ld	t1,0(t1) # 4c <.LEHE17+0x10>
-  54:	000300e7          	jalr	ra,0(t1)
-  58:	00050793          	addi	a5,a0,0
-  5c:	00078693          	addi	a3,a5,0
-  60:	fd843603          	ld	a2,-40(s0)
-  64:	fb043583          	ld	a1,-80(s0)
-  68:	fb843503          	ld	a0,-72(s0)
-  6c:	00000317          	auipc	t1,0x0
-  70:	00033303          	ld	t1,0(t1) # 6c <.LEHE17+0x30>
-
-0000000000000074 <.LEHB18>:
-  74:	000300e7          	jalr	ra,0(t1)
-
-0000000000000078 <.LEHE18>:
-  78:	fd843783          	ld	a5,-40(s0)
-  7c:	0540006f          	jal	zero,d0 <.L297>
-
-0000000000000080 <.L295>:
-  80:	00050793          	addi	a5,a0,0
-  84:	00078513          	addi	a0,a5,0
-  88:	00000097          	auipc	ra,0x0
-  8c:	000080e7          	jalr	ra,0(ra) # 88 <.L295+0x8>
-  90:	fc843783          	ld	a5,-56(s0)
-  94:	fc043603          	ld	a2,-64(s0)
-  98:	fd843583          	ld	a1,-40(s0)
-  9c:	00078513          	addi	a0,a5,0
-  a0:	00000317          	auipc	t1,0x0
-  a4:	00033303          	ld	t1,0(t1) # a0 <.L295+0x20>
-
-00000000000000a8 <.LEHB19>:
-  a8:	000300e7          	jalr	ra,0(t1)
-  ac:	00000097          	auipc	ra,0x0
-  b0:	000080e7          	jalr	ra,0(ra) # ac <.LEHB19+0x4>
-
-00000000000000b4 <.L296>:
-  b4:	00050493          	addi	s1,a0,0
-  b8:	00000097          	auipc	ra,0x0
-  bc:	000080e7          	jalr	ra,0(ra) # b8 <.L296+0x4>
-  c0:	00048793          	addi	a5,s1,0
-  c4:	00078513          	addi	a0,a5,0
-
-00000000000000c8 <.LEHB20>:
-  c8:	00000097          	auipc	ra,0x0
-  cc:	000080e7          	jalr	ra,0(ra) # c8 <.LEHB20>
-
-00000000000000d0 <.L297>:
-  d0:	00078513          	addi	a0,a5,0
-  d4:	04813083          	ld	ra,72(sp)
-  d8:	04013403          	ld	s0,64(sp)
-  dc:	03813483          	ld	s1,56(sp)
-  e0:	05010113          	addi	sp,sp,80
-  e4:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16allocator_traitsISaImEE9constructImJRKmEEEvRS0_PT_DpOT0_:
-
-0000000000000000 <void std::allocator_traits<std::allocator<unsigned long> >::construct<unsigned long, unsigned long const&>(std::allocator<unsigned long>&, unsigned long*, unsigned long const&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fd843503          	ld	a0,-40(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <void std::allocator_traits<std::allocator<unsigned long> >::construct<unsigned long, unsigned long const&>(std::allocator<unsigned long>&, unsigned long*, unsigned long const&)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050793          	addi	a5,a0,0
-  30:	00078613          	addi	a2,a5,0
-  34:	fe043583          	ld	a1,-32(s0)
-  38:	fe843503          	ld	a0,-24(s0)
-  3c:	00000317          	auipc	t1,0x0
-  40:	00033303          	ld	t1,0(t1) # 3c <void std::allocator_traits<std::allocator<unsigned long> >::construct<unsigned long, unsigned long const&>(std::allocator<unsigned long>&, unsigned long*, unsigned long const&)+0x3c>
-  44:	000300e7          	jalr	ra,0(t1)
-  48:	00000013          	addi	zero,zero,0
-  4c:	02813083          	ld	ra,40(sp)
-  50:	02013403          	ld	s0,32(sp)
-  54:	03010113          	addi	sp,sp,48
-  58:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE3endEv:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::end()>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fd843783          	ld	a5,-40(s0)
-  18:	00878713          	addi	a4,a5,8
-  1c:	fe840793          	addi	a5,s0,-24
-  20:	00070593          	addi	a1,a4,0
-  24:	00078513          	addi	a0,a5,0
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <std::vector<unsigned long, std::allocator<unsigned long> >::end()+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	fe843783          	ld	a5,-24(s0)
-  38:	00078513          	addi	a0,a5,0
-  3c:	02813083          	ld	ra,40(sp)
-  40:	02013403          	ld	s0,32(sp)
-  44:	03010113          	addi	sp,sp,48
-  48:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE17_M_realloc_insertIJRKmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_:
-
-0000000000000000 <void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long const&>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long const&)>:
-   0:	f8010113          	addi	sp,sp,-128
-   4:	06113c23          	sd	ra,120(sp)
-   8:	06813823          	sd	s0,112(sp)
-   c:	06913423          	sd	s1,104(sp)
-  10:	07213023          	sd	s2,96(sp)
-  14:	08010413          	addi	s0,sp,128
-  18:	f8a43c23          	sd	a0,-104(s0)
-  1c:	f8b43823          	sd	a1,-112(s0)
-  20:	f8c43423          	sd	a2,-120(s0)
-  24:	00000617          	auipc	a2,0x0
-  28:	00060613          	addi	a2,a2,0 # 24 <void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long const&>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long const&)+0x24>
-  2c:	00100593          	addi	a1,zero,1
-  30:	f9843503          	ld	a0,-104(s0)
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long const&>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long const&)+0x34>
-
-000000000000003c <.LEHB21>:
-  3c:	000300e7          	jalr	ra,0(t1)
-  40:	00050793          	addi	a5,a0,0
-  44:	fcf43823          	sd	a5,-48(s0)
-  48:	f9843783          	ld	a5,-104(s0)
-  4c:	0007b783          	ld	a5,0(a5)
-  50:	fcf43423          	sd	a5,-56(s0)
-  54:	f9843783          	ld	a5,-104(s0)
-  58:	0087b783          	ld	a5,8(a5)
-  5c:	fcf43023          	sd	a5,-64(s0)
-  60:	f9843503          	ld	a0,-104(s0)
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <.LEHB21+0x28>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00050793          	addi	a5,a0,0
-  74:	faf43423          	sd	a5,-88(s0)
-  78:	fa840713          	addi	a4,s0,-88
-  7c:	f9040793          	addi	a5,s0,-112
-  80:	00070593          	addi	a1,a4,0
-  84:	00078513          	addi	a0,a5,0
-  88:	00000317          	auipc	t1,0x0
-  8c:	00033303          	ld	t1,0(t1) # 88 <.LEHB21+0x4c>
-  90:	000300e7          	jalr	ra,0(t1)
-  94:	00050793          	addi	a5,a0,0
-  98:	faf43c23          	sd	a5,-72(s0)
-  9c:	f9843783          	ld	a5,-104(s0)
-  a0:	fd043583          	ld	a1,-48(s0)
-  a4:	00078513          	addi	a0,a5,0
-  a8:	00000317          	auipc	t1,0x0
-  ac:	00033303          	ld	t1,0(t1) # a8 <.LEHB21+0x6c>
-  b0:	000300e7          	jalr	ra,0(t1)
-
-00000000000000b4 <.LEHE21>:
-  b4:	00050793          	addi	a5,a0,0
-  b8:	faf43823          	sd	a5,-80(s0)
-  bc:	fb043783          	ld	a5,-80(s0)
-  c0:	fcf43c23          	sd	a5,-40(s0)
-  c4:	f9843483          	ld	s1,-104(s0)
-  c8:	fb843783          	ld	a5,-72(s0)
-  cc:	00379793          	slli	a5,a5,0x3
-  d0:	fb043703          	ld	a4,-80(s0)
-  d4:	00f70933          	add	s2,a4,a5
-  d8:	f8843503          	ld	a0,-120(s0)
-  dc:	00000317          	auipc	t1,0x0
-  e0:	00033303          	ld	t1,0(t1) # dc <.LEHE21+0x28>
-  e4:	000300e7          	jalr	ra,0(t1)
-  e8:	00050793          	addi	a5,a0,0
-  ec:	00078613          	addi	a2,a5,0
-  f0:	00090593          	addi	a1,s2,0
-  f4:	00048513          	addi	a0,s1,0
-  f8:	00000317          	auipc	t1,0x0
-  fc:	00033303          	ld	t1,0(t1) # f8 <.LEHE21+0x44>
- 100:	000300e7          	jalr	ra,0(t1)
- 104:	fc043c23          	sd	zero,-40(s0)
- 108:	00000317          	auipc	t1,0x0
- 10c:	00033303          	ld	t1,0(t1) # 108 <.LEHE21+0x54>
- 110:	000300e7          	jalr	ra,0(t1)
- 114:	00050793          	addi	a5,a0,0
- 118:	0a078e63          	beq	a5,zero,1d4 <.L302>
- 11c:	f9040793          	addi	a5,s0,-112
- 120:	00078513          	addi	a0,a5,0
- 124:	00000317          	auipc	t1,0x0
- 128:	00033303          	ld	t1,0(t1) # 124 <.LEHE21+0x70>
- 12c:	000300e7          	jalr	ra,0(t1)
- 130:	00050793          	addi	a5,a0,0
- 134:	0007b483          	ld	s1,0(a5)
- 138:	f9843783          	ld	a5,-104(s0)
- 13c:	00078513          	addi	a0,a5,0
- 140:	00000317          	auipc	t1,0x0
- 144:	00033303          	ld	t1,0(t1) # 140 <.LEHE21+0x8c>
- 148:	000300e7          	jalr	ra,0(t1)
- 14c:	00050793          	addi	a5,a0,0
- 150:	00078693          	addi	a3,a5,0
- 154:	fb043603          	ld	a2,-80(s0)
- 158:	00048593          	addi	a1,s1,0
- 15c:	fc843503          	ld	a0,-56(s0)
- 160:	00000317          	auipc	t1,0x0
- 164:	00033303          	ld	t1,0(t1) # 160 <.LEHE21+0xac>
- 168:	000300e7          	jalr	ra,0(t1)
- 16c:	fca43c23          	sd	a0,-40(s0)
- 170:	fd843783          	ld	a5,-40(s0)
- 174:	00878793          	addi	a5,a5,8
- 178:	fcf43c23          	sd	a5,-40(s0)
- 17c:	f9040793          	addi	a5,s0,-112
- 180:	00078513          	addi	a0,a5,0
- 184:	00000317          	auipc	t1,0x0
- 188:	00033303          	ld	t1,0(t1) # 184 <.LEHE21+0xd0>
- 18c:	000300e7          	jalr	ra,0(t1)
- 190:	00050793          	addi	a5,a0,0
- 194:	0007b483          	ld	s1,0(a5)
- 198:	f9843783          	ld	a5,-104(s0)
- 19c:	00078513          	addi	a0,a5,0
- 1a0:	00000317          	auipc	t1,0x0
- 1a4:	00033303          	ld	t1,0(t1) # 1a0 <.LEHE21+0xec>
- 1a8:	000300e7          	jalr	ra,0(t1)
- 1ac:	00050793          	addi	a5,a0,0
- 1b0:	00078693          	addi	a3,a5,0
- 1b4:	fd843603          	ld	a2,-40(s0)
- 1b8:	fc043583          	ld	a1,-64(s0)
- 1bc:	00048513          	addi	a0,s1,0
- 1c0:	00000317          	auipc	t1,0x0
- 1c4:	00033303          	ld	t1,0(t1) # 1c0 <.LEHE21+0x10c>
- 1c8:	000300e7          	jalr	ra,0(t1)
- 1cc:	fca43c23          	sd	a0,-40(s0)
- 1d0:	0c00006f          	jal	zero,290 <.L303>
-
-00000000000001d4 <.L302>:
- 1d4:	f9040793          	addi	a5,s0,-112
- 1d8:	00078513          	addi	a0,a5,0
- 1dc:	00000317          	auipc	t1,0x0
- 1e0:	00033303          	ld	t1,0(t1) # 1dc <.L302+0x8>
- 1e4:	000300e7          	jalr	ra,0(t1)
- 1e8:	00050793          	addi	a5,a0,0
- 1ec:	0007b483          	ld	s1,0(a5)
- 1f0:	f9843783          	ld	a5,-104(s0)
- 1f4:	00078513          	addi	a0,a5,0
- 1f8:	00000317          	auipc	t1,0x0
- 1fc:	00033303          	ld	t1,0(t1) # 1f8 <.L302+0x24>
- 200:	000300e7          	jalr	ra,0(t1)
- 204:	00050793          	addi	a5,a0,0
- 208:	00078693          	addi	a3,a5,0
- 20c:	fb043603          	ld	a2,-80(s0)
- 210:	00048593          	addi	a1,s1,0
- 214:	fc843503          	ld	a0,-56(s0)
- 218:	00000317          	auipc	t1,0x0
- 21c:	00033303          	ld	t1,0(t1) # 218 <.L302+0x44>
-
-0000000000000220 <.LEHB22>:
- 220:	000300e7          	jalr	ra,0(t1)
- 224:	00050793          	addi	a5,a0,0
- 228:	fcf43c23          	sd	a5,-40(s0)
- 22c:	fd843783          	ld	a5,-40(s0)
- 230:	00878793          	addi	a5,a5,8
- 234:	fcf43c23          	sd	a5,-40(s0)
- 238:	f9040793          	addi	a5,s0,-112
- 23c:	00078513          	addi	a0,a5,0
- 240:	00000317          	auipc	t1,0x0
- 244:	00033303          	ld	t1,0(t1) # 240 <.LEHB22+0x20>
- 248:	000300e7          	jalr	ra,0(t1)
- 24c:	00050793          	addi	a5,a0,0
- 250:	0007b483          	ld	s1,0(a5)
- 254:	f9843783          	ld	a5,-104(s0)
- 258:	00078513          	addi	a0,a5,0
- 25c:	00000317          	auipc	t1,0x0
- 260:	00033303          	ld	t1,0(t1) # 25c <.LEHB22+0x3c>
- 264:	000300e7          	jalr	ra,0(t1)
- 268:	00050793          	addi	a5,a0,0
- 26c:	00078693          	addi	a3,a5,0
- 270:	fd843603          	ld	a2,-40(s0)
- 274:	fc043583          	ld	a1,-64(s0)
- 278:	00048513          	addi	a0,s1,0
- 27c:	00000317          	auipc	t1,0x0
- 280:	00033303          	ld	t1,0(t1) # 27c <.LEHB22+0x5c>
- 284:	000300e7          	jalr	ra,0(t1)
-
-0000000000000288 <.LEHE22>:
- 288:	00050793          	addi	a5,a0,0
- 28c:	fcf43c23          	sd	a5,-40(s0)
-
-0000000000000290 <.L303>:
- 290:	00000317          	auipc	t1,0x0
- 294:	00033303          	ld	t1,0(t1) # 290 <.L303>
- 298:	000300e7          	jalr	ra,0(t1)
- 29c:	00050793          	addi	a5,a0,0
- 2a0:	0017c793          	xori	a5,a5,1
- 2a4:	0ff7f793          	andi	a5,a5,255
- 2a8:	02078a63          	beq	a5,zero,2dc <.L304>
- 2ac:	f9843783          	ld	a5,-104(s0)
- 2b0:	00078513          	addi	a0,a5,0
- 2b4:	00000317          	auipc	t1,0x0
- 2b8:	00033303          	ld	t1,0(t1) # 2b4 <.L303+0x24>
- 2bc:	000300e7          	jalr	ra,0(t1)
- 2c0:	00050793          	addi	a5,a0,0
- 2c4:	00078613          	addi	a2,a5,0
- 2c8:	fc043583          	ld	a1,-64(s0)
- 2cc:	fc843503          	ld	a0,-56(s0)
- 2d0:	00000317          	auipc	t1,0x0
- 2d4:	00033303          	ld	t1,0(t1) # 2d0 <.L303+0x40>
-
-00000000000002d8 <.LEHB23>:
- 2d8:	000300e7          	jalr	ra,0(t1)
-
-00000000000002dc <.L304>:
- 2dc:	f9843683          	ld	a3,-104(s0)
- 2e0:	f9843783          	ld	a5,-104(s0)
- 2e4:	0107b703          	ld	a4,16(a5)
- 2e8:	fc843783          	ld	a5,-56(s0)
- 2ec:	40f707b3          	sub	a5,a4,a5
- 2f0:	4037d793          	srai	a5,a5,0x3
- 2f4:	00078613          	addi	a2,a5,0
- 2f8:	fc843583          	ld	a1,-56(s0)
- 2fc:	00068513          	addi	a0,a3,0
- 300:	00000317          	auipc	t1,0x0
- 304:	00033303          	ld	t1,0(t1) # 300 <.L304+0x24>
- 308:	000300e7          	jalr	ra,0(t1)
-
-000000000000030c <.LEHE23>:
- 30c:	f9843783          	ld	a5,-104(s0)
- 310:	fb043703          	ld	a4,-80(s0)
- 314:	00e7b023          	sd	a4,0(a5)
- 318:	f9843783          	ld	a5,-104(s0)
- 31c:	fd843703          	ld	a4,-40(s0)
- 320:	00e7b423          	sd	a4,8(a5)
- 324:	fd043783          	ld	a5,-48(s0)
- 328:	00379793          	slli	a5,a5,0x3
- 32c:	fb043703          	ld	a4,-80(s0)
- 330:	00f70733          	add	a4,a4,a5
- 334:	f9843783          	ld	a5,-104(s0)
- 338:	00e7b823          	sd	a4,16(a5)
- 33c:	0b80006f          	jal	zero,3f4 <.L311>
-
-0000000000000340 <.L309>:
- 340:	00050793          	addi	a5,a0,0
- 344:	00078513          	addi	a0,a5,0
- 348:	00000097          	auipc	ra,0x0
- 34c:	000080e7          	jalr	ra,0(ra) # 348 <.L309+0x8>
- 350:	fd843783          	ld	a5,-40(s0)
- 354:	02079863          	bne	a5,zero,384 <.L306>
- 358:	f9843683          	ld	a3,-104(s0)
- 35c:	fb843783          	ld	a5,-72(s0)
- 360:	00379793          	slli	a5,a5,0x3
- 364:	fb043703          	ld	a4,-80(s0)
- 368:	00f707b3          	add	a5,a4,a5
- 36c:	00078593          	addi	a1,a5,0
- 370:	00068513          	addi	a0,a3,0
- 374:	00000317          	auipc	t1,0x0
- 378:	00033303          	ld	t1,0(t1) # 374 <.L309+0x34>
- 37c:	000300e7          	jalr	ra,0(t1)
- 380:	0340006f          	jal	zero,3b4 <.L307>
-
-0000000000000384 <.L306>:
- 384:	f9843783          	ld	a5,-104(s0)
- 388:	00078513          	addi	a0,a5,0
- 38c:	00000317          	auipc	t1,0x0
- 390:	00033303          	ld	t1,0(t1) # 38c <.L306+0x8>
- 394:	000300e7          	jalr	ra,0(t1)
- 398:	00050793          	addi	a5,a0,0
- 39c:	00078613          	addi	a2,a5,0
- 3a0:	fd843583          	ld	a1,-40(s0)
- 3a4:	fb043503          	ld	a0,-80(s0)
- 3a8:	00000317          	auipc	t1,0x0
- 3ac:	00033303          	ld	t1,0(t1) # 3a8 <.L306+0x24>
-
-00000000000003b0 <.LEHB24>:
- 3b0:	000300e7          	jalr	ra,0(t1)
-
-00000000000003b4 <.L307>:
- 3b4:	f9843783          	ld	a5,-104(s0)
- 3b8:	fd043603          	ld	a2,-48(s0)
- 3bc:	fb043583          	ld	a1,-80(s0)
- 3c0:	00078513          	addi	a0,a5,0
- 3c4:	00000317          	auipc	t1,0x0
- 3c8:	00033303          	ld	t1,0(t1) # 3c4 <.L307+0x10>
- 3cc:	000300e7          	jalr	ra,0(t1)
- 3d0:	00000097          	auipc	ra,0x0
- 3d4:	000080e7          	jalr	ra,0(ra) # 3d0 <.L307+0x1c>
-
-00000000000003d8 <.L310>:
- 3d8:	00050493          	addi	s1,a0,0
- 3dc:	00000097          	auipc	ra,0x0
- 3e0:	000080e7          	jalr	ra,0(ra) # 3dc <.L310+0x4>
- 3e4:	00048793          	addi	a5,s1,0
- 3e8:	00078513          	addi	a0,a5,0
-
-00000000000003ec <.LEHB25>:
- 3ec:	00000097          	auipc	ra,0x0
- 3f0:	000080e7          	jalr	ra,0(ra) # 3ec <.LEHB25>
-
-00000000000003f4 <.L311>:
- 3f4:	07813083          	ld	ra,120(sp)
- 3f8:	07013403          	ld	s0,112(sp)
- 3fc:	06813483          	ld	s1,104(sp)
- 400:	06013903          	ld	s2,96(sp)
- 404:	08010113          	addi	sp,sp,128
- 408:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt4moveIRmEONSt16remove_referenceIT_E4typeEOS2_:
-
-0000000000000000 <std::remove_reference<unsigned long&>::type&& std::move<unsigned long&>(unsigned long&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE12emplace_backIJmEEEvDpOT_:
-
-0000000000000000 <void std::vector<unsigned long, std::allocator<unsigned long> >::emplace_back<unsigned long>(unsigned long&&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	01213823          	sd	s2,16(sp)
-  14:	03010413          	addi	s0,sp,48
-  18:	fca43c23          	sd	a0,-40(s0)
-  1c:	fcb43823          	sd	a1,-48(s0)
-  20:	fd843783          	ld	a5,-40(s0)
-  24:	0087b703          	ld	a4,8(a5)
-  28:	fd843783          	ld	a5,-40(s0)
-  2c:	0107b783          	ld	a5,16(a5)
-  30:	04f70a63          	beq	a4,a5,84 <.L315>
-  34:	fd843483          	ld	s1,-40(s0)
-  38:	fd843783          	ld	a5,-40(s0)
-  3c:	0087b903          	ld	s2,8(a5)
-  40:	fd043503          	ld	a0,-48(s0)
-  44:	00000317          	auipc	t1,0x0
-  48:	00033303          	ld	t1,0(t1) # 44 <void std::vector<unsigned long, std::allocator<unsigned long> >::emplace_back<unsigned long>(unsigned long&&)+0x44>
-  4c:	000300e7          	jalr	ra,0(t1)
-  50:	00050793          	addi	a5,a0,0
-  54:	00078613          	addi	a2,a5,0
-  58:	00090593          	addi	a1,s2,0
-  5c:	00048513          	addi	a0,s1,0
-  60:	00000317          	auipc	t1,0x0
-  64:	00033303          	ld	t1,0(t1) # 60 <void std::vector<unsigned long, std::allocator<unsigned long> >::emplace_back<unsigned long>(unsigned long&&)+0x60>
-  68:	000300e7          	jalr	ra,0(t1)
-  6c:	fd843783          	ld	a5,-40(s0)
-  70:	0087b783          	ld	a5,8(a5)
-  74:	00878713          	addi	a4,a5,8
-  78:	fd843783          	ld	a5,-40(s0)
-  7c:	00e7b423          	sd	a4,8(a5)
-  80:	0440006f          	jal	zero,c4 <.L317>
-
-0000000000000084 <.L315>:
-  84:	fd843503          	ld	a0,-40(s0)
-  88:	00000317          	auipc	t1,0x0
-  8c:	00033303          	ld	t1,0(t1) # 88 <.L315+0x4>
-  90:	000300e7          	jalr	ra,0(t1)
-  94:	00050493          	addi	s1,a0,0
-  98:	fd043503          	ld	a0,-48(s0)
-  9c:	00000317          	auipc	t1,0x0
-  a0:	00033303          	ld	t1,0(t1) # 9c <.L315+0x18>
-  a4:	000300e7          	jalr	ra,0(t1)
-  a8:	00050793          	addi	a5,a0,0
-  ac:	00078613          	addi	a2,a5,0
-  b0:	00048593          	addi	a1,s1,0
-  b4:	fd843503          	ld	a0,-40(s0)
-  b8:	00000317          	auipc	t1,0x0
-  bc:	00033303          	ld	t1,0(t1) # b8 <.L315+0x34>
-  c0:	000300e7          	jalr	ra,0(t1)
-
-00000000000000c4 <.L317>:
-  c4:	00000013          	addi	zero,zero,0
-  c8:	02813083          	ld	ra,40(sp)
-  cc:	02013403          	ld	s0,32(sp)
-  d0:	01813483          	ld	s1,24(sp)
-  d4:	01013903          	ld	s2,16(sp)
-  d8:	03010113          	addi	sp,sp,48
-  dc:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt6vectorImSaImEE11_M_data_ptrImEEPT_S4_:
-
-0000000000000000 <unsigned long* std::vector<unsigned long, std::allocator<unsigned long> >::_M_data_ptr<unsigned long>(unsigned long*) const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe043783          	ld	a5,-32(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardIN5dwarf12section_typeEEOT_RNSt16remove_referenceIS2_E4typeE:
-
-0000000000000000 <dwarf::section_type&& std::forward<dwarf::section_type>(std::remove_reference<dwarf::section_type>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardIN5dwarf10byte_orderEEOT_RNSt16remove_referenceIS2_E4typeE:
-
-0000000000000000 <dwarf::byte_order&& std::forward<dwarf::byte_order>(std::remove_reference<dwarf::byte_order>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt7forwardIN5dwarf6formatEEOT_RNSt16remove_referenceIS2_E4typeE:
-
-0000000000000000 <dwarf::format&& std::forward<dwarf::format>(std::remove_reference<dwarf::format>::type&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN5dwarf7sectionEEC2ISaIvEJNS0_12section_typeEPKcmNS0_10byte_orderENS0_6formatEmEEESt20_Sp_alloc_shared_tagIT_EDpOT0_:
-
-0000000000000000 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)>:
-   0:	f8010113          	addi	sp,sp,-128
-   4:	06113c23          	sd	ra,120(sp)
-   8:	06813823          	sd	s0,112(sp)
-   c:	06913423          	sd	s1,104(sp)
-  10:	07213023          	sd	s2,96(sp)
-  14:	05313c23          	sd	s3,88(sp)
-  18:	05413823          	sd	s4,80(sp)
-  1c:	05513423          	sd	s5,72(sp)
-  20:	05613023          	sd	s6,64(sp)
-  24:	08010413          	addi	s0,sp,128
-  28:	faa43c23          	sd	a0,-72(s0)
-  2c:	fab43823          	sd	a1,-80(s0)
-  30:	fac43423          	sd	a2,-88(s0)
-  34:	fad43023          	sd	a3,-96(s0)
-  38:	f8e43c23          	sd	a4,-104(s0)
-  3c:	f8f43823          	sd	a5,-112(s0)
-  40:	f9043423          	sd	a6,-120(s0)
-  44:	f9143023          	sd	a7,-128(s0)
-  48:	fb843483          	ld	s1,-72(s0)
-  4c:	fa843503          	ld	a0,-88(s0)
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	00050913          	addi	s2,a0,0
-  60:	fa043503          	ld	a0,-96(s0)
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00050993          	addi	s3,a0,0
-  74:	f9843503          	ld	a0,-104(s0)
-  78:	00000317          	auipc	t1,0x0
-  7c:	00033303          	ld	t1,0(t1) # 78 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x78>
-  80:	000300e7          	jalr	ra,0(t1)
-  84:	00050a13          	addi	s4,a0,0
-  88:	f9043503          	ld	a0,-112(s0)
-  8c:	00000317          	auipc	t1,0x0
-  90:	00033303          	ld	t1,0(t1) # 8c <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x8c>
-  94:	000300e7          	jalr	ra,0(t1)
-  98:	00050a93          	addi	s5,a0,0
-  9c:	f8843503          	ld	a0,-120(s0)
-  a0:	00000317          	auipc	t1,0x0
-  a4:	00033303          	ld	t1,0(t1) # a0 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xa0>
-  a8:	000300e7          	jalr	ra,0(t1)
-  ac:	00050b13          	addi	s6,a0,0
-  b0:	f8043503          	ld	a0,-128(s0)
-  b4:	00000317          	auipc	t1,0x0
-  b8:	00033303          	ld	t1,0(t1) # b4 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xb4>
-  bc:	000300e7          	jalr	ra,0(t1)
-  c0:	00050793          	addi	a5,a0,0
-  c4:	00078893          	addi	a7,a5,0
-  c8:	000b0813          	addi	a6,s6,0
-  cc:	000a8793          	addi	a5,s5,0
-  d0:	000a0713          	addi	a4,s4,0
-  d4:	00098693          	addi	a3,s3,0
-  d8:	00090613          	addi	a2,s2,0
-  dc:	fb043583          	ld	a1,-80(s0)
-  e0:	00048513          	addi	a0,s1,0
-  e4:	00000317          	auipc	t1,0x0
-  e8:	00033303          	ld	t1,0(t1) # e4 <std::shared_ptr<dwarf::section>::shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xe4>
-  ec:	000300e7          	jalr	ra,0(t1)
-  f0:	00000013          	addi	zero,zero,0
-  f4:	07813083          	ld	ra,120(sp)
-  f8:	07013403          	ld	s0,112(sp)
-  fc:	06813483          	ld	s1,104(sp)
- 100:	06013903          	ld	s2,96(sp)
- 104:	05813983          	ld	s3,88(sp)
- 108:	05013a03          	ld	s4,80(sp)
- 10c:	04813a83          	ld	s5,72(sp)
- 110:	04013b03          	ld	s6,64(sp)
- 114:	08010113          	addi	sp,sp,128
- 118:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EEaSEOS4_:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::operator=(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fcb43823          	sd	a1,-48(s0)
-  18:	fd043503          	ld	a0,-48(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::operator=(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&&)+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00050713          	addi	a4,a0,0
-  2c:	fe040793          	addi	a5,s0,-32
-  30:	00070593          	addi	a1,a4,0
-  34:	00078513          	addi	a0,a5,0
-  38:	00000317          	auipc	t1,0x0
-  3c:	00033303          	ld	t1,0(t1) # 38 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::operator=(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&&)+0x38>
-  40:	000300e7          	jalr	ra,0(t1)
-  44:	fe040793          	addi	a5,s0,-32
-  48:	fd843583          	ld	a1,-40(s0)
-  4c:	00078513          	addi	a0,a5,0
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::operator=(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&&)+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	fe040793          	addi	a5,s0,-32
-  60:	00078513          	addi	a0,a5,0
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::operator=(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	fd843783          	ld	a5,-40(s0)
-  74:	00078513          	addi	a0,a5,0
-  78:	02813083          	ld	ra,40(sp)
-  7c:	02013403          	ld	s0,32(sp)
-  80:	03010113          	addi	sp,sp,48
-  84:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EE4swapERS4_:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::swap(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	fe043703          	ld	a4,-32(s0)
-  20:	00070593          	addi	a1,a4,0
-  24:	00078513          	addi	a0,a5,0
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::swap(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&)+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	fe843783          	ld	a5,-24(s0)
-  38:	00878713          	addi	a4,a5,8
-  3c:	fe043783          	ld	a5,-32(s0)
-  40:	00878793          	addi	a5,a5,8
-  44:	00078593          	addi	a1,a5,0
-  48:	00070513          	addi	a0,a4,0
-  4c:	00000317          	auipc	t1,0x0
-  50:	00033303          	ld	t1,0(t1) # 4c <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::swap(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&)+0x4c>
-  54:	000300e7          	jalr	ra,0(t1)
-  58:	00000013          	addi	zero,zero,0
-  5c:	01813083          	ld	ra,24(sp)
-  60:	01013403          	ld	s0,16(sp)
-  64:	02010113          	addi	sp,sp,32
-  68:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EED2Ev:
-
-0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::~_Sp_counted_base()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	00000797          	auipc	a5,0x0
-  14:	0007b783          	ld	a5,0(a5) # 10 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::~_Sp_counted_base()+0x10>
-  18:	01078713          	addi	a4,a5,16
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	00e7b023          	sd	a4,0(a5)
-  24:	00000013          	addi	zero,zero,0
-  28:	01813403          	ld	s0,24(sp)
-  2c:	02010113          	addi	sp,sp,32
-  30:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EED0Ev:
-
-0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::~_Sp_counted_base()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::~_Sp_counted_base()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	fe843503          	ld	a0,-24(s0)
-  28:	00000097          	auipc	ra,0x0
-  2c:	000080e7          	jalr	ra,0(ra) # 28 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::~_Sp_counted_base()+0x28>
-  30:	01813083          	ld	ra,24(sp)
-  34:	01013403          	ld	s0,16(sp)
-  38:	02010113          	addi	sp,sp,32
-  3c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EEC2ISaIvEJRNS0_12section_typeEPKcRKmRKNS0_10byte_orderERNS0_6formatERjEEESt20_Sp_alloc_shared_tagIT_EDpOT0_:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)>:
-   0:	f6010113          	addi	sp,sp,-160
-   4:	08113c23          	sd	ra,152(sp)
-   8:	08813823          	sd	s0,144(sp)
-   c:	08913423          	sd	s1,136(sp)
-  10:	09213023          	sd	s2,128(sp)
-  14:	07313c23          	sd	s3,120(sp)
-  18:	07413823          	sd	s4,112(sp)
-  1c:	07513423          	sd	s5,104(sp)
-  20:	07613023          	sd	s6,96(sp)
-  24:	05713c23          	sd	s7,88(sp)
-  28:	0a010413          	addi	s0,sp,160
-  2c:	faa43423          	sd	a0,-88(s0)
-  30:	fab43023          	sd	a1,-96(s0)
-  34:	f8c43c23          	sd	a2,-104(s0)
-  38:	f8d43823          	sd	a3,-112(s0)
-  3c:	f8e43423          	sd	a4,-120(s0)
-  40:	f8f43023          	sd	a5,-128(s0)
-  44:	f7043c23          	sd	a6,-136(s0)
-  48:	f7143823          	sd	a7,-144(s0)
-  4c:	fa843783          	ld	a5,-88(s0)
-  50:	0007b023          	sd	zero,0(a5)
-  54:	fa843783          	ld	a5,-88(s0)
-  58:	00878493          	addi	s1,a5,8
-  5c:	fa843903          	ld	s2,-88(s0)
-  60:	f9843503          	ld	a0,-104(s0)
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00050993          	addi	s3,a0,0
-  74:	f9043503          	ld	a0,-112(s0)
-  78:	00000317          	auipc	t1,0x0
-  7c:	00033303          	ld	t1,0(t1) # 78 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x78>
-  80:	000300e7          	jalr	ra,0(t1)
-  84:	00050a13          	addi	s4,a0,0
-  88:	f8843503          	ld	a0,-120(s0)
-  8c:	00000317          	auipc	t1,0x0
-  90:	00033303          	ld	t1,0(t1) # 8c <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x8c>
-  94:	000300e7          	jalr	ra,0(t1)
-  98:	00050a93          	addi	s5,a0,0
-  9c:	f8043503          	ld	a0,-128(s0)
-  a0:	00000317          	auipc	t1,0x0
-  a4:	00033303          	ld	t1,0(t1) # a0 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xa0>
-  a8:	000300e7          	jalr	ra,0(t1)
-  ac:	00050b13          	addi	s6,a0,0
-  b0:	f7843503          	ld	a0,-136(s0)
-  b4:	00000317          	auipc	t1,0x0
-  b8:	00033303          	ld	t1,0(t1) # b4 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xb4>
-  bc:	000300e7          	jalr	ra,0(t1)
-  c0:	00050b93          	addi	s7,a0,0
-  c4:	f7043503          	ld	a0,-144(s0)
-  c8:	00000317          	auipc	t1,0x0
-  cc:	00033303          	ld	t1,0(t1) # c8 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xc8>
-  d0:	000300e7          	jalr	ra,0(t1)
-  d4:	00050793          	addi	a5,a0,0
-  d8:	00f13023          	sd	a5,0(sp)
-  dc:	000b8893          	addi	a7,s7,0
-  e0:	000b0813          	addi	a6,s6,0
-  e4:	000a8793          	addi	a5,s5,0
-  e8:	000a0713          	addi	a4,s4,0
-  ec:	00098693          	addi	a3,s3,0
-  f0:	fa043603          	ld	a2,-96(s0)
-  f4:	00090593          	addi	a1,s2,0
-  f8:	00048513          	addi	a0,s1,0
-  fc:	00000317          	auipc	t1,0x0
- 100:	00033303          	ld	t1,0(t1) # fc <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xfc>
- 104:	000300e7          	jalr	ra,0(t1)
- 108:	fa843783          	ld	a5,-88(s0)
- 10c:	0007b783          	ld	a5,0(a5)
- 110:	00078593          	addi	a1,a5,0
- 114:	fa843503          	ld	a0,-88(s0)
- 118:	00000317          	auipc	t1,0x0
- 11c:	00033303          	ld	t1,0(t1) # 118 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x118>
- 120:	000300e7          	jalr	ra,0(t1)
- 124:	00000013          	addi	zero,zero,0
- 128:	09813083          	ld	ra,152(sp)
- 12c:	09013403          	ld	s0,144(sp)
- 130:	08813483          	ld	s1,136(sp)
- 134:	08013903          	ld	s2,128(sp)
- 138:	07813983          	ld	s3,120(sp)
- 13c:	07013a03          	ld	s4,112(sp)
- 140:	06813a83          	ld	s5,104(sp)
- 144:	06013b03          	ld	s6,96(sp)
- 148:	05813b83          	ld	s7,88(sp)
- 14c:	0a010113          	addi	sp,sp,160
- 150:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2Ev:
-
-0000000000000000 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0007b023          	sd	zero,0(a5)
-  18:	00000013          	addi	zero,zero,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EE7_M_swapERS2_:
-
-0000000000000000 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::_M_swap(std::__shared_count<(__gnu_cxx::_Lock_policy)1>&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02813423          	sd	s0,40(sp)
-   8:	03010413          	addi	s0,sp,48
-   c:	fca43c23          	sd	a0,-40(s0)
-  10:	fcb43823          	sd	a1,-48(s0)
-  14:	fd043783          	ld	a5,-48(s0)
-  18:	0007b783          	ld	a5,0(a5)
-  1c:	fef43423          	sd	a5,-24(s0)
-  20:	fd843783          	ld	a5,-40(s0)
-  24:	0007b703          	ld	a4,0(a5)
-  28:	fd043783          	ld	a5,-48(s0)
-  2c:	00e7b023          	sd	a4,0(a5)
-  30:	fd843783          	ld	a5,-40(s0)
-  34:	fe843703          	ld	a4,-24(s0)
-  38:	00e7b023          	sd	a4,0(a5)
-  3c:	00000013          	addi	zero,zero,0
-  40:	02813403          	ld	s0,40(sp)
-  44:	03010113          	addi	sp,sp,48
-  48:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorImEC2Ev:
-
-0000000000000000 <std::__new_allocator<unsigned long>::__new_allocator()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	00000013          	addi	zero,zero,0
-  14:	01813403          	ld	s0,24(sp)
-  18:	02010113          	addi	sp,sp,32
-  1c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16allocator_traitsISaImEE10deallocateERS0_Pmm:
-
-0000000000000000 <std::allocator_traits<std::allocator<unsigned long> >::deallocate(std::allocator<unsigned long>&, unsigned long*, unsigned long)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fd843603          	ld	a2,-40(s0)
-  20:	fe043583          	ld	a1,-32(s0)
-  24:	fe843503          	ld	a0,-24(s0)
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <std::allocator_traits<std::allocator<unsigned long> >::deallocate(std::allocator<unsigned long>&, unsigned long*, unsigned long)+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00000013          	addi	zero,zero,0
-  38:	02813083          	ld	ra,40(sp)
-  3c:	02013403          	ld	s0,32(sp)
-  40:	03010113          	addi	sp,sp,48
-  44:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt8_DestroyIPmEvT_S1_:
-
-0000000000000000 <void std::_Destroy<unsigned long*>(unsigned long*, unsigned long*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043583          	ld	a1,-32(s0)
-  1c:	fe843503          	ld	a0,-24(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <void std::_Destroy<unsigned long*>(unsigned long*, unsigned long*)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00000013          	addi	zero,zero,0
-  30:	01813083          	ld	ra,24(sp)
-  34:	01013403          	ld	s0,16(sp)
-  38:	02010113          	addi	sp,sp,32
-  3c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE11_S_max_sizeERKS0_:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::_S_max_size(std::allocator<unsigned long> const&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fff00793          	addi	a5,zero,-1
-  18:	0047d793          	srli	a5,a5,0x4
-  1c:	fef43423          	sd	a5,-24(s0)
-  20:	fd843503          	ld	a0,-40(s0)
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <std::vector<unsigned long, std::allocator<unsigned long> >::_S_max_size(std::allocator<unsigned long> const&)+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050793          	addi	a5,a0,0
-  34:	fef43023          	sd	a5,-32(s0)
-  38:	fe040713          	addi	a4,s0,-32
-  3c:	fe840793          	addi	a5,s0,-24
-  40:	00070593          	addi	a1,a4,0
-  44:	00078513          	addi	a0,a5,0
-  48:	00000317          	auipc	t1,0x0
-  4c:	00033303          	ld	t1,0(t1) # 48 <std::vector<unsigned long, std::allocator<unsigned long> >::_S_max_size(std::allocator<unsigned long> const&)+0x48>
-  50:	000300e7          	jalr	ra,0(t1)
-  54:	00050793          	addi	a5,a0,0
-  58:	0007b783          	ld	a5,0(a5)
-  5c:	00078513          	addi	a0,a5,0
-  60:	02813083          	ld	ra,40(sp)
-  64:	02013403          	ld	s0,32(sp)
-  68:	03010113          	addi	sp,sp,48
-  6c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt12_Vector_baseImSaImEE19_M_get_Tp_allocatorEv:
-
-0000000000000000 <std::_Vector_base<unsigned long, std::allocator<unsigned long> >::_M_get_Tp_allocator() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16allocator_traitsISaImEE8allocateERS0_m:
-
-0000000000000000 <std::allocator_traits<std::allocator<unsigned long> >::allocate(std::allocator<unsigned long>&, unsigned long)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	00000613          	addi	a2,zero,0
-  1c:	fe043583          	ld	a1,-32(s0)
-  20:	fe843503          	ld	a0,-24(s0)
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <std::allocator_traits<std::allocator<unsigned long> >::allocate(std::allocator<unsigned long>&, unsigned long)+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050793          	addi	a5,a0,0
-  34:	00078513          	addi	a0,a5,0
-  38:	01813083          	ld	ra,24(sp)
-  3c:	01013403          	ld	s0,16(sp)
-  40:	02010113          	addi	sp,sp,32
-  44:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE14_S_do_relocateEPmS2_S2_RS0_St17integral_constantIbLb1EE:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::_S_do_relocate(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&, std::integral_constant<bool, true>)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fcd43823          	sd	a3,-48(s0)
-  20:	fce40423          	sb	a4,-56(s0)
-  24:	fd043683          	ld	a3,-48(s0)
-  28:	fd843603          	ld	a2,-40(s0)
-  2c:	fe043583          	ld	a1,-32(s0)
-  30:	fe843503          	ld	a0,-24(s0)
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <std::vector<unsigned long, std::allocator<unsigned long> >::_S_do_relocate(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&, std::integral_constant<bool, true>)+0x34>
-  3c:	000300e7          	jalr	ra,0(t1)
-  40:	00050793          	addi	a5,a0,0
-  44:	00078513          	addi	a0,a5,0
-  48:	03813083          	ld	ra,56(sp)
-  4c:	03013403          	ld	s0,48(sp)
-  50:	04010113          	addi	sp,sp,64
-  54:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt13move_iteratorIPmEC2ES0_:
-
-0000000000000000 <std::move_iterator<unsigned long*>::move_iterator(unsigned long*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe040793          	addi	a5,s0,-32
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::move_iterator<unsigned long*>::move_iterator(unsigned long*)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050793          	addi	a5,a0,0
-  30:	0007b703          	ld	a4,0(a5)
-  34:	fe843783          	ld	a5,-24(s0)
-  38:	00e7b023          	sd	a4,0(a5)
-  3c:	00000013          	addi	zero,zero,0
-  40:	01813083          	ld	ra,24(sp)
-  44:	01013403          	ld	s0,16(sp)
-  48:	02010113          	addi	sp,sp,32
-  4c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt22__uninitialized_copy_aISt13move_iteratorIPmES1_mET0_T_S4_S3_RSaIT1_E:
-
-0000000000000000 <unsigned long* std::__uninitialized_copy_a<std::move_iterator<unsigned long*>, unsigned long*, unsigned long>(std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>, unsigned long*, std::allocator<unsigned long>&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fcd43823          	sd	a3,-48(s0)
-  20:	fd843603          	ld	a2,-40(s0)
-  24:	fe043583          	ld	a1,-32(s0)
-  28:	fe843503          	ld	a0,-24(s0)
-  2c:	00000317          	auipc	t1,0x0
-  30:	00033303          	ld	t1,0(t1) # 2c <unsigned long* std::__uninitialized_copy_a<std::move_iterator<unsigned long*>, unsigned long*, unsigned long>(std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>, unsigned long*, std::allocator<unsigned long>&)+0x2c>
-  34:	000300e7          	jalr	ra,0(t1)
-  38:	00050793          	addi	a5,a0,0
-  3c:	00078513          	addi	a0,a5,0
-  40:	02813083          	ld	ra,40(sp)
-  44:	02013403          	ld	s0,32(sp)
-  48:	03010113          	addi	sp,sp,48
-  4c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorImE9constructImJRKmEEEvPT_DpOT0_:
-
-0000000000000000 <void std::__new_allocator<unsigned long>::construct<unsigned long, unsigned long const&>(unsigned long*, unsigned long const&)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	02913423          	sd	s1,40(sp)
-  10:	04010413          	addi	s0,sp,64
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fcb43823          	sd	a1,-48(s0)
-  1c:	fcc43423          	sd	a2,-56(s0)
-  20:	fd043783          	ld	a5,-48(s0)
-  24:	00078593          	addi	a1,a5,0
-  28:	00800513          	addi	a0,zero,8
-  2c:	00000317          	auipc	t1,0x0
-  30:	00033303          	ld	t1,0(t1) # 2c <void std::__new_allocator<unsigned long>::construct<unsigned long, unsigned long const&>(unsigned long*, unsigned long const&)+0x2c>
-  34:	000300e7          	jalr	ra,0(t1)
-  38:	00050493          	addi	s1,a0,0
-  3c:	fc843503          	ld	a0,-56(s0)
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <void std::__new_allocator<unsigned long>::construct<unsigned long, unsigned long const&>(unsigned long*, unsigned long const&)+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-  4c:	00050793          	addi	a5,a0,0
-  50:	0007b783          	ld	a5,0(a5)
-  54:	00f4b023          	sd	a5,0(s1)
-  58:	00000013          	addi	zero,zero,0
-  5c:	03813083          	ld	ra,56(sp)
-  60:	03013403          	ld	s0,48(sp)
-  64:	02813483          	ld	s1,40(sp)
-  68:	04010113          	addi	sp,sp,64
-  6c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEEC2ERKS1_:
-
-0000000000000000 <__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >::__normal_iterator(unsigned long* const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe043783          	ld	a5,-32(s0)
-  18:	0007b703          	ld	a4,0(a5)
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	00e7b023          	sd	a4,0(a5)
-  24:	00000013          	addi	zero,zero,0
-  28:	01813403          	ld	s0,24(sp)
-  2c:	02010113          	addi	sp,sp,32
-  30:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt6vectorImSaImEE12_M_check_lenEmPKc:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::_M_check_len(unsigned long, char const*) const>:
-   0:	fb010113          	addi	sp,sp,-80
-   4:	04113423          	sd	ra,72(sp)
-   8:	04813023          	sd	s0,64(sp)
-   c:	02913c23          	sd	s1,56(sp)
-  10:	05010413          	addi	s0,sp,80
-  14:	fca43423          	sd	a0,-56(s0)
-  18:	fcb43023          	sd	a1,-64(s0)
-  1c:	fac43c23          	sd	a2,-72(s0)
-  20:	fc843503          	ld	a0,-56(s0)
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <std::vector<unsigned long, std::allocator<unsigned long> >::_M_check_len(unsigned long, char const*) const+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050493          	addi	s1,a0,0
-  34:	fc843503          	ld	a0,-56(s0)
-  38:	00000317          	auipc	t1,0x0
-  3c:	00033303          	ld	t1,0(t1) # 38 <std::vector<unsigned long, std::allocator<unsigned long> >::_M_check_len(unsigned long, char const*) const+0x38>
-  40:	000300e7          	jalr	ra,0(t1)
-  44:	00050793          	addi	a5,a0,0
-  48:	40f48733          	sub	a4,s1,a5
-  4c:	fc043783          	ld	a5,-64(s0)
-  50:	00f737b3          	sltu	a5,a4,a5
-  54:	0ff7f793          	andi	a5,a5,255
-  58:	00078863          	beq	a5,zero,68 <.L352>
-  5c:	fb843503          	ld	a0,-72(s0)
-  60:	00000097          	auipc	ra,0x0
-  64:	000080e7          	jalr	ra,0(ra) # 60 <std::vector<unsigned long, std::allocator<unsigned long> >::_M_check_len(unsigned long, char const*) const+0x60>
-
-0000000000000068 <.L352>:
-  68:	fc843503          	ld	a0,-56(s0)
-  6c:	00000317          	auipc	t1,0x0
-  70:	00033303          	ld	t1,0(t1) # 6c <.L352+0x4>
-  74:	000300e7          	jalr	ra,0(t1)
-  78:	00050493          	addi	s1,a0,0
-  7c:	fc843503          	ld	a0,-56(s0)
-  80:	00000317          	auipc	t1,0x0
-  84:	00033303          	ld	t1,0(t1) # 80 <.L352+0x18>
-  88:	000300e7          	jalr	ra,0(t1)
-  8c:	00050793          	addi	a5,a0,0
-  90:	fcf43823          	sd	a5,-48(s0)
-  94:	fc040713          	addi	a4,s0,-64
-  98:	fd040793          	addi	a5,s0,-48
-  9c:	00070593          	addi	a1,a4,0
-  a0:	00078513          	addi	a0,a5,0
-  a4:	00000317          	auipc	t1,0x0
-  a8:	00033303          	ld	t1,0(t1) # a4 <.L352+0x3c>
-  ac:	000300e7          	jalr	ra,0(t1)
-  b0:	00050793          	addi	a5,a0,0
-  b4:	0007b783          	ld	a5,0(a5)
-  b8:	00f487b3          	add	a5,s1,a5
-  bc:	fcf43c23          	sd	a5,-40(s0)
-  c0:	fc843503          	ld	a0,-56(s0)
-  c4:	00000317          	auipc	t1,0x0
-  c8:	00033303          	ld	t1,0(t1) # c4 <.L352+0x5c>
-  cc:	000300e7          	jalr	ra,0(t1)
-  d0:	00050713          	addi	a4,a0,0
-  d4:	fd843783          	ld	a5,-40(s0)
-  d8:	02e7e063          	bltu	a5,a4,f8 <.L353>
-  dc:	fc843503          	ld	a0,-56(s0)
-  e0:	00000317          	auipc	t1,0x0
-  e4:	00033303          	ld	t1,0(t1) # e0 <.L352+0x78>
-  e8:	000300e7          	jalr	ra,0(t1)
-  ec:	00050713          	addi	a4,a0,0
-  f0:	fd843783          	ld	a5,-40(s0)
-  f4:	00f77e63          	bgeu	a4,a5,110 <.L354>
-
-00000000000000f8 <.L353>:
-  f8:	fc843503          	ld	a0,-56(s0)
-  fc:	00000317          	auipc	t1,0x0
- 100:	00033303          	ld	t1,0(t1) # fc <.L353+0x4>
- 104:	000300e7          	jalr	ra,0(t1)
- 108:	00050793          	addi	a5,a0,0
- 10c:	0080006f          	jal	zero,114 <.L355>
-
-0000000000000110 <.L354>:
- 110:	fd843783          	ld	a5,-40(s0)
-
-0000000000000114 <.L355>:
- 114:	00078513          	addi	a0,a5,0
- 118:	04813083          	ld	ra,72(sp)
- 11c:	04013403          	ld	s0,64(sp)
- 120:	03813483          	ld	s1,56(sp)
- 124:	05010113          	addi	sp,sp,80
- 128:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE5beginEv:
-
-0000000000000000 <std::vector<unsigned long, std::allocator<unsigned long> >::begin()>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fd843703          	ld	a4,-40(s0)
-  18:	fe840793          	addi	a5,s0,-24
-  1c:	00070593          	addi	a1,a4,0
-  20:	00078513          	addi	a0,a5,0
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <std::vector<unsigned long, std::allocator<unsigned long> >::begin()+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	fe843783          	ld	a5,-24(s0)
-  34:	00078513          	addi	a0,a5,0
-  38:	02813083          	ld	ra,40(sp)
-  3c:	02013403          	ld	s0,32(sp)
-  40:	03010113          	addi	sp,sp,48
-  44:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN9__gnu_cxxmiIPmSt6vectorImSaImEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_:
-
-0000000000000000 <__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >::difference_type __gnu_cxx::operator-<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > > const&, __gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > > const&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	03010413          	addi	s0,sp,48
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fcb43823          	sd	a1,-48(s0)
-  1c:	fd843503          	ld	a0,-40(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >::difference_type __gnu_cxx::operator-<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > > const&, __gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > > const&)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050793          	addi	a5,a0,0
-  30:	0007b483          	ld	s1,0(a5)
-  34:	fd043503          	ld	a0,-48(s0)
-  38:	00000317          	auipc	t1,0x0
-  3c:	00033303          	ld	t1,0(t1) # 38 <__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >::difference_type __gnu_cxx::operator-<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > > const&, __gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > > const&)+0x38>
-  40:	000300e7          	jalr	ra,0(t1)
-  44:	00050793          	addi	a5,a0,0
-  48:	0007b783          	ld	a5,0(a5)
-  4c:	40f487b3          	sub	a5,s1,a5
-  50:	4037d793          	srai	a5,a5,0x3
-  54:	00078513          	addi	a0,a5,0
-  58:	02813083          	ld	ra,40(sp)
-  5c:	02013403          	ld	s0,32(sp)
-  60:	01813483          	ld	s1,24(sp)
-  64:	03010113          	addi	sp,sp,48
-  68:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNK9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEE4baseEv:
-
-0000000000000000 <__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >::base() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt34__uninitialized_move_if_noexcept_aIPmS0_SaImEET0_T_S3_S2_RT1_:
-
-0000000000000000 <unsigned long* std::__uninitialized_move_if_noexcept_a<unsigned long*, unsigned long*, std::allocator<unsigned long> >(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	02913423          	sd	s1,40(sp)
-  10:	04010413          	addi	s0,sp,64
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fcb43823          	sd	a1,-48(s0)
-  1c:	fcc43423          	sd	a2,-56(s0)
-  20:	fcd43023          	sd	a3,-64(s0)
-  24:	fd843503          	ld	a0,-40(s0)
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <unsigned long* std::__uninitialized_move_if_noexcept_a<unsigned long*, unsigned long*, std::allocator<unsigned long> >(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00050493          	addi	s1,a0,0
-  38:	fd043503          	ld	a0,-48(s0)
-  3c:	00000317          	auipc	t1,0x0
-  40:	00033303          	ld	t1,0(t1) # 3c <unsigned long* std::__uninitialized_move_if_noexcept_a<unsigned long*, unsigned long*, std::allocator<unsigned long> >(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)+0x3c>
-  44:	000300e7          	jalr	ra,0(t1)
-  48:	00050793          	addi	a5,a0,0
-  4c:	fc043683          	ld	a3,-64(s0)
-  50:	fc843603          	ld	a2,-56(s0)
-  54:	00078593          	addi	a1,a5,0
-  58:	00048513          	addi	a0,s1,0
-  5c:	00000317          	auipc	t1,0x0
-  60:	00033303          	ld	t1,0(t1) # 5c <unsigned long* std::__uninitialized_move_if_noexcept_a<unsigned long*, unsigned long*, std::allocator<unsigned long> >(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)+0x5c>
-  64:	000300e7          	jalr	ra,0(t1)
-  68:	00050793          	addi	a5,a0,0
-  6c:	00078513          	addi	a0,a5,0
-  70:	03813083          	ld	ra,56(sp)
-  74:	03013403          	ld	s0,48(sp)
-  78:	02813483          	ld	s1,40(sp)
-  7c:	04010113          	addi	sp,sp,64
-  80:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16allocator_traitsISaImEE7destroyImEEvRS0_PT_:
-
-0000000000000000 <void std::allocator_traits<std::allocator<unsigned long> >::destroy<unsigned long>(std::allocator<unsigned long>&, unsigned long*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043583          	ld	a1,-32(s0)
-  1c:	fe843503          	ld	a0,-24(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <void std::allocator_traits<std::allocator<unsigned long> >::destroy<unsigned long>(std::allocator<unsigned long>&, unsigned long*)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00000013          	addi	zero,zero,0
-  30:	01813083          	ld	ra,24(sp)
-  34:	01013403          	ld	s0,16(sp)
-  38:	02010113          	addi	sp,sp,32
-  3c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16allocator_traitsISaImEE9constructImJmEEEvRS0_PT_DpOT0_:
-
-0000000000000000 <void std::allocator_traits<std::allocator<unsigned long> >::construct<unsigned long, unsigned long>(std::allocator<unsigned long>&, unsigned long*, unsigned long&&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fd843503          	ld	a0,-40(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <void std::allocator_traits<std::allocator<unsigned long> >::construct<unsigned long, unsigned long>(std::allocator<unsigned long>&, unsigned long*, unsigned long&&)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050793          	addi	a5,a0,0
-  30:	00078613          	addi	a2,a5,0
-  34:	fe043583          	ld	a1,-32(s0)
-  38:	fe843503          	ld	a0,-24(s0)
-  3c:	00000317          	auipc	t1,0x0
-  40:	00033303          	ld	t1,0(t1) # 3c <void std::allocator_traits<std::allocator<unsigned long> >::construct<unsigned long, unsigned long>(std::allocator<unsigned long>&, unsigned long*, unsigned long&&)+0x3c>
-  44:	000300e7          	jalr	ra,0(t1)
-  48:	00000013          	addi	zero,zero,0
-  4c:	02813083          	ld	ra,40(sp)
-  50:	02013403          	ld	s0,32(sp)
-  54:	03010113          	addi	sp,sp,48
-  58:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt6vectorImSaImEE17_M_realloc_insertIJmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_:
-
-0000000000000000 <void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long&&)>:
-   0:	f8010113          	addi	sp,sp,-128
-   4:	06113c23          	sd	ra,120(sp)
-   8:	06813823          	sd	s0,112(sp)
-   c:	06913423          	sd	s1,104(sp)
-  10:	07213023          	sd	s2,96(sp)
-  14:	08010413          	addi	s0,sp,128
-  18:	f8a43c23          	sd	a0,-104(s0)
-  1c:	f8b43823          	sd	a1,-112(s0)
-  20:	f8c43423          	sd	a2,-120(s0)
-  24:	00000617          	auipc	a2,0x0
-  28:	00060613          	addi	a2,a2,0 # 24 <void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long&&)+0x24>
-  2c:	00100593          	addi	a1,zero,1
-  30:	f9843503          	ld	a0,-104(s0)
-  34:	00000317          	auipc	t1,0x0
-  38:	00033303          	ld	t1,0(t1) # 34 <void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long&&)+0x34>
-
-000000000000003c <.LEHB26>:
-  3c:	000300e7          	jalr	ra,0(t1)
-  40:	00050793          	addi	a5,a0,0
-  44:	fcf43823          	sd	a5,-48(s0)
-  48:	f9843783          	ld	a5,-104(s0)
-  4c:	0007b783          	ld	a5,0(a5)
-  50:	fcf43423          	sd	a5,-56(s0)
-  54:	f9843783          	ld	a5,-104(s0)
-  58:	0087b783          	ld	a5,8(a5)
-  5c:	fcf43023          	sd	a5,-64(s0)
-  60:	f9843503          	ld	a0,-104(s0)
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <.LEHB26+0x28>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00050793          	addi	a5,a0,0
-  74:	faf43423          	sd	a5,-88(s0)
-  78:	fa840713          	addi	a4,s0,-88
-  7c:	f9040793          	addi	a5,s0,-112
-  80:	00070593          	addi	a1,a4,0
-  84:	00078513          	addi	a0,a5,0
-  88:	00000317          	auipc	t1,0x0
-  8c:	00033303          	ld	t1,0(t1) # 88 <.LEHB26+0x4c>
-  90:	000300e7          	jalr	ra,0(t1)
-  94:	00050793          	addi	a5,a0,0
-  98:	faf43c23          	sd	a5,-72(s0)
-  9c:	f9843783          	ld	a5,-104(s0)
-  a0:	fd043583          	ld	a1,-48(s0)
-  a4:	00078513          	addi	a0,a5,0
-  a8:	00000317          	auipc	t1,0x0
-  ac:	00033303          	ld	t1,0(t1) # a8 <.LEHB26+0x6c>
-  b0:	000300e7          	jalr	ra,0(t1)
-
-00000000000000b4 <.LEHE26>:
-  b4:	00050793          	addi	a5,a0,0
-  b8:	faf43823          	sd	a5,-80(s0)
-  bc:	fb043783          	ld	a5,-80(s0)
-  c0:	fcf43c23          	sd	a5,-40(s0)
-  c4:	f9843483          	ld	s1,-104(s0)
-  c8:	fb843783          	ld	a5,-72(s0)
-  cc:	00379793          	slli	a5,a5,0x3
-  d0:	fb043703          	ld	a4,-80(s0)
-  d4:	00f70933          	add	s2,a4,a5
-  d8:	f8843503          	ld	a0,-120(s0)
-  dc:	00000317          	auipc	t1,0x0
-  e0:	00033303          	ld	t1,0(t1) # dc <.LEHE26+0x28>
-  e4:	000300e7          	jalr	ra,0(t1)
-  e8:	00050793          	addi	a5,a0,0
-  ec:	00078613          	addi	a2,a5,0
-  f0:	00090593          	addi	a1,s2,0
-  f4:	00048513          	addi	a0,s1,0
-  f8:	00000317          	auipc	t1,0x0
-  fc:	00033303          	ld	t1,0(t1) # f8 <.LEHE26+0x44>
- 100:	000300e7          	jalr	ra,0(t1)
- 104:	fc043c23          	sd	zero,-40(s0)
- 108:	00000317          	auipc	t1,0x0
- 10c:	00033303          	ld	t1,0(t1) # 108 <.LEHE26+0x54>
- 110:	000300e7          	jalr	ra,0(t1)
- 114:	00050793          	addi	a5,a0,0
- 118:	0a078e63          	beq	a5,zero,1d4 <.L368>
- 11c:	f9040793          	addi	a5,s0,-112
- 120:	00078513          	addi	a0,a5,0
- 124:	00000317          	auipc	t1,0x0
- 128:	00033303          	ld	t1,0(t1) # 124 <.LEHE26+0x70>
- 12c:	000300e7          	jalr	ra,0(t1)
- 130:	00050793          	addi	a5,a0,0
- 134:	0007b483          	ld	s1,0(a5)
- 138:	f9843783          	ld	a5,-104(s0)
- 13c:	00078513          	addi	a0,a5,0
- 140:	00000317          	auipc	t1,0x0
- 144:	00033303          	ld	t1,0(t1) # 140 <.LEHE26+0x8c>
- 148:	000300e7          	jalr	ra,0(t1)
- 14c:	00050793          	addi	a5,a0,0
- 150:	00078693          	addi	a3,a5,0
- 154:	fb043603          	ld	a2,-80(s0)
- 158:	00048593          	addi	a1,s1,0
- 15c:	fc843503          	ld	a0,-56(s0)
- 160:	00000317          	auipc	t1,0x0
- 164:	00033303          	ld	t1,0(t1) # 160 <.LEHE26+0xac>
- 168:	000300e7          	jalr	ra,0(t1)
- 16c:	fca43c23          	sd	a0,-40(s0)
- 170:	fd843783          	ld	a5,-40(s0)
- 174:	00878793          	addi	a5,a5,8
- 178:	fcf43c23          	sd	a5,-40(s0)
- 17c:	f9040793          	addi	a5,s0,-112
- 180:	00078513          	addi	a0,a5,0
- 184:	00000317          	auipc	t1,0x0
- 188:	00033303          	ld	t1,0(t1) # 184 <.LEHE26+0xd0>
- 18c:	000300e7          	jalr	ra,0(t1)
- 190:	00050793          	addi	a5,a0,0
- 194:	0007b483          	ld	s1,0(a5)
- 198:	f9843783          	ld	a5,-104(s0)
- 19c:	00078513          	addi	a0,a5,0
- 1a0:	00000317          	auipc	t1,0x0
- 1a4:	00033303          	ld	t1,0(t1) # 1a0 <.LEHE26+0xec>
- 1a8:	000300e7          	jalr	ra,0(t1)
- 1ac:	00050793          	addi	a5,a0,0
- 1b0:	00078693          	addi	a3,a5,0
- 1b4:	fd843603          	ld	a2,-40(s0)
- 1b8:	fc043583          	ld	a1,-64(s0)
- 1bc:	00048513          	addi	a0,s1,0
- 1c0:	00000317          	auipc	t1,0x0
- 1c4:	00033303          	ld	t1,0(t1) # 1c0 <.LEHE26+0x10c>
- 1c8:	000300e7          	jalr	ra,0(t1)
- 1cc:	fca43c23          	sd	a0,-40(s0)
- 1d0:	0c00006f          	jal	zero,290 <.L369>
-
-00000000000001d4 <.L368>:
- 1d4:	f9040793          	addi	a5,s0,-112
- 1d8:	00078513          	addi	a0,a5,0
- 1dc:	00000317          	auipc	t1,0x0
- 1e0:	00033303          	ld	t1,0(t1) # 1dc <.L368+0x8>
- 1e4:	000300e7          	jalr	ra,0(t1)
- 1e8:	00050793          	addi	a5,a0,0
- 1ec:	0007b483          	ld	s1,0(a5)
- 1f0:	f9843783          	ld	a5,-104(s0)
- 1f4:	00078513          	addi	a0,a5,0
- 1f8:	00000317          	auipc	t1,0x0
- 1fc:	00033303          	ld	t1,0(t1) # 1f8 <.L368+0x24>
- 200:	000300e7          	jalr	ra,0(t1)
- 204:	00050793          	addi	a5,a0,0
- 208:	00078693          	addi	a3,a5,0
- 20c:	fb043603          	ld	a2,-80(s0)
- 210:	00048593          	addi	a1,s1,0
- 214:	fc843503          	ld	a0,-56(s0)
- 218:	00000317          	auipc	t1,0x0
- 21c:	00033303          	ld	t1,0(t1) # 218 <.L368+0x44>
-
-0000000000000220 <.LEHB27>:
- 220:	000300e7          	jalr	ra,0(t1)
- 224:	00050793          	addi	a5,a0,0
- 228:	fcf43c23          	sd	a5,-40(s0)
- 22c:	fd843783          	ld	a5,-40(s0)
- 230:	00878793          	addi	a5,a5,8
- 234:	fcf43c23          	sd	a5,-40(s0)
- 238:	f9040793          	addi	a5,s0,-112
- 23c:	00078513          	addi	a0,a5,0
- 240:	00000317          	auipc	t1,0x0
- 244:	00033303          	ld	t1,0(t1) # 240 <.LEHB27+0x20>
- 248:	000300e7          	jalr	ra,0(t1)
- 24c:	00050793          	addi	a5,a0,0
- 250:	0007b483          	ld	s1,0(a5)
- 254:	f9843783          	ld	a5,-104(s0)
- 258:	00078513          	addi	a0,a5,0
- 25c:	00000317          	auipc	t1,0x0
- 260:	00033303          	ld	t1,0(t1) # 25c <.LEHB27+0x3c>
- 264:	000300e7          	jalr	ra,0(t1)
- 268:	00050793          	addi	a5,a0,0
- 26c:	00078693          	addi	a3,a5,0
- 270:	fd843603          	ld	a2,-40(s0)
- 274:	fc043583          	ld	a1,-64(s0)
- 278:	00048513          	addi	a0,s1,0
- 27c:	00000317          	auipc	t1,0x0
- 280:	00033303          	ld	t1,0(t1) # 27c <.LEHB27+0x5c>
- 284:	000300e7          	jalr	ra,0(t1)
-
-0000000000000288 <.LEHE27>:
- 288:	00050793          	addi	a5,a0,0
- 28c:	fcf43c23          	sd	a5,-40(s0)
-
-0000000000000290 <.L369>:
- 290:	00000317          	auipc	t1,0x0
- 294:	00033303          	ld	t1,0(t1) # 290 <.L369>
- 298:	000300e7          	jalr	ra,0(t1)
- 29c:	00050793          	addi	a5,a0,0
- 2a0:	0017c793          	xori	a5,a5,1
- 2a4:	0ff7f793          	andi	a5,a5,255
- 2a8:	02078a63          	beq	a5,zero,2dc <.L370>
- 2ac:	f9843783          	ld	a5,-104(s0)
- 2b0:	00078513          	addi	a0,a5,0
- 2b4:	00000317          	auipc	t1,0x0
- 2b8:	00033303          	ld	t1,0(t1) # 2b4 <.L369+0x24>
- 2bc:	000300e7          	jalr	ra,0(t1)
- 2c0:	00050793          	addi	a5,a0,0
- 2c4:	00078613          	addi	a2,a5,0
- 2c8:	fc043583          	ld	a1,-64(s0)
- 2cc:	fc843503          	ld	a0,-56(s0)
- 2d0:	00000317          	auipc	t1,0x0
- 2d4:	00033303          	ld	t1,0(t1) # 2d0 <.L369+0x40>
-
-00000000000002d8 <.LEHB28>:
- 2d8:	000300e7          	jalr	ra,0(t1)
-
-00000000000002dc <.L370>:
- 2dc:	f9843683          	ld	a3,-104(s0)
- 2e0:	f9843783          	ld	a5,-104(s0)
- 2e4:	0107b703          	ld	a4,16(a5)
- 2e8:	fc843783          	ld	a5,-56(s0)
- 2ec:	40f707b3          	sub	a5,a4,a5
- 2f0:	4037d793          	srai	a5,a5,0x3
- 2f4:	00078613          	addi	a2,a5,0
- 2f8:	fc843583          	ld	a1,-56(s0)
- 2fc:	00068513          	addi	a0,a3,0
- 300:	00000317          	auipc	t1,0x0
- 304:	00033303          	ld	t1,0(t1) # 300 <.L370+0x24>
- 308:	000300e7          	jalr	ra,0(t1)
-
-000000000000030c <.LEHE28>:
- 30c:	f9843783          	ld	a5,-104(s0)
- 310:	fb043703          	ld	a4,-80(s0)
- 314:	00e7b023          	sd	a4,0(a5)
- 318:	f9843783          	ld	a5,-104(s0)
- 31c:	fd843703          	ld	a4,-40(s0)
- 320:	00e7b423          	sd	a4,8(a5)
- 324:	fd043783          	ld	a5,-48(s0)
- 328:	00379793          	slli	a5,a5,0x3
- 32c:	fb043703          	ld	a4,-80(s0)
- 330:	00f70733          	add	a4,a4,a5
- 334:	f9843783          	ld	a5,-104(s0)
- 338:	00e7b823          	sd	a4,16(a5)
- 33c:	0b80006f          	jal	zero,3f4 <.L377>
-
-0000000000000340 <.L375>:
- 340:	00050793          	addi	a5,a0,0
- 344:	00078513          	addi	a0,a5,0
- 348:	00000097          	auipc	ra,0x0
- 34c:	000080e7          	jalr	ra,0(ra) # 348 <.L375+0x8>
- 350:	fd843783          	ld	a5,-40(s0)
- 354:	02079863          	bne	a5,zero,384 <.L372>
- 358:	f9843683          	ld	a3,-104(s0)
- 35c:	fb843783          	ld	a5,-72(s0)
- 360:	00379793          	slli	a5,a5,0x3
- 364:	fb043703          	ld	a4,-80(s0)
- 368:	00f707b3          	add	a5,a4,a5
- 36c:	00078593          	addi	a1,a5,0
- 370:	00068513          	addi	a0,a3,0
- 374:	00000317          	auipc	t1,0x0
- 378:	00033303          	ld	t1,0(t1) # 374 <.L375+0x34>
- 37c:	000300e7          	jalr	ra,0(t1)
- 380:	0340006f          	jal	zero,3b4 <.L373>
-
-0000000000000384 <.L372>:
- 384:	f9843783          	ld	a5,-104(s0)
- 388:	00078513          	addi	a0,a5,0
- 38c:	00000317          	auipc	t1,0x0
- 390:	00033303          	ld	t1,0(t1) # 38c <.L372+0x8>
- 394:	000300e7          	jalr	ra,0(t1)
- 398:	00050793          	addi	a5,a0,0
- 39c:	00078613          	addi	a2,a5,0
- 3a0:	fd843583          	ld	a1,-40(s0)
- 3a4:	fb043503          	ld	a0,-80(s0)
- 3a8:	00000317          	auipc	t1,0x0
- 3ac:	00033303          	ld	t1,0(t1) # 3a8 <.L372+0x24>
-
-00000000000003b0 <.LEHB29>:
- 3b0:	000300e7          	jalr	ra,0(t1)
-
-00000000000003b4 <.L373>:
- 3b4:	f9843783          	ld	a5,-104(s0)
- 3b8:	fd043603          	ld	a2,-48(s0)
- 3bc:	fb043583          	ld	a1,-80(s0)
- 3c0:	00078513          	addi	a0,a5,0
- 3c4:	00000317          	auipc	t1,0x0
- 3c8:	00033303          	ld	t1,0(t1) # 3c4 <.L373+0x10>
- 3cc:	000300e7          	jalr	ra,0(t1)
- 3d0:	00000097          	auipc	ra,0x0
- 3d4:	000080e7          	jalr	ra,0(ra) # 3d0 <.L373+0x1c>
-
-00000000000003d8 <.L376>:
- 3d8:	00050493          	addi	s1,a0,0
- 3dc:	00000097          	auipc	ra,0x0
- 3e0:	000080e7          	jalr	ra,0(ra) # 3dc <.L376+0x4>
- 3e4:	00048793          	addi	a5,s1,0
- 3e8:	00078513          	addi	a0,a5,0
-
-00000000000003ec <.LEHB30>:
- 3ec:	00000097          	auipc	ra,0x0
- 3f0:	000080e7          	jalr	ra,0(ra) # 3ec <.LEHB30>
-
-00000000000003f4 <.L377>:
- 3f4:	07813083          	ld	ra,120(sp)
- 3f8:	07013403          	ld	s0,112(sp)
- 3fc:	06813483          	ld	s1,104(sp)
- 400:	06013903          	ld	s2,96(sp)
- 404:	08010113          	addi	sp,sp,128
- 408:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EEC2ISaIvEJNS0_12section_typeEPKcmNS0_10byte_orderENS0_6formatEmEEESt20_Sp_alloc_shared_tagIT_EDpOT0_:
-
-0000000000000000 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)>:
-   0:	f6010113          	addi	sp,sp,-160
-   4:	08113c23          	sd	ra,152(sp)
-   8:	08813823          	sd	s0,144(sp)
-   c:	08913423          	sd	s1,136(sp)
-  10:	09213023          	sd	s2,128(sp)
-  14:	07313c23          	sd	s3,120(sp)
-  18:	07413823          	sd	s4,112(sp)
-  1c:	07513423          	sd	s5,104(sp)
-  20:	07613023          	sd	s6,96(sp)
-  24:	05713c23          	sd	s7,88(sp)
-  28:	0a010413          	addi	s0,sp,160
-  2c:	faa43423          	sd	a0,-88(s0)
-  30:	fab43023          	sd	a1,-96(s0)
-  34:	f8c43c23          	sd	a2,-104(s0)
-  38:	f8d43823          	sd	a3,-112(s0)
-  3c:	f8e43423          	sd	a4,-120(s0)
-  40:	f8f43023          	sd	a5,-128(s0)
-  44:	f7043c23          	sd	a6,-136(s0)
-  48:	f7143823          	sd	a7,-144(s0)
-  4c:	fa843783          	ld	a5,-88(s0)
-  50:	0007b023          	sd	zero,0(a5)
-  54:	fa843783          	ld	a5,-88(s0)
-  58:	00878493          	addi	s1,a5,8
-  5c:	fa843903          	ld	s2,-88(s0)
-  60:	f9843503          	ld	a0,-104(s0)
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00050993          	addi	s3,a0,0
-  74:	f9043503          	ld	a0,-112(s0)
-  78:	00000317          	auipc	t1,0x0
-  7c:	00033303          	ld	t1,0(t1) # 78 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x78>
-  80:	000300e7          	jalr	ra,0(t1)
-  84:	00050a13          	addi	s4,a0,0
-  88:	f8843503          	ld	a0,-120(s0)
-  8c:	00000317          	auipc	t1,0x0
-  90:	00033303          	ld	t1,0(t1) # 8c <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x8c>
-  94:	000300e7          	jalr	ra,0(t1)
-  98:	00050a93          	addi	s5,a0,0
-  9c:	f8043503          	ld	a0,-128(s0)
-  a0:	00000317          	auipc	t1,0x0
-  a4:	00033303          	ld	t1,0(t1) # a0 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xa0>
-  a8:	000300e7          	jalr	ra,0(t1)
-  ac:	00050b13          	addi	s6,a0,0
-  b0:	f7843503          	ld	a0,-136(s0)
-  b4:	00000317          	auipc	t1,0x0
-  b8:	00033303          	ld	t1,0(t1) # b4 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xb4>
-  bc:	000300e7          	jalr	ra,0(t1)
-  c0:	00050b93          	addi	s7,a0,0
-  c4:	f7043503          	ld	a0,-144(s0)
-  c8:	00000317          	auipc	t1,0x0
-  cc:	00033303          	ld	t1,0(t1) # c8 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xc8>
-  d0:	000300e7          	jalr	ra,0(t1)
-  d4:	00050793          	addi	a5,a0,0
-  d8:	00f13023          	sd	a5,0(sp)
-  dc:	000b8893          	addi	a7,s7,0
-  e0:	000b0813          	addi	a6,s6,0
-  e4:	000a8793          	addi	a5,s5,0
-  e8:	000a0713          	addi	a4,s4,0
-  ec:	00098693          	addi	a3,s3,0
-  f0:	fa043603          	ld	a2,-96(s0)
-  f4:	00090593          	addi	a1,s2,0
-  f8:	00048513          	addi	a0,s1,0
-  fc:	00000317          	auipc	t1,0x0
- 100:	00033303          	ld	t1,0(t1) # fc <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xfc>
- 104:	000300e7          	jalr	ra,0(t1)
- 108:	fa843783          	ld	a5,-88(s0)
- 10c:	0007b783          	ld	a5,0(a5)
- 110:	00078593          	addi	a1,a5,0
- 114:	fa843503          	ld	a0,-88(s0)
- 118:	00000317          	auipc	t1,0x0
- 11c:	00033303          	ld	t1,0(t1) # 118 <std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__shared_ptr<std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x118>
- 120:	000300e7          	jalr	ra,0(t1)
- 124:	00000013          	addi	zero,zero,0
- 128:	09813083          	ld	ra,152(sp)
- 12c:	09013403          	ld	s0,144(sp)
- 130:	08813483          	ld	s1,136(sp)
- 134:	08013903          	ld	s2,128(sp)
- 138:	07813983          	ld	s3,120(sp)
- 13c:	07013a03          	ld	s4,112(sp)
- 140:	06813a83          	ld	s5,104(sp)
- 144:	06013b03          	ld	s6,96(sp)
- 148:	05813b83          	ld	s7,88(sp)
- 14c:	0a010113          	addi	sp,sp,160
- 150:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt4moveIRSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EEEONSt16remove_referenceIT_E4typeEOS8_:
-
-0000000000000000 <std::remove_reference<std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&>::type&& std::move<std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&>(std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt4swapIPN5dwarf7sectionEENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS7_ESt18is_move_assignableIS7_EEE5valueEvE4typeERS7_SH_:
-
-0000000000000000 <std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<dwarf::section*> >, std::is_move_constructible<dwarf::section*>, std::is_move_assignable<dwarf::section*> >::value, void>::type std::swap<dwarf::section*>(dwarf::section*&, dwarf::section*&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fcb43823          	sd	a1,-48(s0)
-  18:	fd843503          	ld	a0,-40(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<dwarf::section*> >, std::is_move_constructible<dwarf::section*>, std::is_move_assignable<dwarf::section*> >::value, void>::type std::swap<dwarf::section*>(dwarf::section*&, dwarf::section*&)+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00050793          	addi	a5,a0,0
-  2c:	0007b783          	ld	a5,0(a5)
-  30:	fef43423          	sd	a5,-24(s0)
-  34:	fd043503          	ld	a0,-48(s0)
-  38:	00000317          	auipc	t1,0x0
-  3c:	00033303          	ld	t1,0(t1) # 38 <std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<dwarf::section*> >, std::is_move_constructible<dwarf::section*>, std::is_move_assignable<dwarf::section*> >::value, void>::type std::swap<dwarf::section*>(dwarf::section*&, dwarf::section*&)+0x38>
-  40:	000300e7          	jalr	ra,0(t1)
-  44:	00050793          	addi	a5,a0,0
-  48:	0007b703          	ld	a4,0(a5)
-  4c:	fd843783          	ld	a5,-40(s0)
-  50:	00e7b023          	sd	a4,0(a5)
-  54:	fe840793          	addi	a5,s0,-24
-  58:	00078513          	addi	a0,a5,0
-  5c:	00000317          	auipc	t1,0x0
-  60:	00033303          	ld	t1,0(t1) # 5c <std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<dwarf::section*> >, std::is_move_constructible<dwarf::section*>, std::is_move_assignable<dwarf::section*> >::value, void>::type std::swap<dwarf::section*>(dwarf::section*&, dwarf::section*&)+0x5c>
-  64:	000300e7          	jalr	ra,0(t1)
-  68:	00050793          	addi	a5,a0,0
-  6c:	0007b703          	ld	a4,0(a5)
-  70:	fd043783          	ld	a5,-48(s0)
-  74:	00e7b023          	sd	a4,0(a5)
-  78:	00000013          	addi	zero,zero,0
-  7c:	02813083          	ld	ra,40(sp)
-  80:	02013403          	ld	s0,32(sp)
-  84:	03010113          	addi	sp,sp,48
-  88:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2IN5dwarf7sectionESaIvEJRNS4_12section_typeEPKcRKmRKNS4_10byte_orderERNS4_6formatERjEEERPT_St20_Sp_alloc_shared_tagIT0_EDpOT1_:
-
-0000000000000000 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count<dwarf::section, std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*&, std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)>:
-   0:	f3010113          	addi	sp,sp,-208
-   4:	0c113423          	sd	ra,200(sp)
-   8:	0c813023          	sd	s0,192(sp)
-   c:	0a913c23          	sd	s1,184(sp)
-  10:	0b213823          	sd	s2,176(sp)
-  14:	0b313423          	sd	s3,168(sp)
-  18:	0b413023          	sd	s4,160(sp)
-  1c:	09513c23          	sd	s5,152(sp)
-  20:	09613823          	sd	s6,144(sp)
-  24:	09713423          	sd	s7,136(sp)
-  28:	09813023          	sd	s8,128(sp)
-  2c:	07913c23          	sd	s9,120(sp)
-  30:	0d010413          	addi	s0,sp,208
-  34:	f6a43423          	sd	a0,-152(s0)
-  38:	f6b43023          	sd	a1,-160(s0)
-  3c:	f4c43c23          	sd	a2,-168(s0)
-  40:	f4d43823          	sd	a3,-176(s0)
-  44:	f4e43423          	sd	a4,-184(s0)
-  48:	f4f43023          	sd	a5,-192(s0)
-  4c:	f3043c23          	sd	a6,-200(s0)
-  50:	f3143823          	sd	a7,-208(s0)
-  54:	f5843703          	ld	a4,-168(s0)
-  58:	f8840793          	addi	a5,s0,-120
-  5c:	00070593          	addi	a1,a4,0
-  60:	00078513          	addi	a0,a5,0
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count<dwarf::section, std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*&, std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	f7840793          	addi	a5,s0,-136
-  74:	f8840713          	addi	a4,s0,-120
-  78:	00070593          	addi	a1,a4,0
-  7c:	00078513          	addi	a0,a5,0
-  80:	00000317          	auipc	t1,0x0
-  84:	00033303          	ld	t1,0(t1) # 80 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count<dwarf::section, std::allocator<void>, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*&, std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x80>
-
-0000000000000088 <.LEHB31>:
-  88:	000300e7          	jalr	ra,0(t1)
-
-000000000000008c <.LEHE31>:
-  8c:	f7840793          	addi	a5,s0,-136
-  90:	00078513          	addi	a0,a5,0
-  94:	00000317          	auipc	t1,0x0
-  98:	00033303          	ld	t1,0(t1) # 94 <.LEHE31+0x8>
-  9c:	000300e7          	jalr	ra,0(t1)
-  a0:	f8a43c23          	sd	a0,-104(s0)
-  a4:	f9843903          	ld	s2,-104(s0)
-  a8:	00090593          	addi	a1,s2,0
-  ac:	06000513          	addi	a0,zero,96
-  b0:	00000317          	auipc	t1,0x0
-  b4:	00033303          	ld	t1,0(t1) # b0 <.LEHE31+0x24>
-  b8:	000300e7          	jalr	ra,0(t1)
-  bc:	00050493          	addi	s1,a0,0
-  c0:	00100993          	addi	s3,zero,1
-  c4:	f5043503          	ld	a0,-176(s0)
-  c8:	00000317          	auipc	t1,0x0
-  cc:	00033303          	ld	t1,0(t1) # c8 <.LEHE31+0x3c>
-  d0:	000300e7          	jalr	ra,0(t1)
-  d4:	00050a13          	addi	s4,a0,0
-  d8:	f4843503          	ld	a0,-184(s0)
-  dc:	00000317          	auipc	t1,0x0
-  e0:	00033303          	ld	t1,0(t1) # dc <.LEHE31+0x50>
-  e4:	000300e7          	jalr	ra,0(t1)
-  e8:	00050a93          	addi	s5,a0,0
-  ec:	f4043503          	ld	a0,-192(s0)
-  f0:	00000317          	auipc	t1,0x0
-  f4:	00033303          	ld	t1,0(t1) # f0 <.LEHE31+0x64>
-  f8:	000300e7          	jalr	ra,0(t1)
-  fc:	00050b13          	addi	s6,a0,0
- 100:	f3843503          	ld	a0,-200(s0)
- 104:	00000317          	auipc	t1,0x0
- 108:	00033303          	ld	t1,0(t1) # 104 <.LEHE31+0x78>
- 10c:	000300e7          	jalr	ra,0(t1)
- 110:	00050b93          	addi	s7,a0,0
- 114:	f3043503          	ld	a0,-208(s0)
- 118:	00000317          	auipc	t1,0x0
- 11c:	00033303          	ld	t1,0(t1) # 118 <.LEHE31+0x8c>
- 120:	000300e7          	jalr	ra,0(t1)
- 124:	00050c13          	addi	s8,a0,0
+0000000000000124 <.L82>:
+       *  responsibility.
+       */
+      _GLIBCXX20_CONSTEXPR
+      ~vector() _GLIBCXX_NOEXCEPT
+      {
+	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+ 124:	00050493          	addi	s1,a0,0
+
+0000000000000128 <.LBI1950>:
  128:	00043503          	ld	a0,0(s0)
- 12c:	00000317          	auipc	t1,0x0
- 130:	00033303          	ld	t1,0(t1) # 12c <.LEHE31+0xa0>
- 134:	000300e7          	jalr	ra,0(t1)
- 138:	00050793          	addi	a5,a0,0
- 13c:	00078893          	addi	a7,a5,0
- 140:	000c0813          	addi	a6,s8,0
- 144:	000b8793          	addi	a5,s7,0
- 148:	000b0713          	addi	a4,s6,0
- 14c:	000a8693          	addi	a3,s5,0
- 150:	000a0613          	addi	a2,s4,0
- 154:	000c8593          	addi	a1,s9,0
- 158:	00048513          	addi	a0,s1,0
- 15c:	00000317          	auipc	t1,0x0
- 160:	00033303          	ld	t1,0(t1) # 15c <.LEHE31+0xd0>
-
-0000000000000164 <.LEHB32>:
- 164:	000300e7          	jalr	ra,0(t1)
-
-0000000000000168 <.LEHE32>:
- 168:	f8943823          	sd	s1,-112(s0)
- 16c:	f7840793          	addi	a5,s0,-136
- 170:	00000593          	addi	a1,zero,0
- 174:	00078513          	addi	a0,a5,0
- 178:	00000317          	auipc	t1,0x0
- 17c:	00033303          	ld	t1,0(t1) # 178 <.LEHE32+0x10>
- 180:	000300e7          	jalr	ra,0(t1)
- 184:	f6843783          	ld	a5,-152(s0)
- 188:	f9043703          	ld	a4,-112(s0)
- 18c:	00e7b023          	sd	a4,0(a5)
- 190:	f9043503          	ld	a0,-112(s0)
- 194:	00000317          	auipc	t1,0x0
- 198:	00033303          	ld	t1,0(t1) # 194 <.LEHE32+0x2c>
- 19c:	000300e7          	jalr	ra,0(t1)
- 1a0:	00050713          	addi	a4,a0,0
- 1a4:	f6043783          	ld	a5,-160(s0)
- 1a8:	00e7b023          	sd	a4,0(a5)
- 1ac:	f7840793          	addi	a5,s0,-136
- 1b0:	00078513          	addi	a0,a5,0
- 1b4:	00000317          	auipc	t1,0x0
- 1b8:	00033303          	ld	t1,0(t1) # 1b4 <.LEHE32+0x4c>
- 1bc:	000300e7          	jalr	ra,0(t1)
- 1c0:	f8840793          	addi	a5,s0,-120
- 1c4:	00078513          	addi	a0,a5,0
- 1c8:	00000317          	auipc	t1,0x0
- 1cc:	00033303          	ld	t1,0(t1) # 1c8 <.LEHE32+0x60>
- 1d0:	000300e7          	jalr	ra,0(t1)
- 1d4:	0640006f          	jal	zero,238 <.L388>
-
-00000000000001d8 <.L387>:
- 1d8:	00050a13          	addi	s4,a0,0
- 1dc:	00098c63          	beq	s3,zero,1f4 <.L384>
- 1e0:	00090593          	addi	a1,s2,0
- 1e4:	00048513          	addi	a0,s1,0
- 1e8:	00000317          	auipc	t1,0x0
- 1ec:	00033303          	ld	t1,0(t1) # 1e8 <.L387+0x10>
- 1f0:	000300e7          	jalr	ra,0(t1)
-
-00000000000001f4 <.L384>:
- 1f4:	000a0493          	addi	s1,s4,0
- 1f8:	f7840793          	addi	a5,s0,-136
- 1fc:	00078513          	addi	a0,a5,0
- 200:	00000317          	auipc	t1,0x0
- 204:	00033303          	ld	t1,0(t1) # 200 <.L384+0xc>
- 208:	000300e7          	jalr	ra,0(t1)
- 20c:	0080006f          	jal	zero,214 <.L385>
-
-0000000000000210 <.L386>:
- 210:	00050493          	addi	s1,a0,0
-
-0000000000000214 <.L385>:
- 214:	f8840793          	addi	a5,s0,-120
- 218:	00078513          	addi	a0,a5,0
- 21c:	00000317          	auipc	t1,0x0
- 220:	00033303          	ld	t1,0(t1) # 21c <.L385+0x8>
- 224:	000300e7          	jalr	ra,0(t1)
- 228:	00048793          	addi	a5,s1,0
- 22c:	00078513          	addi	a0,a5,0
-
-0000000000000230 <.LEHB33>:
- 230:	00000097          	auipc	ra,0x0
- 234:	000080e7          	jalr	ra,0(ra) # 230 <.LEHB33>
-
-0000000000000238 <.L388>:
- 238:	0c813083          	ld	ra,200(sp)
- 23c:	0c013403          	ld	s0,192(sp)
- 240:	0b813483          	ld	s1,184(sp)
- 244:	0b013903          	ld	s2,176(sp)
- 248:	0a813983          	ld	s3,168(sp)
- 24c:	0a013a03          	ld	s4,160(sp)
- 250:	09813a83          	ld	s5,152(sp)
- 254:	09013b03          	ld	s6,144(sp)
- 258:	08813b83          	ld	s7,136(sp)
- 25c:	08013c03          	ld	s8,128(sp)
- 260:	07813c83          	ld	s9,120(sp)
- 264:	0d010113          	addi	sp,sp,208
- 268:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN5dwarf7sectionELN9__gnu_cxx12_Lock_policyE1EE31_M_enable_shared_from_this_withIS1_S1_EENSt9enable_ifIXntsrNS4_15__has_esft_baseIT0_vEE5valueEvE4typeEPT_:
-
-0000000000000000 <std::enable_if<!std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::__has_esft_base<dwarf::section, void>::value, void>::type std::__shared_ptr<dwarf::section, (__gnu_cxx::_Lock_policy)1>::_M_enable_shared_from_this_with<dwarf::section, dwarf::section>(dwarf::section*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	00000013          	addi	zero,zero,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorImE10deallocateEPmm:
-
-0000000000000000 <std::__new_allocator<unsigned long>::deallocate(unsigned long*, unsigned long)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe043503          	ld	a0,-32(s0)
-  20:	00000097          	auipc	ra,0x0
-  24:	000080e7          	jalr	ra,0(ra) # 20 <std::__new_allocator<unsigned long>::deallocate(unsigned long*, unsigned long)+0x20>
-  28:	00000013          	addi	zero,zero,0
-  2c:	02813083          	ld	ra,40(sp)
-  30:	02013403          	ld	s0,32(sp)
-  34:	03010113          	addi	sp,sp,48
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12_Destroy_auxILb1EE9__destroyIPmEEvT_S3_:
-
-0000000000000000 <void std::_Destroy_aux<true>::__destroy<unsigned long*>(unsigned long*, unsigned long*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	00000013          	addi	zero,zero,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16allocator_traitsISaImEE8max_sizeERKS0_:
-
-0000000000000000 <std::allocator_traits<std::allocator<unsigned long> >::max_size(std::allocator<unsigned long> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::allocator_traits<std::allocator<unsigned long> >::max_size(std::allocator<unsigned long> const&)+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	00050793          	addi	a5,a0,0
-  28:	00078513          	addi	a0,a5,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorImE8allocateEmPKv:
-
-0000000000000000 <std::__new_allocator<unsigned long>::allocate(unsigned long, void const*)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe843503          	ld	a0,-24(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::__new_allocator<unsigned long>::allocate(unsigned long, void const*)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050713          	addi	a4,a0,0
-  30:	fe043783          	ld	a5,-32(s0)
-  34:	00f737b3          	sltu	a5,a4,a5
-  38:	0ff7f793          	andi	a5,a5,255
-  3c:	00f037b3          	sltu	a5,zero,a5
-  40:	0ff7f793          	andi	a5,a5,255
-  44:	02078263          	beq	a5,zero,68 <.L395>
-  48:	fe043703          	ld	a4,-32(s0)
-  4c:	fff00793          	addi	a5,zero,-1
-  50:	0037d793          	srli	a5,a5,0x3
-  54:	00e7f663          	bgeu	a5,a4,60 <.L396>
-  58:	00000097          	auipc	ra,0x0
-  5c:	000080e7          	jalr	ra,0(ra) # 58 <std::__new_allocator<unsigned long>::allocate(unsigned long, void const*)+0x58>
-
-0000000000000060 <.L396>:
-  60:	00000097          	auipc	ra,0x0
-  64:	000080e7          	jalr	ra,0(ra) # 60 <.L396>
-
-0000000000000068 <.L395>:
-  68:	fe043783          	ld	a5,-32(s0)
-  6c:	00379793          	slli	a5,a5,0x3
-  70:	00078513          	addi	a0,a5,0
-  74:	00000097          	auipc	ra,0x0
-  78:	000080e7          	jalr	ra,0(ra) # 74 <.L395+0xc>
-  7c:	00050793          	addi	a5,a0,0
-  80:	00078513          	addi	a0,a5,0
-  84:	02813083          	ld	ra,40(sp)
-  88:	02013403          	ld	s0,32(sp)
-  8c:	03010113          	addi	sp,sp,48
-  90:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt12__relocate_aIPmS0_SaImEET0_T_S3_S2_RT1_:
-
-0000000000000000 <unsigned long* std::__relocate_a<unsigned long*, unsigned long*, std::allocator<unsigned long> >(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	02913423          	sd	s1,40(sp)
-  10:	03213023          	sd	s2,32(sp)
-  14:	04010413          	addi	s0,sp,64
-  18:	fca43c23          	sd	a0,-40(s0)
-  1c:	fcb43823          	sd	a1,-48(s0)
-  20:	fcc43423          	sd	a2,-56(s0)
-  24:	fcd43023          	sd	a3,-64(s0)
-  28:	fd843503          	ld	a0,-40(s0)
-  2c:	00000317          	auipc	t1,0x0
-  30:	00033303          	ld	t1,0(t1) # 2c <unsigned long* std::__relocate_a<unsigned long*, unsigned long*, std::allocator<unsigned long> >(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)+0x2c>
-  34:	000300e7          	jalr	ra,0(t1)
-  38:	00050493          	addi	s1,a0,0
-  3c:	fd043503          	ld	a0,-48(s0)
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <unsigned long* std::__relocate_a<unsigned long*, unsigned long*, std::allocator<unsigned long> >(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-  4c:	00050913          	addi	s2,a0,0
-  50:	fc843503          	ld	a0,-56(s0)
-  54:	00000317          	auipc	t1,0x0
-  58:	00033303          	ld	t1,0(t1) # 54 <unsigned long* std::__relocate_a<unsigned long*, unsigned long*, std::allocator<unsigned long> >(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)+0x54>
-  5c:	000300e7          	jalr	ra,0(t1)
-  60:	00050793          	addi	a5,a0,0
-  64:	fc043683          	ld	a3,-64(s0)
-  68:	00078613          	addi	a2,a5,0
-  6c:	00090593          	addi	a1,s2,0
-  70:	00048513          	addi	a0,s1,0
-  74:	00000317          	auipc	t1,0x0
-  78:	00033303          	ld	t1,0(t1) # 74 <unsigned long* std::__relocate_a<unsigned long*, unsigned long*, std::allocator<unsigned long> >(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)+0x74>
-  7c:	000300e7          	jalr	ra,0(t1)
-  80:	00050793          	addi	a5,a0,0
-  84:	00078513          	addi	a0,a5,0
-  88:	03813083          	ld	ra,56(sp)
-  8c:	03013403          	ld	s0,48(sp)
-  90:	02813483          	ld	s1,40(sp)
-  94:	02013903          	ld	s2,32(sp)
-  98:	04010113          	addi	sp,sp,64
-  9c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt4moveIRPmEONSt16remove_referenceIT_E4typeEOS3_:
-
-0000000000000000 <std::remove_reference<unsigned long*&>::type&& std::move<unsigned long*&>(unsigned long*&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt18uninitialized_copyISt13move_iteratorIPmES1_ET0_T_S4_S3_:
-
-0000000000000000 <unsigned long* std::uninitialized_copy<std::move_iterator<unsigned long*>, unsigned long*>(std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>, unsigned long*)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fcb43823          	sd	a1,-48(s0)
-  18:	fcc43423          	sd	a2,-56(s0)
-  1c:	00100793          	addi	a5,zero,1
-  20:	fef407a3          	sb	a5,-17(s0)
-  24:	00100793          	addi	a5,zero,1
-  28:	fef40723          	sb	a5,-18(s0)
-  2c:	fc843603          	ld	a2,-56(s0)
-  30:	fd043583          	ld	a1,-48(s0)
-  34:	fd843503          	ld	a0,-40(s0)
-  38:	00000317          	auipc	t1,0x0
-  3c:	00033303          	ld	t1,0(t1) # 38 <unsigned long* std::uninitialized_copy<std::move_iterator<unsigned long*>, unsigned long*>(std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>, unsigned long*)+0x38>
-  40:	000300e7          	jalr	ra,0(t1)
-  44:	00050793          	addi	a5,a0,0
-  48:	00078513          	addi	a0,a5,0
-  4c:	03813083          	ld	ra,56(sp)
-  50:	03013403          	ld	s0,48(sp)
-  54:	04010113          	addi	sp,sp,64
-  58:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorImE7destroyImEEvPT_:
-
-0000000000000000 <void std::__new_allocator<unsigned long>::destroy<unsigned long>(unsigned long*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	00000013          	addi	zero,zero,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorImE9constructImJmEEEvPT_DpOT0_:
-
-0000000000000000 <void std::__new_allocator<unsigned long>::construct<unsigned long, unsigned long>(unsigned long*, unsigned long&&)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	02913423          	sd	s1,40(sp)
-  10:	04010413          	addi	s0,sp,64
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fcb43823          	sd	a1,-48(s0)
-  1c:	fcc43423          	sd	a2,-56(s0)
-  20:	fd043783          	ld	a5,-48(s0)
-  24:	00078593          	addi	a1,a5,0
-  28:	00800513          	addi	a0,zero,8
-  2c:	00000317          	auipc	t1,0x0
-  30:	00033303          	ld	t1,0(t1) # 2c <void std::__new_allocator<unsigned long>::construct<unsigned long, unsigned long>(unsigned long*, unsigned long&&)+0x2c>
-  34:	000300e7          	jalr	ra,0(t1)
-  38:	00050493          	addi	s1,a0,0
-  3c:	fc843503          	ld	a0,-56(s0)
-  40:	00000317          	auipc	t1,0x0
-  44:	00033303          	ld	t1,0(t1) # 40 <void std::__new_allocator<unsigned long>::construct<unsigned long, unsigned long>(unsigned long*, unsigned long&&)+0x40>
-  48:	000300e7          	jalr	ra,0(t1)
-  4c:	00050793          	addi	a5,a0,0
-  50:	0007b783          	ld	a5,0(a5)
-  54:	00f4b023          	sd	a5,0(s1)
-  58:	00000013          	addi	zero,zero,0
-  5c:	03813083          	ld	ra,56(sp)
-  60:	03013403          	ld	s0,48(sp)
-  64:	02813483          	ld	s1,40(sp)
-  68:	04010113          	addi	sp,sp,64
-  6c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2IN5dwarf7sectionESaIvEJNS4_12section_typeEPKcmNS4_10byte_orderENS4_6formatEmEEERPT_St20_Sp_alloc_shared_tagIT0_EDpOT1_:
-
-0000000000000000 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count<dwarf::section, std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*&, std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)>:
-   0:	f3010113          	addi	sp,sp,-208
-   4:	0c113423          	sd	ra,200(sp)
-   8:	0c813023          	sd	s0,192(sp)
-   c:	0a913c23          	sd	s1,184(sp)
-  10:	0b213823          	sd	s2,176(sp)
-  14:	0b313423          	sd	s3,168(sp)
-  18:	0b413023          	sd	s4,160(sp)
-  1c:	09513c23          	sd	s5,152(sp)
-  20:	09613823          	sd	s6,144(sp)
-  24:	09713423          	sd	s7,136(sp)
-  28:	09813023          	sd	s8,128(sp)
-  2c:	07913c23          	sd	s9,120(sp)
-  30:	0d010413          	addi	s0,sp,208
-  34:	f6a43423          	sd	a0,-152(s0)
-  38:	f6b43023          	sd	a1,-160(s0)
-  3c:	f4c43c23          	sd	a2,-168(s0)
-  40:	f4d43823          	sd	a3,-176(s0)
-  44:	f4e43423          	sd	a4,-184(s0)
-  48:	f4f43023          	sd	a5,-192(s0)
-  4c:	f3043c23          	sd	a6,-200(s0)
-  50:	f3143823          	sd	a7,-208(s0)
-  54:	f5843703          	ld	a4,-168(s0)
-  58:	f8840793          	addi	a5,s0,-120
-  5c:	00070593          	addi	a1,a4,0
-  60:	00078513          	addi	a0,a5,0
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count<dwarf::section, std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*&, std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	f7840793          	addi	a5,s0,-136
-  74:	f8840713          	addi	a4,s0,-120
-  78:	00070593          	addi	a1,a4,0
-  7c:	00078513          	addi	a0,a5,0
-  80:	00000317          	auipc	t1,0x0
-  84:	00033303          	ld	t1,0(t1) # 80 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count<dwarf::section, std::allocator<void>, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*&, std::_Sp_alloc_shared_tag<std::allocator<void> >, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x80>
-
-0000000000000088 <.LEHB34>:
-  88:	000300e7          	jalr	ra,0(t1)
-
-000000000000008c <.LEHE34>:
-  8c:	f7840793          	addi	a5,s0,-136
-  90:	00078513          	addi	a0,a5,0
-  94:	00000317          	auipc	t1,0x0
-  98:	00033303          	ld	t1,0(t1) # 94 <.LEHE34+0x8>
-  9c:	000300e7          	jalr	ra,0(t1)
-  a0:	f8a43c23          	sd	a0,-104(s0)
-  a4:	f9843903          	ld	s2,-104(s0)
-  a8:	00090593          	addi	a1,s2,0
-  ac:	06000513          	addi	a0,zero,96
-  b0:	00000317          	auipc	t1,0x0
-  b4:	00033303          	ld	t1,0(t1) # b0 <.LEHE34+0x24>
-  b8:	000300e7          	jalr	ra,0(t1)
-  bc:	00050493          	addi	s1,a0,0
-  c0:	00100993          	addi	s3,zero,1
-  c4:	f5043503          	ld	a0,-176(s0)
-  c8:	00000317          	auipc	t1,0x0
-  cc:	00033303          	ld	t1,0(t1) # c8 <.LEHE34+0x3c>
-  d0:	000300e7          	jalr	ra,0(t1)
-  d4:	00050a13          	addi	s4,a0,0
-  d8:	f4843503          	ld	a0,-184(s0)
-  dc:	00000317          	auipc	t1,0x0
-  e0:	00033303          	ld	t1,0(t1) # dc <.LEHE34+0x50>
-  e4:	000300e7          	jalr	ra,0(t1)
-  e8:	00050a93          	addi	s5,a0,0
-  ec:	f4043503          	ld	a0,-192(s0)
-  f0:	00000317          	auipc	t1,0x0
-  f4:	00033303          	ld	t1,0(t1) # f0 <.LEHE34+0x64>
-  f8:	000300e7          	jalr	ra,0(t1)
-  fc:	00050b13          	addi	s6,a0,0
- 100:	f3843503          	ld	a0,-200(s0)
- 104:	00000317          	auipc	t1,0x0
- 108:	00033303          	ld	t1,0(t1) # 104 <.LEHE34+0x78>
- 10c:	000300e7          	jalr	ra,0(t1)
- 110:	00050b93          	addi	s7,a0,0
- 114:	f3043503          	ld	a0,-208(s0)
- 118:	00000317          	auipc	t1,0x0
- 11c:	00033303          	ld	t1,0(t1) # 118 <.LEHE34+0x8c>
- 120:	000300e7          	jalr	ra,0(t1)
- 124:	00050c13          	addi	s8,a0,0
- 128:	00043503          	ld	a0,0(s0)
- 12c:	00000317          	auipc	t1,0x0
- 130:	00033303          	ld	t1,0(t1) # 12c <.LEHE34+0xa0>
- 134:	000300e7          	jalr	ra,0(t1)
- 138:	00050793          	addi	a5,a0,0
- 13c:	00078893          	addi	a7,a5,0
- 140:	000c0813          	addi	a6,s8,0
- 144:	000b8793          	addi	a5,s7,0
- 148:	000b0713          	addi	a4,s6,0
- 14c:	000a8693          	addi	a3,s5,0
- 150:	000a0613          	addi	a2,s4,0
- 154:	000c8593          	addi	a1,s9,0
- 158:	00048513          	addi	a0,s1,0
- 15c:	00000317          	auipc	t1,0x0
- 160:	00033303          	ld	t1,0(t1) # 15c <.LEHE34+0xd0>
-
-0000000000000164 <.LEHB35>:
- 164:	000300e7          	jalr	ra,0(t1)
-
-0000000000000168 <.LEHE35>:
- 168:	f8943823          	sd	s1,-112(s0)
- 16c:	f7840793          	addi	a5,s0,-136
- 170:	00000593          	addi	a1,zero,0
- 174:	00078513          	addi	a0,a5,0
- 178:	00000317          	auipc	t1,0x0
- 17c:	00033303          	ld	t1,0(t1) # 178 <.LEHE35+0x10>
- 180:	000300e7          	jalr	ra,0(t1)
- 184:	f6843783          	ld	a5,-152(s0)
- 188:	f9043703          	ld	a4,-112(s0)
- 18c:	00e7b023          	sd	a4,0(a5)
- 190:	f9043503          	ld	a0,-112(s0)
- 194:	00000317          	auipc	t1,0x0
- 198:	00033303          	ld	t1,0(t1) # 194 <.LEHE35+0x2c>
- 19c:	000300e7          	jalr	ra,0(t1)
- 1a0:	00050713          	addi	a4,a0,0
- 1a4:	f6043783          	ld	a5,-160(s0)
- 1a8:	00e7b023          	sd	a4,0(a5)
- 1ac:	f7840793          	addi	a5,s0,-136
- 1b0:	00078513          	addi	a0,a5,0
- 1b4:	00000317          	auipc	t1,0x0
- 1b8:	00033303          	ld	t1,0(t1) # 1b4 <.LEHE35+0x4c>
- 1bc:	000300e7          	jalr	ra,0(t1)
- 1c0:	f8840793          	addi	a5,s0,-120
- 1c4:	00078513          	addi	a0,a5,0
- 1c8:	00000317          	auipc	t1,0x0
- 1cc:	00033303          	ld	t1,0(t1) # 1c8 <.LEHE35+0x60>
- 1d0:	000300e7          	jalr	ra,0(t1)
- 1d4:	0640006f          	jal	zero,238 <.L412>
-
-00000000000001d8 <.L411>:
- 1d8:	00050a13          	addi	s4,a0,0
- 1dc:	00098c63          	beq	s3,zero,1f4 <.L408>
- 1e0:	00090593          	addi	a1,s2,0
- 1e4:	00048513          	addi	a0,s1,0
- 1e8:	00000317          	auipc	t1,0x0
- 1ec:	00033303          	ld	t1,0(t1) # 1e8 <.L411+0x10>
- 1f0:	000300e7          	jalr	ra,0(t1)
-
-00000000000001f4 <.L408>:
- 1f4:	000a0493          	addi	s1,s4,0
- 1f8:	f7840793          	addi	a5,s0,-136
- 1fc:	00078513          	addi	a0,a5,0
- 200:	00000317          	auipc	t1,0x0
- 204:	00033303          	ld	t1,0(t1) # 200 <.L408+0xc>
- 208:	000300e7          	jalr	ra,0(t1)
- 20c:	0080006f          	jal	zero,214 <.L409>
-
-0000000000000210 <.L410>:
- 210:	00050493          	addi	s1,a0,0
-
-0000000000000214 <.L409>:
- 214:	f8840793          	addi	a5,s0,-120
- 218:	00078513          	addi	a0,a5,0
- 21c:	00000317          	auipc	t1,0x0
- 220:	00033303          	ld	t1,0(t1) # 21c <.L409+0x8>
- 224:	000300e7          	jalr	ra,0(t1)
- 228:	00048793          	addi	a5,s1,0
- 22c:	00078513          	addi	a0,a5,0
-
-0000000000000230 <.LEHB36>:
- 230:	00000097          	auipc	ra,0x0
- 234:	000080e7          	jalr	ra,0(ra) # 230 <.LEHB36>
-
-0000000000000238 <.L412>:
- 238:	0c813083          	ld	ra,200(sp)
- 23c:	0c013403          	ld	s0,192(sp)
- 240:	0b813483          	ld	s1,184(sp)
- 244:	0b013903          	ld	s2,176(sp)
- 248:	0a813983          	ld	s3,168(sp)
- 24c:	0a013a03          	ld	s4,160(sp)
- 250:	09813a83          	ld	s5,152(sp)
- 254:	09013b03          	ld	s6,144(sp)
- 258:	08813b83          	ld	s7,136(sp)
- 25c:	08013c03          	ld	s8,128(sp)
- 260:	07813c83          	ld	s9,120(sp)
- 264:	0d010113          	addi	sp,sp,208
- 268:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt4moveIRPN5dwarf7sectionEEONSt16remove_referenceIT_E4typeEOS5_:
-
-0000000000000000 <std::remove_reference<dwarf::section*&>::type&& std::move<dwarf::section*&>(dwarf::section*&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSaISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEC2IvEERKSaIT_E:
-
-0000000000000000 <std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::allocator<void>(std::allocator<void> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843503          	ld	a0,-24(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::allocator<void>(std::allocator<void> const&)+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSaISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEED2Ev:
-
-0000000000000000 <std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::~allocator()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::~allocator()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt18__allocate_guardedISaISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEESt15__allocated_ptrIT_ERS9_:
-
-0000000000000000 <std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > > std::__allocate_guarded<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >(std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	00100593          	addi	a1,zero,1
-  1c:	fe043503          	ld	a0,-32(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > > std::__allocate_guarded<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >(std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >&)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050793          	addi	a5,a0,0
-  30:	00078613          	addi	a2,a5,0
-  34:	fe043583          	ld	a1,-32(s0)
-  38:	fe843503          	ld	a0,-24(s0)
-  3c:	00000317          	auipc	t1,0x0
-  40:	00033303          	ld	t1,0(t1) # 3c <std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > > std::__allocate_guarded<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >(std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >&)+0x3c>
-  44:	000300e7          	jalr	ra,0(t1)
-  48:	fe843503          	ld	a0,-24(s0)
-  4c:	01813083          	ld	ra,24(sp)
-  50:	01013403          	ld	s0,16(sp)
-  54:	02010113          	addi	sp,sp,32
-  58:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__allocated_ptrISaISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEED2Ev:
-
-0000000000000000 <std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::~__allocated_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0087b783          	ld	a5,8(a5)
-  1c:	02078663          	beq	a5,zero,48 <.L421>
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	0007b703          	ld	a4,0(a5)
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	0087b783          	ld	a5,8(a5)
-  30:	00100613          	addi	a2,zero,1
-  34:	00078593          	addi	a1,a5,0
-  38:	00070513          	addi	a0,a4,0
-  3c:	00000317          	auipc	t1,0x0
-  40:	00033303          	ld	t1,0(t1) # 3c <std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::~__allocated_ptr()+0x3c>
-  44:	000300e7          	jalr	ra,0(t1)
-
-0000000000000048 <.L421>:
-  48:	00000013          	addi	zero,zero,0
-  4c:	01813083          	ld	ra,24(sp)
-  50:	01013403          	ld	s0,16(sp)
-  54:	02010113          	addi	sp,sp,32
-  58:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__allocated_ptrISaISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEE3getEv:
-
-0000000000000000 <std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::get()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0087b783          	ld	a5,8(a5)
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::get()+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050793          	addi	a5,a0,0
-  30:	00078513          	addi	a0,a5,0
-  34:	01813083          	ld	ra,24(sp)
-  38:	01013403          	ld	s0,16(sp)
-  3c:	02010113          	addi	sp,sp,32
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEC2IJRNS0_12section_typeEPKcRKmRKNS0_10byte_orderERNS0_6formatERjEEES2_DpOT_:
-
-0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)>:
-   0:	f8010113          	addi	sp,sp,-128
-   4:	06113c23          	sd	ra,120(sp)
-   8:	06813823          	sd	s0,112(sp)
-   c:	06913423          	sd	s1,104(sp)
-  10:	07213023          	sd	s2,96(sp)
-  14:	05313c23          	sd	s3,88(sp)
-  18:	05413823          	sd	s4,80(sp)
-  1c:	05513423          	sd	s5,72(sp)
-  20:	05613023          	sd	s6,64(sp)
-  24:	08010413          	addi	s0,sp,128
-  28:	faa43c23          	sd	a0,-72(s0)
-  2c:	fab40823          	sb	a1,-80(s0)
-  30:	fac43423          	sd	a2,-88(s0)
-  34:	fad43023          	sd	a3,-96(s0)
-  38:	f8e43c23          	sd	a4,-104(s0)
-  3c:	f8f43823          	sd	a5,-112(s0)
-  40:	f9043423          	sd	a6,-120(s0)
-  44:	f9143023          	sd	a7,-128(s0)
-  48:	fb843783          	ld	a5,-72(s0)
-  4c:	00078513          	addi	a0,a5,0
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	00000797          	auipc	a5,0x0
-  60:	0007b783          	ld	a5,0(a5) # 5c <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x5c>
-  64:	01078713          	addi	a4,a5,16
-  68:	fb843783          	ld	a5,-72(s0)
-  6c:	00e7b023          	sd	a4,0(a5)
-  70:	fb843783          	ld	a5,-72(s0)
-  74:	03878793          	addi	a5,a5,56
-  78:	00048593          	addi	a1,s1,0
-  7c:	00078513          	addi	a0,a5,0
-  80:	00000317          	auipc	t1,0x0
-  84:	00033303          	ld	t1,0(t1) # 80 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x80>
-  88:	000300e7          	jalr	ra,0(t1)
-  8c:	fb843503          	ld	a0,-72(s0)
-  90:	00000317          	auipc	t1,0x0
-  94:	00033303          	ld	t1,0(t1) # 90 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x90>
-  98:	000300e7          	jalr	ra,0(t1)
-  9c:	00050493          	addi	s1,a0,0
-  a0:	fa843503          	ld	a0,-88(s0)
-  a4:	00000317          	auipc	t1,0x0
-  a8:	00033303          	ld	t1,0(t1) # a4 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xa4>
-  ac:	000300e7          	jalr	ra,0(t1)
-  b0:	00050913          	addi	s2,a0,0
-  b4:	fa043503          	ld	a0,-96(s0)
-  b8:	00000317          	auipc	t1,0x0
-  bc:	00033303          	ld	t1,0(t1) # b8 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xb8>
-  c0:	000300e7          	jalr	ra,0(t1)
-  c4:	00050993          	addi	s3,a0,0
-  c8:	f9843503          	ld	a0,-104(s0)
-  cc:	00000317          	auipc	t1,0x0
-  d0:	00033303          	ld	t1,0(t1) # cc <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xcc>
-  d4:	000300e7          	jalr	ra,0(t1)
-  d8:	00050a13          	addi	s4,a0,0
-  dc:	f9043503          	ld	a0,-112(s0)
-  e0:	00000317          	auipc	t1,0x0
-  e4:	00033303          	ld	t1,0(t1) # e0 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xe0>
-  e8:	000300e7          	jalr	ra,0(t1)
-  ec:	00050a93          	addi	s5,a0,0
-  f0:	f8843503          	ld	a0,-120(s0)
-  f4:	00000317          	auipc	t1,0x0
-  f8:	00033303          	ld	t1,0(t1) # f4 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xf4>
-  fc:	000300e7          	jalr	ra,0(t1)
- 100:	00050b13          	addi	s6,a0,0
- 104:	f8043503          	ld	a0,-128(s0)
- 108:	00000317          	auipc	t1,0x0
- 10c:	00033303          	ld	t1,0(t1) # 108 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x108>
- 110:	000300e7          	jalr	ra,0(t1)
- 114:	00050793          	addi	a5,a0,0
- 118:	fb040513          	addi	a0,s0,-80
- 11c:	00078893          	addi	a7,a5,0
- 120:	000b0813          	addi	a6,s6,0
- 124:	000a8793          	addi	a5,s5,0
- 128:	000a0713          	addi	a4,s4,0
- 12c:	00098693          	addi	a3,s3,0
- 130:	00090613          	addi	a2,s2,0
- 134:	00048593          	addi	a1,s1,0
- 138:	00000317          	auipc	t1,0x0
- 13c:	00033303          	ld	t1,0(t1) # 138 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x138>
-
-0000000000000140 <.LEHB37>:
- 140:	000300e7          	jalr	ra,0(t1)
-
-0000000000000144 <.LEHE37>:
- 144:	02c0006f          	jal	zero,170 <.L427>
-
-0000000000000148 <.L426>:
- 148:	00050493          	addi	s1,a0,0
- 14c:	fb843783          	ld	a5,-72(s0)
- 150:	00078513          	addi	a0,a5,0
- 154:	00000317          	auipc	t1,0x0
- 158:	00033303          	ld	t1,0(t1) # 154 <.L426+0xc>
- 15c:	000300e7          	jalr	ra,0(t1)
- 160:	00048793          	addi	a5,s1,0
- 164:	00078513          	addi	a0,a5,0
-
-0000000000000168 <.LEHB38>:
- 168:	00000097          	auipc	ra,0x0
- 16c:	000080e7          	jalr	ra,0(ra) # 168 <.LEHB38>
-
-0000000000000170 <.L427>:
- 170:	07813083          	ld	ra,120(sp)
- 174:	07013403          	ld	s0,112(sp)
- 178:	06813483          	ld	s1,104(sp)
- 17c:	06013903          	ld	s2,96(sp)
- 180:	05813983          	ld	s3,88(sp)
- 184:	05013a03          	ld	s4,80(sp)
- 188:	04813a83          	ld	s5,72(sp)
- 18c:	04013b03          	ld	s6,64(sp)
- 190:	08010113          	addi	sp,sp,128
- 194:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__allocated_ptrISaISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEEaSEDn:
-
-0000000000000000 <std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::operator=(decltype(nullptr))>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0007b423          	sd	zero,8(a5)
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	00078513          	addi	a0,a5,0
-  24:	01813403          	ld	s0,24(sp)
-  28:	02010113          	addi	sp,sp,32
-  2c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EE6_M_ptrEv:
-
-0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	03878793          	addi	a5,a5,56
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_ptr()+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050793          	addi	a5,a0,0
-  30:	00078513          	addi	a0,a5,0
-  34:	01813083          	ld	ra,24(sp)
-  38:	01013403          	ld	s0,16(sp)
-  3c:	02010113          	addi	sp,sp,32
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt15__new_allocatorImE8max_sizeEv:
-
-0000000000000000 <std::__new_allocator<unsigned long>::max_size() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::__new_allocator<unsigned long>::max_size() const+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	00050793          	addi	a5,a0,0
-  28:	00078513          	addi	a0,a5,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt15__new_allocatorImE11_M_max_sizeEv:
-
-0000000000000000 <std::__new_allocator<unsigned long>::_M_max_size() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fff00793          	addi	a5,zero,-1
-  14:	0047d793          	srli	a5,a5,0x4
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt12__niter_baseIPmET_S1_:
-
-0000000000000000 <unsigned long* std::__niter_base<unsigned long*>(unsigned long*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt14__relocate_a_1ImmENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E:
-
-0000000000000000 <std::enable_if<std::__is_bitwise_relocatable<unsigned long, void>::value, unsigned long*>::type std::__relocate_a_1<unsigned long, unsigned long>(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fcb43823          	sd	a1,-48(s0)
-  18:	fcc43423          	sd	a2,-56(s0)
-  1c:	fcd43023          	sd	a3,-64(s0)
-  20:	fd043703          	ld	a4,-48(s0)
-  24:	fd843783          	ld	a5,-40(s0)
-  28:	40f707b3          	sub	a5,a4,a5
-  2c:	4037d793          	srai	a5,a5,0x3
-  30:	fef43423          	sd	a5,-24(s0)
-  34:	fe843783          	ld	a5,-24(s0)
-  38:	02f05063          	bge	zero,a5,58 <.L439>
-  3c:	fe843783          	ld	a5,-24(s0)
-  40:	00379793          	slli	a5,a5,0x3
-  44:	00078613          	addi	a2,a5,0
-  48:	fd843583          	ld	a1,-40(s0)
-  4c:	fc843503          	ld	a0,-56(s0)
-  50:	00000097          	auipc	ra,0x0
-  54:	000080e7          	jalr	ra,0(ra) # 50 <std::enable_if<std::__is_bitwise_relocatable<unsigned long, void>::value, unsigned long*>::type std::__relocate_a_1<unsigned long, unsigned long>(unsigned long*, unsigned long*, unsigned long*, std::allocator<unsigned long>&)+0x50>
-
-0000000000000058 <.L439>:
-  58:	fe843783          	ld	a5,-24(s0)
-  5c:	00379793          	slli	a5,a5,0x3
-  60:	fc843703          	ld	a4,-56(s0)
-  64:	00f707b3          	add	a5,a4,a5
-  68:	00078513          	addi	a0,a5,0
-  6c:	03813083          	ld	ra,56(sp)
-  70:	03013403          	ld	s0,48(sp)
-  74:	04010113          	addi	sp,sp,64
-  78:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt13move_iteratorIPmES3_EET0_T_S6_S5_:
-
-0000000000000000 <unsigned long* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<unsigned long*>, unsigned long*>(std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>, unsigned long*)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fd843603          	ld	a2,-40(s0)
-  20:	fe043583          	ld	a1,-32(s0)
-  24:	fe843503          	ld	a0,-24(s0)
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <unsigned long* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<unsigned long*>, unsigned long*>(std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>, unsigned long*)+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00050793          	addi	a5,a0,0
-  38:	00078513          	addi	a0,a5,0
-  3c:	02813083          	ld	ra,40(sp)
-  40:	02013403          	ld	s0,32(sp)
-  44:	03010113          	addi	sp,sp,48
-  48:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEC2IJNS0_12section_typeEPKcmNS0_10byte_orderENS0_6formatEmEEES2_DpOT_:
-
-0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)>:
-   0:	f8010113          	addi	sp,sp,-128
-   4:	06113c23          	sd	ra,120(sp)
-   8:	06813823          	sd	s0,112(sp)
-   c:	06913423          	sd	s1,104(sp)
-  10:	07213023          	sd	s2,96(sp)
-  14:	05313c23          	sd	s3,88(sp)
-  18:	05413823          	sd	s4,80(sp)
-  1c:	05513423          	sd	s5,72(sp)
-  20:	05613023          	sd	s6,64(sp)
-  24:	08010413          	addi	s0,sp,128
-  28:	faa43c23          	sd	a0,-72(s0)
-  2c:	fab40823          	sb	a1,-80(s0)
-  30:	fac43423          	sd	a2,-88(s0)
-  34:	fad43023          	sd	a3,-96(s0)
-  38:	f8e43c23          	sd	a4,-104(s0)
-  3c:	f8f43823          	sd	a5,-112(s0)
-  40:	f9043423          	sd	a6,-120(s0)
-  44:	f9143023          	sd	a7,-128(s0)
-  48:	fb843783          	ld	a5,-72(s0)
-  4c:	00078513          	addi	a0,a5,0
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	00000797          	auipc	a5,0x0
-  60:	0007b783          	ld	a5,0(a5) # 5c <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x5c>
-  64:	01078713          	addi	a4,a5,16
-  68:	fb843783          	ld	a5,-72(s0)
-  6c:	00e7b023          	sd	a4,0(a5)
-  70:	fb843783          	ld	a5,-72(s0)
-  74:	03878793          	addi	a5,a5,56
-  78:	00048593          	addi	a1,s1,0
-  7c:	00078513          	addi	a0,a5,0
-  80:	00000317          	auipc	t1,0x0
-  84:	00033303          	ld	t1,0(t1) # 80 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x80>
-  88:	000300e7          	jalr	ra,0(t1)
-  8c:	fb843503          	ld	a0,-72(s0)
-  90:	00000317          	auipc	t1,0x0
-  94:	00033303          	ld	t1,0(t1) # 90 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x90>
-  98:	000300e7          	jalr	ra,0(t1)
-  9c:	00050493          	addi	s1,a0,0
-  a0:	fa843503          	ld	a0,-88(s0)
-  a4:	00000317          	auipc	t1,0x0
-  a8:	00033303          	ld	t1,0(t1) # a4 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xa4>
-  ac:	000300e7          	jalr	ra,0(t1)
-  b0:	00050913          	addi	s2,a0,0
-  b4:	fa043503          	ld	a0,-96(s0)
-  b8:	00000317          	auipc	t1,0x0
-  bc:	00033303          	ld	t1,0(t1) # b8 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xb8>
-  c0:	000300e7          	jalr	ra,0(t1)
-  c4:	00050993          	addi	s3,a0,0
-  c8:	f9843503          	ld	a0,-104(s0)
-  cc:	00000317          	auipc	t1,0x0
-  d0:	00033303          	ld	t1,0(t1) # cc <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xcc>
-  d4:	000300e7          	jalr	ra,0(t1)
-  d8:	00050a13          	addi	s4,a0,0
-  dc:	f9043503          	ld	a0,-112(s0)
-  e0:	00000317          	auipc	t1,0x0
-  e4:	00033303          	ld	t1,0(t1) # e0 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xe0>
-  e8:	000300e7          	jalr	ra,0(t1)
-  ec:	00050a93          	addi	s5,a0,0
-  f0:	f8843503          	ld	a0,-120(s0)
-  f4:	00000317          	auipc	t1,0x0
-  f8:	00033303          	ld	t1,0(t1) # f4 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xf4>
-  fc:	000300e7          	jalr	ra,0(t1)
- 100:	00050b13          	addi	s6,a0,0
- 104:	f8043503          	ld	a0,-128(s0)
- 108:	00000317          	auipc	t1,0x0
- 10c:	00033303          	ld	t1,0(t1) # 108 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x108>
- 110:	000300e7          	jalr	ra,0(t1)
- 114:	00050793          	addi	a5,a0,0
- 118:	fb040513          	addi	a0,s0,-80
- 11c:	00078893          	addi	a7,a5,0
- 120:	000b0813          	addi	a6,s6,0
- 124:	000a8793          	addi	a5,s5,0
- 128:	000a0713          	addi	a4,s4,0
- 12c:	00098693          	addi	a3,s3,0
- 130:	00090613          	addi	a2,s2,0
- 134:	00048593          	addi	a1,s1,0
- 138:	00000317          	auipc	t1,0x0
- 13c:	00033303          	ld	t1,0(t1) # 138 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Sp_counted_ptr_inplace<dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x138>
-
-0000000000000140 <.LEHB39>:
- 140:	000300e7          	jalr	ra,0(t1)
-
-0000000000000144 <.LEHE39>:
- 144:	02c0006f          	jal	zero,170 <.L446>
-
-0000000000000148 <.L445>:
- 148:	00050493          	addi	s1,a0,0
- 14c:	fb843783          	ld	a5,-72(s0)
- 150:	00078513          	addi	a0,a5,0
- 154:	00000317          	auipc	t1,0x0
- 158:	00033303          	ld	t1,0(t1) # 154 <.L445+0xc>
- 15c:	000300e7          	jalr	ra,0(t1)
- 160:	00048793          	addi	a5,s1,0
- 164:	00078513          	addi	a0,a5,0
-
-0000000000000168 <.LEHB40>:
- 168:	00000097          	auipc	ra,0x0
- 16c:	000080e7          	jalr	ra,0(ra) # 168 <.LEHB40>
-
-0000000000000170 <.L446>:
- 170:	07813083          	ld	ra,120(sp)
- 174:	07013403          	ld	s0,112(sp)
- 178:	06813483          	ld	s1,104(sp)
- 17c:	06013903          	ld	s2,96(sp)
- 180:	05813983          	ld	s3,88(sp)
- 184:	05013a03          	ld	s4,80(sp)
- 188:	04813a83          	ld	s5,72(sp)
- 18c:	04013b03          	ld	s6,64(sp)
- 190:	08010113          	addi	sp,sp,128
- 194:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEC2Ev:
-
-0000000000000000 <std::__new_allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::__new_allocator()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	00000013          	addi	zero,zero,0
-  14:	01813403          	ld	s0,24(sp)
-  18:	02010113          	addi	sp,sp,32
-  1c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEED2Ev:
-
-0000000000000000 <std::__new_allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::~__new_allocator()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	00000013          	addi	zero,zero,0
-  14:	01813403          	ld	s0,24(sp)
-  18:	02010113          	addi	sp,sp,32
-  1c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEE8allocateERS7_m:
-
-0000000000000000 <std::allocator_traits<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::allocate(std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >&, unsigned long)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	00000613          	addi	a2,zero,0
-  1c:	fe043583          	ld	a1,-32(s0)
-  20:	fe843503          	ld	a0,-24(s0)
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <std::allocator_traits<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::allocate(std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >&, unsigned long)+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050793          	addi	a5,a0,0
-  34:	00078513          	addi	a0,a5,0
-  38:	01813083          	ld	ra,24(sp)
-  3c:	01013403          	ld	s0,16(sp)
-  40:	02010113          	addi	sp,sp,32
-  44:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__allocated_ptrISaISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEEC2ERS7_PS6_:
-
-0000000000000000 <std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::__allocated_ptr(std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >&, std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>*)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe043503          	ld	a0,-32(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::__allocated_ptr<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::__allocated_ptr(std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >&, std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>*)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050713          	addi	a4,a0,0
-  30:	fe843783          	ld	a5,-24(s0)
-  34:	00e7b023          	sd	a4,0(a5)
-  38:	fe843783          	ld	a5,-24(s0)
-  3c:	fd843703          	ld	a4,-40(s0)
-  40:	00e7b423          	sd	a4,8(a5)
-  44:	00000013          	addi	zero,zero,0
-  48:	02813083          	ld	ra,40(sp)
-  4c:	02013403          	ld	s0,32(sp)
-  50:	03010113          	addi	sp,sp,48
-  54:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16allocator_traitsISaISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEE10deallocateERS7_PS6_m:
-
-0000000000000000 <std::allocator_traits<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::deallocate(std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >&, std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>*, unsigned long)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fd843603          	ld	a2,-40(s0)
-  20:	fe043583          	ld	a1,-32(s0)
-  24:	fe843503          	ld	a0,-24(s0)
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <std::allocator_traits<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >::deallocate(std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >&, std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>*, unsigned long)+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00000013          	addi	zero,zero,0
-  38:	02813083          	ld	ra,40(sp)
-  3c:	02013403          	ld	s0,32(sp)
-  40:	03010113          	addi	sp,sp,48
-  44:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt12__to_addressISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEPT_S8_:
-
-0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>* std::__to_address<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >(std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE1EEC2Ev:
-
-0000000000000000 <std::_Mutex_base<(__gnu_cxx::_Lock_policy)1>::_Mutex_base()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::_Mutex_base<(__gnu_cxx::_Lock_policy)1>::_Mutex_base()+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EEC2Ev:
-
-0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_Sp_counted_base()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00878793          	addi	a5,a5,8
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_Sp_counted_base()+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00000797          	auipc	a5,0x0
-  30:	0007b783          	ld	a5,0(a5) # 2c <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_Sp_counted_base()+0x2c>
-  34:	01078713          	addi	a4,a5,16
-  38:	fe843783          	ld	a5,-24(s0)
-  3c:	00e7b023          	sd	a4,0(a5)
-  40:	fe843783          	ld	a5,-24(s0)
-  44:	00100713          	addi	a4,zero,1
-  48:	02e7a823          	sw	a4,48(a5)
-  4c:	fe843783          	ld	a5,-24(s0)
-  50:	00100713          	addi	a4,zero,1
-  54:	02e7aa23          	sw	a4,52(a5)
-  58:	00000013          	addi	zero,zero,0
-  5c:	01813083          	ld	ra,24(sp)
-  60:	01013403          	ld	s0,16(sp)
-  64:	02010113          	addi	sp,sp,32
-  68:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EE5_ImplC2ES2_:
-
-0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Impl::_Impl(std::allocator<void>)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb40023          	sb	a1,-32(s0)
-  18:	fe040793          	addi	a5,s0,-32
-  1c:	00078593          	addi	a1,a5,0
-  20:	fe843503          	ld	a0,-24(s0)
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Impl::_Impl(std::allocator<void>)+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00000013          	addi	zero,zero,0
-  34:	01813083          	ld	ra,24(sp)
-  38:	01013403          	ld	s0,16(sp)
-  3c:	02010113          	addi	sp,sp,32
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16allocator_traitsISaIvEE9constructIN5dwarf7sectionEJRNS3_12section_typeEPKcRKmRKNS3_10byte_orderERNS3_6formatERjEEEvRS0_PT_DpOT0_:
-
-0000000000000000 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>&, dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)>:
-   0:	f8010113          	addi	sp,sp,-128
-   4:	06113c23          	sd	ra,120(sp)
-   8:	06813823          	sd	s0,112(sp)
-   c:	06913423          	sd	s1,104(sp)
-  10:	07213023          	sd	s2,96(sp)
-  14:	05313c23          	sd	s3,88(sp)
-  18:	05413823          	sd	s4,80(sp)
-  1c:	05513423          	sd	s5,72(sp)
-  20:	08010413          	addi	s0,sp,128
-  24:	faa43c23          	sd	a0,-72(s0)
-  28:	fab43823          	sd	a1,-80(s0)
-  2c:	fac43423          	sd	a2,-88(s0)
-  30:	fad43023          	sd	a3,-96(s0)
-  34:	f8e43c23          	sd	a4,-104(s0)
-  38:	f8f43823          	sd	a5,-112(s0)
-  3c:	f9043423          	sd	a6,-120(s0)
-  40:	f9143023          	sd	a7,-128(s0)
-  44:	fa843503          	ld	a0,-88(s0)
-  48:	00000317          	auipc	t1,0x0
-  4c:	00033303          	ld	t1,0(t1) # 48 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>&, dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x48>
-  50:	000300e7          	jalr	ra,0(t1)
-  54:	00050493          	addi	s1,a0,0
-  58:	fa043503          	ld	a0,-96(s0)
-  5c:	00000317          	auipc	t1,0x0
-  60:	00033303          	ld	t1,0(t1) # 5c <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>&, dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x5c>
-  64:	000300e7          	jalr	ra,0(t1)
-  68:	00050913          	addi	s2,a0,0
-  6c:	f9843503          	ld	a0,-104(s0)
-  70:	00000317          	auipc	t1,0x0
-  74:	00033303          	ld	t1,0(t1) # 70 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>&, dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x70>
-  78:	000300e7          	jalr	ra,0(t1)
-  7c:	00050993          	addi	s3,a0,0
-  80:	f9043503          	ld	a0,-112(s0)
-  84:	00000317          	auipc	t1,0x0
-  88:	00033303          	ld	t1,0(t1) # 84 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>&, dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x84>
-  8c:	000300e7          	jalr	ra,0(t1)
-  90:	00050a13          	addi	s4,a0,0
-  94:	f8843503          	ld	a0,-120(s0)
-  98:	00000317          	auipc	t1,0x0
-  9c:	00033303          	ld	t1,0(t1) # 98 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>&, dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x98>
-  a0:	000300e7          	jalr	ra,0(t1)
-  a4:	00050a93          	addi	s5,a0,0
-  a8:	f8043503          	ld	a0,-128(s0)
-  ac:	00000317          	auipc	t1,0x0
-  b0:	00033303          	ld	t1,0(t1) # ac <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>&, dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xac>
-  b4:	000300e7          	jalr	ra,0(t1)
-  b8:	00050793          	addi	a5,a0,0
-  bc:	00078813          	addi	a6,a5,0
-  c0:	000a8793          	addi	a5,s5,0
-  c4:	000a0713          	addi	a4,s4,0
-  c8:	00098693          	addi	a3,s3,0
-  cc:	00090613          	addi	a2,s2,0
-  d0:	00048593          	addi	a1,s1,0
-  d4:	fb043503          	ld	a0,-80(s0)
-  d8:	00000317          	auipc	t1,0x0
-  dc:	00033303          	ld	t1,0(t1) # d8 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(std::allocator<void>&, dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xd8>
-  e0:	000300e7          	jalr	ra,0(t1)
-  e4:	00000013          	addi	zero,zero,0
-  e8:	07813083          	ld	ra,120(sp)
-  ec:	07013403          	ld	s0,112(sp)
-  f0:	06813483          	ld	s1,104(sp)
-  f4:	06013903          	ld	s2,96(sp)
-  f8:	05813983          	ld	s3,88(sp)
-  fc:	05013a03          	ld	s4,80(sp)
- 100:	04813a83          	ld	s5,72(sp)
- 104:	08010113          	addi	sp,sp,128
- 108:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN9__gnu_cxx16__aligned_bufferIN5dwarf7sectionEE6_M_ptrEv:
-
-0000000000000000 <__gnu_cxx::__aligned_buffer<dwarf::section>::_M_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <__gnu_cxx::__aligned_buffer<dwarf::section>::_M_ptr()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	00050793          	addi	a5,a0,0
-  28:	00078513          	addi	a0,a5,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt4copyISt13move_iteratorIPmES1_ET0_T_S4_S3_:
-
-0000000000000000 <unsigned long* std::copy<std::move_iterator<unsigned long*>, unsigned long*>(std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>, unsigned long*)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	02913423          	sd	s1,40(sp)
-  10:	04010413          	addi	s0,sp,64
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fcb43823          	sd	a1,-48(s0)
-  1c:	fcc43423          	sd	a2,-56(s0)
-  20:	fd843503          	ld	a0,-40(s0)
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <unsigned long* std::copy<std::move_iterator<unsigned long*>, unsigned long*>(std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>, unsigned long*)+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050493          	addi	s1,a0,0
-  34:	fd043503          	ld	a0,-48(s0)
-  38:	00000317          	auipc	t1,0x0
-  3c:	00033303          	ld	t1,0(t1) # 38 <unsigned long* std::copy<std::move_iterator<unsigned long*>, unsigned long*>(std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>, unsigned long*)+0x38>
-  40:	000300e7          	jalr	ra,0(t1)
-  44:	00050793          	addi	a5,a0,0
-  48:	fc843603          	ld	a2,-56(s0)
-  4c:	00078593          	addi	a1,a5,0
-  50:	00048513          	addi	a0,s1,0
-  54:	00000317          	auipc	t1,0x0
-  58:	00033303          	ld	t1,0(t1) # 54 <unsigned long* std::copy<std::move_iterator<unsigned long*>, unsigned long*>(std::move_iterator<unsigned long*>, std::move_iterator<unsigned long*>, unsigned long*)+0x54>
-  5c:	000300e7          	jalr	ra,0(t1)
-  60:	00050793          	addi	a5,a0,0
-  64:	00078513          	addi	a0,a5,0
-  68:	03813083          	ld	ra,56(sp)
-  6c:	03013403          	ld	s0,48(sp)
-  70:	02813483          	ld	s1,40(sp)
-  74:	04010113          	addi	sp,sp,64
-  78:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16allocator_traitsISaIvEE9constructIN5dwarf7sectionEJNS3_12section_typeEPKcmNS3_10byte_orderENS3_6formatEmEEEvRS0_PT_DpOT0_:
-
-0000000000000000 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>&, dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)>:
-   0:	f8010113          	addi	sp,sp,-128
-   4:	06113c23          	sd	ra,120(sp)
-   8:	06813823          	sd	s0,112(sp)
-   c:	06913423          	sd	s1,104(sp)
-  10:	07213023          	sd	s2,96(sp)
-  14:	05313c23          	sd	s3,88(sp)
-  18:	05413823          	sd	s4,80(sp)
-  1c:	05513423          	sd	s5,72(sp)
-  20:	08010413          	addi	s0,sp,128
-  24:	faa43c23          	sd	a0,-72(s0)
-  28:	fab43823          	sd	a1,-80(s0)
-  2c:	fac43423          	sd	a2,-88(s0)
-  30:	fad43023          	sd	a3,-96(s0)
-  34:	f8e43c23          	sd	a4,-104(s0)
-  38:	f8f43823          	sd	a5,-112(s0)
-  3c:	f9043423          	sd	a6,-120(s0)
-  40:	f9143023          	sd	a7,-128(s0)
-  44:	fa843503          	ld	a0,-88(s0)
-  48:	00000317          	auipc	t1,0x0
-  4c:	00033303          	ld	t1,0(t1) # 48 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>&, dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x48>
-  50:	000300e7          	jalr	ra,0(t1)
-  54:	00050493          	addi	s1,a0,0
-  58:	fa043503          	ld	a0,-96(s0)
-  5c:	00000317          	auipc	t1,0x0
-  60:	00033303          	ld	t1,0(t1) # 5c <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>&, dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x5c>
-  64:	000300e7          	jalr	ra,0(t1)
-  68:	00050913          	addi	s2,a0,0
-  6c:	f9843503          	ld	a0,-104(s0)
-  70:	00000317          	auipc	t1,0x0
-  74:	00033303          	ld	t1,0(t1) # 70 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>&, dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x70>
-  78:	000300e7          	jalr	ra,0(t1)
-  7c:	00050993          	addi	s3,a0,0
-  80:	f9043503          	ld	a0,-112(s0)
-  84:	00000317          	auipc	t1,0x0
-  88:	00033303          	ld	t1,0(t1) # 84 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>&, dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x84>
-  8c:	000300e7          	jalr	ra,0(t1)
-  90:	00050a13          	addi	s4,a0,0
-  94:	f8843503          	ld	a0,-120(s0)
-  98:	00000317          	auipc	t1,0x0
-  9c:	00033303          	ld	t1,0(t1) # 98 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>&, dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x98>
-  a0:	000300e7          	jalr	ra,0(t1)
-  a4:	00050a93          	addi	s5,a0,0
-  a8:	f8043503          	ld	a0,-128(s0)
-  ac:	00000317          	auipc	t1,0x0
-  b0:	00033303          	ld	t1,0(t1) # ac <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>&, dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xac>
-  b4:	000300e7          	jalr	ra,0(t1)
-  b8:	00050793          	addi	a5,a0,0
-  bc:	00078813          	addi	a6,a5,0
-  c0:	000a8793          	addi	a5,s5,0
-  c4:	000a0713          	addi	a4,s4,0
-  c8:	00098693          	addi	a3,s3,0
-  cc:	00090613          	addi	a2,s2,0
-  d0:	00048593          	addi	a1,s1,0
-  d4:	fb043503          	ld	a0,-80(s0)
-  d8:	00000317          	auipc	t1,0x0
-  dc:	00033303          	ld	t1,0(t1) # d8 <void std::allocator_traits<std::allocator<void> >::construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(std::allocator<void>&, dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xd8>
-  e0:	000300e7          	jalr	ra,0(t1)
-  e4:	00000013          	addi	zero,zero,0
-  e8:	07813083          	ld	ra,120(sp)
-  ec:	07013403          	ld	s0,112(sp)
-  f0:	06813483          	ld	s1,104(sp)
-  f4:	06013903          	ld	s2,96(sp)
-  f8:	05813983          	ld	s3,88(sp)
-  fc:	05013a03          	ld	s4,80(sp)
- 100:	04813a83          	ld	s5,72(sp)
- 104:	08010113          	addi	sp,sp,128
- 108:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEE8allocateEmPKv:
-
-0000000000000000 <std::__new_allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::allocate(unsigned long, void const*)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe843503          	ld	a0,-24(s0)
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::__new_allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::allocate(unsigned long, void const*)+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050713          	addi	a4,a0,0
-  30:	fe043783          	ld	a5,-32(s0)
-  34:	00f737b3          	sltu	a5,a4,a5
-  38:	0ff7f793          	andi	a5,a5,255
-  3c:	00f037b3          	sltu	a5,zero,a5
-  40:	0ff7f793          	andi	a5,a5,255
-  44:	02078463          	beq	a5,zero,6c <.L465>
-  48:	fe043703          	ld	a4,-32(s0)
-  4c:	00000797          	auipc	a5,0x0
-  50:	00078793          	addi	a5,a5,0 # 4c <std::__new_allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::allocate(unsigned long, void const*)+0x4c>
-  54:	0007b783          	ld	a5,0(a5)
-  58:	00e7f663          	bgeu	a5,a4,64 <.L466>
-  5c:	00000097          	auipc	ra,0x0
-  60:	000080e7          	jalr	ra,0(ra) # 5c <std::__new_allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::allocate(unsigned long, void const*)+0x5c>
-
-0000000000000064 <.L466>:
-  64:	00000097          	auipc	ra,0x0
-  68:	000080e7          	jalr	ra,0(ra) # 64 <.L466>
-
-000000000000006c <.L465>:
-  6c:	fe043703          	ld	a4,-32(s0)
-  70:	00070793          	addi	a5,a4,0
-  74:	00179793          	slli	a5,a5,0x1
-  78:	00e787b3          	add	a5,a5,a4
-  7c:	00579793          	slli	a5,a5,0x5
-  80:	00078513          	addi	a0,a5,0
-  84:	00000097          	auipc	ra,0x0
-  88:	000080e7          	jalr	ra,0(ra) # 84 <.L465+0x18>
-  8c:	00050793          	addi	a5,a0,0
-  90:	00078513          	addi	a0,a5,0
-  94:	02813083          	ld	ra,40(sp)
-  98:	02013403          	ld	s0,32(sp)
-  9c:	03010113          	addi	sp,sp,48
-  a0:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt11__addressofISaISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEEEPT_RS8_:
-
-0000000000000000 <std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >* std::__addressof<std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> > >(std::allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt15__new_allocatorISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEE10deallocateEPS6_m:
-
-0000000000000000 <std::__new_allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::deallocate(std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>*, unsigned long)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fe043503          	ld	a0,-32(s0)
-  20:	00000097          	auipc	ra,0x0
-  24:	000080e7          	jalr	ra,0(ra) # 20 <std::__new_allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::deallocate(std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>*, unsigned long)+0x20>
-  28:	00000013          	addi	zero,zero,0
-  2c:	02813083          	ld	ra,40(sp)
-  30:	02013403          	ld	s0,32(sp)
-  34:	03010113          	addi	sp,sp,48
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt14_Sp_ebo_helperILi0ESaIvELb1EEC2ERKS0_:
-
-0000000000000000 <std::_Sp_ebo_helper<0, std::allocator<void>, true>::_Sp_ebo_helper(std::allocator<void> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	00000013          	addi	zero,zero,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt10_ConstructIN5dwarf7sectionEJRNS0_12section_typeEPKcRKmRKNS0_10byte_orderERNS0_6formatERjEEvPT_DpOT0_:
-
-0000000000000000 <void std::_Construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)>:
-   0:	f8010113          	addi	sp,sp,-128
-   4:	06113c23          	sd	ra,120(sp)
-   8:	06813823          	sd	s0,112(sp)
-   c:	06913423          	sd	s1,104(sp)
-  10:	07213023          	sd	s2,96(sp)
-  14:	05313c23          	sd	s3,88(sp)
-  18:	05413823          	sd	s4,80(sp)
-  1c:	05513423          	sd	s5,72(sp)
-  20:	05613023          	sd	s6,64(sp)
-  24:	08010413          	addi	s0,sp,128
-  28:	faa43c23          	sd	a0,-72(s0)
-  2c:	fab43823          	sd	a1,-80(s0)
-  30:	fac43423          	sd	a2,-88(s0)
-  34:	fad43023          	sd	a3,-96(s0)
-  38:	f8e43c23          	sd	a4,-104(s0)
-  3c:	f8f43823          	sd	a5,-112(s0)
-  40:	f9043423          	sd	a6,-120(s0)
-  44:	fb843783          	ld	a5,-72(s0)
-  48:	00078593          	addi	a1,a5,0
-  4c:	02800513          	addi	a0,zero,40
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <void std::_Construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	00050b13          	addi	s6,a0,0
-  60:	fb043503          	ld	a0,-80(s0)
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <void std::_Construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00050793          	addi	a5,a0,0
-  74:	0007a483          	lw	s1,0(a5)
-  78:	fa843503          	ld	a0,-88(s0)
-  7c:	00000317          	auipc	t1,0x0
-  80:	00033303          	ld	t1,0(t1) # 7c <void std::_Construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x7c>
-  84:	000300e7          	jalr	ra,0(t1)
-  88:	00050793          	addi	a5,a0,0
-  8c:	0007b903          	ld	s2,0(a5)
-  90:	fa043503          	ld	a0,-96(s0)
-  94:	00000317          	auipc	t1,0x0
-  98:	00033303          	ld	t1,0(t1) # 94 <void std::_Construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x94>
-  9c:	000300e7          	jalr	ra,0(t1)
-  a0:	00050793          	addi	a5,a0,0
-  a4:	0007b983          	ld	s3,0(a5)
-  a8:	f9843503          	ld	a0,-104(s0)
-  ac:	00000317          	auipc	t1,0x0
-  b0:	00033303          	ld	t1,0(t1) # ac <void std::_Construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xac>
-  b4:	000300e7          	jalr	ra,0(t1)
-  b8:	00050793          	addi	a5,a0,0
-  bc:	0007aa03          	lw	s4,0(a5)
-  c0:	f9043503          	ld	a0,-112(s0)
-  c4:	00000317          	auipc	t1,0x0
-  c8:	00033303          	ld	t1,0(t1) # c4 <void std::_Construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xc4>
-  cc:	000300e7          	jalr	ra,0(t1)
-  d0:	00050793          	addi	a5,a0,0
-  d4:	0007aa83          	lw	s5,0(a5)
-  d8:	f8843503          	ld	a0,-120(s0)
-  dc:	00000317          	auipc	t1,0x0
-  e0:	00033303          	ld	t1,0(t1) # dc <void std::_Construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0xdc>
-  e4:	000300e7          	jalr	ra,0(t1)
-  e8:	00050793          	addi	a5,a0,0
-  ec:	0007a783          	lw	a5,0(a5)
-  f0:	00078813          	addi	a6,a5,0
-  f4:	000a8793          	addi	a5,s5,0
-  f8:	000a0713          	addi	a4,s4,0
-  fc:	00098693          	addi	a3,s3,0
- 100:	00090613          	addi	a2,s2,0
- 104:	00048593          	addi	a1,s1,0
- 108:	000b0513          	addi	a0,s6,0
- 10c:	00000317          	auipc	t1,0x0
- 110:	00033303          	ld	t1,0(t1) # 10c <void std::_Construct<dwarf::section, dwarf::section_type&, char const*, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&>(dwarf::section*, dwarf::section_type&, char const*&&, unsigned long const&, dwarf::byte_order const&, dwarf::format&, unsigned int&)+0x10c>
- 114:	000300e7          	jalr	ra,0(t1)
- 118:	00000013          	addi	zero,zero,0
- 11c:	07813083          	ld	ra,120(sp)
- 120:	07013403          	ld	s0,112(sp)
- 124:	06813483          	ld	s1,104(sp)
- 128:	06013903          	ld	s2,96(sp)
- 12c:	05813983          	ld	s3,88(sp)
- 130:	05013a03          	ld	s4,80(sp)
- 134:	04813a83          	ld	s5,72(sp)
- 138:	04013b03          	ld	s6,64(sp)
- 13c:	08010113          	addi	sp,sp,128
- 140:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN9__gnu_cxx16__aligned_bufferIN5dwarf7sectionEE7_M_addrEv:
-
-0000000000000000 <__gnu_cxx::__aligned_buffer<dwarf::section>::_M_addr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt12__miter_baseIPmEDTcl12__miter_basecldtfp_4baseEEESt13move_iteratorIT_E:
-
-0000000000000000 <decltype (__miter_base(({parm#1}.base)())) std::__miter_base<unsigned long*>(std::move_iterator<unsigned long*>)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe840793          	addi	a5,s0,-24
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <decltype (__miter_base(({parm#1}.base)())) std::__miter_base<unsigned long*>(std::move_iterator<unsigned long*>)+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00050793          	addi	a5,a0,0
-  2c:	00078513          	addi	a0,a5,0
-  30:	00000317          	auipc	t1,0x0
-  34:	00033303          	ld	t1,0(t1) # 30 <decltype (__miter_base(({parm#1}.base)())) std::__miter_base<unsigned long*>(std::move_iterator<unsigned long*>)+0x30>
-  38:	000300e7          	jalr	ra,0(t1)
-  3c:	00050793          	addi	a5,a0,0
-  40:	00078513          	addi	a0,a5,0
-  44:	01813083          	ld	ra,24(sp)
-  48:	01013403          	ld	s0,16(sp)
-  4c:	02010113          	addi	sp,sp,32
-  50:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt13__copy_move_aILb1EPmS0_ET1_T0_S2_S1_:
-
-0000000000000000 <unsigned long* std::__copy_move_a<true, unsigned long*, unsigned long*>(unsigned long*, unsigned long*, unsigned long*)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	02913423          	sd	s1,40(sp)
-  10:	03213023          	sd	s2,32(sp)
-  14:	04010413          	addi	s0,sp,64
-  18:	fca43c23          	sd	a0,-40(s0)
-  1c:	fcb43823          	sd	a1,-48(s0)
-  20:	fcc43423          	sd	a2,-56(s0)
-  24:	fd843503          	ld	a0,-40(s0)
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <unsigned long* std::__copy_move_a<true, unsigned long*, unsigned long*>(unsigned long*, unsigned long*, unsigned long*)+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00050493          	addi	s1,a0,0
-  38:	fd043503          	ld	a0,-48(s0)
-  3c:	00000317          	auipc	t1,0x0
-  40:	00033303          	ld	t1,0(t1) # 3c <unsigned long* std::__copy_move_a<true, unsigned long*, unsigned long*>(unsigned long*, unsigned long*, unsigned long*)+0x3c>
-  44:	000300e7          	jalr	ra,0(t1)
-  48:	00050913          	addi	s2,a0,0
-  4c:	fc843783          	ld	a5,-56(s0)
-  50:	00078513          	addi	a0,a5,0
-  54:	00000317          	auipc	t1,0x0
-  58:	00033303          	ld	t1,0(t1) # 54 <unsigned long* std::__copy_move_a<true, unsigned long*, unsigned long*>(unsigned long*, unsigned long*, unsigned long*)+0x54>
-  5c:	000300e7          	jalr	ra,0(t1)
-  60:	00050793          	addi	a5,a0,0
-  64:	00078613          	addi	a2,a5,0
-  68:	00090593          	addi	a1,s2,0
-  6c:	00048513          	addi	a0,s1,0
-  70:	00000317          	auipc	t1,0x0
-  74:	00033303          	ld	t1,0(t1) # 70 <unsigned long* std::__copy_move_a<true, unsigned long*, unsigned long*>(unsigned long*, unsigned long*, unsigned long*)+0x70>
-  78:	000300e7          	jalr	ra,0(t1)
-  7c:	00050713          	addi	a4,a0,0
-  80:	fc840793          	addi	a5,s0,-56
-  84:	00070593          	addi	a1,a4,0
-  88:	00078513          	addi	a0,a5,0
-  8c:	00000317          	auipc	t1,0x0
-  90:	00033303          	ld	t1,0(t1) # 8c <unsigned long* std::__copy_move_a<true, unsigned long*, unsigned long*>(unsigned long*, unsigned long*, unsigned long*)+0x8c>
-  94:	000300e7          	jalr	ra,0(t1)
-  98:	00050793          	addi	a5,a0,0
-  9c:	00078513          	addi	a0,a5,0
-  a0:	03813083          	ld	ra,56(sp)
-  a4:	03013403          	ld	s0,48(sp)
-  a8:	02813483          	ld	s1,40(sp)
-  ac:	02013903          	ld	s2,32(sp)
-  b0:	04010113          	addi	sp,sp,64
-  b4:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt10_ConstructIN5dwarf7sectionEJNS0_12section_typeEPKcmNS0_10byte_orderENS0_6formatEmEEvPT_DpOT0_:
-
-0000000000000000 <void std::_Construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)>:
-   0:	f8010113          	addi	sp,sp,-128
-   4:	06113c23          	sd	ra,120(sp)
-   8:	06813823          	sd	s0,112(sp)
-   c:	06913423          	sd	s1,104(sp)
-  10:	07213023          	sd	s2,96(sp)
-  14:	05313c23          	sd	s3,88(sp)
-  18:	05413823          	sd	s4,80(sp)
-  1c:	05513423          	sd	s5,72(sp)
-  20:	05613023          	sd	s6,64(sp)
-  24:	08010413          	addi	s0,sp,128
-  28:	faa43c23          	sd	a0,-72(s0)
-  2c:	fab43823          	sd	a1,-80(s0)
-  30:	fac43423          	sd	a2,-88(s0)
-  34:	fad43023          	sd	a3,-96(s0)
-  38:	f8e43c23          	sd	a4,-104(s0)
-  3c:	f8f43823          	sd	a5,-112(s0)
-  40:	f9043423          	sd	a6,-120(s0)
-  44:	fb843783          	ld	a5,-72(s0)
-  48:	00078593          	addi	a1,a5,0
-  4c:	02800513          	addi	a0,zero,40
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <void std::_Construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	00050b13          	addi	s6,a0,0
-  60:	fb043503          	ld	a0,-80(s0)
-  64:	00000317          	auipc	t1,0x0
-  68:	00033303          	ld	t1,0(t1) # 64 <void std::_Construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x64>
-  6c:	000300e7          	jalr	ra,0(t1)
-  70:	00050793          	addi	a5,a0,0
-  74:	0007a483          	lw	s1,0(a5)
-  78:	fa843503          	ld	a0,-88(s0)
-  7c:	00000317          	auipc	t1,0x0
-  80:	00033303          	ld	t1,0(t1) # 7c <void std::_Construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x7c>
-  84:	000300e7          	jalr	ra,0(t1)
-  88:	00050793          	addi	a5,a0,0
-  8c:	0007b903          	ld	s2,0(a5)
-  90:	fa043503          	ld	a0,-96(s0)
-  94:	00000317          	auipc	t1,0x0
-  98:	00033303          	ld	t1,0(t1) # 94 <void std::_Construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x94>
-  9c:	000300e7          	jalr	ra,0(t1)
-  a0:	00050793          	addi	a5,a0,0
-  a4:	0007b983          	ld	s3,0(a5)
-  a8:	f9843503          	ld	a0,-104(s0)
-  ac:	00000317          	auipc	t1,0x0
-  b0:	00033303          	ld	t1,0(t1) # ac <void std::_Construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xac>
-  b4:	000300e7          	jalr	ra,0(t1)
-  b8:	00050793          	addi	a5,a0,0
-  bc:	0007aa03          	lw	s4,0(a5)
-  c0:	f9043503          	ld	a0,-112(s0)
-  c4:	00000317          	auipc	t1,0x0
-  c8:	00033303          	ld	t1,0(t1) # c4 <void std::_Construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xc4>
-  cc:	000300e7          	jalr	ra,0(t1)
-  d0:	00050793          	addi	a5,a0,0
-  d4:	0007aa83          	lw	s5,0(a5)
-  d8:	f8843503          	ld	a0,-120(s0)
-  dc:	00000317          	auipc	t1,0x0
-  e0:	00033303          	ld	t1,0(t1) # dc <void std::_Construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0xdc>
-  e4:	000300e7          	jalr	ra,0(t1)
-  e8:	00050793          	addi	a5,a0,0
-  ec:	0007b783          	ld	a5,0(a5)
-  f0:	0007879b          	addiw	a5,a5,0
-  f4:	00078813          	addi	a6,a5,0
-  f8:	000a8793          	addi	a5,s5,0
-  fc:	000a0713          	addi	a4,s4,0
- 100:	00098693          	addi	a3,s3,0
- 104:	00090613          	addi	a2,s2,0
- 108:	00048593          	addi	a1,s1,0
- 10c:	000b0513          	addi	a0,s6,0
- 110:	00000317          	auipc	t1,0x0
- 114:	00033303          	ld	t1,0(t1) # 110 <void std::_Construct<dwarf::section, dwarf::section_type, char const*, unsigned long, dwarf::byte_order, dwarf::format, unsigned long>(dwarf::section*, dwarf::section_type&&, char const*&&, unsigned long&&, dwarf::byte_order&&, dwarf::format&&, unsigned long&&)+0x110>
- 118:	000300e7          	jalr	ra,0(t1)
- 11c:	00000013          	addi	zero,zero,0
- 120:	07813083          	ld	ra,120(sp)
- 124:	07013403          	ld	s0,112(sp)
- 128:	06813483          	ld	s1,104(sp)
- 12c:	06013903          	ld	s2,96(sp)
- 130:	05813983          	ld	s3,88(sp)
- 134:	05013a03          	ld	s4,80(sp)
- 138:	04813a83          	ld	s5,72(sp)
- 13c:	04013b03          	ld	s6,64(sp)
- 140:	08010113          	addi	sp,sp,128
- 144:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt15__new_allocatorISt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EEE11_M_max_sizeEv:
-
-0000000000000000 <std::__new_allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::_M_max_size() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	00000797          	auipc	a5,0x0
-  14:	00078793          	addi	a5,a5,0 # 10 <std::__new_allocator<std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1> >::_M_max_size() const+0x10>
-  18:	0007b783          	ld	a5,0(a5)
-  1c:	00078513          	addi	a0,a5,0
-  20:	01813403          	ld	s0,24(sp)
-  24:	02010113          	addi	sp,sp,32
-  28:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNKSt13move_iteratorIPmE4baseEv:
-
-0000000000000000 <std::move_iterator<unsigned long*>::base() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0007b783          	ld	a5,0(a5)
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt12__miter_baseIPmET_S1_:
-
-0000000000000000 <unsigned long* std::__miter_base<unsigned long*>(unsigned long*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt14__copy_move_a1ILb1EPmS0_ET1_T0_S2_S1_:
-
-0000000000000000 <unsigned long* std::__copy_move_a1<true, unsigned long*, unsigned long*>(unsigned long*, unsigned long*, unsigned long*)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fd843603          	ld	a2,-40(s0)
-  20:	fe043583          	ld	a1,-32(s0)
-  24:	fe843503          	ld	a0,-24(s0)
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <unsigned long* std::__copy_move_a1<true, unsigned long*, unsigned long*>(unsigned long*, unsigned long*, unsigned long*)+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00050793          	addi	a5,a0,0
-  38:	00078513          	addi	a0,a5,0
-  3c:	02813083          	ld	ra,40(sp)
-  40:	02013403          	ld	s0,32(sp)
-  44:	03010113          	addi	sp,sp,48
-  48:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt12__niter_wrapIPmET_RKS1_S1_:
-
-0000000000000000 <unsigned long* std::__niter_wrap<unsigned long*>(unsigned long* const&, unsigned long*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe043783          	ld	a5,-32(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZSt14__copy_move_a2ILb1EPmS0_ET1_T0_S2_S1_:
-
-0000000000000000 <unsigned long* std::__copy_move_a2<true, unsigned long*, unsigned long*>(unsigned long*, unsigned long*, unsigned long*)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fcc43c23          	sd	a2,-40(s0)
-  1c:	fd843603          	ld	a2,-40(s0)
-  20:	fe043583          	ld	a1,-32(s0)
-  24:	fe843503          	ld	a0,-24(s0)
-  28:	00000317          	auipc	t1,0x0
-  2c:	00033303          	ld	t1,0(t1) # 28 <unsigned long* std::__copy_move_a2<true, unsigned long*, unsigned long*>(unsigned long*, unsigned long*, unsigned long*)+0x28>
-  30:	000300e7          	jalr	ra,0(t1)
-  34:	00050793          	addi	a5,a0,0
-  38:	00078513          	addi	a0,a5,0
-  3c:	02813083          	ld	ra,40(sp)
-  40:	02013403          	ld	s0,32(sp)
-  44:	03010113          	addi	sp,sp,48
-  48:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt11__copy_moveILb1ELb1ESt26random_access_iterator_tagE8__copy_mImEEPT_PKS3_S6_S4_:
-
-0000000000000000 <unsigned long* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<unsigned long>(unsigned long const*, unsigned long const*, unsigned long*)>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fcb43823          	sd	a1,-48(s0)
-  18:	fcc43423          	sd	a2,-56(s0)
-  1c:	fd043703          	ld	a4,-48(s0)
-  20:	fd843783          	ld	a5,-40(s0)
-  24:	40f707b3          	sub	a5,a4,a5
-  28:	4037d793          	srai	a5,a5,0x3
-  2c:	fef43423          	sd	a5,-24(s0)
-  30:	fe843783          	ld	a5,-24(s0)
-  34:	02078063          	beq	a5,zero,54 <.L493>
-  38:	fe843783          	ld	a5,-24(s0)
-  3c:	00379793          	slli	a5,a5,0x3
-  40:	00078613          	addi	a2,a5,0
-  44:	fd843583          	ld	a1,-40(s0)
-  48:	fc843503          	ld	a0,-56(s0)
-  4c:	00000097          	auipc	ra,0x0
-  50:	000080e7          	jalr	ra,0(ra) # 4c <unsigned long* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<unsigned long>(unsigned long const*, unsigned long const*, unsigned long*)+0x4c>
-
-0000000000000054 <.L493>:
-  54:	fe843783          	ld	a5,-24(s0)
-  58:	00379793          	slli	a5,a5,0x3
-  5c:	fc843703          	ld	a4,-56(s0)
-  60:	00f707b3          	add	a5,a4,a5
-  64:	00078513          	addi	a0,a5,0
-  68:	03813083          	ld	ra,56(sp)
-  6c:	03013403          	ld	s0,48(sp)
-  70:	04010113          	addi	sp,sp,64
-  74:	00008067          	jalr	zero,0(ra)
+
+000000000000012c <.LBB1952>:
+	if (__p)
+ 12c:	00050663          	beq	a0,zero,138 <.L80>
+
+0000000000000130 <.LBB1957>:
+	    _GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n),
+				     std::align_val_t(alignof(_Tp)));
+	    return;
+	  }
+#endif
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+ 130:	00000097          	auipc	ra,0x0
+ 134:	000080e7          	jalr	ra,0(ra) # 130 <.LBB1957>
+
+0000000000000138 <.L80>:
+      ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+ 138:	00048513          	addi	a0,s1,0
+
+000000000000013c <.LEHB6>:
+ 13c:	00000097          	auipc	ra,0x0
+ 140:	000080e7          	jalr	ra,0(ra) # 13c <.LEHB6>
+
+0000000000000144 <dwarf::rangelist::end() const>:
+      : _M_ptr(0), _M_refcount()
+ 144:	00053023          	sd	zero,0(a0)
+
+0000000000000148 <.LBB1972>:
+      constexpr __shared_count() noexcept : _M_pi(0)
+ 148:	00053423          	sd	zero,8(a0)
+
+000000000000014c <.LBE1968>:
+class rangelist::iterator {
+public:
+  /**
+   * \internal Construct an end iterator.
+   */
+  iterator() : sec(nullptr), base_addr(0), pos(0) {}
+ 14c:	00053823          	sd	zero,16(a0)
+
+0000000000000150 <.LM625>:
+ 150:	00053c23          	sd	zero,24(a0)
+
+0000000000000154 <.LBE1966>:
+  if (sec)
+    return iterator(sec, base_addr);
+  return end();
+}
+
+rangelist::iterator rangelist::end() const { return iterator(); }
+ 154:	00008067          	jalr	zero,0(ra)
+
+0000000000000158 <dwarf::rangelist::iterator::operator++()>:
+    : sec(sec), base_addr(base_addr), pos(0) {
+  // Read in the first entry
+  ++(*this);
+}
+
+rangelist::iterator &rangelist::iterator::operator++() {
+ 158:	fb010113          	addi	sp,sp,-80
+ 15c:	04113423          	sd	ra,72(sp)
+ 160:	04813023          	sd	s0,64(sp)
+ 164:	02913c23          	sd	s1,56(sp)
+ 168:	03213823          	sd	s2,48(sp)
+ 16c:	03313423          	sd	s3,40(sp)
+ 170:	03413023          	sd	s4,32(sp)
+ 174:	00050413          	addi	s0,a0,0
+
+0000000000000178 <.LBB2097>:
+      { return _M_ptr; }
+ 178:	00053483          	ld	s1,0(a0)
+
+000000000000017c <.LBE2097>:
+  // DWARF4 section 2.17.3
+  taddr largest_offset = ~(taddr)0;
+  if (sec->addr_size < sizeof(taddr))
+ 17c:	0204a783          	lw	a5,32(s1)
+
+0000000000000180 <.LM638>:
+ 180:	00700713          	addi	a4,zero,7
+
+0000000000000184 <.LM639>:
+  taddr largest_offset = ~(taddr)0;
+ 184:	fff00a13          	addi	s4,zero,-1
+
+0000000000000188 <.LM640>:
+  if (sec->addr_size < sizeof(taddr))
+ 188:	00f76a63          	bltu	a4,a5,19c <.L87>
+
+000000000000018c <.LM641>:
+    largest_offset += 1 << (8 * sec->addr_size);
+ 18c:	0037979b          	slliw	a5,a5,0x3
+
+0000000000000190 <.LM643>:
+ 190:	00100a13          	addi	s4,zero,1
+ 194:	00fa1a3b          	sllw	s4,s4,a5
+ 198:	fffa0a13          	addi	s4,s4,-1
+
+000000000000019c <.L87>:
+      : _M_pi(__r._M_pi)
+ 19c:	00843903          	ld	s2,8(s0)
+
+00000000000001a0 <.LM649>:
+	if (_M_pi != nullptr)
+ 1a0:	30090063          	beq	s2,zero,4a0 <.L88>
+
+00000000000001a4 <.LBB2105>:
+
+  inline void
+  __attribute__ ((__always_inline__))
+  __atomic_add_dispatch(_Atomic_word* __mem, int __val)
+  {
+    if (__is_single_threaded())
+ 1a4:	00000797          	auipc	a5,0x0
+ 1a8:	0007b783          	ld	a5,0(a5) # 1a4 <.LBB2105>
+ 1ac:	0007c783          	lbu	a5,0(a5)
+ 1b0:	0a078a63          	beq	a5,zero,264 <.L89>
+
+00000000000001b4 <.LBB2111>:
+  { *__mem += __val; }
+ 1b4:	03092783          	lw	a5,48(s2)
+ 1b8:	0017879b          	addiw	a5,a5,1
+ 1bc:	02f92823          	sw	a5,48(s2)
+
+00000000000001c0 <.L90>:
+
+  // Read in entries until we reach a regular entry of an
+  // end-of-list.  Note that pos points to the beginning of the
+  // entry *following* the current entry, so that's where we
+  // start.
+  cursor cur(sec, pos);
+ 1c0:	01843983          	ld	s3,24(s0)
+
+00000000000001c4 <.LBB2120>:
+      __shared_ptr(const __shared_ptr&) noexcept = default;
+ 1c4:	00913423          	sd	s1,8(sp)
+
+00000000000001c8 <.LBB2126>:
+      : _M_pi(__r._M_pi)
+ 1c8:	01213823          	sd	s2,16(sp)
+
+00000000000001cc <.LBB2129>:
+    if (__is_single_threaded())
+ 1cc:	00000797          	auipc	a5,0x0
+ 1d0:	0007b783          	ld	a5,0(a5) # 1cc <.LBB2129>
+ 1d4:	0007c783          	lbu	a5,0(a5)
+ 1d8:	0a078063          	beq	a5,zero,278 <.L122>
+
+00000000000001dc <.LBB2135>:
+  { *__mem += __val; }
+ 1dc:	03092783          	lw	a5,48(s2)
+ 1e0:	0017879b          	addiw	a5,a5,1
+ 1e4:	02f92823          	sw	a5,48(s2)
+
+00000000000001e8 <.L91>:
+  std::shared_ptr<section> sec;
+  const char *pos;
+
+  cursor() : pos(nullptr) {}
+  cursor(const std::shared_ptr<section> sec, section_offset offset = 0)
+      : sec(sec), pos(sec->begin + offset) {}
+ 1e8:	0084b783          	ld	a5,8(s1)
+ 1ec:	013787b3          	add	a5,a5,s3
+
+00000000000001f0 <.LM681>:
+ 1f0:	00f13c23          	sd	a5,24(sp)
+
+00000000000001f4 <.LBB2159>:
+    if (__is_single_threaded())
+ 1f4:	00000797          	auipc	a5,0x0
+ 1f8:	0007b783          	ld	a5,0(a5) # 1f4 <.LBB2159>
+ 1fc:	0007c783          	lbu	a5,0(a5)
+ 200:	08078663          	beq	a5,zero,28c <.L123>
+
+0000000000000204 <.LBB2168>:
+    _Atomic_word __result = *__mem;
+ 204:	03092503          	lw	a0,48(s2)
+
+0000000000000208 <.LM698>:
+    *__mem += __val;
+ 208:	fff5079b          	addiw	a5,a0,-1
+ 20c:	02f92823          	sw	a5,48(s2)
+
+0000000000000210 <.L92>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 210:	00100793          	addi	a5,zero,1
+ 214:	2af51263          	bne	a0,a5,4b8 <.L93>
+
+0000000000000218 <.LBB2171>:
+	_M_dispose();
+ 218:	00093783          	ld	a5,0(s2)
+ 21c:	0107b783          	ld	a5,16(a5)
+ 220:	00090513          	addi	a0,s2,0
+ 224:	000780e7          	jalr	ra,0(a5)
+
+0000000000000228 <.LM706>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 228:	0ff0000f          	fence	iorw,iorw
+
+000000000000022c <.LBB2173>:
+    if (__is_single_threaded())
+ 22c:	00000797          	auipc	a5,0x0
+ 230:	0007b783          	ld	a5,0(a5) # 22c <.LBB2173>
+ 234:	0007c783          	lbu	a5,0(a5)
+ 238:	06078463          	beq	a5,zero,2a0 <.L94>
+
+000000000000023c <.LBB2177>:
+    _Atomic_word __result = *__mem;
+ 23c:	03492503          	lw	a0,52(s2)
+
+0000000000000240 <.LM716>:
+    *__mem += __val;
+ 240:	fff5079b          	addiw	a5,a0,-1
+ 244:	02f92a23          	sw	a5,52(s2)
+
+0000000000000248 <.L95>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 248:	00100793          	addi	a5,zero,1
+ 24c:	26f51663          	bne	a0,a5,4b8 <.L93>
+
+0000000000000250 <.LM721>:
+	    _M_destroy();
+ 250:	00093783          	ld	a5,0(s2)
+ 254:	0187b783          	ld	a5,24(a5)
+ 258:	00090513          	addi	a0,s2,0
+ 25c:	000780e7          	jalr	ra,0(a5)
+
+0000000000000260 <.LVL205>:
+ 260:	2580006f          	jal	zero,4b8 <.L93>
+
+0000000000000264 <.L89>:
+      __atomic_add_single(__mem, __val);
+    else
+      __atomic_add(__mem, __val);
+ 264:	00100593          	addi	a1,zero,1
+ 268:	03090513          	addi	a0,s2,48
+ 26c:	00000097          	auipc	ra,0x0
+ 270:	000080e7          	jalr	ra,0(ra) # 26c <.L89+0x8>
+
+0000000000000274 <.LVL207>:
+ 274:	f4dff06f          	jal	zero,1c0 <.L90>
+
+0000000000000278 <.L122>:
+ 278:	00100593          	addi	a1,zero,1
+ 27c:	03090513          	addi	a0,s2,48
+ 280:	00000097          	auipc	ra,0x0
+ 284:	000080e7          	jalr	ra,0(ra) # 280 <.L122+0x8>
+
+0000000000000288 <.LVL209>:
+ 288:	f61ff06f          	jal	zero,1e8 <.L91>
+
+000000000000028c <.L123>:
+      return __exchange_and_add(__mem, __val);
+ 28c:	fff00593          	addi	a1,zero,-1
+ 290:	03090513          	addi	a0,s2,48
+ 294:	00000097          	auipc	ra,0x0
+ 298:	000080e7          	jalr	ra,0(ra) # 294 <.L123+0x8>
+
+000000000000029c <.LM731>:
+ 29c:	f75ff06f          	jal	zero,210 <.L92>
+
+00000000000002a0 <.L94>:
+ 2a0:	fff00593          	addi	a1,zero,-1
+ 2a4:	03490513          	addi	a0,s2,52
+ 2a8:	00000097          	auipc	ra,0x0
+ 2ac:	000080e7          	jalr	ra,0(ra) # 2a8 <.L94+0x8>
+
+00000000000002b0 <.LM735>:
+ 2b0:	f99ff06f          	jal	zero,248 <.L95>
+
+00000000000002b4 <.L124>:
+  while (true) {
+    entry.low = cur.address();
+ 2b4:	02a43023          	sd	a0,32(s0)
+
+00000000000002b8 <.LM738>:
+    entry.high = cur.address();
+ 2b8:	00090513          	addi	a0,s2,0
+
+00000000000002bc <.LEHB7>:
+ 2bc:	000980e7          	jalr	ra,0(s3)
+
+00000000000002c0 <.LM740>:
+ 2c0:	02a43423          	sd	a0,40(s0)
+
+00000000000002c4 <.LM741>:
+
+    if (entry.low == 0 && entry.high == 0) {
+ 2c4:	02043783          	ld	a5,32(s0)
+ 2c8:	00a7e4b3          	or	s1,a5,a0
+
+00000000000002cc <.LM743>:
+ 2cc:	0a049863          	bne	s1,zero,37c <.L96>
+
+00000000000002d0 <.LBB2193>:
+      // concept requirements
+      __glibcxx_function_requires(_SGIAssignableConcept<_Tp>)
+#endif
+      _Tp __tmp = _GLIBCXX_MOVE(__a);
+      __a = _GLIBCXX_MOVE(__b);
+      __b = _GLIBCXX_MOVE(__tmp);
+ 2d0:	00043023          	sd	zero,0(s0)
+
+00000000000002d4 <.LBB2199>:
+	_Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+ 2d4:	00843903          	ld	s2,8(s0)
+
+00000000000002d8 <.LM755>:
+	__r._M_pi = _M_pi;
+ 2d8:	00043423          	sd	zero,8(s0)
+
+00000000000002dc <.LBB2201>:
+	if (_M_pi != nullptr)
+ 2dc:	0c090c63          	beq	s2,zero,3b4 <.L102>
+
+00000000000002e0 <.LBB2204>:
+    if (__is_single_threaded())
+ 2e0:	00000797          	auipc	a5,0x0
+ 2e4:	0007b783          	ld	a5,0(a5) # 2e0 <.LBB2204>
+ 2e8:	0007c783          	lbu	a5,0(a5)
+ 2ec:	06078263          	beq	a5,zero,350 <.L98>
+
+00000000000002f0 <.LBB2210>:
+    _Atomic_word __result = *__mem;
+ 2f0:	03092503          	lw	a0,48(s2)
+
+00000000000002f4 <.LM772>:
+    *__mem += __val;
+ 2f4:	fff5079b          	addiw	a5,a0,-1
+ 2f8:	02f92823          	sw	a5,48(s2)
+
+00000000000002fc <.L99>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 2fc:	00100793          	addi	a5,zero,1
+ 300:	0af51a63          	bne	a0,a5,3b4 <.L102>
+
+0000000000000304 <.LBB2213>:
+	_M_dispose();
+ 304:	00093783          	ld	a5,0(s2)
+ 308:	0107b783          	ld	a5,16(a5)
+ 30c:	00090513          	addi	a0,s2,0
+ 310:	000780e7          	jalr	ra,0(a5)
+
+0000000000000314 <.LM780>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 314:	0ff0000f          	fence	iorw,iorw
+
+0000000000000318 <.LBB2215>:
+    if (__is_single_threaded())
+ 318:	00000797          	auipc	a5,0x0
+ 31c:	0007b783          	ld	a5,0(a5) # 318 <.LBB2215>
+ 320:	0007c783          	lbu	a5,0(a5)
+ 324:	04078063          	beq	a5,zero,364 <.L100>
+
+0000000000000328 <.LBB2219>:
+    _Atomic_word __result = *__mem;
+ 328:	03492783          	lw	a5,52(s2)
+
+000000000000032c <.LM790>:
+    *__mem += __val;
+ 32c:	fff7871b          	addiw	a4,a5,-1
+ 330:	02e92a23          	sw	a4,52(s2)
+
+0000000000000334 <.L101>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 334:	00100713          	addi	a4,zero,1
+ 338:	06e79e63          	bne	a5,a4,3b4 <.L102>
+
+000000000000033c <.LM795>:
+	    _M_destroy();
+ 33c:	00093783          	ld	a5,0(s2)
+ 340:	0187b783          	ld	a5,24(a5)
+ 344:	00090513          	addi	a0,s2,0
+ 348:	000780e7          	jalr	ra,0(a5)
+
+000000000000034c <.LBE2193>:
+      // End of list
+      sec.reset();
+      pos = 0;
+      break;
+ 34c:	0680006f          	jal	zero,3b4 <.L102>
+
+0000000000000350 <.L98>:
+      return __exchange_and_add(__mem, __val);
+ 350:	fff00593          	addi	a1,zero,-1
+ 354:	03090513          	addi	a0,s2,48
+ 358:	00000097          	auipc	ra,0x0
+ 35c:	000080e7          	jalr	ra,0(ra) # 358 <.L98+0x8>
+
+0000000000000360 <.LM801>:
+ 360:	f9dff06f          	jal	zero,2fc <.L99>
+
+0000000000000364 <.L100>:
+ 364:	fff00593          	addi	a1,zero,-1
+ 368:	03490513          	addi	a0,s2,52
+ 36c:	00000097          	auipc	ra,0x0
+ 370:	000080e7          	jalr	ra,0(ra) # 36c <.L100+0x8>
+
+0000000000000374 <.LVL234>:
+ 374:	00050793          	addi	a5,a0,0
+
+0000000000000378 <.LM805>:
+ 378:	fbdff06f          	jal	zero,334 <.L101>
+
+000000000000037c <.L96>:
+    } else if (entry.low == largest_offset) {
+ 37c:	01479a63          	bne	a5,s4,390 <.L103>
+
+0000000000000380 <.LM808>:
+      // Base address change
+      base_addr = entry.high;
+ 380:	00a43823          	sd	a0,16(s0)
+
+0000000000000384 <.L104>:
+    entry.low = cur.address();
+ 384:	00090513          	addi	a0,s2,0
+ 388:	000980e7          	jalr	ra,0(s3)
+
+000000000000038c <.LEHE7>:
+ 38c:	f29ff06f          	jal	zero,2b4 <.L124>
+
+0000000000000390 <.L103>:
+    } else {
+      // Regular entry.  Adjust by base address.
+      entry.low += base_addr;
+ 390:	01043703          	ld	a4,16(s0)
+
+0000000000000394 <.LM816>:
+ 394:	00e787b3          	add	a5,a5,a4
+ 398:	02f43023          	sd	a5,32(s0)
+
+000000000000039c <.LM817>:
+      entry.high += base_addr;
+ 39c:	00a70733          	add	a4,a4,a0
+ 3a0:	02e43423          	sd	a4,40(s0)
+
+00000000000003a4 <.LBB2232>:
+
+  bool end() const { return pos >= sec->end; }
+
+  bool valid() const { return !!pos; }
+
+  section_offset get_section_offset() const { return pos - sec->begin; }
+ 3a4:	00813783          	ld	a5,8(sp)
+ 3a8:	0087b783          	ld	a5,8(a5)
+ 3ac:	01813483          	ld	s1,24(sp)
+ 3b0:	40f484b3          	sub	s1,s1,a5
+
+00000000000003b4 <.L102>:
+      pos = 0;
+ 3b4:	00943c23          	sd	s1,24(s0)
+
+00000000000003b8 <.LBB2237>:
+	if (_M_pi != nullptr)
+ 3b8:	01013483          	ld	s1,16(sp)
+
+00000000000003bc <.LM836>:
+ 3bc:	02048463          	beq	s1,zero,3e4 <.L118>
+
+00000000000003c0 <.LBB2243>:
+    if (__is_single_threaded())
+ 3c0:	00000797          	auipc	a5,0x0
+ 3c4:	0007b783          	ld	a5,0(a5) # 3c0 <.LBB2243>
+ 3c8:	0007c783          	lbu	a5,0(a5)
+ 3cc:	02078e63          	beq	a5,zero,408 <.L106>
+
+00000000000003d0 <.LBB2249>:
+    _Atomic_word __result = *__mem;
+ 3d0:	0304a503          	lw	a0,48(s1)
+
+00000000000003d4 <.LM849>:
+    *__mem += __val;
+ 3d4:	fff5079b          	addiw	a5,a0,-1
+ 3d8:	02f4a823          	sw	a5,48(s1)
+
+00000000000003dc <.L107>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 3dc:	00100793          	addi	a5,zero,1
+ 3e0:	02f50e63          	beq	a0,a5,41c <.L125>
+
+00000000000003e4 <.L118>:
+      break;
+    }
+  }
+
+  return *this;
+}
+ 3e4:	00040513          	addi	a0,s0,0
+ 3e8:	04813083          	ld	ra,72(sp)
+ 3ec:	04013403          	ld	s0,64(sp)
+
+00000000000003f0 <.LM856>:
+ 3f0:	03813483          	ld	s1,56(sp)
+ 3f4:	03013903          	ld	s2,48(sp)
+ 3f8:	02813983          	ld	s3,40(sp)
+ 3fc:	02013a03          	ld	s4,32(sp)
+
+0000000000000400 <.LM857>:
+ 400:	05010113          	addi	sp,sp,80
+ 404:	00008067          	jalr	zero,0(ra)
+
+0000000000000408 <.L106>:
+      return __exchange_and_add(__mem, __val);
+ 408:	fff00593          	addi	a1,zero,-1
+ 40c:	03048513          	addi	a0,s1,48
+ 410:	00000097          	auipc	ra,0x0
+ 414:	000080e7          	jalr	ra,0(ra) # 410 <.L106+0x8>
+
+0000000000000418 <.LM860>:
+ 418:	fc5ff06f          	jal	zero,3dc <.L107>
+
+000000000000041c <.L125>:
+	_M_dispose();
+ 41c:	0004b783          	ld	a5,0(s1)
+ 420:	0107b783          	ld	a5,16(a5)
+ 424:	00048513          	addi	a0,s1,0
+ 428:	000780e7          	jalr	ra,0(a5)
+
+000000000000042c <.LM865>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 42c:	0ff0000f          	fence	iorw,iorw
+
+0000000000000430 <.LBB2255>:
+    if (__is_single_threaded())
+ 430:	00000797          	auipc	a5,0x0
+ 434:	0007b783          	ld	a5,0(a5) # 430 <.LBB2255>
+ 438:	0007c783          	lbu	a5,0(a5)
+ 43c:	02078663          	beq	a5,zero,468 <.L108>
+
+0000000000000440 <.LBB2259>:
+    _Atomic_word __result = *__mem;
+ 440:	0344a503          	lw	a0,52(s1)
+
+0000000000000444 <.LM875>:
+    *__mem += __val;
+ 444:	fff5079b          	addiw	a5,a0,-1
+ 448:	02f4aa23          	sw	a5,52(s1)
+
+000000000000044c <.L109>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 44c:	00100793          	addi	a5,zero,1
+ 450:	f8f51ae3          	bne	a0,a5,3e4 <.L118>
+
+0000000000000454 <.LM880>:
+	    _M_destroy();
+ 454:	0004b783          	ld	a5,0(s1)
+ 458:	0187b783          	ld	a5,24(a5)
+ 45c:	00048513          	addi	a0,s1,0
+ 460:	000780e7          	jalr	ra,0(a5)
+
+0000000000000464 <.LBE2253>:
+  return *this;
+ 464:	f81ff06f          	jal	zero,3e4 <.L118>
+
+0000000000000468 <.L108>:
+      return __exchange_and_add(__mem, __val);
+ 468:	fff00593          	addi	a1,zero,-1
+ 46c:	03448513          	addi	a0,s1,52
+ 470:	00000097          	auipc	ra,0x0
+ 474:	000080e7          	jalr	ra,0(ra) # 470 <.L108+0x8>
+
+0000000000000478 <.LM885>:
+ 478:	fd5ff06f          	jal	zero,44c <.L109>
+
+000000000000047c <.L117>:
+	if (_M_pi != nullptr)
+ 47c:	00050413          	addi	s0,a0,0
+
+0000000000000480 <.LBB2290>:
+ 480:	01013503          	ld	a0,16(sp)
+
+0000000000000484 <.LM894>:
+ 484:	00050863          	beq	a0,zero,494 <.L111>
+
+0000000000000488 <.LM895>:
+	  _M_pi->_M_release();
+ 488:	00000317          	auipc	t1,0x0
+ 48c:	00033303          	ld	t1,0(t1) # 488 <.LM895>
+ 490:	000300e7          	jalr	ra,0(t1)
+
+0000000000000494 <.L111>:
+ 494:	00040513          	addi	a0,s0,0
+
+0000000000000498 <.LEHB8>:
+ 498:	00000097          	auipc	ra,0x0
+ 49c:	000080e7          	jalr	ra,0(ra) # 498 <.LEHB8>
+
+00000000000004a0 <.L88>:
+  cursor cur(sec, pos);
+ 4a0:	01843703          	ld	a4,24(s0)
+
+00000000000004a4 <.LBB2153>:
+      __shared_ptr(const __shared_ptr&) noexcept = default;
+ 4a4:	00913423          	sd	s1,8(sp)
+
+00000000000004a8 <.LBB2146>:
+      : _M_pi(__r._M_pi)
+ 4a8:	00013823          	sd	zero,16(sp)
+
+00000000000004ac <.LBB2154>:
+      : sec(sec), pos(sec->begin + offset) {}
+ 4ac:	0084b783          	ld	a5,8(s1)
+ 4b0:	00e787b3          	add	a5,a5,a4
+
+00000000000004b4 <.LM908>:
+ 4b4:	00f13c23          	sd	a5,24(sp)
+
+00000000000004b8 <.L93>:
+    entry.low = cur.address();
+ 4b8:	00810913          	addi	s2,sp,8
+ 4bc:	00000997          	auipc	s3,0x0
+ 4c0:	0009b983          	ld	s3,0(s3) # 4bc <.L93+0x4>
+ 4c4:	ec1ff06f          	jal	zero,384 <.L104>
+
+00000000000004c8 <dwarf::rangelist::iterator::iterator(std::shared_ptr<dwarf::section> const&, unsigned long)>:
+rangelist::iterator::iterator(const std::shared_ptr<section> &sec,
+ 4c8:	fe010113          	addi	sp,sp,-32
+ 4cc:	00113c23          	sd	ra,24(sp)
+ 4d0:	00813823          	sd	s0,16(sp)
+ 4d4:	00913423          	sd	s1,8(sp)
+ 4d8:	00050413          	addi	s0,a0,0
+ 4dc:	00060493          	addi	s1,a2,0
+
+00000000000004e0 <.LBB2316>:
+      __shared_ptr(const __shared_ptr&) noexcept = default;
+ 4e0:	0005b783          	ld	a5,0(a1)
+ 4e4:	00f53023          	sd	a5,0(a0)
+
+00000000000004e8 <.LBB2319>:
+      : _M_pi(__r._M_pi)
+ 4e8:	0085b503          	ld	a0,8(a1)
+
+00000000000004ec <.LM921>:
+ 4ec:	00a43423          	sd	a0,8(s0)
+
+00000000000004f0 <.LM922>:
+	if (_M_pi != nullptr)
+ 4f0:	02050063          	beq	a0,zero,510 <.L127>
+
+00000000000004f4 <.LBB2321>:
+    if (__is_single_threaded())
+ 4f4:	00000797          	auipc	a5,0x0
+ 4f8:	0007b783          	ld	a5,0(a5) # 4f4 <.LBB2321>
+ 4fc:	0007c783          	lbu	a5,0(a5)
+ 500:	02078463          	beq	a5,zero,528 <.L128>
+
+0000000000000504 <.LBB2327>:
+  { *__mem += __val; }
+ 504:	03052783          	lw	a5,48(a0)
+ 508:	0017879b          	addiw	a5,a5,1
+ 50c:	02f52823          	sw	a5,48(a0)
+
+0000000000000510 <.L127>:
+    : sec(sec), base_addr(base_addr), pos(0) {
+ 510:	00943823          	sd	s1,16(s0)
+
+0000000000000514 <.LM935>:
+ 514:	00043c23          	sd	zero,24(s0)
+
+0000000000000518 <.LM936>:
+  ++(*this);
+ 518:	00040513          	addi	a0,s0,0
+
+000000000000051c <.LEHB9>:
+ 51c:	00000097          	auipc	ra,0x0
+ 520:	000080e7          	jalr	ra,0(ra) # 51c <.LEHB9>
+
+0000000000000524 <.LEHE9>:
+ 524:	03c0006f          	jal	zero,560 <.L134>
+
+0000000000000528 <.L128>:
+      __atomic_add(__mem, __val);
+ 528:	00100593          	addi	a1,zero,1
+
+000000000000052c <.LM940>:
+ 52c:	03050513          	addi	a0,a0,48
+
+0000000000000530 <.LM941>:
+ 530:	00000097          	auipc	ra,0x0
+ 534:	000080e7          	jalr	ra,0(ra) # 530 <.LM941>
+
+0000000000000538 <.LM942>:
+ 538:	fd9ff06f          	jal	zero,510 <.L127>
+
+000000000000053c <.L131>:
+	if (_M_pi != nullptr)
+ 53c:	00050493          	addi	s1,a0,0
+
+0000000000000540 <.LBB2344>:
+ 540:	00843503          	ld	a0,8(s0)
+
+0000000000000544 <.LM950>:
+ 544:	00050863          	beq	a0,zero,554 <.L130>
+
+0000000000000548 <.LM951>:
+	  _M_pi->_M_release();
+ 548:	00000317          	auipc	t1,0x0
+ 54c:	00033303          	ld	t1,0(t1) # 548 <.LM951>
+ 550:	000300e7          	jalr	ra,0(t1)
+
+0000000000000554 <.L130>:
+ 554:	00048513          	addi	a0,s1,0
+
+0000000000000558 <.LEHB10>:
+ 558:	00000097          	auipc	ra,0x0
+ 55c:	000080e7          	jalr	ra,0(ra) # 558 <.LEHB10>
+
+0000000000000560 <.L134>:
+}
+ 560:	01813083          	ld	ra,24(sp)
+ 564:	01013403          	ld	s0,16(sp)
+
+0000000000000568 <.LM955>:
+ 568:	00813483          	ld	s1,8(sp)
+
+000000000000056c <.LM956>:
+ 56c:	02010113          	addi	sp,sp,32
+ 570:	00008067          	jalr	zero,0(ra)
+
+0000000000000574 <dwarf::rangelist::begin() const>:
+rangelist::iterator rangelist::begin() const {
+ 574:	ff010113          	addi	sp,sp,-16
+ 578:	00113423          	sd	ra,8(sp)
+ 57c:	00813023          	sd	s0,0(sp)
+ 580:	00050413          	addi	s0,a0,0
+
+0000000000000584 <.LBB2345>:
+  if (sec)
+ 584:	0185b783          	ld	a5,24(a1)
+ 588:	02078463          	beq	a5,zero,5b0 <.L136>
+
+000000000000058c <.LM963>:
+    return iterator(sec, base_addr);
+ 58c:	0285b603          	ld	a2,40(a1)
+ 590:	01858593          	addi	a1,a1,24
+
+0000000000000594 <.LM965>:
+ 594:	00000097          	auipc	ra,0x0
+ 598:	000080e7          	jalr	ra,0(ra) # 594 <.LM965>
+
+000000000000059c <.L135>:
+}
+ 59c:	00040513          	addi	a0,s0,0
+ 5a0:	00813083          	ld	ra,8(sp)
+ 5a4:	00013403          	ld	s0,0(sp)
+
+00000000000005a8 <.LM967>:
+ 5a8:	01010113          	addi	sp,sp,16
+ 5ac:	00008067          	jalr	zero,0(ra)
+
+00000000000005b0 <.L136>:
+  return end();
+ 5b0:	00000097          	auipc	ra,0x0
+ 5b4:	000080e7          	jalr	ra,0(ra) # 5b0 <.L136>
+
+00000000000005b8 <.LM970>:
+ 5b8:	fe5ff06f          	jal	zero,59c <.L135>
+
+00000000000005bc <dwarf::rangelist::contains(unsigned long) const>:
+bool rangelist::contains(taddr addr) const {
+ 5bc:	f8010113          	addi	sp,sp,-128
+ 5c0:	06113c23          	sd	ra,120(sp)
+ 5c4:	06813823          	sd	s0,112(sp)
+ 5c8:	06913423          	sd	s1,104(sp)
+ 5cc:	00050493          	addi	s1,a0,0
+ 5d0:	00058413          	addi	s0,a1,0
+
+00000000000005d4 <.LBB2457>:
+  for (auto ent : *this)
+ 5d4:	00050593          	addi	a1,a0,0
+
+00000000000005d8 <.LM975>:
+ 5d8:	00010513          	addi	a0,sp,0
+
+00000000000005dc <.LEHB11>:
+ 5dc:	00000097          	auipc	ra,0x0
+ 5e0:	000080e7          	jalr	ra,0(ra) # 5dc <.LEHB11>
+
+00000000000005e4 <.LEHE11>:
+ 5e4:	00048593          	addi	a1,s1,0
+ 5e8:	03010513          	addi	a0,sp,48
+
+00000000000005ec <.LEHB12>:
+ 5ec:	00000097          	auipc	ra,0x0
+ 5f0:	000080e7          	jalr	ra,0(ra) # 5ec <.LEHB12>
+
+00000000000005f4 <.LEHE12>:
+ 5f4:	00010493          	addi	s1,sp,0
+
+00000000000005f8 <.L140>:
+  /** Dereference operator */
+  const rangelist::entry *operator->() const { return &entry; }
+
+  /** Equality operator */
+  bool operator==(const iterator &o) const {
+    return sec == o.sec && pos == o.pos;
+ 5f8:	00013703          	ld	a4,0(sp)
+ 5fc:	03013783          	ld	a5,48(sp)
+ 600:	16f70e63          	beq	a4,a5,77c <.L175>
+
+0000000000000604 <.L154>:
+ 604:	02813703          	ld	a4,40(sp)
+
+0000000000000608 <.LBB2466>:
+  bool contains(taddr addr) const { return low <= addr && addr < high; }
+ 608:	02013783          	ld	a5,32(sp)
+ 60c:	00f47a63          	bgeu	s0,a5,620 <.L156>
+
+0000000000000610 <.L141>:
+ 610:	00048513          	addi	a0,s1,0
+
+0000000000000614 <.LEHB13>:
+ 614:	00000097          	auipc	ra,0x0
+ 618:	000080e7          	jalr	ra,0(ra) # 614 <.LEHB13>
+
+000000000000061c <.LEHE13>:
+ 61c:	fddff06f          	jal	zero,5f8 <.L140>
+
+0000000000000620 <.L156>:
+ 620:	fee478e3          	bgeu	s0,a4,610 <.L141>
+
+0000000000000624 <.LBB2470>:
+	if (_M_pi != nullptr)
+ 624:	03813403          	ld	s0,56(sp)
+
+0000000000000628 <.LM1006>:
+ 628:	02040463          	beq	s0,zero,650 <.L143>
+
+000000000000062c <.LBB2476>:
+    if (__is_single_threaded())
+ 62c:	00000797          	auipc	a5,0x0
+ 630:	0007b783          	ld	a5,0(a5) # 62c <.LBB2476>
+
+0000000000000634 <.LM1015>:
+ 634:	0007c783          	lbu	a5,0(a5)
+ 638:	04078e63          	beq	a5,zero,694 <.L144>
+
+000000000000063c <.LBB2482>:
+    _Atomic_word __result = *__mem;
+ 63c:	03042503          	lw	a0,48(s0)
+
+0000000000000640 <.LM1020>:
+    *__mem += __val;
+ 640:	fff5079b          	addiw	a5,a0,-1
+ 644:	02f42823          	sw	a5,48(s0)
+
+0000000000000648 <.L145>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 648:	00100793          	addi	a5,zero,1
+ 64c:	04f50e63          	beq	a0,a5,6a8 <.L176>
+
+0000000000000650 <.L143>:
+	if (_M_pi != nullptr)
+ 650:	00813403          	ld	s0,8(sp)
+
+0000000000000654 <.LM1031>:
+ 654:	02040463          	beq	s0,zero,67c <.L148>
+
+0000000000000658 <.LBB2509>:
+    if (__is_single_threaded())
+ 658:	00000797          	auipc	a5,0x0
+ 65c:	0007b783          	ld	a5,0(a5) # 658 <.LBB2509>
+ 660:	0007c783          	lbu	a5,0(a5)
+ 664:	0a078263          	beq	a5,zero,708 <.L149>
+
+0000000000000668 <.LBB2515>:
+    _Atomic_word __result = *__mem;
+ 668:	03042503          	lw	a0,48(s0)
+
+000000000000066c <.LM1044>:
+    *__mem += __val;
+ 66c:	fff5079b          	addiw	a5,a0,-1
+ 670:	02f42823          	sw	a5,48(s0)
+
+0000000000000674 <.L150>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 674:	00100793          	addi	a5,zero,1
+ 678:	0af50263          	beq	a0,a5,71c <.L177>
+
+000000000000067c <.L148>:
+      return true;
+ 67c:	00100513          	addi	a0,zero,1
+
+0000000000000680 <.L173>:
+}
+ 680:	07813083          	ld	ra,120(sp)
+ 684:	07013403          	ld	s0,112(sp)
+ 688:	06813483          	ld	s1,104(sp)
+ 68c:	08010113          	addi	sp,sp,128
+ 690:	00008067          	jalr	zero,0(ra)
+
+0000000000000694 <.L144>:
+      return __exchange_and_add(__mem, __val);
+ 694:	fff00593          	addi	a1,zero,-1
+ 698:	03040513          	addi	a0,s0,48
+ 69c:	00000097          	auipc	ra,0x0
+ 6a0:	000080e7          	jalr	ra,0(ra) # 69c <.L144+0x8>
+
+00000000000006a4 <.LM1055>:
+ 6a4:	fa5ff06f          	jal	zero,648 <.L145>
+
+00000000000006a8 <.L176>:
+	_M_dispose();
+ 6a8:	00043783          	ld	a5,0(s0)
+ 6ac:	0107b783          	ld	a5,16(a5)
+ 6b0:	00040513          	addi	a0,s0,0
+ 6b4:	000780e7          	jalr	ra,0(a5)
+
+00000000000006b8 <.LM1060>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 6b8:	0ff0000f          	fence	iorw,iorw
+
+00000000000006bc <.LBB2488>:
+    if (__is_single_threaded())
+ 6bc:	00000797          	auipc	a5,0x0
+ 6c0:	0007b783          	ld	a5,0(a5) # 6bc <.LBB2488>
+ 6c4:	0007c783          	lbu	a5,0(a5)
+ 6c8:	02078663          	beq	a5,zero,6f4 <.L146>
+
+00000000000006cc <.LBB2492>:
+    _Atomic_word __result = *__mem;
+ 6cc:	03442503          	lw	a0,52(s0)
+
+00000000000006d0 <.LM1070>:
+    *__mem += __val;
+ 6d0:	fff5079b          	addiw	a5,a0,-1
+ 6d4:	02f42a23          	sw	a5,52(s0)
+
+00000000000006d8 <.L147>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 6d8:	00100793          	addi	a5,zero,1
+ 6dc:	f6f51ae3          	bne	a0,a5,650 <.L143>
+
+00000000000006e0 <.LM1075>:
+	    _M_destroy();
+ 6e0:	00043783          	ld	a5,0(s0)
+ 6e4:	0187b783          	ld	a5,24(a5)
+ 6e8:	00040513          	addi	a0,s0,0
+ 6ec:	000780e7          	jalr	ra,0(a5)
+
+00000000000006f0 <.LVL324>:
+ 6f0:	f61ff06f          	jal	zero,650 <.L143>
+
+00000000000006f4 <.L146>:
+      return __exchange_and_add(__mem, __val);
+ 6f4:	fff00593          	addi	a1,zero,-1
+ 6f8:	03440513          	addi	a0,s0,52
+ 6fc:	00000097          	auipc	ra,0x0
+ 700:	000080e7          	jalr	ra,0(ra) # 6fc <.L146+0x8>
+
+0000000000000704 <.LM1078>:
+ 704:	fd5ff06f          	jal	zero,6d8 <.L147>
+
+0000000000000708 <.L149>:
+ 708:	fff00593          	addi	a1,zero,-1
+ 70c:	03040513          	addi	a0,s0,48
+ 710:	00000097          	auipc	ra,0x0
+ 714:	000080e7          	jalr	ra,0(ra) # 710 <.L149+0x8>
+
+0000000000000718 <.LM1082>:
+ 718:	f5dff06f          	jal	zero,674 <.L150>
+
+000000000000071c <.L177>:
+	_M_dispose();
+ 71c:	00043783          	ld	a5,0(s0)
+ 720:	0107b783          	ld	a5,16(a5)
+ 724:	00040513          	addi	a0,s0,0
+ 728:	000780e7          	jalr	ra,0(a5)
+
+000000000000072c <.LM1087>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 72c:	0ff0000f          	fence	iorw,iorw
+
+0000000000000730 <.LBB2521>:
+    if (__is_single_threaded())
+ 730:	00000797          	auipc	a5,0x0
+ 734:	0007b783          	ld	a5,0(a5) # 730 <.LBB2521>
+ 738:	0007c783          	lbu	a5,0(a5)
+ 73c:	02078663          	beq	a5,zero,768 <.L151>
+
+0000000000000740 <.LBB2525>:
+    _Atomic_word __result = *__mem;
+ 740:	03442503          	lw	a0,52(s0)
+
+0000000000000744 <.LM1097>:
+    *__mem += __val;
+ 744:	fff5079b          	addiw	a5,a0,-1
+ 748:	02f42a23          	sw	a5,52(s0)
+
+000000000000074c <.L152>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 74c:	00100793          	addi	a5,zero,1
+ 750:	f2f516e3          	bne	a0,a5,67c <.L148>
+
+0000000000000754 <.LM1102>:
+	    _M_destroy();
+ 754:	00043783          	ld	a5,0(s0)
+ 758:	0187b783          	ld	a5,24(a5)
+ 75c:	00040513          	addi	a0,s0,0
+ 760:	000780e7          	jalr	ra,0(a5)
+
+0000000000000764 <.LVL335>:
+ 764:	f19ff06f          	jal	zero,67c <.L148>
+
+0000000000000768 <.L151>:
+      return __exchange_and_add(__mem, __val);
+ 768:	fff00593          	addi	a1,zero,-1
+ 76c:	03440513          	addi	a0,s0,52
+ 770:	00000097          	auipc	ra,0x0
+ 774:	000080e7          	jalr	ra,0(ra) # 770 <.L151+0x8>
+
+0000000000000778 <.LM1105>:
+ 778:	fd5ff06f          	jal	zero,74c <.L152>
+
+000000000000077c <.L175>:
+    return sec == o.sec && pos == o.pos;
+ 77c:	01813703          	ld	a4,24(sp)
+ 780:	04813783          	ld	a5,72(sp)
+ 784:	e8f710e3          	bne	a4,a5,604 <.L154>
+
+0000000000000788 <.LBB2539>:
+	if (_M_pi != nullptr)
+ 788:	03813403          	ld	s0,56(sp)
+
+000000000000078c <.LM1114>:
+ 78c:	02040463          	beq	s0,zero,7b4 <.L157>
+
+0000000000000790 <.LBB2545>:
+    if (__is_single_threaded())
+ 790:	00000797          	auipc	a5,0x0
+ 794:	0007b783          	ld	a5,0(a5) # 790 <.LBB2545>
+ 798:	0007c783          	lbu	a5,0(a5)
+ 79c:	04078663          	beq	a5,zero,7e8 <.L158>
+
+00000000000007a0 <.LBB2551>:
+    _Atomic_word __result = *__mem;
+ 7a0:	03042503          	lw	a0,48(s0)
+
+00000000000007a4 <.LM1127>:
+    *__mem += __val;
+ 7a4:	fff5079b          	addiw	a5,a0,-1
+ 7a8:	02f42823          	sw	a5,48(s0)
+
+00000000000007ac <.L159>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 7ac:	00100793          	addi	a5,zero,1
+ 7b0:	04f50663          	beq	a0,a5,7fc <.L178>
+
+00000000000007b4 <.L157>:
+	if (_M_pi != nullptr)
+ 7b4:	00813403          	ld	s0,8(sp)
+
+00000000000007b8 <.LM1138>:
+ 7b8:	02040463          	beq	s0,zero,7e0 <.L162>
+
+00000000000007bc <.LBB2577>:
+    if (__is_single_threaded())
+ 7bc:	00000797          	auipc	a5,0x0
+ 7c0:	0007b783          	ld	a5,0(a5) # 7bc <.LBB2577>
+ 7c4:	0007c783          	lbu	a5,0(a5)
+ 7c8:	08078a63          	beq	a5,zero,85c <.L163>
+
+00000000000007cc <.LBB2583>:
+    _Atomic_word __result = *__mem;
+ 7cc:	03042503          	lw	a0,48(s0)
+
+00000000000007d0 <.LM1151>:
+    *__mem += __val;
+ 7d0:	fff5079b          	addiw	a5,a0,-1
+ 7d4:	02f42823          	sw	a5,48(s0)
+
+00000000000007d8 <.L164>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 7d8:	00100793          	addi	a5,zero,1
+ 7dc:	08f50a63          	beq	a0,a5,870 <.L179>
+
+00000000000007e0 <.L162>:
+  return false;
+ 7e0:	00000513          	addi	a0,zero,0
+ 7e4:	e9dff06f          	jal	zero,680 <.L173>
+
+00000000000007e8 <.L158>:
+      return __exchange_and_add(__mem, __val);
+ 7e8:	fff00593          	addi	a1,zero,-1
+ 7ec:	03040513          	addi	a0,s0,48
+ 7f0:	00000097          	auipc	ra,0x0
+ 7f4:	000080e7          	jalr	ra,0(ra) # 7f0 <.L158+0x8>
+
+00000000000007f8 <.LM1161>:
+ 7f8:	fb5ff06f          	jal	zero,7ac <.L159>
+
+00000000000007fc <.L178>:
+	_M_dispose();
+ 7fc:	00043783          	ld	a5,0(s0)
+ 800:	0107b783          	ld	a5,16(a5)
+ 804:	00040513          	addi	a0,s0,0
+ 808:	000780e7          	jalr	ra,0(a5)
+
+000000000000080c <.LM1166>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 80c:	0ff0000f          	fence	iorw,iorw
+
+0000000000000810 <.LBB2557>:
+    if (__is_single_threaded())
+ 810:	00000797          	auipc	a5,0x0
+ 814:	0007b783          	ld	a5,0(a5) # 810 <.LBB2557>
+ 818:	0007c783          	lbu	a5,0(a5)
+ 81c:	02078663          	beq	a5,zero,848 <.L160>
+
+0000000000000820 <.LBB2561>:
+    _Atomic_word __result = *__mem;
+ 820:	03442503          	lw	a0,52(s0)
+
+0000000000000824 <.LM1176>:
+    *__mem += __val;
+ 824:	fff5079b          	addiw	a5,a0,-1
+ 828:	02f42a23          	sw	a5,52(s0)
+
+000000000000082c <.L161>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 82c:	00100793          	addi	a5,zero,1
+ 830:	f8f512e3          	bne	a0,a5,7b4 <.L157>
+
+0000000000000834 <.LM1181>:
+	    _M_destroy();
+ 834:	00043783          	ld	a5,0(s0)
+ 838:	0187b783          	ld	a5,24(a5)
+ 83c:	00040513          	addi	a0,s0,0
+ 840:	000780e7          	jalr	ra,0(a5)
+
+0000000000000844 <.LVL359>:
+ 844:	f71ff06f          	jal	zero,7b4 <.L157>
+
+0000000000000848 <.L160>:
+      return __exchange_and_add(__mem, __val);
+ 848:	fff00593          	addi	a1,zero,-1
+ 84c:	03440513          	addi	a0,s0,52
+ 850:	00000097          	auipc	ra,0x0
+ 854:	000080e7          	jalr	ra,0(ra) # 850 <.L160+0x8>
+
+0000000000000858 <.LM1184>:
+ 858:	fd5ff06f          	jal	zero,82c <.L161>
+
+000000000000085c <.L163>:
+ 85c:	fff00593          	addi	a1,zero,-1
+ 860:	03040513          	addi	a0,s0,48
+ 864:	00000097          	auipc	ra,0x0
+ 868:	000080e7          	jalr	ra,0(ra) # 864 <.L163+0x8>
+
+000000000000086c <.LM1188>:
+ 86c:	f6dff06f          	jal	zero,7d8 <.L164>
+
+0000000000000870 <.L179>:
+	_M_dispose();
+ 870:	00043783          	ld	a5,0(s0)
+ 874:	0107b783          	ld	a5,16(a5)
+ 878:	00040513          	addi	a0,s0,0
+ 87c:	000780e7          	jalr	ra,0(a5)
+
+0000000000000880 <.LM1193>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 880:	0ff0000f          	fence	iorw,iorw
+
+0000000000000884 <.LBB2589>:
+    if (__is_single_threaded())
+ 884:	00000797          	auipc	a5,0x0
+ 888:	0007b783          	ld	a5,0(a5) # 884 <.LBB2589>
+ 88c:	0007c783          	lbu	a5,0(a5)
+ 890:	02078663          	beq	a5,zero,8bc <.L165>
+
+0000000000000894 <.LBB2593>:
+    _Atomic_word __result = *__mem;
+ 894:	03442503          	lw	a0,52(s0)
+
+0000000000000898 <.LM1203>:
+    *__mem += __val;
+ 898:	fff5079b          	addiw	a5,a0,-1
+ 89c:	02f42a23          	sw	a5,52(s0)
+
+00000000000008a0 <.L166>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 8a0:	00100793          	addi	a5,zero,1
+ 8a4:	f2f51ee3          	bne	a0,a5,7e0 <.L162>
+
+00000000000008a8 <.LM1208>:
+	    _M_destroy();
+ 8a8:	00043783          	ld	a5,0(s0)
+ 8ac:	0187b783          	ld	a5,24(a5)
+ 8b0:	00040513          	addi	a0,s0,0
+ 8b4:	000780e7          	jalr	ra,0(a5)
+
+00000000000008b8 <.LVL370>:
+ 8b8:	f29ff06f          	jal	zero,7e0 <.L162>
+
+00000000000008bc <.L165>:
+      return __exchange_and_add(__mem, __val);
+ 8bc:	fff00593          	addi	a1,zero,-1
+ 8c0:	03440513          	addi	a0,s0,52
+ 8c4:	00000097          	auipc	ra,0x0
+ 8c8:	000080e7          	jalr	ra,0(ra) # 8c4 <.L165+0x8>
+
+00000000000008cc <.LM1211>:
+ 8cc:	fd5ff06f          	jal	zero,8a0 <.L166>
+
+00000000000008d0 <.L172>:
+	if (_M_pi != nullptr)
+ 8d0:	00050413          	addi	s0,a0,0
+
+00000000000008d4 <.LBB2614>:
+ 8d4:	03813503          	ld	a0,56(sp)
+
+00000000000008d8 <.LM1220>:
+ 8d8:	00050863          	beq	a0,zero,8e8 <.L169>
+
+00000000000008dc <.LM1221>:
+	  _M_pi->_M_release();
+ 8dc:	00000317          	auipc	t1,0x0
+ 8e0:	00033303          	ld	t1,0(t1) # 8dc <.LM1221>
+ 8e4:	000300e7          	jalr	ra,0(t1)
+
+00000000000008e8 <.L169>:
+	if (_M_pi != nullptr)
+ 8e8:	00813503          	ld	a0,8(sp)
+
+00000000000008ec <.LM1228>:
+ 8ec:	00050863          	beq	a0,zero,8fc <.L170>
+
+00000000000008f0 <.LM1229>:
+	  _M_pi->_M_release();
+ 8f0:	00000317          	auipc	t1,0x0
+ 8f4:	00033303          	ld	t1,0(t1) # 8f0 <.LM1229>
+ 8f8:	000300e7          	jalr	ra,0(t1)
+
+00000000000008fc <.L170>:
+ 8fc:	00040513          	addi	a0,s0,0
+
+0000000000000900 <.LEHB14>:
+ 900:	00000097          	auipc	ra,0x0
+ 904:	000080e7          	jalr	ra,0(ra) # 900 <.LEHB14>
+
+0000000000000908 <.L171>:
+	if (_M_pi != nullptr)
+ 908:	00050413          	addi	s0,a0,0
+
+000000000000090c <.LM1232>:
+ 90c:	fddff06f          	jal	zero,8e8 <.L169>
+
+0000000000000910 <dwarf::rangelist::rangelist(std::initializer_list<std::pair<unsigned long, unsigned long> > const&)>:
+rangelist::rangelist(const initializer_list<pair<taddr, taddr>> &ranges) {
+ 910:	fc010113          	addi	sp,sp,-64
+ 914:	02113c23          	sd	ra,56(sp)
+ 918:	02813823          	sd	s0,48(sp)
+ 91c:	02913423          	sd	s1,40(sp)
+ 920:	03213023          	sd	s2,32(sp)
+ 924:	01313c23          	sd	s3,24(sp)
+ 928:	01413823          	sd	s4,16(sp)
+ 92c:	00050413          	addi	s0,a0,0
+
+0000000000000930 <.LBB3034>:
+	: _M_start(), _M_finish(), _M_end_of_storage()
+ 930:	00053023          	sd	zero,0(a0)
+
+0000000000000934 <.LM1456>:
+ 934:	00053423          	sd	zero,8(a0)
+
+0000000000000938 <.LM1457>:
+ 938:	00053823          	sd	zero,16(a0)
+
+000000000000093c <.LBB3041>:
+      : _M_ptr(0), _M_refcount()
+ 93c:	00053c23          	sd	zero,24(a0)
+
+0000000000000940 <.LBB3044>:
+      constexpr __shared_count() noexcept : _M_pi(0)
+ 940:	02053023          	sd	zero,32(a0)
+
+0000000000000944 <.LBB3047>:
+  synthetic.reserve(ranges.size() * 2 + 2);
+ 944:	0085b783          	ld	a5,8(a1)
+ 948:	00178793          	addi	a5,a5,1
+
+000000000000094c <.LM1469>:
+ 94c:	00179693          	slli	a3,a5,0x1
+
+0000000000000950 <.LBB3048>:
+    _GLIBCXX20_CONSTEXPR
+    void
+    vector<_Tp, _Alloc>::
+    reserve(size_type __n)
+    {
+      if (__n > this->max_size())
+ 950:	fff00713          	addi	a4,zero,-1
+ 954:	00475713          	srli	a4,a4,0x4
+ 958:	02d76063          	bltu	a4,a3,978 <.L252>
+ 95c:	00058913          	addi	s2,a1,0
+
+0000000000000960 <.LM1472>:
+	__throw_length_error(__N("vector::reserve"));
+      if (this->capacity() < __n)
+ 960:	0a068063          	beq	a3,zero,a00 <.L230>
+
+0000000000000964 <.LBB3051>:
+	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+ 964:	00479493          	slli	s1,a5,0x4
+ 968:	00048513          	addi	a0,s1,0
+
+000000000000096c <.LEHB15>:
+ 96c:	00000097          	auipc	ra,0x0
+ 970:	000080e7          	jalr	ra,0(ra) # 96c <.LEHB15>
+
+0000000000000974 <.LM1478>:
+ 974:	0480006f          	jal	zero,9bc <.L253>
+
+0000000000000978 <.L252>:
+	__throw_length_error(__N("vector::reserve"));
+ 978:	00000517          	auipc	a0,0x0
+ 97c:	00050513          	addi	a0,a0,0 # 978 <.L252>
+ 980:	00000097          	auipc	ra,0x0
+ 984:	000080e7          	jalr	ra,0(ra) # 980 <.L252+0x8>
+
+0000000000000988 <.L248>:
+	if (_M_pi != nullptr)
+ 988:	00050493          	addi	s1,a0,0
+
+000000000000098c <.LBB3220>:
+ 98c:	02043503          	ld	a0,32(s0)
+
+0000000000000990 <.LM1488>:
+ 990:	00050863          	beq	a0,zero,9a0 <.L246>
+
+0000000000000994 <.LM1489>:
+	  _M_pi->_M_release();
+ 994:	00000317          	auipc	t1,0x0
+ 998:	00033303          	ld	t1,0(t1) # 994 <.LM1489>
+ 99c:	000300e7          	jalr	ra,0(t1)
+
+00000000000009a0 <.L246>:
+	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+ 9a0:	00043503          	ld	a0,0(s0)
+
+00000000000009a4 <.LBB3223>:
+	if (__p)
+ 9a4:	00050663          	beq	a0,zero,9b0 <.L247>
+
+00000000000009a8 <.LBB3228>:
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+ 9a8:	00000097          	auipc	ra,0x0
+ 9ac:	000080e7          	jalr	ra,0(ra) # 9a8 <.LBB3228>
+
+00000000000009b0 <.L247>:
+      ~__new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+ 9b0:	00048513          	addi	a0,s1,0
+
+00000000000009b4 <.LEHB16>:
+ 9b4:	00000097          	auipc	ra,0x0
+ 9b8:	000080e7          	jalr	ra,0(ra) # 9b4 <.LEHB16>
+
+00000000000009bc <.L253>:
+	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+ 9bc:	00050993          	addi	s3,a0,0
+
+00000000000009c0 <.LBE3061>:
+	  pointer __tmp;
+#if __cplusplus >= 201103L
+	  if _GLIBCXX17_CONSTEXPR (_S_use_relocate())
+	    {
+	      __tmp = this->_M_allocate(__n);
+	      _S_relocate(this->_M_impl._M_start, this->_M_impl._M_finish,
+ 9c0:	00043a03          	ld	s4,0(s0)
+
+00000000000009c4 <.LBB3062>:
+    inline __enable_if_t<std::__is_bitwise_relocatable<_Tp>::value, _Tp*>
+    __relocate_a_1(_Tp* __first, _Tp* __last,
+		   _Tp* __result,
+		   [[__maybe_unused__]] allocator<_Up>& __alloc) noexcept
+    {
+      ptrdiff_t __count = __last - __first;
+ 9c4:	00843603          	ld	a2,8(s0)
+ 9c8:	41460633          	sub	a2,a2,s4
+
+00000000000009cc <.LM1517>:
+      if (__count > 0)
+ 9cc:	00c04663          	blt	zero,a2,9d8 <.L254>
+
+00000000000009d0 <.LBB3073>:
+ 9d0:	020a0063          	beq	s4,zero,9f0 <.L233>
+ 9d4:	0100006f          	jal	zero,9e4 <.L232>
+
+00000000000009d8 <.L254>:
+	      __gnu_cxx::__normal_iterator<_Tp*, void> __out(__result);
+	      __out = std::__relocate_a_1(__first, __last, __out, __alloc);
+	      return __out.base();
+	    }
+#endif
+	  __builtin_memmove(__result, __first, __count * sizeof(_Tp));
+ 9d8:	000a0593          	addi	a1,s4,0
+ 9dc:	00000097          	auipc	ra,0x0
+ 9e0:	000080e7          	jalr	ra,0(ra) # 9dc <.L254+0x4>
+
+00000000000009e4 <.L232>:
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+ 9e4:	000a0513          	addi	a0,s4,0
+ 9e8:	00000097          	auipc	ra,0x0
+ 9ec:	000080e7          	jalr	ra,0(ra) # 9e8 <.L232+0x4>
+
+00000000000009f0 <.L233>:
+	    }
+	  _GLIBCXX_ASAN_ANNOTATE_REINIT;
+	  _M_deallocate(this->_M_impl._M_start,
+			this->_M_impl._M_end_of_storage
+			- this->_M_impl._M_start);
+	  this->_M_impl._M_start = __tmp;
+ 9f0:	01343023          	sd	s3,0(s0)
+
+00000000000009f4 <.LM1530>:
+	  this->_M_impl._M_finish = __tmp + __old_size;
+ 9f4:	01343423          	sd	s3,8(s0)
+
+00000000000009f8 <.LM1531>:
+	  this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+ 9f8:	009989b3          	add	s3,s3,s1
+
+00000000000009fc <.LM1532>:
+ 9fc:	01343823          	sd	s3,16(s0)
+
+0000000000000a00 <.L230>:
+      constexpr size_type
+      size() const noexcept { return _M_len; }
+
+      // First element.
+      constexpr const_iterator
+      begin() const noexcept { return _M_array; }
+ a00:	00093483          	ld	s1,0(s2)
+
+0000000000000a04 <.LBB3089>:
+
+      // One past the last element.
+      constexpr const_iterator
+      end() const noexcept { return begin() + size(); }
+ a04:	00893903          	ld	s2,8(s2)
+
+0000000000000a08 <.LM1542>:
+ a08:	00491913          	slli	s2,s2,0x4
+
+0000000000000a0c <.LM1543>:
+ a0c:	01248933          	add	s2,s1,s2
+
+0000000000000a10 <.LBE3089>:
+  for (auto &range : ranges) {
+ a10:	07248863          	beq	s1,s2,a80 <.L234>
+
+0000000000000a14 <.LBB3092>:
+				     __x);
+	    ++this->_M_impl._M_finish;
+	    _GLIBCXX_ASAN_ANNOTATE_GREW(1);
+	  }
+	else
+	  _M_realloc_insert(end(), __x);
+ a14:	00000997          	auipc	s3,0x0
+ a18:	0009b983          	ld	s3,0(s3) # a14 <.LBB3092>
+ a1c:	0280006f          	jal	zero,a44 <.L239>
+
+0000000000000a20 <.L235>:
+ a20:	00048613          	addi	a2,s1,0
+ a24:	00040513          	addi	a0,s0,0
+
+0000000000000a28 <.LEHB17>:
+ a28:	000980e7          	jalr	ra,0(s3)
+
+0000000000000a2c <.LM1551>:
+ a2c:	0340006f          	jal	zero,a60 <.L236>
+
+0000000000000a30 <.L237>:
+ a30:	00848613          	addi	a2,s1,8
+ a34:	00040513          	addi	a0,s0,0
+ a38:	000980e7          	jalr	ra,0(s3)
+
+0000000000000a3c <.L238>:
+ a3c:	01048493          	addi	s1,s1,16
+
+0000000000000a40 <.LM1560>:
+ a40:	04990063          	beq	s2,s1,a80 <.L234>
+
+0000000000000a44 <.L239>:
+	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+ a44:	00843583          	ld	a1,8(s0)
+
+0000000000000a48 <.LM1564>:
+ a48:	01043783          	ld	a5,16(s0)
+ a4c:	fcf58ae3          	beq	a1,a5,a20 <.L235>
+
+0000000000000a50 <.LBB3096>:
+#if __cplusplus >= 201103L
+      template<typename _Up, typename... _Args>
+	void
+	construct(_Up* __p, _Args&&... __args)
+	noexcept(std::is_nothrow_constructible<_Up, _Args...>::value)
+	{ ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+ a50:	0004b783          	ld	a5,0(s1)
+ a54:	00f5b023          	sd	a5,0(a1)
+
+0000000000000a58 <.LBE3096>:
+	    ++this->_M_impl._M_finish;
+ a58:	00858593          	addi	a1,a1,8
+ a5c:	00b43423          	sd	a1,8(s0)
+
+0000000000000a60 <.L236>:
+	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+ a60:	00843583          	ld	a1,8(s0)
+
+0000000000000a64 <.LM1574>:
+ a64:	01043783          	ld	a5,16(s0)
+ a68:	fcf584e3          	beq	a1,a5,a30 <.L237>
+
+0000000000000a6c <.LBB3104>:
+ a6c:	0084b783          	ld	a5,8(s1)
+ a70:	00f5b023          	sd	a5,0(a1)
+
+0000000000000a74 <.LBE3104>:
+	    ++this->_M_impl._M_finish;
+ a74:	00858593          	addi	a1,a1,8
+ a78:	00b43423          	sd	a1,8(s0)
+ a7c:	fc1ff06f          	jal	zero,a3c <.L238>
+
+0000000000000a80 <.L234>:
+  synthetic.push_back(0);
+ a80:	00013023          	sd	zero,0(sp)
+
+0000000000000a84 <.LBB3110>:
+
+#if __cplusplus >= 201103L
+      _GLIBCXX20_CONSTEXPR
+      void
+      push_back(value_type&& __x)
+      { emplace_back(std::move(__x)); }
+ a84:	00010593          	addi	a1,sp,0
+ a88:	00040513          	addi	a0,s0,0
+ a8c:	00000317          	auipc	t1,0x0
+ a90:	00033303          	ld	t1,0(t1) # a8c <.LBB3110+0x8>
+ a94:	000300e7          	jalr	ra,0(t1)
+
+0000000000000a98 <.LBE3110>:
+  synthetic.push_back(0);
+ a98:	00013423          	sd	zero,8(sp)
+
+0000000000000a9c <.LBB3112>:
+ a9c:	00810593          	addi	a1,sp,8
+
+0000000000000aa0 <.LM1590>:
+ aa0:	00040513          	addi	a0,s0,0
+ aa4:	00000317          	auipc	t1,0x0
+ aa8:	00033303          	ld	t1,0(t1) # aa4 <.LM1590+0x4>
+ aac:	000300e7          	jalr	ra,0(t1)
+
+0000000000000ab0 <.LBB3114>:
+      { return _M_data_ptr(this->_M_impl._M_start); }
+ ab0:	00043903          	ld	s2,0(s0)
+
+0000000000000ab4 <.LBB3116>:
+      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+ ab4:	00843483          	ld	s1,8(s0)
+
+0000000000000ab8 <.LBB3118>:
+	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+ ab8:	06000513          	addi	a0,zero,96
+ abc:	00000097          	auipc	ra,0x0
+ ac0:	000080e7          	jalr	ra,0(ra) # abc <.LBB3118+0x4>
+
+0000000000000ac4 <.LBB3132>:
+ ac4:	00052423          	sw	zero,8(a0)
+ ac8:	00052623          	sw	zero,12(a0)
+ acc:	00052823          	sw	zero,16(a0)
+ ad0:	00052a23          	sw	zero,20(a0)
+ ad4:	00052c23          	sw	zero,24(a0)
+ ad8:	00052e23          	sw	zero,28(a0)
+ adc:	02053023          	sd	zero,32(a0)
+ ae0:	02053423          	sd	zero,40(a0)
+
+0000000000000ae4 <.LBE3139>:
+      : _M_use_count(1), _M_weak_count(1) { }
+ ae4:	00100793          	addi	a5,zero,1
+ ae8:	02f52823          	sw	a5,48(a0)
+
+0000000000000aec <.LM1629>:
+ aec:	02f52a23          	sw	a5,52(a0)
+
+0000000000000af0 <.LBE3137>:
+	: _M_impl(__a)
+ af0:	00000797          	auipc	a5,0x0
+ af4:	0007b783          	ld	a5,0(a5) # af0 <.LBE3137>
+ af8:	01078793          	addi	a5,a5,16
+ afc:	00f53023          	sd	a5,0(a0)
+
+0000000000000b00 <.LBB3142>:
+      : type(type), begin((char *)begin), end((char *)begin + length), fmt(fmt),
+ b00:	00900793          	addi	a5,zero,9
+ b04:	02f52c23          	sw	a5,56(a0)
+
+0000000000000b08 <.LM1641>:
+ b08:	05253023          	sd	s2,64(a0)
+
+0000000000000b0c <.LM1642>:
+ b0c:	04953423          	sd	s1,72(a0)
+
+0000000000000b10 <.LM1643>:
+ b10:	04052823          	sw	zero,80(a0)
+
+0000000000000b14 <.LM1644>:
+        ord(ord), addr_size(addr_size) {}
+ b14:	04052a23          	sw	zero,84(a0)
+
+0000000000000b18 <.LM1645>:
+ b18:	00800793          	addi	a5,zero,8
+ b1c:	04f52c23          	sw	a5,88(a0)
+
+0000000000000b20 <.LBB3149>:
+ b20:	03850793          	addi	a5,a0,56
+
+0000000000000b24 <.LBB3174>:
+ b24:	00f43c23          	sd	a5,24(s0)
+
+0000000000000b28 <.LBB3175>:
+	_Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+ b28:	02043483          	ld	s1,32(s0)
+
+0000000000000b2c <.LM1676>:
+	__r._M_pi = _M_pi;
+ b2c:	02a43023          	sd	a0,32(s0)
+
+0000000000000b30 <.LBB3178>:
+	if (_M_pi != nullptr)
+ b30:	02048463          	beq	s1,zero,b58 <.L240>
+
+0000000000000b34 <.LBB3181>:
+    if (__is_single_threaded())
+ b34:	00000797          	auipc	a5,0x0
+ b38:	0007b783          	ld	a5,0(a5) # b34 <.LBB3181>
+
+0000000000000b3c <.LM1689>:
+ b3c:	0007c783          	lbu	a5,0(a5)
+ b40:	02078e63          	beq	a5,zero,b7c <.L241>
+
+0000000000000b44 <.LBB3187>:
+    _Atomic_word __result = *__mem;
+ b44:	0304a503          	lw	a0,48(s1)
+
+0000000000000b48 <.LM1694>:
+    *__mem += __val;
+ b48:	fff5079b          	addiw	a5,a0,-1
+ b4c:	02f4a823          	sw	a5,48(s1)
+
+0000000000000b50 <.L242>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ b50:	00100793          	addi	a5,zero,1
+ b54:	02f50e63          	beq	a0,a5,b90 <.L255>
+
+0000000000000b58 <.L240>:
+  base_addr = 0;
+ b58:	02043423          	sd	zero,40(s0)
+
+0000000000000b5c <.LM1706>:
+}
+ b5c:	03813083          	ld	ra,56(sp)
+ b60:	03013403          	ld	s0,48(sp)
+
+0000000000000b64 <.LM1707>:
+ b64:	02813483          	ld	s1,40(sp)
+ b68:	02013903          	ld	s2,32(sp)
+ b6c:	01813983          	ld	s3,24(sp)
+ b70:	01013a03          	ld	s4,16(sp)
+ b74:	04010113          	addi	sp,sp,64
+ b78:	00008067          	jalr	zero,0(ra)
+
+0000000000000b7c <.L241>:
+      return __exchange_and_add(__mem, __val);
+ b7c:	fff00593          	addi	a1,zero,-1
+ b80:	03048513          	addi	a0,s1,48
+
+0000000000000b84 <.LM1710>:
+ b84:	00000097          	auipc	ra,0x0
+ b88:	000080e7          	jalr	ra,0(ra) # b84 <.LM1710>
+
+0000000000000b8c <.LM1711>:
+ b8c:	fc5ff06f          	jal	zero,b50 <.L242>
+
+0000000000000b90 <.L255>:
+	_M_dispose();
+ b90:	0004b783          	ld	a5,0(s1)
+ b94:	0107b783          	ld	a5,16(a5)
+ b98:	00048513          	addi	a0,s1,0
+ b9c:	000780e7          	jalr	ra,0(a5)
+
+0000000000000ba0 <.LM1716>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ ba0:	0ff0000f          	fence	iorw,iorw
+
+0000000000000ba4 <.LBB3193>:
+    if (__is_single_threaded())
+ ba4:	00000797          	auipc	a5,0x0
+ ba8:	0007b783          	ld	a5,0(a5) # ba4 <.LBB3193>
+ bac:	0007c783          	lbu	a5,0(a5)
+ bb0:	02078663          	beq	a5,zero,bdc <.L243>
+
+0000000000000bb4 <.LBB3197>:
+    _Atomic_word __result = *__mem;
+ bb4:	0344a503          	lw	a0,52(s1)
+
+0000000000000bb8 <.LM1726>:
+    *__mem += __val;
+ bb8:	fff5079b          	addiw	a5,a0,-1
+ bbc:	02f4aa23          	sw	a5,52(s1)
+
+0000000000000bc0 <.L244>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ bc0:	00100793          	addi	a5,zero,1
+ bc4:	f8f51ae3          	bne	a0,a5,b58 <.L240>
+
+0000000000000bc8 <.LM1731>:
+	    _M_destroy();
+ bc8:	0004b783          	ld	a5,0(s1)
+ bcc:	0187b783          	ld	a5,24(a5)
+ bd0:	00048513          	addi	a0,s1,0
+ bd4:	000780e7          	jalr	ra,0(a5)
+
+0000000000000bd8 <.LVL540>:
+ bd8:	f81ff06f          	jal	zero,b58 <.L240>
+
+0000000000000bdc <.L243>:
+      return __exchange_and_add(__mem, __val);
+ bdc:	fff00593          	addi	a1,zero,-1
+ be0:	03448513          	addi	a0,s1,52
+ be4:	00000097          	auipc	ra,0x0
+ be8:	000080e7          	jalr	ra,0(ra) # be4 <.L243+0x8>
+
+0000000000000bec <.LM1734>:
+ bec:	fd5ff06f          	jal	zero,bc0 <.L244>
 
 Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EED2Ev:
 
 0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	00000797          	auipc	a5,0x0
-  18:	0007b783          	ld	a5,0(a5) # 14 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()+0x14>
-  1c:	01078713          	addi	a4,a5,16
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	00e7b023          	sd	a4,0(a5)
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	00078513          	addi	a0,a5,0
-  30:	00000317          	auipc	t1,0x0
-  34:	00033303          	ld	t1,0(t1) # 30 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()+0x30>
-  38:	000300e7          	jalr	ra,0(t1)
-  3c:	00000013          	addi	zero,zero,0
-  40:	01813083          	ld	ra,24(sp)
-  44:	01013403          	ld	s0,16(sp)
-  48:	02010113          	addi	sp,sp,32
-  4c:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EED0Ev:
-
-0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	fe843503          	ld	a0,-24(s0)
-  28:	00000097          	auipc	ra,0x0
-  2c:	000080e7          	jalr	ra,0(ra) # 28 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()+0x28>
-  30:	01813083          	ld	ra,24(sp)
-  34:	01013403          	ld	s0,16(sp)
-  38:	02010113          	addi	sp,sp,32
-  3c:	00008067          	jalr	zero,0(ra)
+      ~_Sp_counted_ptr_inplace() noexcept { }
+   0:	00008067          	jalr	zero,0(ra)
 
 Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EE10_M_disposeEv:
 
 0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	03010413          	addi	s0,sp,48
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fd843783          	ld	a5,-40(s0)
-  1c:	03878793          	addi	a5,a5,56
-  20:	00078513          	addi	a0,a5,0
-  24:	00000317          	auipc	t1,0x0
-  28:	00033303          	ld	t1,0(t1) # 24 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x24>
-  2c:	000300e7          	jalr	ra,0(t1)
-  30:	00050493          	addi	s1,a0,0
-  34:	fd843503          	ld	a0,-40(s0)
-  38:	00000317          	auipc	t1,0x0
-  3c:	00033303          	ld	t1,0(t1) # 38 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x38>
-  40:	000300e7          	jalr	ra,0(t1)
-  44:	00050793          	addi	a5,a0,0
-  48:	00078593          	addi	a1,a5,0
-  4c:	00048513          	addi	a0,s1,0
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_dispose()+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	00000013          	addi	zero,zero,0
-  60:	02813083          	ld	ra,40(sp)
-  64:	02013403          	ld	s0,32(sp)
-  68:	01813483          	ld	s1,24(sp)
-  6c:	03010113          	addi	sp,sp,48
-  70:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EE10_M_destroyEv:
-
-0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	fc843783          	ld	a5,-56(s0)
-  18:	03878793          	addi	a5,a5,56
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000317          	auipc	t1,0x0
-  24:	00033303          	ld	t1,0(t1) # 20 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()+0x20>
-  28:	000300e7          	jalr	ra,0(t1)
-  2c:	00050713          	addi	a4,a0,0
-  30:	fe840793          	addi	a5,s0,-24
-  34:	00070593          	addi	a1,a4,0
-  38:	00078513          	addi	a0,a5,0
-  3c:	00000317          	auipc	t1,0x0
-  40:	00033303          	ld	t1,0(t1) # 3c <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()+0x3c>
-  44:	000300e7          	jalr	ra,0(t1)
-  48:	fe840713          	addi	a4,s0,-24
-  4c:	fd840793          	addi	a5,s0,-40
-  50:	fc843603          	ld	a2,-56(s0)
-  54:	00070593          	addi	a1,a4,0
-  58:	00078513          	addi	a0,a5,0
-  5c:	00000317          	auipc	t1,0x0
-  60:	00033303          	ld	t1,0(t1) # 5c <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()+0x5c>
-  64:	000300e7          	jalr	ra,0(t1)
-  68:	fc843503          	ld	a0,-56(s0)
-  6c:	00000317          	auipc	t1,0x0
-  70:	00033303          	ld	t1,0(t1) # 6c <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()+0x6c>
-  74:	000300e7          	jalr	ra,0(t1)
-  78:	fd840793          	addi	a5,s0,-40
-  7c:	00078513          	addi	a0,a5,0
-  80:	00000317          	auipc	t1,0x0
-  84:	00033303          	ld	t1,0(t1) # 80 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()+0x80>
-  88:	000300e7          	jalr	ra,0(t1)
-  8c:	fe840793          	addi	a5,s0,-24
-  90:	00078513          	addi	a0,a5,0
-  94:	00000317          	auipc	t1,0x0
-  98:	00033303          	ld	t1,0(t1) # 94 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()+0x94>
-  9c:	000300e7          	jalr	ra,0(t1)
-  a0:	03813083          	ld	ra,56(sp)
-  a4:	03013403          	ld	s0,48(sp)
-  a8:	04010113          	addi	sp,sp,64
-  ac:	00008067          	jalr	zero,0(ra)
+      }
+   0:	00008067          	jalr	zero,0(ra)
 
 Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EE14_M_get_deleterERKSt9type_info:
 
 0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fcb43823          	sd	a1,-48(s0)
-  18:	fd843503          	ld	a0,-40(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	fea43423          	sd	a0,-24(s0)
-  2c:	00000317          	auipc	t1,0x0
-  30:	00033303          	ld	t1,0(t1) # 2c <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x2c>
-  34:	000300e7          	jalr	ra,0(t1)
-  38:	00050713          	addi	a4,a0,0
-  3c:	fd043783          	ld	a5,-48(s0)
-  40:	02e78263          	beq	a5,a4,64 <.L500>
-  44:	00000597          	auipc	a1,0x0
-  48:	0005b583          	ld	a1,0(a1) # 44 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x44>
-  4c:	fd043503          	ld	a0,-48(s0)
-  50:	00000317          	auipc	t1,0x0
-  54:	00033303          	ld	t1,0(t1) # 50 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_get_deleter(std::type_info const&)+0x50>
-  58:	000300e7          	jalr	ra,0(t1)
-  5c:	00050793          	addi	a5,a0,0
-  60:	00078663          	beq	a5,zero,6c <.L501>
+      _M_get_deleter(const std::type_info& __ti) noexcept override
+   0:	ff010113          	addi	sp,sp,-16
+   4:	00113423          	sd	ra,8(sp)
+   8:	00813023          	sd	s0,0(sp)
 
-0000000000000064 <.L500>:
-  64:	00100793          	addi	a5,zero,1
-  68:	0080006f          	jal	zero,70 <.L502>
+000000000000000c <.LBB1332>:
+   c:	03850413          	addi	s0,a0,56
 
-000000000000006c <.L501>:
-  6c:	00000793          	addi	a5,zero,0
+0000000000000010 <.LBB1336>:
+	    ||
+  10:	00000797          	auipc	a5,0x0
+  14:	0007b783          	ld	a5,0(a5) # 10 <.LBB1336>
+  18:	02f58e63          	beq	a1,a5,54 <.L3>
 
-0000000000000070 <.L502>:
-  70:	00078663          	beq	a5,zero,7c <.L503>
-  74:	fe843783          	ld	a5,-24(s0)
-  78:	0080006f          	jal	zero,80 <.L504>
+000000000000001c <.LBB1337>:
+  type_info::operator==(const type_info& __arg) const _GLIBCXX_NOEXCEPT
+  {
+    if (std::__is_constant_evaluated())
+      return this == &__arg;
 
-000000000000007c <.L503>:
-  7c:	00000793          	addi	a5,zero,0
+    if (__name == __arg.__name)
+  1c:	0085b503          	ld	a0,8(a1)
 
-0000000000000080 <.L504>:
-  80:	00078513          	addi	a0,a5,0
-  84:	02813083          	ld	ra,40(sp)
-  88:	02013403          	ld	s0,32(sp)
-  8c:	03010113          	addi	sp,sp,48
-  90:	00008067          	jalr	zero,0(ra)
+0000000000000020 <.LM22>:
+  20:	00000797          	auipc	a5,0x0
+  24:	0007b783          	ld	a5,0(a5) # 20 <.LM22>
+  28:	02f50663          	beq	a0,a5,54 <.L3>
 
-Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EE5_Impl8_M_allocEv:
+000000000000002c <.LM23>:
+#if !__GXX_TYPEINFO_EQUALITY_INLINE
+    // ABI requires comparisons to be non-inline.
+    return __equal(__arg);
+#elif !__GXX_MERGED_TYPEINFO_NAMES
+    // Need to do string comparison.
+    return __name[0] != '*' && __builtin_strcmp (__name, __arg.name()) == 0;
+  2c:	00054703          	lbu	a4,0(a0)
+  30:	02a00793          	addi	a5,zero,42
+  34:	02f70a63          	beq	a4,a5,68 <.L5>
 
-0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Impl::_M_alloc()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843503          	ld	a0,-24(s0)
-  18:	00000317          	auipc	t1,0x0
-  1c:	00033303          	ld	t1,0(t1) # 18 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_Impl::_M_alloc()+0x18>
-  20:	000300e7          	jalr	ra,0(t1)
-  24:	00050793          	addi	a5,a0,0
-  28:	00078513          	addi	a0,a5,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
+0000000000000038 <.LM25>:
+  38:	00000597          	auipc	a1,0x0
+  3c:	0005b583          	ld	a1,0(a1) # 38 <.LM25>
 
-Disassembly of section .text._ZNSt16allocator_traitsISaIvEE7destroyIN5dwarf7sectionEEEvRS0_PT_:
+0000000000000040 <.LM26>:
+  40:	00000097          	auipc	ra,0x0
+  44:	000080e7          	jalr	ra,0(ra) # 40 <.LM26>
 
-0000000000000000 <void std::allocator_traits<std::allocator<void> >::destroy<dwarf::section>(std::allocator<void>&, dwarf::section*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043503          	ld	a0,-32(s0)
-  1c:	00000317          	auipc	t1,0x0
-  20:	00033303          	ld	t1,0(t1) # 1c <void std::allocator_traits<std::allocator<void> >::destroy<dwarf::section>(std::allocator<void>&, dwarf::section*)+0x1c>
-  24:	000300e7          	jalr	ra,0(t1)
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
+0000000000000048 <.LBE1337>:
+	return nullptr;
+  48:	00153513          	sltiu	a0,a0,1
+  4c:	40a00533          	sub	a0,zero,a0
+  50:	00a47433          	and	s0,s0,a0
 
-Disassembly of section .text._ZNSt14_Sp_ebo_helperILi0ESaIvELb1EE6_S_getERS1_:
+0000000000000054 <.L3>:
+      }
+  54:	00040513          	addi	a0,s0,0
+  58:	00813083          	ld	ra,8(sp)
+  5c:	00013403          	ld	s0,0(sp)
+  60:	01010113          	addi	sp,sp,16
+  64:	00008067          	jalr	zero,0(ra)
 
-0000000000000000 <std::_Sp_ebo_helper<0, std::allocator<void>, true>::_S_get(std::_Sp_ebo_helper<0, std::allocator<void>, true>&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
+0000000000000068 <.L5>:
+	return nullptr;
+  68:	00000413          	addi	s0,zero,0
+
+000000000000006c <.LM31>:
+  6c:	fe9ff06f          	jal	zero,54 <.L3>
+
+Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EED0Ev:
+
+0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::~_Sp_counted_ptr_inplace()>:
+      ~_Sp_counted_ptr_inplace() noexcept { }
+   0:	ff010113          	addi	sp,sp,-16
+   4:	00113423          	sd	ra,8(sp)
+
+0000000000000008 <.LBB1339>:
+   8:	00000097          	auipc	ra,0x0
+   c:	000080e7          	jalr	ra,0(ra) # 8 <.LBB1339>
+
+0000000000000010 <.LM38>:
+  10:	00813083          	ld	ra,8(sp)
+  14:	01010113          	addi	sp,sp,16
+  18:	00008067          	jalr	zero,0(ra)
+
+Disassembly of section .text._ZNSt23_Sp_counted_ptr_inplaceIN5dwarf7sectionESaIvELN9__gnu_cxx12_Lock_policyE1EE10_M_destroyEv:
+
+0000000000000000 <std::_Sp_counted_ptr_inplace<dwarf::section, std::allocator<void>, (__gnu_cxx::_Lock_policy)1>::_M_destroy()>:
+      _M_destroy() noexcept
+   0:	ff010113          	addi	sp,sp,-16
+   4:	00113423          	sd	ra,8(sp)
+
+0000000000000008 <.LBB1341>:
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+   8:	00000097          	auipc	ra,0x0
+   c:	000080e7          	jalr	ra,0(ra) # 8 <.LBB1341>
+
+0000000000000010 <.LBB1350>:
+      }
+  10:	00813083          	ld	ra,8(sp)
+  14:	01010113          	addi	sp,sp,16
+  18:	00008067          	jalr	zero,0(ra)
+
+Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv:
+
+0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>:
+    {
+   0:	ff010113          	addi	sp,sp,-16
+   4:	00113423          	sd	ra,8(sp)
+   8:	00813023          	sd	s0,0(sp)
+   c:	00050413          	addi	s0,a0,0
+
+0000000000000010 <.LBB1372>:
+    if (__is_single_threaded())
+  10:	00000797          	auipc	a5,0x0
+  14:	0007b783          	ld	a5,0(a5) # 10 <.LBB1372>
+  18:	0007c783          	lbu	a5,0(a5)
+  1c:	02078463          	beq	a5,zero,44 <.L12>
+
+0000000000000020 <.LBB1376>:
+    _Atomic_word __result = *__mem;
+  20:	03052503          	lw	a0,48(a0)
+
+0000000000000024 <.LM70>:
+    *__mem += __val;
+  24:	fff5079b          	addiw	a5,a0,-1
+  28:	02f42823          	sw	a5,48(s0)
+
+000000000000002c <.L13>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+  2c:	00100793          	addi	a5,zero,1
+  30:	02f50463          	beq	a0,a5,58 <.L18>
+
+0000000000000034 <.L11>:
+    }
+  34:	00813083          	ld	ra,8(sp)
+  38:	00013403          	ld	s0,0(sp)
+
+000000000000003c <.LM76>:
+  3c:	01010113          	addi	sp,sp,16
+  40:	00008067          	jalr	zero,0(ra)
+
+0000000000000044 <.L12>:
+      return __exchange_and_add(__mem, __val);
+  44:	fff00593          	addi	a1,zero,-1
+  48:	03050513          	addi	a0,a0,48
+  4c:	00000097          	auipc	ra,0x0
+  50:	000080e7          	jalr	ra,0(ra) # 4c <.L12+0x8>
+
+0000000000000054 <.LM79>:
+  54:	fd9ff06f          	jal	zero,2c <.L13>
+
+0000000000000058 <.L18>:
+	_M_dispose();
+  58:	00043783          	ld	a5,0(s0)
+  5c:	0107b783          	ld	a5,16(a5)
+  60:	00040513          	addi	a0,s0,0
+  64:	000780e7          	jalr	ra,0(a5)
+
+0000000000000068 <.LM84>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+  68:	0ff0000f          	fence	iorw,iorw
+
+000000000000006c <.LBB1382>:
+    if (__is_single_threaded())
+  6c:	00000797          	auipc	a5,0x0
+  70:	0007b783          	ld	a5,0(a5) # 6c <.LBB1382>
+  74:	0007c783          	lbu	a5,0(a5)
+  78:	02078663          	beq	a5,zero,a4 <.L15>
+
+000000000000007c <.LBB1386>:
+    _Atomic_word __result = *__mem;
+  7c:	03442503          	lw	a0,52(s0)
+
+0000000000000080 <.LM94>:
+    *__mem += __val;
+  80:	fff5079b          	addiw	a5,a0,-1
+  84:	02f42a23          	sw	a5,52(s0)
+
+0000000000000088 <.L16>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+  88:	00100793          	addi	a5,zero,1
+  8c:	faf514e3          	bne	a0,a5,34 <.L11>
+
+0000000000000090 <.LM99>:
+	    _M_destroy();
+  90:	00043783          	ld	a5,0(s0)
+  94:	0187b783          	ld	a5,24(a5)
+  98:	00040513          	addi	a0,s0,0
+  9c:	000780e7          	jalr	ra,0(a5)
+
+00000000000000a0 <.LBE1380>:
+    }
+  a0:	f95ff06f          	jal	zero,34 <.L11>
+
+00000000000000a4 <.L15>:
+      return __exchange_and_add(__mem, __val);
+  a4:	fff00593          	addi	a1,zero,-1
+  a8:	03440513          	addi	a0,s0,52
+  ac:	00000097          	auipc	ra,0x0
+  b0:	000080e7          	jalr	ra,0(ra) # ac <.L15+0x8>
+
+00000000000000b4 <.LM104>:
+  b4:	fd5ff06f          	jal	zero,88 <.L16>
+
+Disassembly of section .text._ZN5dwarf6cursor7addressEv:
+
+0000000000000000 <dwarf::cursor::address()>:
+  taddr address() {
+   0:	f8010113          	addi	sp,sp,-128
+   4:	06113c23          	sd	ra,120(sp)
+   8:	06813823          	sd	s0,112(sp)
+   c:	06913423          	sd	s1,104(sp)
+  10:	00050413          	addi	s0,a0,0
+
+0000000000000014 <.LBB1589>:
+      { return _M_ptr; }
+  14:	00053703          	ld	a4,0(a0)
+
+0000000000000018 <.LBE1589>:
+    switch (sec->addr_size) {
+  18:	02072783          	lw	a5,32(a4)
+
+000000000000001c <.LM114>:
+  1c:	00400693          	addi	a3,zero,4
+  20:	10d78663          	beq	a5,a3,12c <.L20>
+  24:	06f6e063          	bltu	a3,a5,84 <.L21>
+  28:	00100693          	addi	a3,zero,1
+  2c:	0cd78063          	beq	a5,a3,ec <.L22>
+  30:	00200693          	addi	a3,zero,2
+  34:	1ad79463          	bne	a5,a3,1dc <.L24>
+
+0000000000000038 <.LBB1593>:
+    if ((section_offset)(sec->end - pos) < bytes || pos >= sec->end)
+  38:	01073703          	ld	a4,16(a4)
+
+000000000000003c <.LM121>:
+  3c:	01053783          	ld	a5,16(a0)
+
+0000000000000040 <.LM122>:
+  40:	40f70633          	sub	a2,a4,a5
+
+0000000000000044 <.LM123>:
+  44:	00100693          	addi	a3,zero,1
+  48:	00c6f463          	bgeu	a3,a2,50 <.L30>
+  4c:	00e7e863          	bltu	a5,a4,5c <.L31>
+
+0000000000000050 <.L30>:
+      underflow();
+  50:	00040513          	addi	a0,s0,0
+
+0000000000000054 <.LEHB0>:
+  54:	00000097          	auipc	ra,0x0
+  58:	000080e7          	jalr	ra,0(ra) # 54 <.LEHB0>
+
+000000000000005c <.L31>:
+    const unsigned char *p = (const unsigned char *)pos;
+  5c:	01043703          	ld	a4,16(s0)
+
+0000000000000060 <.LBB1598>:
+    if (sec->ord == byte_order::lsb) {
+  60:	00043783          	ld	a5,0(s0)
+
+0000000000000064 <.LM134>:
+  64:	01c7a783          	lw	a5,28(a5)
+  68:	0a079863          	bne	a5,zero,118 <.L32>
+
+000000000000006c <.LBB1601>:
+        val |= ((uint64_t)p[i]) << (i * 8);
+  6c:	00174783          	lbu	a5,1(a4)
+
+0000000000000070 <.LM138>:
+  70:	00879793          	slli	a5,a5,0x8
+
+0000000000000074 <.LM139>:
+  74:	00074683          	lbu	a3,0(a4)
+
+0000000000000078 <.LM140>:
+  78:	00d7e533          	or	a0,a5,a3
+
+000000000000007c <.L33>:
+    pos += sizeof(T);
+  7c:	00270713          	addi	a4,a4,2
+
+0000000000000080 <.LBE1593>:
+      return fixed<uint16_t>();
+  80:	3e80006f          	jal	zero,468 <.L29>
+
+0000000000000084 <.L21>:
+    switch (sec->addr_size) {
+  84:	00800693          	addi	a3,zero,8
+  88:	14d79a63          	bne	a5,a3,1dc <.L24>
+
+000000000000008c <.LBB1605>:
+    if ((section_offset)(sec->end - pos) < bytes || pos >= sec->end)
+  8c:	01073703          	ld	a4,16(a4)
+
+0000000000000090 <.LM154>:
+  90:	01053783          	ld	a5,16(a0)
+
+0000000000000094 <.LM155>:
+  94:	40f70633          	sub	a2,a4,a5
+
+0000000000000098 <.LM156>:
+  98:	00700693          	addi	a3,zero,7
+  9c:	00c6f463          	bgeu	a3,a2,a4 <.L40>
+  a0:	00e7e863          	bltu	a5,a4,b0 <.L41>
+
+00000000000000a4 <.L40>:
+      underflow();
+  a4:	00040513          	addi	a0,s0,0
+  a8:	00000097          	auipc	ra,0x0
+  ac:	000080e7          	jalr	ra,0(ra) # a8 <.L40+0x4>
+
+00000000000000b0 <.L41>:
+    const unsigned char *p = (const unsigned char *)pos;
+  b0:	01043703          	ld	a4,16(s0)
+
+00000000000000b4 <.LBB1610>:
+    if (sec->ord == byte_order::lsb) {
+  b4:	00043783          	ld	a5,0(s0)
+
+00000000000000b8 <.LM166>:
+  b8:	01c7a783          	lw	a5,28(a5)
+  bc:	0e079e63          	bne	a5,zero,1b8 <.L42>
+  c0:	00070613          	addi	a2,a4,0
+
+00000000000000c4 <.LM167>:
+    uint64_t val = 0;
+  c4:	00000513          	addi	a0,zero,0
+
+00000000000000c8 <.LBB1613>:
+      for (unsigned i = 0; i < sizeof(T); i++)
+  c8:	04000593          	addi	a1,zero,64
+
+00000000000000cc <.L43>:
+        val |= ((uint64_t)p[i]) << (i * 8);
+  cc:	00064683          	lbu	a3,0(a2)
+
+00000000000000d0 <.LM170>:
+  d0:	00f696b3          	sll	a3,a3,a5
+
+00000000000000d4 <.LM171>:
+  d4:	00d56533          	or	a0,a0,a3
+
+00000000000000d8 <.LM172>:
+      for (unsigned i = 0; i < sizeof(T); i++)
+  d8:	00160613          	addi	a2,a2,1
+
+00000000000000dc <.LM174>:
+  dc:	0087879b          	addiw	a5,a5,8
+  e0:	feb796e3          	bne	a5,a1,cc <.L43>
+
+00000000000000e4 <.L44>:
+    pos += sizeof(T);
+  e4:	00870713          	addi	a4,a4,8
+
+00000000000000e8 <.LBE1605>:
+      return fixed<uint64_t>();
+  e8:	3800006f          	jal	zero,468 <.L29>
+
+00000000000000ec <.L22>:
+    if ((section_offset)(sec->end - pos) < bytes || pos >= sec->end)
+  ec:	01073703          	ld	a4,16(a4)
+  f0:	01053783          	ld	a5,16(a0)
+  f4:	00e7e663          	bltu	a5,a4,100 <.L26>
+
+00000000000000f8 <.LM185>:
+      underflow();
+  f8:	00000097          	auipc	ra,0x0
+  fc:	000080e7          	jalr	ra,0(ra) # f8 <.LM185>
+
+0000000000000100 <.L26>:
+    const unsigned char *p = (const unsigned char *)pos;
+ 100:	01043703          	ld	a4,16(s0)
+
+0000000000000104 <.LBB1623>:
+    if (sec->ord == byte_order::lsb) {
+ 104:	00043783          	ld	a5,0(s0)
+
+0000000000000108 <.LM194>:
+ 108:	01c7a783          	lw	a5,28(a5)
+ 10c:	34078a63          	beq	a5,zero,460 <.L27>
+
+0000000000000110 <.LBB1626>:
+        val = (val << 8) | (uint64_t)p[i];
+ 110:	00074503          	lbu	a0,0(a4)
+
+0000000000000114 <.LM196>:
+      for (unsigned i = 0; i < sizeof(T); i++)
+ 114:	3500006f          	jal	zero,464 <.L64>
+
+0000000000000118 <.L32>:
+        val = (val << 8) | (uint64_t)p[i];
+ 118:	00074783          	lbu	a5,0(a4)
+
+000000000000011c <.LM202>:
+ 11c:	00879793          	slli	a5,a5,0x8
+
+0000000000000120 <.LM203>:
+ 120:	00174683          	lbu	a3,1(a4)
+
+0000000000000124 <.LM204>:
+ 124:	00d7e533          	or	a0,a5,a3
+
+0000000000000128 <.LM205>:
+      for (unsigned i = 0; i < sizeof(T); i++)
+ 128:	f55ff06f          	jal	zero,7c <.L33>
+
+000000000000012c <.L20>:
+    if ((section_offset)(sec->end - pos) < bytes || pos >= sec->end)
+ 12c:	01073703          	ld	a4,16(a4)
+
+0000000000000130 <.LM214>:
+ 130:	01053783          	ld	a5,16(a0)
+
+0000000000000134 <.LM215>:
+ 134:	40f70633          	sub	a2,a4,a5
+
+0000000000000138 <.LM216>:
+ 138:	00300693          	addi	a3,zero,3
+ 13c:	00c6f463          	bgeu	a3,a2,144 <.L34>
+ 140:	00e7e863          	bltu	a5,a4,150 <.L35>
+
+0000000000000144 <.L34>:
+      underflow();
+ 144:	00040513          	addi	a0,s0,0
+ 148:	00000097          	auipc	ra,0x0
+ 14c:	000080e7          	jalr	ra,0(ra) # 148 <.L34+0x4>
+
+0000000000000150 <.L35>:
+    const unsigned char *p = (const unsigned char *)pos;
+ 150:	01043703          	ld	a4,16(s0)
+
+0000000000000154 <.LBB1636>:
+    if (sec->ord == byte_order::lsb) {
+ 154:	00043783          	ld	a5,0(s0)
+
+0000000000000158 <.LM226>:
+ 158:	01c7a783          	lw	a5,28(a5)
+ 15c:	02079c63          	bne	a5,zero,194 <.L36>
+ 160:	00070593          	addi	a1,a4,0
+ 164:	00000693          	addi	a3,zero,0
+
+0000000000000168 <.LBB1639>:
+      for (unsigned i = 0; i < sizeof(T); i++)
+ 168:	02000513          	addi	a0,zero,32
+
+000000000000016c <.L37>:
+        val |= ((uint64_t)p[i]) << (i * 8);
+ 16c:	0005c603          	lbu	a2,0(a1)
+
+0000000000000170 <.LM229>:
+ 170:	00d61633          	sll	a2,a2,a3
+
+0000000000000174 <.LM230>:
+ 174:	00c7e7b3          	or	a5,a5,a2
+
+0000000000000178 <.LM231>:
+      for (unsigned i = 0; i < sizeof(T); i++)
+ 178:	00158593          	addi	a1,a1,1
+
+000000000000017c <.LM233>:
+ 17c:	0086869b          	addiw	a3,a3,8
+ 180:	fea696e3          	bne	a3,a0,16c <.L37>
+
+0000000000000184 <.L38>:
+    pos += sizeof(T);
+ 184:	00470713          	addi	a4,a4,4
+
+0000000000000188 <.LM236>:
+ 188:	02079513          	slli	a0,a5,0x20
+ 18c:	02055513          	srli	a0,a0,0x20
+
+0000000000000190 <.LBE1631>:
+      return fixed<uint32_t>();
+ 190:	2d80006f          	jal	zero,468 <.L29>
+
+0000000000000194 <.L36>:
+ 194:	00070693          	addi	a3,a4,0
+ 198:	00470593          	addi	a1,a4,4
+
+000000000000019c <.LBB1643>:
+    uint64_t val = 0;
+ 19c:	00000793          	addi	a5,zero,0
+
+00000000000001a0 <.L39>:
+        val = (val << 8) | (uint64_t)p[i];
+ 1a0:	00879793          	slli	a5,a5,0x8
+
+00000000000001a4 <.LM241>:
+ 1a4:	0006c603          	lbu	a2,0(a3)
+
+00000000000001a8 <.LM242>:
+ 1a8:	00f667b3          	or	a5,a2,a5
+
+00000000000001ac <.LM243>:
+      for (unsigned i = 0; i < sizeof(T); i++)
+ 1ac:	00168693          	addi	a3,a3,1
+
+00000000000001b0 <.LM245>:
+ 1b0:	fed598e3          	bne	a1,a3,1a0 <.L39>
+ 1b4:	fd1ff06f          	jal	zero,184 <.L38>
+
+00000000000001b8 <.L42>:
+ 1b8:	00070793          	addi	a5,a4,0
+ 1bc:	00870613          	addi	a2,a4,8
+
+00000000000001c0 <.LBB1644>:
+    uint64_t val = 0;
+ 1c0:	00000513          	addi	a0,zero,0
+
+00000000000001c4 <.L45>:
+        val = (val << 8) | (uint64_t)p[i];
+ 1c4:	00851513          	slli	a0,a0,0x8
+
+00000000000001c8 <.LM249>:
+ 1c8:	0007c683          	lbu	a3,0(a5)
+
+00000000000001cc <.LM250>:
+ 1cc:	00a6e533          	or	a0,a3,a0
+
+00000000000001d0 <.LM251>:
+      for (unsigned i = 0; i < sizeof(T); i++)
+ 1d0:	00178793          	addi	a5,a5,1
+
+00000000000001d4 <.LM253>:
+ 1d4:	fec798e3          	bne	a5,a2,1c4 <.L45>
+ 1d8:	f0dff06f          	jal	zero,e4 <.L44>
+
+00000000000001dc <.L24>:
+          "address size " + std::to_string(sec->addr_size) + " not supported");
+ 1dc:	01000513          	addi	a0,zero,16
+ 1e0:	00000097          	auipc	ra,0x0
+ 1e4:	000080e7          	jalr	ra,0(ra) # 1e0 <.L24+0x4>
+
+00000000000001e8 <.LVL82>:
+ 1e8:	00050493          	addi	s1,a0,0
+
+00000000000001ec <.LBB1645>:
+ 1ec:	00043783          	ld	a5,0(s0)
+ 1f0:	0207a403          	lw	s0,32(a5)
+
+00000000000001f4 <.LBB1648>:
+ 1f4:	00040793          	addi	a5,s0,0
+
+00000000000001f8 <.LBB1653>:
+    __to_chars_len(_Tp __value, int __base = 10) noexcept
+    {
+      static_assert(is_integral<_Tp>::value, "implementation bug");
+      static_assert(is_unsigned<_Tp>::value, "implementation bug");
+
+      unsigned __n = 1;
+ 1f8:	00100593          	addi	a1,zero,1
+
+00000000000001fc <.LM269>:
+      const unsigned __b2 = __base  * __base;
+      const unsigned __b3 = __b2 * __base;
+      const unsigned long __b4 = __b3 * __base;
+      for (;;)
+	{
+	  if (__value < (unsigned)__base) return __n;
+ 1fc:	00900893          	addi	a7,zero,9
+
+0000000000000200 <.LM270>:
+	  if (__value < __b2) return __n + 1;
+ 200:	06300813          	addi	a6,zero,99
+
+0000000000000204 <.LM271>:
+	  if (__value < __b3) return __n + 2;
+ 204:	3e700513          	addi	a0,zero,999
+
+0000000000000208 <.LM272>:
+	  if (__value < __b4) return __n + 3;
+ 208:	00002737          	lui	a4,0x2
+ 20c:	70f70613          	addi	a2,a4,1807 # 270f <.LLST582+0xb>
+
+0000000000000210 <.LM273>:
+	  __value /= __b4;
+ 210:	71070713          	addi	a4,a4,1808
+
+0000000000000214 <.L50>:
+	  if (__value < (unsigned)__base) return __n;
+ 214:	00f8f663          	bgeu	a7,a5,220 <.L46>
+
+0000000000000218 <.LM275>:
+	  if (__value < __b2) return __n + 1;
+ 218:	0af86263          	bltu	a6,a5,2bc <.L47>
+
+000000000000021c <.LM276>:
+ 21c:	0015859b          	addiw	a1,a1,1
+
+0000000000000220 <.L46>:
+	_Alloc_hider(pointer __dat, const _Alloc& __a = _Alloc())
+	: allocator_type(__a), _M_p(__dat) { }
+#else
+	_GLIBCXX20_CONSTEXPR
+	_Alloc_hider(pointer __dat, const _Alloc& __a)
+	: allocator_type(__a), _M_p(__dat) { }
+ 220:	01010793          	addi	a5,sp,16
+
+0000000000000224 <.LM289>:
+ 224:	00f13023          	sd	a5,0(sp)
+
+0000000000000228 <.LBE1659>:
+      template<typename = _RequireAllocator<_Alloc>>
+#endif
+      _GLIBCXX20_CONSTEXPR
+      basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
+      : _M_dataplus(_M_local_data(), __a)
+      { _M_construct(__n, __c); }
+ 228:	00000613          	addi	a2,zero,0
+ 22c:	02059593          	slli	a1,a1,0x20
+
+0000000000000230 <.LM292>:
+ 230:	0205d593          	srli	a1,a1,0x20
+ 234:	00010513          	addi	a0,sp,0
+ 238:	00000097          	auipc	ra,0x0
+ 23c:	000080e7          	jalr	ra,0(ra) # 238 <.LM292+0x8>
+
+0000000000000240 <.LBB1663>:
+      { return _M_dataplus._M_p; }
+ 240:	00013603          	ld	a2,0(sp)
+
+0000000000000244 <.LBB1668>:
+	"0001020304050607080910111213141516171819"
+	"2021222324252627282930313233343536373839"
+	"4041424344454647484950515253545556575859"
+	"6061626364656667686970717273747576777879"
+	"8081828384858687888990919293949596979899";
+      unsigned __pos = __len - 1;
+ 244:	00813703          	ld	a4,8(sp)
+ 248:	fff7071b          	addiw	a4,a4,-1
+
+000000000000024c <.LM306>:
+      while (__val >= 100)
+ 24c:	06300893          	addi	a7,zero,99
+
+0000000000000250 <.LBB1671>:
+	{
+	  auto const __num = (__val % 100) * 2;
+ 250:	06400813          	addi	a6,zero,100
+
+0000000000000254 <.LM308>:
+	  __val /= 100;
+	  __first[__pos] = __digits[__num + 1];
+ 254:	00000517          	auipc	a0,0x0
+ 258:	00053503          	ld	a0,0(a0) # 254 <.LM308>
+
+000000000000025c <.L51>:
+      while (__val >= 100)
+ 25c:	0888e863          	bltu	a7,s0,2ec <.L52>
+
+0000000000000260 <.LM311>:
+	  __first[__pos - 1] = __digits[__num];
+	  __pos -= 2;
+	}
+      if (__val >= 10)
+ 260:	00900793          	addi	a5,zero,9
+ 264:	0e87f263          	bgeu	a5,s0,348 <.L53>
+
+0000000000000268 <.LBB1673>:
+	{
+	  auto const __num = __val * 2;
+ 268:	0014141b          	slliw	s0,s0,0x1
+
+000000000000026c <.LM313>:
+	  __first[1] = __digits[__num + 1];
+ 26c:	00000717          	auipc	a4,0x0
+ 270:	00073703          	ld	a4,0(a4) # 26c <.LM313>
+
+0000000000000274 <.LM314>:
+ 274:	0014079b          	addiw	a5,s0,1
+
+0000000000000278 <.LM315>:
+ 278:	02079793          	slli	a5,a5,0x20
+ 27c:	0207d793          	srli	a5,a5,0x20
+ 280:	00f707b3          	add	a5,a4,a5
+
+0000000000000284 <.LM316>:
+ 284:	0007c783          	lbu	a5,0(a5)
+ 288:	00f600a3          	sb	a5,1(a2)
+
+000000000000028c <.LM317>:
+	  __first[0] = __digits[__num];
+ 28c:	02041413          	slli	s0,s0,0x20
+
+0000000000000290 <.LM318>:
+ 290:	02045413          	srli	s0,s0,0x20
+ 294:	00870733          	add	a4,a4,s0
+ 298:	00074783          	lbu	a5,0(a4)
+
+000000000000029c <.L54>:
+ 29c:	00f60023          	sb	a5,0(a2)
+
+00000000000002a0 <.LBB1682>:
+  template<typename _CharT, typename _Traits, typename _Alloc>
+    _GLIBCXX20_CONSTEXPR
+    inline basic_string<_CharT, _Traits, _Alloc>
+    operator+(const _CharT* __lhs,
+	      basic_string<_CharT, _Traits, _Alloc>&& __rhs)
+    { return std::move(__rhs.insert(0, __lhs)); }
+ 2a0:	00000617          	auipc	a2,0x0
+ 2a4:	00060613          	addi	a2,a2,0 # 2a0 <.LBB1682>
+ 2a8:	00000593          	addi	a1,zero,0
+ 2ac:	00010513          	addi	a0,sp,0
+
+00000000000002b0 <.LEHB1>:
+ 2b0:	00000097          	auipc	ra,0x0
+ 2b4:	000080e7          	jalr	ra,0(ra) # 2b0 <.LEHB1>
+
+00000000000002b8 <.LEHE1>:
+ 2b8:	09c0006f          	jal	zero,354 <.L75>
+
+00000000000002bc <.L47>:
+	  if (__value < __b3) return __n + 2;
+ 2bc:	00f56663          	bltu	a0,a5,2c8 <.L48>
+
+00000000000002c0 <.LM327>:
+ 2c0:	0025859b          	addiw	a1,a1,2
+
+00000000000002c4 <.LM328>:
+ 2c4:	f5dff06f          	jal	zero,220 <.L46>
+
+00000000000002c8 <.L48>:
+	  if (__value < __b4) return __n + 3;
+ 2c8:	02079693          	slli	a3,a5,0x20
+ 2cc:	0206d693          	srli	a3,a3,0x20
+
+00000000000002d0 <.LM330>:
+ 2d0:	00f66663          	bltu	a2,a5,2dc <.L49>
+
+00000000000002d4 <.LM331>:
+ 2d4:	0035859b          	addiw	a1,a1,3
+
+00000000000002d8 <.LM332>:
+ 2d8:	f49ff06f          	jal	zero,220 <.L46>
+
+00000000000002dc <.L49>:
+	  __value /= __b4;
+ 2dc:	02e6d7b3          	divu	a5,a3,a4
+
+00000000000002e0 <.LM334>:
+ 2e0:	0007879b          	addiw	a5,a5,0
+
+00000000000002e4 <.LM335>:
+	  __n += 4;
+ 2e4:	0045859b          	addiw	a1,a1,4
+
+00000000000002e8 <.LM336>:
+	  if (__value < (unsigned)__base) return __n;
+ 2e8:	f2dff06f          	jal	zero,214 <.L50>
+
+00000000000002ec <.L52>:
+	  auto const __num = (__val % 100) * 2;
+ 2ec:	030477bb          	remuw	a5,s0,a6
+
+00000000000002f0 <.LM340>:
+ 2f0:	0017979b          	slliw	a5,a5,0x1
+
+00000000000002f4 <.LM341>:
+	  __val /= 100;
+ 2f4:	0304543b          	divuw	s0,s0,a6
+
+00000000000002f8 <.LM342>:
+	  __first[__pos] = __digits[__num + 1];
+ 2f8:	02071593          	slli	a1,a4,0x20
+ 2fc:	0205d593          	srli	a1,a1,0x20
+
+0000000000000300 <.LM343>:
+ 300:	00b605b3          	add	a1,a2,a1
+
+0000000000000304 <.LM344>:
+ 304:	0017869b          	addiw	a3,a5,1
+
+0000000000000308 <.LM345>:
+ 308:	02069693          	slli	a3,a3,0x20
+ 30c:	0206d693          	srli	a3,a3,0x20
+ 310:	00d506b3          	add	a3,a0,a3
+
+0000000000000314 <.LM346>:
+ 314:	0006c683          	lbu	a3,0(a3)
+ 318:	00d58023          	sb	a3,0(a1)
+
+000000000000031c <.LM347>:
+	  __first[__pos - 1] = __digits[__num];
+ 31c:	fff7069b          	addiw	a3,a4,-1
+ 320:	02069693          	slli	a3,a3,0x20
+ 324:	0206d693          	srli	a3,a3,0x20
+
+0000000000000328 <.LM348>:
+ 328:	00d606b3          	add	a3,a2,a3
+
+000000000000032c <.LM349>:
+ 32c:	02079793          	slli	a5,a5,0x20
+
+0000000000000330 <.LM350>:
+ 330:	0207d793          	srli	a5,a5,0x20
+ 334:	00f507b3          	add	a5,a0,a5
+
+0000000000000338 <.LM351>:
+ 338:	0007c783          	lbu	a5,0(a5)
+ 33c:	00f68023          	sb	a5,0(a3)
+
+0000000000000340 <.LM352>:
+	  __pos -= 2;
+ 340:	ffe7071b          	addiw	a4,a4,-2
+
+0000000000000344 <.LM353>:
+ 344:	f19ff06f          	jal	zero,25c <.L51>
+
+0000000000000348 <.L53>:
+	}
+      else
+	__first[0] = '0' + __val;
+ 348:	0304079b          	addiw	a5,s0,48
+ 34c:	0ff7f793          	andi	a5,a5,255
+ 350:	f4dff06f          	jal	zero,29c <.L54>
+
+0000000000000354 <.L75>:
+ 354:	00050593          	addi	a1,a0,0
+
+0000000000000358 <.LM358>:
+ 358:	02010413          	addi	s0,sp,32
+ 35c:	00040513          	addi	a0,s0,0
+ 360:	00000097          	auipc	ra,0x0
+ 364:	000080e7          	jalr	ra,0(ra) # 360 <.LM358+0x8>
+
+0000000000000368 <.LBB1687>:
+  template<typename _CharT, typename _Traits, typename _Alloc>
+    _GLIBCXX20_CONSTEXPR
+    inline basic_string<_CharT, _Traits, _Alloc>
+    operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+	      const _CharT* __rhs)
+    { return std::move(__lhs.append(__rhs)); }
+ 368:	00000597          	auipc	a1,0x0
+ 36c:	00058593          	addi	a1,a1,0 # 368 <.LBB1687>
+ 370:	00040513          	addi	a0,s0,0
+
+0000000000000374 <.LEHB2>:
+ 374:	00000097          	auipc	ra,0x0
+ 378:	000080e7          	jalr	ra,0(ra) # 374 <.LEHB2>
+
+000000000000037c <.LEHE2>:
+ 37c:	00050593          	addi	a1,a0,0
+
+0000000000000380 <.LM362>:
+ 380:	04010413          	addi	s0,sp,64
+
+0000000000000384 <.LM363>:
+ 384:	00040513          	addi	a0,s0,0
+ 388:	00000097          	auipc	ra,0x0
+ 38c:	000080e7          	jalr	ra,0(ra) # 388 <.LM363+0x4>
+
+0000000000000390 <.LBE1687>:
+      throw std::runtime_error(
+ 390:	00040593          	addi	a1,s0,0
+ 394:	00048513          	addi	a0,s1,0
+
+0000000000000398 <.LEHB3>:
+ 398:	00000097          	auipc	ra,0x0
+ 39c:	000080e7          	jalr	ra,0(ra) # 398 <.LEHB3>
+
+00000000000003a0 <.LBB1689>:
+      { return _M_dataplus._M_p; }
+ 3a0:	04013503          	ld	a0,64(sp)
+
+00000000000003a4 <.LBB1696>:
+	if (!_M_is_local())
+ 3a4:	05010793          	addi	a5,sp,80
+ 3a8:	00f50663          	beq	a0,a5,3b4 <.L55>
+
+00000000000003ac <.LBB1697>:
+ 3ac:	00000097          	auipc	ra,0x0
+ 3b0:	000080e7          	jalr	ra,0(ra) # 3ac <.LBB1697>
+
+00000000000003b4 <.L55>:
+      { return _M_dataplus._M_p; }
+ 3b4:	02013503          	ld	a0,32(sp)
+
+00000000000003b8 <.LBB1712>:
+	if (!_M_is_local())
+ 3b8:	03010793          	addi	a5,sp,48
+ 3bc:	00f50663          	beq	a0,a5,3c8 <.L56>
+
+00000000000003c0 <.LBB1713>:
+ 3c0:	00000097          	auipc	ra,0x0
+ 3c4:	000080e7          	jalr	ra,0(ra) # 3c0 <.LBB1713>
+
+00000000000003c8 <.L56>:
+      { return _M_dataplus._M_p; }
+ 3c8:	00013503          	ld	a0,0(sp)
+
+00000000000003cc <.LBB1728>:
+	if (!_M_is_local())
+ 3cc:	01010793          	addi	a5,sp,16
+ 3d0:	00f50663          	beq	a0,a5,3dc <.L57>
+
+00000000000003d4 <.LBB1729>:
+ 3d4:	00000097          	auipc	ra,0x0
+ 3d8:	000080e7          	jalr	ra,0(ra) # 3d4 <.LBB1729>
+
+00000000000003dc <.L57>:
+          "address size " + std::to_string(sec->addr_size) + " not supported");
+ 3dc:	00000617          	auipc	a2,0x0
+ 3e0:	00063603          	ld	a2,0(a2) # 3dc <.L57>
+ 3e4:	00000597          	auipc	a1,0x0
+ 3e8:	0005b583          	ld	a1,0(a1) # 3e4 <.L57+0x8>
+ 3ec:	00048513          	addi	a0,s1,0
+
+00000000000003f0 <.LEHB4>:
+ 3f0:	00000097          	auipc	ra,0x0
+ 3f4:	000080e7          	jalr	ra,0(ra) # 3f0 <.LEHB4>
+
+00000000000003f8 <.L67>:
+      { return _M_dataplus._M_p; }
+ 3f8:	00050413          	addi	s0,a0,0
+
+00000000000003fc <.LBB1745>:
+ 3fc:	04013503          	ld	a0,64(sp)
+
+0000000000000400 <.LBB1746>:
+	if (!_M_is_local())
+ 400:	05010793          	addi	a5,sp,80
+ 404:	00f50663          	beq	a0,a5,410 <.L60>
+
+0000000000000408 <.LBB1748>:
+ 408:	00000097          	auipc	ra,0x0
+ 40c:	000080e7          	jalr	ra,0(ra) # 408 <.LBB1748>
+
+0000000000000410 <.L60>:
+      { return _M_dataplus._M_p; }
+ 410:	02013503          	ld	a0,32(sp)
+
+0000000000000414 <.LBB1767>:
+	if (!_M_is_local())
+ 414:	03010793          	addi	a5,sp,48
+ 418:	00f50663          	beq	a0,a5,424 <.L62>
+
+000000000000041c <.LBB1769>:
+ 41c:	00000097          	auipc	ra,0x0
+ 420:	000080e7          	jalr	ra,0(ra) # 41c <.LBB1769>
+
+0000000000000424 <.L62>:
+      { return _M_dataplus._M_p; }
+ 424:	00013503          	ld	a0,0(sp)
+
+0000000000000428 <.LBB1789>:
+	if (!_M_is_local())
+ 428:	01010793          	addi	a5,sp,16
+ 42c:	00f50663          	beq	a0,a5,438 <.L63>
+
+0000000000000430 <.LBB1791>:
+ 430:	00000097          	auipc	ra,0x0
+ 434:	000080e7          	jalr	ra,0(ra) # 430 <.LBB1791>
+
+0000000000000438 <.L63>:
+ 438:	00048513          	addi	a0,s1,0
+ 43c:	00000097          	auipc	ra,0x0
+ 440:	000080e7          	jalr	ra,0(ra) # 43c <.L63+0x4>
+
+0000000000000444 <.LVL140>:
+ 444:	00040513          	addi	a0,s0,0
+ 448:	00000097          	auipc	ra,0x0
+ 44c:	000080e7          	jalr	ra,0(ra) # 448 <.LVL140+0x4>
+
+0000000000000450 <.L66>:
+      { return _M_dataplus._M_p; }
+ 450:	00050413          	addi	s0,a0,0
+
+0000000000000454 <.LM479>:
+ 454:	fbdff06f          	jal	zero,410 <.L60>
+
+0000000000000458 <.L65>:
+ 458:	00050413          	addi	s0,a0,0
+ 45c:	fc9ff06f          	jal	zero,424 <.L62>
+
+0000000000000460 <.L27>:
+        val |= ((uint64_t)p[i]) << (i * 8);
+ 460:	00074503          	lbu	a0,0(a4)
+
+0000000000000464 <.L64>:
+    pos += sizeof(T);
+ 464:	00170713          	addi	a4,a4,1
+
+0000000000000468 <.L29>:
+ 468:	00e43823          	sd	a4,16(s0)
+
+000000000000046c <.LBE1805>:
+  }
+ 46c:	07813083          	ld	ra,120(sp)
+ 470:	07013403          	ld	s0,112(sp)
+
+0000000000000474 <.LM489>:
+ 474:	06813483          	ld	s1,104(sp)
+ 478:	08010113          	addi	sp,sp,128
+ 47c:	00008067          	jalr	zero,0(ra)
+
+Disassembly of section .text._ZNSt6vectorImSaImEE17_M_realloc_insertIJRKmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_:
+
+0000000000000000 <void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long const&>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long const&)>:
+#if __cplusplus >= 201103L
+  template<typename _Tp, typename _Alloc>
+    template<typename... _Args>
+      _GLIBCXX20_CONSTEXPR
+      void
+      vector<_Tp, _Alloc>::
+   0:	fb010113          	addi	sp,sp,-80
+   4:	04113423          	sd	ra,72(sp)
+   8:	04813023          	sd	s0,64(sp)
+   c:	02913c23          	sd	s1,56(sp)
+  10:	03213823          	sd	s2,48(sp)
+  14:	03313423          	sd	s3,40(sp)
+  18:	03413023          	sd	s4,32(sp)
+  1c:	01513c23          	sd	s5,24(sp)
+  20:	01613823          	sd	s6,16(sp)
+  24:	01713423          	sd	s7,8(sp)
+
+0000000000000028 <.LBB2661>:
+  28:	00853903          	ld	s2,8(a0)
+
+000000000000002c <.LM1238>:
+  2c:	00053983          	ld	s3,0(a0)
+
+0000000000000030 <.LM1239>:
+  30:	413907b3          	sub	a5,s2,s3
+  34:	4037d793          	srai	a5,a5,0x3
+
+0000000000000038 <.LBE2663>:
+      // Called by _M_fill_insert, _M_insert_aux etc.
+      _GLIBCXX20_CONSTEXPR
+      size_type
+      _M_check_len(size_type __n, const char* __s) const
+      {
+	if (max_size() - size() < __n)
+  38:	fff00713          	addi	a4,zero,-1
+  3c:	00475713          	srli	a4,a4,0x4
+  40:	04e78263          	beq	a5,a4,84 <.L198>
+  44:	00050493          	addi	s1,a0,0
+  48:	00058a13          	addi	s4,a1,0
+
+000000000000004c <.LM1242>:
+  4c:	00060b93          	addi	s7,a2,0
+
+0000000000000050 <.LBB2665>:
+      // concept requirements
+      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
+      //return  __a < __b ? __b : __a;
+      if (__a < __b)
+	return __b;
+      return __a;
+  50:	00078713          	addi	a4,a5,0
+
+0000000000000054 <.LM1245>:
+      if (__a < __b)
+  54:	05390063          	beq	s2,s3,94 <.L199>
+
+0000000000000058 <.L182>:
+	  __throw_length_error(__N(__s));
+
+	const size_type __len = size() + (std::max)(size(), __n);
+  58:	00e78733          	add	a4,a5,a4
+
+000000000000005c <.LM1248>:
+	return (__len < size() || __len > max_size()) ? max_size() : __len;
+  5c:	06f76663          	bltu	a4,a5,c8 <.L183>
+
+0000000000000060 <.LM1249>:
+  60:	00070a93          	addi	s5,a4,0
+  64:	fff00793          	addi	a5,zero,-1
+  68:	0047d793          	srli	a5,a5,0x4
+  6c:	00e7f463          	bgeu	a5,a4,74 <.L184>
+  70:	00078a93          	addi	s5,a5,0
+
+0000000000000074 <.L184>:
+    _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+    inline typename __normal_iterator<_Iterator, _Container>::difference_type
+    operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+	      const __normal_iterator<_Iterator, _Container>& __rhs)
+    _GLIBCXX_NOEXCEPT
+    { return __lhs.base() - __rhs.base(); }
+  74:	413a0433          	sub	s0,s4,s3
+
+0000000000000078 <.LBB2677>:
+	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+  78:	00000b13          	addi	s6,zero,0
+  7c:	06070463          	beq	a4,zero,e4 <.L185>
+  80:	0540006f          	jal	zero,d4 <.L192>
+
+0000000000000084 <.L198>:
+	  __throw_length_error(__N(__s));
+  84:	00000517          	auipc	a0,0x0
+  88:	00050513          	addi	a0,a0,0 # 84 <.L198>
+
+000000000000008c <.LM1261>:
+  8c:	00000097          	auipc	ra,0x0
+  90:	000080e7          	jalr	ra,0(ra) # 8c <.LM1261>
+
+0000000000000094 <.L199>:
+	return __b;
+  94:	00100713          	addi	a4,zero,1
+  98:	fc1ff06f          	jal	zero,58 <.L182>
+
+000000000000009c <.L200>:
+  9c:	00040613          	addi	a2,s0,0
+  a0:	00098593          	addi	a1,s3,0
+  a4:	000b0513          	addi	a0,s6,0
+  a8:	00000097          	auipc	ra,0x0
+  ac:	000080e7          	jalr	ra,0(ra) # a8 <.L200+0xc>
+
+00000000000000b0 <.LBE2684>:
+	  if _GLIBCXX17_CONSTEXPR (_S_use_relocate())
+	    {
+	      __new_finish = _S_relocate(__old_start, __position.base(),
+					 __new_start, _M_get_Tp_allocator());
+
+	      ++__new_finish;
+  b0:	00840413          	addi	s0,s0,8
+
+00000000000000b4 <.LM1267>:
+  b4:	008b0433          	add	s0,s6,s0
+
+00000000000000b8 <.LBB2695>:
+      ptrdiff_t __count = __last - __first;
+  b8:	41490933          	sub	s2,s2,s4
+
+00000000000000bc <.LM1273>:
+      if (__count > 0)
+  bc:	05204463          	blt	zero,s2,104 <.L187>
+
+00000000000000c0 <.LM1274>:
+	}
+      return __result + __count;
+  c0:	01240433          	add	s0,s0,s2
+
+00000000000000c4 <.LBB2706>:
+      _M_deallocate(pointer __p, size_t __n)
+  c4:	05c0006f          	jal	zero,120 <.L191>
+
+00000000000000c8 <.L183>:
+  c8:	413a0433          	sub	s0,s4,s3
+
+00000000000000cc <.LBB2714>:
+	return (__len < size() || __len > max_size()) ? max_size() : __len;
+  cc:	fff00a93          	addi	s5,zero,-1
+  d0:	004ada93          	srli	s5,s5,0x4
+
+00000000000000d4 <.L192>:
+	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+  d4:	003a9513          	slli	a0,s5,0x3
+  d8:	00000097          	auipc	ra,0x0
+  dc:	000080e7          	jalr	ra,0(ra) # d8 <.L192+0x4>
+
+00000000000000e0 <.LM1290>:
+  e0:	00050b13          	addi	s6,a0,0
+
+00000000000000e4 <.L185>:
+	{ ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+  e4:	008b07b3          	add	a5,s6,s0
+
+00000000000000e8 <.LM1295>:
+  e8:	000bb703          	ld	a4,0(s7)
+  ec:	00e7b023          	sd	a4,0(a5)
+
+00000000000000f0 <.LBB2720>:
+      if (__count > 0)
+  f0:	fa8046e3          	blt	zero,s0,9c <.L200>
+
+00000000000000f4 <.LBE2720>:
+  f4:	00840413          	addi	s0,s0,8
+
+00000000000000f8 <.LM1304>:
+  f8:	008b0433          	add	s0,s6,s0
+
+00000000000000fc <.LBB2721>:
+      ptrdiff_t __count = __last - __first;
+  fc:	41490933          	sub	s2,s2,s4
+
+0000000000000100 <.LM1310>:
+      if (__count > 0)
+ 100:	01205c63          	bge	zero,s2,118 <.L189>
+
+0000000000000104 <.L187>:
+	  __builtin_memmove(__result, __first, __count * sizeof(_Tp));
+ 104:	00090613          	addi	a2,s2,0
+ 108:	000a0593          	addi	a1,s4,0
+ 10c:	00040513          	addi	a0,s0,0
+ 110:	00000097          	auipc	ra,0x0
+ 114:	000080e7          	jalr	ra,0(ra) # 110 <.L187+0xc>
+
+0000000000000118 <.L189>:
+      return __result + __count;
+ 118:	01240433          	add	s0,s0,s2
+
+000000000000011c <.LBB2722>:
+	if (__p)
+ 11c:	00098863          	beq	s3,zero,12c <.L190>
+
+0000000000000120 <.L191>:
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+ 120:	00098513          	addi	a0,s3,0
+ 124:	00000097          	auipc	ra,0x0
+ 128:	000080e7          	jalr	ra,0(ra) # 124 <.L191+0x4>
+
+000000000000012c <.L190>:
+#endif
+	std::_Destroy(__old_start, __old_finish, _M_get_Tp_allocator());
+      _GLIBCXX_ASAN_ANNOTATE_REINIT;
+      _M_deallocate(__old_start,
+		    this->_M_impl._M_end_of_storage - __old_start);
+      this->_M_impl._M_start = __new_start;
+ 12c:	0164b023          	sd	s6,0(s1)
+
+0000000000000130 <.LM1321>:
+      this->_M_impl._M_finish = __new_finish;
+ 130:	0084b423          	sd	s0,8(s1)
+
+0000000000000134 <.LM1322>:
+      this->_M_impl._M_end_of_storage = __new_start + __len;
+ 134:	003a9a93          	slli	s5,s5,0x3
+
+0000000000000138 <.LM1323>:
+ 138:	015b0ab3          	add	s5,s6,s5
+
+000000000000013c <.LM1324>:
+ 13c:	0154b823          	sd	s5,16(s1)
+
+0000000000000140 <.LM1325>:
+    }
+ 140:	04813083          	ld	ra,72(sp)
+ 144:	04013403          	ld	s0,64(sp)
+
+0000000000000148 <.LM1326>:
+ 148:	03813483          	ld	s1,56(sp)
+
+000000000000014c <.LM1327>:
+ 14c:	03013903          	ld	s2,48(sp)
+ 150:	02813983          	ld	s3,40(sp)
+
+0000000000000154 <.LM1328>:
+ 154:	02013a03          	ld	s4,32(sp)
+
+0000000000000158 <.LM1329>:
+ 158:	01813a83          	ld	s5,24(sp)
+ 15c:	01013b03          	ld	s6,16(sp)
+
+0000000000000160 <.LM1330>:
+ 160:	00813b83          	ld	s7,8(sp)
+
+0000000000000164 <.LM1331>:
+ 164:	05010113          	addi	sp,sp,80
+ 168:	00008067          	jalr	zero,0(ra)
+
+Disassembly of section .text._ZNSt6vectorImSaImEE17_M_realloc_insertIJmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_:
+
+0000000000000000 <void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long&&)>:
+      vector<_Tp, _Alloc>::
+   0:	fb010113          	addi	sp,sp,-80
+   4:	04113423          	sd	ra,72(sp)
+   8:	04813023          	sd	s0,64(sp)
+   c:	02913c23          	sd	s1,56(sp)
+  10:	03213823          	sd	s2,48(sp)
+  14:	03313423          	sd	s3,40(sp)
+  18:	03413023          	sd	s4,32(sp)
+  1c:	01513c23          	sd	s5,24(sp)
+  20:	01613823          	sd	s6,16(sp)
+  24:	01713423          	sd	s7,8(sp)
+
+0000000000000028 <.LBB2760>:
+      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+  28:	00853903          	ld	s2,8(a0)
+
+000000000000002c <.LM1337>:
+  2c:	00053983          	ld	s3,0(a0)
+
+0000000000000030 <.LM1338>:
+  30:	413907b3          	sub	a5,s2,s3
+  34:	4037d793          	srai	a5,a5,0x3
+
+0000000000000038 <.LBE2762>:
+	if (max_size() - size() < __n)
+  38:	fff00713          	addi	a4,zero,-1
+  3c:	00475713          	srli	a4,a4,0x4
+  40:	04e78263          	beq	a5,a4,84 <.L219>
+  44:	00050493          	addi	s1,a0,0
+  48:	00058a13          	addi	s4,a1,0
+
+000000000000004c <.LM1341>:
+  4c:	00060b93          	addi	s7,a2,0
+
+0000000000000050 <.LBB2764>:
+      return __a;
+  50:	00078713          	addi	a4,a5,0
+
+0000000000000054 <.LM1344>:
+      if (__a < __b)
+  54:	05390063          	beq	s2,s3,94 <.L220>
+
+0000000000000058 <.L203>:
+	const size_type __len = size() + (std::max)(size(), __n);
+  58:	00e78733          	add	a4,a5,a4
+
+000000000000005c <.LM1347>:
+	return (__len < size() || __len > max_size()) ? max_size() : __len;
+  5c:	06f76663          	bltu	a4,a5,c8 <.L204>
+
+0000000000000060 <.LM1348>:
+  60:	00070a93          	addi	s5,a4,0
+  64:	fff00793          	addi	a5,zero,-1
+  68:	0047d793          	srli	a5,a5,0x4
+  6c:	00e7f463          	bgeu	a5,a4,74 <.L205>
+  70:	00078a93          	addi	s5,a5,0
+
+0000000000000074 <.L205>:
+  74:	413a0433          	sub	s0,s4,s3
+
+0000000000000078 <.LBB2776>:
+	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+  78:	00000b13          	addi	s6,zero,0
+  7c:	06070463          	beq	a4,zero,e4 <.L206>
+  80:	0540006f          	jal	zero,d4 <.L213>
+
+0000000000000084 <.L219>:
+	  __throw_length_error(__N(__s));
+  84:	00000517          	auipc	a0,0x0
+  88:	00050513          	addi	a0,a0,0 # 84 <.L219>
+
+000000000000008c <.LM1360>:
+  8c:	00000097          	auipc	ra,0x0
+  90:	000080e7          	jalr	ra,0(ra) # 8c <.LM1360>
+
+0000000000000094 <.L220>:
+	return __b;
+  94:	00100713          	addi	a4,zero,1
+  98:	fc1ff06f          	jal	zero,58 <.L203>
+
+000000000000009c <.L221>:
+	  __builtin_memmove(__result, __first, __count * sizeof(_Tp));
+  9c:	00040613          	addi	a2,s0,0
+  a0:	00098593          	addi	a1,s3,0
+  a4:	000b0513          	addi	a0,s6,0
+  a8:	00000097          	auipc	ra,0x0
+  ac:	000080e7          	jalr	ra,0(ra) # a8 <.L221+0xc>
+
+00000000000000b0 <.LBE2783>:
+	      ++__new_finish;
+  b0:	00840413          	addi	s0,s0,8
+
+00000000000000b4 <.LM1366>:
+  b4:	008b0433          	add	s0,s6,s0
+
+00000000000000b8 <.LBB2794>:
+      ptrdiff_t __count = __last - __first;
+  b8:	41490933          	sub	s2,s2,s4
+
+00000000000000bc <.LM1372>:
+      if (__count > 0)
+  bc:	05204463          	blt	zero,s2,104 <.L208>
+
+00000000000000c0 <.LM1373>:
+      return __result + __count;
+  c0:	01240433          	add	s0,s0,s2
+
+00000000000000c4 <.LBB2805>:
+      _M_deallocate(pointer __p, size_t __n)
+  c4:	05c0006f          	jal	zero,120 <.L212>
+
+00000000000000c8 <.L204>:
+  c8:	413a0433          	sub	s0,s4,s3
+
+00000000000000cc <.LBB2813>:
+	return (__len < size() || __len > max_size()) ? max_size() : __len;
+  cc:	fff00a93          	addi	s5,zero,-1
+  d0:	004ada93          	srli	s5,s5,0x4
+
+00000000000000d4 <.L213>:
+	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+  d4:	003a9513          	slli	a0,s5,0x3
+  d8:	00000097          	auipc	ra,0x0
+  dc:	000080e7          	jalr	ra,0(ra) # d8 <.L213+0x4>
+
+00000000000000e0 <.LM1389>:
+  e0:	00050b13          	addi	s6,a0,0
+
+00000000000000e4 <.L206>:
+	{ ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+  e4:	008b07b3          	add	a5,s6,s0
+
+00000000000000e8 <.LM1394>:
+  e8:	000bb703          	ld	a4,0(s7)
+  ec:	00e7b023          	sd	a4,0(a5)
+
+00000000000000f0 <.LBB2819>:
+      if (__count > 0)
+  f0:	fa8046e3          	blt	zero,s0,9c <.L221>
+
+00000000000000f4 <.LBE2819>:
+  f4:	00840413          	addi	s0,s0,8
+
+00000000000000f8 <.LM1403>:
+  f8:	008b0433          	add	s0,s6,s0
+
+00000000000000fc <.LBB2820>:
+      ptrdiff_t __count = __last - __first;
+  fc:	41490933          	sub	s2,s2,s4
+
+0000000000000100 <.LM1409>:
+      if (__count > 0)
+ 100:	01205c63          	bge	zero,s2,118 <.L210>
+
+0000000000000104 <.L208>:
+	  __builtin_memmove(__result, __first, __count * sizeof(_Tp));
+ 104:	00090613          	addi	a2,s2,0
+ 108:	000a0593          	addi	a1,s4,0
+ 10c:	00040513          	addi	a0,s0,0
+ 110:	00000097          	auipc	ra,0x0
+ 114:	000080e7          	jalr	ra,0(ra) # 110 <.L208+0xc>
+
+0000000000000118 <.L210>:
+      return __result + __count;
+ 118:	01240433          	add	s0,s0,s2
+
+000000000000011c <.LBB2821>:
+	if (__p)
+ 11c:	00098863          	beq	s3,zero,12c <.L211>
+
+0000000000000120 <.L212>:
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+ 120:	00098513          	addi	a0,s3,0
+ 124:	00000097          	auipc	ra,0x0
+ 128:	000080e7          	jalr	ra,0(ra) # 124 <.L212+0x4>
+
+000000000000012c <.L211>:
+      this->_M_impl._M_start = __new_start;
+ 12c:	0164b023          	sd	s6,0(s1)
+
+0000000000000130 <.LM1420>:
+      this->_M_impl._M_finish = __new_finish;
+ 130:	0084b423          	sd	s0,8(s1)
+
+0000000000000134 <.LM1421>:
+      this->_M_impl._M_end_of_storage = __new_start + __len;
+ 134:	003a9a93          	slli	s5,s5,0x3
+
+0000000000000138 <.LM1422>:
+ 138:	015b0ab3          	add	s5,s6,s5
+
+000000000000013c <.LM1423>:
+ 13c:	0154b823          	sd	s5,16(s1)
+
+0000000000000140 <.LM1424>:
+    }
+ 140:	04813083          	ld	ra,72(sp)
+ 144:	04013403          	ld	s0,64(sp)
+
+0000000000000148 <.LM1425>:
+ 148:	03813483          	ld	s1,56(sp)
+
+000000000000014c <.LM1426>:
+ 14c:	03013903          	ld	s2,48(sp)
+ 150:	02813983          	ld	s3,40(sp)
+
+0000000000000154 <.LM1427>:
+ 154:	02013a03          	ld	s4,32(sp)
+
+0000000000000158 <.LM1428>:
+ 158:	01813a83          	ld	s5,24(sp)
+ 15c:	01013b03          	ld	s6,16(sp)
+
+0000000000000160 <.LM1429>:
+ 160:	00813b83          	ld	s7,8(sp)
+
+0000000000000164 <.LM1430>:
+ 164:	05010113          	addi	sp,sp,80
+ 168:	00008067          	jalr	zero,0(ra)
+
+Disassembly of section .text._ZNSt6vectorImSaImEE12emplace_backIJmEEEvDpOT_:
+
+0000000000000000 <void std::vector<unsigned long, std::allocator<unsigned long> >::emplace_back<unsigned long>(unsigned long&&)>:
+	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+   0:	00853783          	ld	a5,8(a0)
+
+0000000000000004 <.LM1433>:
+   4:	01053703          	ld	a4,16(a0)
+   8:	00e78e63          	beq	a5,a4,24 <.L223>
+
+000000000000000c <.LBB2822>:
+	{ ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+   c:	0005b703          	ld	a4,0(a1)
+  10:	00e7b023          	sd	a4,0(a5)
+
+0000000000000014 <.LBE2822>:
+	    ++this->_M_impl._M_finish;
+  14:	00853783          	ld	a5,8(a0)
+  18:	00878793          	addi	a5,a5,8
+  1c:	00f53423          	sd	a5,8(a0)
   20:	00008067          	jalr	zero,0(ra)
 
-Disassembly of section .text._ZSt8_DestroyIN5dwarf7sectionEEvPT_:
+0000000000000024 <.L223>:
+      vector<_Tp, _Alloc>::
+  24:	ff010113          	addi	sp,sp,-16
+  28:	00113423          	sd	ra,8(sp)
 
-0000000000000000 <void std::_Destroy<dwarf::section>(dwarf::section*)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	00000013          	addi	zero,zero,0
-  14:	01813403          	ld	s0,24(sp)
-  18:	02010113          	addi	sp,sp,32
-  1c:	00008067          	jalr	zero,0(ra)
+000000000000002c <.LBB2825>:
+	  _M_realloc_insert(end(), std::forward<_Args>(__args)...);
+  2c:	00058613          	addi	a2,a1,0
+  30:	00078593          	addi	a1,a5,0
+
+0000000000000034 <.LM1444>:
+  34:	00000317          	auipc	t1,0x0
+  38:	00033303          	ld	t1,0(t1) # 34 <.LM1444>
+  3c:	000300e7          	jalr	ra,0(t1)
+
+0000000000000040 <.LM1445>:
+      }
+  40:	00813083          	ld	ra,8(sp)
+  44:	01010113          	addi	sp,sp,16
+  48:	00008067          	jalr	zero,0(ra)

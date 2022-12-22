@@ -5,1458 +5,1748 @@ dump-syms.o:     file format elf64-littleriscv
 Disassembly of section .text:
 
 0000000000000000 <main>:
-   0:	e2010113          	addi	sp,sp,-480
-   4:	1c113c23          	sd	ra,472(sp)
-   8:	1c813823          	sd	s0,464(sp)
-   c:	1c913423          	sd	s1,456(sp)
-  10:	1d213023          	sd	s2,448(sp)
-  14:	1b313c23          	sd	s3,440(sp)
-  18:	1b413823          	sd	s4,432(sp)
-  1c:	1b513423          	sd	s5,424(sp)
-  20:	1b613023          	sd	s6,416(sp)
-  24:	1e010413          	addi	s0,sp,480
-  28:	00050793          	addi	a5,a0,0
-  2c:	e2b43023          	sd	a1,-480(s0)
-  30:	e2f42623          	sw	a5,-468(s0)
-  34:	e2c42783          	lw	a5,-468(s0)
-  38:	0007871b          	addiw	a4,a5,0
+#include <fcntl.h>
+#include <inttypes.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+
+int main(int argc, char **argv) {
+   0:	e3010113          	addi	sp,sp,-464
+   4:	1c113423          	sd	ra,456(sp)
+   8:	1c813023          	sd	s0,448(sp)
+   c:	1a913c23          	sd	s1,440(sp)
+  10:	1b213823          	sd	s2,432(sp)
+  14:	1b313423          	sd	s3,424(sp)
+  18:	1b413023          	sd	s4,416(sp)
+  1c:	19513c23          	sd	s5,408(sp)
+  20:	19613823          	sd	s6,400(sp)
+  24:	19713423          	sd	s7,392(sp)
+  28:	19813023          	sd	s8,384(sp)
+  2c:	17913c23          	sd	s9,376(sp)
+  30:	17a13823          	sd	s10,368(sp)
+  34:	17b13423          	sd	s11,360(sp)
+  38:	00058413          	addi	s0,a1,0
+
+000000000000003c <.LM157>:
+  if (argc != 2) {
   3c:	00200793          	addi	a5,zero,2
-  40:	02f70a63          	beq	a4,a5,74 <.L41>
-  44:	000007b7          	lui	a5,0x0
-  48:	0007b703          	ld	a4,0(a5) # 0 <main>
-  4c:	e2043783          	ld	a5,-480(s0)
-  50:	0007b783          	ld	a5,0(a5)
-  54:	00078613          	addi	a2,a5,0
-  58:	000007b7          	lui	a5,0x0
-  5c:	00078593          	addi	a1,a5,0 # 0 <main>
-  60:	00070513          	addi	a0,a4,0
+  40:	02f51e63          	bne	a0,a5,7c <.L120>
 
-0000000000000064 <.LEHB2>:
-  64:	00000097          	auipc	ra,0x0
-  68:	000080e7          	jalr	ra,0(ra) # 64 <.LEHB2>
-  6c:	00200493          	addi	s1,zero,2
-  70:	4980006f          	jal	zero,508 <.L52>
+0000000000000044 <.LM158>:
+    fprintf(stderr, "usage: %s elf-file\n", argv[0]);
+    return 2;
+  }
 
-0000000000000074 <.L41>:
-  74:	e2043783          	ld	a5,-480(s0)
-  78:	00878793          	addi	a5,a5,8
-  7c:	0007b783          	ld	a5,0(a5)
-  80:	00000593          	addi	a1,zero,0
-  84:	00078513          	addi	a0,a5,0
-  88:	00000097          	auipc	ra,0x0
-  8c:	000080e7          	jalr	ra,0(ra) # 88 <.L41+0x14>
-  90:	00050793          	addi	a5,a0,0
-  94:	faf42c23          	sw	a5,-72(s0)
-  98:	fb842783          	lw	a5,-72(s0)
-  9c:	0007879b          	addiw	a5,a5,0
-  a0:	0407de63          	bge	a5,zero,fc <.L43>
-  a4:	000007b7          	lui	a5,0x0
-  a8:	0007b483          	ld	s1,0(a5) # 0 <main>
-  ac:	e2043783          	ld	a5,-480(s0)
-  b0:	00878793          	addi	a5,a5,8
-  b4:	0007b903          	ld	s2,0(a5)
+  int fd = open(argv[1], O_RDONLY);
+  44:	00000593          	addi	a1,zero,0
+
+0000000000000048 <.LM160>:
+  48:	00843503          	ld	a0,8(s0)
+
+000000000000004c <.LEHB0>:
+  4c:	00000097          	auipc	ra,0x0
+  50:	000080e7          	jalr	ra,0(ra) # 4c <.LEHB0>
+
+0000000000000054 <.LVL55>:
+  54:	00050593          	addi	a1,a0,0
+
+0000000000000058 <.LM162>:
+  if (fd < 0) {
+  58:	04054463          	blt	a0,zero,a0 <.L121>
+
+000000000000005c <.LM163>:
+    fprintf(stderr, "%s: %s\n", argv[1], strerror(errno));
+    return 1;
+  }
+
+  elf::elf f(elf::create_mmap_loader(fd));
+  5c:	12010513          	addi	a0,sp,288
+
+0000000000000060 <.LM165>:
+  60:	00000097          	auipc	ra,0x0
+  64:	000080e7          	jalr	ra,0(ra) # 60 <.LM165>
+
+0000000000000068 <.LEHE0>:
+  68:	12010593          	addi	a1,sp,288
+  6c:	11010513          	addi	a0,sp,272
+
+0000000000000070 <.LEHB1>:
+  70:	00000097          	auipc	ra,0x0
+  74:	000080e7          	jalr	ra,0(ra) # 70 <.LEHB1>
+
+0000000000000078 <.LEHE1>:
+  78:	06c0006f          	jal	zero,e4 <.L122>
+
+000000000000007c <.L120>:
+    fprintf(stderr, "usage: %s elf-file\n", argv[0]);
+  7c:	0005b603          	ld	a2,0(a1)
+  80:	000005b7          	lui	a1,0x0
+  84:	00058593          	addi	a1,a1,0 # 0 <main>
+  88:	000007b7          	lui	a5,0x0
+  8c:	0007b503          	ld	a0,0(a5) # 0 <main>
+
+0000000000000090 <.LEHB2>:
+  90:	00000097          	auipc	ra,0x0
+  94:	000080e7          	jalr	ra,0(ra) # 90 <.LEHB2>
+
+0000000000000098 <.LM170>:
+    return 2;
+  98:	00200513          	addi	a0,zero,2
+  9c:	7880006f          	jal	zero,824 <.L117>
+
+00000000000000a0 <.L121>:
+    fprintf(stderr, "%s: %s\n", argv[1], strerror(errno));
+  a0:	000007b7          	lui	a5,0x0
+  a4:	0007b483          	ld	s1,0(a5) # 0 <main>
+  a8:	00843403          	ld	s0,8(s0)
+
+00000000000000ac <.LM174>:
+  ac:	00000097          	auipc	ra,0x0
+  b0:	000080e7          	jalr	ra,0(ra) # ac <.LM174>
+
+00000000000000b4 <.LM175>:
+  b4:	00052503          	lw	a0,0(a0)
   b8:	00000097          	auipc	ra,0x0
-  bc:	000080e7          	jalr	ra,0(ra) # b8 <.L41+0x44>
-  c0:	00050793          	addi	a5,a0,0
-  c4:	0007a783          	lw	a5,0(a5)
-  c8:	00078513          	addi	a0,a5,0
-  cc:	00000097          	auipc	ra,0x0
-  d0:	000080e7          	jalr	ra,0(ra) # cc <.L41+0x58>
-  d4:	00050793          	addi	a5,a0,0
-  d8:	00078693          	addi	a3,a5,0
-  dc:	00090613          	addi	a2,s2,0
-  e0:	000007b7          	lui	a5,0x0
-  e4:	00078593          	addi	a1,a5,0 # 0 <main>
-  e8:	00048513          	addi	a0,s1,0
+  bc:	000080e7          	jalr	ra,0(ra) # b8 <.LM175+0x4>
+
+00000000000000c0 <.LVL66>:
+  c0:	00050693          	addi	a3,a0,0
+  c4:	00040613          	addi	a2,s0,0
+  c8:	000005b7          	lui	a1,0x0
+  cc:	00058593          	addi	a1,a1,0 # 0 <main>
+  d0:	00048513          	addi	a0,s1,0
+  d4:	00000097          	auipc	ra,0x0
+  d8:	000080e7          	jalr	ra,0(ra) # d4 <.LVL66+0x14>
+
+00000000000000dc <.LEHE2>:
+    return 1;
+  dc:	00100513          	addi	a0,zero,1
+  e0:	7440006f          	jal	zero,824 <.L117>
+
+00000000000000e4 <.L122>:
+      explicit
+      __shared_count(const __weak_count<_Lp>& __r, std::nothrow_t) noexcept;
+
+      ~__shared_count() noexcept
+      {
+	if (_M_pi != nullptr)
+  e4:	12813503          	ld	a0,296(sp)
+
+00000000000000e8 <.LM182>:
+  e8:	00050663          	beq	a0,zero,f4 <.L27>
+
+00000000000000ec <.LM183>:
+	  _M_pi->_M_release();
   ec:	00000097          	auipc	ra,0x0
-  f0:	000080e7          	jalr	ra,0(ra) # ec <.L41+0x78>
-  f4:	00100493          	addi	s1,zero,1
-  f8:	4100006f          	jal	zero,508 <.L52>
+  f0:	000080e7          	jalr	ra,0(ra) # ec <.LM183>
 
-00000000000000fc <.L43>:
-  fc:	ee840793          	addi	a5,s0,-280
- 100:	fb842703          	lw	a4,-72(s0)
- 104:	00070593          	addi	a1,a4,0
- 108:	00078513          	addi	a0,a5,0
- 10c:	00000097          	auipc	ra,0x0
- 110:	000080e7          	jalr	ra,0(ra) # 10c <.L43+0x10>
+00000000000000f4 <.L27>:
+  for (auto &sec : f.sections()) {
+  f4:	11010513          	addi	a0,sp,272
 
-0000000000000114 <.LEHE2>:
- 114:	ee840713          	addi	a4,s0,-280
- 118:	ed840793          	addi	a5,s0,-296
- 11c:	00070593          	addi	a1,a4,0
- 120:	00078513          	addi	a0,a5,0
+00000000000000f8 <.LEHB3>:
+  f8:	00000097          	auipc	ra,0x0
+  fc:	000080e7          	jalr	ra,0(ra) # f8 <.LEHB3>
 
-0000000000000124 <.LEHB3>:
- 124:	00000097          	auipc	ra,0x0
- 128:	000080e7          	jalr	ra,0(ra) # 124 <.LEHB3>
+0000000000000100 <.LBB1169>:
+      _GLIBCXX_CONSTEXPR __normal_iterator() _GLIBCXX_NOEXCEPT
+      : _M_current(_Iterator()) { }
 
-000000000000012c <.LEHE3>:
- 12c:	ee840793          	addi	a5,s0,-280
- 130:	00078513          	addi	a0,a5,0
- 134:	00000097          	auipc	ra,0x0
- 138:	000080e7          	jalr	ra,0(ra) # 134 <.LEHE3+0x8>
- 13c:	ed840793          	addi	a5,s0,-296
- 140:	00078513          	addi	a0,a5,0
+      explicit _GLIBCXX20_CONSTEXPR
+      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+      : _M_current(__i) { }
+ 100:	00053c03          	ld	s8,0(a0)
 
-0000000000000144 <.LEHB4>:
- 144:	00000097          	auipc	ra,0x0
- 148:	000080e7          	jalr	ra,0(ra) # 144 <.LEHB4>
- 14c:	00050793          	addi	a5,a0,0
- 150:	faf43823          	sd	a5,-80(s0)
- 154:	fb043503          	ld	a0,-80(s0)
- 158:	00000097          	auipc	ra,0x0
- 15c:	000080e7          	jalr	ra,0(ra) # 158 <.LEHB4+0x14>
- 160:	00050793          	addi	a5,a0,0
- 164:	ecf43823          	sd	a5,-304(s0)
- 168:	fb043503          	ld	a0,-80(s0)
- 16c:	00000097          	auipc	ra,0x0
- 170:	000080e7          	jalr	ra,0(ra) # 16c <.LEHB4+0x28>
- 174:	00050793          	addi	a5,a0,0
- 178:	ecf43423          	sd	a5,-312(s0)
- 17c:	3580006f          	jal	zero,4d4 <.L44>
+0000000000000104 <.LBB1172>:
+ 104:	00853d03          	ld	s10,8(a0)
 
-0000000000000180 <.L51>:
- 180:	ed040793          	addi	a5,s0,-304
- 184:	00078513          	addi	a0,a5,0
- 188:	00000097          	auipc	ra,0x0
- 18c:	000080e7          	jalr	ra,0(ra) # 188 <.L51+0x8>
- 190:	faa43423          	sd	a0,-88(s0)
- 194:	fa843503          	ld	a0,-88(s0)
- 198:	00000097          	auipc	ra,0x0
- 19c:	000080e7          	jalr	ra,0(ra) # 198 <.L51+0x18>
- 1a0:	00050793          	addi	a5,a0,0
- 1a4:	0047a783          	lw	a5,4(a5)
- 1a8:	00078713          	addi	a4,a5,0
- 1ac:	00200793          	addi	a5,zero,2
- 1b0:	02f70663          	beq	a4,a5,1dc <.L45>
- 1b4:	fa843503          	ld	a0,-88(s0)
- 1b8:	00000097          	auipc	ra,0x0
- 1bc:	000080e7          	jalr	ra,0(ra) # 1b8 <.L51+0x38>
- 1c0:	00050793          	addi	a5,a0,0
- 1c4:	0047a783          	lw	a5,4(a5)
- 1c8:	00078713          	addi	a4,a5,0
- 1cc:	00b00793          	addi	a5,zero,11
- 1d0:	00f70663          	beq	a4,a5,1dc <.L45>
- 1d4:	00100793          	addi	a5,zero,1
- 1d8:	0080006f          	jal	zero,1e0 <.L46>
+0000000000000108 <.LBE1172>:
+ 108:	718d0463          	beq	s10,s8,810 <.L28>
 
-00000000000001dc <.L45>:
- 1dc:	00000793          	addi	a5,zero,0
+000000000000010c <.LBB1175>:
+    if (sec.get_hdr().type != elf::sht::symtab &&
+        sec.get_hdr().type != elf::sht::dynsym)
+      continue;
 
-00000000000001e0 <.L46>:
- 1e0:	2e079063          	bne	a5,zero,4c0 <.L76>
- 1e4:	ef840793          	addi	a5,s0,-264
- 1e8:	fa843583          	ld	a1,-88(s0)
- 1ec:	00078513          	addi	a0,a5,0
+    printf("Symbol table '%s':\n", sec.get_name().c_str());
+    printf("%6s: %-16s %-5s %-7s %-7s %-5s %s\n", "Num", "Value", "Size",
+ 10c:	00000db7          	lui	s11,0x0
+
+0000000000000110 <.LBB1176>:
+  __is_single_threaded() _GLIBCXX_NOTHROW
+  {
+#ifndef __GTHREADS
+    return true;
+#elif __has_include(<sys/single_threaded.h>)
+    return ::__libc_single_threaded;
+ 110:	00000437          	lui	s0,0x0
+
+0000000000000114 <.LBB1258>:
+           "Type", "Binding", "Index", "Name");
+    int i = 0;
+    for (auto sym : sec.as_symtab()) {
+      auto &d = sym.get_data();
+      printf("%6d: %016" PRIx64 " %5" PRId64 " %-7s %-7s %5s %s\n", i++,
+ 114:	00000cb7          	lui	s9,0x0
+ 118:	0300006f          	jal	zero,148 <.L83>
+
+000000000000011c <.L123>:
+    if (sec.get_hdr().type != elf::sht::symtab &&
+ 11c:	00452703          	lw	a4,4(a0)
+ 120:	00200793          	addi	a5,zero,2
+ 124:	02f70c63          	beq	a4,a5,15c <.L29>
+
+0000000000000128 <.LM202>:
+        sec.get_hdr().type != elf::sht::dynsym)
+ 128:	000c0513          	addi	a0,s8,0
+ 12c:	00000097          	auipc	ra,0x0
+ 130:	000080e7          	jalr	ra,0(ra) # 12c <.LM202+0x4>
+
+0000000000000134 <.LM203>:
+    if (sec.get_hdr().type != elf::sht::symtab &&
+ 134:	00452703          	lw	a4,4(a0)
+ 138:	00b00793          	addi	a5,zero,11
+ 13c:	02f70063          	beq	a4,a5,15c <.L29>
+
+0000000000000140 <.L30>:
+  for (auto &sec : f.sections()) {
+ 140:	010c0c13          	addi	s8,s8,16
+
+0000000000000144 <.LM207>:
+ 144:	6d8d0663          	beq	s10,s8,810 <.L28>
+
+0000000000000148 <.L83>:
+ 148:	000c0493          	addi	s1,s8,0
+
+000000000000014c <.LBB1766>:
+    if (sec.get_hdr().type != elf::sht::symtab &&
+ 14c:	000c0513          	addi	a0,s8,0
+ 150:	00000097          	auipc	ra,0x0
+ 154:	000080e7          	jalr	ra,0(ra) # 150 <.LBB1766+0x4>
+
+0000000000000158 <.LM211>:
+ 158:	fc5ff06f          	jal	zero,11c <.L123>
+
+000000000000015c <.L29>:
+    printf("Symbol table '%s':\n", sec.get_name().c_str());
+ 15c:	00048593          	addi	a1,s1,0
+ 160:	0e010513          	addi	a0,sp,224
+ 164:	00000097          	auipc	ra,0x0
+ 168:	000080e7          	jalr	ra,0(ra) # 164 <.L29+0x8>
+
+000000000000016c <.LBB1723>:
+ 16c:	0e013583          	ld	a1,224(sp)
+ 170:	000007b7          	lui	a5,0x0
+ 174:	00078513          	addi	a0,a5,0 # 0 <main>
+
+0000000000000178 <.LEHB4>:
+ 178:	00000097          	auipc	ra,0x0
+ 17c:	000080e7          	jalr	ra,0(ra) # 178 <.LEHB4>
+
+0000000000000180 <.LBB1725>:
+      { _M_string_length = __length; }
+
+      _GLIBCXX20_CONSTEXPR
+      pointer
+      _M_data() const
+      { return _M_dataplus._M_p; }
+ 180:	0e013503          	ld	a0,224(sp)
+
+0000000000000184 <.LBB1732>:
+
+      _GLIBCXX20_CONSTEXPR
+      void
+      _M_dispose()
+      {
+	if (!_M_is_local())
+ 184:	0f010793          	addi	a5,sp,240
+ 188:	00f50663          	beq	a0,a5,194 <.L31>
+
+000000000000018c <.LBB1733>:
+	    _GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n),
+				     std::align_val_t(alignof(_Tp)));
+	    return;
+	  }
+#endif
+	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+ 18c:	00000097          	auipc	ra,0x0
+ 190:	000080e7          	jalr	ra,0(ra) # 18c <.LBB1733>
+
+0000000000000194 <.L31>:
+    printf("%6s: %-16s %-5s %-7s %-7s %-5s %s\n", "Num", "Value", "Size",
+ 194:	000007b7          	lui	a5,0x0
+ 198:	00078893          	addi	a7,a5,0 # 0 <main>
+ 19c:	000007b7          	lui	a5,0x0
+ 1a0:	00078813          	addi	a6,a5,0 # 0 <main>
+ 1a4:	000d8793          	addi	a5,s11,0 # 0 <main>
+ 1a8:	00000737          	lui	a4,0x0
+ 1ac:	00070713          	addi	a4,a4,0 # 0 <main>
+ 1b0:	000006b7          	lui	a3,0x0
+ 1b4:	00068693          	addi	a3,a3,0 # 0 <main>
+ 1b8:	00000637          	lui	a2,0x0
+ 1bc:	00060613          	addi	a2,a2,0 # 0 <main>
+ 1c0:	000005b7          	lui	a1,0x0
+ 1c4:	00058593          	addi	a1,a1,0 # 0 <main>
+ 1c8:	00000537          	lui	a0,0x0
+ 1cc:	00050513          	addi	a0,a0,0 # 0 <main>
+
+00000000000001d0 <.LEHB5>:
+ 1d0:	00000097          	auipc	ra,0x0
+ 1d4:	000080e7          	jalr	ra,0(ra) # 1d0 <.LEHB5>
+
+00000000000001d8 <.LBB1741>:
+    for (auto sym : sec.as_symtab()) {
+ 1d8:	00048593          	addi	a1,s1,0
+ 1dc:	13010513          	addi	a0,sp,304
+ 1e0:	00000097          	auipc	ra,0x0
+ 1e4:	000080e7          	jalr	ra,0(ra) # 1e0 <.LBB1741+0x8>
+
+00000000000001e8 <.LEHE5>:
+ 1e8:	13010593          	addi	a1,sp,304
+
+00000000000001ec <.LM242>:
+ 1ec:	0b010513          	addi	a0,sp,176
+
+00000000000001f0 <.LEHB6>:
  1f0:	00000097          	auipc	ra,0x0
- 1f4:	000080e7          	jalr	ra,0(ra) # 1f0 <.L46+0x10>
+ 1f4:	000080e7          	jalr	ra,0(ra) # 1f0 <.LEHB6>
 
-00000000000001f8 <.LEHE4>:
- 1f8:	ef840793          	addi	a5,s0,-264
- 1fc:	00078513          	addi	a0,a5,0
+00000000000001f8 <.LEHE6>:
+ 1f8:	13010593          	addi	a1,sp,304
+
+00000000000001fc <.LM244>:
+ 1fc:	0e010513          	addi	a0,sp,224
+
+0000000000000200 <.LEHB7>:
  200:	00000097          	auipc	ra,0x0
- 204:	000080e7          	jalr	ra,0(ra) # 200 <.LEHE4+0x8>
- 208:	00050793          	addi	a5,a0,0
- 20c:	00078593          	addi	a1,a5,0
- 210:	000007b7          	lui	a5,0x0
- 214:	00078513          	addi	a0,a5,0 # 0 <main>
+ 204:	000080e7          	jalr	ra,0(ra) # 200 <.LEHB7>
 
-0000000000000218 <.LEHB5>:
- 218:	00000097          	auipc	ra,0x0
- 21c:	000080e7          	jalr	ra,0(ra) # 218 <.LEHB5>
+0000000000000208 <.LBB1622>:
+ 208:	10013703          	ld	a4,256(sp)
+ 20c:	0d013783          	ld	a5,208(sp)
+ 210:	38f70e63          	beq	a4,a5,5ac <.L32>
 
-0000000000000220 <.LEHE5>:
- 220:	ef840793          	addi	a5,s0,-264
- 224:	00078513          	addi	a0,a5,0
- 228:	00000097          	auipc	ra,0x0
- 22c:	000080e7          	jalr	ra,0(ra) # 228 <.LEHE5+0x8>
- 230:	000007b7          	lui	a5,0x0
- 234:	00078893          	addi	a7,a5,0 # 0 <main>
- 238:	000007b7          	lui	a5,0x0
- 23c:	00078813          	addi	a6,a5,0 # 0 <main>
- 240:	000007b7          	lui	a5,0x0
- 244:	00078793          	addi	a5,a5,0 # 0 <main>
- 248:	00000737          	lui	a4,0x0
- 24c:	00070713          	addi	a4,a4,0 # 0 <main>
- 250:	000006b7          	lui	a3,0x0
- 254:	00068693          	addi	a3,a3,0 # 0 <main>
- 258:	00000637          	lui	a2,0x0
- 25c:	00060613          	addi	a2,a2,0 # 0 <main>
- 260:	000005b7          	lui	a1,0x0
- 264:	00058593          	addi	a1,a1,0 # 0 <main>
- 268:	00000537          	lui	a0,0x0
- 26c:	00050513          	addi	a0,a0,0 # 0 <main>
+0000000000000214 <.LBE1741>:
+    int i = 0;
+ 214:	00000493          	addi	s1,zero,0
 
-0000000000000270 <.LEHB6>:
- 270:	00000097          	auipc	ra,0x0
- 274:	000080e7          	jalr	ra,0(ra) # 270 <.LEHB6>
- 278:	fa042e23          	sw	zero,-68(s0)
- 27c:	eb840793          	addi	a5,s0,-328
- 280:	fa843583          	ld	a1,-88(s0)
- 284:	00078513          	addi	a0,a5,0
- 288:	00000097          	auipc	ra,0x0
- 28c:	000080e7          	jalr	ra,0(ra) # 288 <.LEHB6+0x18>
+0000000000000218 <.LM251>:
+ 218:	2b80006f          	jal	zero,4d0 <.L61>
 
-0000000000000290 <.LEHE6>:
- 290:	eb840793          	addi	a5,s0,-328
- 294:	faf43023          	sd	a5,-96(s0)
- 298:	e5840793          	addi	a5,s0,-424
- 29c:	fa043583          	ld	a1,-96(s0)
- 2a0:	00078513          	addi	a0,a5,0
+000000000000021c <.L34>:
+  __atomic_add_dispatch(_Atomic_word* __mem, int __val)
+  {
+    if (__is_single_threaded())
+      __atomic_add_single(__mem, __val);
+    else
+      __atomic_add(__mem, __val);
+ 21c:	00100593          	addi	a1,zero,1
+ 220:	03050513          	addi	a0,a0,48
 
-00000000000002a4 <.LEHB7>:
+0000000000000224 <.LM254>:
+ 224:	00000097          	auipc	ra,0x0
+ 228:	000080e7          	jalr	ra,0(ra) # 224 <.LM254>
+
+000000000000022c <.LM255>:
+ 22c:	2cc0006f          	jal	zero,4f8 <.L33>
+
+0000000000000230 <.L36>:
+ 230:	00100593          	addi	a1,zero,1
+ 234:	03050513          	addi	a0,a0,48
+
+0000000000000238 <.LM259>:
+ 238:	00000097          	auipc	ra,0x0
+ 23c:	000080e7          	jalr	ra,0(ra) # 238 <.LM259>
+
+0000000000000240 <.LM260>:
+ 240:	2e40006f          	jal	zero,524 <.L35>
+
+0000000000000244 <.L128>:
+	if (_M_pi != nullptr)
+ 244:	14813903          	ld	s2,328(sp)
+
+0000000000000248 <.LM267>:
+ 248:	02090063          	beq	s2,zero,268 <.L37>
+
+000000000000024c <.LBB1317>:
+    if (__is_single_threaded())
+ 24c:	00044783          	lbu	a5,0(s0) # 0 <main>
+ 250:	06078063          	beq	a5,zero,2b0 <.L38>
+
+0000000000000254 <.LBB1323>:
+    _Atomic_word __result = *__mem;
+ 254:	03092503          	lw	a0,48(s2)
+
+0000000000000258 <.LM280>:
+    *__mem += __val;
+ 258:	fff5079b          	addiw	a5,a0,-1
+ 25c:	02f92823          	sw	a5,48(s2)
+
+0000000000000260 <.L39>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 260:	00100793          	addi	a5,zero,1
+ 264:	06f50063          	beq	a0,a5,2c4 <.L124>
+
+0000000000000268 <.L37>:
+	if (_M_pi != nullptr)
+ 268:	15813903          	ld	s2,344(sp)
+
+000000000000026c <.LM291>:
+ 26c:	02090063          	beq	s2,zero,28c <.L42>
+
+0000000000000270 <.LBB1350>:
+    if (__is_single_threaded())
+ 270:	00044783          	lbu	a5,0(s0)
+ 274:	0a078463          	beq	a5,zero,31c <.L43>
+
+0000000000000278 <.LBB1356>:
+    _Atomic_word __result = *__mem;
+ 278:	03092503          	lw	a0,48(s2)
+
+000000000000027c <.LM304>:
+    *__mem += __val;
+ 27c:	fff5079b          	addiw	a5,a0,-1
+ 280:	02f92823          	sw	a5,48(s2)
+
+0000000000000284 <.L44>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 284:	00100793          	addi	a5,zero,1
+ 288:	0af50463          	beq	a0,a5,330 <.L125>
+
+000000000000028c <.L42>:
+      printf("%6d: %016" PRIx64 " %5" PRId64 " %-7s %-7s %5s %s\n", i++,
+ 28c:	00148b9b          	addiw	s7,s1,1
+
+0000000000000290 <.LM313>:
+             d.value, d.size, to_string(d.type()).c_str(),
+ 290:	0a013903          	ld	s2,160(sp)
+
+0000000000000294 <.LM314>:
+ 294:	0a813983          	ld	s3,168(sp)
+
+0000000000000298 <.LBB1400>:
+
+  void set_binding(stb v) const {
+    info = (info & 0xF) | ((unsigned char)v << 4);
+  }
+
+  stt type() const { return (stt)(info & 0xF); }
+ 298:	09c14583          	lbu	a1,156(sp)
+
+000000000000029c <.LBE1400>:
+ 29c:	00f5f593          	andi	a1,a1,15
+ 2a0:	00810513          	addi	a0,sp,8
+
+00000000000002a4 <.LEHB8>:
  2a4:	00000097          	auipc	ra,0x0
- 2a8:	000080e7          	jalr	ra,0(ra) # 2a4 <.LEHB7>
+ 2a8:	000080e7          	jalr	ra,0(ra) # 2a4 <.LEHB8>
 
-00000000000002ac <.LEHE7>:
- 2ac:	e8840793          	addi	a5,s0,-376
- 2b0:	fa043583          	ld	a1,-96(s0)
- 2b4:	00078513          	addi	a0,a5,0
+00000000000002ac <.LEHE8>:
+ 2ac:	12c0006f          	jal	zero,3d8 <.L126>
 
-00000000000002b8 <.LEHB8>:
+00000000000002b0 <.L38>:
+      return __exchange_and_add(__mem, __val);
+ 2b0:	fff00593          	addi	a1,zero,-1
+ 2b4:	03090513          	addi	a0,s2,48
  2b8:	00000097          	auipc	ra,0x0
- 2bc:	000080e7          	jalr	ra,0(ra) # 2b8 <.LEHB8>
+ 2bc:	000080e7          	jalr	ra,0(ra) # 2b8 <.L38+0x8>
 
-00000000000002c0 <.LEHE8>:
- 2c0:	1ac0006f          	jal	zero,46c <.L49>
+00000000000002c0 <.LM321>:
+ 2c0:	fa1ff06f          	jal	zero,260 <.L39>
 
-00000000000002c4 <.L50>:
- 2c4:	e3040793          	addi	a5,s0,-464
- 2c8:	e5840713          	addi	a4,s0,-424
- 2cc:	00070593          	addi	a1,a4,0
- 2d0:	00078513          	addi	a0,a5,0
+00000000000002c4 <.L124>:
+	_M_dispose();
+ 2c4:	00093783          	ld	a5,0(s2)
+ 2c8:	0107b783          	ld	a5,16(a5)
+ 2cc:	00090513          	addi	a0,s2,0
+ 2d0:	000780e7          	jalr	ra,0(a5)
 
-00000000000002d4 <.LEHB9>:
- 2d4:	00000097          	auipc	ra,0x0
- 2d8:	000080e7          	jalr	ra,0(ra) # 2d4 <.LEHB9>
+00000000000002d4 <.LM326>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 2d4:	0ff0000f          	fence	iorw,iorw
 
-00000000000002dc <.LEHE9>:
- 2dc:	e3040793          	addi	a5,s0,-464
- 2e0:	00078513          	addi	a0,a5,0
- 2e4:	00000097          	auipc	ra,0x0
- 2e8:	000080e7          	jalr	ra,0(ra) # 2e4 <.LEHE9+0x8>
- 2ec:	f8a43c23          	sd	a0,-104(s0)
- 2f0:	fbc42483          	lw	s1,-68(s0)
- 2f4:	0014879b          	addiw	a5,s1,1
- 2f8:	faf42e23          	sw	a5,-68(s0)
- 2fc:	f9843783          	ld	a5,-104(s0)
- 300:	0087b903          	ld	s2,8(a5)
- 304:	f9843783          	ld	a5,-104(s0)
- 308:	0107b983          	ld	s3,16(a5)
- 30c:	f9843503          	ld	a0,-104(s0)
+00000000000002d8 <.LBB1329>:
+    if (__is_single_threaded())
+ 2d8:	00044783          	lbu	a5,0(s0)
+ 2dc:	02078663          	beq	a5,zero,308 <.L40>
+
+00000000000002e0 <.LBB1333>:
+    _Atomic_word __result = *__mem;
+ 2e0:	03492503          	lw	a0,52(s2)
+
+00000000000002e4 <.LM336>:
+    *__mem += __val;
+ 2e4:	fff5079b          	addiw	a5,a0,-1
+ 2e8:	02f92a23          	sw	a5,52(s2)
+
+00000000000002ec <.L41>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 2ec:	00100793          	addi	a5,zero,1
+ 2f0:	f6f51ce3          	bne	a0,a5,268 <.L37>
+
+00000000000002f4 <.LM341>:
+	    _M_destroy();
+ 2f4:	00093783          	ld	a5,0(s2)
+ 2f8:	0187b783          	ld	a5,24(a5)
+ 2fc:	00090513          	addi	a0,s2,0
+ 300:	000780e7          	jalr	ra,0(a5)
+
+0000000000000304 <.LVL121>:
+ 304:	f65ff06f          	jal	zero,268 <.L37>
+
+0000000000000308 <.L40>:
+      return __exchange_and_add(__mem, __val);
+ 308:	fff00593          	addi	a1,zero,-1
+ 30c:	03490513          	addi	a0,s2,52
  310:	00000097          	auipc	ra,0x0
- 314:	000080e7          	jalr	ra,0(ra) # 310 <.LEHE9+0x34>
- 318:	00050793          	addi	a5,a0,0
- 31c:	00078713          	addi	a4,a5,0
- 320:	f1840793          	addi	a5,s0,-232
- 324:	00070593          	addi	a1,a4,0
- 328:	00078513          	addi	a0,a5,0
+ 314:	000080e7          	jalr	ra,0(ra) # 310 <.L40+0x8>
 
-000000000000032c <.LEHB10>:
- 32c:	00000097          	auipc	ra,0x0
- 330:	000080e7          	jalr	ra,0(ra) # 32c <.LEHB10>
+0000000000000318 <.LM344>:
+ 318:	fd5ff06f          	jal	zero,2ec <.L41>
 
-0000000000000334 <.LEHE10>:
- 334:	f1840793          	addi	a5,s0,-232
- 338:	00078513          	addi	a0,a5,0
- 33c:	00000097          	auipc	ra,0x0
- 340:	000080e7          	jalr	ra,0(ra) # 33c <.LEHE10+0x8>
- 344:	00050a13          	addi	s4,a0,0
- 348:	f9843503          	ld	a0,-104(s0)
- 34c:	00000097          	auipc	ra,0x0
- 350:	000080e7          	jalr	ra,0(ra) # 34c <.LEHE10+0x18>
- 354:	00050793          	addi	a5,a0,0
- 358:	00078713          	addi	a4,a5,0
- 35c:	f3840793          	addi	a5,s0,-200
- 360:	00070593          	addi	a1,a4,0
- 364:	00078513          	addi	a0,a5,0
+000000000000031c <.L43>:
+ 31c:	fff00593          	addi	a1,zero,-1
+ 320:	03090513          	addi	a0,s2,48
+ 324:	00000097          	auipc	ra,0x0
+ 328:	000080e7          	jalr	ra,0(ra) # 324 <.L43+0x8>
 
-0000000000000368 <.LEHB11>:
- 368:	00000097          	auipc	ra,0x0
- 36c:	000080e7          	jalr	ra,0(ra) # 368 <.LEHB11>
+000000000000032c <.LM348>:
+ 32c:	f59ff06f          	jal	zero,284 <.L44>
 
-0000000000000370 <.LEHE11>:
- 370:	f3840793          	addi	a5,s0,-200
- 374:	00078513          	addi	a0,a5,0
- 378:	00000097          	auipc	ra,0x0
- 37c:	000080e7          	jalr	ra,0(ra) # 378 <.LEHE11+0x8>
- 380:	00050a93          	addi	s5,a0,0
- 384:	f9843783          	ld	a5,-104(s0)
- 388:	0067d703          	lhu	a4,6(a5)
- 38c:	f5840793          	addi	a5,s0,-168
- 390:	00070593          	addi	a1,a4,0
- 394:	00078513          	addi	a0,a5,0
+0000000000000330 <.L125>:
+	_M_dispose();
+ 330:	00093783          	ld	a5,0(s2)
+ 334:	0107b783          	ld	a5,16(a5)
+ 338:	00090513          	addi	a0,s2,0
+ 33c:	000780e7          	jalr	ra,0(a5)
 
-0000000000000398 <.LEHB12>:
- 398:	00000097          	auipc	ra,0x0
- 39c:	000080e7          	jalr	ra,0(ra) # 398 <.LEHB12>
+0000000000000340 <.LM353>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 340:	0ff0000f          	fence	iorw,iorw
 
-00000000000003a0 <.LEHE12>:
- 3a0:	f5840793          	addi	a5,s0,-168
- 3a4:	00078513          	addi	a0,a5,0
- 3a8:	00000097          	auipc	ra,0x0
- 3ac:	000080e7          	jalr	ra,0(ra) # 3a8 <.LEHE12+0x8>
- 3b0:	00050b13          	addi	s6,a0,0
- 3b4:	f7840793          	addi	a5,s0,-136
- 3b8:	e3040713          	addi	a4,s0,-464
- 3bc:	00070593          	addi	a1,a4,0
- 3c0:	00078513          	addi	a0,a5,0
+0000000000000344 <.LBB1362>:
+    if (__is_single_threaded())
+ 344:	00044783          	lbu	a5,0(s0)
+ 348:	02078663          	beq	a5,zero,374 <.L45>
 
-00000000000003c4 <.LEHB13>:
- 3c4:	00000097          	auipc	ra,0x0
- 3c8:	000080e7          	jalr	ra,0(ra) # 3c4 <.LEHB13>
+000000000000034c <.LBB1366>:
+    _Atomic_word __result = *__mem;
+ 34c:	03492503          	lw	a0,52(s2)
 
-00000000000003cc <.LEHE13>:
- 3cc:	f7840793          	addi	a5,s0,-136
- 3d0:	00078513          	addi	a0,a5,0
- 3d4:	00000097          	auipc	ra,0x0
- 3d8:	000080e7          	jalr	ra,0(ra) # 3d4 <.LEHE13+0x8>
- 3dc:	00050793          	addi	a5,a0,0
- 3e0:	00078893          	addi	a7,a5,0
- 3e4:	000b0813          	addi	a6,s6,0
- 3e8:	000a8793          	addi	a5,s5,0
- 3ec:	000a0713          	addi	a4,s4,0
- 3f0:	00098693          	addi	a3,s3,0
- 3f4:	00090613          	addi	a2,s2,0
- 3f8:	00048593          	addi	a1,s1,0
- 3fc:	00000537          	lui	a0,0x0
- 400:	00050513          	addi	a0,a0,0 # 0 <main>
+0000000000000350 <.LM363>:
+    *__mem += __val;
+ 350:	fff5079b          	addiw	a5,a0,-1
+ 354:	02f92a23          	sw	a5,52(s2)
 
-0000000000000404 <.LEHB14>:
- 404:	00000097          	auipc	ra,0x0
- 408:	000080e7          	jalr	ra,0(ra) # 404 <.LEHB14>
+0000000000000358 <.L46>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 358:	00100793          	addi	a5,zero,1
+ 35c:	f2f518e3          	bne	a0,a5,28c <.L42>
 
-000000000000040c <.LEHE14>:
- 40c:	f7840793          	addi	a5,s0,-136
- 410:	00078513          	addi	a0,a5,0
- 414:	00000097          	auipc	ra,0x0
- 418:	000080e7          	jalr	ra,0(ra) # 414 <.LEHE14+0x8>
- 41c:	f5840793          	addi	a5,s0,-168
- 420:	00078513          	addi	a0,a5,0
- 424:	00000097          	auipc	ra,0x0
- 428:	000080e7          	jalr	ra,0(ra) # 424 <.LEHE14+0x18>
- 42c:	f3840793          	addi	a5,s0,-200
- 430:	00078513          	addi	a0,a5,0
- 434:	00000097          	auipc	ra,0x0
- 438:	000080e7          	jalr	ra,0(ra) # 434 <.LEHE14+0x28>
- 43c:	f1840793          	addi	a5,s0,-232
- 440:	00078513          	addi	a0,a5,0
- 444:	00000097          	auipc	ra,0x0
- 448:	000080e7          	jalr	ra,0(ra) # 444 <.LEHE14+0x38>
- 44c:	e3040793          	addi	a5,s0,-464
- 450:	00078513          	addi	a0,a5,0
- 454:	00000097          	auipc	ra,0x0
- 458:	000080e7          	jalr	ra,0(ra) # 454 <.LEHE14+0x48>
- 45c:	e5840793          	addi	a5,s0,-424
- 460:	00078513          	addi	a0,a5,0
- 464:	00000097          	auipc	ra,0x0
- 468:	000080e7          	jalr	ra,0(ra) # 464 <.LEHE14+0x58>
+0000000000000360 <.LM368>:
+	    _M_destroy();
+ 360:	00093783          	ld	a5,0(s2)
+ 364:	0187b783          	ld	a5,24(a5)
+ 368:	00090513          	addi	a0,s2,0
+ 36c:	000780e7          	jalr	ra,0(a5)
 
-000000000000046c <.L49>:
- 46c:	e8840713          	addi	a4,s0,-376
- 470:	e5840793          	addi	a5,s0,-424
- 474:	00070593          	addi	a1,a4,0
- 478:	00078513          	addi	a0,a5,0
- 47c:	00000097          	auipc	ra,0x0
- 480:	000080e7          	jalr	ra,0(ra) # 47c <.L49+0x10>
- 484:	00050793          	addi	a5,a0,0
- 488:	e2079ee3          	bne	a5,zero,2c4 <.L50>
- 48c:	e8840793          	addi	a5,s0,-376
- 490:	00078513          	addi	a0,a5,0
- 494:	00000097          	auipc	ra,0x0
- 498:	000080e7          	jalr	ra,0(ra) # 494 <.L49+0x28>
- 49c:	e5840793          	addi	a5,s0,-424
- 4a0:	00078513          	addi	a0,a5,0
- 4a4:	00000097          	auipc	ra,0x0
- 4a8:	000080e7          	jalr	ra,0(ra) # 4a4 <.L49+0x38>
- 4ac:	eb840793          	addi	a5,s0,-328
- 4b0:	00078513          	addi	a0,a5,0
- 4b4:	00000097          	auipc	ra,0x0
- 4b8:	000080e7          	jalr	ra,0(ra) # 4b4 <.L49+0x48>
- 4bc:	0080006f          	jal	zero,4c4 <.L48>
+0000000000000370 <.LVL132>:
+ 370:	f1dff06f          	jal	zero,28c <.L42>
 
-00000000000004c0 <.L76>:
- 4c0:	00000013          	addi	zero,zero,0
+0000000000000374 <.L45>:
+      return __exchange_and_add(__mem, __val);
+ 374:	fff00593          	addi	a1,zero,-1
+ 378:	03490513          	addi	a0,s2,52
+ 37c:	00000097          	auipc	ra,0x0
+ 380:	000080e7          	jalr	ra,0(ra) # 37c <.L45+0x8>
 
-00000000000004c4 <.L48>:
- 4c4:	ed040793          	addi	a5,s0,-304
- 4c8:	00078513          	addi	a0,a5,0
- 4cc:	00000097          	auipc	ra,0x0
- 4d0:	000080e7          	jalr	ra,0(ra) # 4cc <.L48+0x8>
+0000000000000384 <.LM371>:
+ 384:	fd5ff06f          	jal	zero,358 <.L46>
 
-00000000000004d4 <.L44>:
- 4d4:	ec840713          	addi	a4,s0,-312
- 4d8:	ed040793          	addi	a5,s0,-304
- 4dc:	00070593          	addi	a1,a4,0
- 4e0:	00078513          	addi	a0,a5,0
- 4e4:	00000097          	auipc	ra,0x0
- 4e8:	000080e7          	jalr	ra,0(ra) # 4e4 <.L44+0x10>
- 4ec:	00050793          	addi	a5,a0,0
- 4f0:	c80798e3          	bne	a5,zero,180 <.L51>
- 4f4:	00000493          	addi	s1,zero,0
- 4f8:	ed840793          	addi	a5,s0,-296
- 4fc:	00078513          	addi	a0,a5,0
- 500:	00000097          	auipc	ra,0x0
- 504:	000080e7          	jalr	ra,0(ra) # 500 <.L44+0x2c>
+0000000000000388 <.L115>:
+	if (_M_pi != nullptr)
+ 388:	00050413          	addi	s0,a0,0
 
-0000000000000508 <.L52>:
- 508:	00048793          	addi	a5,s1,0
- 50c:	1240006f          	jal	zero,630 <.L75>
+000000000000038c <.LBB1388>:
+ 38c:	14813503          	ld	a0,328(sp)
 
-0000000000000510 <.L64>:
- 510:	00050493          	addi	s1,a0,0
- 514:	ee840793          	addi	a5,s0,-280
- 518:	00078513          	addi	a0,a5,0
- 51c:	00000097          	auipc	ra,0x0
- 520:	000080e7          	jalr	ra,0(ra) # 51c <.L64+0xc>
- 524:	00048793          	addi	a5,s1,0
- 528:	00078513          	addi	a0,a5,0
+0000000000000390 <.LM380>:
+ 390:	00050663          	beq	a0,zero,39c <.L49>
 
-000000000000052c <.LEHB15>:
- 52c:	00000097          	auipc	ra,0x0
- 530:	000080e7          	jalr	ra,0(ra) # 52c <.LEHB15>
+0000000000000394 <.LM381>:
+	  _M_pi->_M_release();
+ 394:	00000097          	auipc	ra,0x0
+ 398:	000080e7          	jalr	ra,0(ra) # 394 <.LM381>
 
-0000000000000534 <.L66>:
- 534:	00050493          	addi	s1,a0,0
- 538:	ef840793          	addi	a5,s0,-264
- 53c:	00078513          	addi	a0,a5,0
- 540:	00000097          	auipc	ra,0x0
- 544:	000080e7          	jalr	ra,0(ra) # 540 <.L66+0xc>
- 548:	0c80006f          	jal	zero,610 <.L55>
+000000000000039c <.L49>:
+	if (_M_pi != nullptr)
+ 39c:	15813503          	ld	a0,344(sp)
 
-000000000000054c <.L74>:
- 54c:	00050493          	addi	s1,a0,0
- 550:	f7840793          	addi	a5,s0,-136
- 554:	00078513          	addi	a0,a5,0
- 558:	00000097          	auipc	ra,0x0
- 55c:	000080e7          	jalr	ra,0(ra) # 558 <.L74+0xc>
- 560:	0080006f          	jal	zero,568 <.L57>
+00000000000003a0 <.LM388>:
+ 3a0:	00050663          	beq	a0,zero,3ac <.L51>
 
-0000000000000564 <.L73>:
- 564:	00050493          	addi	s1,a0,0
+00000000000003a4 <.LM389>:
+	  _M_pi->_M_release();
+ 3a4:	00000097          	auipc	ra,0x0
+ 3a8:	000080e7          	jalr	ra,0(ra) # 3a4 <.LM389>
 
-0000000000000568 <.L57>:
- 568:	f5840793          	addi	a5,s0,-168
- 56c:	00078513          	addi	a0,a5,0
- 570:	00000097          	auipc	ra,0x0
- 574:	000080e7          	jalr	ra,0(ra) # 570 <.L57+0x8>
- 578:	0080006f          	jal	zero,580 <.L58>
+00000000000003ac <.L51>:
+             to_string(d.binding()).c_str(), to_string(d.shnxd).c_str(),
+             sym.get_name().c_str());
+    }
+ 3ac:	0e010513          	addi	a0,sp,224
+ 3b0:	00000097          	auipc	ra,0x0
+ 3b4:	000080e7          	jalr	ra,0(ra) # 3b0 <.L51+0x4>
 
-000000000000057c <.L72>:
- 57c:	00050493          	addi	s1,a0,0
+00000000000003b8 <.L100>:
+ 3b8:	0b010513          	addi	a0,sp,176
+ 3bc:	00000097          	auipc	ra,0x0
+ 3c0:	000080e7          	jalr	ra,0(ra) # 3bc <.L100+0x4>
 
-0000000000000580 <.L58>:
- 580:	f3840793          	addi	a5,s0,-200
- 584:	00078513          	addi	a0,a5,0
- 588:	00000097          	auipc	ra,0x0
- 58c:	000080e7          	jalr	ra,0(ra) # 588 <.L58+0x8>
- 590:	0080006f          	jal	zero,598 <.L59>
+00000000000003c4 <.L101>:
+	if (_M_pi != nullptr)
+ 3c4:	13813503          	ld	a0,312(sp)
 
-0000000000000594 <.L71>:
- 594:	00050493          	addi	s1,a0,0
+00000000000003c8 <.LM397>:
+ 3c8:	4c050863          	beq	a0,zero,898 <.L89>
+
+00000000000003cc <.LM398>:
+	  _M_pi->_M_release();
+ 3cc:	00000097          	auipc	ra,0x0
+ 3d0:	000080e7          	jalr	ra,0(ra) # 3cc <.LM398>
+
+00000000000003d4 <.LM399>:
+ 3d4:	4c40006f          	jal	zero,898 <.L89>
+
+00000000000003d8 <.L126>:
+      { return _M_dataplus._M_p; }
+ 3d8:	00813a03          	ld	s4,8(sp)
+
+00000000000003dc <.LBB1406>:
+  stb binding() const { return (stb)(info >> 4); }
+ 3dc:	09c14583          	lbu	a1,156(sp)
+
+00000000000003e0 <.LBE1406>:
+             to_string(d.binding()).c_str(), to_string(d.shnxd).c_str(),
+ 3e0:	0045d593          	srli	a1,a1,0x4
+ 3e4:	02810513          	addi	a0,sp,40
+
+00000000000003e8 <.LEHB9>:
+ 3e8:	00000097          	auipc	ra,0x0
+ 3ec:	000080e7          	jalr	ra,0(ra) # 3e8 <.LEHB9>
+
+00000000000003f0 <.LBB1408>:
+ 3f0:	02813a83          	ld	s5,40(sp)
+
+00000000000003f4 <.LBE1408>:
+ 3f4:	09e15583          	lhu	a1,158(sp)
+ 3f8:	04810513          	addi	a0,sp,72
+
+00000000000003fc <.LEHB10>:
+ 3fc:	00000097          	auipc	ra,0x0
+ 400:	000080e7          	jalr	ra,0(ra) # 3fc <.LEHB10>
+
+0000000000000404 <.LBB1411>:
+ 404:	04813b03          	ld	s6,72(sp)
+
+0000000000000408 <.LBE1411>:
+             sym.get_name().c_str());
+ 408:	08810593          	addi	a1,sp,136
+ 40c:	06810513          	addi	a0,sp,104
+
+0000000000000410 <.LEHB11>:
+ 410:	00000097          	auipc	ra,0x0
+ 414:	000080e7          	jalr	ra,0(ra) # 410 <.LEHB11>
+
+0000000000000418 <.LBB1414>:
+      printf("%6d: %016" PRIx64 " %5" PRId64 " %-7s %-7s %5s %s\n", i++,
+ 418:	06813883          	ld	a7,104(sp)
+ 41c:	000b0813          	addi	a6,s6,0
+ 420:	000a8793          	addi	a5,s5,0
+ 424:	000a0713          	addi	a4,s4,0
+ 428:	00098693          	addi	a3,s3,0
+ 42c:	00090613          	addi	a2,s2,0
+ 430:	00048593          	addi	a1,s1,0
+ 434:	000c8513          	addi	a0,s9,0 # 0 <main>
+
+0000000000000438 <.LEHB12>:
+ 438:	00000097          	auipc	ra,0x0
+ 43c:	000080e7          	jalr	ra,0(ra) # 438 <.LEHB12>
+
+0000000000000440 <.LBB1416>:
+ 440:	06813503          	ld	a0,104(sp)
+
+0000000000000444 <.LBB1423>:
+	if (!_M_is_local())
+ 444:	07810793          	addi	a5,sp,120
+ 448:	00f50663          	beq	a0,a5,454 <.L52>
+
+000000000000044c <.LBB1424>:
+ 44c:	00000097          	auipc	ra,0x0
+ 450:	000080e7          	jalr	ra,0(ra) # 44c <.LBB1424>
+
+0000000000000454 <.L52>:
+      { return _M_dataplus._M_p; }
+ 454:	04813503          	ld	a0,72(sp)
+
+0000000000000458 <.LBB1439>:
+	if (!_M_is_local())
+ 458:	05810793          	addi	a5,sp,88
+ 45c:	00f50663          	beq	a0,a5,468 <.L53>
+
+0000000000000460 <.LBB1440>:
+ 460:	00000097          	auipc	ra,0x0
+ 464:	000080e7          	jalr	ra,0(ra) # 460 <.LBB1440>
+
+0000000000000468 <.L53>:
+      { return _M_dataplus._M_p; }
+ 468:	02813503          	ld	a0,40(sp)
+
+000000000000046c <.LBB1455>:
+	if (!_M_is_local())
+ 46c:	03810793          	addi	a5,sp,56
+ 470:	00f50663          	beq	a0,a5,47c <.L54>
+
+0000000000000474 <.LBB1456>:
+ 474:	00000097          	auipc	ra,0x0
+ 478:	000080e7          	jalr	ra,0(ra) # 474 <.LBB1456>
+
+000000000000047c <.L54>:
+      { return _M_dataplus._M_p; }
+ 47c:	00813503          	ld	a0,8(sp)
+
+0000000000000480 <.LBB1471>:
+	if (!_M_is_local())
+ 480:	01810793          	addi	a5,sp,24
+ 484:	00f50663          	beq	a0,a5,490 <.L55>
+
+0000000000000488 <.LBB1472>:
+ 488:	00000097          	auipc	ra,0x0
+ 48c:	000080e7          	jalr	ra,0(ra) # 488 <.LBB1472>
+
+0000000000000490 <.L55>:
+	if (_M_pi != nullptr)
+ 490:	09013483          	ld	s1,144(sp)
+
+0000000000000494 <.LM500>:
+ 494:	02048063          	beq	s1,zero,4b4 <.L56>
+
+0000000000000498 <.LBB1487>:
+    if (__is_single_threaded())
+ 498:	00044783          	lbu	a5,0(s0)
+ 49c:	0a078263          	beq	a5,zero,540 <.L57>
+
+00000000000004a0 <.LBB1493>:
+    _Atomic_word __result = *__mem;
+ 4a0:	0304a503          	lw	a0,48(s1)
+
+00000000000004a4 <.LM513>:
+    *__mem += __val;
+ 4a4:	fff5079b          	addiw	a5,a0,-1
+ 4a8:	02f4a823          	sw	a5,48(s1)
+
+00000000000004ac <.L58>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 4ac:	00100793          	addi	a5,zero,1
+ 4b0:	0af50263          	beq	a0,a5,554 <.L127>
+
+00000000000004b4 <.L56>:
+      *this += 1;
+      return cur;
+    }
+
+    iterator &operator+=(std::ptrdiff_t x) {
+      pos += x * stride;
+ 4b4:	0d013783          	ld	a5,208(sp)
+ 4b8:	0d813703          	ld	a4,216(sp)
+ 4bc:	00e787b3          	add	a5,a5,a4
+ 4c0:	0cf13823          	sd	a5,208(sp)
+
+00000000000004c4 <.LBB1641>:
+    for (auto sym : sec.as_symtab()) {
+ 4c4:	10013703          	ld	a4,256(sp)
+ 4c8:	0ee78263          	beq	a5,a4,5ac <.L32>
+
+00000000000004cc <.LBB1642>:
+      printf("%6d: %016" PRIx64 " %5" PRId64 " %-7s %-7s %5s %s\n", i++,
+ 4cc:	000b8493          	addi	s1,s7,0
+
+00000000000004d0 <.L61>:
+	{
+	  _M_refcount._M_swap(__r._M_refcount);
+	  __r._M_ptr = nullptr;
+	}
+
+      __shared_ptr(const __shared_ptr&) noexcept = default;
+ 4d0:	0b013783          	ld	a5,176(sp)
+ 4d4:	14f13823          	sd	a5,336(sp)
+
+00000000000004d8 <.LBB1282>:
+      : _M_pi(__r._M_pi)
+ 4d8:	0b813503          	ld	a0,184(sp)
+
+00000000000004dc <.LM540>:
+ 4dc:	14a13c23          	sd	a0,344(sp)
+
+00000000000004e0 <.LM541>:
+	if (_M_pi != nullptr)
+ 4e0:	00050c63          	beq	a0,zero,4f8 <.L33>
+
+00000000000004e4 <.LBB1272>:
+    if (__is_single_threaded())
+ 4e4:	00044783          	lbu	a5,0(s0)
+ 4e8:	d2078ae3          	beq	a5,zero,21c <.L34>
+
+00000000000004ec <.LBB1274>:
+  { *__mem += __val; }
+ 4ec:	03052783          	lw	a5,48(a0)
+ 4f0:	0017879b          	addiw	a5,a5,1
+ 4f4:	02f52823          	sw	a5,48(a0)
+
+00000000000004f8 <.L33>:
+    sym operator*() const { return sym(f, pos, strs); }
+ 4f8:	0d013903          	ld	s2,208(sp)
+
+00000000000004fc <.LBB1397>:
+      __shared_ptr(const __shared_ptr&) noexcept = default;
+ 4fc:	0c013783          	ld	a5,192(sp)
+ 500:	14f13023          	sd	a5,320(sp)
+
+0000000000000504 <.LBB1307>:
+      : _M_pi(__r._M_pi)
+ 504:	0c813503          	ld	a0,200(sp)
+
+0000000000000508 <.LM559>:
+ 508:	14a13423          	sd	a0,328(sp)
+
+000000000000050c <.LM560>:
+	if (_M_pi != nullptr)
+ 50c:	00050c63          	beq	a0,zero,524 <.L35>
+
+0000000000000510 <.LBB1297>:
+    if (__is_single_threaded())
+ 510:	00044783          	lbu	a5,0(s0)
+ 514:	d0078ee3          	beq	a5,zero,230 <.L36>
+
+0000000000000518 <.LBB1299>:
+  { *__mem += __val; }
+ 518:	03052783          	lw	a5,48(a0)
+ 51c:	0017879b          	addiw	a5,a5,1
+ 520:	02f52823          	sw	a5,48(a0)
+
+0000000000000524 <.L35>:
+ 524:	14010693          	addi	a3,sp,320
+ 528:	00090613          	addi	a2,s2,0
+ 52c:	15010593          	addi	a1,sp,336
+ 530:	08810513          	addi	a0,sp,136
+
+0000000000000534 <.LEHB13>:
+ 534:	00000097          	auipc	ra,0x0
+ 538:	000080e7          	jalr	ra,0(ra) # 534 <.LEHB13>
+
+000000000000053c <.LEHE13>:
+ 53c:	d09ff06f          	jal	zero,244 <.L128>
+
+0000000000000540 <.L57>:
+      return __exchange_and_add(__mem, __val);
+ 540:	fff00593          	addi	a1,zero,-1
+ 544:	03048513          	addi	a0,s1,48
+ 548:	00000097          	auipc	ra,0x0
+ 54c:	000080e7          	jalr	ra,0(ra) # 548 <.L57+0x8>
+
+0000000000000550 <.LM576>:
+ 550:	f5dff06f          	jal	zero,4ac <.L58>
+
+0000000000000554 <.L127>:
+	_M_dispose();
+ 554:	0004b783          	ld	a5,0(s1)
+ 558:	0107b783          	ld	a5,16(a5)
+ 55c:	00048513          	addi	a0,s1,0
+ 560:	000780e7          	jalr	ra,0(a5)
+
+0000000000000564 <.LM581>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 564:	0ff0000f          	fence	iorw,iorw
+
+0000000000000568 <.LBB1499>:
+    if (__is_single_threaded())
+ 568:	00044783          	lbu	a5,0(s0)
+ 56c:	02078663          	beq	a5,zero,598 <.L59>
+
+0000000000000570 <.LBB1503>:
+    _Atomic_word __result = *__mem;
+ 570:	0344a503          	lw	a0,52(s1)
+
+0000000000000574 <.LM591>:
+    *__mem += __val;
+ 574:	fff5079b          	addiw	a5,a0,-1
+ 578:	02f4aa23          	sw	a5,52(s1)
+
+000000000000057c <.L60>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 57c:	00100793          	addi	a5,zero,1
+ 580:	f2f51ae3          	bne	a0,a5,4b4 <.L56>
+
+0000000000000584 <.LM596>:
+	    _M_destroy();
+ 584:	0004b783          	ld	a5,0(s1)
+ 588:	0187b783          	ld	a5,24(a5)
+ 58c:	00048513          	addi	a0,s1,0
+ 590:	000780e7          	jalr	ra,0(a5)
+
+0000000000000594 <.LVL188>:
+ 594:	f21ff06f          	jal	zero,4b4 <.L56>
 
 0000000000000598 <.L59>:
- 598:	f1840793          	addi	a5,s0,-232
- 59c:	00078513          	addi	a0,a5,0
+      return __exchange_and_add(__mem, __val);
+ 598:	fff00593          	addi	a1,zero,-1
+ 59c:	03448513          	addi	a0,s1,52
  5a0:	00000097          	auipc	ra,0x0
  5a4:	000080e7          	jalr	ra,0(ra) # 5a0 <.L59+0x8>
- 5a8:	0080006f          	jal	zero,5b0 <.L60>
 
-00000000000005ac <.L70>:
- 5ac:	00050493          	addi	s1,a0,0
+00000000000005a8 <.LM599>:
+ 5a8:	fd5ff06f          	jal	zero,57c <.L60>
 
-00000000000005b0 <.L60>:
- 5b0:	e3040793          	addi	a5,s0,-464
- 5b4:	00078513          	addi	a0,a5,0
- 5b8:	00000097          	auipc	ra,0x0
- 5bc:	000080e7          	jalr	ra,0(ra) # 5b8 <.L60+0x8>
- 5c0:	0080006f          	jal	zero,5c8 <.L61>
+00000000000005ac <.L32>:
+	if (_M_pi != nullptr)
+ 5ac:	0f813483          	ld	s1,248(sp)
 
-00000000000005c4 <.L69>:
- 5c4:	00050493          	addi	s1,a0,0
+00000000000005b0 <.LM607>:
+ 5b0:	02048063          	beq	s1,zero,5d0 <.L62>
 
-00000000000005c8 <.L61>:
- 5c8:	e8840793          	addi	a5,s0,-376
- 5cc:	00078513          	addi	a0,a5,0
- 5d0:	00000097          	auipc	ra,0x0
- 5d4:	000080e7          	jalr	ra,0(ra) # 5d0 <.L61+0x8>
- 5d8:	0080006f          	jal	zero,5e0 <.L62>
+00000000000005b4 <.LBB1651>:
+    if (__is_single_threaded())
+ 5b4:	00044783          	lbu	a5,0(s0)
+ 5b8:	08078c63          	beq	a5,zero,650 <.L63>
 
-00000000000005dc <.L68>:
- 5dc:	00050493          	addi	s1,a0,0
+00000000000005bc <.LBB1657>:
+    _Atomic_word __result = *__mem;
+ 5bc:	0304a503          	lw	a0,48(s1)
 
-00000000000005e0 <.L62>:
- 5e0:	e5840793          	addi	a5,s0,-424
- 5e4:	00078513          	addi	a0,a5,0
- 5e8:	00000097          	auipc	ra,0x0
- 5ec:	000080e7          	jalr	ra,0(ra) # 5e8 <.L62+0x8>
- 5f0:	0080006f          	jal	zero,5f8 <.L63>
+00000000000005c0 <.LM620>:
+    *__mem += __val;
+ 5c0:	fff5079b          	addiw	a5,a0,-1
+ 5c4:	02f4a823          	sw	a5,48(s1)
+
+00000000000005c8 <.L64>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 5c8:	00100793          	addi	a5,zero,1
+ 5cc:	08f50c63          	beq	a0,a5,664 <.L129>
+
+00000000000005d0 <.L62>:
+	if (_M_pi != nullptr)
+ 5d0:	0e813483          	ld	s1,232(sp)
+
+00000000000005d4 <.LM631>:
+ 5d4:	02048063          	beq	s1,zero,5f4 <.L67>
+
+00000000000005d8 <.LBB1683>:
+    if (__is_single_threaded())
+ 5d8:	00044783          	lbu	a5,0(s0)
+ 5dc:	0e078263          	beq	a5,zero,6c0 <.L68>
+
+00000000000005e0 <.LBB1689>:
+    _Atomic_word __result = *__mem;
+ 5e0:	0304a503          	lw	a0,48(s1)
+
+00000000000005e4 <.LM644>:
+    *__mem += __val;
+ 5e4:	fff5079b          	addiw	a5,a0,-1
+ 5e8:	02f4a823          	sw	a5,48(s1)
+
+00000000000005ec <.L69>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 5ec:	00100793          	addi	a5,zero,1
+ 5f0:	0ef50263          	beq	a0,a5,6d4 <.L130>
 
 00000000000005f4 <.L67>:
- 5f4:	00050493          	addi	s1,a0,0
+	if (_M_pi != nullptr)
+ 5f4:	0c813483          	ld	s1,200(sp)
 
-00000000000005f8 <.L63>:
- 5f8:	eb840793          	addi	a5,s0,-328
- 5fc:	00078513          	addi	a0,a5,0
- 600:	00000097          	auipc	ra,0x0
- 604:	000080e7          	jalr	ra,0(ra) # 600 <.L63+0x8>
- 608:	0080006f          	jal	zero,610 <.L55>
+00000000000005f8 <.LM656>:
+ 5f8:	02048063          	beq	s1,zero,618 <.L72>
 
-000000000000060c <.L65>:
- 60c:	00050493          	addi	s1,a0,0
+00000000000005fc <.LBB1226>:
+    if (__is_single_threaded())
+ 5fc:	00044783          	lbu	a5,0(s0)
+ 600:	12078863          	beq	a5,zero,730 <.L73>
 
-0000000000000610 <.L55>:
- 610:	ed840793          	addi	a5,s0,-296
- 614:	00078513          	addi	a0,a5,0
- 618:	00000097          	auipc	ra,0x0
- 61c:	000080e7          	jalr	ra,0(ra) # 618 <.L55+0x8>
- 620:	00048793          	addi	a5,s1,0
- 624:	00078513          	addi	a0,a5,0
- 628:	00000097          	auipc	ra,0x0
- 62c:	000080e7          	jalr	ra,0(ra) # 628 <.L55+0x18>
+0000000000000604 <.LBB1232>:
+    _Atomic_word __result = *__mem;
+ 604:	0304a503          	lw	a0,48(s1)
 
-0000000000000630 <.L75>:
- 630:	00078513          	addi	a0,a5,0
- 634:	1d813083          	ld	ra,472(sp)
- 638:	1d013403          	ld	s0,464(sp)
- 63c:	1c813483          	ld	s1,456(sp)
- 640:	1c013903          	ld	s2,448(sp)
- 644:	1b813983          	ld	s3,440(sp)
- 648:	1b013a03          	ld	s4,432(sp)
- 64c:	1a813a83          	ld	s5,424(sp)
- 650:	1a013b03          	ld	s6,416(sp)
- 654:	1e010113          	addi	sp,sp,480
- 658:	00008067          	jalr	zero,0(ra)
+0000000000000608 <.LM669>:
+    *__mem += __val;
+ 608:	fff5079b          	addiw	a5,a0,-1
+ 60c:	02f4a823          	sw	a5,48(s1)
+
+0000000000000610 <.L74>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 610:	00100793          	addi	a5,zero,1
+ 614:	12f50863          	beq	a0,a5,744 <.L131>
+
+0000000000000618 <.L72>:
+	if (_M_pi != nullptr)
+ 618:	0b813483          	ld	s1,184(sp)
+
+000000000000061c <.LM680>:
+ 61c:	02048063          	beq	s1,zero,63c <.L77>
+
+0000000000000620 <.LBB1191>:
+    if (__is_single_threaded())
+ 620:	00044783          	lbu	a5,0(s0)
+ 624:	16078e63          	beq	a5,zero,7a0 <.L78>
+
+0000000000000628 <.LBB1192>:
+    _Atomic_word __result = *__mem;
+ 628:	0304a503          	lw	a0,48(s1)
+
+000000000000062c <.LM693>:
+    *__mem += __val;
+ 62c:	fff5079b          	addiw	a5,a0,-1
+ 630:	02f4a823          	sw	a5,48(s1)
+
+0000000000000634 <.L79>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ 634:	00100793          	addi	a5,zero,1
+ 638:	16f50e63          	beq	a0,a5,7b4 <.L132>
+
+000000000000063c <.L77>:
+	if (_M_pi != nullptr)
+ 63c:	13813503          	ld	a0,312(sp)
+
+0000000000000640 <.LM704>:
+ 640:	b00500e3          	beq	a0,zero,140 <.L30>
+
+0000000000000644 <.LM705>:
+	  _M_pi->_M_release();
+ 644:	00000097          	auipc	ra,0x0
+ 648:	000080e7          	jalr	ra,0(ra) # 644 <.LM705>
+
+000000000000064c <.LM706>:
+ 64c:	af5ff06f          	jal	zero,140 <.L30>
+
+0000000000000650 <.L63>:
+      return __exchange_and_add(__mem, __val);
+ 650:	fff00593          	addi	a1,zero,-1
+ 654:	03048513          	addi	a0,s1,48
+ 658:	00000097          	auipc	ra,0x0
+ 65c:	000080e7          	jalr	ra,0(ra) # 658 <.L63+0x8>
+
+0000000000000660 <.LM710>:
+ 660:	f69ff06f          	jal	zero,5c8 <.L64>
+
+0000000000000664 <.L129>:
+	_M_dispose();
+ 664:	0004b783          	ld	a5,0(s1)
+ 668:	0107b783          	ld	a5,16(a5)
+ 66c:	00048513          	addi	a0,s1,0
+ 670:	000780e7          	jalr	ra,0(a5)
+
+0000000000000674 <.LM715>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 674:	0ff0000f          	fence	iorw,iorw
+
+0000000000000678 <.LBB1663>:
+    if (__is_single_threaded())
+ 678:	000007b7          	lui	a5,0x0
+ 67c:	0007c783          	lbu	a5,0(a5) # 0 <main>
+ 680:	02078663          	beq	a5,zero,6ac <.L65>
+
+0000000000000684 <.LBB1667>:
+    _Atomic_word __result = *__mem;
+ 684:	0344a503          	lw	a0,52(s1)
+
+0000000000000688 <.LM725>:
+    *__mem += __val;
+ 688:	fff5079b          	addiw	a5,a0,-1
+ 68c:	02f4aa23          	sw	a5,52(s1)
+
+0000000000000690 <.L66>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 690:	00100793          	addi	a5,zero,1
+ 694:	f2f51ee3          	bne	a0,a5,5d0 <.L62>
+
+0000000000000698 <.LM730>:
+	    _M_destroy();
+ 698:	0004b783          	ld	a5,0(s1)
+ 69c:	0187b783          	ld	a5,24(a5)
+ 6a0:	00048513          	addi	a0,s1,0
+ 6a4:	000780e7          	jalr	ra,0(a5)
+
+00000000000006a8 <.LVL221>:
+ 6a8:	f29ff06f          	jal	zero,5d0 <.L62>
+
+00000000000006ac <.L65>:
+      return __exchange_and_add(__mem, __val);
+ 6ac:	fff00593          	addi	a1,zero,-1
+ 6b0:	03448513          	addi	a0,s1,52
+ 6b4:	00000097          	auipc	ra,0x0
+ 6b8:	000080e7          	jalr	ra,0(ra) # 6b4 <.L65+0x8>
+
+00000000000006bc <.LM733>:
+ 6bc:	fd5ff06f          	jal	zero,690 <.L66>
+
+00000000000006c0 <.L68>:
+ 6c0:	fff00593          	addi	a1,zero,-1
+ 6c4:	03048513          	addi	a0,s1,48
+ 6c8:	00000097          	auipc	ra,0x0
+ 6cc:	000080e7          	jalr	ra,0(ra) # 6c8 <.L68+0x8>
+
+00000000000006d0 <.LM737>:
+ 6d0:	f1dff06f          	jal	zero,5ec <.L69>
+
+00000000000006d4 <.L130>:
+	_M_dispose();
+ 6d4:	0004b783          	ld	a5,0(s1)
+ 6d8:	0107b783          	ld	a5,16(a5)
+ 6dc:	00048513          	addi	a0,s1,0
+ 6e0:	000780e7          	jalr	ra,0(a5)
+
+00000000000006e4 <.LM742>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 6e4:	0ff0000f          	fence	iorw,iorw
+
+00000000000006e8 <.LBB1695>:
+    if (__is_single_threaded())
+ 6e8:	000007b7          	lui	a5,0x0
+ 6ec:	0007c783          	lbu	a5,0(a5) # 0 <main>
+ 6f0:	02078663          	beq	a5,zero,71c <.L70>
+
+00000000000006f4 <.LBB1699>:
+    _Atomic_word __result = *__mem;
+ 6f4:	0344a503          	lw	a0,52(s1)
+
+00000000000006f8 <.LM752>:
+    *__mem += __val;
+ 6f8:	fff5079b          	addiw	a5,a0,-1
+ 6fc:	02f4aa23          	sw	a5,52(s1)
+
+0000000000000700 <.L71>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 700:	00100793          	addi	a5,zero,1
+ 704:	eef518e3          	bne	a0,a5,5f4 <.L67>
+
+0000000000000708 <.LM757>:
+	    _M_destroy();
+ 708:	0004b783          	ld	a5,0(s1)
+ 70c:	0187b783          	ld	a5,24(a5)
+ 710:	00048513          	addi	a0,s1,0
+ 714:	000780e7          	jalr	ra,0(a5)
+
+0000000000000718 <.LVL232>:
+ 718:	eddff06f          	jal	zero,5f4 <.L67>
+
+000000000000071c <.L70>:
+      return __exchange_and_add(__mem, __val);
+ 71c:	fff00593          	addi	a1,zero,-1
+ 720:	03448513          	addi	a0,s1,52
+ 724:	00000097          	auipc	ra,0x0
+ 728:	000080e7          	jalr	ra,0(ra) # 724 <.L70+0x8>
+
+000000000000072c <.LM760>:
+ 72c:	fd5ff06f          	jal	zero,700 <.L71>
+
+0000000000000730 <.L73>:
+ 730:	fff00593          	addi	a1,zero,-1
+ 734:	03048513          	addi	a0,s1,48
+ 738:	00000097          	auipc	ra,0x0
+ 73c:	000080e7          	jalr	ra,0(ra) # 738 <.L73+0x8>
+
+0000000000000740 <.LM764>:
+ 740:	ed1ff06f          	jal	zero,610 <.L74>
+
+0000000000000744 <.L131>:
+	_M_dispose();
+ 744:	0004b783          	ld	a5,0(s1)
+ 748:	0107b783          	ld	a5,16(a5)
+ 74c:	00048513          	addi	a0,s1,0
+ 750:	000780e7          	jalr	ra,0(a5)
+
+0000000000000754 <.LM769>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 754:	0ff0000f          	fence	iorw,iorw
+
+0000000000000758 <.LBB1238>:
+    if (__is_single_threaded())
+ 758:	000007b7          	lui	a5,0x0
+ 75c:	0007c783          	lbu	a5,0(a5) # 0 <main>
+ 760:	02078663          	beq	a5,zero,78c <.L75>
+
+0000000000000764 <.LBB1242>:
+    _Atomic_word __result = *__mem;
+ 764:	0344a503          	lw	a0,52(s1)
+
+0000000000000768 <.LM779>:
+    *__mem += __val;
+ 768:	fff5079b          	addiw	a5,a0,-1
+ 76c:	02f4aa23          	sw	a5,52(s1)
+
+0000000000000770 <.L76>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 770:	00100793          	addi	a5,zero,1
+ 774:	eaf512e3          	bne	a0,a5,618 <.L72>
+
+0000000000000778 <.LM784>:
+	    _M_destroy();
+ 778:	0004b783          	ld	a5,0(s1)
+ 77c:	0187b783          	ld	a5,24(a5)
+ 780:	00048513          	addi	a0,s1,0
+ 784:	000780e7          	jalr	ra,0(a5)
+
+0000000000000788 <.LVL243>:
+ 788:	e91ff06f          	jal	zero,618 <.L72>
+
+000000000000078c <.L75>:
+      return __exchange_and_add(__mem, __val);
+ 78c:	fff00593          	addi	a1,zero,-1
+ 790:	03448513          	addi	a0,s1,52
+ 794:	00000097          	auipc	ra,0x0
+ 798:	000080e7          	jalr	ra,0(ra) # 794 <.L75+0x8>
+
+000000000000079c <.LM787>:
+ 79c:	fd5ff06f          	jal	zero,770 <.L76>
+
+00000000000007a0 <.L78>:
+ 7a0:	fff00593          	addi	a1,zero,-1
+ 7a4:	03048513          	addi	a0,s1,48
+ 7a8:	00000097          	auipc	ra,0x0
+ 7ac:	000080e7          	jalr	ra,0(ra) # 7a8 <.L78+0x8>
+
+00000000000007b0 <.LM791>:
+ 7b0:	e85ff06f          	jal	zero,634 <.L79>
+
+00000000000007b4 <.L132>:
+	_M_dispose();
+ 7b4:	0004b783          	ld	a5,0(s1)
+ 7b8:	0107b783          	ld	a5,16(a5)
+ 7bc:	00048513          	addi	a0,s1,0
+ 7c0:	000780e7          	jalr	ra,0(a5)
+
+00000000000007c4 <.LM796>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 7c4:	0ff0000f          	fence	iorw,iorw
+
+00000000000007c8 <.LBB1200>:
+    if (__is_single_threaded())
+ 7c8:	000007b7          	lui	a5,0x0
+ 7cc:	0007c783          	lbu	a5,0(a5) # 0 <main>
+ 7d0:	02078663          	beq	a5,zero,7fc <.L80>
+
+00000000000007d4 <.LBB1204>:
+    _Atomic_word __result = *__mem;
+ 7d4:	0344a503          	lw	a0,52(s1)
+
+00000000000007d8 <.LM806>:
+    *__mem += __val;
+ 7d8:	fff5079b          	addiw	a5,a0,-1
+ 7dc:	02f4aa23          	sw	a5,52(s1)
+
+00000000000007e0 <.L81>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 7e0:	00100793          	addi	a5,zero,1
+ 7e4:	e4f51ce3          	bne	a0,a5,63c <.L77>
+
+00000000000007e8 <.LM811>:
+	    _M_destroy();
+ 7e8:	0004b783          	ld	a5,0(s1)
+ 7ec:	0187b783          	ld	a5,24(a5)
+ 7f0:	00048513          	addi	a0,s1,0
+ 7f4:	000780e7          	jalr	ra,0(a5)
+
+00000000000007f8 <.LVL254>:
+ 7f8:	e45ff06f          	jal	zero,63c <.L77>
+
+00000000000007fc <.L80>:
+      return __exchange_and_add(__mem, __val);
+ 7fc:	fff00593          	addi	a1,zero,-1
+ 800:	03448513          	addi	a0,s1,52
+ 804:	00000097          	auipc	ra,0x0
+ 808:	000080e7          	jalr	ra,0(ra) # 804 <.L80+0x8>
+
+000000000000080c <.LM814>:
+ 80c:	fd5ff06f          	jal	zero,7e0 <.L81>
+
+0000000000000810 <.L28>:
+	if (_M_pi != nullptr)
+ 810:	11813503          	ld	a0,280(sp)
+
+0000000000000814 <.LM822>:
+ 814:	00050663          	beq	a0,zero,820 <.L84>
+
+0000000000000818 <.LM823>:
+	  _M_pi->_M_release();
+ 818:	00000097          	auipc	ra,0x0
+ 81c:	000080e7          	jalr	ra,0(ra) # 818 <.LM823>
+
+0000000000000820 <.L84>:
+  }
+
+  return 0;
+ 820:	00000513          	addi	a0,zero,0
+
+0000000000000824 <.L117>:
+}
+ 824:	1c813083          	ld	ra,456(sp)
+ 828:	1c013403          	ld	s0,448(sp)
+ 82c:	1b813483          	ld	s1,440(sp)
+ 830:	1b013903          	ld	s2,432(sp)
+ 834:	1a813983          	ld	s3,424(sp)
+ 838:	1a013a03          	ld	s4,416(sp)
+ 83c:	19813a83          	ld	s5,408(sp)
+ 840:	19013b03          	ld	s6,400(sp)
+ 844:	18813b83          	ld	s7,392(sp)
+ 848:	18013c03          	ld	s8,384(sp)
+ 84c:	17813c83          	ld	s9,376(sp)
+ 850:	17013d03          	ld	s10,368(sp)
+ 854:	16813d83          	ld	s11,360(sp)
+ 858:	1d010113          	addi	sp,sp,464
+ 85c:	00008067          	jalr	zero,0(ra)
+
+0000000000000860 <.L105>:
+	if (_M_pi != nullptr)
+ 860:	00050413          	addi	s0,a0,0
+
+0000000000000864 <.LBB1783>:
+ 864:	12813503          	ld	a0,296(sp)
+
+0000000000000868 <.LM833>:
+ 868:	00050663          	beq	a0,zero,874 <.L86>
+
+000000000000086c <.LM834>:
+	  _M_pi->_M_release();
+ 86c:	00000097          	auipc	ra,0x0
+ 870:	000080e7          	jalr	ra,0(ra) # 86c <.LM834>
+
+0000000000000874 <.L86>:
+ 874:	00040513          	addi	a0,s0,0
+
+0000000000000878 <.LEHB14>:
+ 878:	00000097          	auipc	ra,0x0
+ 87c:	000080e7          	jalr	ra,0(ra) # 878 <.LEHB14>
+
+0000000000000880 <.L107>:
+      { return _M_dataplus._M_p; }
+ 880:	00050413          	addi	s0,a0,0
+
+0000000000000884 <.LBB1751>:
+ 884:	0e013503          	ld	a0,224(sp)
+
+0000000000000888 <.LBB1752>:
+	if (!_M_is_local())
+ 888:	0f010793          	addi	a5,sp,240
+ 88c:	00f50663          	beq	a0,a5,898 <.L89>
+
+0000000000000890 <.LBB1754>:
+ 890:	00000097          	auipc	ra,0x0
+ 894:	000080e7          	jalr	ra,0(ra) # 890 <.LBB1754>
+
+0000000000000898 <.L89>:
+	if (_M_pi != nullptr)
+ 898:	11813503          	ld	a0,280(sp)
+
+000000000000089c <.LM862>:
+ 89c:	00050663          	beq	a0,zero,8a8 <.L103>
+
+00000000000008a0 <.LM863>:
+	  _M_pi->_M_release();
+ 8a0:	00000097          	auipc	ra,0x0
+ 8a4:	000080e7          	jalr	ra,0(ra) # 8a0 <.LM863>
+
+00000000000008a8 <.L103>:
+ 8a8:	00040513          	addi	a0,s0,0
+ 8ac:	00000097          	auipc	ra,0x0
+ 8b0:	000080e7          	jalr	ra,0(ra) # 8ac <.L103+0x4>
+
+00000000000008b4 <.L114>:
+      { return _M_dataplus._M_p; }
+ 8b4:	00050413          	addi	s0,a0,0
+
+00000000000008b8 <.LBB1525>:
+ 8b8:	06813503          	ld	a0,104(sp)
+
+00000000000008bc <.LBB1526>:
+	if (!_M_is_local())
+ 8bc:	07810793          	addi	a5,sp,120
+ 8c0:	00f50663          	beq	a0,a5,8cc <.L92>
+
+00000000000008c4 <.LBB1528>:
+ 8c4:	00000097          	auipc	ra,0x0
+ 8c8:	000080e7          	jalr	ra,0(ra) # 8c4 <.LBB1528>
+
+00000000000008cc <.L92>:
+      { return _M_dataplus._M_p; }
+ 8cc:	04813503          	ld	a0,72(sp)
+
+00000000000008d0 <.LBB1547>:
+	if (!_M_is_local())
+ 8d0:	05810793          	addi	a5,sp,88
+ 8d4:	00f50663          	beq	a0,a5,8e0 <.L94>
+
+00000000000008d8 <.LBB1549>:
+ 8d8:	00000097          	auipc	ra,0x0
+ 8dc:	000080e7          	jalr	ra,0(ra) # 8d8 <.LBB1549>
+
+00000000000008e0 <.L94>:
+      { return _M_dataplus._M_p; }
+ 8e0:	02813503          	ld	a0,40(sp)
+
+00000000000008e4 <.LBB1569>:
+	if (!_M_is_local())
+ 8e4:	03810793          	addi	a5,sp,56
+ 8e8:	00f50663          	beq	a0,a5,8f4 <.L96>
+
+00000000000008ec <.LBB1571>:
+ 8ec:	00000097          	auipc	ra,0x0
+ 8f0:	000080e7          	jalr	ra,0(ra) # 8ec <.LBB1571>
+
+00000000000008f4 <.L96>:
+      { return _M_dataplus._M_p; }
+ 8f4:	00813503          	ld	a0,8(sp)
+
+00000000000008f8 <.LBB1591>:
+	if (!_M_is_local())
+ 8f8:	01810793          	addi	a5,sp,24
+ 8fc:	00f50663          	beq	a0,a5,908 <.L98>
+
+0000000000000900 <.LBB1593>:
+ 900:	00000097          	auipc	ra,0x0
+ 904:	000080e7          	jalr	ra,0(ra) # 900 <.LBB1593>
+
+0000000000000908 <.L98>:
+	if (_M_pi != nullptr)
+ 908:	09013503          	ld	a0,144(sp)
+
+000000000000090c <.LM946>:
+ 90c:	aa0500e3          	beq	a0,zero,3ac <.L51>
+
+0000000000000910 <.LM947>:
+	  _M_pi->_M_release();
+ 910:	00000097          	auipc	ra,0x0
+ 914:	000080e7          	jalr	ra,0(ra) # 910 <.LM947>
+
+0000000000000918 <.LM948>:
+ 918:	a95ff06f          	jal	zero,3ac <.L51>
+
+000000000000091c <.L113>:
+      { return _M_dataplus._M_p; }
+ 91c:	00050413          	addi	s0,a0,0
+ 920:	fadff06f          	jal	zero,8cc <.L92>
+
+0000000000000924 <.L112>:
+ 924:	00050413          	addi	s0,a0,0
+ 928:	fb9ff06f          	jal	zero,8e0 <.L94>
+
+000000000000092c <.L111>:
+ 92c:	00050413          	addi	s0,a0,0
+ 930:	fc5ff06f          	jal	zero,8f4 <.L96>
+
+0000000000000934 <.L110>:
+	if (_M_pi != nullptr)
+ 934:	00050413          	addi	s0,a0,0
+ 938:	fd1ff06f          	jal	zero,908 <.L98>
+
+000000000000093c <.L109>:
+    }
+ 93c:	00050413          	addi	s0,a0,0
+ 940:	a79ff06f          	jal	zero,3b8 <.L100>
+
+0000000000000944 <.L108>:
+ 944:	00050413          	addi	s0,a0,0
+ 948:	a7dff06f          	jal	zero,3c4 <.L101>
+
+000000000000094c <.L106>:
+ 94c:	00050413          	addi	s0,a0,0
+ 950:	f49ff06f          	jal	zero,898 <.L89>
 
 Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv:
 
 0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	fc843783          	ld	a5,-56(s0)
-  18:	03078793          	addi	a5,a5,48
-  1c:	fef43423          	sd	a5,-24(s0)
-  20:	fff00793          	addi	a5,zero,-1
-  24:	fef42223          	sw	a5,-28(s0)
-  28:	000007b7          	lui	a5,0x0
-  2c:	0007c783          	lbu	a5,0(a5) # 0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
-  30:	0007879b          	addiw	a5,a5,0
-  34:	00f037b3          	sltu	a5,zero,a5
-  38:	0ff7f793          	andi	a5,a5,255
-  3c:	04078263          	beq	a5,zero,80 <.L3>
-  40:	fe843783          	ld	a5,-24(s0)
-  44:	fcf43c23          	sd	a5,-40(s0)
-  48:	fe442783          	lw	a5,-28(s0)
-  4c:	fcf42a23          	sw	a5,-44(s0)
-  50:	fd843783          	ld	a5,-40(s0)
-  54:	0007a783          	lw	a5,0(a5)
-  58:	fcf42823          	sw	a5,-48(s0)
-  5c:	fd843783          	ld	a5,-40(s0)
-  60:	0007a783          	lw	a5,0(a5)
-  64:	fd442703          	lw	a4,-44(s0)
-  68:	00f707bb          	addw	a5,a4,a5
-  6c:	0007871b          	addiw	a4,a5,0
-  70:	fd843783          	ld	a5,-40(s0)
-  74:	00e7a023          	sw	a4,0(a5)
-  78:	fd042783          	lw	a5,-48(s0)
-  7c:	0200006f          	jal	zero,9c <.L5>
+    {
+   0:	ff010113          	addi	sp,sp,-16
+   4:	00113423          	sd	ra,8(sp)
+   8:	00813023          	sd	s0,0(sp)
+   c:	00050413          	addi	s0,a0,0
 
-0000000000000080 <.L3>:
-  80:	fe442783          	lw	a5,-28(s0)
-  84:	00078593          	addi	a1,a5,0
-  88:	fe843503          	ld	a0,-24(s0)
-  8c:	00000097          	auipc	ra,0x0
-  90:	000080e7          	jalr	ra,0(ra) # 8c <.L3+0xc>
-  94:	00050793          	addi	a5,a0,0
-  98:	00000013          	addi	zero,zero,0
+0000000000000010 <.LBB572>:
+    if (__is_single_threaded())
+  10:	000007b7          	lui	a5,0x0
+  14:	0007c783          	lbu	a5,0(a5) # 0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
+  18:	02078463          	beq	a5,zero,40 <.L2>
+
+000000000000001c <.LBB576>:
+    _Atomic_word __result = *__mem;
+  1c:	03052503          	lw	a0,48(a0)
+
+0000000000000020 <.LM14>:
+    *__mem += __val;
+  20:	fff5079b          	addiw	a5,a0,-1
+  24:	02f42823          	sw	a5,48(s0)
+
+0000000000000028 <.L3>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+  28:	00100793          	addi	a5,zero,1
+  2c:	02f50463          	beq	a0,a5,54 <.L8>
+
+0000000000000030 <.L1>:
+    }
+  30:	00813083          	ld	ra,8(sp)
+  34:	00013403          	ld	s0,0(sp)
+
+0000000000000038 <.LM20>:
+  38:	01010113          	addi	sp,sp,16
+  3c:	00008067          	jalr	zero,0(ra)
+
+0000000000000040 <.L2>:
+      return __exchange_and_add(__mem, __val);
+  40:	fff00593          	addi	a1,zero,-1
+  44:	03050513          	addi	a0,a0,48
+  48:	00000097          	auipc	ra,0x0
+  4c:	000080e7          	jalr	ra,0(ra) # 48 <.L2+0x8>
+
+0000000000000050 <.LM23>:
+  50:	fd9ff06f          	jal	zero,28 <.L3>
+
+0000000000000054 <.L8>:
+	_M_dispose();
+  54:	00043783          	ld	a5,0(s0)
+  58:	0107b783          	ld	a5,16(a5)
+  5c:	00040513          	addi	a0,s0,0
+  60:	000780e7          	jalr	ra,0(a5)
+
+0000000000000064 <.LM28>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+  64:	0ff0000f          	fence	iorw,iorw
+
+0000000000000068 <.LBB582>:
+    if (__is_single_threaded())
+  68:	000007b7          	lui	a5,0x0
+  6c:	0007c783          	lbu	a5,0(a5) # 0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
+  70:	02078663          	beq	a5,zero,9c <.L5>
+
+0000000000000074 <.LBB586>:
+    _Atomic_word __result = *__mem;
+  74:	03442503          	lw	a0,52(s0)
+
+0000000000000078 <.LM38>:
+    *__mem += __val;
+  78:	fff5079b          	addiw	a5,a0,-1
+  7c:	02f42a23          	sw	a5,52(s0)
+
+0000000000000080 <.L6>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+  80:	00100793          	addi	a5,zero,1
+  84:	faf516e3          	bne	a0,a5,30 <.L1>
+
+0000000000000088 <.LM43>:
+	    _M_destroy();
+  88:	00043783          	ld	a5,0(s0)
+  8c:	0187b783          	ld	a5,24(a5)
+  90:	00040513          	addi	a0,s0,0
+  94:	000780e7          	jalr	ra,0(a5)
+
+0000000000000098 <.LBE580>:
+    }
+  98:	f99ff06f          	jal	zero,30 <.L1>
 
 000000000000009c <.L5>:
-  9c:	00078713          	addi	a4,a5,0
-  a0:	00100793          	addi	a5,zero,1
-  a4:	40f707b3          	sub	a5,a4,a5
-  a8:	0017b793          	sltiu	a5,a5,1
-  ac:	0ff7f793          	andi	a5,a5,255
-  b0:	00078863          	beq	a5,zero,c0 <.L7>
-  b4:	fc843503          	ld	a0,-56(s0)
-  b8:	00000097          	auipc	ra,0x0
-  bc:	000080e7          	jalr	ra,0(ra) # b8 <.L5+0x1c>
+      return __exchange_and_add(__mem, __val);
+  9c:	fff00593          	addi	a1,zero,-1
+  a0:	03440513          	addi	a0,s0,52
+  a4:	00000097          	auipc	ra,0x0
+  a8:	000080e7          	jalr	ra,0(ra) # a4 <.L5+0x8>
 
-00000000000000c0 <.L7>:
-  c0:	00000013          	addi	zero,zero,0
-  c4:	03813083          	ld	ra,56(sp)
-  c8:	03013403          	ld	s0,48(sp)
-  cc:	04010113          	addi	sp,sp,64
-  d0:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNK3elf3sym8get_dataEv:
-
-0000000000000000 <elf::sym::get_data() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	01078793          	addi	a5,a5,16
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_:
-
-0000000000000000 <std::__shared_ptr<elf::elf::impl, (__gnu_cxx::_Lock_policy)1>::__shared_ptr(std::__shared_ptr<elf::elf::impl, (__gnu_cxx::_Lock_policy)1> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043783          	ld	a5,-32(s0)
-  1c:	0007b703          	ld	a4,0(a5)
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	00e7b023          	sd	a4,0(a5)
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	00878713          	addi	a4,a5,8
-  30:	fe043783          	ld	a5,-32(s0)
-  34:	00878793          	addi	a5,a5,8
-  38:	00078593          	addi	a1,a5,0
-  3c:	00070513          	addi	a0,a4,0
-  40:	00000097          	auipc	ra,0x0
-  44:	000080e7          	jalr	ra,0(ra) # 40 <std::__shared_ptr<elf::elf::impl, (__gnu_cxx::_Lock_policy)1>::__shared_ptr(std::__shared_ptr<elf::elf::impl, (__gnu_cxx::_Lock_policy)1> const&)+0x40>
-  48:	00000013          	addi	zero,zero,0
-  4c:	01813083          	ld	ra,24(sp)
-  50:	01013403          	ld	s0,16(sp)
-  54:	02010113          	addi	sp,sp,32
-  58:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN3elf3elf4implELN9__gnu_cxx12_Lock_policyE1EED2Ev:
-
-0000000000000000 <std::__shared_ptr<elf::elf::impl, (__gnu_cxx::_Lock_policy)1>::~__shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00878793          	addi	a5,a5,8
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000097          	auipc	ra,0x0
-  24:	000080e7          	jalr	ra,0(ra) # 20 <std::__shared_ptr<elf::elf::impl, (__gnu_cxx::_Lock_policy)1>::~__shared_ptr()+0x20>
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN3elf3elf4implEEC2ERKS3_:
-
-0000000000000000 <std::shared_ptr<elf::elf::impl>::shared_ptr(std::shared_ptr<elf::elf::impl> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	fe043703          	ld	a4,-32(s0)
-  20:	00070593          	addi	a1,a4,0
-  24:	00078513          	addi	a0,a5,0
-  28:	00000097          	auipc	ra,0x0
-  2c:	000080e7          	jalr	ra,0(ra) # 28 <std::shared_ptr<elf::elf::impl>::shared_ptr(std::shared_ptr<elf::elf::impl> const&)+0x28>
-  30:	00000013          	addi	zero,zero,0
-  34:	01813083          	ld	ra,24(sp)
-  38:	01013403          	ld	s0,16(sp)
-  3c:	02010113          	addi	sp,sp,32
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN3elf3elf4implEED2Ev:
-
-0000000000000000 <std::shared_ptr<elf::elf::impl>::~shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000097          	auipc	ra,0x0
-  20:	000080e7          	jalr	ra,0(ra) # 1c <std::shared_ptr<elf::elf::impl>::~shared_ptr()+0x1c>
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN3elf3elfC2ERKS0_:
-
-0000000000000000 <elf::elf::elf(elf::elf const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	fe043703          	ld	a4,-32(s0)
-  20:	00070593          	addi	a1,a4,0
-  24:	00078513          	addi	a0,a5,0
-  28:	00000097          	auipc	ra,0x0
-  2c:	000080e7          	jalr	ra,0(ra) # 28 <elf::elf::elf(elf::elf const&)+0x28>
-  30:	00000013          	addi	zero,zero,0
-  34:	01813083          	ld	ra,24(sp)
-  38:	01013403          	ld	s0,16(sp)
-  3c:	02010113          	addi	sp,sp,32
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN3elf3elfD2Ev:
-
-0000000000000000 <elf::elf::~elf()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000097          	auipc	ra,0x0
-  20:	000080e7          	jalr	ra,0(ra) # 1c <elf::elf::~elf()+0x1c>
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EEC2ERKS5_:
-
-0000000000000000 <std::__shared_ptr<elf::strtab::impl, (__gnu_cxx::_Lock_policy)1>::__shared_ptr(std::__shared_ptr<elf::strtab::impl, (__gnu_cxx::_Lock_policy)1> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043783          	ld	a5,-32(s0)
-  1c:	0007b703          	ld	a4,0(a5)
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	00e7b023          	sd	a4,0(a5)
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	00878713          	addi	a4,a5,8
-  30:	fe043783          	ld	a5,-32(s0)
-  34:	00878793          	addi	a5,a5,8
-  38:	00078593          	addi	a1,a5,0
-  3c:	00070513          	addi	a0,a4,0
-  40:	00000097          	auipc	ra,0x0
-  44:	000080e7          	jalr	ra,0(ra) # 40 <std::__shared_ptr<elf::strtab::impl, (__gnu_cxx::_Lock_policy)1>::__shared_ptr(std::__shared_ptr<elf::strtab::impl, (__gnu_cxx::_Lock_policy)1> const&)+0x40>
-  48:	00000013          	addi	zero,zero,0
-  4c:	01813083          	ld	ra,24(sp)
-  50:	01013403          	ld	s0,16(sp)
-  54:	02010113          	addi	sp,sp,32
-  58:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt12__shared_ptrIN3elf6strtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev:
-
-0000000000000000 <std::__shared_ptr<elf::strtab::impl, (__gnu_cxx::_Lock_policy)1>::~__shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00878793          	addi	a5,a5,8
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000097          	auipc	ra,0x0
-  24:	000080e7          	jalr	ra,0(ra) # 20 <std::__shared_ptr<elf::strtab::impl, (__gnu_cxx::_Lock_policy)1>::~__shared_ptr()+0x20>
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN3elf6strtab4implEEC2ERKS3_:
-
-0000000000000000 <std::shared_ptr<elf::strtab::impl>::shared_ptr(std::shared_ptr<elf::strtab::impl> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	fe043703          	ld	a4,-32(s0)
-  20:	00070593          	addi	a1,a4,0
-  24:	00078513          	addi	a0,a5,0
-  28:	00000097          	auipc	ra,0x0
-  2c:	000080e7          	jalr	ra,0(ra) # 28 <std::shared_ptr<elf::strtab::impl>::shared_ptr(std::shared_ptr<elf::strtab::impl> const&)+0x28>
-  30:	00000013          	addi	zero,zero,0
-  34:	01813083          	ld	ra,24(sp)
-  38:	01013403          	ld	s0,16(sp)
-  3c:	02010113          	addi	sp,sp,32
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN3elf6strtab4implEED2Ev:
-
-0000000000000000 <std::shared_ptr<elf::strtab::impl>::~shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000097          	auipc	ra,0x0
-  20:	000080e7          	jalr	ra,0(ra) # 1c <std::shared_ptr<elf::strtab::impl>::~shared_ptr()+0x1c>
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN3elf6strtabC2ERKS0_:
-
-0000000000000000 <elf::strtab::strtab(elf::strtab const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe843783          	ld	a5,-24(s0)
-  1c:	fe043703          	ld	a4,-32(s0)
-  20:	00070593          	addi	a1,a4,0
-  24:	00078513          	addi	a0,a5,0
-  28:	00000097          	auipc	ra,0x0
-  2c:	000080e7          	jalr	ra,0(ra) # 28 <elf::strtab::strtab(elf::strtab const&)+0x28>
-  30:	00000013          	addi	zero,zero,0
-  34:	01813083          	ld	ra,24(sp)
-  38:	01013403          	ld	s0,16(sp)
-  3c:	02010113          	addi	sp,sp,32
-  40:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN3elf6strtabD2Ev:
-
-0000000000000000 <elf::strtab::~strtab()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000097          	auipc	ra,0x0
-  20:	000080e7          	jalr	ra,0(ra) # 1c <elf::strtab::~strtab()+0x1c>
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN3elf3symD2Ev:
-
-0000000000000000 <elf::sym::~sym()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000097          	auipc	ra,0x0
-  20:	000080e7          	jalr	ra,0(ra) # 1c <elf::sym::~sym()+0x1c>
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNK3elf6symtab8iteratordeEv:
-
-0000000000000000 <elf::symtab::iterator::operator*() const>:
-   0:	fb010113          	addi	sp,sp,-80
-   4:	04113423          	sd	ra,72(sp)
-   8:	04813023          	sd	s0,64(sp)
-   c:	02913c23          	sd	s1,56(sp)
-  10:	05010413          	addi	s0,sp,80
-  14:	faa43c23          	sd	a0,-72(s0)
-  18:	fab43823          	sd	a1,-80(s0)
-  1c:	fb043703          	ld	a4,-80(s0)
-  20:	fc040793          	addi	a5,s0,-64
-  24:	00070593          	addi	a1,a4,0
-  28:	00078513          	addi	a0,a5,0
-  2c:	00000097          	auipc	ra,0x0
-  30:	000080e7          	jalr	ra,0(ra) # 2c <elf::symtab::iterator::operator*() const+0x2c>
-  34:	fb043783          	ld	a5,-80(s0)
-  38:	0207b483          	ld	s1,32(a5)
-  3c:	fb043783          	ld	a5,-80(s0)
-  40:	01078713          	addi	a4,a5,16
-  44:	fd040793          	addi	a5,s0,-48
-  48:	00070593          	addi	a1,a4,0
-  4c:	00078513          	addi	a0,a5,0
-  50:	00000097          	auipc	ra,0x0
-  54:	000080e7          	jalr	ra,0(ra) # 50 <elf::symtab::iterator::operator*() const+0x50>
-  58:	fd040713          	addi	a4,s0,-48
-  5c:	fc040793          	addi	a5,s0,-64
-  60:	00070693          	addi	a3,a4,0
-  64:	00048613          	addi	a2,s1,0
-  68:	00078593          	addi	a1,a5,0
-  6c:	fb843503          	ld	a0,-72(s0)
-
-0000000000000070 <.LEHB0>:
-  70:	00000097          	auipc	ra,0x0
-  74:	000080e7          	jalr	ra,0(ra) # 70 <.LEHB0>
-
-0000000000000078 <.LEHE0>:
-  78:	fd040793          	addi	a5,s0,-48
-  7c:	00078513          	addi	a0,a5,0
-  80:	00000097          	auipc	ra,0x0
-  84:	000080e7          	jalr	ra,0(ra) # 80 <.LEHE0+0x8>
-  88:	fc040793          	addi	a5,s0,-64
-  8c:	00078513          	addi	a0,a5,0
-  90:	00000097          	auipc	ra,0x0
-  94:	000080e7          	jalr	ra,0(ra) # 90 <.LEHE0+0x18>
-  98:	0380006f          	jal	zero,d0 <.L27>
-
-000000000000009c <.L26>:
-  9c:	00050493          	addi	s1,a0,0
-  a0:	fd040793          	addi	a5,s0,-48
-  a4:	00078513          	addi	a0,a5,0
-  a8:	00000097          	auipc	ra,0x0
-  ac:	000080e7          	jalr	ra,0(ra) # a8 <.L26+0xc>
-  b0:	fc040793          	addi	a5,s0,-64
-  b4:	00078513          	addi	a0,a5,0
-  b8:	00000097          	auipc	ra,0x0
-  bc:	000080e7          	jalr	ra,0(ra) # b8 <.L26+0x1c>
-  c0:	00048793          	addi	a5,s1,0
-  c4:	00078513          	addi	a0,a5,0
-
-00000000000000c8 <.LEHB1>:
-  c8:	00000097          	auipc	ra,0x0
-  cc:	000080e7          	jalr	ra,0(ra) # c8 <.LEHB1>
-
-00000000000000d0 <.L27>:
-  d0:	fb843503          	ld	a0,-72(s0)
-  d4:	04813083          	ld	ra,72(sp)
-  d8:	04013403          	ld	s0,64(sp)
-  dc:	03813483          	ld	s1,56(sp)
-  e0:	05010113          	addi	sp,sp,80
-  e4:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN3elf6symtab8iteratorppEv:
-
-0000000000000000 <elf::symtab::iterator::operator++()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	00100593          	addi	a1,zero,1
-  18:	fe843503          	ld	a0,-24(s0)
-  1c:	00000097          	auipc	ra,0x0
-  20:	000080e7          	jalr	ra,0(ra) # 1c <elf::symtab::iterator::operator++()+0x1c>
-  24:	00050793          	addi	a5,a0,0
-  28:	00078513          	addi	a0,a5,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
+00000000000000ac <.LM48>:
+  ac:	fd5ff06f          	jal	zero,80 <.L6>
 
 Disassembly of section .text._ZN3elf6symtab8iteratorD2Ev:
 
 0000000000000000 <elf::symtab::iterator::~iterator()>:
+  class iterator {
    0:	fe010113          	addi	sp,sp,-32
    4:	00113c23          	sd	ra,24(sp)
    8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	01078793          	addi	a5,a5,16
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000097          	auipc	ra,0x0
-  24:	000080e7          	jalr	ra,0(ra) # 20 <elf::symtab::iterator::~iterator()+0x20>
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	00078513          	addi	a0,a5,0
-  30:	00000097          	auipc	ra,0x0
-  34:	000080e7          	jalr	ra,0(ra) # 30 <elf::symtab::iterator::~iterator()+0x30>
-  38:	00000013          	addi	zero,zero,0
-  3c:	01813083          	ld	ra,24(sp)
-  40:	01013403          	ld	s0,16(sp)
-  44:	02010113          	addi	sp,sp,32
-  48:	00008067          	jalr	zero,0(ra)
+   c:	00913423          	sd	s1,8(sp)
+  10:	00050413          	addi	s0,a0,0
 
-Disassembly of section .text._ZN3elf6symtab8iteratorpLEl:
+0000000000000014 <.LBB648>:
+	if (_M_pi != nullptr)
+  14:	01853483          	ld	s1,24(a0)
 
-0000000000000000 <elf::symtab::iterator::operator+=(long)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0207b703          	ld	a4,32(a5)
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	0287b683          	ld	a3,40(a5)
-  24:	fe043783          	ld	a5,-32(s0)
-  28:	02f687b3          	mul	a5,a3,a5
-  2c:	00f70733          	add	a4,a4,a5
-  30:	fe843783          	ld	a5,-24(s0)
-  34:	02e7b023          	sd	a4,32(a5)
-  38:	fe843783          	ld	a5,-24(s0)
-  3c:	00078513          	addi	a0,a5,0
-  40:	01813403          	ld	s0,24(sp)
-  44:	02010113          	addi	sp,sp,32
-  48:	00008067          	jalr	zero,0(ra)
+0000000000000018 <.LM56>:
+  18:	02048263          	beq	s1,zero,3c <.L10>
 
-Disassembly of section .text._ZNK3elf6symtab8iteratorneERS1_:
+000000000000001c <.LBB653>:
+    if (__is_single_threaded())
+  1c:	000007b7          	lui	a5,0x0
+  20:	0007c783          	lbu	a5,0(a5) # 0 <elf::symtab::iterator::~iterator()>
+  24:	04078a63          	beq	a5,zero,78 <.L11>
 
-0000000000000000 <elf::symtab::iterator::operator!=(elf::symtab::iterator&) const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0207b703          	ld	a4,32(a5)
-  1c:	fe043783          	ld	a5,-32(s0)
-  20:	0207b783          	ld	a5,32(a5)
-  24:	40f707b3          	sub	a5,a4,a5
-  28:	00f037b3          	sltu	a5,zero,a5
-  2c:	0ff7f793          	andi	a5,a5,255
-  30:	00078513          	addi	a0,a5,0
-  34:	01813403          	ld	s0,24(sp)
-  38:	02010113          	addi	sp,sp,32
-  3c:	00008067          	jalr	zero,0(ra)
+0000000000000028 <.LBB659>:
+    _Atomic_word __result = *__mem;
+  28:	0304a503          	lw	a0,48(s1)
 
-Disassembly of section .text._ZNSt12__shared_ptrIN3elf6loaderELN9__gnu_cxx12_Lock_policyE1EED2Ev:
+000000000000002c <.LM69>:
+    *__mem += __val;
+  2c:	fff5079b          	addiw	a5,a0,-1
+  30:	02f4a823          	sw	a5,48(s1)
 
-0000000000000000 <std::__shared_ptr<elf::loader, (__gnu_cxx::_Lock_policy)1>::~__shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00878793          	addi	a5,a5,8
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000097          	auipc	ra,0x0
-  24:	000080e7          	jalr	ra,0(ra) # 20 <std::__shared_ptr<elf::loader, (__gnu_cxx::_Lock_policy)1>::~__shared_ptr()+0x20>
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
+0000000000000034 <.L12>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+  34:	00100793          	addi	a5,zero,1
+  38:	04f50a63          	beq	a0,a5,8c <.L21>
 
-Disassembly of section .text._ZNSt10shared_ptrIN3elf6loaderEED2Ev:
+000000000000003c <.L10>:
+	if (_M_pi != nullptr)
+  3c:	00843403          	ld	s0,8(s0)
 
-0000000000000000 <std::shared_ptr<elf::loader>::~shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000097          	auipc	ra,0x0
-  20:	000080e7          	jalr	ra,0(ra) # 1c <std::shared_ptr<elf::loader>::~shared_ptr()+0x1c>
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
+0000000000000040 <.LM80>:
+  40:	02040263          	beq	s0,zero,64 <.L9>
 
-Disassembly of section .text._ZNSt12__shared_ptrIN3elf6symtab4implELN9__gnu_cxx12_Lock_policyE1EED2Ev:
-
-0000000000000000 <std::__shared_ptr<elf::symtab::impl, (__gnu_cxx::_Lock_policy)1>::~__shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00878793          	addi	a5,a5,8
-  1c:	00078513          	addi	a0,a5,0
-  20:	00000097          	auipc	ra,0x0
-  24:	000080e7          	jalr	ra,0(ra) # 20 <std::__shared_ptr<elf::symtab::impl, (__gnu_cxx::_Lock_policy)1>::~__shared_ptr()+0x20>
-  28:	00000013          	addi	zero,zero,0
-  2c:	01813083          	ld	ra,24(sp)
-  30:	01013403          	ld	s0,16(sp)
-  34:	02010113          	addi	sp,sp,32
-  38:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt10shared_ptrIN3elf6symtab4implEED2Ev:
-
-0000000000000000 <std::shared_ptr<elf::symtab::impl>::~shared_ptr()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000097          	auipc	ra,0x0
-  20:	000080e7          	jalr	ra,0(ra) # 1c <std::shared_ptr<elf::symtab::impl>::~shared_ptr()+0x1c>
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZN3elf6symtabD2Ev:
-
-0000000000000000 <elf::symtab::~symtab()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	00078513          	addi	a0,a5,0
-  1c:	00000097          	auipc	ra,0x0
-  20:	000080e7          	jalr	ra,0(ra) # 1c <elf::symtab::~symtab()+0x1c>
-  24:	00000013          	addi	zero,zero,0
-  28:	01813083          	ld	ra,24(sp)
-  2c:	01013403          	ld	s0,16(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE19_M_release_last_useEv:
-
-0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release_last_use()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	fc843783          	ld	a5,-56(s0)
-  18:	0007b783          	ld	a5,0(a5)
-  1c:	01078793          	addi	a5,a5,16
-  20:	0007b783          	ld	a5,0(a5)
-  24:	fc843503          	ld	a0,-56(s0)
-  28:	000780e7          	jalr	ra,0(a5)
-  2c:	0ff0000f          	fence	iorw,iorw
-  30:	fc843783          	ld	a5,-56(s0)
-  34:	03478793          	addi	a5,a5,52
-  38:	fef43423          	sd	a5,-24(s0)
-  3c:	fff00793          	addi	a5,zero,-1
-  40:	fef42223          	sw	a5,-28(s0)
+0000000000000044 <.LBB684>:
+    if (__is_single_threaded())
   44:	000007b7          	lui	a5,0x0
-  48:	0007c783          	lbu	a5,0(a5) # 0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release_last_use()>
-  4c:	0007879b          	addiw	a5,a5,0
-  50:	00f037b3          	sltu	a5,zero,a5
-  54:	0ff7f793          	andi	a5,a5,255
-  58:	04078263          	beq	a5,zero,9c <.L79>
-  5c:	fe843783          	ld	a5,-24(s0)
-  60:	fcf43c23          	sd	a5,-40(s0)
-  64:	fe442783          	lw	a5,-28(s0)
-  68:	fcf42a23          	sw	a5,-44(s0)
-  6c:	fd843783          	ld	a5,-40(s0)
-  70:	0007a783          	lw	a5,0(a5)
-  74:	fcf42823          	sw	a5,-48(s0)
-  78:	fd843783          	ld	a5,-40(s0)
-  7c:	0007a783          	lw	a5,0(a5)
-  80:	fd442703          	lw	a4,-44(s0)
-  84:	00f707bb          	addw	a5,a4,a5
-  88:	0007871b          	addiw	a4,a5,0
-  8c:	fd843783          	ld	a5,-40(s0)
-  90:	00e7a023          	sw	a4,0(a5)
-  94:	fd042783          	lw	a5,-48(s0)
-  98:	0200006f          	jal	zero,b8 <.L81>
+  48:	0007c783          	lbu	a5,0(a5) # 0 <elf::symtab::iterator::~iterator()>
+  4c:	08078e63          	beq	a5,zero,e8 <.L16>
 
-000000000000009c <.L79>:
-  9c:	fe442783          	lw	a5,-28(s0)
-  a0:	00078593          	addi	a1,a5,0
-  a4:	fe843503          	ld	a0,-24(s0)
-  a8:	00000097          	auipc	ra,0x0
-  ac:	000080e7          	jalr	ra,0(ra) # a8 <.L79+0xc>
-  b0:	00050793          	addi	a5,a0,0
-  b4:	00000013          	addi	zero,zero,0
+0000000000000050 <.LBB690>:
+    _Atomic_word __result = *__mem;
+  50:	03042503          	lw	a0,48(s0)
 
-00000000000000b8 <.L81>:
-  b8:	00078713          	addi	a4,a5,0
-  bc:	00100793          	addi	a5,zero,1
-  c0:	40f707b3          	sub	a5,a4,a5
-  c4:	0017b793          	sltiu	a5,a5,1
-  c8:	0ff7f793          	andi	a5,a5,255
-  cc:	00078e63          	beq	a5,zero,e8 <.L83>
-  d0:	fc843783          	ld	a5,-56(s0)
-  d4:	0007b783          	ld	a5,0(a5)
-  d8:	01878793          	addi	a5,a5,24
-  dc:	0007b783          	ld	a5,0(a5)
-  e0:	fc843503          	ld	a0,-56(s0)
-  e4:	000780e7          	jalr	ra,0(a5)
+0000000000000054 <.LM93>:
+    *__mem += __val;
+  54:	fff5079b          	addiw	a5,a0,-1
+  58:	02f42823          	sw	a5,48(s0)
 
-00000000000000e8 <.L83>:
-  e8:	00000013          	addi	zero,zero,0
-  ec:	03813083          	ld	ra,56(sp)
-  f0:	03013403          	ld	s0,48(sp)
-  f4:	04010113          	addi	sp,sp,64
-  f8:	00008067          	jalr	zero,0(ra)
+000000000000005c <.L17>:
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+  5c:	00100793          	addi	a5,zero,1
+  60:	08f50e63          	beq	a0,a5,fc <.L22>
 
-Disassembly of section .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EED2Ev:
+0000000000000064 <.L9>:
+  64:	01813083          	ld	ra,24(sp)
+  68:	01013403          	ld	s0,16(sp)
+  6c:	00813483          	ld	s1,8(sp)
+  70:	02010113          	addi	sp,sp,32
+  74:	00008067          	jalr	zero,0(ra)
 
-0000000000000000 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::~__shared_count()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	fe843783          	ld	a5,-24(s0)
-  18:	0007b783          	ld	a5,0(a5)
-  1c:	00078c63          	beq	a5,zero,34 <.L86>
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	0007b783          	ld	a5,0(a5)
-  28:	00078513          	addi	a0,a5,0
-  2c:	00000097          	auipc	ra,0x0
-  30:	000080e7          	jalr	ra,0(ra) # 2c <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::~__shared_count()+0x2c>
+0000000000000078 <.L11>:
+      return __exchange_and_add(__mem, __val);
+  78:	fff00593          	addi	a1,zero,-1
+  7c:	03048513          	addi	a0,s1,48
+  80:	00000097          	auipc	ra,0x0
+  84:	000080e7          	jalr	ra,0(ra) # 80 <.L11+0x8>
 
-0000000000000034 <.L86>:
-  34:	00000013          	addi	zero,zero,0
-  38:	01813083          	ld	ra,24(sp)
-  3c:	01013403          	ld	s0,16(sp)
-  40:	02010113          	addi	sp,sp,32
-  44:	00008067          	jalr	zero,0(ra)
+0000000000000088 <.LM102>:
+  88:	fadff06f          	jal	zero,34 <.L12>
 
-Disassembly of section .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE1EEC2ERKS2_:
+000000000000008c <.L21>:
+	_M_dispose();
+  8c:	0004b783          	ld	a5,0(s1)
+  90:	0107b783          	ld	a5,16(a5)
+  94:	00048513          	addi	a0,s1,0
+  98:	000780e7          	jalr	ra,0(a5)
 
-0000000000000000 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count(std::__shared_count<(__gnu_cxx::_Lock_policy)1> const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00113c23          	sd	ra,24(sp)
-   8:	00813823          	sd	s0,16(sp)
-   c:	02010413          	addi	s0,sp,32
-  10:	fea43423          	sd	a0,-24(s0)
-  14:	feb43023          	sd	a1,-32(s0)
-  18:	fe043783          	ld	a5,-32(s0)
-  1c:	0007b703          	ld	a4,0(a5)
-  20:	fe843783          	ld	a5,-24(s0)
-  24:	00e7b023          	sd	a4,0(a5)
-  28:	fe843783          	ld	a5,-24(s0)
-  2c:	0007b783          	ld	a5,0(a5)
-  30:	00078c63          	beq	a5,zero,48 <.L89>
-  34:	fe843783          	ld	a5,-24(s0)
-  38:	0007b783          	ld	a5,0(a5)
-  3c:	00078513          	addi	a0,a5,0
-  40:	00000097          	auipc	ra,0x0
-  44:	000080e7          	jalr	ra,0(ra) # 40 <std::__shared_count<(__gnu_cxx::_Lock_policy)1>::__shared_count(std::__shared_count<(__gnu_cxx::_Lock_policy)1> const&)+0x40>
+000000000000009c <.LM107>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+  9c:	0ff0000f          	fence	iorw,iorw
 
-0000000000000048 <.L89>:
-  48:	00000013          	addi	zero,zero,0
-  4c:	01813083          	ld	ra,24(sp)
-  50:	01013403          	ld	s0,16(sp)
-  54:	02010113          	addi	sp,sp,32
-  58:	00008067          	jalr	zero,0(ra)
+00000000000000a0 <.LBB665>:
+    if (__is_single_threaded())
+  a0:	000007b7          	lui	a5,0x0
+  a4:	0007c783          	lbu	a5,0(a5) # 0 <elf::symtab::iterator::~iterator()>
+  a8:	02078663          	beq	a5,zero,d4 <.L13>
 
-Disassembly of section .text._ZNKSt6vectorIN3elf7sectionESaIS1_EE5beginEv:
+00000000000000ac <.LBB669>:
+    _Atomic_word __result = *__mem;
+  ac:	0344a503          	lw	a0,52(s1)
 
-0000000000000000 <std::vector<elf::section, std::allocator<elf::section> >::begin() const>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fd843703          	ld	a4,-40(s0)
-  18:	fe840793          	addi	a5,s0,-24
-  1c:	00070593          	addi	a1,a4,0
-  20:	00078513          	addi	a0,a5,0
-  24:	00000097          	auipc	ra,0x0
-  28:	000080e7          	jalr	ra,0(ra) # 24 <std::vector<elf::section, std::allocator<elf::section> >::begin() const+0x24>
-  2c:	fe843783          	ld	a5,-24(s0)
-  30:	00078513          	addi	a0,a5,0
-  34:	02813083          	ld	ra,40(sp)
-  38:	02013403          	ld	s0,32(sp)
-  3c:	03010113          	addi	sp,sp,48
-  40:	00008067          	jalr	zero,0(ra)
+00000000000000b0 <.LM117>:
+    *__mem += __val;
+  b0:	fff5079b          	addiw	a5,a0,-1
+  b4:	02f4aa23          	sw	a5,52(s1)
 
-Disassembly of section .text._ZNKSt6vectorIN3elf7sectionESaIS1_EE3endEv:
+00000000000000b8 <.L14>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+  b8:	00100793          	addi	a5,zero,1
+  bc:	f8f510e3          	bne	a0,a5,3c <.L10>
 
-0000000000000000 <std::vector<elf::section, std::allocator<elf::section> >::end() const>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	03010413          	addi	s0,sp,48
-  10:	fca43c23          	sd	a0,-40(s0)
-  14:	fd843783          	ld	a5,-40(s0)
-  18:	00878713          	addi	a4,a5,8
-  1c:	fe840793          	addi	a5,s0,-24
-  20:	00070593          	addi	a1,a4,0
-  24:	00078513          	addi	a0,a5,0
-  28:	00000097          	auipc	ra,0x0
-  2c:	000080e7          	jalr	ra,0(ra) # 28 <std::vector<elf::section, std::allocator<elf::section> >::end() const+0x28>
-  30:	fe843783          	ld	a5,-24(s0)
-  34:	00078513          	addi	a0,a5,0
-  38:	02813083          	ld	ra,40(sp)
-  3c:	02013403          	ld	s0,32(sp)
-  40:	03010113          	addi	sp,sp,48
-  44:	00008067          	jalr	zero,0(ra)
+00000000000000c0 <.LM122>:
+	    _M_destroy();
+  c0:	0004b783          	ld	a5,0(s1)
+  c4:	0187b783          	ld	a5,24(a5)
+  c8:	00048513          	addi	a0,s1,0
+  cc:	000780e7          	jalr	ra,0(a5)
 
-Disassembly of section .text._ZN9__gnu_cxxneIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEEbRKNS_17__normal_iteratorIT_T0_EESD_:
+00000000000000d0 <.LVL38>:
+  d0:	f6dff06f          	jal	zero,3c <.L10>
 
-0000000000000000 <bool __gnu_cxx::operator!=<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > >(__gnu_cxx::__normal_iterator<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > > const&, __gnu_cxx::__normal_iterator<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > > const&)>:
-   0:	fd010113          	addi	sp,sp,-48
-   4:	02113423          	sd	ra,40(sp)
-   8:	02813023          	sd	s0,32(sp)
-   c:	00913c23          	sd	s1,24(sp)
-  10:	03010413          	addi	s0,sp,48
-  14:	fca43c23          	sd	a0,-40(s0)
-  18:	fcb43823          	sd	a1,-48(s0)
-  1c:	fd843503          	ld	a0,-40(s0)
-  20:	00000097          	auipc	ra,0x0
-  24:	000080e7          	jalr	ra,0(ra) # 20 <bool __gnu_cxx::operator!=<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > >(__gnu_cxx::__normal_iterator<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > > const&, __gnu_cxx::__normal_iterator<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > > const&)+0x20>
-  28:	00050793          	addi	a5,a0,0
-  2c:	0007b483          	ld	s1,0(a5)
-  30:	fd043503          	ld	a0,-48(s0)
-  34:	00000097          	auipc	ra,0x0
-  38:	000080e7          	jalr	ra,0(ra) # 34 <bool __gnu_cxx::operator!=<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > >(__gnu_cxx::__normal_iterator<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > > const&, __gnu_cxx::__normal_iterator<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > > const&)+0x34>
-  3c:	00050793          	addi	a5,a0,0
-  40:	0007b783          	ld	a5,0(a5)
-  44:	40f487b3          	sub	a5,s1,a5
-  48:	00f037b3          	sltu	a5,zero,a5
-  4c:	0ff7f793          	andi	a5,a5,255
-  50:	00078513          	addi	a0,a5,0
-  54:	02813083          	ld	ra,40(sp)
-  58:	02013403          	ld	s0,32(sp)
-  5c:	01813483          	ld	s1,24(sp)
-  60:	03010113          	addi	sp,sp,48
-  64:	00008067          	jalr	zero,0(ra)
+00000000000000d4 <.L13>:
+      return __exchange_and_add(__mem, __val);
+  d4:	fff00593          	addi	a1,zero,-1
+  d8:	03448513          	addi	a0,s1,52
+  dc:	00000097          	auipc	ra,0x0
+  e0:	000080e7          	jalr	ra,0(ra) # dc <.L13+0x8>
 
-Disassembly of section .text._ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEppEv:
+00000000000000e4 <.LM125>:
+  e4:	fd5ff06f          	jal	zero,b8 <.L14>
 
-0000000000000000 <__gnu_cxx::__normal_iterator<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > >::operator++()>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0007b783          	ld	a5,0(a5)
-  18:	01078713          	addi	a4,a5,16
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	00e7b023          	sd	a4,0(a5)
-  24:	fe843783          	ld	a5,-24(s0)
-  28:	00078513          	addi	a0,a5,0
-  2c:	01813403          	ld	s0,24(sp)
-  30:	02010113          	addi	sp,sp,32
-  34:	00008067          	jalr	zero,0(ra)
+00000000000000e8 <.L16>:
+  e8:	fff00593          	addi	a1,zero,-1
+  ec:	03040513          	addi	a0,s0,48
+  f0:	00000097          	auipc	ra,0x0
+  f4:	000080e7          	jalr	ra,0(ra) # f0 <.L16+0x8>
 
-Disassembly of section .text._ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEdeEv:
+00000000000000f8 <.LM129>:
+  f8:	f65ff06f          	jal	zero,5c <.L17>
 
-0000000000000000 <__gnu_cxx::__normal_iterator<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > >::operator*() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0007b783          	ld	a5,0(a5)
-  18:	00078513          	addi	a0,a5,0
-  1c:	01813403          	ld	s0,24(sp)
-  20:	02010113          	addi	sp,sp,32
-  24:	00008067          	jalr	zero,0(ra)
+00000000000000fc <.L22>:
+	_M_dispose();
+  fc:	00043783          	ld	a5,0(s0)
+ 100:	0107b783          	ld	a5,16(a5)
+ 104:	00040513          	addi	a0,s0,0
+ 108:	000780e7          	jalr	ra,0(a5)
 
-Disassembly of section .text._ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE4typeEv:
+000000000000010c <.LM134>:
+	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
+ 10c:	0ff0000f          	fence	iorw,iorw
 
-0000000000000000 <elf::Sym<elf::Elf64, (elf::byte_order)0>::type() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0047c783          	lbu	a5,4(a5)
-  18:	00f7f793          	andi	a5,a5,15
-  1c:	0ff7f793          	andi	a5,a5,255
-  20:	00078513          	addi	a0,a5,0
-  24:	01813403          	ld	s0,24(sp)
-  28:	02010113          	addi	sp,sp,32
-  2c:	00008067          	jalr	zero,0(ra)
+0000000000000110 <.LBB696>:
+    if (__is_single_threaded())
+ 110:	000007b7          	lui	a5,0x0
+ 114:	0007c783          	lbu	a5,0(a5) # 0 <elf::symtab::iterator::~iterator()>
+ 118:	02078663          	beq	a5,zero,144 <.L18>
 
-Disassembly of section .text._ZNK3elf3SymINS_5Elf64ELNS_10byte_orderE0EE7bindingEv:
+000000000000011c <.LBB700>:
+    _Atomic_word __result = *__mem;
+ 11c:	03442503          	lw	a0,52(s0)
 
-0000000000000000 <elf::Sym<elf::Elf64, (elf::byte_order)0>::binding() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	0047c783          	lbu	a5,4(a5)
-  18:	0047d79b          	srliw	a5,a5,0x4
-  1c:	0ff7f793          	andi	a5,a5,255
-  20:	00078513          	addi	a0,a5,0
-  24:	01813403          	ld	s0,24(sp)
-  28:	02010113          	addi	sp,sp,32
-  2c:	00008067          	jalr	zero,0(ra)
+0000000000000120 <.LM144>:
+    *__mem += __val;
+ 120:	fff5079b          	addiw	a5,a0,-1
+ 124:	02f42a23          	sw	a5,52(s0)
 
-Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE15_M_add_ref_copyEv:
+0000000000000128 <.L19>:
+	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+ 128:	00100793          	addi	a5,zero,1
+ 12c:	f2f51ce3          	bne	a0,a5,64 <.L9>
 
-0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_add_ref_copy()>:
-   0:	fc010113          	addi	sp,sp,-64
-   4:	02113c23          	sd	ra,56(sp)
-   8:	02813823          	sd	s0,48(sp)
-   c:	04010413          	addi	s0,sp,64
-  10:	fca43423          	sd	a0,-56(s0)
-  14:	fc843783          	ld	a5,-56(s0)
-  18:	03078793          	addi	a5,a5,48
-  1c:	fef43423          	sd	a5,-24(s0)
-  20:	00100793          	addi	a5,zero,1
-  24:	fef42223          	sw	a5,-28(s0)
-  28:	000007b7          	lui	a5,0x0
-  2c:	0007c783          	lbu	a5,0(a5) # 0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_add_ref_copy()>
-  30:	0007879b          	addiw	a5,a5,0
-  34:	00f037b3          	sltu	a5,zero,a5
-  38:	0ff7f793          	andi	a5,a5,255
-  3c:	02078a63          	beq	a5,zero,70 <.L106>
-  40:	fe843783          	ld	a5,-24(s0)
-  44:	fcf43c23          	sd	a5,-40(s0)
-  48:	fe442783          	lw	a5,-28(s0)
-  4c:	fcf42a23          	sw	a5,-44(s0)
-  50:	fd843783          	ld	a5,-40(s0)
-  54:	0007a783          	lw	a5,0(a5)
-  58:	fd442703          	lw	a4,-44(s0)
-  5c:	00f707bb          	addw	a5,a4,a5
-  60:	0007871b          	addiw	a4,a5,0
-  64:	fd843783          	ld	a5,-40(s0)
-  68:	00e7a023          	sw	a4,0(a5)
-  6c:	0180006f          	jal	zero,84 <.L107>
+0000000000000130 <.LM149>:
+	    _M_destroy();
+ 130:	00043783          	ld	a5,0(s0)
+ 134:	0187b783          	ld	a5,24(a5)
+ 138:	00040513          	addi	a0,s0,0
+ 13c:	000780e7          	jalr	ra,0(a5)
 
-0000000000000070 <.L106>:
-  70:	fe442783          	lw	a5,-28(s0)
-  74:	00078593          	addi	a1,a5,0
-  78:	fe843503          	ld	a0,-24(s0)
-  7c:	00000097          	auipc	ra,0x0
-  80:	000080e7          	jalr	ra,0(ra) # 7c <.L106+0xc>
+0000000000000140 <.LBE694>:
+ 140:	f25ff06f          	jal	zero,64 <.L9>
 
-0000000000000084 <.L107>:
-  84:	00000013          	addi	zero,zero,0
-  88:	00000013          	addi	zero,zero,0
-  8c:	03813083          	ld	ra,56(sp)
-  90:	03013403          	ld	s0,48(sp)
-  94:	04010113          	addi	sp,sp,64
-  98:	00008067          	jalr	zero,0(ra)
+0000000000000144 <.L18>:
+      return __exchange_and_add(__mem, __val);
+ 144:	fff00593          	addi	a1,zero,-1
+ 148:	03440513          	addi	a0,s0,52
+ 14c:	00000097          	auipc	ra,0x0
+ 150:	000080e7          	jalr	ra,0(ra) # 14c <.L18+0x8>
 
-Disassembly of section .text._ZN9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEEC2ERKS4_:
-
-0000000000000000 <__gnu_cxx::__normal_iterator<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > >::__normal_iterator(elf::section const* const&)>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	feb43023          	sd	a1,-32(s0)
-  14:	fe043783          	ld	a5,-32(s0)
-  18:	0007b703          	ld	a4,0(a5)
-  1c:	fe843783          	ld	a5,-24(s0)
-  20:	00e7b023          	sd	a4,0(a5)
-  24:	00000013          	addi	zero,zero,0
-  28:	01813403          	ld	s0,24(sp)
-  2c:	02010113          	addi	sp,sp,32
-  30:	00008067          	jalr	zero,0(ra)
-
-Disassembly of section .text._ZNK9__gnu_cxx17__normal_iteratorIPKN3elf7sectionESt6vectorIS2_SaIS2_EEE4baseEv:
-
-0000000000000000 <__gnu_cxx::__normal_iterator<elf::section const*, std::vector<elf::section, std::allocator<elf::section> > >::base() const>:
-   0:	fe010113          	addi	sp,sp,-32
-   4:	00813c23          	sd	s0,24(sp)
-   8:	02010413          	addi	s0,sp,32
-   c:	fea43423          	sd	a0,-24(s0)
-  10:	fe843783          	ld	a5,-24(s0)
-  14:	00078513          	addi	a0,a5,0
-  18:	01813403          	ld	s0,24(sp)
-  1c:	02010113          	addi	sp,sp,32
-  20:	00008067          	jalr	zero,0(ra)
+0000000000000154 <.LM154>:
+ 154:	fd5ff06f          	jal	zero,128 <.L19>

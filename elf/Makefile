@@ -3,7 +3,7 @@
 SONAME = 0
 
 CXXFLAGS+=-g3 -ggdb3 -gvariable-location-views -gdwarf-4 -grecord-gcc-switches -O1 -Werror
-override CXXFLAGS+=-std=c++0x -Wall -fPIC
+override CXXFLAGS+=-std=c++0x -Wall -fPIC -g3 -ggdb3 -gvariable-location-views -gdwarf-4 -grecord-gcc-switches -O1 -Werror
 
 #objdumpArgs=-drswtaxzDC -M no-aliases
 objdumpArgs=-dwC -M no-aliases -S
@@ -15,7 +15,7 @@ obj=$(patsubst %.cc, %.obj.S, $(SRC))
 rea=$(patsubst %.cc, %.rea.txt, $(SRC))
 endif
 
-all: libelf++.a libelf++.so libelf++.so.$(SONAME) libelf++.pc $(obj) $(rea)
+all: libelf++.a libelf++.so.$(SONAME) libelf++.so  libelf++.pc $(obj) $(rea)
 
 SRCS := elf.cc mmap_loader.cc to_string.cc
 HDRS := elf++.hh data.hh common.hh to_hex.hh
