@@ -24,7 +24,7 @@ typedef std::uint64_t section_length;
 // represents the largest supported address type.
 typedef std::uint64_t taddr;
 
-// DIE tags (Section 7, figure 18).  typedef, friend, and namespace
+// DIE tags (Section 7.5.3, Table 7.3).  typedef, friend, and namespace
 // have a trailing underscore because they are reserved words.
 enum class DW_TAG {
   array_type = 0x01,
@@ -104,7 +104,7 @@ enum class DW_CHILDREN : ubyte {
 
 std::string to_string(DW_CHILDREN v);
 
-// Attribute names (Section 7, figure 20).  inline, friend, mutable,
+// Attribute names (Section 7.5.4, Table 7.5).  inline, friend, mutable,
 // and explicit have a trailing underscore because they are reserved
 // words.
 enum class DW_AT {

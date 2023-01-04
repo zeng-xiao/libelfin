@@ -66,6 +66,8 @@ dump-syms-riscv: # architecture independent
 	qemu-riscv64 examples/dump-syms /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
 
 dump-tree-riscv: # .debug_info section & architecture dependent
-	qemu-riscv64 examples/dump-tree ../RISC-V-disassembly-tools/build/src/elfParser/elfParser
+	qemu-riscv64 examples/dump-tree ../RISC-V-disassembly-tools/build/src/elfParser/elfParser 2>&1 | tee dump-tree-riscv.log
+	riscv64-unknown-linux-gnu-readelf --debug-dump=info ../RISC-V-disassembly-tools/build/src/elfParser/elfParser 2>&1 | tee readelf.dwarf.info
+	riscv64-unknown-linux-gnu-readelf --debug-dump=line ../RISC-V-disassembly-tools/build/src/elfParser/elfParser 2>&1 | tee readelf.dwarf.line
 find-pc-riscv:
 	qemu-riscv64 examples/find-pc /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
