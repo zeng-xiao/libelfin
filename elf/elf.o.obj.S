@@ -1256,7 +1256,7 @@ const char *strtab::get(Elf64::Off offset, size_t *len_out) const {
 00000000000007c0 <.LM1519>:
 	  if (__value < __b4) return __n + 3;
      7c0:	00002737          	lui	a4,0x2
-     7c4:	70f70693          	addi	a3,a4,1807 # 270f <.LASF4313+0xf>
+     7c4:	70f70693          	addi	a3,a4,1807 # 270f <.LLST129+0x3a>
 
 00000000000007c8 <.LM1520>:
 	  __value /= __b4;
@@ -3670,7 +3670,7 @@ std::string enums::to_string(shn v) {
 000000000000184c <.LM4874>:
 	  if (__value < __b4) return __n + 3;
     184c:	000026b7          	lui	a3,0x2
-    1850:	70f68693          	addi	a3,a3,1807 # 270f <.LASF4313+0xf>
+    1850:	70f68693          	addi	a3,a3,1807 # 270f <.LLST129+0x3a>
 
 0000000000001854 <.LM4875>:
 	  __n += 4;
@@ -3840,7 +3840,7 @@ std::string enums::to_string(shn v) {
 0000000000001954 <.LBE8623>:
       while (__val >= 100)
     1954:	00002337          	lui	t1,0x2
-    1958:	70f30313          	addi	t1,t1,1807 # 270f <.LASF4313+0xf>
+    1958:	70f30313          	addi	t1,t1,1807 # 270f <.LLST129+0x3a>
 
 000000000000195c <.L429>:
 	  auto const __num = (__val % 100) * 2;

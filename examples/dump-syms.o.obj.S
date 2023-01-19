@@ -5,12 +5,6 @@ dump-syms.o:     file format elf64-littleriscv
 Disassembly of section .text:
 
 0000000000000000 <main>:
-#include <fcntl.h>
-#include <inttypes.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-
-int main(int argc, char **argv) {
    0:	e3010113          	addi	sp,sp,-464
    4:	1c113423          	sd	ra,456(sp)
    8:	1c813023          	sd	s0,448(sp)
@@ -28,16 +22,10 @@ int main(int argc, char **argv) {
   38:	00058413          	addi	s0,a1,0
 
 000000000000003c <.LM157>:
-  if (argc != 2) {
   3c:	00200793          	addi	a5,zero,2
   40:	02f51e63          	bne	a0,a5,7c <.L120>
 
 0000000000000044 <.LM158>:
-    fprintf(stderr, "usage: %s elf-file\n", argv[0]);
-    return 2;
-  }
-
-  int fd = open(argv[1], O_RDONLY);
   44:	00000593          	addi	a1,zero,0
 
 0000000000000048 <.LM160>:
@@ -51,15 +39,9 @@ int main(int argc, char **argv) {
   54:	00050593          	addi	a1,a0,0
 
 0000000000000058 <.LM162>:
-  if (fd < 0) {
   58:	04054463          	blt	a0,zero,a0 <.L121>
 
 000000000000005c <.LM163>:
-    fprintf(stderr, "%s: %s\n", argv[1], strerror(errno));
-    return 1;
-  }
-
-  elf::elf f(elf::create_mmap_loader(fd));
   5c:	12010513          	addi	a0,sp,288
 
 0000000000000060 <.LM165>:
@@ -78,7 +60,6 @@ int main(int argc, char **argv) {
   78:	06c0006f          	jal	zero,e4 <.L122>
 
 000000000000007c <.L120>:
-    fprintf(stderr, "usage: %s elf-file\n", argv[0]);
   7c:	0005b603          	ld	a2,0(a1)
   80:	000005b7          	lui	a1,0x0
   84:	00058593          	addi	a1,a1,0 # 0 <main>
@@ -90,12 +71,10 @@ int main(int argc, char **argv) {
   94:	000080e7          	jalr	ra,0(ra) # 90 <.LEHB2>
 
 0000000000000098 <.LM170>:
-    return 2;
   98:	00200513          	addi	a0,zero,2
   9c:	7880006f          	jal	zero,824 <.L117>
 
 00000000000000a0 <.L121>:
-    fprintf(stderr, "%s: %s\n", argv[1], strerror(errno));
   a0:	000007b7          	lui	a5,0x0
   a4:	0007b483          	ld	s1,0(a5) # 0 <main>
   a8:	00843403          	ld	s0,8(s0)
@@ -119,29 +98,20 @@ int main(int argc, char **argv) {
   d8:	000080e7          	jalr	ra,0(ra) # d4 <.LVL66+0x14>
 
 00000000000000dc <.LEHE2>:
-    return 1;
   dc:	00100513          	addi	a0,zero,1
   e0:	7440006f          	jal	zero,824 <.L117>
 
 00000000000000e4 <.L122>:
-      explicit
-      __shared_count(const __weak_count<_Lp>& __r, std::nothrow_t) noexcept;
-
-      ~__shared_count() noexcept
-      {
-	if (_M_pi != nullptr)
   e4:	12813503          	ld	a0,296(sp)
 
 00000000000000e8 <.LM182>:
   e8:	00050663          	beq	a0,zero,f4 <.L27>
 
 00000000000000ec <.LM183>:
-	  _M_pi->_M_release();
   ec:	00000097          	auipc	ra,0x0
   f0:	000080e7          	jalr	ra,0(ra) # ec <.LM183>
 
 00000000000000f4 <.L27>:
-  for (auto &sec : f.sections()) {
   f4:	11010513          	addi	a0,sp,272
 
 00000000000000f8 <.LEHB3>:
@@ -149,12 +119,6 @@ int main(int argc, char **argv) {
   fc:	000080e7          	jalr	ra,0(ra) # f8 <.LEHB3>
 
 0000000000000100 <.LBB1169>:
-      _GLIBCXX_CONSTEXPR __normal_iterator() _GLIBCXX_NOEXCEPT
-      : _M_current(_Iterator()) { }
-
-      explicit _GLIBCXX20_CONSTEXPR
-      __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
-      : _M_current(__i) { }
  100:	00053c03          	ld	s8,0(a0)
 
 0000000000000104 <.LBB1172>:
@@ -164,52 +128,31 @@ int main(int argc, char **argv) {
  108:	718d0463          	beq	s10,s8,810 <.L28>
 
 000000000000010c <.LBB1175>:
-    if (sec.get_hdr().type != elf::sht::symtab &&
-        sec.get_hdr().type != elf::sht::dynsym)
-      continue;
-
-    printf("Symbol table '%s':\n", sec.get_name().c_str());
-    printf("%6s: %-16s %-5s %-7s %-7s %-5s %s\n", "Num", "Value", "Size",
  10c:	00000db7          	lui	s11,0x0
 
 0000000000000110 <.LBB1176>:
-  __is_single_threaded() _GLIBCXX_NOTHROW
-  {
-#ifndef __GTHREADS
-    return true;
-#elif __has_include(<sys/single_threaded.h>)
-    return ::__libc_single_threaded;
  110:	00000437          	lui	s0,0x0
 
 0000000000000114 <.LBB1258>:
-           "Type", "Binding", "Index", "Name");
-    int i = 0;
-    for (auto sym : sec.as_symtab()) {
-      auto &d = sym.get_data();
-      printf("%6d: %016" PRIx64 " %5" PRId64 " %-7s %-7s %5s %s\n", i++,
  114:	00000cb7          	lui	s9,0x0
  118:	0300006f          	jal	zero,148 <.L83>
 
 000000000000011c <.L123>:
-    if (sec.get_hdr().type != elf::sht::symtab &&
  11c:	00452703          	lw	a4,4(a0)
  120:	00200793          	addi	a5,zero,2
  124:	02f70c63          	beq	a4,a5,15c <.L29>
 
 0000000000000128 <.LM202>:
-        sec.get_hdr().type != elf::sht::dynsym)
  128:	000c0513          	addi	a0,s8,0
  12c:	00000097          	auipc	ra,0x0
  130:	000080e7          	jalr	ra,0(ra) # 12c <.LM202+0x4>
 
 0000000000000134 <.LM203>:
-    if (sec.get_hdr().type != elf::sht::symtab &&
  134:	00452703          	lw	a4,4(a0)
  138:	00b00793          	addi	a5,zero,11
  13c:	02f70063          	beq	a4,a5,15c <.L29>
 
 0000000000000140 <.L30>:
-  for (auto &sec : f.sections()) {
  140:	010c0c13          	addi	s8,s8,16
 
 0000000000000144 <.LM207>:
@@ -219,7 +162,6 @@ int main(int argc, char **argv) {
  148:	000c0493          	addi	s1,s8,0
 
 000000000000014c <.LBB1766>:
-    if (sec.get_hdr().type != elf::sht::symtab &&
  14c:	000c0513          	addi	a0,s8,0
  150:	00000097          	auipc	ra,0x0
  154:	000080e7          	jalr	ra,0(ra) # 150 <.LBB1766+0x4>
@@ -228,7 +170,6 @@ int main(int argc, char **argv) {
  158:	fc5ff06f          	jal	zero,11c <.L123>
 
 000000000000015c <.L29>:
-    printf("Symbol table '%s':\n", sec.get_name().c_str());
  15c:	00048593          	addi	a1,s1,0
  160:	0e010513          	addi	a0,sp,224
  164:	00000097          	auipc	ra,0x0
@@ -244,36 +185,17 @@ int main(int argc, char **argv) {
  17c:	000080e7          	jalr	ra,0(ra) # 178 <.LEHB4>
 
 0000000000000180 <.LBB1725>:
-      { _M_string_length = __length; }
-
-      _GLIBCXX20_CONSTEXPR
-      pointer
-      _M_data() const
-      { return _M_dataplus._M_p; }
  180:	0e013503          	ld	a0,224(sp)
 
 0000000000000184 <.LBB1732>:
-
-      _GLIBCXX20_CONSTEXPR
-      void
-      _M_dispose()
-      {
-	if (!_M_is_local())
  184:	0f010793          	addi	a5,sp,240
  188:	00f50663          	beq	a0,a5,194 <.L31>
 
 000000000000018c <.LBB1733>:
-	    _GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n),
-				     std::align_val_t(alignof(_Tp)));
-	    return;
-	  }
-#endif
-	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
  18c:	00000097          	auipc	ra,0x0
  190:	000080e7          	jalr	ra,0(ra) # 18c <.LBB1733>
 
 0000000000000194 <.L31>:
-    printf("%6s: %-16s %-5s %-7s %-7s %-5s %s\n", "Num", "Value", "Size",
  194:	000007b7          	lui	a5,0x0
  198:	00078893          	addi	a7,a5,0 # 0 <main>
  19c:	000007b7          	lui	a5,0x0
@@ -295,7 +217,6 @@ int main(int argc, char **argv) {
  1d4:	000080e7          	jalr	ra,0(ra) # 1d0 <.LEHB5>
 
 00000000000001d8 <.LBB1741>:
-    for (auto sym : sec.as_symtab()) {
  1d8:	00048593          	addi	a1,s1,0
  1dc:	13010513          	addi	a0,sp,304
  1e0:	00000097          	auipc	ra,0x0
@@ -327,19 +248,12 @@ int main(int argc, char **argv) {
  210:	38f70e63          	beq	a4,a5,5ac <.L32>
 
 0000000000000214 <.LBE1741>:
-    int i = 0;
  214:	00000493          	addi	s1,zero,0
 
 0000000000000218 <.LM251>:
  218:	2b80006f          	jal	zero,4d0 <.L61>
 
 000000000000021c <.L34>:
-  __atomic_add_dispatch(_Atomic_word* __mem, int __val)
-  {
-    if (__is_single_threaded())
-      __atomic_add_single(__mem, __val);
-    else
-      __atomic_add(__mem, __val);
  21c:	00100593          	addi	a1,zero,1
  220:	03050513          	addi	a0,a0,48
 
@@ -362,75 +276,57 @@ int main(int argc, char **argv) {
  240:	2e40006f          	jal	zero,524 <.L35>
 
 0000000000000244 <.L128>:
-	if (_M_pi != nullptr)
  244:	14813903          	ld	s2,328(sp)
 
 0000000000000248 <.LM267>:
  248:	02090063          	beq	s2,zero,268 <.L37>
 
 000000000000024c <.LBB1317>:
-    if (__is_single_threaded())
  24c:	00044783          	lbu	a5,0(s0) # 0 <main>
  250:	06078063          	beq	a5,zero,2b0 <.L38>
 
 0000000000000254 <.LBB1323>:
-    _Atomic_word __result = *__mem;
  254:	03092503          	lw	a0,48(s2)
 
 0000000000000258 <.LM280>:
-    *__mem += __val;
  258:	fff5079b          	addiw	a5,a0,-1
  25c:	02f92823          	sw	a5,48(s2)
 
 0000000000000260 <.L39>:
-      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
  260:	00100793          	addi	a5,zero,1
  264:	06f50063          	beq	a0,a5,2c4 <.L124>
 
 0000000000000268 <.L37>:
-	if (_M_pi != nullptr)
  268:	15813903          	ld	s2,344(sp)
 
 000000000000026c <.LM291>:
  26c:	02090063          	beq	s2,zero,28c <.L42>
 
 0000000000000270 <.LBB1350>:
-    if (__is_single_threaded())
  270:	00044783          	lbu	a5,0(s0)
  274:	0a078463          	beq	a5,zero,31c <.L43>
 
 0000000000000278 <.LBB1356>:
-    _Atomic_word __result = *__mem;
  278:	03092503          	lw	a0,48(s2)
 
 000000000000027c <.LM304>:
-    *__mem += __val;
  27c:	fff5079b          	addiw	a5,a0,-1
  280:	02f92823          	sw	a5,48(s2)
 
 0000000000000284 <.L44>:
-      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
  284:	00100793          	addi	a5,zero,1
  288:	0af50463          	beq	a0,a5,330 <.L125>
 
 000000000000028c <.L42>:
-      printf("%6d: %016" PRIx64 " %5" PRId64 " %-7s %-7s %5s %s\n", i++,
  28c:	00148b9b          	addiw	s7,s1,1
 
 0000000000000290 <.LM313>:
-             d.value, d.size, to_string(d.type()).c_str(),
  290:	0a013903          	ld	s2,160(sp)
 
 0000000000000294 <.LM314>:
  294:	0a813983          	ld	s3,168(sp)
 
 0000000000000298 <.LBB1400>:
-
-  void set_binding(stb v) const {
-    info = (info & 0xF) | ((unsigned char)v << 4);
-  }
-
-  stt type() const { return (stt)(info & 0xF); }
  298:	09c14583          	lbu	a1,156(sp)
 
 000000000000029c <.LBE1400>:
@@ -445,7 +341,6 @@ int main(int argc, char **argv) {
  2ac:	12c0006f          	jal	zero,3d8 <.L126>
 
 00000000000002b0 <.L38>:
-      return __exchange_and_add(__mem, __val);
  2b0:	fff00593          	addi	a1,zero,-1
  2b4:	03090513          	addi	a0,s2,48
  2b8:	00000097          	auipc	ra,0x0
@@ -455,37 +350,30 @@ int main(int argc, char **argv) {
  2c0:	fa1ff06f          	jal	zero,260 <.L39>
 
 00000000000002c4 <.L124>:
-	_M_dispose();
  2c4:	00093783          	ld	a5,0(s2)
  2c8:	0107b783          	ld	a5,16(a5)
  2cc:	00090513          	addi	a0,s2,0
  2d0:	000780e7          	jalr	ra,0(a5)
 
 00000000000002d4 <.LM326>:
-	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
  2d4:	0ff0000f          	fence	iorw,iorw
 
 00000000000002d8 <.LBB1329>:
-    if (__is_single_threaded())
  2d8:	00044783          	lbu	a5,0(s0)
  2dc:	02078663          	beq	a5,zero,308 <.L40>
 
 00000000000002e0 <.LBB1333>:
-    _Atomic_word __result = *__mem;
  2e0:	03492503          	lw	a0,52(s2)
 
 00000000000002e4 <.LM336>:
-    *__mem += __val;
  2e4:	fff5079b          	addiw	a5,a0,-1
  2e8:	02f92a23          	sw	a5,52(s2)
 
 00000000000002ec <.L41>:
-	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
  2ec:	00100793          	addi	a5,zero,1
  2f0:	f6f51ce3          	bne	a0,a5,268 <.L37>
 
 00000000000002f4 <.LM341>:
-	    _M_destroy();
  2f4:	00093783          	ld	a5,0(s2)
  2f8:	0187b783          	ld	a5,24(a5)
  2fc:	00090513          	addi	a0,s2,0
@@ -495,7 +383,6 @@ int main(int argc, char **argv) {
  304:	f65ff06f          	jal	zero,268 <.L37>
 
 0000000000000308 <.L40>:
-      return __exchange_and_add(__mem, __val);
  308:	fff00593          	addi	a1,zero,-1
  30c:	03490513          	addi	a0,s2,52
  310:	00000097          	auipc	ra,0x0
@@ -514,37 +401,30 @@ int main(int argc, char **argv) {
  32c:	f59ff06f          	jal	zero,284 <.L44>
 
 0000000000000330 <.L125>:
-	_M_dispose();
  330:	00093783          	ld	a5,0(s2)
  334:	0107b783          	ld	a5,16(a5)
  338:	00090513          	addi	a0,s2,0
  33c:	000780e7          	jalr	ra,0(a5)
 
 0000000000000340 <.LM353>:
-	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
  340:	0ff0000f          	fence	iorw,iorw
 
 0000000000000344 <.LBB1362>:
-    if (__is_single_threaded())
  344:	00044783          	lbu	a5,0(s0)
  348:	02078663          	beq	a5,zero,374 <.L45>
 
 000000000000034c <.LBB1366>:
-    _Atomic_word __result = *__mem;
  34c:	03492503          	lw	a0,52(s2)
 
 0000000000000350 <.LM363>:
-    *__mem += __val;
  350:	fff5079b          	addiw	a5,a0,-1
  354:	02f92a23          	sw	a5,52(s2)
 
 0000000000000358 <.L46>:
-	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
  358:	00100793          	addi	a5,zero,1
  35c:	f2f518e3          	bne	a0,a5,28c <.L42>
 
 0000000000000360 <.LM368>:
-	    _M_destroy();
  360:	00093783          	ld	a5,0(s2)
  364:	0187b783          	ld	a5,24(a5)
  368:	00090513          	addi	a0,s2,0
@@ -554,7 +434,6 @@ int main(int argc, char **argv) {
  370:	f1dff06f          	jal	zero,28c <.L42>
 
 0000000000000374 <.L45>:
-      return __exchange_and_add(__mem, __val);
  374:	fff00593          	addi	a1,zero,-1
  378:	03490513          	addi	a0,s2,52
  37c:	00000097          	auipc	ra,0x0
@@ -564,7 +443,6 @@ int main(int argc, char **argv) {
  384:	fd5ff06f          	jal	zero,358 <.L46>
 
 0000000000000388 <.L115>:
-	if (_M_pi != nullptr)
  388:	00050413          	addi	s0,a0,0
 
 000000000000038c <.LBB1388>:
@@ -574,26 +452,20 @@ int main(int argc, char **argv) {
  390:	00050663          	beq	a0,zero,39c <.L49>
 
 0000000000000394 <.LM381>:
-	  _M_pi->_M_release();
  394:	00000097          	auipc	ra,0x0
  398:	000080e7          	jalr	ra,0(ra) # 394 <.LM381>
 
 000000000000039c <.L49>:
-	if (_M_pi != nullptr)
  39c:	15813503          	ld	a0,344(sp)
 
 00000000000003a0 <.LM388>:
  3a0:	00050663          	beq	a0,zero,3ac <.L51>
 
 00000000000003a4 <.LM389>:
-	  _M_pi->_M_release();
  3a4:	00000097          	auipc	ra,0x0
  3a8:	000080e7          	jalr	ra,0(ra) # 3a4 <.LM389>
 
 00000000000003ac <.L51>:
-             to_string(d.binding()).c_str(), to_string(d.shnxd).c_str(),
-             sym.get_name().c_str());
-    }
  3ac:	0e010513          	addi	a0,sp,224
  3b0:	00000097          	auipc	ra,0x0
  3b4:	000080e7          	jalr	ra,0(ra) # 3b0 <.L51+0x4>
@@ -604,14 +476,12 @@ int main(int argc, char **argv) {
  3c0:	000080e7          	jalr	ra,0(ra) # 3bc <.L100+0x4>
 
 00000000000003c4 <.L101>:
-	if (_M_pi != nullptr)
  3c4:	13813503          	ld	a0,312(sp)
 
 00000000000003c8 <.LM397>:
  3c8:	4c050863          	beq	a0,zero,898 <.L89>
 
 00000000000003cc <.LM398>:
-	  _M_pi->_M_release();
  3cc:	00000097          	auipc	ra,0x0
  3d0:	000080e7          	jalr	ra,0(ra) # 3cc <.LM398>
 
@@ -619,15 +489,12 @@ int main(int argc, char **argv) {
  3d4:	4c40006f          	jal	zero,898 <.L89>
 
 00000000000003d8 <.L126>:
-      { return _M_dataplus._M_p; }
  3d8:	00813a03          	ld	s4,8(sp)
 
 00000000000003dc <.LBB1406>:
-  stb binding() const { return (stb)(info >> 4); }
  3dc:	09c14583          	lbu	a1,156(sp)
 
 00000000000003e0 <.LBE1406>:
-             to_string(d.binding()).c_str(), to_string(d.shnxd).c_str(),
  3e0:	0045d593          	srli	a1,a1,0x4
  3e4:	02810513          	addi	a0,sp,40
 
@@ -650,7 +517,6 @@ int main(int argc, char **argv) {
  404:	04813b03          	ld	s6,72(sp)
 
 0000000000000408 <.LBE1411>:
-             sym.get_name().c_str());
  408:	08810593          	addi	a1,sp,136
  40c:	06810513          	addi	a0,sp,104
 
@@ -659,7 +525,6 @@ int main(int argc, char **argv) {
  414:	000080e7          	jalr	ra,0(ra) # 410 <.LEHB11>
 
 0000000000000418 <.LBB1414>:
-      printf("%6d: %016" PRIx64 " %5" PRId64 " %-7s %-7s %5s %s\n", i++,
  418:	06813883          	ld	a7,104(sp)
  41c:	000b0813          	addi	a6,s6,0
  420:	000a8793          	addi	a5,s5,0
@@ -677,7 +542,6 @@ int main(int argc, char **argv) {
  440:	06813503          	ld	a0,104(sp)
 
 0000000000000444 <.LBB1423>:
-	if (!_M_is_local())
  444:	07810793          	addi	a5,sp,120
  448:	00f50663          	beq	a0,a5,454 <.L52>
 
@@ -686,11 +550,9 @@ int main(int argc, char **argv) {
  450:	000080e7          	jalr	ra,0(ra) # 44c <.LBB1424>
 
 0000000000000454 <.L52>:
-      { return _M_dataplus._M_p; }
  454:	04813503          	ld	a0,72(sp)
 
 0000000000000458 <.LBB1439>:
-	if (!_M_is_local())
  458:	05810793          	addi	a5,sp,88
  45c:	00f50663          	beq	a0,a5,468 <.L53>
 
@@ -699,11 +561,9 @@ int main(int argc, char **argv) {
  464:	000080e7          	jalr	ra,0(ra) # 460 <.LBB1440>
 
 0000000000000468 <.L53>:
-      { return _M_dataplus._M_p; }
  468:	02813503          	ld	a0,40(sp)
 
 000000000000046c <.LBB1455>:
-	if (!_M_is_local())
  46c:	03810793          	addi	a5,sp,56
  470:	00f50663          	beq	a0,a5,47c <.L54>
 
@@ -712,11 +572,9 @@ int main(int argc, char **argv) {
  478:	000080e7          	jalr	ra,0(ra) # 474 <.LBB1456>
 
 000000000000047c <.L54>:
-      { return _M_dataplus._M_p; }
  47c:	00813503          	ld	a0,8(sp)
 
 0000000000000480 <.LBB1471>:
-	if (!_M_is_local())
  480:	01810793          	addi	a5,sp,24
  484:	00f50663          	beq	a0,a5,490 <.L55>
 
@@ -725,111 +583,82 @@ int main(int argc, char **argv) {
  48c:	000080e7          	jalr	ra,0(ra) # 488 <.LBB1472>
 
 0000000000000490 <.L55>:
-	if (_M_pi != nullptr)
  490:	09013483          	ld	s1,144(sp)
 
 0000000000000494 <.LM500>:
  494:	02048063          	beq	s1,zero,4b4 <.L56>
 
 0000000000000498 <.LBB1487>:
-    if (__is_single_threaded())
  498:	00044783          	lbu	a5,0(s0)
  49c:	0a078263          	beq	a5,zero,540 <.L57>
 
 00000000000004a0 <.LBB1493>:
-    _Atomic_word __result = *__mem;
  4a0:	0304a503          	lw	a0,48(s1)
 
 00000000000004a4 <.LM513>:
-    *__mem += __val;
  4a4:	fff5079b          	addiw	a5,a0,-1
  4a8:	02f4a823          	sw	a5,48(s1)
 
 00000000000004ac <.L58>:
-      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
  4ac:	00100793          	addi	a5,zero,1
  4b0:	0af50263          	beq	a0,a5,554 <.L127>
 
 00000000000004b4 <.L56>:
-      *this += 1;
-      return cur;
-    }
-
-    iterator &operator+=(std::ptrdiff_t x) {
-      pos += x * stride;
  4b4:	0d013783          	ld	a5,208(sp)
  4b8:	0d813703          	ld	a4,216(sp)
  4bc:	00e787b3          	add	a5,a5,a4
  4c0:	0cf13823          	sd	a5,208(sp)
 
 00000000000004c4 <.LBB1641>:
-    for (auto sym : sec.as_symtab()) {
  4c4:	10013703          	ld	a4,256(sp)
  4c8:	0ee78263          	beq	a5,a4,5ac <.L32>
 
 00000000000004cc <.LBB1642>:
-      printf("%6d: %016" PRIx64 " %5" PRId64 " %-7s %-7s %5s %s\n", i++,
  4cc:	000b8493          	addi	s1,s7,0
 
 00000000000004d0 <.L61>:
-	{
-	  _M_refcount._M_swap(__r._M_refcount);
-	  __r._M_ptr = nullptr;
-	}
-
-      __shared_ptr(const __shared_ptr&) noexcept = default;
  4d0:	0b013783          	ld	a5,176(sp)
  4d4:	14f13823          	sd	a5,336(sp)
 
 00000000000004d8 <.LBB1282>:
-      : _M_pi(__r._M_pi)
  4d8:	0b813503          	ld	a0,184(sp)
 
 00000000000004dc <.LM540>:
  4dc:	14a13c23          	sd	a0,344(sp)
 
 00000000000004e0 <.LM541>:
-	if (_M_pi != nullptr)
  4e0:	00050c63          	beq	a0,zero,4f8 <.L33>
 
 00000000000004e4 <.LBB1272>:
-    if (__is_single_threaded())
  4e4:	00044783          	lbu	a5,0(s0)
  4e8:	d2078ae3          	beq	a5,zero,21c <.L34>
 
 00000000000004ec <.LBB1274>:
-  { *__mem += __val; }
  4ec:	03052783          	lw	a5,48(a0)
  4f0:	0017879b          	addiw	a5,a5,1
  4f4:	02f52823          	sw	a5,48(a0)
 
 00000000000004f8 <.L33>:
-    sym operator*() const { return sym(f, pos, strs); }
  4f8:	0d013903          	ld	s2,208(sp)
 
 00000000000004fc <.LBB1397>:
-      __shared_ptr(const __shared_ptr&) noexcept = default;
  4fc:	0c013783          	ld	a5,192(sp)
  500:	14f13023          	sd	a5,320(sp)
 
 0000000000000504 <.LBB1307>:
-      : _M_pi(__r._M_pi)
  504:	0c813503          	ld	a0,200(sp)
 
 0000000000000508 <.LM559>:
  508:	14a13423          	sd	a0,328(sp)
 
 000000000000050c <.LM560>:
-	if (_M_pi != nullptr)
  50c:	00050c63          	beq	a0,zero,524 <.L35>
 
 0000000000000510 <.LBB1297>:
-    if (__is_single_threaded())
  510:	00044783          	lbu	a5,0(s0)
  514:	d0078ee3          	beq	a5,zero,230 <.L36>
 
 0000000000000518 <.LBB1299>:
-  { *__mem += __val; }
  518:	03052783          	lw	a5,48(a0)
  51c:	0017879b          	addiw	a5,a5,1
  520:	02f52823          	sw	a5,48(a0)
@@ -848,7 +677,6 @@ int main(int argc, char **argv) {
  53c:	d09ff06f          	jal	zero,244 <.L128>
 
 0000000000000540 <.L57>:
-      return __exchange_and_add(__mem, __val);
  540:	fff00593          	addi	a1,zero,-1
  544:	03048513          	addi	a0,s1,48
  548:	00000097          	auipc	ra,0x0
@@ -858,37 +686,30 @@ int main(int argc, char **argv) {
  550:	f5dff06f          	jal	zero,4ac <.L58>
 
 0000000000000554 <.L127>:
-	_M_dispose();
  554:	0004b783          	ld	a5,0(s1)
  558:	0107b783          	ld	a5,16(a5)
  55c:	00048513          	addi	a0,s1,0
  560:	000780e7          	jalr	ra,0(a5)
 
 0000000000000564 <.LM581>:
-	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
  564:	0ff0000f          	fence	iorw,iorw
 
 0000000000000568 <.LBB1499>:
-    if (__is_single_threaded())
  568:	00044783          	lbu	a5,0(s0)
  56c:	02078663          	beq	a5,zero,598 <.L59>
 
 0000000000000570 <.LBB1503>:
-    _Atomic_word __result = *__mem;
  570:	0344a503          	lw	a0,52(s1)
 
 0000000000000574 <.LM591>:
-    *__mem += __val;
  574:	fff5079b          	addiw	a5,a0,-1
  578:	02f4aa23          	sw	a5,52(s1)
 
 000000000000057c <.L60>:
-	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
  57c:	00100793          	addi	a5,zero,1
  580:	f2f51ae3          	bne	a0,a5,4b4 <.L56>
 
 0000000000000584 <.LM596>:
-	    _M_destroy();
  584:	0004b783          	ld	a5,0(s1)
  588:	0187b783          	ld	a5,24(a5)
  58c:	00048513          	addi	a0,s1,0
@@ -898,7 +719,6 @@ int main(int argc, char **argv) {
  594:	f21ff06f          	jal	zero,4b4 <.L56>
 
 0000000000000598 <.L59>:
-      return __exchange_and_add(__mem, __val);
  598:	fff00593          	addi	a1,zero,-1
  59c:	03448513          	addi	a0,s1,52
  5a0:	00000097          	auipc	ra,0x0
@@ -908,118 +728,96 @@ int main(int argc, char **argv) {
  5a8:	fd5ff06f          	jal	zero,57c <.L60>
 
 00000000000005ac <.L32>:
-	if (_M_pi != nullptr)
  5ac:	0f813483          	ld	s1,248(sp)
 
 00000000000005b0 <.LM607>:
  5b0:	02048063          	beq	s1,zero,5d0 <.L62>
 
 00000000000005b4 <.LBB1651>:
-    if (__is_single_threaded())
  5b4:	00044783          	lbu	a5,0(s0)
  5b8:	08078c63          	beq	a5,zero,650 <.L63>
 
 00000000000005bc <.LBB1657>:
-    _Atomic_word __result = *__mem;
  5bc:	0304a503          	lw	a0,48(s1)
 
 00000000000005c0 <.LM620>:
-    *__mem += __val;
  5c0:	fff5079b          	addiw	a5,a0,-1
  5c4:	02f4a823          	sw	a5,48(s1)
 
 00000000000005c8 <.L64>:
-      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
  5c8:	00100793          	addi	a5,zero,1
  5cc:	08f50c63          	beq	a0,a5,664 <.L129>
 
 00000000000005d0 <.L62>:
-	if (_M_pi != nullptr)
  5d0:	0e813483          	ld	s1,232(sp)
 
 00000000000005d4 <.LM631>:
  5d4:	02048063          	beq	s1,zero,5f4 <.L67>
 
 00000000000005d8 <.LBB1683>:
-    if (__is_single_threaded())
  5d8:	00044783          	lbu	a5,0(s0)
  5dc:	0e078263          	beq	a5,zero,6c0 <.L68>
 
 00000000000005e0 <.LBB1689>:
-    _Atomic_word __result = *__mem;
  5e0:	0304a503          	lw	a0,48(s1)
 
 00000000000005e4 <.LM644>:
-    *__mem += __val;
  5e4:	fff5079b          	addiw	a5,a0,-1
  5e8:	02f4a823          	sw	a5,48(s1)
 
 00000000000005ec <.L69>:
-      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
  5ec:	00100793          	addi	a5,zero,1
  5f0:	0ef50263          	beq	a0,a5,6d4 <.L130>
 
 00000000000005f4 <.L67>:
-	if (_M_pi != nullptr)
  5f4:	0c813483          	ld	s1,200(sp)
 
 00000000000005f8 <.LM656>:
  5f8:	02048063          	beq	s1,zero,618 <.L72>
 
 00000000000005fc <.LBB1226>:
-    if (__is_single_threaded())
  5fc:	00044783          	lbu	a5,0(s0)
  600:	12078863          	beq	a5,zero,730 <.L73>
 
 0000000000000604 <.LBB1232>:
-    _Atomic_word __result = *__mem;
  604:	0304a503          	lw	a0,48(s1)
 
 0000000000000608 <.LM669>:
-    *__mem += __val;
  608:	fff5079b          	addiw	a5,a0,-1
  60c:	02f4a823          	sw	a5,48(s1)
 
 0000000000000610 <.L74>:
-      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
  610:	00100793          	addi	a5,zero,1
  614:	12f50863          	beq	a0,a5,744 <.L131>
 
 0000000000000618 <.L72>:
-	if (_M_pi != nullptr)
  618:	0b813483          	ld	s1,184(sp)
 
 000000000000061c <.LM680>:
  61c:	02048063          	beq	s1,zero,63c <.L77>
 
 0000000000000620 <.LBB1191>:
-    if (__is_single_threaded())
  620:	00044783          	lbu	a5,0(s0)
  624:	16078e63          	beq	a5,zero,7a0 <.L78>
 
 0000000000000628 <.LBB1192>:
-    _Atomic_word __result = *__mem;
  628:	0304a503          	lw	a0,48(s1)
 
 000000000000062c <.LM693>:
-    *__mem += __val;
  62c:	fff5079b          	addiw	a5,a0,-1
  630:	02f4a823          	sw	a5,48(s1)
 
 0000000000000634 <.L79>:
-      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
  634:	00100793          	addi	a5,zero,1
  638:	16f50e63          	beq	a0,a5,7b4 <.L132>
 
 000000000000063c <.L77>:
-	if (_M_pi != nullptr)
  63c:	13813503          	ld	a0,312(sp)
 
 0000000000000640 <.LM704>:
  640:	b00500e3          	beq	a0,zero,140 <.L30>
 
 0000000000000644 <.LM705>:
-	  _M_pi->_M_release();
  644:	00000097          	auipc	ra,0x0
  648:	000080e7          	jalr	ra,0(ra) # 644 <.LM705>
 
@@ -1027,7 +825,6 @@ int main(int argc, char **argv) {
  64c:	af5ff06f          	jal	zero,140 <.L30>
 
 0000000000000650 <.L63>:
-      return __exchange_and_add(__mem, __val);
  650:	fff00593          	addi	a1,zero,-1
  654:	03048513          	addi	a0,s1,48
  658:	00000097          	auipc	ra,0x0
@@ -1037,38 +834,31 @@ int main(int argc, char **argv) {
  660:	f69ff06f          	jal	zero,5c8 <.L64>
 
 0000000000000664 <.L129>:
-	_M_dispose();
  664:	0004b783          	ld	a5,0(s1)
  668:	0107b783          	ld	a5,16(a5)
  66c:	00048513          	addi	a0,s1,0
  670:	000780e7          	jalr	ra,0(a5)
 
 0000000000000674 <.LM715>:
-	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
  674:	0ff0000f          	fence	iorw,iorw
 
 0000000000000678 <.LBB1663>:
-    if (__is_single_threaded())
  678:	000007b7          	lui	a5,0x0
  67c:	0007c783          	lbu	a5,0(a5) # 0 <main>
  680:	02078663          	beq	a5,zero,6ac <.L65>
 
 0000000000000684 <.LBB1667>:
-    _Atomic_word __result = *__mem;
  684:	0344a503          	lw	a0,52(s1)
 
 0000000000000688 <.LM725>:
-    *__mem += __val;
  688:	fff5079b          	addiw	a5,a0,-1
  68c:	02f4aa23          	sw	a5,52(s1)
 
 0000000000000690 <.L66>:
-	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
  690:	00100793          	addi	a5,zero,1
  694:	f2f51ee3          	bne	a0,a5,5d0 <.L62>
 
 0000000000000698 <.LM730>:
-	    _M_destroy();
  698:	0004b783          	ld	a5,0(s1)
  69c:	0187b783          	ld	a5,24(a5)
  6a0:	00048513          	addi	a0,s1,0
@@ -1078,7 +868,6 @@ int main(int argc, char **argv) {
  6a8:	f29ff06f          	jal	zero,5d0 <.L62>
 
 00000000000006ac <.L65>:
-      return __exchange_and_add(__mem, __val);
  6ac:	fff00593          	addi	a1,zero,-1
  6b0:	03448513          	addi	a0,s1,52
  6b4:	00000097          	auipc	ra,0x0
@@ -1097,38 +886,31 @@ int main(int argc, char **argv) {
  6d0:	f1dff06f          	jal	zero,5ec <.L69>
 
 00000000000006d4 <.L130>:
-	_M_dispose();
  6d4:	0004b783          	ld	a5,0(s1)
  6d8:	0107b783          	ld	a5,16(a5)
  6dc:	00048513          	addi	a0,s1,0
  6e0:	000780e7          	jalr	ra,0(a5)
 
 00000000000006e4 <.LM742>:
-	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
  6e4:	0ff0000f          	fence	iorw,iorw
 
 00000000000006e8 <.LBB1695>:
-    if (__is_single_threaded())
  6e8:	000007b7          	lui	a5,0x0
  6ec:	0007c783          	lbu	a5,0(a5) # 0 <main>
  6f0:	02078663          	beq	a5,zero,71c <.L70>
 
 00000000000006f4 <.LBB1699>:
-    _Atomic_word __result = *__mem;
  6f4:	0344a503          	lw	a0,52(s1)
 
 00000000000006f8 <.LM752>:
-    *__mem += __val;
  6f8:	fff5079b          	addiw	a5,a0,-1
  6fc:	02f4aa23          	sw	a5,52(s1)
 
 0000000000000700 <.L71>:
-	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
  700:	00100793          	addi	a5,zero,1
  704:	eef518e3          	bne	a0,a5,5f4 <.L67>
 
 0000000000000708 <.LM757>:
-	    _M_destroy();
  708:	0004b783          	ld	a5,0(s1)
  70c:	0187b783          	ld	a5,24(a5)
  710:	00048513          	addi	a0,s1,0
@@ -1138,7 +920,6 @@ int main(int argc, char **argv) {
  718:	eddff06f          	jal	zero,5f4 <.L67>
 
 000000000000071c <.L70>:
-      return __exchange_and_add(__mem, __val);
  71c:	fff00593          	addi	a1,zero,-1
  720:	03448513          	addi	a0,s1,52
  724:	00000097          	auipc	ra,0x0
@@ -1157,38 +938,31 @@ int main(int argc, char **argv) {
  740:	ed1ff06f          	jal	zero,610 <.L74>
 
 0000000000000744 <.L131>:
-	_M_dispose();
  744:	0004b783          	ld	a5,0(s1)
  748:	0107b783          	ld	a5,16(a5)
  74c:	00048513          	addi	a0,s1,0
  750:	000780e7          	jalr	ra,0(a5)
 
 0000000000000754 <.LM769>:
-	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
  754:	0ff0000f          	fence	iorw,iorw
 
 0000000000000758 <.LBB1238>:
-    if (__is_single_threaded())
  758:	000007b7          	lui	a5,0x0
  75c:	0007c783          	lbu	a5,0(a5) # 0 <main>
  760:	02078663          	beq	a5,zero,78c <.L75>
 
 0000000000000764 <.LBB1242>:
-    _Atomic_word __result = *__mem;
  764:	0344a503          	lw	a0,52(s1)
 
 0000000000000768 <.LM779>:
-    *__mem += __val;
  768:	fff5079b          	addiw	a5,a0,-1
  76c:	02f4aa23          	sw	a5,52(s1)
 
 0000000000000770 <.L76>:
-	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
  770:	00100793          	addi	a5,zero,1
  774:	eaf512e3          	bne	a0,a5,618 <.L72>
 
 0000000000000778 <.LM784>:
-	    _M_destroy();
  778:	0004b783          	ld	a5,0(s1)
  77c:	0187b783          	ld	a5,24(a5)
  780:	00048513          	addi	a0,s1,0
@@ -1198,7 +972,6 @@ int main(int argc, char **argv) {
  788:	e91ff06f          	jal	zero,618 <.L72>
 
 000000000000078c <.L75>:
-      return __exchange_and_add(__mem, __val);
  78c:	fff00593          	addi	a1,zero,-1
  790:	03448513          	addi	a0,s1,52
  794:	00000097          	auipc	ra,0x0
@@ -1217,38 +990,31 @@ int main(int argc, char **argv) {
  7b0:	e85ff06f          	jal	zero,634 <.L79>
 
 00000000000007b4 <.L132>:
-	_M_dispose();
  7b4:	0004b783          	ld	a5,0(s1)
  7b8:	0107b783          	ld	a5,16(a5)
  7bc:	00048513          	addi	a0,s1,0
  7c0:	000780e7          	jalr	ra,0(a5)
 
 00000000000007c4 <.LM796>:
-	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
  7c4:	0ff0000f          	fence	iorw,iorw
 
 00000000000007c8 <.LBB1200>:
-    if (__is_single_threaded())
  7c8:	000007b7          	lui	a5,0x0
  7cc:	0007c783          	lbu	a5,0(a5) # 0 <main>
  7d0:	02078663          	beq	a5,zero,7fc <.L80>
 
 00000000000007d4 <.LBB1204>:
-    _Atomic_word __result = *__mem;
  7d4:	0344a503          	lw	a0,52(s1)
 
 00000000000007d8 <.LM806>:
-    *__mem += __val;
  7d8:	fff5079b          	addiw	a5,a0,-1
  7dc:	02f4aa23          	sw	a5,52(s1)
 
 00000000000007e0 <.L81>:
-	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
  7e0:	00100793          	addi	a5,zero,1
  7e4:	e4f51ce3          	bne	a0,a5,63c <.L77>
 
 00000000000007e8 <.LM811>:
-	    _M_destroy();
  7e8:	0004b783          	ld	a5,0(s1)
  7ec:	0187b783          	ld	a5,24(a5)
  7f0:	00048513          	addi	a0,s1,0
@@ -1258,7 +1024,6 @@ int main(int argc, char **argv) {
  7f8:	e45ff06f          	jal	zero,63c <.L77>
 
 00000000000007fc <.L80>:
-      return __exchange_and_add(__mem, __val);
  7fc:	fff00593          	addi	a1,zero,-1
  800:	03448513          	addi	a0,s1,52
  804:	00000097          	auipc	ra,0x0
@@ -1268,25 +1033,19 @@ int main(int argc, char **argv) {
  80c:	fd5ff06f          	jal	zero,7e0 <.L81>
 
 0000000000000810 <.L28>:
-	if (_M_pi != nullptr)
  810:	11813503          	ld	a0,280(sp)
 
 0000000000000814 <.LM822>:
  814:	00050663          	beq	a0,zero,820 <.L84>
 
 0000000000000818 <.LM823>:
-	  _M_pi->_M_release();
  818:	00000097          	auipc	ra,0x0
  81c:	000080e7          	jalr	ra,0(ra) # 818 <.LM823>
 
 0000000000000820 <.L84>:
-  }
-
-  return 0;
  820:	00000513          	addi	a0,zero,0
 
 0000000000000824 <.L117>:
-}
  824:	1c813083          	ld	ra,456(sp)
  828:	1c013403          	ld	s0,448(sp)
  82c:	1b813483          	ld	s1,440(sp)
@@ -1304,7 +1063,6 @@ int main(int argc, char **argv) {
  85c:	00008067          	jalr	zero,0(ra)
 
 0000000000000860 <.L105>:
-	if (_M_pi != nullptr)
  860:	00050413          	addi	s0,a0,0
 
 0000000000000864 <.LBB1783>:
@@ -1314,7 +1072,6 @@ int main(int argc, char **argv) {
  868:	00050663          	beq	a0,zero,874 <.L86>
 
 000000000000086c <.LM834>:
-	  _M_pi->_M_release();
  86c:	00000097          	auipc	ra,0x0
  870:	000080e7          	jalr	ra,0(ra) # 86c <.LM834>
 
@@ -1326,14 +1083,12 @@ int main(int argc, char **argv) {
  87c:	000080e7          	jalr	ra,0(ra) # 878 <.LEHB14>
 
 0000000000000880 <.L107>:
-      { return _M_dataplus._M_p; }
  880:	00050413          	addi	s0,a0,0
 
 0000000000000884 <.LBB1751>:
  884:	0e013503          	ld	a0,224(sp)
 
 0000000000000888 <.LBB1752>:
-	if (!_M_is_local())
  888:	0f010793          	addi	a5,sp,240
  88c:	00f50663          	beq	a0,a5,898 <.L89>
 
@@ -1342,14 +1097,12 @@ int main(int argc, char **argv) {
  894:	000080e7          	jalr	ra,0(ra) # 890 <.LBB1754>
 
 0000000000000898 <.L89>:
-	if (_M_pi != nullptr)
  898:	11813503          	ld	a0,280(sp)
 
 000000000000089c <.LM862>:
  89c:	00050663          	beq	a0,zero,8a8 <.L103>
 
 00000000000008a0 <.LM863>:
-	  _M_pi->_M_release();
  8a0:	00000097          	auipc	ra,0x0
  8a4:	000080e7          	jalr	ra,0(ra) # 8a0 <.LM863>
 
@@ -1359,14 +1112,12 @@ int main(int argc, char **argv) {
  8b0:	000080e7          	jalr	ra,0(ra) # 8ac <.L103+0x4>
 
 00000000000008b4 <.L114>:
-      { return _M_dataplus._M_p; }
  8b4:	00050413          	addi	s0,a0,0
 
 00000000000008b8 <.LBB1525>:
  8b8:	06813503          	ld	a0,104(sp)
 
 00000000000008bc <.LBB1526>:
-	if (!_M_is_local())
  8bc:	07810793          	addi	a5,sp,120
  8c0:	00f50663          	beq	a0,a5,8cc <.L92>
 
@@ -1375,11 +1126,9 @@ int main(int argc, char **argv) {
  8c8:	000080e7          	jalr	ra,0(ra) # 8c4 <.LBB1528>
 
 00000000000008cc <.L92>:
-      { return _M_dataplus._M_p; }
  8cc:	04813503          	ld	a0,72(sp)
 
 00000000000008d0 <.LBB1547>:
-	if (!_M_is_local())
  8d0:	05810793          	addi	a5,sp,88
  8d4:	00f50663          	beq	a0,a5,8e0 <.L94>
 
@@ -1388,11 +1137,9 @@ int main(int argc, char **argv) {
  8dc:	000080e7          	jalr	ra,0(ra) # 8d8 <.LBB1549>
 
 00000000000008e0 <.L94>:
-      { return _M_dataplus._M_p; }
  8e0:	02813503          	ld	a0,40(sp)
 
 00000000000008e4 <.LBB1569>:
-	if (!_M_is_local())
  8e4:	03810793          	addi	a5,sp,56
  8e8:	00f50663          	beq	a0,a5,8f4 <.L96>
 
@@ -1401,11 +1148,9 @@ int main(int argc, char **argv) {
  8f0:	000080e7          	jalr	ra,0(ra) # 8ec <.LBB1571>
 
 00000000000008f4 <.L96>:
-      { return _M_dataplus._M_p; }
  8f4:	00813503          	ld	a0,8(sp)
 
 00000000000008f8 <.LBB1591>:
-	if (!_M_is_local())
  8f8:	01810793          	addi	a5,sp,24
  8fc:	00f50663          	beq	a0,a5,908 <.L98>
 
@@ -1414,14 +1159,12 @@ int main(int argc, char **argv) {
  904:	000080e7          	jalr	ra,0(ra) # 900 <.LBB1593>
 
 0000000000000908 <.L98>:
-	if (_M_pi != nullptr)
  908:	09013503          	ld	a0,144(sp)
 
 000000000000090c <.LM946>:
  90c:	aa0500e3          	beq	a0,zero,3ac <.L51>
 
 0000000000000910 <.LM947>:
-	  _M_pi->_M_release();
  910:	00000097          	auipc	ra,0x0
  914:	000080e7          	jalr	ra,0(ra) # 910 <.LM947>
 
@@ -1429,7 +1172,6 @@ int main(int argc, char **argv) {
  918:	a95ff06f          	jal	zero,3ac <.L51>
 
 000000000000091c <.L113>:
-      { return _M_dataplus._M_p; }
  91c:	00050413          	addi	s0,a0,0
  920:	fadff06f          	jal	zero,8cc <.L92>
 
@@ -1442,12 +1184,10 @@ int main(int argc, char **argv) {
  930:	fc5ff06f          	jal	zero,8f4 <.L96>
 
 0000000000000934 <.L110>:
-	if (_M_pi != nullptr)
  934:	00050413          	addi	s0,a0,0
  938:	fd1ff06f          	jal	zero,908 <.L98>
 
 000000000000093c <.L109>:
-    }
  93c:	00050413          	addi	s0,a0,0
  940:	a79ff06f          	jal	zero,3b8 <.L100>
 
@@ -1461,35 +1201,29 @@ int main(int argc, char **argv) {
 
 Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv:
 
-0000000000000000 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>:
-    {
+0000000000000000 <_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv>:
    0:	ff010113          	addi	sp,sp,-16
    4:	00113423          	sd	ra,8(sp)
    8:	00813023          	sd	s0,0(sp)
    c:	00050413          	addi	s0,a0,0
 
 0000000000000010 <.LBB572>:
-    if (__is_single_threaded())
   10:	000007b7          	lui	a5,0x0
-  14:	0007c783          	lbu	a5,0(a5) # 0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
+  14:	0007c783          	lbu	a5,0(a5) # 0 <_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv>
   18:	02078463          	beq	a5,zero,40 <.L2>
 
 000000000000001c <.LBB576>:
-    _Atomic_word __result = *__mem;
   1c:	03052503          	lw	a0,48(a0)
 
 0000000000000020 <.LM14>:
-    *__mem += __val;
   20:	fff5079b          	addiw	a5,a0,-1
   24:	02f42823          	sw	a5,48(s0)
 
 0000000000000028 <.L3>:
-      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
   28:	00100793          	addi	a5,zero,1
   2c:	02f50463          	beq	a0,a5,54 <.L8>
 
 0000000000000030 <.L1>:
-    }
   30:	00813083          	ld	ra,8(sp)
   34:	00013403          	ld	s0,0(sp)
 
@@ -1498,7 +1232,6 @@ Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE
   3c:	00008067          	jalr	zero,0(ra)
 
 0000000000000040 <.L2>:
-      return __exchange_and_add(__mem, __val);
   40:	fff00593          	addi	a1,zero,-1
   44:	03050513          	addi	a0,a0,48
   48:	00000097          	auipc	ra,0x0
@@ -1508,49 +1241,40 @@ Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE
   50:	fd9ff06f          	jal	zero,28 <.L3>
 
 0000000000000054 <.L8>:
-	_M_dispose();
   54:	00043783          	ld	a5,0(s0)
   58:	0107b783          	ld	a5,16(a5)
   5c:	00040513          	addi	a0,s0,0
   60:	000780e7          	jalr	ra,0(a5)
 
 0000000000000064 <.LM28>:
-	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
   64:	0ff0000f          	fence	iorw,iorw
 
 0000000000000068 <.LBB582>:
-    if (__is_single_threaded())
   68:	000007b7          	lui	a5,0x0
-  6c:	0007c783          	lbu	a5,0(a5) # 0 <std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)1>::_M_release()>
+  6c:	0007c783          	lbu	a5,0(a5) # 0 <_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE10_M_releaseEv>
   70:	02078663          	beq	a5,zero,9c <.L5>
 
 0000000000000074 <.LBB586>:
-    _Atomic_word __result = *__mem;
   74:	03442503          	lw	a0,52(s0)
 
 0000000000000078 <.LM38>:
-    *__mem += __val;
   78:	fff5079b          	addiw	a5,a0,-1
   7c:	02f42a23          	sw	a5,52(s0)
 
 0000000000000080 <.L6>:
-	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
   80:	00100793          	addi	a5,zero,1
   84:	faf516e3          	bne	a0,a5,30 <.L1>
 
 0000000000000088 <.LM43>:
-	    _M_destroy();
   88:	00043783          	ld	a5,0(s0)
   8c:	0187b783          	ld	a5,24(a5)
   90:	00040513          	addi	a0,s0,0
   94:	000780e7          	jalr	ra,0(a5)
 
 0000000000000098 <.LBE580>:
-    }
   98:	f99ff06f          	jal	zero,30 <.L1>
 
 000000000000009c <.L5>:
-      return __exchange_and_add(__mem, __val);
   9c:	fff00593          	addi	a1,zero,-1
   a0:	03440513          	addi	a0,s0,52
   a4:	00000097          	auipc	ra,0x0
@@ -1561,8 +1285,7 @@ Disassembly of section .text._ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE
 
 Disassembly of section .text._ZN3elf6symtab8iteratorD2Ev:
 
-0000000000000000 <elf::symtab::iterator::~iterator()>:
-  class iterator {
+0000000000000000 <_ZN3elf6symtab8iteratorD1Ev>:
    0:	fe010113          	addi	sp,sp,-32
    4:	00113c23          	sd	ra,24(sp)
    8:	00813823          	sd	s0,16(sp)
@@ -1570,56 +1293,46 @@ Disassembly of section .text._ZN3elf6symtab8iteratorD2Ev:
   10:	00050413          	addi	s0,a0,0
 
 0000000000000014 <.LBB648>:
-	if (_M_pi != nullptr)
   14:	01853483          	ld	s1,24(a0)
 
 0000000000000018 <.LM56>:
   18:	02048263          	beq	s1,zero,3c <.L10>
 
 000000000000001c <.LBB653>:
-    if (__is_single_threaded())
   1c:	000007b7          	lui	a5,0x0
-  20:	0007c783          	lbu	a5,0(a5) # 0 <elf::symtab::iterator::~iterator()>
+  20:	0007c783          	lbu	a5,0(a5) # 0 <_ZN3elf6symtab8iteratorD1Ev>
   24:	04078a63          	beq	a5,zero,78 <.L11>
 
 0000000000000028 <.LBB659>:
-    _Atomic_word __result = *__mem;
   28:	0304a503          	lw	a0,48(s1)
 
 000000000000002c <.LM69>:
-    *__mem += __val;
   2c:	fff5079b          	addiw	a5,a0,-1
   30:	02f4a823          	sw	a5,48(s1)
 
 0000000000000034 <.L12>:
-      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
   34:	00100793          	addi	a5,zero,1
   38:	04f50a63          	beq	a0,a5,8c <.L21>
 
 000000000000003c <.L10>:
-	if (_M_pi != nullptr)
   3c:	00843403          	ld	s0,8(s0)
 
 0000000000000040 <.LM80>:
   40:	02040263          	beq	s0,zero,64 <.L9>
 
 0000000000000044 <.LBB684>:
-    if (__is_single_threaded())
   44:	000007b7          	lui	a5,0x0
-  48:	0007c783          	lbu	a5,0(a5) # 0 <elf::symtab::iterator::~iterator()>
+  48:	0007c783          	lbu	a5,0(a5) # 0 <_ZN3elf6symtab8iteratorD1Ev>
   4c:	08078e63          	beq	a5,zero,e8 <.L16>
 
 0000000000000050 <.LBB690>:
-    _Atomic_word __result = *__mem;
   50:	03042503          	lw	a0,48(s0)
 
 0000000000000054 <.LM93>:
-    *__mem += __val;
   54:	fff5079b          	addiw	a5,a0,-1
   58:	02f42823          	sw	a5,48(s0)
 
 000000000000005c <.L17>:
-      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
   5c:	00100793          	addi	a5,zero,1
   60:	08f50e63          	beq	a0,a5,fc <.L22>
 
@@ -1631,7 +1344,6 @@ Disassembly of section .text._ZN3elf6symtab8iteratorD2Ev:
   74:	00008067          	jalr	zero,0(ra)
 
 0000000000000078 <.L11>:
-      return __exchange_and_add(__mem, __val);
   78:	fff00593          	addi	a1,zero,-1
   7c:	03048513          	addi	a0,s1,48
   80:	00000097          	auipc	ra,0x0
@@ -1641,38 +1353,31 @@ Disassembly of section .text._ZN3elf6symtab8iteratorD2Ev:
   88:	fadff06f          	jal	zero,34 <.L12>
 
 000000000000008c <.L21>:
-	_M_dispose();
   8c:	0004b783          	ld	a5,0(s1)
   90:	0107b783          	ld	a5,16(a5)
   94:	00048513          	addi	a0,s1,0
   98:	000780e7          	jalr	ra,0(a5)
 
 000000000000009c <.LM107>:
-	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
   9c:	0ff0000f          	fence	iorw,iorw
 
 00000000000000a0 <.LBB665>:
-    if (__is_single_threaded())
   a0:	000007b7          	lui	a5,0x0
-  a4:	0007c783          	lbu	a5,0(a5) # 0 <elf::symtab::iterator::~iterator()>
+  a4:	0007c783          	lbu	a5,0(a5) # 0 <_ZN3elf6symtab8iteratorD1Ev>
   a8:	02078663          	beq	a5,zero,d4 <.L13>
 
 00000000000000ac <.LBB669>:
-    _Atomic_word __result = *__mem;
   ac:	0344a503          	lw	a0,52(s1)
 
 00000000000000b0 <.LM117>:
-    *__mem += __val;
   b0:	fff5079b          	addiw	a5,a0,-1
   b4:	02f4aa23          	sw	a5,52(s1)
 
 00000000000000b8 <.L14>:
-	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
   b8:	00100793          	addi	a5,zero,1
   bc:	f8f510e3          	bne	a0,a5,3c <.L10>
 
 00000000000000c0 <.LM122>:
-	    _M_destroy();
   c0:	0004b783          	ld	a5,0(s1)
   c4:	0187b783          	ld	a5,24(a5)
   c8:	00048513          	addi	a0,s1,0
@@ -1682,7 +1387,6 @@ Disassembly of section .text._ZN3elf6symtab8iteratorD2Ev:
   d0:	f6dff06f          	jal	zero,3c <.L10>
 
 00000000000000d4 <.L13>:
-      return __exchange_and_add(__mem, __val);
   d4:	fff00593          	addi	a1,zero,-1
   d8:	03448513          	addi	a0,s1,52
   dc:	00000097          	auipc	ra,0x0
@@ -1701,38 +1405,31 @@ Disassembly of section .text._ZN3elf6symtab8iteratorD2Ev:
   f8:	f65ff06f          	jal	zero,5c <.L17>
 
 00000000000000fc <.L22>:
-	_M_dispose();
   fc:	00043783          	ld	a5,0(s0)
  100:	0107b783          	ld	a5,16(a5)
  104:	00040513          	addi	a0,s0,0
  108:	000780e7          	jalr	ra,0(a5)
 
 000000000000010c <.LM134>:
-	    __atomic_thread_fence (__ATOMIC_ACQ_REL);
  10c:	0ff0000f          	fence	iorw,iorw
 
 0000000000000110 <.LBB696>:
-    if (__is_single_threaded())
  110:	000007b7          	lui	a5,0x0
- 114:	0007c783          	lbu	a5,0(a5) # 0 <elf::symtab::iterator::~iterator()>
+ 114:	0007c783          	lbu	a5,0(a5) # 0 <_ZN3elf6symtab8iteratorD1Ev>
  118:	02078663          	beq	a5,zero,144 <.L18>
 
 000000000000011c <.LBB700>:
-    _Atomic_word __result = *__mem;
  11c:	03442503          	lw	a0,52(s0)
 
 0000000000000120 <.LM144>:
-    *__mem += __val;
  120:	fff5079b          	addiw	a5,a0,-1
  124:	02f42a23          	sw	a5,52(s0)
 
 0000000000000128 <.L19>:
-	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
  128:	00100793          	addi	a5,zero,1
  12c:	f2f51ce3          	bne	a0,a5,64 <.L9>
 
 0000000000000130 <.LM149>:
-	    _M_destroy();
  130:	00043783          	ld	a5,0(s0)
  134:	0187b783          	ld	a5,24(a5)
  138:	00040513          	addi	a0,s0,0
@@ -1742,7 +1439,6 @@ Disassembly of section .text._ZN3elf6symtab8iteratorD2Ev:
  140:	f25ff06f          	jal	zero,64 <.L9>
 
 0000000000000144 <.L18>:
-      return __exchange_and_add(__mem, __val);
  144:	fff00593          	addi	a1,zero,-1
  148:	03440513          	addi	a0,s0,52
  14c:	00000097          	auipc	ra,0x0

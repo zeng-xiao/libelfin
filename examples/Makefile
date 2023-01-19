@@ -4,17 +4,17 @@ override CXXFLAGS+=-std=c++0x -Wall -g3 -ggdb3 -gvariable-location-views -gdwarf
 CLEAN :=
 
 #objdumpArgs=-drswtaxzDC -M no-aliases
-objdumpArgs=-dwC -M no-aliases -S
+objdumpArgs=-dw -M no-aliases
 readelfArgs=-adW
 
 ifeq ($(findstring rv64, $(CXXFLAGS)), rv64)
 SRC=$(wildcard *.cc)
 objo=$(patsubst %.cc, %.obj.S, $(SRC))
 reao=$(patsubst %.cc, %.rea.txt, $(SRC))
-obj=$(patsubst %.cc, %.main.obj.S, $(SRC))
-rea=$(patsubst %.cc, %.main.rea.txt, $(SRC))
+
+S=$(patsubst %.cc, %.S, $(SRC))
 endif
-all: dump-sections dump-segments dump-syms dump-tree dump-lines find-pc $(objo) $(reao) $(obj) $(rea)
+all: dump-sections dump-segments dump-syms dump-tree dump-lines find-pc $(objo) $(reao) $(obj) $(rea) $(S)
 
 # Find libs
 export PKG_CONFIG_PATH=../elf:../dwarf
@@ -59,12 +59,9 @@ CLEAN += *.obj.S
 	riscv64-unknown-linux-gnu-readelf $(readelfArgs) $^ > $^.rea.txt
 CLEAN += *.rea.txt
 
-%.main.obj.S:%.o
-	riscv64-unknown-linux-gnu-objdump $(objdumpArgs) $^ > $^.main.obj.S
-CLEAN += *.main.obj.S
+%.S:%.cc
+	$(CC) $(CXXFLAGS) -I../elf -I../dwarf -S $^ -o $^.S
+CLEAN += *.S
 
-%.main.rea.txt:%.o
-	riscv64-unknown-linux-gnu-readelf $(readelfArgs) $^ > $^.main.rea.txt
-CLEAN += *.main.rea.txt
 clean:
 	rm -f $(CLEAN) .*.d

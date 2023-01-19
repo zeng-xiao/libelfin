@@ -43,7 +43,6 @@ to_string.cc: ../elf/enum-print.py dwarf++.hh data.hh Makefile
 CLEAN += to_string.cc
 
 libdwarf++.so.$(SONAME): $(SRCS:.cc=.o)
-	echo $(obj)
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) -shared -Wl,-soname,$@ -o $@ $^
 CLEAN += libdwarf++.so.*
 

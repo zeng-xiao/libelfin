@@ -10,10 +10,12 @@ all-x86_64-1:
 	$(MAKE) -j1 -C  elf
 	$(MAKE) -j1 -C dwarf
 	$(MAKE) -j1 -C examples
+
+# default linker is -fuse-ld=bfd
 all-riscv:
-	$(MAKE) -j$(shell nproc) -C elf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++  CXXFLAGS="-march=rv64g -mabi=lp64d"
-	$(MAKE) -j$(shell nproc) -C dwarf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++ CXXFLAGS="-march=rv64g -mabi=lp64d"
-	$(MAKE) -j$(shell nproc) -C examples CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++ CXXFLAGS="-march=rv64g -mabi=lp64d"
+	$(MAKE) -j$(shell nproc) -C elf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++  CXXFLAGS="-march=rv64g -mabi=lp64d -fuse-ld=bfd"
+	$(MAKE) -j$(shell nproc) -C dwarf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++ CXXFLAGS="-march=rv64g -mabi=lp64d -fuse-ld=bfd"
+	$(MAKE) -j$(shell nproc) -C examples CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++ CXXFLAGS="-march=rv64g -mabi=lp64d -fuse-ld=bfd"
 
 all-riscv-1:
 	$(MAKE) -j1 -C elf CC=riscv64-unknown-linux-gnu-gcc CXX=riscv64-unknown-linux-gnu-g++  CXXFLAGS="-march=rv64g -mabi=lp64d"
@@ -70,4 +72,4 @@ dump-tree-riscv: # .debug_info section & architecture dependent
 	riscv64-unknown-linux-gnu-readelf --debug-dump=info ../RISC-V-disassembly-tools/build/src/elfParser/elfParser 2>&1 | tee readelf.dwarf.info
 	riscv64-unknown-linux-gnu-readelf --debug-dump=line ../RISC-V-disassembly-tools/build/src/elfParser/elfParser 2>&1 | tee readelf.dwarf.line
 find-pc-riscv:
-	qemu-riscv64 examples/find-pc /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main
+	qemu-riscv64 examples/find-pc /home/user/code/riscv/dwarf_cpp_.eh_frame/test.cpp-static.main 0x00000000000105d4

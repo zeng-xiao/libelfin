@@ -7667,7 +7667,7 @@ Disassembly of section .text._ZNSt7__cxx119to_stringEm:
 000000000000004c <.LM234>:
 	  if (__value < (unsigned)__base) return __n;
   4c:	000186b7          	lui	a3,0x18
-  50:	69f68693          	addi	a3,a3,1695 # 1869f <.LASF2999+0x18>
+  50:	69f68693          	addi	a3,a3,1695 # 1869f <.LASF1501+0x1a>
 
 0000000000000054 <.LM235>:
 	  if (__value < __b2) return __n + 1;
